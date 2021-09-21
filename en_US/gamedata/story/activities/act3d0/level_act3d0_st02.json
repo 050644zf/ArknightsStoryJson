@@ -1,0 +1,977 @@
+[
+    {
+        "id": 0,
+        "prop": "HEADER",
+        "attributes": {
+            "key": "title_test",
+            "is_skippable": "true",
+            "fit_mode": "BLACK_MASK"
+        }
+    },
+    {
+        "id": 1,
+        "prop": "PlayMusic",
+        "attributes": {
+            "intro": "$darkness01_intro",
+            "key": "$darkness01_loop",
+            "volume": 0.8,
+            "crossfade": 1.0
+        }
+    },
+    {
+        "id": 2,
+        "prop": "Delay",
+        "attributes": {
+            "time": 1.0
+        }
+    },
+    {
+        "id": 3,
+        "prop": "playsound",
+        "attributes": {
+            "key": "$d_gen_transmissionget",
+            "volume": 0.4
+        }
+    },
+    {
+        "id": 4,
+        "prop": "Blocker",
+        "attributes": {
+            "a": 1.0,
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "fadetime": 1.0,
+            "block": "true"
+        }
+    },
+    {
+        "id": 5,
+        "prop": "Image",
+        "attributes": {
+            "image": "ac3_volcano",
+            "x": 0.0,
+            "y": 0.0,
+            "xScale": 1.0,
+            "yScale": 1.0,
+            "fadetime": 0.0,
+            "screenadapt": "coverall"
+        }
+    },
+    {
+        "id": 6,
+        "prop": "Blocker",
+        "attributes": {
+            "a": 0.0,
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "fadetime": 1.0,
+            "block": "true"
+        }
+    },
+    {
+        "id": 7,
+        "prop": "name",
+        "attributes": {
+            "content": "   Finally, through comparing isotopes and analyzing various samples, we've basically been able to confirm your hypothesis.",
+            "name": "Eyjafjalla"
+        }
+    },
+    {
+        "id": 8,
+        "prop": "name",
+        "attributes": {
+            "content": "   The frequency of volcanic activity has, without a doubt, been rising abnormally. Though there's no imminent danger of a Catastrophe, we cannot ignore the danger.",
+            "name": "Eyjafjalla"
+        }
+    },
+    {
+        "id": 9,
+        "prop": "name",
+        "attributes": {
+            "content": "   In two to four weeks, the volcanic activity will reach a critical point. Expect a Catastrophe to occur at that point.",
+            "name": "Eyjafjalla"
+        }
+    },
+    {
+        "id": 10,
+        "prop": "name",
+        "attributes": {
+            "content": "   If possible, I would recommend beginning evacuation efforts as soon as possible.                    ",
+            "name": "Eyjafjalla"
+        }
+    },
+    {
+        "id": 11,
+        "prop": "name",
+        "attributes": {
+            "content": "   ...To summarize, that's the conclusion I've drawn from the information you provided me.",
+            "name": "Eyjafjalla"
+        }
+    },
+    {
+        "id": 12,
+        "prop": "Blocker",
+        "attributes": {
+            "a": 1.0,
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "fadetime": 1.0,
+            "block": "true"
+        }
+    },
+    {
+        "id": 13,
+        "prop": "Image",
+        "attributes": {
+            "fadetime": 0.0
+        }
+    },
+    {
+        "id": 14,
+        "prop": "Background",
+        "attributes": {
+            "image": "bg_hotel",
+            "fadetime": 0.0
+        }
+    },
+    {
+        "id": 15,
+        "prop": "Blocker",
+        "attributes": {
+            "a": 0.0,
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "fadetime": 1.0,
+            "block": "true"
+        }
+    },
+    {
+        "id": 16,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_145_prove_1"
+        }
+    },
+    {
+        "id": 17,
+        "prop": "name",
+        "attributes": {
+            "content": "   That's Eyjafjalla for you. She can even give a 40-minute lecture over the phone.",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 18,
+        "prop": "name",
+        "attributes": {
+            "content": "   Doctor, did you understand all that?",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 19,
+        "prop": "Decision",
+        "attributes": {
+            "options": "In one ear and out the other.;Mhm, I understood the gist of it.",
+            "values": "1;2"
+        },
+        "targetLine": {
+            "option1": "line20",
+            "option2": "line22"
+        }
+    },
+    {
+        "id": 20,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false,
+        "targetLine": "line24"
+    },
+    {
+        "id": 21,
+        "prop": "name",
+        "attributes": {
+            "content": "   That's what I thought as well. Before I could react, it was already over.",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 22,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "2"
+        },
+        "endOfOpt": false,
+        "targetLine": "line24"
+    },
+    {
+        "id": 23,
+        "prop": "name",
+        "attributes": {
+            "content": "   Wow, that's amazing, Doctor. I couldn't understand her at all...",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 24,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1;2"
+        },
+        "endOfOpt": true
+    },
+    {
+        "id": 25,
+        "prop": "name",
+        "attributes": {
+            "content": "   Seeing those two over there, I thought I was the only one who wasn't getting it.",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 26,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_348_ceylon_4#7",
+            "name2": "char_166_skfire_3#2",
+            "focus": 2.0
+        }
+    },
+    {
+        "id": 27,
+        "prop": "name",
+        "attributes": {
+            "content": "   As expected of Eyjafjalla. Even I felt like I was just put through a seminar.",
+            "name": "Skyfire"
+        }
+    },
+    {
+        "id": 28,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_348_ceylon_4#7",
+            "name2": "char_166_skfire_3#2",
+            "focus": 1.0
+        }
+    },
+    {
+        "id": 29,
+        "prop": "name",
+        "attributes": {
+            "content": "   I see, so that's a true professional. I never knew the data could be analyzed like that.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 30,
+        "prop": "name",
+        "attributes": {
+            "content": "   I didn't expect to be presented with such a good learning experience. Jeez, I should have written it all down!",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 31,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 32,
+        "prop": "name",
+        "attributes": {
+            "content": "   Even though the information we have right now is far from comprehensive, I've reached the same conclusion as you have. The volcano has most likely become active once more.",
+            "name": "Eyjafjalla"
+        }
+    },
+    {
+        "id": 33,
+        "prop": "name",
+        "attributes": {
+            "content": "   Unfortunately, I can't be there to further delve into why it has become active.",
+            "name": "Eyjafjalla"
+        }
+    },
+    {
+        "id": 34,
+        "prop": "name",
+        "attributes": {
+            "content": "   ...Sorry. If we had a bit more on-site information, we'd be able to better predict the activity cycle.",
+            "name": "Eyjafjalla"
+        }
+    },
+    {
+        "id": 35,
+        "prop": "name",
+        "attributes": {
+            "content": "   That way, we'd be able to evacuate the citizens more easily.",
+            "name": "Eyjafjalla"
+        }
+    },
+    {
+        "id": 36,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_145_prove_1"
+        }
+    },
+    {
+        "id": 37,
+        "prop": "name",
+        "attributes": {
+            "content": "   We all know that you're passionate about volcanoes, Eyjafjalla.",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 38,
+        "prop": "name",
+        "attributes": {
+            "content": "   You've already been a great help. Thank you very much.",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 39,
+        "prop": "Dialog",
+        "attributes": {}
+    },
+    {
+        "id": 40,
+        "prop": "Blocker",
+        "attributes": {
+            "a": 1.0,
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "fadetime": 1.0,
+            "block": "true"
+        }
+    },
+    {
+        "id": 41,
+        "prop": "stopmusic",
+        "attributes": {
+            "fadetime": 1.0
+        }
+    },
+    {
+        "id": 42,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 43,
+        "prop": "Blocker",
+        "attributes": {
+            "a": 0.0,
+            "fadetime": 1.0,
+            "block": "false"
+        }
+    },
+    {
+        "id": 44,
+        "prop": "PlayMusic",
+        "attributes": {
+            "intro": "$farce_intro",
+            "key": "$farce_loop",
+            "volume": 0.8,
+            "crossfade": 1.5
+        }
+    },
+    {
+        "id": 45,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_348_ceylon_4#4"
+        }
+    },
+    {
+        "id": 46,
+        "prop": "name",
+        "attributes": {
+            "content": "   I'm glad I had such a professional team like yours to help me confirm my findings.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 47,
+        "prop": "name",
+        "attributes": {
+            "content": "   Something might be wrong with the detector in the monitoring station. It hasn't detected any abnormal readings so far.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 48,
+        "prop": "name",
+        "attributes": {
+            "content": "   By the looks of things, my efforts were worth it.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 49,
+        "prop": "name",
+        "attributes": {
+            "content": "   We've got to send news of this to the City Council. Otherwise, the results could be devastating.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 50,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_145_prove_1",
+            "name2": "char_166_skfire_3#1",
+            "focus": 2.0
+        }
+    },
+    {
+        "id": 51,
+        "prop": "name",
+        "attributes": {
+            "content": "   You're telling me that Siesta didn't even make any emergency plans for a possible Catastrophe before hosting such a large-scale event?",
+            "name": "Skyfire"
+        }
+    },
+    {
+        "id": 52,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_348_ceylon_4#2"
+        }
+    },
+    {
+        "id": 53,
+        "prop": "name",
+        "attributes": {
+            "content": "   The people here probably haven't even considered the possibility of a Catastrophe, let alone made preparations for it.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 54,
+        "prop": "name",
+        "attributes": {
+            "content": "   My father went to the new development zone to conduct business about three months ago, and won't be back for a few more days. Now, his secretary, Cronin, is responsible for everything.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 55,
+        "prop": "name",
+        "attributes": {
+            "content": "   Cronin is also this city's Catastrophe Messenger. When we take the data and the samples down to the City Hall, he'll be able to understand the situation.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 56,
+        "prop": "name",
+        "attributes": {
+            "content": "   Even though I'm the mayor's daughter, I rarely get involved in the government's affairs.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 57,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_348_ceylon_4#4"
+        }
+    },
+    {
+        "id": 58,
+        "prop": "name",
+        "attributes": {
+            "content": "   But now that we have definitive proof, I might be able to get some help from the family.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 59,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_145_prove_1"
+        }
+    },
+    {
+        "id": 60,
+        "prop": "name",
+        "attributes": {
+            "content": "   Doctor, I have an idea. I want to head to the volcano again to check on that reason that Eyjafjalla mentioned.",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 61,
+        "prop": "name",
+        "attributes": {
+            "content": "   Can you help Ceylon out while I'm gone?",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 62,
+        "prop": "Decision",
+        "attributes": {
+            "options": "You're entering the volcano? Isn't that a bit too dangerous?!",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line63"
+        }
+    },
+    {
+        "id": 63,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 64,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_145_prove_1"
+        }
+    },
+    {
+        "id": 65,
+        "prop": "name",
+        "attributes": {
+            "content": "   Catastrophe Messengers always put their lives on the line for their work, so don't worry. I have plenty of experience with this kind of stuff.",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 66,
+        "prop": "name",
+        "attributes": {
+            "content": "   Although I'll only be able to call you from the hotel, I'll be sure to stay connected with the Doctor.",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 67,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_145_prove_1",
+            "name2": "char_166_skfire_3#1",
+            "focus": 2.0
+        }
+    },
+    {
+        "id": 68,
+        "prop": "name",
+        "attributes": {
+            "content": "   I'll also come with you.",
+            "name": "Skyfire"
+        }
+    },
+    {
+        "id": 69,
+        "prop": "CharacterCutin",
+        "attributes": {
+            "widgetID": "1"
+        }
+    },
+    {
+        "id": 70,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_145_prove_1",
+            "name2": "char_166_skfire_3#1",
+            "focus": 1.0
+        }
+    },
+    {
+        "id": 71,
+        "prop": "name",
+        "attributes": {
+            "content": "   Huh?",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 72,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_145_prove_1",
+            "name2": "char_166_skfire_3#1",
+            "focus": 2.0
+        }
+    },
+    {
+        "id": 73,
+        "prop": "name",
+        "attributes": {
+            "content": "   Got a problem with that? I can't just let you go alone. What if you ruin all the precious data?",
+            "name": "Skyfire"
+        }
+    },
+    {
+        "id": 74,
+        "prop": "name",
+        "attributes": {
+            "content": "   Of course I have to go with you.",
+            "name": "Skyfire"
+        }
+    },
+    {
+        "id": 75,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_145_prove_1",
+            "name2": "char_166_skfire_3#1",
+            "focus": 1.0
+        }
+    },
+    {
+        "id": 76,
+        "prop": "name",
+        "attributes": {
+            "content": "   Um, all right, all right.",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 77,
+        "prop": "name",
+        "attributes": {
+            "content": "   By the way, do we need to notify Amiya first?",
+            "name": "Provence"
+        }
+    },
+    {
+        "id": 78,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_145_prove_1",
+            "name2": "char_166_skfire_3#2",
+            "focus": 2.0
+        }
+    },
+    {
+        "id": 79,
+        "prop": "name",
+        "attributes": {
+            "content": "   Nah, it's fine. It's not that serious. As long as the Doctor knows about it, we're good.",
+            "name": "Skyfire"
+        }
+    },
+    {
+        "id": 80,
+        "prop": "Dialog",
+        "attributes": {}
+    },
+    {
+        "id": 81,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 82,
+        "prop": "Delay",
+        "attributes": {
+            "time": 0.5
+        }
+    },
+    {
+        "id": 83,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_348_ceylon_4#2"
+        }
+    },
+    {
+        "id": 84,
+        "prop": "name",
+        "attributes": {
+            "content": "   So if that's all settled, let's get going, Doctor. Please prepare everything you need, and we'll head for the City Hall at 2 PM.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 85,
+        "prop": "Decision",
+        "attributes": {
+            "options": "No problem.",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line86"
+        }
+    },
+    {
+        "id": 86,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 87,
+        "prop": "Character",
+        "attributes": {
+            "name": "char_348_ceylon_4#4"
+        }
+    },
+    {
+        "id": 88,
+        "prop": "name",
+        "attributes": {
+            "content": "   Phew, that about wraps things up. I suppose I can finally relax a bit.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 89,
+        "prop": "name",
+        "attributes": {
+            "content": "   Doctor, here's some tea I brought back from Victoria. Would you like a cup?",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 90,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Sure.;No thank you.",
+            "values": "2;3"
+        },
+        "targetLine": {
+            "option2": "line91",
+            "option3": "line93"
+        }
+    },
+    {
+        "id": 91,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "2"
+        },
+        "endOfOpt": false,
+        "targetLine": "line110"
+    },
+    {
+        "id": 92,
+        "prop": "name",
+        "attributes": {
+            "content": "   I think you'll enjoy it.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 93,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "3"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 94,
+        "prop": "name",
+        "attributes": {
+            "content": "   Do you not know how to make tea? I'll help you then.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 95,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Sure.;...No thank you.",
+            "values": "4;5"
+        },
+        "targetLine": {
+            "option4": "line96",
+            "option5": "line98"
+        }
+    },
+    {
+        "id": 96,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "4"
+        },
+        "endOfOpt": false,
+        "targetLine": "line110"
+    },
+    {
+        "id": 97,
+        "prop": "name",
+        "attributes": {
+            "content": "   Mhm, I just know you'll like it.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 98,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "5"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 99,
+        "prop": "name",
+        "attributes": {
+            "content": "   You're a really difficult person, you know.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 100,
+        "prop": "name",
+        "attributes": {
+            "content": "   I'll have you know that this is one of the highest-grade teas in Victoria!",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 101,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Fine, you win.;......No thank you.",
+            "values": "6;7"
+        },
+        "targetLine": {
+            "option6": "line102",
+            "option7": "line104"
+        }
+    },
+    {
+        "id": 102,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "6"
+        },
+        "endOfOpt": false,
+        "targetLine": "line110"
+    },
+    {
+        "id": 103,
+        "prop": "name",
+        "attributes": {
+            "content": "   There you go. You'll definitely like it.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 104,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "7"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 105,
+        "prop": "name",
+        "attributes": {
+            "content": "   I make really good tea. You'll regret it your whole life if you miss this chance.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 106,
+        "prop": "Decision",
+        "attributes": {
+            "options": ".........Fine.",
+            "values": "8"
+        },
+        "targetLine": {
+            "option8": "line107"
+        }
+    },
+    {
+        "id": 107,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "8"
+        },
+        "endOfOpt": false,
+        "targetLine": "line110"
+    },
+    {
+        "id": 108,
+        "prop": "name",
+        "attributes": {
+            "content": "   How stubborn. I had to say all that just to make you try it.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 109,
+        "prop": "name",
+        "attributes": {
+            "content": "   All right, just wait a moment.",
+            "name": "Ceylon"
+        }
+    },
+    {
+        "id": 110,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "2;4;6;8"
+        },
+        "endOfOpt": true
+    },
+    {
+        "id": 111,
+        "prop": "Dialog",
+        "attributes": {}
+    },
+    {
+        "id": 112,
+        "prop": "Blocker",
+        "attributes": {
+            "a": 1.0,
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "fadetime": 2.0,
+            "block": "true"
+        }
+    },
+    {
+        "id": 113,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 114,
+        "prop": "Delay",
+        "attributes": {
+            "time": 0.6
+        }
+    },
+    {
+        "id": 115,
+        "prop": "Dialog",
+        "attributes": {}
+    },
+    {
+        "id": 116,
+        "prop": "Blocker",
+        "attributes": {
+            "block": "true"
+        }
+    },
+    {
+        "id": 117,
+        "prop": "Image",
+        "attributes": {}
+    }
+]

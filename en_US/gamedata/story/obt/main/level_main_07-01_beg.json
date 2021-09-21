@@ -1,0 +1,1524 @@
+[
+    {
+        "id": 0,
+        "prop": "HEADER",
+        "attributes": {
+            "key": "title_test",
+            "is_skippable": "true",
+            "fit_mode": "BLACK_MASK"
+        }
+    },
+    {
+        "id": 1,
+        "prop": "stopmusic",
+        "attributes": {}
+    },
+    {
+        "id": 2,
+        "prop": "Dialog",
+        "attributes": {}
+    },
+    {
+        "id": 3,
+        "prop": "playMusic",
+        "attributes": {
+            "intro": "$dignified_intro",
+            "key": "$dignified_loop",
+            "volume": 0.4
+        }
+    },
+    {
+        "id": 4,
+        "prop": "Delay",
+        "attributes": {
+            "time": 1.0
+        }
+    },
+    {
+        "id": 5,
+        "prop": "Blocker",
+        "attributes": {
+            "a": 1.0,
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "fadetime": 1.0,
+            "block": "true"
+        }
+    },
+    {
+        "id": 6,
+        "prop": "Background",
+        "attributes": {
+            "image": "bg_corridor",
+            "screenadapt": "coverall"
+        }
+    },
+    {
+        "id": 7,
+        "prop": "Blocker",
+        "attributes": {
+            "a": 0.0,
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "fadetime": 3.0,
+            "block": "true"
+        }
+    },
+    {
+        "id": 8,
+        "prop": "name",
+        "attributes": {
+            "content": "6:30 p.m. "
+        }
+    },
+    {
+        "id": 9,
+        "prop": "Dialog",
+        "attributes": {}
+    },
+    {
+        "id": 10,
+        "prop": "PlaySound",
+        "attributes": {
+            "key": "$dooropenquite",
+            "volume": 0.6
+        }
+    },
+    {
+        "id": 11,
+        "prop": "delay",
+        "attributes": {
+            "time": 2.0
+        }
+    },
+    {
+        "id": 12,
+        "prop": "PlaySound",
+        "attributes": {
+            "key": "$d_gen_walk_n"
+        }
+    },
+    {
+        "id": 13,
+        "prop": "delay",
+        "attributes": {
+            "time": 2.0
+        }
+    },
+    {
+        "id": 14,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 15,
+        "prop": "name",
+        "attributes": {
+            "content": "  Number 00000-00002, Clearance Level-8.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 16,
+        "prop": "name",
+        "attributes": {
+            "content": "  Dr. {@nickname}, thank you for visiting the Rhodes Island Integrated Bioprocessing Unit. Your intentions have been determined through analysis of available biological data.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 17,
+        "prop": "name",
+        "attributes": {
+            "content": "  In addition, the system detects that you are in a bad mood.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 18,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Leave me alone.;......;And what would count for a good mood?",
+            "values": "1;2;3"
+        },
+        "targetLine": {
+            "option1": "line19",
+            "option2": "line23",
+            "option3": "line28"
+        }
+    },
+    {
+        "id": 19,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false,
+        "targetLine": "line37"
+    },
+    {
+        "id": 20,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 21,
+        "prop": "name",
+        "attributes": {
+            "content": "  Dr. {@nickname} is displaying aggression.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 22,
+        "prop": "name",
+        "attributes": {
+            "content": "  Rest assured the system will not electrocute you. There is no need to fear these tests.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 23,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "2"
+        },
+        "endOfOpt": false,
+        "targetLine": "line37"
+    },
+    {
+        "id": 24,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 25,
+        "prop": "name",
+        "attributes": {
+            "content": "  Dr. {@nickname} fell silent.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 26,
+        "prop": "name",
+        "attributes": {
+            "content": "  Whether silent protest or refusal to communicate, I believe it is an expression of an autism spectrum disorder.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 27,
+        "prop": "name",
+        "attributes": {
+            "content": "  Please, by all means. The system treats all equally.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 28,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "3"
+        },
+        "endOfOpt": false,
+        "targetLine": "line37"
+    },
+    {
+        "id": 29,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 30,
+        "prop": "name",
+        "attributes": {
+            "content": "  Good and bad are subjective judgments.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 31,
+        "prop": "name",
+        "attributes": {
+            "content": "  However, this system has collected nearly all documented states of mental activity, as well as hormonal criteria for various types of neurological excitement.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 32,
+        "prop": "name",
+        "attributes": {
+            "content": "  So you could argue that the system\u2019s subjective judgment is substantially closer to objective truth.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 33,
+        "prop": "name",
+        "attributes": {
+            "content": "  Therefore, no matter what action Dr. {@nickname} may take, the system will be able to process it to some degree.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 34,
+        "prop": "name",
+        "attributes": {
+            "content": "  Which is to say: you may do as you wish.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 35,
+        "prop": "name",
+        "attributes": {
+            "content": "  PRTS is equipped with a nonlethal pacification function.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 36,
+        "prop": "name",
+        "attributes": {
+            "content": "  Should you take unreasonable action, you will lose consciousness for 3.55 working hours, ensuring you maintain a behavioral standard close to normal.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 37,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1;2;3"
+        },
+        "endOfOpt": true
+    },
+    {
+        "id": 38,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 39,
+        "prop": "name",
+        "attributes": {
+            "content": "  Welcome home, Doctor.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 40,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Can this really be called home?",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line41"
+        }
+    },
+    {
+        "id": 41,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 42,
+        "prop": "Dialog",
+        "attributes": {}
+    },
+    {
+        "id": 43,
+        "prop": "PlaySound",
+        "attributes": {
+            "key": "$d_gen_walk_n"
+        }
+    },
+    {
+        "id": 44,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042",
+            "fadetime": 1.0,
+            "block": "true"
+        }
+    },
+    {
+        "id": 45,
+        "prop": "delay",
+        "attributes": {
+            "time": 1.0
+        }
+    },
+    {
+        "id": 46,
+        "prop": "name",
+        "attributes": {
+            "content": "  Are you Dr. {@nickname}?",
+            "name": "???"
+        }
+    },
+    {
+        "id": 47,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Huh?;......?;Hello?",
+            "values": "1;2;3"
+        },
+        "targetLine": {
+            "option1": "line48",
+            "option2": "line48",
+            "option3": "line48"
+        }
+    },
+    {
+        "id": 48,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1;2;3"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 49,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 50,
+        "prop": "name",
+        "attributes": {
+            "content": "  It\u2019s you. I\u2019m sure of it.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 51,
+        "prop": "name",
+        "attributes": {
+            "content": "  I can feel it... you\u2019re a little different.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 52,
+        "prop": "name",
+        "attributes": {
+            "content": "  But... the person you\u2019re holding, that uniform...",
+            "name": "???"
+        }
+    },
+    {
+        "id": 53,
+        "prop": "name",
+        "attributes": {
+            "content": "  Can I ask who\u2019s that you\u2019re holding?",
+            "name": "???"
+        }
+    },
+    {
+        "id": 54,
+        "prop": "Decision",
+        "attributes": {
+            "options": "A fighter.;One of my people.;A friend.",
+            "values": "1;2;3"
+        },
+        "targetLine": {
+            "option1": "line55",
+            "option2": "line60",
+            "option3": "line65"
+        }
+    },
+    {
+        "id": 55,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 56,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 57,
+        "prop": "name",
+        "attributes": {
+            "content": "  Fighter?",
+            "name": "???"
+        }
+    },
+    {
+        "id": 58,
+        "prop": "name",
+        "attributes": {
+            "content": "  Oh... she wounded you. Were you fighting?",
+            "name": "???"
+        }
+    },
+    {
+        "id": 59,
+        "prop": "name",
+        "attributes": {
+            "content": "  No, you weren\u2019t... This isn\u2019t a lethal wound.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 60,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "2"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 61,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 62,
+        "prop": "name",
+        "attributes": {
+            "content": "  Is she Infected too...?",
+            "name": "???"
+        }
+    },
+    {
+        "id": 63,
+        "prop": "name",
+        "attributes": {
+            "content": "  No, that\u2019s not what you meant.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 64,
+        "prop": "name",
+        "attributes": {
+            "content": "  Dr. {@nickname}, you seem like you lost something.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 65,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "3"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 66,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 67,
+        "prop": "name",
+        "attributes": {
+            "content": "  She\u2019s your friend?",
+            "name": "???"
+        }
+    },
+    {
+        "id": 68,
+        "prop": "name",
+        "attributes": {
+            "content": "  But... you barely know her at all.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 69,
+        "prop": "name",
+        "attributes": {
+            "content": "  I don\u2019t know... this might disappear soon.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 70,
+        "prop": "Decision",
+        "attributes": {
+            "options": "What... do you feel?",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line71"
+        }
+    },
+    {
+        "id": 71,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 72,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 73,
+        "prop": "name",
+        "attributes": {
+            "content": "  Traces of people communicating with each other. Smell, warmth, shape.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 74,
+        "prop": "name",
+        "attributes": {
+            "content": "  I\u2019m not sure, but she...",
+            "name": "???"
+        }
+    },
+    {
+        "id": 75,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 76,
+        "prop": "Dialog",
+        "attributes": {}
+    },
+    {
+        "id": 77,
+        "prop": "name",
+        "attributes": {
+            "content": "The girl reaches out to FrostNova."
+        }
+    },
+    {
+        "id": 78,
+        "prop": "Decision",
+        "attributes": {
+            "options": "(Let her).;(Stop her).",
+            "values": "1;2"
+        },
+        "targetLine": {
+            "option1": "line79",
+            "option2": "line101"
+        }
+    },
+    {
+        "id": 79,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 80,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 81,
+        "prop": "name",
+        "attributes": {
+            "content": "  Hm.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 82,
+        "prop": "name",
+        "attributes": {
+            "content": "  No.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 83,
+        "prop": "name",
+        "attributes": {
+            "content": "  You don\u2019t want me to do that?",
+            "name": "???"
+        }
+    },
+    {
+        "id": 84,
+        "prop": "name",
+        "attributes": {
+            "content": "  No. I\u2019m an outsider. I don\u2019t know her.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 85,
+        "prop": "name",
+        "attributes": {
+            "content": "  I can\u2019t do this, can I?",
+            "name": "???"
+        }
+    },
+    {
+        "id": 86,
+        "prop": "name",
+        "attributes": {
+            "content": "  I\u2019m sorry.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 87,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Can you read minds, like Amiya?;......;I\u2019m having trouble understanding you.",
+            "values": "4;5;6"
+        },
+        "targetLine": {
+            "option4": "line88",
+            "option5": "line92",
+            "option6": "line97"
+        }
+    },
+    {
+        "id": 88,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "4"
+        },
+        "endOfOpt": false,
+        "targetLine": "line118"
+    },
+    {
+        "id": 89,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 90,
+        "prop": "name",
+        "attributes": {
+            "content": "  No, I can\u2019t...",
+            "name": "???"
+        }
+    },
+    {
+        "id": 91,
+        "prop": "name",
+        "attributes": {
+            "content": "  Amiya is special. I know Amiya\u2019s Arts... and I think she suffers a lot.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 92,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "5"
+        },
+        "endOfOpt": false,
+        "targetLine": "line118"
+    },
+    {
+        "id": 93,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 94,
+        "prop": "name",
+        "attributes": {
+            "content": "  I... I can\u2019t touch her, and I can\u2019t feel her.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 95,
+        "prop": "name",
+        "attributes": {
+            "content": "  Her connection to this world has no connection to me.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 96,
+        "prop": "name",
+        "attributes": {
+            "content": "  I... I have no right to touch her.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 97,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "6"
+        },
+        "endOfOpt": false,
+        "targetLine": "line118"
+    },
+    {
+        "id": 98,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 99,
+        "prop": "name",
+        "attributes": {
+            "content": "  The other operators say that too.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 100,
+        "prop": "name",
+        "attributes": {
+            "content": "  There are a lot of big personalities at Rhodes Island... But I might be weird, even for them.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 101,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "2"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 102,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 103,
+        "prop": "name",
+        "attributes": {
+            "content": "  Oh...",
+            "name": "???"
+        }
+    },
+    {
+        "id": 104,
+        "prop": "name",
+        "attributes": {
+            "content": "  I\u2019m... I\u2019m sorry...",
+            "name": "???"
+        }
+    },
+    {
+        "id": 105,
+        "prop": "name",
+        "attributes": {
+            "content": "  I...",
+            "name": "???"
+        }
+    },
+    {
+        "id": 106,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Sorry.;......;I\u2019m sorry, little girl.",
+            "values": "7;8;9"
+        },
+        "targetLine": {
+            "option7": "line107",
+            "option8": "line110",
+            "option9": "line114"
+        }
+    },
+    {
+        "id": 107,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "7"
+        },
+        "endOfOpt": false,
+        "targetLine": "line118"
+    },
+    {
+        "id": 108,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 109,
+        "prop": "name",
+        "attributes": {
+            "content": "  No, it\u2019s fine. I\u2019m used to it.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 110,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "8"
+        },
+        "endOfOpt": false,
+        "targetLine": "line118"
+    },
+    {
+        "id": 111,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 112,
+        "prop": "name",
+        "attributes": {
+            "content": "  P-please don\u2019t be mad...",
+            "name": "???"
+        }
+    },
+    {
+        "id": 113,
+        "prop": "name",
+        "attributes": {
+            "content": "  When you don\u2019t speak, I... I don\u2019t know what to say.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 114,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "9"
+        },
+        "endOfOpt": false,
+        "targetLine": "line118"
+    },
+    {
+        "id": 115,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 116,
+        "prop": "name",
+        "attributes": {
+            "content": "  I\u2019m fine.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 117,
+        "prop": "name",
+        "attributes": {
+            "content": "  I\u2019d much rather someone be straight with me than be scared of me. So I\u2019m fine.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 118,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "4;5;6;7;8;9"
+        },
+        "endOfOpt": true
+    },
+    {
+        "id": 119,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 120,
+        "prop": "name",
+        "attributes": {
+            "content": "  Did you want... to use this machine?",
+            "name": "???"
+        }
+    },
+    {
+        "id": 121,
+        "prop": "Decision",
+        "attributes": {
+            "options": "If this is indeed the final resting place of the Infected.",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line122"
+        }
+    },
+    {
+        "id": 122,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 123,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 124,
+        "prop": "name",
+        "attributes": {
+            "content": "  ...it is.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 125,
+        "prop": "name",
+        "attributes": {
+            "content": "  Just a second. Let me check the log.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 126,
+        "prop": "name",
+        "attributes": {
+            "content": "  Yes, they cleaned this cabin already. Put her on this slab. Easy now. There.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 127,
+        "prop": "name",
+        "attributes": {
+            "content": "  Then the slab will slide in there, and... wait for it to close, and finally press this button.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 128,
+        "prop": "Decision",
+        "attributes": {
+            "options": "You\u2019re really familiar with it.",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line129"
+        }
+    },
+    {
+        "id": 129,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 130,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 131,
+        "prop": "name",
+        "attributes": {
+            "content": "  Oh, I\u2019ve had to use it a lot.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 132,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Why...?",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line133"
+        }
+    },
+    {
+        "id": 133,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 134,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 135,
+        "prop": "name",
+        "attributes": {
+            "content": "  This is where all of Rhodes Island\u2019s Infected end up.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 136,
+        "prop": "name",
+        "attributes": {
+            "content": "  And if I knew them, if I felt them, if they were my teammates, I always take care of them myself.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 137,
+        "prop": "name",
+        "attributes": {
+            "content": "  The original manual was really complicated, but I wrote down how to use it in my terminal. Just a quick look and I can feel it.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 138,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Feel what?",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line139"
+        }
+    },
+    {
+        "id": 139,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 140,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 141,
+        "prop": "name",
+        "attributes": {
+            "content": "  Hmm... it\u2019s like a chain.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 142,
+        "prop": "Decision",
+        "attributes": {
+            "options": "A chain...?",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line143"
+        }
+    },
+    {
+        "id": 143,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 144,
+        "prop": "name",
+        "attributes": {
+            "content": "  Or I could say it\u2019s like seeing the links between people.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 145,
+        "prop": "name",
+        "attributes": {
+            "content": "  Sending off the people tied to you means untangling the lines around them. The other ends of the threads are still tied to us, but even when the one side is gone, the threads don\u2019t hang down.",
+            "name": "???"
+        }
+    },
+    {
+        "id": 146,
+        "prop": "name",
+        "attributes": {
+            "content": "  It feels like you\u2019ve lost something inside yourself. Something you didn\u2019t know was there, but knowing it won\u2019t come back. ",
+            "name": "???"
+        }
+    },
+    {
+        "id": 147,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Why would you want to feel that?",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line148"
+        }
+    },
+    {
+        "id": 148,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 149,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 150,
+        "prop": "name",
+        "attributes": {
+            "content": "  Because if you know the feeling, it won\u2019t suddenly sting you, right?",
+            "name": "???"
+        }
+    },
+    {
+        "id": 151,
+        "prop": "Decision",
+        "attributes": {
+            "options": "So then you...?",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line154"
+        }
+    },
+    {
+        "id": 152,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 153,
+        "prop": "PlaySound",
+        "attributes": {
+            "key": "$d_gen_walk_n",
+            "volume": 1.0
+        }
+    },
+    {
+        "id": 154,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 155,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 156,
+        "prop": "name",
+        "attributes": {
+            "content": "  Excuse me.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 157,
+        "prop": "name",
+        "attributes": {
+            "content": "  Identifier for Rosmontis, elite operator present in Rhodes Island Integrated Infected Bioprocessing Unit, will expire in fifteen minutes.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 158,
+        "prop": "name",
+        "attributes": {
+            "content": "  I will update you momentarily. Stand in place for about fifteen seconds.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 159,
+        "prop": "name",
+        "attributes": {
+            "content": "  In addition, there is a skirmish taking place by the starboard hull. If possible, please assist after updating your identification code, in order to reduce resource consumption.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 160,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 161,
+        "prop": "name",
+        "attributes": {
+            "content": "  Oh, okay. I\u2019ll go do that.",
+            "name": "Rosmontis"
+        }
+    },
+    {
+        "id": 162,
+        "prop": "name",
+        "attributes": {
+            "content": "  I\u2019m making a note of it in my terminal.",
+            "name": "Rosmontis"
+        }
+    },
+    {
+        "id": 163,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 164,
+        "prop": "name",
+        "attributes": {
+            "content": "  Reminding you for the sixth time, if you would allow access to this system, it could send the information directly to...",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 165,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 166,
+        "prop": "name",
+        "attributes": {
+            "content": "  No.",
+            "name": "Rosmontis"
+        }
+    },
+    {
+        "id": 167,
+        "prop": "name",
+        "attributes": {
+            "content": "  I\u2019m... the only one who can use this.",
+            "name": "Rosmontis"
+        }
+    },
+    {
+        "id": 168,
+        "prop": "Character",
+        "attributes": {}
+    },
+    {
+        "id": 169,
+        "prop": "name",
+        "attributes": {
+            "content": "  Understood.",
+            "name": "PRTS"
+        }
+    },
+    {
+        "id": 170,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Elite operator...?",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line171"
+        }
+    },
+    {
+        "id": 171,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 172,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 173,
+        "prop": "name",
+        "attributes": {
+            "content": "  PRTS means me.",
+            "name": "Rosmontis"
+        }
+    },
+    {
+        "id": 174,
+        "prop": "Decision",
+        "attributes": {
+            "options": "Should I call you Rosmontis?",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line175"
+        }
+    },
+    {
+        "id": 175,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 176,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 177,
+        "prop": "name",
+        "attributes": {
+            "content": "  Yes... Rosmontis.",
+            "name": "Rosmontis"
+        }
+    },
+    {
+        "id": 178,
+        "prop": "name",
+        "attributes": {
+            "content": "  What... about her?",
+            "name": "Rosmontis"
+        }
+    },
+    {
+        "id": 179,
+        "prop": "name",
+        "attributes": {
+            "content": "  I think... I should at least know her name.",
+            "name": "Rosmontis"
+        }
+    },
+    {
+        "id": 180,
+        "prop": "Decision",
+        "attributes": {
+            "options": "FrostNova.",
+            "values": "1"
+        },
+        "targetLine": {
+            "option1": "line181"
+        }
+    },
+    {
+        "id": 181,
+        "prop": "Predicate",
+        "attributes": {
+            "references": "1"
+        },
+        "endOfOpt": false
+    },
+    {
+        "id": 182,
+        "prop": "Character",
+        "attributes": {
+            "name": "avg_npc_042"
+        }
+    },
+    {
+        "id": 183,
+        "prop": "name",
+        "attributes": {
+            "content": "  FrostNova...",
+            "name": "Rosmontis"
+        }
+    },
+    {
+        "id": 184,
+        "prop": "name",
+        "attributes": {
+            "content": "  A good name.",
+            "name": "Rosmontis"
+        }
+    },
+    {
+        "id": 185,
+        "prop": "name",
+        "attributes": {
+            "content": "  Hello, FrostNova.",
+            "name": "Rosmontis"
+        }
+    },
+    {
+        "id": 186,
+        "prop": "name",
+        "attributes": {
+            "content": "  ...Bye bye.",
+            "name": "Rosmontis"
+        }
+    },
+    {
+        "id": 187,
+        "prop": "Dialog",
+        "attributes": {}
+    },
+    {
+        "id": 188,
+        "prop": "Blocker",
+        "attributes": {
+            "fadetime": 3.0,
+            "block": "true"
+        }
+    },
+    {
+        "id": 189,
+        "prop": "Image",
+        "attributes": {}
+    }
+]
