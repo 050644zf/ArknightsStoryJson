@@ -1,546 +1,556 @@
-[
-    {
-        "id": 0,
-        "prop": "HEADER",
-        "attributes": {
-            "key": "title_test",
-            "is_skippable": "true",
-            "fit_mode": "BLACK_MASK"
-        }
-    },
-    {
-        "id": 1,
-        "prop": "Background",
-        "attributes": {
-            "image": "bg_beach",
-            "fadetime": 1.0
-        }
-    },
-    {
-        "id": 2,
-        "prop": "PlayMusic",
-        "attributes": {
-            "intro": "$farce_intro",
-            "key": "$farce_loop",
-            "volume": 0.8,
-            "crossfade": 1.5
-        }
-    },
-    {
-        "id": 3,
-        "prop": "playsound",
-        "attributes": {
-            "key": "$beach",
-            "volume": 0.8,
-            "channel": "beach"
-        }
-    },
-    {
-        "id": 4,
-        "prop": "Delay",
-        "attributes": {
-            "time": 1.0
-        }
-    },
-    {
-        "id": 5,
-        "prop": "Character",
-        "attributes": {}
-    },
-    {
-        "id": 6,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u3042\u3042\u3042\u71b1\u3044\uff01\u3000\u7126\u3052\u3061\u307e\u3046\uff01",
-            "name": "\u8b77\u885bA"
-        }
-    },
-    {
-        "id": 7,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u3046\u308f\uff01\u3000\u4ffa\u306e\u9aea\u304c\uff01",
-            "name": "\u8b77\u885bB"
-        }
-    },
-    {
-        "id": 8,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u30c1\u30c3\u3001\u64a4\u9000\u3001\u64a4\u9000\u3060\uff01",
-            "name": "\u8b77\u885bA"
-        }
-    },
-    {
-        "id": 9,
-        "prop": "Dialog",
-        "attributes": {}
-    },
-    {
-        "id": 10,
-        "prop": "PlaySound",
-        "attributes": {
-            "key": "$d_gen_soldiersrun",
-            "volume": 0.5
-        }
-    },
-    {
-        "id": 11,
-        "prop": "Blocker",
-        "attributes": {
-            "a": 1.0,
-            "r": 0.0,
-            "g": 0.0,
-            "b": 0.0,
-            "fadetime": 0.8,
-            "block": "true"
-        }
-    },
-    {
-        "id": 12,
-        "prop": "Character",
-        "attributes": {}
-    },
-    {
-        "id": 13,
-        "prop": "Blocker",
-        "attributes": {
-            "a": 0.0,
-            "fadetime": 0.8,
-            "block": "true"
-        }
-    },
-    {
-        "id": 14,
-        "prop": "Character",
-        "attributes": {
-            "name": "char_134_ifrit_summer_1"
-        }
-    },
-    {
-        "id": 15,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u30cf\u30cf\u30cf\u3001\u3084\u3063\u3071\u308a\u55a7\u5629\u306f\u304a\u3082\u3057\u308c\u30fc\u306a\u3001\u30c9\u30af\u30bf\u30fc\uff01",
-            "name": "\u30a4\u30d5\u30ea\u30fc\u30bf"
-        }
-    },
-    {
-        "id": 16,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u3042\u3001\u305d\u3046\u3060\u30c9\u30af\u30bf\u30fc\u3001\u3053\u308c\u306f\u30aa\u30de\u30a8\u3092\u52a9\u3051\u308b\u305f\u3081\u306b\u3084\u3063\u305f\u3053\u3068\u3060\u304b\u3089\u306a\u3002\u3057\u304b\u3082\u8a00\u308f\u308c\u305f\u901a\u308a\u3061\u3083\u3093\u3068\u624b\u52a0\u6e1b\u3082\u3057\u305f\u3093\u3060\u305c\u3002\u3060\u304b\u3089\u30b5\u30a4\u30ec\u30f3\u30b9\u306b\u306f\u7d76\u5bfe\u8a00\u3046\u3093\u3058\u3083\u306d\u30fc\u305e\uff01",
-            "name": "\u30a4\u30d5\u30ea\u30fc\u30bf"
-        }
-    },
-    {
-        "id": 17,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u3082\u3057\u30d0\u30ec\u305f\u3089\u307e\u305f\u5c71\u7a0b\u5bbf\u984c\u3092\u51fa\u3055\u308c\u3061\u307e\u3046\uff01",
-            "name": "\u30a4\u30d5\u30ea\u30fc\u30bf"
-        }
-    },
-    {
-        "id": 18,
-        "prop": "Decision",
-        "attributes": {
-            "options": "\u554f\u984c\u306a\u3044\u3002;\u5bbf\u984c\u306f\u9811\u5f35\u308c\u3002",
-            "values": "1;2"
+{
+    "lang": "ja_JP",
+    "eventid": "act3d0",
+    "entryType": "ACTIVITY",
+    "storyCode": "OF-3",
+    "avgTag": "戦闘後",
+    "storyName": "徒競走",
+    "storyInfo": "危機が去った後、ドクターとセイロンはホテルに戻り、ヘラグという名の老剣士と合流した。\nヘラグは何か言いたいことがあるようだった。\n\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
         },
-        "targetLine": {
-            "option1": "line19",
-            "option2": "line21"
-        }
-    },
-    {
-        "id": 19,
-        "prop": "Predicate",
-        "attributes": {
-            "references": "1"
+        {
+            "id": 1,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_beach",
+                "fadetime": 1.0
+            }
         },
-        "endOfOpt": false,
-        "targetLine": "line23"
-    },
-    {
-        "id": 20,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u30d8\u30d8\u3001\u3084\u3063\u3071\u30c9\u30af\u30bf\u30fc\u306f\u3044\u3044\u30e4\u30c4\u3060\u306a\uff01",
-            "name": "\u30a4\u30d5\u30ea\u30fc\u30bf"
-        }
-    },
-    {
-        "id": 21,
-        "prop": "Predicate",
-        "attributes": {
-            "references": "2"
+        {
+            "id": 2,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$farce_intro",
+                "key": "$farce_loop",
+                "volume": 0.8,
+                "crossfade": 1.5
+            }
         },
-        "endOfOpt": false,
-        "targetLine": "line23"
-    },
-    {
-        "id": 22,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u30d5\u30f3\u30c3\u3001\u77e5\u3089\u306d\u3047\u3088\uff01",
-            "name": "\u30a4\u30d5\u30ea\u30fc\u30bf"
-        }
-    },
-    {
-        "id": 23,
-        "prop": "Predicate",
-        "attributes": {
-            "references": "1;2"
+        {
+            "id": 3,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$beach",
+                "volume": 0.8,
+                "channel": "beach"
+            }
         },
-        "endOfOpt": true
-    },
-    {
-        "id": 24,
-        "prop": "Character",
-        "attributes": {
-            "name": "char_134_ifrit_summer_1",
-            "name2": "char_348_ceylon_4#8",
-            "focus": 2.0
-        }
-    },
-    {
-        "id": 25,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u6e90\u77f3\u3092\u52d5\u529b\u306b\u3057\u305f\u706b\u708e\u653e\u5c04\u2026\u2026\u3057\u304b\u3082\u3053\u306e\u51fa\u529b\u3001\u7d20\u6674\u3089\u3057\u3044\u8853\u5e2b\u3067\u3059\u308f\u306d\u3002",
-            "name": "\u30bb\u30a4\u30ed\u30f3"
-        }
-    },
-    {
-        "id": 26,
-        "prop": "Character",
-        "attributes": {
-            "name": "char_134_ifrit_summer_1",
-            "name2": "char_348_ceylon_4#8",
-            "focus": 1.0
-        }
-    },
-    {
-        "id": 27,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u304a\u304a\u3001\u59c9\u3061\u3083\u3093\u3001\u898b\u308b\u76ee\u3042\u308b\u306a\u3002\u30aa\u30ec\u30b5\u30de\u306f\u3059\u3052\u30fc\u3093\u3060\u305c\uff01",
-            "name": "\u30a4\u30d5\u30ea\u30fc\u30bf"
-        }
-    },
-    {
-        "id": 28,
-        "prop": "Character",
-        "attributes": {
-            "name": "char_134_ifrit_summer_1",
-            "name2": "char_348_ceylon_4#2",
-            "focus": 2.0
-        }
-    },
-    {
-        "id": 29,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u308f\u305f\u304f\u3057\u306f\u30bb\u30a4\u30ed\u30f3\u3002",
-            "name": "\u30bb\u30a4\u30ed\u30f3"
-        }
-    },
-    {
-        "id": 30,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u308f\u305f\u304f\u3057\u305f\u3061\u3092\u6551\u3063\u3066\u3044\u305f\u3060\u304d\u3001\u611f\u8b1d\u3044\u305f\u3057\u307e\u3059\u308f\u3002",
-            "name": "\u30bb\u30a4\u30ed\u30f3"
-        }
-    },
-    {
-        "id": 31,
-        "prop": "Character",
-        "attributes": {
-            "name": "char_134_ifrit_summer_1",
-            "name2": "char_348_ceylon_4#2",
-            "focus": 1.0
-        }
-    },
-    {
-        "id": 32,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u304a\u3001\u304a\u3046\u2026\u2026\u5225\u306b\u3044\u3044\u305c\u3002\u3053\u3001\u3053\u308c\u306f\u30aa\u30ec\u30b5\u30de\u306e\u4ed5\u4e8b\u3060\u3057\u306a\u3002",
-            "name": "\u30a4\u30d5\u30ea\u30fc\u30bf"
-        }
-    },
-    {
-        "id": 33,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u304a\u3044\u30c9\u30af\u30bf\u30fc\u3001\u3053\u306e\u59c9\u3061\u3083\u3093\u3063\u3066\u3001\u30a2\u30ec\u3060\u3002\u300c\u30ec\u30a4\u30ae\u30bf\u30c0\u30b7\u30a4\u300d\u3063\u3066\u3084\u3064\u3060\u3088\u306a\u3002\u304a\u3001\u30aa\u30ec\u30b5\u30de\u306f\u3069\u3046\u3059\u308c\u3070\u826f\u3044\u3093\u3060\uff1f",
-            "name": "\u30a4\u30d5\u30ea\u30fc\u30bf"
-        }
-    },
-    {
-        "id": 34,
-        "prop": "Decision",
-        "attributes": {
-            "options": "\u5fae\u7b11\u3080\u3002;\u304a\u8f9e\u5100\u3059\u308b\u3002;\u8e0a\u308b\u3002",
-            "values": "1;2;3"
+        {
+            "id": 4,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
         },
-        "targetLine": {
-            "option1": "line35",
-            "option2": "line35",
-            "option3": "line35"
-        }
-    },
-    {
-        "id": 35,
-        "prop": "Predicate",
-        "attributes": {
-            "references": "1;2;3"
+        {
+            "id": 5,
+            "prop": "Character",
+            "attributes": {}
         },
-        "endOfOpt": false
-    },
-    {
-        "id": 36,
-        "prop": "Character",
-        "attributes": {
-            "name": "char_134_ifrit_summer_1"
-        }
-    },
-    {
-        "id": 37,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u305d\u3046\u304b\u3001\u3058\u3083\u3042\u3084\u3063\u3066\u307f\u308b\u2026\u2026\u3002",
-            "name": "\u30a4\u30d5\u30ea\u30fc\u30bf"
-        }
-    },
-    {
-        "id": 38,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u3042\uff01\u8089\u3092\u713c\u3044\u3066\u308b\u9014\u4e2d\u3060\u3063\u305f\uff01\u3000\u60aa\u3043\u304c\u30aa\u30ec\u30b5\u30de\u306f\u3082\u3046\u884c\u304f\u305c\uff01",
-            "name": "\u30a4\u30d5\u30ea\u30fc\u30bf"
-        }
-    },
-    {
-        "id": 39,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u30c9\u30af\u30bf\u30fc\u3001\u305d\u308c\u306b\u30bb\u30a4\u30ed\u30f3\u3001\u30d0\u30fc\u30d9\u30ad\u30e5\u30fc\u3092\u55b0\u3044\u305f\u304f\u306a\u3063\u305f\u3089\u30aa\u30ec\u30b5\u30de\u306e\u3068\u3053\u306b\u6765\u308b\u3093\u3060\u305c\uff01",
-            "name": "\u30a4\u30d5\u30ea\u30fc\u30bf"
-        }
-    },
-    {
-        "id": 40,
-        "prop": "playsound",
-        "attributes": {
-            "key": "$runsand",
-            "volume": 0.7
-        }
-    },
-    {
-        "id": 41,
-        "prop": "Dialog",
-        "attributes": {}
-    },
-    {
-        "id": 42,
-        "prop": "Character",
-        "attributes": {
-            "fadetime": 1.0,
-            "block": "true"
-        }
-    },
-    {
-        "id": 43,
-        "prop": "Delay",
-        "attributes": {
-            "time": 1.0
-        }
-    },
-    {
-        "id": 44,
-        "prop": "Decision",
-        "attributes": {
-            "options": "\u884c\u3063\u3066\u3057\u307e\u3063\u305f\u3002",
-            "values": "1"
+        {
+            "id": 6,
+            "prop": "name",
+            "attributes": {
+                "content": "   あああ熱い！　焦げちまう！",
+                "name": "護衛A"
+            }
         },
-        "targetLine": {
-            "option1": "line45"
-        }
-    },
-    {
-        "id": 45,
-        "prop": "Predicate",
-        "attributes": {
-            "references": "1"
+        {
+            "id": 7,
+            "prop": "name",
+            "attributes": {
+                "content": "   うわ！　俺の髪が！",
+                "name": "護衛B"
+            }
         },
-        "endOfOpt": false
-    },
-    {
-        "id": 46,
-        "prop": "Character",
-        "attributes": {
-            "name": "char_348_ceylon_4#2"
+        {
+            "id": 8,
+            "prop": "name",
+            "attributes": {
+                "content": "   チッ、撤退、撤退だ！",
+                "name": "護衛A"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 10,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 11,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.8,
+                "block": "true"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 13,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 0.8,
+                "block": "true"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_134_ifrit_summer_1"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "name",
+            "attributes": {
+                "content": "   ハハハ、やっぱり喧嘩はおもしれーな、ドクター！",
+                "name": "イフリータ"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "name",
+            "attributes": {
+                "content": "   あ、そうだドクター、これはオマエを助けるためにやったことだからな。しかも言われた通りちゃんと手加減もしたんだぜ。だからサイレンスには絶対言うんじゃねーぞ！",
+                "name": "イフリータ"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "name",
+            "attributes": {
+                "content": "   もしバレたらまた山程宿題を出されちまう！",
+                "name": "イフリータ"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "Decision",
+            "attributes": {
+                "options": "問題ない。;宿題は頑張れ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line19",
+                "option2": "line21"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line23"
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "   ヘヘ、やっぱドクターはいいヤツだな！",
+                "name": "イフリータ"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line23"
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "   フンッ、知らねぇよ！",
+                "name": "イフリータ"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 24,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_134_ifrit_summer_1",
+                "name2": "char_348_ceylon_4#8",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 25,
+            "prop": "name",
+            "attributes": {
+                "content": "   源石を動力にした火炎放射……しかもこの出力、素晴らしい術師ですわね。",
+                "name": "セイロン"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_134_ifrit_summer_1",
+                "name2": "char_348_ceylon_4#8",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 27,
+            "prop": "name",
+            "attributes": {
+                "content": "   おお、姉ちゃん、見る目あるな。オレサマはすげーんだぜ！",
+                "name": "イフリータ"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_134_ifrit_summer_1",
+                "name2": "char_348_ceylon_4#2",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 29,
+            "prop": "name",
+            "attributes": {
+                "content": "   わたくしはセイロン。",
+                "name": "セイロン"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "   わたくしたちを救っていただき、感謝いたしますわ。",
+                "name": "セイロン"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_134_ifrit_summer_1",
+                "name2": "char_348_ceylon_4#2",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "   お、おう……別にいいぜ。こ、これはオレサマの仕事だしな。",
+                "name": "イフリータ"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "   おいドクター、この姉ちゃんって、アレだ。「レイギタダシイ」ってやつだよな。お、オレサマはどうすれば良いんだ？",
+                "name": "イフリータ"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "Decision",
+            "attributes": {
+                "options": "微笑む。;お辞儀する。;踊る。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line35",
+                "option2": "line35",
+                "option3": "line35"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 36,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_134_ifrit_summer_1"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "name",
+            "attributes": {
+                "content": "   そうか、じゃあやってみる……。",
+                "name": "イフリータ"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "name",
+            "attributes": {
+                "content": "   あ！肉を焼いてる途中だった！　悪ぃがオレサマはもう行くぜ！",
+                "name": "イフリータ"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "name",
+            "attributes": {
+                "content": "   ドクター、それにセイロン、バーベキューを喰いたくなったらオレサマのとこに来るんだぜ！",
+                "name": "イフリータ"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$runsand",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 41,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 42,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 44,
+            "prop": "Decision",
+            "attributes": {
+                "options": "行ってしまった。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line45"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 46,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_348_ceylon_4#2"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "   ドクター、わたくしたちも急ぎ戻りましょう。",
+                "name": "セイロン"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 49,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 51,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_hotel"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 53,
+            "prop": "stopsound",
+            "attributes": {
+                "key": "$beach",
+                "channel": "beach",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 54,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_188_helage_1"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "   ドクター、そしてそこのお嬢さんも無事なようで何よりだ。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_188_helage_1",
+                "name2": "char_348_ceylon_4#5",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "   ご助力、感謝いたしますわ。あの、お名前をお聞かせいただいても……。",
+                "name": "セイロン"
+            }
+        },
+        {
+            "id": 59,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_188_helage_1",
+                "name2": "char_348_ceylon_4#5",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "   ヘラグだ。",
+                "name": "へラグ"
+            }
+        },
+        {
+            "id": 61,
+            "prop": "name",
+            "attributes": {
+                "content": "   ドクターと同じロドスに所属している。",
+                "name": "へラグ"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_188_helage_1"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "   ドクター、時間がないところすまんが、貴殿に伝えておかなければならないことがある。",
+                "name": "へラグ"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 65,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 66,
+            "prop": "Blocker",
+            "attributes": {
+                "block": "true"
+            }
+        },
+        {
+            "id": 67,
+            "prop": "Image",
+            "attributes": {}
         }
-    },
-    {
-        "id": 47,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u30c9\u30af\u30bf\u30fc\u3001\u308f\u305f\u304f\u3057\u305f\u3061\u3082\u6025\u304e\u623b\u308a\u307e\u3057\u3087\u3046\u3002",
-            "name": "\u30bb\u30a4\u30ed\u30f3"
-        }
-    },
-    {
-        "id": 48,
-        "prop": "Dialog",
-        "attributes": {}
-    },
-    {
-        "id": 49,
-        "prop": "Blocker",
-        "attributes": {
-            "a": 1.0,
-            "r": 0.0,
-            "g": 0.0,
-            "b": 0.0,
-            "fadetime": 2.0,
-            "block": "true"
-        }
-    },
-    {
-        "id": 50,
-        "prop": "Character",
-        "attributes": {}
-    },
-    {
-        "id": 51,
-        "prop": "Background",
-        "attributes": {
-            "image": "bg_hotel"
-        }
-    },
-    {
-        "id": 52,
-        "prop": "stopmusic",
-        "attributes": {
-            "fadetime": 1.0
-        }
-    },
-    {
-        "id": 53,
-        "prop": "stopsound",
-        "attributes": {
-            "key": "$beach",
-            "channel": "beach",
-            "fadetime": 1.0
-        }
-    },
-    {
-        "id": 54,
-        "prop": "Blocker",
-        "attributes": {
-            "a": 0.0,
-            "fadetime": 2.0,
-            "block": "false"
-        }
-    },
-    {
-        "id": 55,
-        "prop": "Character",
-        "attributes": {
-            "name": "char_188_helage_1"
-        }
-    },
-    {
-        "id": 56,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u30c9\u30af\u30bf\u30fc\u3001\u305d\u3057\u3066\u305d\u3053\u306e\u304a\u5b22\u3055\u3093\u3082\u7121\u4e8b\u306a\u3088\u3046\u3067\u4f55\u3088\u308a\u3060\u3002",
-            "name": "\uff1f\uff1f\uff1f"
-        }
-    },
-    {
-        "id": 57,
-        "prop": "Character",
-        "attributes": {
-            "name": "char_188_helage_1",
-            "name2": "char_348_ceylon_4#5",
-            "focus": 2.0
-        }
-    },
-    {
-        "id": 58,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u3054\u52a9\u529b\u3001\u611f\u8b1d\u3044\u305f\u3057\u307e\u3059\u308f\u3002\u3042\u306e\u3001\u304a\u540d\u524d\u3092\u304a\u805e\u304b\u305b\u3044\u305f\u3060\u3044\u3066\u3082\u2026\u2026\u3002",
-            "name": "\u30bb\u30a4\u30ed\u30f3"
-        }
-    },
-    {
-        "id": 59,
-        "prop": "Character",
-        "attributes": {
-            "name": "char_188_helage_1",
-            "name2": "char_348_ceylon_4#5",
-            "focus": 1.0
-        }
-    },
-    {
-        "id": 60,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u30d8\u30e9\u30b0\u3060\u3002",
-            "name": "\u3078\u30e9\u30b0"
-        }
-    },
-    {
-        "id": 61,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u30c9\u30af\u30bf\u30fc\u3068\u540c\u3058\u30ed\u30c9\u30b9\u306b\u6240\u5c5e\u3057\u3066\u3044\u308b\u3002",
-            "name": "\u3078\u30e9\u30b0"
-        }
-    },
-    {
-        "id": 62,
-        "prop": "Character",
-        "attributes": {
-            "name": "char_188_helage_1"
-        }
-    },
-    {
-        "id": 63,
-        "prop": "name",
-        "attributes": {
-            "content": "   \u30c9\u30af\u30bf\u30fc\u3001\u6642\u9593\u304c\u306a\u3044\u3068\u3053\u308d\u3059\u307e\u3093\u304c\u3001\u8cb4\u6bbf\u306b\u4f1d\u3048\u3066\u304a\u304b\u306a\u3051\u308c\u3070\u306a\u3089\u306a\u3044\u3053\u3068\u304c\u3042\u308b\u3002",
-            "name": "\u3078\u30e9\u30b0"
-        }
-    },
-    {
-        "id": 64,
-        "prop": "Delay",
-        "attributes": {
-            "time": 0.6
-        }
-    },
-    {
-        "id": 65,
-        "prop": "Dialog",
-        "attributes": {}
-    },
-    {
-        "id": 66,
-        "prop": "Blocker",
-        "attributes": {
-            "block": "true"
-        }
-    },
-    {
-        "id": 67,
-        "prop": "Image",
-        "attributes": {}
-    }
-]
+    ],
+    "OPTIONTRACE": true
+}
