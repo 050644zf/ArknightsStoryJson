@@ -1,0 +1,4508 @@
+{
+    "lang": "zh_CN",
+    "eventid": "act13side",
+    "eventName": "长夜临光",
+    "entryType": "ACTIVITY",
+    "storyCode": "NL-ST-2",
+    "avgTag": "幕间",
+    "storyName": "权与力",
+    "storyInfo": "马克维茨无法忍受锈铜再次被释放的事实，最终选择了拥抱权力。同时，无胄盟主导了对感染者的清洗，然而在玛恩纳的阻挠下，青金大位并未得逞。",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G09",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#4",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "name",
+            "attributes": {
+                "content": "......博士？",
+                "name": "砾"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "name",
+            "attributes": {
+                "content": "您从餐厅回来之后，就一直紧锁着眉头哦？",
+                "name": "砾"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#3"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "如果感到疲惫的话，我可以——",
+                "name": "砾"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 15,
+            "prop": "Decision",
+            "attributes": {
+                "options": "你怎么看待今天这场晚宴？;你觉得，马克维茨是个怎样的人？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line16",
+                "option2": "line21"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line25"
+        },
+        {
+            "id": 17,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "name",
+            "attributes": {
+                "content": "很得体，博士。看来您已经习惯这类交际了？",
+                "name": "砾"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "看得出，虽然常务董事没有亲自露面，但那些企业高管都对您青睐有加......",
+                "name": "砾"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 21,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line25"
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "......如我之前对您说的，因为耀骑士的事件，有一位发言人引咎辞职。",
+                "name": "砾"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "马克维茨是临时顶上这个位置的，在此之前，他只是一个默默无闻的小角色......",
+                "name": "砾"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "虽然他的身上还保留有一些未经洗礼的人情味......不过在现在这个环境，能持续多久可说不太好。",
+                "name": "砾"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 26,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 27,
+            "prop": "Decision",
+            "attributes": {
+                "options": "你认为罗德岛的计划，有可行性吗？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line28"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 29,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#2"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "砾"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#6"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "先不提这个......您真的信任我吗？",
+                "name": "砾"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "联合会的渗透并非某种组织形式上的渗透......在金钱和确实发生改变的社会面前，即使联合会什么也不做，骑士也会倒向资本。",
+                "name": "砾"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#3"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "name",
+            "attributes": {
+                "content": "监正会对罗德岛礼遇的原因几乎和耀骑士密不可分。即使如此，您这样缜密的人......如果不小心对待监正会，是会吃亏的。",
+                "name": "砾"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 37,
+            "prop": "Decision",
+            "attributes": {
+                "options": "感谢你的提醒。;这我当然知道。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line38",
+                "option2": "line38"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 39,
+            "prop": "Decision",
+            "attributes": {
+                "options": "那么，能告诉我你的意见吗？;所以你的意见是？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line40",
+                "option2": "line40"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 41,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 42,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 44,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#3",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "......锈铜骑士......又，复赛了？",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#3",
+                "name2": "avg_npc_222",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 49,
+            "prop": "name",
+            "attributes": {
+                "content": "是的......毕竟骑士协会根据录像和其他骑士的证词，向国民院证明那位感染者不过是自己过度施法导致的疾病恶化。",
+                "name": "企业员工"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "死因也是“矿石病”，锈铜骑士并没有直接责任，所以......",
+                "name": "企业员工"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5",
+                "name2": "avg_npc_222",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 52,
+            "prop": "name",
+            "attributes": {
+                "content": "......就算这是真的......那难道我们就该......",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1",
+                "name2": "avg_npc_222",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 54,
+            "prop": "name",
+            "attributes": {
+                "content": "你先出去吧。",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1",
+                "name2": "avg_npc_222",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "好的。",
+                "name": "企业员工"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 58,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 59,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 300.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_211_1#4",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 61,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 62,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 65,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 67,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "initamount": 0.0,
+                "amount": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G10",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 73,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 75,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "amount": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G09",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "......拨通国民院副审官的......私人电话。",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 81,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_telephonebusy",
+                "channel": "bgs",
+                "volume": 0.6,
+                "loop": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 83,
+            "prop": "soundvolume",
+            "attributes": {
+                "channel": "bgs",
+                "volume": 0.0,
+                "fadetime": 5.0
+            }
+        },
+        {
+            "id": 84,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "电话忙音响了两声。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 87,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "马克维茨突然回想起了自己童年的时候，父亲的书房桌上，摆着一台黄铜色的电话。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 88,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 89,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_transmissionget",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 91,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "......发言人阁下，您想出结果了？",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "只要恰尔内先生不再掌握证据，就可以了，对吧？",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "当然......可是我得提醒您，如果事后暴露了，你我都难辞其咎。",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "name",
+            "attributes": {
+                "content": "所以，杀死他，是最安全的。",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "我向您保证。",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "name",
+            "attributes": {
+                "content": "保证我确实......可以堵住恰尔内先生的嘴。",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "具体手段，您就不要过问了。",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "name",
+            "attributes": {
+                "content": "好吧......如果您能拿出诚意的话。",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "明天我就会着手重审奥尔默·英格拉的案件，在七天之内，只要您能给我一个足够有诚意的答案......",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "奥尔默·英格拉就会从此消失在骑士竞技之中。",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "......诚意。",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "是的。至少，您得向我证明恰尔内先生“确实永远不会背叛”。",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 112,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "马克维茨记得，记得那台黄铜色的电话。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 115,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "那时的电话还没有如今普及，电缆绕过了酒吧、旅社与轰鸣的工地。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 116,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "铃声响起后，悲欢喜怒也会悄然降临。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 117,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "这就是卡西米尔的生活......现代生活。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 118,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 119,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#8"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "......我想您应该明白一件事情......",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "您是在挑衅一位发言人。",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#8"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "您和我心里都明白，我只是临危受命，我在董事会里并没有靠山。",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "但这不代表，我会任您宰割。",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "name",
+            "attributes": {
+                "content": "无胄盟的指挥权......曾在恰尔内先生手里。那么现在......",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "name",
+            "attributes": {
+                "content": "......请您不要误会，我并不是在挑战您的权力。",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 134,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "权力。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 137,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 138,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "我只是提醒您，确保我们日后的合作顺畅。",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "既然您这么说了，那么我也不好咄咄相逼。这确实不太礼貌。",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "name",
+            "attributes": {
+                "content": "只要您做担保就行。奥尔默·英格拉说到底只是一个腐朽贵族，他不值得我们伤了感情，您说是吧？",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "......没错。",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "name",
+            "attributes": {
+                "content": "那么，我们似乎没什么好聊的了。",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "——！马克维茨先生，请等——",
+                "name": "电话那头的声音"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 150,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$transmission",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 151,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 152,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "name",
+            "attributes": {
+                "content": "............",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_212_1"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "......你笑了。",
+                "name": "发言人麦基"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#3",
+                "name2": "avg_npc_212_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 159,
+            "prop": "name",
+            "attributes": {
+                "content": "......！麦基先生，您什么时候......",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#3",
+                "name2": "avg_npc_212_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 161,
+            "prop": "name",
+            "attributes": {
+                "content": "我从没见过你露出那样的笑容，马克维茨兄。",
+                "name": "发言人麦基"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4",
+                "name2": "avg_npc_212_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 163,
+            "prop": "name",
+            "attributes": {
+                "content": "您有什么事？",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4",
+                "name2": "avg_npc_212_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "当然，无胄盟的命令已经正式下达，你我还是和这件事有一些关系的。不过......",
+                "name": "发言人麦基"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "name",
+            "attributes": {
+                "content": "......算了，没什么。继续工作吧。",
+                "name": "发言人麦基"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4",
+                "name2": "avg_npc_212_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "......好，麦基先生。",
+                "name": "发言人马克维茨"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 170,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 171,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_npc_212_1",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 173,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 174,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_212_1#2"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "发言人麦基"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "权力永远令人甘之如饴，是吧，马克维茨。",
+                "name": "发言人麦基"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 178,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 180,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 181,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 183,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 185,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "......晚上的街道还真是适合散步。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "如果不用工作的话。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "报告，莫妮克阁下已经带队到达指定地点。",
+                "name": "无胄盟成员"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "name",
+            "attributes": {
+                "content": "本次行动目标已经明确，现在藏身于这块地区的感染者，约莫在百人左右。",
+                "name": "无胄盟成员"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#2",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 193,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$escape_intro",
+                "key": "$escape_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 194,
+            "prop": "name",
+            "attributes": {
+                "content": "啊，能杀就杀吧，上头说了，按数量算钱。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "name",
+            "attributes": {
+                "content": "老规矩，不许对自己人动手。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#2",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "是。",
+                "name": "无胄盟成员"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 199,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 200,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 202,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 203,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G07",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "name",
+            "attributes": {
+                "content": "喂、喂！我听说有人看见无胄盟了！",
+                "name": "感染者骑士A"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 209,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "什、什么......不会吧，这里可是卡瓦莱利亚基的中心！他们敢大开杀戒吗！？",
+                "name": "感染者骑士B"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 212,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 214,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 215,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G07",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 217,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_430_fartth_1"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "......太少了。",
+                "name": "查丝汀娜"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_103nc_1",
+                "name2": "avg_430_fartth_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "什么，野鬃不是如你们所愿吸引了无胄盟的注意吗？",
+                "name": "瑟奇亚克"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_103nc_1",
+                "name2": "avg_430_fartth_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "但是，数量太少了。",
+                "name": "查丝汀娜"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "name",
+            "attributes": {
+                "content": "是我们看漏了吗......",
+                "name": "查丝汀娜"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_103nc_1#2",
+                "name2": "avg_430_fartth_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 226,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "瑟奇亚克"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_103nc_1",
+                "name2": "avg_430_fartth_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 228,
+            "prop": "name",
+            "attributes": {
+                "content": "做好最坏的准备，远牙。",
+                "name": "瑟奇亚克"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "不要低估无胄盟。",
+                "name": "瑟奇亚克"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 231,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 233,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 234,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G10",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 236,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "快，快走！",
+                "name": "感染者骑士A"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "冷静点，你看到了什么？",
+                "name": "感染者骑士B"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "青、青、青色的长弓......",
+                "name": "感染者骑士A"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "啊、啊！？开他娘什么玩笑！？",
+                "name": "感染者骑士A"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "name",
+            "attributes": {
+                "content": "快，快告诉其他人，分头跑，躲回垃圾场里都没事！",
+                "name": "感染者骑士A"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "name",
+            "attributes": {
+                "content": "让那些普通感染者不要反抗，千万不要反抗——",
+                "name": "感染者骑士A"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 248,
+            "prop": "name",
+            "attributes": {
+                "content": "现、现、现在谁能联系到红松骑士团......快......",
+                "name": "感染者骑士B"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 250,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 251,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 253,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 254,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 256,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 260,
+            "prop": "name",
+            "attributes": {
+                "content": "......哼哼哼......哼哼......",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 262,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 264,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 265,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G07",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 266,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 267,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_216"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "报告，发现三名感染者。",
+                "name": "无胄盟成员"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 271,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 273,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 274,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 276,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "哼哼哼......哼哼......",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 280,
+            "prop": "name",
+            "attributes": {
+                "content": "对了，我有提过董事会的报价吗？",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "name",
+            "attributes": {
+                "content": "一个非法感染者三百枚金币，感染者骑士翻倍。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 282,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 283,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 285,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G07",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 287,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 288,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_216"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "别跑！",
+                "name": "无胄盟成员"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "name",
+            "attributes": {
+                "content": "......该死！被发现了！",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 295,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 296,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 297,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 298,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 299,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 301,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "name",
+            "attributes": {
+                "content": "......一个感染者值一张特锦赛门票。一个感染者骑士值半辆好车。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "那么。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "name",
+            "attributes": {
+                "content": "一个报价单之外的特殊人物，我们该怎么处理呢。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "呃？",
+                "name": "无胄盟成员"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "name",
+            "attributes": {
+                "content": "你们接受了几种手势暗语的训练？",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "啊，我记得好像是三套暗语......",
+                "name": "无胄盟成员"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#2",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "嗯，算了，都忘了吧，如果你们看见我......嗯......打响指的动作。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 315,
+            "prop": "name",
+            "attributes": {
+                "content": "看见我打响指的话，就立刻行动，别犹豫。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 317,
+            "prop": "name",
+            "attributes": {
+                "content": "是。",
+                "name": "无胄盟成员"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "好啦，我上去打声招呼。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 321,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 322,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$nervous_intro",
+                "key": "$nervous_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 325,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "青金罗伊向前走去，路灯几番闪烁。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 327,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "青砖一路延伸，街道上空无一人。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 328,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "冷清的街边有一张路边椅。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 329,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "椅子上又坐着一个冷清的人。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 330,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 331,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 332,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 333,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I02_1",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 338,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 340,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I02_2",
+                "screenadapt": "coverall",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 341,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown3",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 342,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "晚上好，一个美好的夜晚，对吧？",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "打扰您看报了吗？今天的晚报可全是耀骑士的新闻。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 346,
+            "prop": "name",
+            "attributes": {
+                "content": "这附近一个人都没有，真冷清，听说这里最近可不太平......",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "咳。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "您一个人在这里做什么?",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "罗伊......我刚结束工作，只是在这里小憩片刻。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "哎呀，原来您才下班啊，这个时间？您还怪辛苦的。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "name",
+            "attributes": {
+                "content": "不过......您在这里有什么工作？",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "name",
+            "attributes": {
+                "content": "这附近应该只有感染者、非法移民和黑市贩子才对吧。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "只是在等人。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "name",
+            "attributes": {
+                "content": "怎么，你连我等的是谁都要问吗？",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 358,
+            "prop": "name",
+            "attributes": {
+                "content": "不，不，不，怎么会呢。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "等人......嗯，等人。难道是在等一位美丽的女性吗？哈哈，开个玩笑......",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "但我们是有公务在身的。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "得麻烦您和您的朋友，回避一下。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "name",
+            "attributes": {
+                "content": "......你办你的事，我办我的事。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "你明白自己在说什么吧，玛恩纳。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "name",
+            "attributes": {
+                "content": "难道我刚才是在用高卢语说话吗。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "name",
+            "attributes": {
+                "content": "......别这么说话嘛，您在这里，我手下那些人可会因为紧张而失误的。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "name",
+            "attributes": {
+                "content": "唉。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 369,
+            "prop": "name",
+            "attributes": {
+                "content": "......玛恩纳，你知道......如果现在我要杀你......得费多少功夫吗？",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 371,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "罗伊缓缓抬起了手。"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "name",
+            "attributes": {
+                "content": "暗处，无胄盟的刺客已经蓄势待发。"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "name",
+            "attributes": {
+                "content": "也许只是错觉罢，这些深藏不露的隐秘大师，总感觉自己被一览无余。"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "name",
+            "attributes": {
+                "content": "玛恩纳·临光。"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "他们开始祈祷，祈祷罗伊不要发出任何的信号——"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 378,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "name",
+            "attributes": {
+                "content": "——！",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 381,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 382,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 384,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I10",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 387,
+            "prop": "name",
+            "attributes": {
+                "content": "白角持剑的萨卡兹。"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "name",
+            "attributes": {
+                "content": "............哈。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "还真是一位......美丽的女性呢。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "name",
+            "attributes": {
+                "content": "我来晚了吗？",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "name",
+            "attributes": {
+                "content": "不。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 394,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 396,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 397,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I02_3",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown3",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 399,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 400,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 404,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 409,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I02_4",
+                "xScale": 0.85,
+                "yScale": 0.85,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 411,
+            "prop": "ImageTween",
+            "attributes": {
+                "xTo": 0.0,
+                "duration": 20.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 413,
+            "prop": "name",
+            "attributes": {
+                "content": "......看我做什么？",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": "你该去工作了，罗伊。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": ".........嗯......",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "name",
+            "attributes": {
+                "content": "罗伊的视线与萨卡兹相交片刻。"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "name",
+            "attributes": {
+                "content": "他在思考一件事情。"
+            }
+        },
+        {
+            "id": 419,
+            "prop": "name",
+            "attributes": {
+                "content": "一会儿该怎么开溜，才不至于太过丢脸。"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "name",
+            "attributes": {
+                "content": "哈哈，刚才我突然改变了想法。你看，好像后半夜要下雨，我可没带伞。",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "name",
+            "attributes": {
+                "content": "不过......",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "name",
+            "attributes": {
+                "content": "临光家族试图袒护感染者，我可以这么认为吗？",
+                "name": "罗伊"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "name",
+            "attributes": {
+                "content": "请便。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 425,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 427,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 428,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 429,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 431,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 435,
+            "prop": "name",
+            "attributes": {
+                "content": "......您......",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_108"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "name",
+            "attributes": {
+                "content": "玛嘉烈又获胜了。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "name",
+            "attributes": {
+                "content": "你应该阻止她。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 440,
+            "prop": "name",
+            "attributes": {
+                "content": "......很抱歉。",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "name",
+            "attributes": {
+                "content": "如果这是她想要做的，那么我会支持她......我会成为她的支柱。",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 443,
+            "prop": "name",
+            "attributes": {
+                "content": "......你？一个萨卡兹......",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "name",
+            "attributes": {
+                "content": "感染者的事情，我就当已经通知过罗德岛了。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "感谢您出手相助......无胄盟，是个强敌。",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "如果他执意要杀死躲藏在这附近的所有感染者，我想我们没有办法阻止。",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 450,
+            "prop": "name",
+            "attributes": {
+                "content": "......我只是坐在这罢了。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "name",
+            "attributes": {
+                "content": "仅此而已。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "......如果您想知道玛嘉烈这几年所遭遇的，我愿意把我知道的都告诉您。",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "name",
+            "attributes": {
+                "content": "当然，如果您愿意亲口问她的话......",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1#2",
+                "name2": "avg_npc_108",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 456,
+            "prop": "name",
+            "attributes": {
+                "content": "......我不关心。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "看到她的眼神，我就已经明白了。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "name",
+            "attributes": {
+                "content": "她的父亲母亲，甚至是过去的我，谁都拥抱过那样流光溢彩的时代。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 459,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1#2",
+                "name2": "avg_npc_108",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 460,
+            "prop": "name",
+            "attributes": {
+                "content": "......您......确实是她真正的家人。",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 462,
+            "prop": "name",
+            "attributes": {
+                "content": "......你已经知道了该知道的，这之后，我不会再干预半分。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "name",
+            "attributes": {
+                "content": "你可以告诉玛嘉烈，告诉那个......“罗德岛”。告诉他们，大骑士领光鲜的外表下，腐烂到了什么地步。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "name",
+            "attributes": {
+                "content": "但更切实际的建议是，早日离开大骑士领，离开卡西米尔。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "name",
+            "attributes": {
+                "content": "尽力逃离这个时代吧，这才是每个人为数不多的正确选择。",
+                "name": "玛恩纳"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 467,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 468,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 300.0,
+                "fadetime": 3.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 470,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 471,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1"
+            }
+        },
+        {
+            "id": 472,
+            "prop": "name",
+            "attributes": {
+                "content": "......真是个复杂的人。",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 474,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 476,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 477,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 478,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G10",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 480,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$darkness02_intro",
+                "key": "$darkness02_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 481,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 482,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "name",
+            "attributes": {
+                "content": "你......别过来！",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 486,
+            "prop": "name",
+            "attributes": {
+                "content": "该死的，你是无胄盟吗？你——",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 487,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "不、不对，你是萨卡兹！？你是谁？",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 490,
+            "prop": "name",
+            "attributes": {
+                "content": "我没有敌意，无胄盟已经离开了这里。",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 492,
+            "prop": "name",
+            "attributes": {
+                "content": "你、你在说什么......",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_094",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 494,
+            "prop": "name",
+            "attributes": {
+                "content": "......刚才，刚才这个萨卡兹拦在了那些无胄盟面前......",
+                "name": "感染者难民"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "name",
+            "attributes": {
+                "content": "你是什么人？你怎么敢和无胄盟作对......？",
+                "name": "感染者难民"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_094",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 497,
+            "prop": "name",
+            "attributes": {
+                "content": "......我是感染者医师。",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 498,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 499,
+            "prop": "name",
+            "attributes": {
+                "content": "一个萨卡兹，自称感染者医师？这......",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_094",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 501,
+            "prop": "name",
+            "attributes": {
+                "content": "......这也太假了......我反而觉得她没有在骗我......",
+                "name": "感染者难民"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 503,
+            "prop": "name",
+            "attributes": {
+                "content": "好吧......那你打算做什么？",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 504,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 505,
+            "prop": "name",
+            "attributes": {
+                "content": "卡西米尔有提供感染者医疗的手段......既然如此，为什么你们还会躲藏在这里？在这座城市的夹缝中......",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 507,
+            "prop": "name",
+            "attributes": {
+                "content": "......你不是卡西米尔人？",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "不，说不定大部分卡西米尔人都不知道......慢着，你说你是感染者医师......",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "你、你是零号地块的......！？",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 512,
+            "prop": "name",
+            "attributes": {
+                "content": "我来自一家医疗企业，你们说的零号地块......是指感染者收容地区吗？",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "name",
+            "attributes": {
+                "content": "监正会出资建立了检查并治疗感染者骑士的收容治疗中心......",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 515,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 516,
+            "prop": "name",
+            "attributes": {
+                "content": "闪灵没有急着继续说下去。"
+            }
+        },
+        {
+            "id": 517,
+            "prop": "name",
+            "attributes": {
+                "content": "她从面前的感染者眼里看到了疑惑、对自己的不信任、恐惧，以及丝毫的期许。"
+            }
+        },
+        {
+            "id": 518,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 519,
+            "prop": "name",
+            "attributes": {
+                "content": "......你真的......不是卡西米尔人，也对，他们是很讨厌萨卡兹的，呃，抱歉，但事实如此。",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 520,
+            "prop": "name",
+            "attributes": {
+                "content": "......你在那里治疗过感染者吗？",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 521,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "是的。",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 524,
+            "prop": "name",
+            "attributes": {
+                "content": "你难道不感到奇怪吗......",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 525,
+            "prop": "name",
+            "attributes": {
+                "content": "那么大一个移动平台，几乎成了感染者骑士的牢笼......你知道吧，感染者骑士在那里接受检查、治疗，同时也在那里“生活”。",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "name",
+            "attributes": {
+                "content": "如果那种状态能被称为“生活”的话。",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 528,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 529,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 530,
+            "prop": "name",
+            "attributes": {
+                "content": "好，看来你们这些外来者连这件事都不清楚。",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 531,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 532,
+            "prop": "name",
+            "attributes": {
+                "content": "但如果把所有的感染者都集中在那里生活......",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 533,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 534,
+            "prop": "name",
+            "attributes": {
+                "content": "地方不够，对吧？",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 535,
+            "prop": "name",
+            "attributes": {
+                "content": "还能赚钱的感染者，会重新走上赛场，或是继续进行一些......劳务工作，什么样的都有。",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 536,
+            "prop": "name",
+            "attributes": {
+                "content": "还有些当不上骑士的，会像奴隶一样被派去做一些黑工......矿工，搬运工，而且都是危险的环境。",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "而如果受了伤，连这些基本的工作都做不了......",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "name",
+            "attributes": {
+                "content": "......你猜猜看，外乡人，你猜猜看那些感染者都从零号地块去哪儿了？",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 539,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 540,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 15.0,
+                "randomness": 50.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "name",
+            "attributes": {
+                "content": "......！",
+                "name": "闪灵"
+            }
+        },
+        {
+            "id": 542,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 543,
+            "prop": "name",
+            "attributes": {
+                "content": "你们以为那里是医院，骑士们觉得那里是一座监狱。但我告诉你，都不是。",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 544,
+            "prop": "name",
+            "attributes": {
+                "content": "感染者被送去那里，洗干净尊严，剥下价值，最后送上砧板，任人宰割。",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "name",
+            "attributes": {
+                "content": "那是一座漂亮的屠宰场，萨卡兹。",
+                "name": "感染者骑士"
+            }
+        },
+        {
+            "id": 546,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 547,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 548,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 549,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 550,
+            "prop": "Image",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": true
+}
