@@ -1,0 +1,5783 @@
+{
+    "lang": "ja_JP",
+    "eventid": "story_susuro_set_1",
+    "eventName": "精鋭医師",
+    "entryType": "NONE",
+    "storyCode": null,
+    "avgTag": "幕間",
+    "storyName": "精鋭医師",
+    "storyInfo": "リターニア事務所から緊急支援の要請を受け、ススーロはロドスの医療チームを率いて現場へ支援に向かう。怪物の襲撃、負傷者、感染者……災いはすでに現実のものとなっている。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_desert_1",
+                "screenadapt": "coverall",
+                "fadetime": 0.6
+            }
+        },
+        {
+            "id": 5,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$farce_intro",
+                "key": "$farce_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 7,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 9,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 10,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 11,
+            "prop": "name",
+            "attributes": {
+                "content": "何時っすか？",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "四時だ、何回訊くんだよ。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 15,
+            "prop": "name",
+            "attributes": {
+                "content": "俺は焦ってるんすよ！　焦らない方がどうかしてますよ！",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 17,
+            "prop": "name",
+            "attributes": {
+                "content": "焦っても意味ないだろ？　落ち着けよ。ロドス本艦から急行してくれてるんだし、無事に到着してくれるだけでありがたいことだ。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "本艦からここまでの距離を、たった三日で駆けつけるチームを派遣するなんてスゴいっすね、本艦てのは。",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 21,
+            "prop": "name",
+            "attributes": {
+                "content": "本艦に行ったことはないのか？",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "ないっすね。交通費は高く付きますし、ここでやらなきゃいけないこともたくさんありますんで。",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 25,
+            "prop": "name",
+            "attributes": {
+                "content": "本艦は大型の浮揚移動装置を積んでる。見たことないだろ？　あれはかなりの速度が出るからな。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 27,
+            "prop": "name",
+            "attributes": {
+                "content": "浮揚？　空飛ぶ車ですか？",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 29,
+            "prop": "name",
+            "attributes": {
+                "content": "あれは車じゃないぞ……俺も何と呼べばいいかわからないが。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 31,
+            "prop": "name",
+            "attributes": {
+                "content": "あー、塔の術師のお偉方が使ってるあのハイテクっすか？　空を漂うあの──",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "いやいやそれとも違う！",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "name",
+            "attributes": {
+                "content": "ううむ、今この話はやめよう。俺だってそんなに何度も見た訳じゃないから、うまく説明できない。到着した時に見れば分かるさ。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "name",
+            "attributes": {
+                "content": "そんなに手持ち無沙汰なら、もう一度車両の点検でもしてろ。急いで帰らなきゃならないんだ、万が一にもトラブルが起きちゃ困る。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 37,
+            "prop": "name",
+            "attributes": {
+                "content": "はいはい、わかったっすよ……ボスはあなたっす、仰せのままに。",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 39,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "times": 1.0,
+                "fadetime": 0.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 41,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$reinforcement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 42,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$a_bat_sleeptank",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 43,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 44,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 45,
+            "prop": "name",
+            "attributes": {
+                "content": "そういえば、今回本艦から来るのはどんな人なんすか？",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "本艦に行ったことすらないのに、名前を言ったところでわからないだろうが。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "name",
+            "attributes": {
+                "content": "俺たちが送ったのは緊急救護要請だ。誰が来ようと、間違いなく医療部の精鋭だろうな。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 49,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "だけど、今回はかなりの大仕事になります。相当な精鋭じゃないと無理っすよ。",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 52,
+            "prop": "name",
+            "attributes": {
+                "content": "お前が心配することじゃない。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 54,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 55,
+            "prop": "name",
+            "attributes": {
+                "content": "おっ、来たぞ。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 57,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 58,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_doorclose",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 59,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 60,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "xpos": 100.0,
+                "times": 1.0,
+                "fadetime": 0.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 61,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 62,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "name",
+            "attributes": {
+                "content": "あの乗り物……スゴいっすね。本艦にはあんなものまであんのか。勉強になったっす。",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 66,
+            "prop": "name",
+            "attributes": {
+                "content": "ほら、迎えに行くぞ。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 67,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 68,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 69,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 70,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_dooropen",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 71,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 72,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "リターニアへようこそ。ここの事務所責任者フィレガスだ。フィレと呼んでくれ。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 75,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "初めまして、私は本艦所属の医療オペレーター、ススーロ。彼女たちは私のアシスタントだよ。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "character",
+            "attributes": {
+                "name": "char_016_medic"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "よろしくお願いします。",
+                "name": "医療オペレーター"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "何ぼうっとしてる、挨拶しろよ。",
+                "name": "事務所オペレーターB"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ！　おっと、そうでした。",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "name",
+            "attributes": {
+                "content": "俺は運転手……いや、俺はここの事務所駐在のオペレーターっす。そんで、コードネームはピストンっす。",
+                "name": "事務所オペレーターA"
+            }
+        },
+        {
+            "id": 88,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_298_sussu_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "状況は非常に複雑だ。時間がない、先に車に乗ってくれ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "今回の事件に関する詳細は、資料をプリントしてある。まずは車内で目を通してくれ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_298_sussu_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "わかった、ありがとう。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "name",
+            "attributes": {
+                "content": "機材を持ってきてるから、車に積むのを手伝ってくれる？",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "わ……わかったっす。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 97,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "character",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 100,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 101,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.1
+            }
+        },
+        {
+            "id": 103,
+            "prop": "name",
+            "attributes": {
+                "content": "二時間後"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_016_medic",
+                "name2": "avg_298_sussu_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "二つ目の資料を見せて。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_016_medic",
+                "name2": "avg_298_sussu_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 107,
+            "prop": "name",
+            "attributes": {
+                "content": "どうぞ。",
+                "name": "医療オペレーター"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_016_medic",
+                "name2": "avg_298_sussu_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 109,
+            "prop": "name",
+            "attributes": {
+                "content": "このレポートをチェックして、ほかに準備が必要な機材がないか確認してくれる？",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_016_medic",
+                "name2": "avg_298_sussu_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 111,
+            "prop": "name",
+            "attributes": {
+                "content": "わかりました。",
+                "name": "医療オペレーター"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 113,
+            "prop": "name",
+            "attributes": {
+                "content": "（ちょっと！）",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 115,
+            "prop": "name",
+            "attributes": {
+                "content": "どうした、何をコソコソと──",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 117,
+            "prop": "name",
+            "attributes": {
+                "content": "（声が大きいっす！　もうちょっとこっちへ寄って……）",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "name",
+            "attributes": {
+                "content": "派遣されてくるのは精鋭だって言ったじゃないすか、どうしてあんなお嬢ちゃんがチームリーダーなんすか？",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 120,
+            "prop": "name",
+            "attributes": {
+                "content": "言葉には気を付けろ。ボーナス減らすぞ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "いつから人を見かけで判断するようになったんだ？　オペレーターマニュアルは読んでないのか？",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "わからないなら黙っとけ、あの人は本艦医療部の本物の精鋭だよ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "はいはい、わかったっす……俺が悪かったっすよ。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "フィレさん。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 128,
+            "prop": "name",
+            "attributes": {
+                "content": "ん？",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 130,
+            "prop": "name",
+            "attributes": {
+                "content": "資料は見終わったんだけど、いくつか質問があるんだ。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "今回医療援助が必要なほど危険な状態にある人は、そのほとんどが鉱石病感染者ではないみたいだけど、いったい何があったの？",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 133,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ。つまりこういうことだ。リターニアの公式の発表では天災が都市の破壊や死傷者をもたらしたとされているが、実際の状況はそれよりも複雑なんだ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 135,
+            "prop": "name",
+            "attributes": {
+                "content": "天災トランスポーターの仕事にミスがあったとか？",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 137,
+            "prop": "name",
+            "attributes": {
+                "content": "今のところは……そうじゃない。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "name",
+            "attributes": {
+                "content": "今回、天災からの退避行動自体には何の問題もなかった。少なくともプロセスに手違いはなかった。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "name",
+            "attributes": {
+                "content": "ただ唯一の誤算は……誰も予想していなかったことだが、天災のハリケーンの進路に、大きなハリノミの巣が最低でも十個はあったってことだ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "その村は事前に移動を開始していたんだが、天災から逃げた数百匹のハリノミが移動中の隊列に突っ込んでいったんだよ……",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_016_medic",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 142,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "name",
+            "attributes": {
+                "content": "ハリノミ？　あの一メートル以上はある肉食の虫ですか？",
+                "name": "医療オペレーター"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "それが数百匹！？",
+                "name": "医療オペレーター"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#6",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 146,
+            "prop": "name",
+            "attributes": {
+                "content": "……なるほど……",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "死傷者数はわかってるの？",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 150,
+            "prop": "name",
+            "attributes": {
+                "content": "リターニア当局はまだ正確な数字を出してないんだ……",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "name",
+            "attributes": {
+                "content": "もう二日経ってるが、まだ結論は出ていない……",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "つまり現時点では、死傷者数は集計できないってことだね。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 155,
+            "prop": "name",
+            "attributes": {
+                "content": "そうだ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "name",
+            "attributes": {
+                "content": "領地の衛兵が多くのケガ人を付近の街に移動させたが、俺たちじゃ全部の街の状況を調べる余裕はなかった。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "事務所に配備されてる医療物資はまだ足りてる？　ハリノミの毒素を処理するための解毒剤の在庫は？　手術器具のメンテナンス状況は？",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "name",
+            "attributes": {
+                "content": "地元の医療救急隊の動員状況は？　この資料に書かれていない情報も一通り知りたいんだ。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "avg_npc_090",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 161,
+            "prop": "name",
+            "attributes": {
+                "content": "それは……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 163,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 164,
+            "prop": "name",
+            "attributes": {
+                "content": "医療物資に関しては、ひとまず問題ないと言える。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "地元の権力者が真っ先に救助活動を開始し、ロドスの事務所も依頼を受けた後に充分な応急救助物資を得られた。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "name",
+            "attributes": {
+                "content": "医療設備の状態も問題ないが、自動で動いてくれるわけじゃないんでな。俺たちの人手不足の方は深刻だ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "name",
+            "attributes": {
+                "content": "事務所が置かれている街の医者はよく訓練されていると言えるが、緊急事態対応の経験に乏しい。これほどの大災害は多くの者が初めての様子だ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "街の人口は元よりそれほど多くないから、診療所は街全体でたったの三箇所、手術のできる医者となるともっと少ない。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "name",
+            "attributes": {
+                "content": "多くの負傷者が、手術台にたどり着くまで持たない。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "name",
+            "attributes": {
+                "content": "今、事務所で多数の難民を受け入れていることもあり、状況は予断を許さない。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "それに、この混乱した状況では、感染の有無をすぐさま判別することができない。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "name",
+            "attributes": {
+                "content": "搬送される患者の中には当然感染者もいる……感染者が亡くなった後の状況がどうなるか……俺の言いたいことはわかるだろ？",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#6",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "……うん。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#6",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "まだ少し距離がある、皆休めるときに休んでてくれ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 178,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 181,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 182,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_ltstrongpoint",
+                "screenadapt": "coverall",
+                "fadetime": 0.6
+            }
+        },
+        {
+            "id": 183,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 184,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$escape_intro",
+                "key": "$escape_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 185,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 187,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$drift",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 188,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 189,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "着いたっす。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 192,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_016_medic",
+                "name2": "char_013_riop",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 193,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 194,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_016_medic",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 195,
+            "prop": "name",
+            "attributes": {
+                "content": "すでにたくさんの人がいますね。",
+                "name": "医療オペレーター"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_016_medic",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "負傷者は事務所の近くに移され、ほかのスタッフたちが対応しているはずだ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "ピストン、お前はここにいろ。後で補給車が来るから、お前はここでそれに対応するんだ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 200,
+            "prop": "name",
+            "attributes": {
+                "content": "ここでただ待ってろって言うんすか？　そんな──",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 202,
+            "prop": "name",
+            "attributes": {
+                "content": "この手の任務は初めてだろ？　現場はお前が想像するよりずっと過酷だ……いいからここで医療物資の受け取りと分配をしておけ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "冗談っしょ。お嬢ちゃんたちですら行くってのに、俺みたいな大の男が何をビビるっていうんすか。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "……青二才のくせに。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "name",
+            "attributes": {
+                "content": "いいだろう、後悔するなよ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "musicvolume",
+            "attributes": {
+                "volume": 0.0,
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 209,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 210,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 213,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_ltstreet1",
+                "screenadapt": "coverall",
+                "fadetime": 0.6
+            }
+        },
+        {
+            "id": 214,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 215,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 217,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "街の広場──元々さほど広くないその場所に、負傷者が所狭しと横たわっている。その数は医療処理能力の限界を遥かに超えていた。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 220,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 221,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "惨劇が起きてから今日で三日目。ただれた傷口から漂う腐敗臭と、血の鉄錆臭が辺りに充満し、息が詰まる。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 222,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 223,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 226,
+            "prop": "musicvolume",
+            "attributes": {
+                "volume": 0.4,
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 227,
+            "prop": "name",
+            "attributes": {
+                "content": "水……水をくれ……",
+                "name": "大怪我を負った患者"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "name",
+            "attributes": {
+                "content": "パパ！　パパ！",
+                "name": "子供"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "ゴホッ……ゴホッ……",
+                "name": "血まみれの患者"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "誰か来てください！　この感染者はもう持ちません！",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "感染者？　よ、寄るな！",
+                "name": "一般患者"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたはなぜここにいるのですか？　早く治療エリアに戻ってください。",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "衛兵！　衛兵！　どこですか！",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 238,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 239,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "……なんてこった……これは……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "想像以上だな。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "name",
+            "attributes": {
+                "content": "一昨日来た時、あの敷地はまだ地元商会の貨物ターミナルだった。今は一般患者の治療エリアに転用されたみたいだな。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "医者の人数は限られている。医療室で優先的に緊急措置を受けられるのは相当な重傷者だけだ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#3",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 246,
+            "prop": "name",
+            "attributes": {
+                "content": "この地面に横たわっている人たちは……どういう状況なの？",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#3",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 248,
+            "prop": "name",
+            "attributes": {
+                "content": "恐らく全員感染者だろう。小さい街だ、感染者収容エリアはない。感染者と一般人を、同じ所に置いておくわけにはいかないということだろうな……",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 250,
+            "prop": "name",
+            "attributes": {
+                "content": "だからといって彼らをこんなふうに広場に放っておくの？　フィレさん、事務所の倉庫にスペースを作れる？",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 252,
+            "prop": "name",
+            "attributes": {
+                "content": "問題ない、すぐに中の物を運び出すよう手配する。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 254,
+            "prop": "name",
+            "attributes": {
+                "content": "それと重傷の感染者を収容する独立したスペースが必要だよ。隔離されている場所が望ましいんだけど……",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 256,
+            "prop": "name",
+            "attributes": {
+                "content": "それなら宿舎を空けるしかないな、少し時間をくれ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "わかった、よろしくお願い。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 260,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 261,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 262,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "一班は倉庫へ、感染者の状況を確認。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 264,
+            "prop": "name",
+            "attributes": {
+                "content": "二班、三班は私と一緒に、機材を手術室へ運んで！",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "name",
+            "attributes": {
+                "content": "患者の分類とそれに応じた場所割りはあなたに任せるよ。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 266,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "name",
+            "attributes": {
+                "content": "は、はい。",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "name",
+            "attributes": {
+                "content": "お、俺も手伝うっす。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "name",
+            "attributes": {
+                "content": "はい、お願いします。この人たちを中へと運びます。",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 275,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 276,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 277,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 280,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_ri_1",
+                "screenadapt": "coverall",
+                "fadetime": 0.6
+            }
+        },
+        {
+            "id": 281,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 282,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$nervous_intro",
+                "key": "$nervous_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 283,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 285,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_016_medic",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 286,
+            "prop": "name",
+            "attributes": {
+                "content": "アーツを使って傷口の癒合を速める前に、必ず毒素をきれいに抜くこと。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "name",
+            "attributes": {
+                "content": "もし傷口がそこまでひどくない場合は、できるだけアーツの使用は控えて。ここじゃ医者の体力が一番貴重な資源だし、効率的に配分することでより多くの命を救えるからね。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_016_medic",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 289,
+            "prop": "name",
+            "attributes": {
+                "content": "わかりました。",
+                "name": "医療オペレーター"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 291,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "まずはこっちをお願いします！　重篤患者がいます！",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 295,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 296,
+            "prop": "name",
+            "attributes": {
+                "content": "状況は？",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "name",
+            "attributes": {
+                "content": "うっ……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 300,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "家族を守ろうとしてハリノミに腕を噛みちぎられたようです。搬送時にはすでに意識を失っていました。",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "name",
+            "attributes": {
+                "content": "感染者です。ですが病状はまだ安定しています。",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "……彼の腕は？　回収できてる？",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "name",
+            "attributes": {
+                "content": "（首を横に振る）",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "name",
+            "attributes": {
+                "content": "切断面はすでに細菌に感染してる。左腕にも広範囲にわたって肉眼で確認できるただれがあるから、一部切断の必要があるかもしれない。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "name",
+            "attributes": {
+                "content": "……それってつまり両腕とも……",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "name",
+            "attributes": {
+                "content": "ここは私に任せて、あなたは二班を手伝いに行って。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 313,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "name",
+            "attributes": {
+                "content": "お願いします！",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 315,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 316,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 317,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 318,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5"
+            }
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "ぼうっとしてないで、感染者の応急処置の準備を。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "name",
+            "attributes": {
+                "content": "患者の体表結晶は咽喉部、血液検査をして。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 321,
+            "prop": "name",
+            "attributes": {
+                "content": "腕の鱗に注意、サヴラ専用のメスを準備。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "name",
+            "attributes": {
+                "content": "部屋の明かりが暗すぎる。ピストンさん、発電機の状況確認をお願いできる？",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 325,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "はい、了解っす！",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 328,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 329,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 330,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "character",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 333,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 334,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.1
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "三時間後"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "name",
+            "attributes": {
+                "content": "事務所の医療室内、重傷患者の手術はいまだ終わらない。"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 339,
+            "prop": "name",
+            "attributes": {
+                "content": "先生……私は助からないのでしょうか？　教えてください先生……",
+                "name": "負傷者"
+            }
+        },
+        {
+            "id": 340,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "name",
+            "attributes": {
+                "content": "腔内の出血が多い、吸引器の瓶を交換して。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 342,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "お願いします……先生、この指輪を私の妻に……お願いします……",
+                "name": "負傷者"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは生き延びるよ、だから頑張って。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 346,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "ガーゼがなくなった、持ってきて！",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "う……嘘はやめてください、わかってますから……",
+                "name": "負傷者"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "喋らないで！　あなたは生き延びられる、私が保証するよ！",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "ここを押さえて、縫合する。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_016_medic"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "name",
+            "attributes": {
+                "content": "オキシドールがなくなりました、誰か倉庫へ行って取ってきてください！",
+                "name": "医療オペレーター"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "name",
+            "attributes": {
+                "content": "ピストンさん！",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 358,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "は、はい！　す、すぐに行くっす。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 360,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 361,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 362,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "times": 1.0,
+                "fadetime": 0.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "character",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 364,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 367,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 369,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "name",
+            "attributes": {
+                "content": "出血は止まった、あとは任せるよ。私はほかの人を見てくる。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "わかりました。",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 374,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 375,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "こちらにお願いします隊長！　今搬送された患者が危険です！",
+                "name": "医療オペレーター"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5"
+            }
+        },
+        {
+            "id": 378,
+            "prop": "name",
+            "attributes": {
+                "content": "今行く。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 380,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 381,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 382,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 383,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 384,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#5",
+                "fadetime": 0.3
+            }
+        },
+        {
+            "id": 385,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 387,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "担架に横たわる男性は瀕死の状態で、思わず目を覆いたくなる惨状であった。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 390,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 391,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "彼の腹部には大きく引き裂かれた傷口があり、腹腔の中身は先ほどまでリターニアの冷たい風にさらされていた。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 392,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 393,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "内臓の一部は明らかにハリノミの毒液に侵されており、その臭いは吐き気を催すほどだった。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 394,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 395,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "毒液で神経を刺激されているせいか、そんな状態にもかかわらず彼の意識はいまだはっきりしており、不気味な色をした体液が彼の口と鼻孔から絶えず滴り落ちている。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 396,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 397,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 399,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "ゴフッ……グブゥ……",
+                "name": "瀕死の患者"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "avg_298_sussu_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 402,
+            "prop": "name",
+            "attributes": {
+                "content": "胸腹部損傷、腹部開放性外傷。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "中に入れて、優先対応。まずは彼の食道と気管を切開するよ！",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 404,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "avg_298_sussu_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "……なんだこれは……なんなんだよ……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "……こんなの……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "avg_298_sussu_1#5",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 409,
+            "prop": "name",
+            "attributes": {
+                "content": "立ち止まらないで！　ほかにも病人はいるんだよ！",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "name",
+            "attributes": {
+                "content": "臓器破損、後腹膜出血の有無を確認して！　早く！",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "avg_298_sussu_1#5",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 412,
+            "prop": "name",
+            "attributes": {
+                "content": "……お……俺は。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 413,
+            "prop": "name",
+            "attributes": {
+                "content": "すみません……お……俺は。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 414,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "avg_298_sussu_1#6",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "大丈夫、お疲れ様。あなたは外で休んでて。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 416,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "avg_298_sussu_1#6",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 417,
+            "prop": "name",
+            "attributes": {
+                "content": "ありがとう……ございます……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 419,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 420,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_298_sussu_1#6",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 422,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 423,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 424,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 427,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 428,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_ltstreet1",
+                "screenadapt": "coverall",
+                "fadetime": 0.6
+            }
+        },
+        {
+            "id": 429,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 430,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$drift_intro",
+                "key": "$drift_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 431,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 433,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_empty"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 435,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 437,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 439,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 440,
+            "prop": "name",
+            "attributes": {
+                "content": "……ヤバすぎんだろ……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "name",
+            "attributes": {
+                "content": "オエッ……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 444,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 445,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "リターニアの若者の張り詰めていた神経がようやく緩んだ。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 448,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 449,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "建物の裏路地で嘔吐し、彼は不安から解放されるのを感じながら、朝食にパンを多めに食べてしまったことを非常に後悔していた。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 450,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 451,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 453,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 454,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "……本艦の人は、普段からこんなことに立ち向かってるのかよ。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 456,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "……うっ……まただ……オエェッ……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 459,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 460,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 462,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 463,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 465,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 467,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 468,
+            "prop": "name",
+            "attributes": {
+                "content": "大丈夫か？",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 470,
+            "prop": "name",
+            "attributes": {
+                "content": "……だ、大丈夫っす。まだあんまり慣れてないもんで……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 472,
+            "prop": "name",
+            "attributes": {
+                "content": "ほら、タオルだ。顔を拭け。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 474,
+            "prop": "name",
+            "attributes": {
+                "content": "ふぅ……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "name",
+            "attributes": {
+                "content": "……ウグッ……恥ずかしいっすよ。現場でまっ先にダメになるのがまさか俺だなんて。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 476,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 477,
+            "prop": "name",
+            "attributes": {
+                "content": "気にするな、お前はよくやった。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 478,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 479,
+            "prop": "name",
+            "attributes": {
+                "content": "これでよくやったなんて言えるんすか？",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 481,
+            "prop": "name",
+            "attributes": {
+                "content": "お前は自ら困難な任務を買って出て半日も耐えたんだ。お前は専門の医療オペレーターじゃないし、俺は三十分で参っちまうと予想してたんだがな。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 482,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "あのお嬢ちゃん……いや、あの人は、ほんとにスゴいっすね。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 485,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ、言ったろ。彼女たちは本艦の精鋭だ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 486,
+            "prop": "name",
+            "attributes": {
+                "content": "あのススーロという医療オペレーターは、数年前のパレルモ事件の経験者だ。甘く見るな。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 487,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "パレルモ事件？　あっ……当時シラクーザを震撼させたあの事件っすか？",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "name",
+            "attributes": {
+                "content": "源石工場が爆発したあの？　確か多くの一般人が急性感染し、医療体制が整ってなかったせいで急性感染者が大量に死亡して……街の大半が崩壊寸前だったとか。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 490,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 491,
+            "prop": "name",
+            "attributes": {
+                "content": "あれこそまさにこの世の地獄だよ。想像してみろ、大量の感染者が急性発作を起こし、至る所崩れ始めた感染者の遺体だらけ、そして空一面に活性粉塵が舞う恐ろしい光景を。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 492,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 493,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 494,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 495,
+            "prop": "name",
+            "attributes": {
+                "content": "パレルモ事件の経験者の多くは、深刻なトラウマを抱えている。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "name",
+            "attributes": {
+                "content": "あの人にとっちゃ、今日の光景なんて可愛いもんだろうな。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 497,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 498,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 499,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 501,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "若いリターニア人は黙り込んだ。地面にしゃがんで、ロドス事務所の窓辺に寄りかかる。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 502,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 503,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "彼は視線を広場の方に向けた。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 504,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 505,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "軽症患者が収容エリアにあふれ返っている。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 506,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 507,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "その一方で、仮設の仕切りの向こう側――医療室内はまだ戦場のような状態だ。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 508,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 509,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 512,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 513,
+            "prop": "name",
+            "attributes": {
+                "content": "ダメだ、やっぱり手伝いに行くっす。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 515,
+            "prop": "name",
+            "attributes": {
+                "content": "いいから休んどけ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 516,
+            "prop": "name",
+            "attributes": {
+                "content": "中で吐かれたりしたら、彼女たちの邪魔になる。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 517,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 518,
+            "prop": "name",
+            "attributes": {
+                "content": "……それはそうっすけど。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 519,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 520,
+            "prop": "name",
+            "attributes": {
+                "content": "そんなに手伝いたいなら、収容エリアへ行って連絡事項がないか聞いてきてくれ。ついでに他の事務所の補給車が来ていないかもな。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 521,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "……はい、すぐに行くっす！",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 524,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 525,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "char_013_riop",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 527,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 528,
+            "prop": "name",
+            "attributes": {
+                "content": "……ハッ、青二才が。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 529,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 530,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 531,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 532,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 533,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_ri_1",
+                "screenadapt": "coverall",
+                "fadetime": 0.6
+            }
+        },
+        {
+            "id": 534,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 535,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 536,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "ふぅ……大変だった……",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 539,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ、先生、どうですか？",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 540,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたたちのおかげで、今はもうほとんどの患者さんが安定しています。あとは領主の今後の指針次第かと思います。",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 542,
+            "prop": "name",
+            "attributes": {
+                "content": "これまではあなた方のことを、医療会社などではないと思っていました。本当に……本当に……大変失礼しました。",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 543,
+            "prop": "name",
+            "attributes": {
+                "content": "改めて、心から感謝します。今は……それ以外の言葉が見つかりません。もしあなた方の支援がなければ、どれだけの死傷者数とそれに伴う二次災害が起こったか、想像すらできません。",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 544,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "name",
+            "attributes": {
+                "content": "いや……俺はただの雑用で……えっと……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 546,
+            "prop": "name",
+            "attributes": {
+                "content": "医療オペレーターは？　彼女たちは休んでますか？",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 547,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 548,
+            "prop": "name",
+            "attributes": {
+                "content": "私もどこへ行ったかわからないんです。あなた方の宿舎まで患者用に割り当てたと聞いていますから、ロドスで別に休憩所を用意しているものだと思っていましたが、あなたも知らないとなれば……",
+                "name": "地元の医者"
+            }
+        },
+        {
+            "id": 549,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 550,
+            "prop": "name",
+            "attributes": {
+                "content": "そうっすか……あなたも早く休んでください。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 551,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 552,
+            "prop": "character",
+            "attributes": {
+                "fadetime": 0.8
+            }
+        },
+        {
+            "id": 553,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 554,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 555,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 556,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 557,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 558,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 559,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_warehouse",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 560,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 561,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$warm_intro",
+                "key": "$warm_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 562,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 563,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 564,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 565,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 566,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 567,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 568,
+            "prop": "name",
+            "attributes": {
+                "content": "ボス、本部の医療オペレ──",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 569,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 570,
+            "prop": "name",
+            "attributes": {
+                "content": "シーッ、静かに。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 571,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 572,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 573,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 574,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 575,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "年長のオペレーターが部屋の一方を指さした。他の事務所から応援に駆けつけてきた数名の医療オペレーターが倉庫内に運ばれた負傷者の状況を確認している。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 576,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 577,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "彼らはできるだけ音を立てないようにしながら患者の間を行き来している。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 578,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 579,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "その奥で、丸一日奮闘し続けた数名の医療オペレーターが壁に寄りかかって座っている。十数時間ぶっ通しの手術で、彼女たちの体力は尽き果てていた。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 580,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 581,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "あの小柄な医者も体を縮こまらせ、部屋の片隅で眠っている。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 582,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 583,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "静寂の倉庫内に響くのは、主に人々の呼吸音。彼女の微かな寝息もはっきりと聴こえる。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 584,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 585,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "彼女の制服と医療用防護具には、血漿や組織液、判別不能な肉片が悪臭とともに付着していてひどい有様だった。しかし彼女は気にもせずそのまま眠っている。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 586,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 587,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "彼女の寝息の他にも呼吸音は多い。荒いものもあれば安らかなものもあるが、その多くは今日、彼女の手で生死の境目から連れ戻された患者たちのものだ。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 588,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 589,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "明日になれば、彼らは彼女に感謝するだろう。そして今後の人生においても、この小柄な医者に感謝し続けるだろう。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 590,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 591,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 592,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 593,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 594,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 595,
+            "prop": "name",
+            "attributes": {
+                "content": "何か用なら、外で話すぞ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 596,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 597,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 598,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 599,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 600,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 601,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 602,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_ltstreet1",
+                "screenadapt": "coverall",
+                "fadetime": 0.6
+            }
+        },
+        {
+            "id": 603,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 604,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 605,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 606,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 607,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女たちは……いや、休ませてあげましょう。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 608,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 609,
+            "prop": "name",
+            "attributes": {
+                "content": "収容エリアはどうだ？",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 610,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 611,
+            "prop": "name",
+            "attributes": {
+                "content": "問題ないっす。領主の使いたちが来て、すでに一組目の軽症患者たちの移動を始めてます。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 612,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 613,
+            "prop": "name",
+            "attributes": {
+                "content": "ならいい。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 614,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 615,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 616,
+            "prop": "name",
+            "attributes": {
+                "content": "……えっと……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 617,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 618,
+            "prop": "name",
+            "attributes": {
+                "content": "言いたいことがあるならはっきり言え、なにを口ごもってるんだ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 619,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 620,
+            "prop": "name",
+            "attributes": {
+                "content": "いや……ただ……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 621,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 622,
+            "prop": "name",
+            "attributes": {
+                "content": "辞めたくなったか？",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 623,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 624,
+            "prop": "name",
+            "attributes": {
+                "content": "違うっす。ただロドスの仕事について少し理解が深まったっす……多分、少しだけ。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 625,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 626,
+            "prop": "name",
+            "attributes": {
+                "content": "ハハハ……",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 627,
+            "prop": "name",
+            "attributes": {
+                "content": "仕事熱心なのはいいことだ。熱心ついでに、医療物資の消耗状況を確認してきてくれないか。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 628,
+            "prop": "name",
+            "attributes": {
+                "content": "記録は二部用意しておいてくれ。一つは事務所の保存用、もう一つは明日の朝、地元政府に提出するためのものだ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 629,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 630,
+            "prop": "name",
+            "attributes": {
+                "content": "……了解っす。すぐに行くっす。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 631,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 632,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 633,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 634,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 635,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 636,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 637,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_desert_1",
+                "screenadapt": "coverall",
+                "fadetime": 0.6
+            }
+        },
+        {
+            "id": 638,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 639,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$farce_intro",
+                "key": "$farce_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 640,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 641,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 642,
+            "prop": "name",
+            "attributes": {
+                "content": "四日後"
+            }
+        },
+        {
+            "id": 643,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 644,
+            "prop": "name",
+            "attributes": {
+                "content": "荷物はまとまったか？",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 645,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 646,
+            "prop": "name",
+            "attributes": {
+                "content": "うん、大丈夫。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 647,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 648,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 649,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 650,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 651,
+            "prop": "name",
+            "attributes": {
+                "content": "待って待って待って！　ふぅ、間に合った！",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 652,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop"
+            }
+        },
+        {
+            "id": 653,
+            "prop": "name",
+            "attributes": {
+                "content": "お前何してたんだ！？",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 654,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 655,
+            "prop": "name",
+            "attributes": {
+                "content": "ススーロさんに買い物を頼まれてたんす。ほら買ってきたっすよ。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 656,
+            "prop": "character",
+            "attributes": {
+                "name": "char_016_medic"
+            }
+        },
+        {
+            "id": 657,
+            "prop": "name",
+            "attributes": {
+                "content": "こんなに？",
+                "name": "医療オペレーター"
+            }
+        },
+        {
+            "id": 658,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1"
+            }
+        },
+        {
+            "id": 659,
+            "prop": "name",
+            "attributes": {
+                "content": "コホンッ……こっちはケルシー先生に渡す本で、こっちはガヴィルさんに渡す工芸品だよ。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 660,
+            "prop": "character",
+            "attributes": {
+                "name": "char_016_medic"
+            }
+        },
+        {
+            "id": 661,
+            "prop": "name",
+            "attributes": {
+                "content": "これは何ですか、お菓子？",
+                "name": "医療オペレーター"
+            }
+        },
+        {
+            "id": 662,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#7"
+            }
+        },
+        {
+            "id": 663,
+            "prop": "name",
+            "attributes": {
+                "content": "それはドクターに渡す……プレゼント。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 664,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090"
+            }
+        },
+        {
+            "id": 665,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 666,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター？　それって……あのドクターっすか？",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 667,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 668,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 669,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 670,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#7",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 671,
+            "prop": "name",
+            "attributes": {
+                "content": "とにかく、ケルシー先生とドクターによろしく伝えといてくれ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 672,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#7",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 673,
+            "prop": "name",
+            "attributes": {
+                "content": "うん、わかった。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 674,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#7",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 675,
+            "prop": "name",
+            "attributes": {
+                "content": "じゃあ気を付けて帰ってくれよ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 676,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_298_sussu_1#7",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 677,
+            "prop": "name",
+            "attributes": {
+                "content": "ありがとう。またね。",
+                "name": "ススーロ"
+            }
+        },
+        {
+            "id": 678,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 679,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$sportscarstart",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 680,
+            "prop": "character",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 681,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 682,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 683,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 684,
+            "prop": "name",
+            "attributes": {
+                "content": "行っちゃったっすね。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 685,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 686,
+            "prop": "name",
+            "attributes": {
+                "content": "ほら、戻って仕事だ。報告書が山ほど残っているぞ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 687,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 688,
+            "prop": "name",
+            "attributes": {
+                "content": "……うーん……",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 689,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 690,
+            "prop": "name",
+            "attributes": {
+                "content": "どうした？",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 691,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 692,
+            "prop": "name",
+            "attributes": {
+                "content": "俺も機会を作ってロドス本艦へ行ってみるべきかなって……スゴい人たちに会えそうっすから。",
+                "name": "ピストン"
+            }
+        },
+        {
+            "id": 693,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_090",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 694,
+            "prop": "name",
+            "attributes": {
+                "content": "それもいいだろう。だがそんなことを考える前に、まずは今抱えてる仕事を終わらせろよ。",
+                "name": "フィレガス"
+            }
+        },
+        {
+            "id": 695,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 696,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 697,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 698,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 699,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 700,
+            "prop": "Image",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": true
+}
