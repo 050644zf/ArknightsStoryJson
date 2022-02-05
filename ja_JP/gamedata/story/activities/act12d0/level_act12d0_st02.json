@@ -970,17 +970,31 @@
         },
         {
             "id": 116,
-            "prop": "Background",
+            "prop": "delay",
             "attributes": {
-                "image": "bg_falls",
-                "screenadapt": "coverall",
-                "x": 200.0,
-                "y": 0.0,
-                "block": "true"
+                "time": 1.0
             }
         },
         {
             "id": 117,
+            "prop": "largebg",
+            "attributes": {
+                "imagegroup": "bg_falls_1/bg_falls_2",
+                "solidwidth": "920/920",
+                "solidheight": 720.0
+            }
+        },
+        {
+            "id": 118,
+            "prop": "largebgtween",
+            "attributes": {
+                "duration": 7.0,
+                "ease": "6",
+                "block": "false"
+            }
+        },
+        {
+            "id": 119,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -989,7 +1003,7 @@
             }
         },
         {
-            "id": 118,
+            "id": 120,
             "prop": "playMusic",
             "attributes": {
                 "intro": "$farce_intro",
@@ -998,49 +1012,25 @@
             }
         },
         {
-            "id": 119,
-            "prop": "BackgroundTween",
-            "attributes": {
-                "image": "bg_falls",
-                "screenadapt": "coverall",
-                "xFrom": 200.0,
-                "yFrom": 0.0,
-                "xTo": 0.0,
-                "yTo": 0.0,
-                "duration": 5.0,
-                "block": "true"
-            }
-        },
-        {
-            "id": 120,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_337_utage_summer_1#2"
-            }
-        },
-        {
             "id": 121,
-            "prop": "name",
+            "prop": "delay",
             "attributes": {
-                "content": "  うわー、遠くにまで水の音は聞こえてたけど、こんなにおっきな滝だなんて思わなかったよ！",
-                "name": "ウタゲ"
+                "time": 5.0
             }
         },
         {
             "id": 122,
             "prop": "Character",
             "attributes": {
-                "name": "char_187_ccheal_summer_1",
-                "name2": "char_337_utage_summer_1#2",
-                "focus": 1.0
+                "name": "char_337_utage_summer_1#2"
             }
         },
         {
             "id": 123,
             "prop": "name",
             "attributes": {
-                "content": "  ほーら、アタシの言ってた通りだろ？",
-                "name": "ガヴィル"
+                "content": "  うわー、遠くにまで水の音は聞こえてたけど、こんなにおっきな滝だなんて思わなかったよ！",
+                "name": "ウタゲ"
             }
         },
         {
@@ -1049,15 +1039,15 @@
             "attributes": {
                 "name": "char_187_ccheal_summer_1",
                 "name2": "char_337_utage_summer_1#2",
-                "focus": 2.0
+                "focus": 1.0
             }
         },
         {
             "id": 125,
             "prop": "name",
             "attributes": {
-                "content": "  だね、今回は許したげるよ～",
-                "name": "ウタゲ"
+                "content": "  ほーら、アタシの言ってた通りだろ？",
+                "name": "ガヴィル"
             }
         },
         {
@@ -1065,7 +1055,7 @@
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1",
-                "name2": "char_017_homura_summer",
+                "name2": "char_337_utage_summer_1#2",
                 "focus": 2.0
             }
         },
@@ -1073,8 +1063,8 @@
             "id": 127,
             "prop": "name",
             "attributes": {
-                "content": "  ハハ、確かにすっごく壮観な滝だね。",
-                "name": "ブレイズ"
+                "content": "  だね、今回は許したげるよ～",
+                "name": "ウタゲ"
             }
         },
         {
@@ -1083,11 +1073,28 @@
             "attributes": {
                 "name": "char_187_ccheal_summer_1",
                 "name2": "char_017_homura_summer",
-                "focus": 1.0
+                "focus": 2.0
             }
         },
         {
             "id": 129,
+            "prop": "name",
+            "attributes": {
+                "content": "  ハハ、確かにすっごく壮観な滝だね。",
+                "name": "ブレイズ"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_187_ccheal_summer_1",
+                "name2": "char_017_homura_summer",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 131,
             "prop": "name",
             "attributes": {
                 "content": "  トミミはまだみたいだな。あいつが来るまで一休みといこうか。",
@@ -1095,14 +1102,14 @@
             }
         },
         {
-            "id": 130,
+            "id": 132,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1#2"
             }
         },
         {
-            "id": 131,
+            "id": 133,
             "prop": "name",
             "attributes": {
                 "content": "  やったー！　水着が無駄にならなくて良かったー！",
@@ -1110,40 +1117,20 @@
             }
         },
         {
-            "id": 132,
+            "id": 134,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 133,
+            "id": 135,
             "prop": "Character",
             "attributes": {}
-        },
-        {
-            "id": 134,
-            "prop": "Blocker",
-            "attributes": {
-                "a": 1.0,
-                "r": 0.0,
-                "g": 0.0,
-                "b": 0.0,
-                "fadetime": 1.0,
-                "block": "true"
-            }
-        },
-        {
-            "id": 135,
-            "prop": "Background",
-            "attributes": {
-                "image": "bg_falls",
-                "screenadapt": "coverall"
-            }
         },
         {
             "id": 136,
             "prop": "Blocker",
             "attributes": {
-                "a": 0.0,
+                "a": 1.0,
                 "r": 0.0,
                 "g": 0.0,
                 "b": 0.0,
@@ -1153,130 +1140,15 @@
         },
         {
             "id": 137,
-            "prop": "Character",
+            "prop": "largebg",
             "attributes": {
-                "name": "char_415_flint_1",
-                "fadetime": 1.0,
-                "block": "true"
+                "imagegroup": "bg_falls_1/bg_falls_2",
+                "solidwidth": "920/920",
+                "solidheight": 720.0
             }
         },
         {
             "id": 138,
-            "prop": "delay",
-            "attributes": {
-                "time": 1.0
-            }
-        },
-        {
-            "id": 139,
-            "prop": "name",
-            "attributes": {
-                "content": "  ……",
-                "name": "フリント"
-            }
-        },
-        {
-            "id": 140,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_415_flint_1",
-                "name2": "char_017_homura_summer",
-                "focus": 2.0
-            }
-        },
-        {
-            "id": 141,
-            "prop": "name",
-            "attributes": {
-                "content": "  君、戦る気満々だね。",
-                "name": "ブレイズ"
-            }
-        },
-        {
-            "id": 142,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_415_flint_1",
-                "name2": "char_017_homura_summer",
-                "focus": 1.0
-            }
-        },
-        {
-            "id": 143,
-            "prop": "name",
-            "attributes": {
-                "content": "  ……",
-                "name": "フリント"
-            }
-        },
-        {
-            "id": 144,
-            "prop": "Dialog",
-            "attributes": {}
-        },
-        {
-            "id": 145,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_415_flint_1"
-            }
-        },
-        {
-            "id": 146,
-            "prop": "name",
-            "attributes": {
-                "content": "言葉が通じないことを悟ったクマールは、無言で構えを取った。"
-            }
-        },
-        {
-            "id": 147,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_415_flint_1",
-                "name2": "char_017_homura_summer",
-                "focus": 2.0
-            }
-        },
-        {
-            "id": 148,
-            "prop": "name",
-            "attributes": {
-                "content": "  まあどうせ暇だし、数ラウンドなら付き合ってあげるよ。",
-                "name": "ブレイズ"
-            }
-        },
-        {
-            "id": 149,
-            "prop": "Dialog",
-            "attributes": {}
-        },
-        {
-            "id": 150,
-            "prop": "Character",
-            "attributes": {}
-        },
-        {
-            "id": 151,
-            "prop": "Blocker",
-            "attributes": {
-                "a": 1.0,
-                "r": 0.0,
-                "g": 0.0,
-                "b": 0.0,
-                "fadetime": 1.0,
-                "block": "true"
-            }
-        },
-        {
-            "id": 152,
-            "prop": "Background",
-            "attributes": {
-                "image": "bg_falls",
-                "screenadapt": "coverall"
-            }
-        },
-        {
-            "id": 153,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -1288,14 +1160,151 @@
             }
         },
         {
+            "id": 139,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_415_flint_1",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……",
+                "name": "フリント"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_415_flint_1",
+                "name2": "char_017_homura_summer",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 143,
+            "prop": "name",
+            "attributes": {
+                "content": "  君、戦る気満々だね。",
+                "name": "ブレイズ"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_415_flint_1",
+                "name2": "char_017_homura_summer",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 145,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……",
+                "name": "フリント"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 147,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_415_flint_1"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "言葉が通じないことを悟ったクマールは、無言で構えを取った。"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_415_flint_1",
+                "name2": "char_017_homura_summer",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 150,
+            "prop": "name",
+            "attributes": {
+                "content": "  まあどうせ暇だし、数ラウンドなら付き合ってあげるよ。",
+                "name": "ブレイズ"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 152,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 153,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
             "id": 154,
+            "prop": "largebg",
+            "attributes": {
+                "imagegroup": "bg_falls_1/bg_falls_2",
+                "solidwidth": "920/920",
+                "solidheight": 720.0
+            }
+        },
+        {
+            "id": 155,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 156,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1"
             }
         },
         {
-            "id": 155,
+            "id": 157,
             "prop": "name",
             "attributes": {
                 "content": "  ブレイズの姉さんとあの子、熱いバトルを繰り広げてるね～。",
@@ -1303,7 +1312,7 @@
             }
         },
         {
-            "id": 156,
+            "id": 158,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1",
@@ -1312,28 +1321,11 @@
             }
         },
         {
-            "id": 157,
+            "id": 159,
             "prop": "name",
             "attributes": {
                 "content": "  せやな。",
                 "name": "クロワッサン"
-            }
-        },
-        {
-            "id": 158,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_337_utage_summer_1#3",
-                "name2": "char_201_moeshd_summer",
-                "focus": 1.0
-            }
-        },
-        {
-            "id": 159,
-            "prop": "name",
-            "attributes": {
-                "content": "  喧嘩って一体何が楽しーんだろうね。",
-                "name": "ウタゲ"
             }
         },
         {
@@ -1342,11 +1334,28 @@
             "attributes": {
                 "name": "char_337_utage_summer_1#3",
                 "name2": "char_201_moeshd_summer",
-                "focus": 2.0
+                "focus": 1.0
             }
         },
         {
             "id": 161,
+            "prop": "name",
+            "attributes": {
+                "content": "  喧嘩って一体何が楽しーんだろうね。",
+                "name": "ウタゲ"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_337_utage_summer_1#3",
+                "name2": "char_201_moeshd_summer",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 163,
             "prop": "name",
             "attributes": {
                 "content": "  ……あんた戦っとるときはそないなこと言わんやん、ウタゲはん。",
@@ -1354,7 +1363,7 @@
             }
         },
         {
-            "id": 162,
+            "id": 164,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1",
@@ -1363,7 +1372,7 @@
             }
         },
         {
-            "id": 163,
+            "id": 165,
             "prop": "name",
             "attributes": {
                 "content": "  アハハ、言われてみれば。",
@@ -1371,7 +1380,7 @@
             }
         },
         {
-            "id": 164,
+            "id": 166,
             "prop": "name",
             "attributes": {
                 "content": "  それよりさ、クロワッサンのそれ、水着じゃなくない？",
@@ -1379,7 +1388,7 @@
             }
         },
         {
-            "id": 165,
+            "id": 167,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1",
@@ -1388,7 +1397,7 @@
             }
         },
         {
-            "id": 166,
+            "id": 168,
             "prop": "name",
             "attributes": {
                 "content": "  アハハ、バレてもうたか。実はアウトドア用の服なんやけど、防水性もなかなかやし、水着としてもギリギリセーフかと思ってな。",
@@ -1396,7 +1405,7 @@
             }
         },
         {
-            "id": 167,
+            "id": 169,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1#2",
@@ -1405,7 +1414,7 @@
             }
         },
         {
-            "id": 168,
+            "id": 170,
             "prop": "name",
             "attributes": {
                 "content": "  なるほどねー。あんたはオシャレよりも実用性って感じだね。",
@@ -1413,7 +1422,7 @@
             }
         },
         {
-            "id": 169,
+            "id": 171,
             "prop": "name",
             "attributes": {
                 "content": "  つーかさ、バカンスって言ったら海のイメージだけど、滝遊びもなかなか悪くないね！　自然に還る感じって言うかさー。あーあ、カメラも持って来ればよかった。",
@@ -1421,7 +1430,7 @@
             }
         },
         {
-            "id": 170,
+            "id": 172,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1#2",
@@ -1430,28 +1439,11 @@
             }
         },
         {
-            "id": 171,
+            "id": 173,
             "prop": "name",
             "attributes": {
                 "content": "  せやなぁ、こういうとこ来たんはウチも初めてやけど、想像以上に楽しいわぁ～",
                 "name": "クロワッサン"
-            }
-        },
-        {
-            "id": 172,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_337_utage_summer_1#4",
-                "name2": "char_201_moeshd_summer",
-                "focus": 1.0
-            }
-        },
-        {
-            "id": 173,
-            "prop": "name",
-            "attributes": {
-                "content": "  あれ……",
-                "name": "ウタゲ"
             }
         },
         {
@@ -1460,11 +1452,28 @@
             "attributes": {
                 "name": "char_337_utage_summer_1#4",
                 "name2": "char_201_moeshd_summer",
-                "focus": 2.0
+                "focus": 1.0
             }
         },
         {
             "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "  あれ……",
+                "name": "ウタゲ"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_337_utage_summer_1#4",
+                "name2": "char_201_moeshd_summer",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 177,
             "prop": "name",
             "attributes": {
                 "content": "  どないしたん？",
@@ -1472,14 +1481,14 @@
             }
         },
         {
-            "id": 176,
+            "id": 178,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1#4"
             }
         },
         {
-            "id": 177,
+            "id": 179,
             "prop": "name",
             "attributes": {
                 "content": "  あたしの見間違い？",
@@ -1487,14 +1496,14 @@
             }
         },
         {
-            "id": 178,
+            "id": 180,
             "prop": "Character",
             "attributes": {
                 "name": "char_201_moeshd_summer"
             }
         },
         {
-            "id": 179,
+            "id": 181,
             "prop": "name",
             "attributes": {
                 "content": "  何が？",
@@ -1502,14 +1511,14 @@
             }
         },
         {
-            "id": 180,
+            "id": 182,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1#4"
             }
         },
         {
-            "id": 181,
+            "id": 183,
             "prop": "name",
             "attributes": {
                 "content": "  あれ、ケーちゃんじゃない？",
@@ -1517,17 +1526,17 @@
             }
         },
         {
-            "id": 182,
+            "id": 184,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 183,
+            "id": 185,
             "prop": "Character",
             "attributes": {}
         },
         {
-            "id": 184,
+            "id": 186,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -1539,12 +1548,12 @@
             }
         },
         {
-            "id": 185,
+            "id": 187,
             "prop": "Character",
             "attributes": {}
         },
         {
-            "id": 186,
+            "id": 188,
             "prop": "Image",
             "attributes": {
                 "image": "ac12_2",
@@ -1556,7 +1565,7 @@
             }
         },
         {
-            "id": 187,
+            "id": 189,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -1565,7 +1574,7 @@
             }
         },
         {
-            "id": 188,
+            "id": 190,
             "prop": "ImageTween",
             "attributes": {
                 "xFrom": 10.0,
@@ -1578,14 +1587,14 @@
             }
         },
         {
-            "id": 189,
+            "id": 191,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 190,
+            "id": 192,
             "prop": "name",
             "attributes": {
                 "content": "  ドクター、いい滝だろ？",
@@ -1593,36 +1602,36 @@
             }
         },
         {
-            "id": 191,
+            "id": 193,
             "prop": "Decision",
             "attributes": {
                 "options": "実にいい。;……;まあまあかな。",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line192",
-                "option2": "line195",
-                "option3": "line198"
+                "option1": "line194",
+                "option2": "line197",
+                "option3": "line200"
             }
         },
         {
-            "id": 192,
+            "id": 194,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
             },
             "endOfOpt": false,
-            "targetLine": "line201"
+            "targetLine": "line203"
         },
         {
-            "id": 193,
+            "id": 195,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 194,
+            "id": 196,
             "prop": "name",
             "attributes": {
                 "content": "  だろ？　昔はよくここで水浴びをしたもんだ。",
@@ -1630,23 +1639,23 @@
             }
         },
         {
-            "id": 195,
+            "id": 197,
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
             },
             "endOfOpt": false,
-            "targetLine": "line201"
+            "targetLine": "line203"
         },
         {
-            "id": 196,
+            "id": 198,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 197,
+            "id": 199,
             "prop": "name",
             "attributes": {
                 "content": "  何か考え事でもしてんのか？",
@@ -1654,23 +1663,23 @@
             }
         },
         {
-            "id": 198,
+            "id": 200,
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
             },
             "endOfOpt": false,
-            "targetLine": "line201"
+            "targetLine": "line203"
         },
         {
-            "id": 199,
+            "id": 201,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 200,
+            "id": 202,
             "prop": "name",
             "attributes": {
                 "content": "  へー、言うじゃねぇか。",
@@ -1678,7 +1687,7 @@
             }
         },
         {
-            "id": 201,
+            "id": 203,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
@@ -1686,14 +1695,14 @@
             "endOfOpt": true
         },
         {
-            "id": 202,
+            "id": 204,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 203,
+            "id": 205,
             "prop": "name",
             "attributes": {
                 "content": "  ここからしばらく歩いたら、ズゥママの部族に着くはずだ。",
@@ -1701,7 +1710,7 @@
             }
         },
         {
-            "id": 204,
+            "id": 206,
             "prop": "name",
             "attributes": {
                 "content": "  トミミの手紙が届いたときは、まさかこんなことになるなんて思いもしなかったな。",
@@ -1709,7 +1718,7 @@
             }
         },
         {
-            "id": 205,
+            "id": 207,
             "prop": "name",
             "attributes": {
                 "content": "  ……ところでドクター。実はここ数日間、ずっと悩んでることがあんだよ。アタシらはもうそこそこ長い付き合いだし、聞いてもいいか？",
@@ -1717,21 +1726,21 @@
             }
         },
         {
-            "id": 206,
+            "id": 208,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 207,
+            "id": 209,
             "prop": "delay",
             "attributes": {
                 "time": 1.0
             }
         },
         {
-            "id": 208,
+            "id": 210,
             "prop": "name",
             "attributes": {
                 "content": "  あのさ……",
@@ -1739,7 +1748,7 @@
             }
         },
         {
-            "id": 209,
+            "id": 211,
             "prop": "name",
             "attributes": {
                 "content": "  ドーークターー！",
@@ -1747,7 +1756,7 @@
             }
         },
         {
-            "id": 210,
+            "id": 212,
             "prop": "name",
             "attributes": {
                 "content": "  なんだよ？　今アタシが話してんだけど。",
@@ -1755,7 +1764,7 @@
             }
         },
         {
-            "id": 211,
+            "id": 213,
             "prop": "name",
             "attributes": {
                 "content": "  あれ！　あれ見てよ！",
@@ -1763,7 +1772,7 @@
             }
         },
         {
-            "id": 212,
+            "id": 214,
             "prop": "name",
             "attributes": {
                 "content": "  あれは……ケーちゃんか？",
@@ -1771,7 +1780,7 @@
             }
         },
         {
-            "id": 213,
+            "id": 215,
             "prop": "name",
             "attributes": {
                 "content": "  見つけた、キノコの海だぁ！",
@@ -1779,7 +1788,7 @@
             }
         },
         {
-            "id": 214,
+            "id": 216,
             "prop": "name",
             "attributes": {
                 "content": "  お風呂だぁ！",
@@ -1787,7 +1796,7 @@
             }
         },
         {
-            "id": 215,
+            "id": 217,
             "prop": "name",
             "attributes": {
                 "content": "  どうやらまだ正気に戻ってねぇようだな。",
@@ -1795,7 +1804,7 @@
             }
         },
         {
-            "id": 216,
+            "id": 218,
             "prop": "name",
             "attributes": {
                 "content": "  でも水の中でじゃぶじゃぶしてんの、めっちゃ可愛い！",
@@ -1803,7 +1812,7 @@
             }
         },
         {
-            "id": 217,
+            "id": 219,
             "prop": "name",
             "attributes": {
                 "content": "  はぁ、まったくあのおバカちゃんは。",
@@ -1811,7 +1820,7 @@
             }
         },
         {
-            "id": 218,
+            "id": 220,
             "prop": "name",
             "attributes": {
                 "content": "  まぁ、しばらく遊ばせといてやるか……",
@@ -1819,7 +1828,7 @@
             }
         },
         {
-            "id": 219,
+            "id": 221,
             "prop": "name",
             "attributes": {
                 "content": "  それよりさ、ドクター。さっきの話の続きだが――",
@@ -1827,7 +1836,7 @@
             }
         },
         {
-            "id": 220,
+            "id": 222,
             "prop": "name",
             "attributes": {
                 "content": "  アタシの尻尾、前より太くなってないか？",
@@ -1835,36 +1844,36 @@
             }
         },
         {
-            "id": 221,
+            "id": 223,
             "prop": "Decision",
             "attributes": {
                 "options": "太くなった。;……;気にしていなかった。",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line222",
-                "option2": "line226",
-                "option3": "line230"
+                "option1": "line224",
+                "option2": "line228",
+                "option3": "line232"
             }
         },
         {
-            "id": 222,
+            "id": 224,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
             },
             "endOfOpt": false,
-            "targetLine": "line233"
+            "targetLine": "line235"
         },
         {
-            "id": 223,
+            "id": 225,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 224,
+            "id": 226,
             "prop": "CameraShake",
             "attributes": {
                 "duration": 0.6,
@@ -1877,7 +1886,7 @@
             }
         },
         {
-            "id": 225,
+            "id": 227,
             "prop": "name",
             "attributes": {
                 "content": "  ホントか？　嘘じゃねぇだろうな？　これはまずったな。帰ったらダイエットしねぇと……。",
@@ -1885,23 +1894,23 @@
             }
         },
         {
-            "id": 226,
+            "id": 228,
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
             },
             "endOfOpt": false,
-            "targetLine": "line233"
+            "targetLine": "line235"
         },
         {
-            "id": 227,
+            "id": 229,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 228,
+            "id": 230,
             "prop": "CameraShake",
             "attributes": {
                 "duration": 0.3,
@@ -1914,7 +1923,7 @@
             }
         },
         {
-            "id": 229,
+            "id": 231,
             "prop": "name",
             "attributes": {
                 "content": "  なんだよドクター！　そんな目でアタシを見るんじゃねぇ。尻尾はアダクリス人の命なんだぞ！",
@@ -1922,23 +1931,23 @@
             }
         },
         {
-            "id": 230,
+            "id": 232,
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
             },
             "endOfOpt": false,
-            "targetLine": "line233"
+            "targetLine": "line235"
         },
         {
-            "id": 231,
+            "id": 233,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 232,
+            "id": 234,
             "prop": "name",
             "attributes": {
                 "content": "  チッ、お前に聞くんじゃなかった。",
@@ -1946,7 +1955,7 @@
             }
         },
         {
-            "id": 233,
+            "id": 235,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
@@ -1954,14 +1963,14 @@
             "endOfOpt": true
         },
         {
-            "id": 234,
+            "id": 236,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 235,
+            "id": 237,
             "prop": "name",
             "attributes": {
                 "content": "  お前は知らねぇだろうが、トミミだって昔はあんなに太い尻尾じゃなかったんだ。はぁ、アタシまであんな太い尻尾になんのは御免だぜ。",
@@ -1969,17 +1978,17 @@
             }
         },
         {
-            "id": 236,
+            "id": 238,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 237,
+            "id": 239,
             "prop": "Character",
             "attributes": {}
         },
         {
-            "id": 238,
+            "id": 240,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -1991,17 +2000,17 @@
             }
         },
         {
-            "id": 239,
+            "id": 241,
             "prop": "Character",
             "attributes": {}
         },
         {
-            "id": 240,
+            "id": 242,
             "prop": "Image",
             "attributes": {}
         },
         {
-            "id": 241,
+            "id": 243,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -2010,36 +2019,36 @@
             }
         },
         {
-            "id": 242,
+            "id": 244,
             "prop": "Decision",
             "attributes": {
                 "options": "ズゥママに思うところはないのか？;……;もっと尻尾の話をしよう。",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line243",
-                "option2": "line247",
-                "option3": "line250"
+                "option1": "line245",
+                "option2": "line249",
+                "option3": "line252"
             }
         },
         {
-            "id": 243,
+            "id": 245,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
             },
             "endOfOpt": false,
-            "targetLine": "line253"
+            "targetLine": "line255"
         },
         {
-            "id": 244,
+            "id": 246,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 245,
+            "id": 247,
             "prop": "name",
             "attributes": {
                 "content": "  ん？　思うところって？",
@@ -2047,7 +2056,7 @@
             }
         },
         {
-            "id": 246,
+            "id": 248,
             "prop": "name",
             "attributes": {
                 "content": "  あんなデカい機械を一から作るなんて、大したヤツだなーとは思ってるぜ。",
@@ -2055,23 +2064,23 @@
             }
         },
         {
-            "id": 247,
+            "id": 249,
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
             },
             "endOfOpt": false,
-            "targetLine": "line253"
+            "targetLine": "line255"
         },
         {
-            "id": 248,
+            "id": 250,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 249,
+            "id": 251,
             "prop": "name",
             "attributes": {
                 "content": "  ",
@@ -2079,23 +2088,23 @@
             }
         },
         {
-            "id": 250,
+            "id": 252,
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
             },
             "endOfOpt": false,
-            "targetLine": "line253"
+            "targetLine": "line255"
         },
         {
-            "id": 251,
+            "id": 253,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 252,
+            "id": 254,
             "prop": "name",
             "attributes": {
                 "content": "  お！　ドクターも興味を持ってくれたのか！",
@@ -2103,7 +2112,7 @@
             }
         },
         {
-            "id": 253,
+            "id": 255,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
@@ -2111,17 +2120,17 @@
             "endOfOpt": true
         },
         {
-            "id": 254,
+            "id": 256,
             "prop": "character",
             "attributes": {}
         },
         {
-            "id": 255,
+            "id": 257,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 256,
+            "id": 258,
             "prop": "PlaySound",
             "attributes": {
                 "key": "$rungeneral",
@@ -2129,7 +2138,7 @@
             }
         },
         {
-            "id": 257,
+            "id": 259,
             "prop": "Character",
             "attributes": {
                 "name": "char_411_tomimi_1",
@@ -2138,14 +2147,14 @@
             }
         },
         {
-            "id": 258,
+            "id": 260,
             "prop": "delay",
             "attributes": {
                 "time": 0.6
             }
         },
         {
-            "id": 259,
+            "id": 261,
             "prop": "name",
             "attributes": {
                 "content": "  ガヴィルさん！",
@@ -2153,7 +2162,7 @@
             }
         },
         {
-            "id": 260,
+            "id": 262,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1",
@@ -2162,7 +2171,7 @@
             }
         },
         {
-            "id": 261,
+            "id": 263,
             "prop": "name",
             "attributes": {
                 "content": "  おうトミミ、来たか。用事は済んだか？",
@@ -2170,7 +2179,7 @@
             }
         },
         {
-            "id": 262,
+            "id": 264,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1",
@@ -2179,7 +2188,7 @@
             }
         },
         {
-            "id": 263,
+            "id": 265,
             "prop": "name",
             "attributes": {
                 "content": "  はい！",
@@ -2187,7 +2196,7 @@
             }
         },
         {
-            "id": 264,
+            "id": 266,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1",
@@ -2196,7 +2205,7 @@
             }
         },
         {
-            "id": 265,
+            "id": 267,
             "prop": "name",
             "attributes": {
                 "content": "  えっ……マジ！？",
@@ -2204,7 +2213,7 @@
             }
         },
         {
-            "id": 266,
+            "id": 268,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1",
@@ -2213,7 +2222,7 @@
             }
         },
         {
-            "id": 267,
+            "id": 269,
             "prop": "name",
             "attributes": {
                 "content": "  ど、どうかしましたか？",
@@ -2221,14 +2230,14 @@
             }
         },
         {
-            "id": 268,
+            "id": 270,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1#2"
             }
         },
         {
-            "id": 269,
+            "id": 271,
             "prop": "name",
             "attributes": {
                 "content": "   めっちゃ可愛い子じゃん！　ガヴィルのくせにこんな友達がいたんだね！　あんたの知り合いはみーんな、頭ん中まで筋肉が詰まってる人ばっかだと思ってた！",
@@ -2236,7 +2245,7 @@
             }
         },
         {
-            "id": 270,
+            "id": 272,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1#2",
@@ -2245,7 +2254,7 @@
             }
         },
         {
-            "id": 271,
+            "id": 273,
             "prop": "name",
             "attributes": {
                 "content": "  失礼だなおい！",
@@ -2253,35 +2262,18 @@
             }
         },
         {
-            "id": 272,
+            "id": 274,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1"
             }
         },
         {
-            "id": 273,
+            "id": 275,
             "prop": "name",
             "attributes": {
                 "content": "  肌はすべすべ、顔も整ってる、ダーク系でまとめたコーデもすっごく似合ってるよ。",
                 "name": "ウタゲ"
-            }
-        },
-        {
-            "id": 274,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_337_utage_summer_1",
-                "name2": "char_187_ccheal_summer_1",
-                "focus": 2.0
-            }
-        },
-        {
-            "id": 275,
-            "prop": "name",
-            "attributes": {
-                "content": "  ダーク系？　なんだそれ、流行ってるのか？",
-                "name": "ガヴィル"
             }
         },
         {
@@ -2290,11 +2282,28 @@
             "attributes": {
                 "name": "char_337_utage_summer_1",
                 "name2": "char_187_ccheal_summer_1",
-                "focus": 1.0
+                "focus": 2.0
             }
         },
         {
             "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "  ダーク系？　なんだそれ、流行ってるのか？",
+                "name": "ガヴィル"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_337_utage_summer_1",
+                "name2": "char_187_ccheal_summer_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 279,
             "prop": "name",
             "attributes": {
                 "content": "  主流のファッションじゃないけど、一部の人からはすっごく人気があるんだ。",
@@ -2302,7 +2311,7 @@
             }
         },
         {
-            "id": 278,
+            "id": 280,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1",
@@ -2311,7 +2320,7 @@
             }
         },
         {
-            "id": 279,
+            "id": 281,
             "prop": "name",
             "attributes": {
                 "content": "  わ、私は雑誌を参考にしただけですよ。外の人はみんなこういう恰好をしてるって書いてありました。",
@@ -2319,7 +2328,7 @@
             }
         },
         {
-            "id": 280,
+            "id": 282,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1#2",
@@ -2328,7 +2337,7 @@
             }
         },
         {
-            "id": 281,
+            "id": 283,
             "prop": "name",
             "attributes": {
                 "content": "  あー……なんかファッションってやつを誤解してるっぽいね。まぁこんな場所に住んでるし、認識ズレてても仕方ないかぁ。",
@@ -2336,7 +2345,7 @@
             }
         },
         {
-            "id": 282,
+            "id": 284,
             "prop": "name",
             "attributes": {
                 "content": "  でも大丈夫、ウタゲお姉さんが正しいファッションを伝授してあげるよ！",
@@ -2344,14 +2353,14 @@
             }
         },
         {
-            "id": 283,
+            "id": 285,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1"
             }
         },
         {
-            "id": 284,
+            "id": 286,
             "prop": "name",
             "attributes": {
                 "content": "  ガヴィル、この子借りるね！",
@@ -2359,14 +2368,14 @@
             }
         },
         {
-            "id": 285,
+            "id": 287,
             "prop": "Character",
             "attributes": {
                 "name": "char_411_tomimi_1#2"
             }
         },
         {
-            "id": 286,
+            "id": 288,
             "prop": "name",
             "attributes": {
                 "content": "  え？　ふええ？",
@@ -2374,14 +2383,14 @@
             }
         },
         {
-            "id": 287,
+            "id": 289,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 288,
+            "id": 290,
             "prop": "name",
             "attributes": {
                 "content": "  あー、好きにしろ。",
@@ -2389,7 +2398,7 @@
             }
         },
         {
-            "id": 289,
+            "id": 291,
             "prop": "name",
             "attributes": {
                 "content": "  とりあえず、これで全員揃ったな。",
@@ -2397,7 +2406,7 @@
             }
         },
         {
-            "id": 290,
+            "id": 292,
             "prop": "name",
             "attributes": {
                 "content": "  そろそろケーちゃんにも正気に戻ってもらうとするか……",
@@ -2405,12 +2414,12 @@
             }
         },
         {
-            "id": 291,
+            "id": 293,
             "prop": "character",
             "attributes": {}
         },
         {
-            "id": 292,
+            "id": 294,
             "prop": "CameraShake",
             "attributes": {
                 "duration": 0.3,
@@ -2423,7 +2432,7 @@
             }
         },
         {
-            "id": 293,
+            "id": 295,
             "prop": "name",
             "attributes": {
                 "content": "  休憩終わりー！　ケーちゃんはまだまだ戦えるぞ！",
@@ -2431,14 +2440,14 @@
             }
         },
         {
-            "id": 294,
+            "id": 296,
             "prop": "Character",
             "attributes": {
                 "name": "char_201_moeshd_summer"
             }
         },
         {
-            "id": 295,
+            "id": 297,
             "prop": "name",
             "attributes": {
                 "content": "  ガヴィルはん、あの子行ってまうで！",
@@ -2446,14 +2455,14 @@
             }
         },
         {
-            "id": 296,
+            "id": 298,
             "prop": "Character",
             "attributes": {
                 "name": "char_187_ccheal_summer_1"
             }
         },
         {
-            "id": 297,
+            "id": 299,
             "prop": "name",
             "attributes": {
                 "content": "  なんだって？",
@@ -2461,7 +2470,7 @@
             }
         },
         {
-            "id": 298,
+            "id": 300,
             "prop": "name",
             "attributes": {
                 "content": "  チッ、お前らさっさと服着ろ！　追うぞ！",
@@ -2469,14 +2478,14 @@
             }
         },
         {
-            "id": 299,
+            "id": 301,
             "prop": "Character",
             "attributes": {
                 "name": "char_411_tomimi_1#4"
             }
         },
         {
-            "id": 300,
+            "id": 302,
             "prop": "name",
             "attributes": {
                 "content": "  あっちは、ズゥママの部族の住処がある方向ですね……",
@@ -2484,14 +2493,14 @@
             }
         },
         {
-            "id": 301,
+            "id": 303,
             "prop": "Character",
             "attributes": {
                 "name": "char_337_utage_summer_1#4"
             }
         },
         {
-            "id": 302,
+            "id": 304,
             "prop": "name",
             "attributes": {
                 "content": "  ちょっと待ってよ！　着替えるの早すぎない！？",
@@ -2499,7 +2508,7 @@
             }
         },
         {
-            "id": 303,
+            "id": 305,
             "prop": "name",
             "attributes": {
                 "content": "  ねえ、待ってってば！",
@@ -2507,14 +2516,14 @@
             }
         },
         {
-            "id": 304,
+            "id": 306,
             "prop": "Character",
             "attributes": {
                 "name": "char_017_homura_summer"
             }
         },
         {
-            "id": 305,
+            "id": 307,
             "prop": "name",
             "attributes": {
                 "content": "  別に着替えなくても大丈夫でしょ！　このまま行くよ！",
@@ -2522,7 +2531,7 @@
             }
         },
         {
-            "id": 306,
+            "id": 308,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -2534,17 +2543,17 @@
             }
         },
         {
-            "id": 307,
+            "id": 309,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 308,
+            "id": 310,
             "prop": "Character",
             "attributes": {}
         },
         {
-            "id": 309,
+            "id": 311,
             "prop": "Image",
             "attributes": {}
         }

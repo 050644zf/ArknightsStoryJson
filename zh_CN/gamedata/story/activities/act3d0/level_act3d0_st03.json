@@ -60,7 +60,9 @@
             "prop": "playsound",
             "attributes": {
                 "key": "$beach",
-                "volume": 0.7
+                "volume": 0.7,
+                "channel": "B",
+                "loop": "true"
             }
         },
         {
@@ -453,6 +455,21 @@
         },
         {
             "id": 53,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "B",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 54,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 55,
             "prop": "Background",
             "attributes": {
                 "image": "bg_sunnytown_1",
@@ -461,14 +478,14 @@
             }
         },
         {
-            "id": 54,
+            "id": 56,
             "prop": "Character",
             "attributes": {
                 "fadetime": 0.0
             }
         },
         {
-            "id": 55,
+            "id": 57,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -477,7 +494,7 @@
             }
         },
         {
-            "id": 56,
+            "id": 58,
             "prop": "name",
             "attributes": {
                 "content": "   快点，这批装饰是今晚的LIVE要用到的。",
@@ -485,7 +502,7 @@
             }
         },
         {
-            "id": 57,
+            "id": 59,
             "prop": "name",
             "attributes": {
                 "content": "   要是赶不上了可就麻烦了！",
@@ -493,14 +510,14 @@
             }
         },
         {
-            "id": 58,
+            "id": 60,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#5"
             }
         },
         {
-            "id": 59,
+            "id": 61,
             "prop": "name",
             "attributes": {
                 "content": "   啊，那个人......",
@@ -508,14 +525,14 @@
             }
         },
         {
-            "id": 60,
+            "id": 62,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#4"
             }
         },
         {
-            "id": 61,
+            "id": 63,
             "prop": "name",
             "attributes": {
                 "content": "   没记错的话，是第二大道那家“知更鸟咖啡店”的店主爷爷的孙子。",
@@ -523,7 +540,7 @@
             }
         },
         {
-            "id": 62,
+            "id": 64,
             "prop": "name",
             "attributes": {
                 "content": "   那里是我以前常去的地方，店主爷爷很和蔼。店里装饰着他去世的妻子奇幻的花和盆栽，放着他们以前一起喜欢的音乐。",
@@ -531,7 +548,7 @@
             }
         },
         {
-            "id": 63,
+            "id": 65,
             "prop": "name",
             "attributes": {
                 "content": "   这么说来，他确实说过，身体不行了，要把店传给孙子了呢。",
@@ -539,7 +556,7 @@
             }
         },
         {
-            "id": 64,
+            "id": 66,
             "prop": "name",
             "attributes": {
                 "content": "   时间过得真快。",
@@ -547,12 +564,12 @@
             }
         },
         {
-            "id": 65,
+            "id": 67,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 66,
+            "id": 68,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -565,7 +582,7 @@
             }
         },
         {
-            "id": 67,
+            "id": 69,
             "prop": "Background",
             "attributes": {
                 "image": "bg_hotel",
@@ -574,14 +591,14 @@
             }
         },
         {
-            "id": 68,
+            "id": 70,
             "prop": "Character",
             "attributes": {
                 "fadetime": 0.0
             }
         },
         {
-            "id": 69,
+            "id": 71,
             "prop": "cameraEffect",
             "attributes": {
                 "effect": "Grayscale",
@@ -591,29 +608,12 @@
             }
         },
         {
-            "id": 70,
+            "id": 72,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
                 "fadetime": 1.0,
                 "block": "true"
-            }
-        },
-        {
-            "id": 71,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_348_ceylon_4#7",
-                "name2": "char_340_shwaz_2#3",
-                "focus": 1.0
-            }
-        },
-        {
-            "id": 72,
-            "prop": "name",
-            "attributes": {
-                "content": "   为什么？",
-                "name": "锡兰"
             }
         },
         {
@@ -622,11 +622,28 @@
             "attributes": {
                 "name": "char_348_ceylon_4#7",
                 "name2": "char_340_shwaz_2#3",
-                "focus": 2.0
+                "focus": 1.0
             }
         },
         {
             "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "   为什么？",
+                "name": "锡兰"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_348_ceylon_4#7",
+                "name2": "char_340_shwaz_2#3",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 76,
             "prop": "name",
             "attributes": {
                 "content": "   因为我得了矿石病，小姐。",
@@ -634,28 +651,11 @@
             }
         },
         {
-            "id": 75,
+            "id": 77,
             "prop": "name",
             "attributes": {
                 "content": "   靠近我对您的身体不好，您只要在需要的时候叫我就好。",
                 "name": "黑"
-            }
-        },
-        {
-            "id": 76,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_348_ceylon_4#8",
-                "name2": "char_340_shwaz_2#3",
-                "focus": 1.0
-            }
-        },
-        {
-            "id": 77,
-            "prop": "name",
-            "attributes": {
-                "content": "   那是什么，很痛吗？",
-                "name": "锡兰"
             }
         },
         {
@@ -664,11 +664,28 @@
             "attributes": {
                 "name": "char_348_ceylon_4#8",
                 "name2": "char_340_shwaz_2#3",
-                "focus": 2.0
+                "focus": 1.0
             }
         },
         {
             "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "   那是什么，很痛吗？",
+                "name": "锡兰"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_348_ceylon_4#8",
+                "name2": "char_340_shwaz_2#3",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 81,
             "prop": "name",
             "attributes": {
                 "content": "   ......不会很痛，但是，会死。",
@@ -676,7 +693,7 @@
             }
         },
         {
-            "id": 80,
+            "id": 82,
             "prop": "name",
             "attributes": {
                 "content": "   这种病是治不了的，小姐。",
@@ -684,7 +701,7 @@
             }
         },
         {
-            "id": 81,
+            "id": 83,
             "prop": "name",
             "attributes": {
                 "content": "   而且......",
@@ -692,7 +709,7 @@
             }
         },
         {
-            "id": 82,
+            "id": 84,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#3",
@@ -701,7 +718,7 @@
             }
         },
         {
-            "id": 83,
+            "id": 85,
             "prop": "name",
             "attributes": {
                 "content": "   我偏要把它治好！",
@@ -709,7 +726,7 @@
             }
         },
         {
-            "id": 84,
+            "id": 86,
             "prop": "name",
             "attributes": {
                 "content": "   哼，你等着吧！将来有一天，我会把它给打败，然后把黑从它手里抢回来。",
@@ -717,12 +734,12 @@
             }
         },
         {
-            "id": 85,
+            "id": 87,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 86,
+            "id": 88,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -735,12 +752,12 @@
             }
         },
         {
-            "id": 87,
+            "id": 89,
             "prop": "largebg",
             "attributes": {}
         },
         {
-            "id": 88,
+            "id": 90,
             "prop": "Background",
             "attributes": {
                 "image": "bg_sunnytown_1",
@@ -749,14 +766,14 @@
             }
         },
         {
-            "id": 89,
+            "id": 91,
             "prop": "Character",
             "attributes": {
                 "fadetime": 0.0
             }
         },
         {
-            "id": 90,
+            "id": 92,
             "prop": "cameraEffect",
             "attributes": {
                 "effect": "Grayscale",
@@ -766,7 +783,7 @@
             }
         },
         {
-            "id": 91,
+            "id": 93,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -775,14 +792,14 @@
             }
         },
         {
-            "id": 92,
+            "id": 94,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#9"
             }
         },
         {
-            "id": 93,
+            "id": 95,
             "prop": "name",
             "attributes": {
                 "content": "   我会想要研究源石，也是因为她是感染者，我想要把她治好。",
@@ -790,7 +807,7 @@
             }
         },
         {
-            "id": 94,
+            "id": 96,
             "prop": "name",
             "attributes": {
                 "content": "   这是一直以来支持我的动力啊，为了这个梦想，我可是去了维多利亚读书欸。",
@@ -798,7 +815,7 @@
             }
         },
         {
-            "id": 95,
+            "id": 97,
             "prop": "name",
             "attributes": {
                 "content": "   晦涩难懂的源石研究，我一开始完全搞不懂，好几次都想放弃了，最后还是坚持了下来。",
@@ -806,7 +823,7 @@
             }
         },
         {
-            "id": 96,
+            "id": 98,
             "prop": "name",
             "attributes": {
                 "content": "   维多利亚也好远啊，本来我一开始还完全不习惯那里的。",
@@ -814,12 +831,12 @@
             }
         },
         {
-            "id": 97,
+            "id": 99,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 98,
+            "id": 100,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -832,7 +849,7 @@
             }
         },
         {
-            "id": 99,
+            "id": 101,
             "prop": "largebg",
             "attributes": {
                 "imagegroup": "bg_beach_1/bg_beach_2",
@@ -841,14 +858,14 @@
             }
         },
         {
-            "id": 100,
+            "id": 102,
             "prop": "Character",
             "attributes": {
                 "fadetime": 0.0
             }
         },
         {
-            "id": 101,
+            "id": 103,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -857,14 +874,14 @@
             }
         },
         {
-            "id": 102,
+            "id": 104,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#9"
             }
         },
         {
-            "id": 103,
+            "id": 105,
             "prop": "name",
             "attributes": {
                 "content": "   结果到了现在，我与其说是一个汐斯塔人，不如说是一个维多利亚人了。",
@@ -872,7 +889,7 @@
             }
         },
         {
-            "id": 104,
+            "id": 106,
             "prop": "name",
             "attributes": {
                 "content": "   博士，难道说，我所拥有的一切，都是假的吗？",
@@ -880,12 +897,12 @@
             }
         },
         {
-            "id": 105,
+            "id": 107,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 106,
+            "id": 108,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -897,7 +914,7 @@
             }
         },
         {
-            "id": 107,
+            "id": 109,
             "prop": "largebg",
             "attributes": {
                 "imagegroup": "bg_beach_1/bg_beach_2",
@@ -906,12 +923,12 @@
             }
         },
         {
-            "id": 108,
+            "id": 110,
             "prop": "Character",
             "attributes": {}
         },
         {
-            "id": 109,
+            "id": 111,
             "prop": "cameraEffect",
             "attributes": {
                 "effect": "Grayscale",
@@ -921,7 +938,7 @@
             }
         },
         {
-            "id": 110,
+            "id": 112,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -930,14 +947,14 @@
             }
         },
         {
-            "id": 111,
+            "id": 113,
             "prop": "Character",
             "attributes": {
                 "name": "char_340_shwaz_2#1"
             }
         },
         {
-            "id": 112,
+            "id": 114,
             "prop": "name",
             "attributes": {
                 "content": "   为了守护这里，我可以付出很多东西。",
@@ -945,12 +962,12 @@
             }
         },
         {
-            "id": 113,
+            "id": 115,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 114,
+            "id": 116,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -962,12 +979,12 @@
             }
         },
         {
-            "id": 115,
+            "id": 117,
             "prop": "Character",
             "attributes": {}
         },
         {
-            "id": 116,
+            "id": 118,
             "prop": "cameraEffect",
             "attributes": {
                 "effect": "Grayscale",
@@ -977,7 +994,7 @@
             }
         },
         {
-            "id": 117,
+            "id": 119,
             "prop": "largebg",
             "attributes": {
                 "imagegroup": "bg_beach_1/bg_beach_2",
@@ -986,7 +1003,7 @@
             }
         },
         {
-            "id": 118,
+            "id": 120,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -995,35 +1012,35 @@
             }
         },
         {
-            "id": 119,
+            "id": 121,
             "prop": "Decision",
             "attributes": {
                 "options": "我也不知道。;她说不定也有苦衷。",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line120",
-                "option2": "line123"
+                "option1": "line122",
+                "option2": "line125"
             }
         },
         {
-            "id": 120,
+            "id": 122,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
             },
             "endOfOpt": false,
-            "targetLine": "line127"
+            "targetLine": "line129"
         },
         {
-            "id": 121,
+            "id": 123,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#5"
             }
         },
         {
-            "id": 122,
+            "id": 124,
             "prop": "name",
             "attributes": {
                 "content": "   ......呼。是啊，博士又怎么会知道呢。",
@@ -1031,23 +1048,23 @@
             }
         },
         {
-            "id": 123,
+            "id": 125,
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
             },
             "endOfOpt": false,
-            "targetLine": "line127"
+            "targetLine": "line129"
         },
         {
-            "id": 124,
+            "id": 126,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#9"
             }
         },
         {
-            "id": 125,
+            "id": 127,
             "prop": "name",
             "attributes": {
                 "content": "   有什么苦衷，连我也不能告诉吗？",
@@ -1055,7 +1072,7 @@
             }
         },
         {
-            "id": 126,
+            "id": 128,
             "prop": "name",
             "attributes": {
                 "content": "   而且，无论有什么样的苦衷，做了坏事就是做了坏事，这是无法回避的。",
@@ -1063,7 +1080,7 @@
             }
         },
         {
-            "id": 127,
+            "id": 129,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
@@ -1071,14 +1088,14 @@
             "endOfOpt": true
         },
         {
-            "id": 128,
+            "id": 130,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#9"
             }
         },
         {
-            "id": 129,
+            "id": 131,
             "prop": "name",
             "attributes": {
                 "content": "   博士，你说，我应该放弃吗？",
@@ -1086,23 +1103,23 @@
             }
         },
         {
-            "id": 130,
+            "id": 132,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 131,
+            "id": 133,
             "prop": "Decision",
             "attributes": {
                 "options": "我很难就这件事给你答案......",
                 "values": "3"
             },
             "targetLine": {
-                "option3": "line132"
+                "option3": "line134"
             }
         },
         {
-            "id": 132,
+            "id": 134,
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
@@ -1110,18 +1127,18 @@
             "endOfOpt": false
         },
         {
-            "id": 133,
+            "id": 135,
             "prop": "Decision",
             "attributes": {
                 "options": "但是我知道的是，你也是研究源石的学者。",
                 "values": "4"
             },
             "targetLine": {
-                "option4": "line134"
+                "option4": "line136"
             }
         },
         {
-            "id": 134,
+            "id": 136,
             "prop": "Predicate",
             "attributes": {
                 "references": "4"
@@ -1129,17 +1146,17 @@
             "endOfOpt": false
         },
         {
-            "id": 135,
+            "id": 137,
             "prop": "Character",
             "attributes": {}
         },
         {
-            "id": 136,
+            "id": 138,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 137,
+            "id": 139,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -1152,17 +1169,17 @@
             }
         },
         {
-            "id": 138,
+            "id": 140,
             "prop": "largebg",
             "attributes": {}
         },
         {
-            "id": 139,
+            "id": 141,
             "prop": "Background",
             "attributes": {}
         },
         {
-            "id": 140,
+            "id": 142,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -1171,54 +1188,54 @@
             }
         },
         {
-            "id": 141,
+            "id": 143,
             "prop": "name",
             "attributes": {
                 "content": "我们能战胜矿石病吗？"
             }
         },
         {
-            "id": 142,
+            "id": 144,
             "prop": "name",
             "attributes": {
                 "content": "我们能拯救矿石病人吗？"
             }
         },
         {
-            "id": 143,
+            "id": 145,
             "prop": "name",
             "attributes": {
                 "content": "这灾难会有尽头吗？"
             }
         },
         {
-            "id": 144,
+            "id": 146,
             "prop": "name",
             "attributes": {
                 "content": "我看不到尽头。我没有把握。我不知道答案。"
             }
         },
         {
-            "id": 145,
+            "id": 147,
             "prop": "name",
             "attributes": {
                 "content": "我可以放弃吗？可以。"
             }
         },
         {
-            "id": 146,
+            "id": 148,
             "prop": "name",
             "attributes": {
                 "content": "但我不愿意。"
             }
         },
         {
-            "id": 147,
+            "id": 149,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 148,
+            "id": 150,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -1231,7 +1248,7 @@
             }
         },
         {
-            "id": 149,
+            "id": 151,
             "prop": "largebg",
             "attributes": {
                 "imagegroup": "bg_beach_1/bg_beach_2",
@@ -1240,7 +1257,7 @@
             }
         },
         {
-            "id": 150,
+            "id": 152,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -1249,18 +1266,18 @@
             }
         },
         {
-            "id": 151,
+            "id": 153,
             "prop": "Decision",
             "attributes": {
                 "options": "这片大地也许很糟......",
                 "values": "5"
             },
             "targetLine": {
-                "option5": "line152"
+                "option5": "line154"
             }
         },
         {
-            "id": 152,
+            "id": 154,
             "prop": "Predicate",
             "attributes": {
                 "references": "5"
@@ -1268,18 +1285,18 @@
             "endOfOpt": false
         },
         {
-            "id": 153,
+            "id": 155,
             "prop": "Decision",
             "attributes": {
                 "options": "但你做的一切，并不是徒劳的。",
                 "values": "6"
             },
             "targetLine": {
-                "option6": "line154"
+                "option6": "line156"
             }
         },
         {
-            "id": 154,
+            "id": 156,
             "prop": "Predicate",
             "attributes": {
                 "references": "6"
@@ -1287,18 +1304,18 @@
             "endOfOpt": false
         },
         {
-            "id": 155,
+            "id": 157,
             "prop": "Decision",
             "attributes": {
                 "options": "相信你自己的选择。",
                 "values": "7"
             },
             "targetLine": {
-                "option7": "line156"
+                "option7": "line158"
             }
         },
         {
-            "id": 156,
+            "id": 158,
             "prop": "Predicate",
             "attributes": {
                 "references": "7"
@@ -1306,14 +1323,14 @@
             "endOfOpt": false
         },
         {
-            "id": 157,
+            "id": 159,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#2"
             }
         },
         {
-            "id": 158,
+            "id": 160,
             "prop": "name",
             "attributes": {
                 "content": "   ......呼。你说得对，博士。",
@@ -1321,7 +1338,7 @@
             }
         },
         {
-            "id": 159,
+            "id": 161,
             "prop": "name",
             "attributes": {
                 "content": "   不愧是前辈，我在这方面看来要学习的还有许多呢。",
@@ -1329,14 +1346,14 @@
             }
         },
         {
-            "id": 160,
+            "id": 162,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#4"
             }
         },
         {
-            "id": 161,
+            "id": 163,
             "prop": "name",
             "attributes": {
                 "content": "   看来我要做的，不是坐在这里胡思乱想，而是取证。",
@@ -1344,7 +1361,7 @@
             }
         },
         {
-            "id": 162,
+            "id": 164,
             "prop": "name",
             "attributes": {
                 "content": "   如果他们真的是会放任市民们陷入危机的话，我一定会尽我的全力去阻止他们！",
@@ -1352,7 +1369,7 @@
             }
         },
         {
-            "id": 163,
+            "id": 165,
             "prop": "name",
             "attributes": {
                 "content": "   而且既然我相信自己绝对是正确的，即使是只有我一个人，我也会为了拯救这个城市而努力的！",
@@ -1360,7 +1377,7 @@
             }
         },
         {
-            "id": 164,
+            "id": 166,
             "prop": "Character",
             "attributes": {
                 "name": "char_188_helage_1#2",
@@ -1369,28 +1386,11 @@
             }
         },
         {
-            "id": 165,
+            "id": 167,
             "prop": "name",
             "attributes": {
                 "content": "   说的不错。",
                 "name": "赫拉格"
-            }
-        },
-        {
-            "id": 166,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_188_helage_1#2",
-                "name2": "char_348_ceylon_4#8",
-                "focus": 2.0
-            }
-        },
-        {
-            "id": 167,
-            "prop": "name",
-            "attributes": {
-                "content": "   啊，赫拉格爷爷。",
-                "name": "锡兰"
             }
         },
         {
@@ -1399,11 +1399,28 @@
             "attributes": {
                 "name": "char_188_helage_1#2",
                 "name2": "char_348_ceylon_4#8",
-                "focus": 1.0
+                "focus": 2.0
             }
         },
         {
             "id": 169,
+            "prop": "name",
+            "attributes": {
+                "content": "   啊，赫拉格爷爷。",
+                "name": "锡兰"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_188_helage_1#2",
+                "name2": "char_348_ceylon_4#8",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 171,
             "prop": "name",
             "attributes": {
                 "content": "   看来，心情收拾得还不错。",
@@ -1411,7 +1428,7 @@
             }
         },
         {
-            "id": 170,
+            "id": 172,
             "prop": "Character",
             "attributes": {
                 "name": "char_188_helage_1#2",
@@ -1420,7 +1437,7 @@
             }
         },
         {
-            "id": 171,
+            "id": 173,
             "prop": "name",
             "attributes": {
                 "content": "   嗯。赫拉格爷爷，博士，你们能听我说吗。",
@@ -1428,7 +1445,7 @@
             }
         },
         {
-            "id": 172,
+            "id": 174,
             "prop": "name",
             "attributes": {
                 "content": "   不管怎么样，我也不希望让汐斯塔市的人们陷入危险。对我来说这个才是最为优先的。",
@@ -1436,28 +1453,11 @@
             }
         },
         {
-            "id": 173,
+            "id": 175,
             "prop": "name",
             "attributes": {
                 "content": "   在加里森游乐场的旁边有着全市最大的广播塔，全城市的广播系统都是在那里运行。",
                 "name": "锡兰"
-            }
-        },
-        {
-            "id": 174,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_188_helage_1#3",
-                "name2": "char_348_ceylon_4#2",
-                "focus": 1.0
-            }
-        },
-        {
-            "id": 175,
-            "prop": "name",
-            "attributes": {
-                "content": "   广播塔？",
-                "name": "赫拉格"
             }
         },
         {
@@ -1466,11 +1466,28 @@
             "attributes": {
                 "name": "char_188_helage_1#3",
                 "name2": "char_348_ceylon_4#2",
-                "focus": 2.0
+                "focus": 1.0
             }
         },
         {
             "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "   广播塔？",
+                "name": "赫拉格"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_188_helage_1#3",
+                "name2": "char_348_ceylon_4#2",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 179,
             "prop": "name",
             "attributes": {
                 "content": "   但是，那里也是克洛宁管辖的区域。他也常常在面向全市的广播中露面。",
@@ -1478,7 +1495,7 @@
             }
         },
         {
-            "id": 178,
+            "id": 180,
             "prop": "name",
             "attributes": {
                 "content": "   趁着LIVE开始的时候，人群集中起来，克洛宁的人也难免应接不暇。",
@@ -1486,7 +1503,7 @@
             }
         },
         {
-            "id": 179,
+            "id": 181,
             "prop": "name",
             "attributes": {
                 "content": "   只要我们能在那个时候控制电台，就能向全城的人传递火山的情报。",
@@ -1494,7 +1511,7 @@
             }
         },
         {
-            "id": 180,
+            "id": 182,
             "prop": "name",
             "attributes": {
                 "content": "   所以拜托你们了，请助我一臂之力吧。",
@@ -1502,19 +1519,19 @@
             }
         },
         {
-            "id": 181,
+            "id": 183,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 182,
+            "id": 184,
             "prop": "Blocker",
             "attributes": {
                 "block": "true"
             }
         },
         {
-            "id": 183,
+            "id": 185,
             "prop": "Image",
             "attributes": {}
         }
