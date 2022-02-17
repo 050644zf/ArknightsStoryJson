@@ -1,0 +1,6593 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act8mini",
+    "eventName": "我が眼に映るまま",
+    "entryType": "MINI_ACTIVITY",
+    "storyCode": "",
+    "avgTag": "幕間",
+    "storyName": "その全てを忘れず",
+    "storyInfo": "航路前方で突然天災が発生した。ドクターはそれを予知したかのようにブリッジに姿を現し、ロドスを率いて危機を乗り越える。ケルシーの判断によると、ドクターはほとんどのエピソード記憶を失ってはいるものの、源石の本質に関する基本的認識はまだ残っているとのことだった。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 2,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 4,
+            "prop": "name",
+            "attributes": {
+                "content": "p.m. 4:11 天気/曇天 視界：10km"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "name",
+            "attributes": {
+                "content": "ロドス本艦　医療室"
+            }
+        },
+        {
+            "id": 6,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$path_intro",
+                "key": "$path_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 8,
+            "prop": "delay",
+            "attributes": {}
+        },
+        {
+            "id": 9,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 10,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_infirmary",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 4.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "もう電極パッドを外しても構わない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 15,
+            "prop": "Decision",
+            "attributes": {
+                "options": "所見はどうだ？;……;熱っぽいし……ぼーっとして気持ちが悪い。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line16",
+                "option2": "line16",
+                "option3": "line19"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line22"
+        },
+        {
+            "id": 17,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "name",
+            "attributes": {
+                "content": "検査の結果に、新たな進展はなかった。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line22"
+        },
+        {
+            "id": 20,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "name",
+            "attributes": {
+                "content": "少し休めば、いずれの症状も落ち着くことだろう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr.{@nickname}。この一か月余りで、君の脳を七回スキャンしたが……結果は毎回大差がない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "内側側頭葉には全く問題がなく、脳内の他の領域におけるニューロンも若者と比べても遜色ない状態……",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "name",
+            "attributes": {
+                "content": "つまり、私の判断によれば……君はもうこのように頻繁に医療室を訪れ、不快感を伴う検査を受ける必要はないということだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 28,
+            "prop": "Decision",
+            "attributes": {
+                "options": "それなら、なぜ自分の記憶は戻らないんだ？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line29"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "確かに、君が多くの記憶を失っているということは疑いようがない事実だ――いくら君でも、すべての検査結果を偽装することなど不可能だからな。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "name",
+            "attributes": {
+                "content": "君が失っているのは、いわゆるエピソード記憶と呼ばれるものだ。君自身の身元に関する主観的な認識、そして、チェルノボーグの石棺で眠りにつくより前に経験したすべてが欠落している。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、それとは対照的に……いわゆる手続き記憶の回復は極めて早い。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "アーミヤやドーベルマンの報告、そして私自身の目で見ても、その結果は明白だ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "name",
+            "attributes": {
+                "content": "君がチェルノボーグで見せた戦場における指揮能力は、以前と遜色ないものだった。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 36,
+            "prop": "Decision",
+            "attributes": {
+                "options": "どうしてこんなことに？;……;つまり、自分はまだ役に立てる……と？",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line37",
+                "option2": "line40",
+                "option3": "line43"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line46"
+        },
+        {
+            "id": 38,
+            "prop": "name",
+            "attributes": {
+                "content": "記憶障害を引き起こす要因は多種多様だ。不可抗力といえるケースもあれば、主観的要因によるケースも存在する。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "name",
+            "attributes": {
+                "content": "医学的検査手段を用いたところで、できることはせいぜい、原因の候補から器質的病変を除外するくらいのものだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line46"
+        },
+        {
+            "id": 41,
+            "prop": "name",
+            "attributes": {
+                "content": "君は、以前に比べ沈黙を選ぶことがはるかに多くなった。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "name",
+            "attributes": {
+                "content": "君の言語中枢に損傷がないことを考慮すると、エピソード記憶の欠陥が君の性格に変化を引き起こしたと推測する他あるまい。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line46"
+        },
+        {
+            "id": 44,
+            "prop": "name",
+            "attributes": {
+                "content": "ロドスにとって、君の存在意義は「役に立つ」などという小さなものには留まらない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "name",
+            "attributes": {
+                "content": "仮に君が本当にすべての記憶を失い、無知な一般人になったとしても……アーミヤは君を救ったことを後悔しないだろうし、ロドスにはいつまでも君の居場所があるだろう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "いずれにせよ私は、過去そうであったように……君の持つ能力が重要な役割を果たすことを信じている。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 49,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ケルシーの力になりたい。;アーミヤの力になりたい。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line50",
+                "option2": "line50"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 51,
+            "prop": "name",
+            "attributes": {
+                "content": "……分かっているさ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "name",
+            "attributes": {
+                "content": "それに、私も君の努力は目にしている。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "name",
+            "attributes": {
+                "content": "龍門を後にして以来、我々はここしばらく荒野を進み続けている。オペレーターたちには休養が必要だ。そうすれば、アーミヤも適度な休息を取ることができるだろうしな。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#4"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "name",
+            "attributes": {
+                "content": "そして君もまた、彼らと同様に一息つく必要がある。違うか？",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 57,
+            "prop": "Decision",
+            "attributes": {
+                "options": "少し、現状に慣れる時間がほしいんだ。;……;まだここで立ち止まりたくはない。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line58",
+                "option2": "line58",
+                "option3": "line58"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 59,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "PRTSが君の補助を行う。じきにロドスでの仕事にも慣れることだろう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 61,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、あまり無理はするなよ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "巨大な災難から辛うじて帰還したのは、ロドスだけではない。君もまたそうなのだ、Dr.{@nickname}。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "君の身体は概ね正常通りに回復しているが、その記憶はまだ損傷している状態だ。精神状態も、安定しているとは言い難い。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#2"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "name",
+            "attributes": {
+                "content": "過労は君の健康を害するぞ。一人の患者として覚えておいてくれ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 67,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ケルシーも病人だろう。;アーミヤも病人だろう。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line68",
+                "option2": "line73"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line76"
+        },
+        {
+            "id": 69,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "name",
+            "attributes": {
+                "content": "私か？　気遣いには感謝する。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "name",
+            "attributes": {
+                "content": "鉱石病に慣れたとは到底言えないが……私の心配は一番最後で構わない、ということだけは保証しておこう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line76"
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "君が彼女を心配していることくらい、彼女自身も知っているさ。最近のアーミヤは、以前より自分の身体に気を配るようになったからな。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、私から伝えるより君から言ってもらう方が、内容によっては効果的であることは認めざるを得ない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr.{@nickname}。君はたった一ヶ月の間に、艦内各部門の人員配置業務を引き継いだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "それだけでなく、オペレーターと共に過去の戦闘を振り返り、更なる戦術最適化の可能性を探る君の姿も、しばしば目にしている。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "ついさっき……検査を受けていた時でさえ、何かを読んでいたな。あれは数日前加入したばかりのオペレーターが書いた日報だろう？",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "加えて、私は君のノートも確認した。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "name",
+            "attributes": {
+                "content": "オペレーターたちに関する非常に詳細な記録、戦術考案中に偶然ひらめいたであろうアイデア……",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "そしてロドスの業務効率に関する計算式、更には私にすら理解不能の落書き。これらはすべて、君が仕事に打ち込んでいることを立証している。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "name",
+            "attributes": {
+                "content": "そのほとんどがPRTS頼りでも終わらせられる仕事だが……これが君にとって好ましいやり方なのだろう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 86,
+            "prop": "Decision",
+            "attributes": {
+                "options": "単なる思考整理にすぎない。;PRTSのデータでは少し人間味に欠ける。;君についての愚痴まで読んでないだろうな！？",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line87",
+                "option2": "line89",
+                "option3": "line91"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line93"
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "ノートの厚みが増すほどに君の思考も進歩する、というわけか。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line93"
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "PRTSはただのツールにすぎない。それに依存せず仕事を進めるのは、いい習慣と言えるだろう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line93"
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "あれは愚痴だったのか？　まあ、「褒め言葉」として受け取るとしよう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "とにかく、君の持つ能力はそれぞれが急速に回復しつつある。これは君の手続き記憶が残っているからだけではなく、君自身が並外れた努力をしているからこそだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "意識的に鍛錬を行うことは、君の脳を石棺で眠りにつく以前の状態へといち早く回復させるための助けになるだろう。私の予想よりも早く回復する可能性も十分にある。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 97,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ケルシーも、自分の回復を望んでくれているのか？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line98"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "私は君の担当医だ。患者の早期回復を望まない医者などいないさ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "name",
+            "attributes": {
+                "content": "ただ、もし君が過労で倒れでもしたら、アーミヤの状態にも影響が及ぶことは留意しておくように。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 102,
+            "prop": "Decision",
+            "attributes": {
+                "options": "結局、アーミヤを心配しているだけ、ということか？;……;分かってる。気にかけてくれてありがとう。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line103",
+                "option2": "line103",
+                "option3": "line103"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 104,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "時折見せるその感情表現は、過去の君とは随分異なっているな。非常に興味深いことではあるが、私に向ける必要はない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "何度も言ってきたように、君の心身の健康を確保することは私の職責の一つなのだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#4"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "故に……そうだな。たとえ戦場ではなく、この場においても、私は君を気にかけていると覚えておいてくれ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 110,
+            "prop": "Decision",
+            "attributes": {
+                "options": "珍しい。ケルシーがそんなことを言うとは。;……;分かった。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line111",
+                "option2": "line111",
+                "option3": "line111"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 112,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#2"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "name",
+            "attributes": {
+                "content": "では、今日の検査はこれで終了だ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 115,
+            "prop": "name",
+            "attributes": {
+                "content": "先ほども述べた通り、来週のこの時間は、ここに来る必要はない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、毎日朝と夜に行っている定期検査はしばらく継続する。そしてこれからは、私ではなくLancet-2が検査担当となる。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 117,
+            "prop": "name",
+            "attributes": {
+                "content": "それと……もし現在の健康状態では職務続行が不可能と判断された時は、ただちに医療室に戻って来るように。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "name",
+            "attributes": {
+                "content": "では、ドクター。仕事に戻って構わないぞ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 120,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 123,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_corridor",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 125,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "p.m. 4:32 天気/曇天 視界：7km"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "name",
+            "attributes": {
+                "content": "ロドス本艦 ブリッジ外廊下"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 130,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "character",
+            "attributes": {
+                "name": "char_183_skgoat_1",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 132,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 133,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 134,
+            "prop": "name",
+            "attributes": {
+                "content": "あれ、アーススピリットさん。どうしてこちらに？",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 136,
+            "prop": "name",
+            "attributes": {
+                "content": "午前中に提出した地質モニタリングレポートの更新をしにね。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 138,
+            "prop": "name",
+            "attributes": {
+                "content": "こんなに早くですか？　あなたらしくもないですね。",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "データというのは、移り変わりが激しいものなの。お陰で昼寝もできなかったくらいよ。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "……っと、そうだ。このレポートを、あなたたちのリーダーに渡しておいてもらえるかしら。一番下に私の意見を書いておいたから。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 143,
+            "prop": "name",
+            "attributes": {
+                "content": "分かりました。強風警報ですよね？",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "そのくらいなら、問題ありませんよ。エンジニア部が数日前、防風板を強化してくれましたし……支援部もすでに、甲板の危険区域には近づかないよう各オペレーターへ通達してくれましたから。",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 146,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 147,
+            "prop": "name",
+            "attributes": {
+                "content": "それだけじゃないの。ほら、レポートの下の方を見て。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 149,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 150,
+            "prop": "name",
+            "attributes": {
+                "content": "どれどれ……「航路前方に嵐が出現する可能性あり」……「低速運行あるいは迂回を推奨する」？",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "name",
+            "attributes": {
+                "content": "アーススピリットさん、この嵐って……災害レベルはどのくらいですか？",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "……分からないわ。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "name",
+            "attributes": {
+                "content": "前方に複数のサイクロンが発生し、予想を超える速度で勢力を増しているのを確認したの。私はただ、その異常なデータに基づいて可能性を提示しただけよ。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 156,
+            "prop": "name",
+            "attributes": {
+                "content": "そうなると……少し説得力に欠けますね。",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "このルートは一ヶ月前に策定されたものです。各方面の承認と確認を経て進行しているので、今から急遽変更となると影響範囲は大きくなります。",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "前回の会議には、あなたも参加してましたよね？　今回のルートはリスクが極めて低いですし、過去十年間、龍門からリターニアへ向かう公式のキャラバンも、いつもここを通っているんですよ。",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 160,
+            "prop": "name",
+            "attributes": {
+                "content": "そうね。天災多発エリアを避けているんだから、理論上は危険に遭遇する確率なんて極めて低いはず……",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 162,
+            "prop": "name",
+            "attributes": {
+                "content": "ということは……あなたも、そこまで自信がないということでしょうか？",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "name",
+            "attributes": {
+                "content": "上からのリクエストは、なるべく早くウルサス及び龍門から離れることなんです。もし緊急迂回することになれば、遅延に繋がってしまいます。",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "……まあ、いいわ。私の警告をあなたが受け取ったことさえ確認できれば、お仕事完了なわけだし。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "name",
+            "attributes": {
+                "content": "それに、これ以上は職責の範疇を超えてるしね。私にはあなたたちの判断にまで干渉する権利はないもの。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "では、少し待っていてください。手順に従いリーダーに報告を行います。それから話し合いましょう……",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 170,
+            "prop": "Decision",
+            "attributes": {
+                "options": "いや、それでは間に合わない。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line171"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 172,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ、ドクター！？　どうしてこちらに？",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "いつもなら、通常運行時はご自分の執務室にいるじゃないですか。",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 176,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ちょうどブリッジに上がろうと思っていたところだ。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line177"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "それは……なんというか、偶然ですね。",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "レポートはすでに受け取っていますが、リーダーに直接状況説明をなさいますか？",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 181,
+            "prop": "Decision",
+            "attributes": {
+                "options": "嵐は目の前だ。彼もすぐに気が付くだろう。;緊急事態だ。アーミヤに直接話そう。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line182",
+                "option2": "line182"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ、そこまで深刻なんですか？　嫌な予感がしてきたな……",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_183_skgoat_1",
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、私を信じてくれるの？",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 187,
+            "prop": "Decision",
+            "attributes": {
+                "options": "自分が信じるのは、目の前の事実だ。;自分のオペレーターを信じるのは、当然のことだ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line188",
+                "option2": "line188"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "それなら、一緒にブリッジに行くわ。サイクロンの状況を引き続き観測して、あなたとアーミヤにリアルタイムで伝えるべきだもの。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 191,
+            "prop": "Decision",
+            "attributes": {
+                "options": "それが最善策だな。;残業代はいらないのか？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line192",
+                "option2": "line192"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 193,
+            "prop": "name",
+            "attributes": {
+                "content": "ええ。これも、私の職責の内よ。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 194,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 195,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_bridge",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "p.m. 4:39 天気/曇天 視界：4km"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "ロドス本艦 ブリッジ"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 201,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 202,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "name",
+            "attributes": {
+                "content": "報告！　航路前方の風速が、急速に上昇しています！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "視界不良、可視範囲が狭まっています！　この風速では、あと数分で範囲1kmを下回ります！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "対砂嵐用の補助運転機能は起動しましたか？",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "手筈通り、事前に起動させています。",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "name",
+            "attributes": {
+                "content": "でも、アーミヤさん、これって普通の砂嵐じゃないんじゃ……",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$tense_intro",
+                "key": "$tense_loop",
+                "volume": 0.4,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 211,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "name",
+            "attributes": {
+                "content": "なんてこった！",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "jump",
+                "power": 5.0,
+                "times": 2.0,
+                "fadetime": 0.51,
+                "block": "true"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 215,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 216,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_002_amiya_1#6",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "パービルさん、何が見えたんですか？",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_002_amiya_1#6",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "センサーが、航路前方に雷を伴う積乱雲群を探知しました！",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_002_amiya_1#6",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "――！",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#7"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "放送をオンにしてください！　……全艦に告ぎます！　ロドスはまもなく雷雨の中へ突入します――警戒レベルを一つ、上げてください！",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "name",
+            "attributes": {
+                "content": "航行制御員さん、すぐに減速を！",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 226,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 227,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.0,
+                "xstrength": 50.0,
+                "ystrength": 50.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 229,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#5"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "name",
+            "attributes": {
+                "content": "うっ……すごい揺れですね……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#2"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "name",
+            "attributes": {
+                "content": "状況はどうですか？",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 234,
+            "prop": "name",
+            "attributes": {
+                "content": "側面外板の圧力が急速に上昇しています！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "最外部の防風板、損傷率70%！　基本機能、喪失状態です！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "加えて……船体近くに異常熱源を多数感知しました！　エネルギー強度、警戒限界値に迫っています！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#2"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "これは、まさか……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 240,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ああ――天災だ。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line241"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 242,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#5"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ、Dr.{@nickname}！",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "一体、何が……？",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 246,
+            "prop": "Decision",
+            "attributes": {
+                "options": "説明している時間はない。;この雷雨は、スーパーセルによるものだ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line247",
+                "option2": "line247"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 248,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "name",
+            "attributes": {
+                "content": "――分かりました。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 251,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 252,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#7"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_transmissionget"
+            }
+        },
+        {
+            "id": 254,
+            "prop": "name",
+            "attributes": {
+                "content": "全艦に、天災非常警戒宣言を発令します！",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "name",
+            "attributes": {
+                "content": "甲板の一層にいる人員は、ブリッジのメンバーを除いて退避！　二層から六層については、エンジニア以外の人員全員で中央エリアに避難してください！",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 256,
+            "prop": "name",
+            "attributes": {
+                "content": "航行制御員さんは、ひとまず最低速度を保って航行を……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "ナビゲーターさん、この嵐はいつまで続きますか？",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_012"
+            }
+        },
+        {
+            "id": 260,
+            "prop": "name",
+            "attributes": {
+                "content": "この手の突発的な嵐であれば、恐らく一、二時間で通過できるかと……",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "name",
+            "attributes": {
+                "content": "リーダー、そうとも言い切れません。ここは一度、ドクターとアーススピリットさんの意見をお聞きしましょう。",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 264,
+            "prop": "Decision",
+            "attributes": {
+                "options": "アーススピリット、皆に観測結果を伝えてくれ。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line265"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 266,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_183_skgoat_1",
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "name",
+            "attributes": {
+                "content": "分かったわ、ドクター。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "name",
+            "attributes": {
+                "content": "パービル、ドクターがあなたに渡したそれは、一時間前に私が作成したレポートよ。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 270,
+            "prop": "name",
+            "attributes": {
+                "content": "……「二キロ圏内に複数の小型サイクロン」……！？　いい兆しとは思えませんね……",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "name",
+            "attributes": {
+                "content": "どうやら、この天災は普通の嵐とは違うらしい……最高危険度の風災にすら発展するかもしれないってことか。",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 273,
+            "prop": "name",
+            "attributes": {
+                "content": "ブリッジのセンサーを借りてもいいかしら？",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "もちろんです、アーススピリットさん。俺も気付くべきでした……",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "負い目を感じる必要はないわ、パービル。今回の現象は極めて異常だもの。これは天災予測の常識を超えている……ベテランの天災トランスポーターでも、兆候を事前に見抜くことは難しいでしょう。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクターの後押しがなければ、私だってこの異常をエラーとして見落とすところだったわ。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 280,
+            "prop": "Decision",
+            "attributes": {
+                "options": "まだ、事態を好転させるだけの時間はある。;……;なんだか、とても嫌な予感がする。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line281",
+                "option2": "line281",
+                "option3": "line281"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 282,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 283,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、アーミヤ。前方のサイクロン群が収束しつつあるわ。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "つまり……収束したサイクロン群によって、多重渦サイクロン・コアが形成されようとしている、ということよ。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "name",
+            "attributes": {
+                "content": "一度コアが形成されたら、サイクロンの直径は二キロにまで達し……少なくとも七、八時間は勢力を維持することが予測されるわ。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "name",
+            "attributes": {
+                "content": "もし、ロドスが速度を維持したままコアに接近した場合は……どうなりますか？",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 289,
+            "prop": "name",
+            "attributes": {
+                "content": "万が一サイクロンと接触しようものなら、ロドスの船体は巻き上げられた活性源石の粉塵と高速で衝突するでしょう。源石爆弾――それも最大規模のものが数百、船体で同時に起爆するのと同じです。",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "それでどうなるかは……想像したくありません。",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "方向転換は、まだ間に合いますか？",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "やれるだけやってみますが……",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 296,
+            "prop": "name",
+            "attributes": {
+                "content": "サイクロン・コアは急速に方向転換するんです。最高速度は時速千キロ近くに達しますし……",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 298,
+            "prop": "name",
+            "attributes": {
+                "content": "……それじゃ、やったところで意味はなさそうですね。",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "name",
+            "attributes": {
+                "content": "アーミヤさん、たとえ全速で撤退したとしても……誤った方向を選べば、ロドスがこの暴風から逃れることはできません。",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_002_amiya_1",
+                "name2": "avg_npc_012",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "となると……この場に留まるしかなさそうですね……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "name",
+            "attributes": {
+                "content": "パービルさん、船体損傷率の予測をお願いします。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_002_amiya_1",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "過去の経験に基づいて……同規模の嵐の中で七時間過ごすと仮定すると、一層から六層の甲板は平均15%程度損傷しますね……",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "name",
+            "attributes": {
+                "content": "中でも一層の甲板の被害が最も深刻になります。死傷者が出る可能性も捨てきれません。",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_002_amiya_1#4",
+                "name2": "avg_npc_012",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "……ロドス本艦がここ一年で受けた中でも、最大規模の被害になりそうですね。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、他に方法はないようです……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 310,
+            "prop": "Decision",
+            "attributes": {
+                "options": "方法ならある。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line311"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 312,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#2"
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター？",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 315,
+            "prop": "Decision",
+            "attributes": {
+                "options": "そこまでの被害を受ける必要はない。;修理で一ヶ月も立ち往生したくないだろう？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line316",
+                "option2": "line316"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 317,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "name",
+            "attributes": {
+                "content": "はい。荒野での停泊を余儀なくされたら、別のリスクに遭遇する可能性もありますから……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 319,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 320,
+            "prop": "Decision",
+            "attributes": {
+                "options": "だからこそ、もう一つ選択肢がある。;撤退と停止以外に――もう一つだけ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line321",
+                "option2": "line321"
+            }
+        },
+        {
+            "id": 321,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 322,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、もしかして……前進するつもりですか？",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "む、無理です！　視界が悪すぎます！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "仮に補助運転を使ったとしても、これじゃどう進めばいいかなんて分かりません。こんな砂嵐に頭から突っ込んでも死ぬだけだって、俺たちサルゴン人なら誰でも知ってますよ！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 328,
+            "prop": "name",
+            "attributes": {
+                "content": "カマルさん、あなたの懸念は理解できます。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが……私は、ドクターを信じます。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 330,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#7"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr.{@nickname}、ロドスを率いて天災エリアを突破する自信はありますか？",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 333,
+            "prop": "Decision",
+            "attributes": {
+                "options": "アーススピリットの座標計測さえあれば。;自信ならある。;PRTSの補助が必要にはなるが。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line334",
+                "option2": "line334",
+                "option3": "line334"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 335,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#7"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "分かりました。みなさん、ドクターに協力してください。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 338,
+            "prop": "name",
+            "attributes": {
+                "content": "こんな短時間で安全なルートを算出するなんて……冗談みたいに聞こえますけど……",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 340,
+            "prop": "name",
+            "attributes": {
+                "content": "でも、ドクターならきっとできます。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 342,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクターがすごい腕前だってのは聞いてますが……それでも、船の運行は戦場の指揮とは訳が違うんですよ。",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "俺も……ちょっと不安です。もちろん、ドクターの能力は疑ってませんが、こんなリアルタイムで計算するなんて、聞いたことありませんよ……",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 346,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_183_skgoat_1"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "……いいえ、もしかしたら……本当に可能なのかも。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_183_skgoat_1",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 350,
+            "prop": "name",
+            "attributes": {
+                "content": "アーススピリットさん、ドクターがものすごい速さで書き出したこの公式……何だか分かるんですか？",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_183_skgoat_1",
+                "name2": "avg_npc_012",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "読み取れはしないけれど……",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "でも、見覚えがあるの。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "name",
+            "attributes": {
+                "content": "そうだわ……似たような公式について、数日前、新入りの天才が言及していたのよ。ドクターが書いているものは、それより複雑で変化に富んだものだけれど……",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 356,
+            "prop": "Decision",
+            "attributes": {
+                "options": "算出したルートは、ナビゲーターに渡した。;急な方向転換の際は、航行制御員に協力を頼もう。;アーミヤ、準備は整った。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line357",
+                "option2": "line357",
+                "option3": "line357"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 358,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "では、前進しましょう！",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 360,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 361,
+            "prop": "Decision",
+            "attributes": {
+                "options": "アーミヤは指揮を頼む。自分がサポートする。;指揮は任せてくれ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line362",
+                "option2": "line362"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line366"
+        },
+        {
+            "id": 363,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "いいえ、ドクター。それでは非効率的すぎます。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "name",
+            "attributes": {
+                "content": "今のロドスに必要なのは、ただ一人の指揮官だけですから。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "分かりました、ドクター。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 369,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#7"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "name",
+            "attributes": {
+                "content": "……Dr.{@nickname}。あなたがブリッジに現れた瞬間から……間違いなく、事態は好転すると信じていました。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "name",
+            "attributes": {
+                "content": "ブリッジのみなさん、聞いてください――",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "現時点を以て、ロドス本艦の全指揮権をDr.{@nickname}に移行します！",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 374,
+            "prop": "Decision",
+            "attributes": {
+                "options": "クロージャに通信を！　各船室、省エネモードに移行！;エネルギー供給はエンジンに集中させてくれ！",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 375,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_012"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "name",
+            "attributes": {
+                "content": "はい、ドクター！",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 378,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_transmissionget"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 380,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 381,
+            "prop": "name",
+            "attributes": {
+                "content": "クロージャさんから通信がありました。エンジンの準備ができたそうです。それと、もう一つ。この「クレイジーな奇策」が成功するよう祈っている、と……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_002_amiya_1",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 383,
+            "prop": "name",
+            "attributes": {
+                "content": "そう。まあ、たまにはクレイジーな奇策を楽しむのもいいんじゃないかしら。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_002_amiya_1",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 385,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、こんな風に船をカッ飛ばすことになると知ってたら、いくらか酒でも入れたかったんですがね。",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 387,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ロドス、全速前進！",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 388,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 390,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 392,
+            "prop": "CameraShake",
+            "attributes": {
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 60.0,
+                "fadeout": "false",
+                "block": "false"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "Image",
+            "attributes": {
+                "image": "bg_0_rhodes",
+                "fadetime": 0.0,
+                "xScale": 1.4,
+                "yScale": 1.4,
+                "x": 100.0
+            }
+        },
+        {
+            "id": 394,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$smallearthquake",
+                "channel": "bgs",
+                "volume": 1.0,
+                "block": "false",
+                "loop": "false"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "ImageTween",
+            "attributes": {
+                "image": "bg_0_rhodes",
+                "fadetime": 0.5,
+                "xScaleFrom": 1.4,
+                "yScaleFrom": 1.4,
+                "xScaleTo": 1.2,
+                "yScaleTo": 1.2,
+                "xFrom": 100.0,
+                "duration": 30.0
+            }
+        },
+        {
+            "id": 396,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 397,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "name",
+            "attributes": {
+                "content": "ぐっ……速度のせいか、鼻血が出そうだ！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 399,
+            "prop": "name",
+            "attributes": {
+                "content": "悪い、多分俺のひじが当たったからじゃねぇかな……こんだけ揺れてちゃ、手足をコントロールできなくてさ。",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "この振動は……制震ダンパーがダメになったのか？",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "揺れでバラバラになりそうなのは俺だけじゃなく船全体ってことらしいな……",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "name",
+            "attributes": {
+                "content": "ってか、アーススピリットさん、すごいですね……この状況でもモニターから視線を外してないなんて……",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "サイクロン二号、南東三十度に向けて移動中。サイクロン三号は……ここね。四号は……",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 404,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、私の手に掴まってください！",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 406,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.2,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 410,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 411,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 412,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 413,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ああ、掴んだ。",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 414,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 416,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 417,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.4,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fightgeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 419,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 423,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_bridge",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#5"
+            }
+        },
+        {
+            "id": 427,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ、すみません……今、ドクターの足を踏んでしまったような……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 429,
+            "prop": "Decision",
+            "attributes": {
+                "options": "大丈夫。しっかり掴まってるし、転ばないさ。;……;アーミヤの耳、顔に当たってくすぐったいな。",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 430,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#4"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "name",
+            "attributes": {
+                "content": "船体の揺れ、少しは収まったでしょうか？",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 434,
+            "prop": "Decision",
+            "attributes": {
+                "options": "右へ方向転換だ！！",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 435,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 437,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 445,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "name",
+            "attributes": {
+                "content": "まさか……こんな強い風が来るなんて！　もし巻き込まれてたら、船が保ったか怪しいな……！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "……今の風、ダウンバーストか？",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "character",
+            "attributes": {
+                "name": "char_183_skgoat_1"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "name",
+            "attributes": {
+                "content": "サイクロン・コア形成まで、残り二分よ。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 452,
+            "prop": "Decision",
+            "attributes": {
+                "options": "現在の方向を維持して、前進！",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 453,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "待ってください――サイクロンが見えます！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 456,
+            "prop": "name",
+            "attributes": {
+                "content": "左に一つ、右にもう一つ！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "これは……挟まれてます！　あと二、三分で激突しますよ！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 459,
+            "prop": "Decision",
+            "attributes": {
+                "options": "いや、前進だ。他に道はない。",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 460,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop"
+            }
+        },
+        {
+            "id": 462,
+            "prop": "name",
+            "attributes": {
+                "content": "あんな狭いとこ通れませんって！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 464,
+            "prop": "Decision",
+            "attributes": {
+                "options": "――信じてくれ。",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 465,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、俺もあなたを信じたいとは思ってますよ！！！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 468,
+            "prop": "name",
+            "attributes": {
+                "content": "でも俺は……俺自身をそこまで信じられない……！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "name",
+            "attributes": {
+                "content": "……でも……四の五の言ってられませんよね。アーミヤさんもあなたの指示に従ってるんだし、それなら俺だって当然従います。操縦桿に手を縛り付けてでも目いっぱい押し続けてやりますよ！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 470,
+            "prop": "name",
+            "attributes": {
+                "content": "あーあ、ジョージの野郎と勤務交代なんてするんじゃなかった……今さらですけど、めちゃくちゃ後悔してます……",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 472,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 474,
+            "prop": "CameraShake",
+            "attributes": {
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "false",
+                "block": "false"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 476,
+            "prop": "Image",
+            "attributes": {
+                "image": "avg_7_9",
+                "xScale": 1.2,
+                "yScale": 1.2,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 477,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$blizzard",
+                "channel": "bgs",
+                "volume": 1.0,
+                "block": "false",
+                "loop": "false"
+            }
+        },
+        {
+            "id": 478,
+            "prop": "ImageTween",
+            "attributes": {
+                "xTo": 128.0,
+                "duration": 5.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 481,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 482,
+            "prop": "name",
+            "attributes": {
+                "content": "距離七十五メートル、五十メートル、三十メートル……",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "う、わあ……天災級サイクロンをこんなに近くで観察するなんて、初めてだ……",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 486,
+            "prop": "Decision",
+            "attributes": {
+                "options": "怖いのか？　アーミヤ。;……;……アーミヤ、手を強く握りすぎだ。",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 487,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "少し緊張していますが、怖くはありません。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            }
+        },
+        {
+            "id": 490,
+            "prop": "name",
+            "attributes": {
+                "content": "私、少し緊張しちゃってるみたいです。でも、安心してください。怖くはありませんよ。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            }
+        },
+        {
+            "id": 492,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ、ごめんなさい、ドクター。少し緊張してしまって……でも、怖くはありませんので。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 494,
+            "prop": "name",
+            "attributes": {
+                "content": "これまでにも、ドクターと一緒に……似たような状況を、何度も目にしてきましたから。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "name",
+            "attributes": {
+                "content": "絶望へと近づくほどに、希望を抱いて臨む光景は、より美しく雄大になる。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、これはあなたが教えてくれたことですよ。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 497,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 498,
+            "prop": "Decision",
+            "attributes": {
+                "options": "最後まで諦めずに努力することで希望は訪れる。",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 499,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "name",
+            "attributes": {
+                "content": "……前にも、同じ言葉をかけてくれましたね。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 501,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 502,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$alarmenter",
+                "channel": "bgs",
+                "volume": 1.0,
+                "block": "false",
+                "loop": "true"
+            }
+        },
+        {
+            "id": 503,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.4,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 504,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.4,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "bgs",
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 507,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.4,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "false"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_transmissionget"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "「緊急警報、緊急警報……」"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "name",
+            "attributes": {
+                "content": "「全乗員、衝突に備えてください！」"
+            }
+        },
+        {
+            "id": 512,
+            "prop": "name",
+            "attributes": {
+                "content": "大丈夫。この危機だって、一緒なら乗り越えられます！",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "Image",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 514,
+            "prop": "Musicvolume",
+            "attributes": {
+                "volume": 0.0,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 515,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 516,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 517,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 518,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 519,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 520,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 521,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 522,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 524,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 525,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 528,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 529,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 530,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 531,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 532,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_0_rhodes3",
+                "screenadapt": "coverall",
+                "fadetime": 5.0
+            }
+        },
+        {
+            "id": 533,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.0,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 534,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 4.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 535,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 536,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 537,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$warm_intro",
+                "key": "$warm_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 538,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ああ。我々は無事……乗り越えた。;見てくれ。;自分の計算に狂いはなかったようだ。",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 539,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 540,
+            "prop": "name",
+            "attributes": {
+                "content": "風が収まってきました……空の色も変わりつつあります。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "name",
+            "attributes": {
+                "content": "報告！　本艦は天災エリアを突破しました！！",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 542,
+            "prop": "name",
+            "attributes": {
+                "content": "全甲板、損傷率は5%未満に留まっています。その上、ケガ人はいません！",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 543,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 544,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "bgs",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 546,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 547,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 548,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_bridge",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 549,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 550,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 551,
+            "prop": "Musicvolume",
+            "attributes": {
+                "volume": 0.4,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 552,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#4"
+            }
+        },
+        {
+            "id": 553,
+            "prop": "name",
+            "attributes": {
+                "content": "ふぅ……本当に、よかった……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 554,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 555,
+            "prop": "name",
+            "attributes": {
+                "content": "いてて、鼻が……おいパービル、お前また俺の鼻にひじでもぶつけたな？",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 556,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 557,
+            "prop": "name",
+            "attributes": {
+                "content": "ぶつけたくらいでなんだってんだ！　俺たち、生きてるんだぞ！",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 558,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 559,
+            "prop": "name",
+            "attributes": {
+                "content": "やれやれ。一つ貸しだからな？　後で一杯奢れよ。",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 560,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 561,
+            "prop": "name",
+            "attributes": {
+                "content": "おうとも、一杯と言わず何杯でも奢ってやるさ！　俺は危うく、大きな間違いを犯すところだったんだからな。",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 562,
+            "prop": "name",
+            "attributes": {
+                "content": "これもすべて、ドクターが来てくれたおかげですよ！",
+                "name": "ナビゲーターB"
+            }
+        },
+        {
+            "id": 563,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_183_skgoat_1"
+            }
+        },
+        {
+            "id": 564,
+            "prop": "name",
+            "attributes": {
+                "content": "ええ、本当に見事な計算だったわ、ドクター。",
+                "name": "アーススピリット"
+            }
+        },
+        {
+            "id": 565,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop"
+            }
+        },
+        {
+            "id": 566,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター……あなたの指揮って、いつもこんなにスリリングなんですか？　だったら悪くありませんね。今度からは俺も連れて行ってくださいよ！",
+                "name": "航行制御員"
+            }
+        },
+        {
+            "id": 567,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088"
+            }
+        },
+        {
+            "id": 568,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、一体どうやったんですか？　まるで未来が見えてるみたいでしたよ。天災との衝突前に、突然ブリッジへ現れるなんて！",
+                "name": "ナビゲーターA"
+            }
+        },
+        {
+            "id": 569,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 570,
+            "prop": "Decision",
+            "attributes": {
+                "options": "実は、自分もとても緊張していた。;……;皆でお祝いでもしようか。",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 571,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 572,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#2"
+            }
+        },
+        {
+            "id": 573,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 574,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 575,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 576,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 577,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "急に、アーミヤがあなたへ抱きついた。腰の辺りを抱きしめる両腕には、嵐に突っ込んだ瞬間よりも強い力が込められていた。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 578,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 579,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 580,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 581,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#10"
+            }
+        },
+        {
+            "id": 582,
+            "prop": "name",
+            "attributes": {
+                "content": "ありがとうございます……私のそばにいてくれて。",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 583,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 584,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 585,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 586,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 587,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 588,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_room_2"
+            }
+        },
+        {
+            "id": 589,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 590,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$newhope01_intro",
+                "key": "$newhope01_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 591,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 592,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 593,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3",
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 594,
+            "prop": "name",
+            "attributes": {
+                "content": "よくやった、ドクター。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 595,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 596,
+            "prop": "Decision",
+            "attributes": {
+                "options": "当然のことをしたまでだ。;……;お褒めにあずかり光栄だ。",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 597,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 598,
+            "prop": "name",
+            "attributes": {
+                "content": "源石の自己複製速度とエネルギー増加の関係――この知識を応用し……風災の軌道を計算する。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 599,
+            "prop": "name",
+            "attributes": {
+                "content": "君は過去にも今回と似た能力を披露したことがある。それにより、災害が当時の同僚にもたらす損害を低下させたのだ。以来、一部の者は君を天災専門家と呼ぶようになった。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 600,
+            "prop": "name",
+            "attributes": {
+                "content": "だが今ここにいるのは、君と私の二人だけだ。我々は、君の専門分野が本来何であるかを知っている。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 601,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 602,
+            "prop": "Decision",
+            "attributes": {
+                "options": "自分の専門は何なんだ？;……;またか。自分には分からないんだが。",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 603,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 604,
+            "prop": "name",
+            "attributes": {
+                "content": "あの公式を……君はまだ覚えていた。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 605,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 606,
+            "prop": "Decision",
+            "attributes": {
+                "options": "覚えていたわけじゃない。記憶にはなかった。;あれは頭の中から勝手に飛び出してきたんだ。",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 607,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 608,
+            "prop": "name",
+            "attributes": {
+                "content": "あれはかつて……君が自ら作り上げた公式だ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 609,
+            "prop": "name",
+            "attributes": {
+                "content": "君はこの一ヶ月で源石と天災に関する多くの資料を収集していた。また君のノートには大量の計算式も残されている。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 610,
+            "prop": "name",
+            "attributes": {
+                "content": "これは推測だが……危機が訪れたことにより、君の脳が深層にある記憶を引き出したのかもしれない。あるいは、君が自分で書き残した知識の中に、再びそれを見出したのかもしれないが……",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 611,
+            "prop": "name",
+            "attributes": {
+                "content": "この公式を思い出すことができた以上、君にはまだ源石の本質に関する基本的な認識が確かに残っているのだろう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 612,
+            "prop": "name",
+            "attributes": {
+                "content": "言い換えれば――君は決して、源石研究者たる自分自身まで忘れてはいないということだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 613,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 614,
+            "prop": "Decision",
+            "attributes": {
+                "options": "この研究を続けたいと思っている。;これは自分の使命のようなものだ。",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 615,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 616,
+            "prop": "name",
+            "attributes": {
+                "content": "君は源石研究を己が使命と見なしているようだが、我々の行動は使命のみによって束縛されるべきではない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 617,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr.{@nickname}。君をそれほどまでの強い意志で突き動かすものは……源石研究へと打ち込ませるものは一体何だ？",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 618,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 619,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ケルシーやアーミヤも、鉱石病を患っている。;大地は、源石に起因する苦しみで満ちている。;この災いを終わらせたい。",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 620,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 621,
+            "prop": "name",
+            "attributes": {
+                "content": "過去にも一度、同じ問いを投げかけたことがある。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 622,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、その時の答えは、今日君が口にした言葉とは似て非なるものだった。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 623,
+            "prop": "name",
+            "attributes": {
+                "content": "……そしてその答えを口にした者は、未知の真理に対する本能的な渇望を持っており、一方で命を救うためなら危険を顧みない一面もあった。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 624,
+            "prop": "name",
+            "attributes": {
+                "content": "救いは時に破壊をも意味する――これは、その人物が私に告げた言葉だ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 625,
+            "prop": "name",
+            "attributes": {
+                "content": "……ドクター。その答えは、今も君の頭の奥深くに残っているのだろうか？",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 626,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 627,
+            "prop": "Decision",
+            "attributes": {
+                "options": "記憶になくとも残っていると言えるのか？;……;君がそう思うなら、そうかもな。",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 628,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 629,
+            "prop": "name",
+            "attributes": {
+                "content": "アーミヤが言うには、今日君がブリッジで見せた活躍は、まるで本当の「予言者」のようだったそうだな。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 630,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 631,
+            "prop": "Decision",
+            "attributes": {
+                "options": "予習が功を奏しただけだ。;……;どうしてそう見つめてくるんだ？",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 632,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 633,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr.{@nickname}。私はな、科学は信じるべきものだと考えている。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 634,
+            "prop": "name",
+            "attributes": {
+                "content": "初めて君の脳検査の結果が出た時、私はまず、検査過程でのエラーを疑った。だから二回、三回……さらには七回の検査を行うに至ったのだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 635,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし途中で、理性がこう訴えてきたんだ……三度同じ結果が出た以上、その正確性は十分に証明されている。君は嘘などついていない、とな。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 636,
+            "prop": "name",
+            "attributes": {
+                "content": "君は実に多くの記憶を失った。君がテレジアに何をしたのか、君自身がなぜここに立っているのかを忘れてしまった。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 637,
+            "prop": "name",
+            "attributes": {
+                "content": "このすべてが、君と、過去私がよく知っていたあの人物との間に……大きな差異を生んだのだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 638,
+            "prop": "name",
+            "attributes": {
+                "content": "君に七回の検査を行った時のように、今この瞬間、私は再び疑問を抱いている。私の目の前に立っているのは一体誰なのか、と。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 639,
+            "prop": "name",
+            "attributes": {
+                "content": "今の君にはどれだけの過去が残っている？　そして、どれだけの新たなものが芽生えている？",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 640,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 641,
+            "prop": "Decision",
+            "attributes": {
+                "options": "また感情的になっているようだが。;七回の検査は本当につらかったよ。",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 642,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 643,
+            "prop": "name",
+            "attributes": {
+                "content": "否定はしない。君のこととなると、私は容易に感情を煽られてしまうからな。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 644,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、一方でこれは……極めて理性的な理解に基づいてのことでもある。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 645,
+            "prop": "name",
+            "attributes": {
+                "content": "君にも理解しておいてもらいたいのだが……検査にはエラーがあっても構わない。だが、君自身のことについては、一つのエラーも受け入れることはできないのだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 646,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            }
+        },
+        {
+            "id": 647,
+            "prop": "name",
+            "attributes": {
+                "content": "それについては、申し訳ないと思っている。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 648,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、君の記憶の回復状況を把握しておくことは、君の身体にとっても有用なことだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 649,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 650,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 651,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ずっと聞きたかったんだが。担当医としてではなく――",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 652,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 653,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 654,
+            "prop": "Decision",
+            "attributes": {
+                "options": "個人としての君は、記憶の回復を望んでくれるのか？",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 655,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 656,
+            "prop": "name",
+            "attributes": {
+                "content": "……物事にはしばしば、二つの側面が存在している。人の感情もまた然りだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 657,
+            "prop": "name",
+            "attributes": {
+                "content": "私は、過去の君に対する憎しみを隠しはしない。だが……どれだけ認めたくはなくとも、憎しみだけがすべてではないのだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 658,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 659,
+            "prop": "Decision",
+            "attributes": {
+                "options": "過去の自分の能力、そのすべてが必要なのか。;憎い相手でも、懐かしく思うものか？;過去の出来事……真実を知りたいから、か。",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 660,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 661,
+            "prop": "name",
+            "attributes": {
+                "content": "欲するものが単に能力だけならば、今の君は既にそれを持ち合わせている。いや、それどころか……今の君こそ、より望ましい成果を上げることができるだろう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 662,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            }
+        },
+        {
+            "id": 663,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 664,
+            "prop": "name",
+            "attributes": {
+                "content": "……「懐かしく思う」？",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 665,
+            "prop": "name",
+            "attributes": {
+                "content": "その言葉では、あまりにも単純すぎる。この大地において言語は数千年もの間、開拓され続けているが……私は未だに、君をどう思うかを表現するのに適切な言葉を選ぶことができない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 666,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            }
+        },
+        {
+            "id": 667,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ。無論、私はその真相を欲している。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 668,
+            "prop": "name",
+            "attributes": {
+                "content": "君の口から聞くことが最善と言える手段だが……他の方法で真相を追うことも諦めてはいない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 669,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 670,
+            "prop": "name",
+            "attributes": {
+                "content": "さて、今度は私が質問する番だ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 671,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr.{@nickname}。記憶を取り戻したいと思うか？",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 672,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 673,
+            "prop": "Decision",
+            "attributes": {
+                "options": "取り戻したい。;取り戻したくない。",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 674,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 675,
+            "prop": "name",
+            "attributes": {
+                "content": "どう答えようとも、君に躊躇いの色が見えたのは明らかだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 676,
+            "prop": "name",
+            "attributes": {
+                "content": "記憶を取り戻せば、君の持つ多くの疑問は解消されることだろう。だが、すべての答えが君を満足させるとは限らない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 677,
+            "prop": "name",
+            "attributes": {
+                "content": "今の君に向けられているあらゆる感情の出所は何なのか。私とWが持つ憎しみにせよ、アーミヤの全幅の信頼にせよ、あるいは……より昔のものであるにせよ、君はすべてを知ることになる。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 678,
+            "prop": "name",
+            "attributes": {
+                "content": "大量の記憶、強烈な感情が、瞬時に君の脳全体を埋め尽くすことだろう――",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 679,
+            "prop": "name",
+            "attributes": {
+                "content": "そして、恐らくその時に感じるのは疲労だけではあるまい……",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 680,
+            "prop": "name",
+            "attributes": {
+                "content": "君をより恐怖へと陥れるであろうものは、一つの事実だ。過去が君を訪ねてきた時――君は、選択しなければならない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 681,
+            "prop": "name",
+            "attributes": {
+                "content": "もし蘇った記憶があまりにも強烈で、現在の君の努力すべてをいともたやすく覆し――どれほどの年月をかけても、決して抜け出せなかったあの深淵に再び引きずり戻されたとしたら？",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 682,
+            "prop": "name",
+            "attributes": {
+                "content": "今の君が一度でも打ち負かされたなら、君が懸命に築き上げたすべてが崩れ去り……恐らく今の君ではない君へと成り果てるだろう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 683,
+            "prop": "name",
+            "attributes": {
+                "content": "故に、私はもう一度問う――",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 684,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr.{@nickname}。思い出す準備はできているか？",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 685,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 686,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 687,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 688,
+            "prop": "name",
+            "attributes": {
+                "content": "もし我々が十分な幸運に恵まれていれば、この問いに短期間で答えを出す必要はない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 689,
+            "prop": "name",
+            "attributes": {
+                "content": "感謝する、Dr.{@nickname}。この一か月余りで、君は私に新たな可能性を見出させてくれた。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 690,
+            "prop": "name",
+            "attributes": {
+                "content": "特に今日、君がまだあの公式を覚えていると知ったことは大きい。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 691,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#4"
+            }
+        },
+        {
+            "id": 692,
+            "prop": "name",
+            "attributes": {
+                "content": "どうやら来たるその日のために準備をしていたのは、君と私だけではないようだな。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 693,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1"
+            }
+        },
+        {
+            "id": 694,
+            "prop": "name",
+            "attributes": {
+                "content": "私は早くから疑っていた。家庭用生理機能修復マシンが、使用者の記憶を消すなどというエラーを起こすことはないだろう、とな――",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 695,
+            "prop": "name",
+            "attributes": {
+                "content": "特に、君の選択に最も影響を与えるであろう部分だけを選択的に削除し、君にとってより意味のある部分を残しておくような挙動はあり得ない、と考えている。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 696,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr.{@nickname}……",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 697,
+            "prop": "name",
+            "attributes": {
+                "content": "思うに、彼女は……私が過去把握していた以上に、君を信頼していたのだろうな。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 698,
+            "prop": "name",
+            "attributes": {
+                "content": "であれば我々も、懸命に努力し続けるべきだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 699,
+            "prop": "name",
+            "attributes": {
+                "content": "幾度となく口にしてきた通りだが――我々が共に立ち続ける限り、私は君の助けになろう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 700,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 701,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 702,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 703,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 704,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 705,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_rhodescom",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 706,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 707,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 708,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 709,
+            "prop": "name",
+            "attributes": {
+                "content": "p.m. 7:43 天気/曇天"
+            }
+        },
+        {
+            "id": 710,
+            "prop": "name",
+            "attributes": {
+                "content": "ロドス本艦　司令室"
+            }
+        },
+        {
+            "id": 711,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$doorknockquite",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 712,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 713,
+            "prop": "name",
+            "attributes": {
+                "content": "先輩、いますか？　お邪魔してもいいですか？",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 714,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 715,
+            "prop": "Decision",
+            "attributes": {
+                "options": "エイヤフィヤトラ？　構わないぞ。",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 716,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 717,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_empty"
+            }
+        },
+        {
+            "id": 718,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 719,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 720,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 721,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 722,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1"
+            }
+        },
+        {
+            "id": 723,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 724,
+            "prop": "name",
+            "attributes": {
+                "content": "失礼します。あの、私に用事があるって聞いたんですが……",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 725,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 726,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ああ、これを。",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 727,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 728,
+            "prop": "name",
+            "attributes": {
+                "content": "これって……私の行動部門加入申請書……？　えっ、承認されたんですか？",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 729,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#6"
+            }
+        },
+        {
+            "id": 730,
+            "prop": "name",
+            "attributes": {
+                "content": "よかったぁ。私の病状を考えたら、先輩とアーミヤさんはきっと同意しないだろうってみんな言ってたので……てっきりダメかと……",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 731,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 732,
+            "prop": "Decision",
+            "attributes": {
+                "options": "アーミヤは説得しておいた。",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 733,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 734,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 735,
+            "prop": "name",
+            "attributes": {
+                "content": "先輩が承認を進めてくれたんですか？　ありがとうございます……",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 736,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 737,
+            "prop": "Decision",
+            "attributes": {
+                "options": "今朝くれたレポートが、ロドスの危機を救ったんだ。",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 738,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 739,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#5"
+            }
+        },
+        {
+            "id": 740,
+            "prop": "name",
+            "attributes": {
+                "content": "それって……午後に遭遇した、あの天災のことでしょうか？",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 741,
+            "prop": "name",
+            "attributes": {
+                "content": "先輩、私の分析レポートを読んでくれたんですか？",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 742,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 743,
+            "prop": "Decision",
+            "attributes": {
+                "options": "源石鉱脈拡大の兆候に対する観測はとても正確だった。;地表の源石活発化現象を通して天災を予測するとはな。",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 744,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 745,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 746,
+            "prop": "name",
+            "attributes": {
+                "content": "そんな……私はただ、一つの推測を行っただけですよ。",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 747,
+            "prop": "name",
+            "attributes": {
+                "content": "みんなは、この一帯の地表付近では、源石鉱の密度は低いと言ってましたけど……実はリターニア南部の火山周辺で、同じような状況に遭遇したことがありまして……",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 748,
+            "prop": "name",
+            "attributes": {
+                "content": "条件さえ整っていれば、たとえ少量の源石であっても、短時間で急速に増殖することもあるんです。",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 749,
+            "prop": "name",
+            "attributes": {
+                "content": "えっと……数日前のことなんですが、日課の治療を終えた後に、いつも通り宿舎の近くをお散歩していて……ふと船窓に付着した砂ぼこりを観察してみたら、似たような現象が起きていたんです。",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 750,
+            "prop": "name",
+            "attributes": {
+                "content": "砂地では、源石エネルギーの爆発が地面の温度を急激に上昇させ、大型の風災に発展する可能性が大幅に高まりますから……",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 751,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#3"
+            }
+        },
+        {
+            "id": 752,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ……すみません。この手の話になると、止められなくて……",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 753,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 754,
+            "prop": "Decision",
+            "attributes": {
+                "options": "続けて。",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 755,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 756,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#2"
+            }
+        },
+        {
+            "id": 757,
+            "prop": "name",
+            "attributes": {
+                "content": "でも、残りはもうレポートで見てますよね？",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 758,
+            "prop": "name",
+            "attributes": {
+                "content": "正直……思ってもみませんでした。先輩はこんなに忙しいのに、私たちのレポートまで見てくれてるなんて……",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 759,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 760,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君の論文も読んだ。;君の研究は、とても興味深いな。;努力の結果だが、それをアーツの一種と言う人もいる。",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 761,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 762,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 763,
+            "prop": "name",
+            "attributes": {
+                "content": "先輩、私の研究に興味を持ってくれてるんですか？",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 764,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            }
+        },
+        {
+            "id": 765,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#4"
+            }
+        },
+        {
+            "id": 766,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ！　そんな不思議なアーツ、本当にあるんですか？",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 767,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 768,
+            "prop": "name",
+            "attributes": {
+                "content": "…………",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 769,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 770,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 771,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#6"
+            }
+        },
+        {
+            "id": 772,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "jump",
+                "power": 20.0,
+                "fadetime": 0.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 773,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ！　ふふ……そういうことですか。今のは冗談ですね？",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 774,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 775,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 776,
+            "prop": "name",
+            "attributes": {
+                "content": "そうだ！　もしお忙しくなければ、もう少しお話ししていきたいんですけど……いいですか？",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 777,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 778,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 779,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 780,
+            "prop": "Decision",
+            "attributes": {
+                "options": "この仕事が終わるまで待ってくれ。;じゃあ、手が空くまでは楽にしていてくれ。",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 781,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 782,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 783,
+            "prop": "name",
+            "attributes": {
+                "content": "はい。それにしても先輩の机、たくさんの本が置いてありますね……",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 784,
+            "prop": "name",
+            "attributes": {
+                "content": "『大炎風情志』『伝説なき塔』『クルビア司法観察ノート』『征服と同化』……先輩、これ全部、普段から読んでる本なんですか？",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 785,
+            "prop": "name",
+            "attributes": {
+                "content": "その、バラエティに富んでいるというか……私の知ってる教授さんたちの本棚とは、全然違いますね。",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 786,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 787,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君が興味を持ちそうなのはこれだろうな。",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 788,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 789,
+            "prop": "name",
+            "attributes": {
+                "content": "これは……先輩の天災研究ノート？",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 790,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 791,
+            "prop": "Decision",
+            "attributes": {
+                "options": "読書の途中でメモを取っただけのものだが。;単なる推測をいくつか並べただけだ。;まだ草稿段階だけど。",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 792,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 793,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#6"
+            }
+        },
+        {
+            "id": 794,
+            "prop": "name",
+            "attributes": {
+                "content": "わあっ……ありがとうございます、先輩！　しっかり勉強させてもらいますね！",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 795,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 796,
+            "prop": "name",
+            "attributes": {
+                "content": "あの、疑問点があった時は、また先輩の所に来てもいいですか？",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 797,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 798,
+            "prop": "Decision",
+            "attributes": {
+                "options": "いつでも来るといい。;喜んで。;他の仕事が早く片付いたらな。",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 799,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 800,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 801,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 802,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 803,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "若き学者はあなたから手渡されたノートを大事そうに抱え、そして顔を上げると、まっすぐにあなたを見つめた。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 804,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 805,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 806,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 807,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 808,
+            "prop": "name",
+            "attributes": {
+                "content": "先輩……私にとって、ロドスに来てからの毎日は、驚きでいっぱいです。",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 809,
+            "prop": "name",
+            "attributes": {
+                "content": "鉱石病が安定化したことで、自分の未来を心から信じられるようになりました。先輩のような人たちが、私に……まだ歩き続けるための希望を与えてくれたんです。",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 810,
+            "prop": "name",
+            "attributes": {
+                "content": "それに……先輩がこんなに努力してくれているんですから。私たちが諦める理由なんて一つもありません。",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 811,
+            "prop": "name",
+            "attributes": {
+                "content": "あの――先輩。",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 812,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#6"
+            }
+        },
+        {
+            "id": 813,
+            "prop": "name",
+            "attributes": {
+                "content": "どうかこれからも、ロドスを導いてくださいね。",
+                "name": "エイヤフィヤトラ"
+            }
+        },
+        {
+            "id": 814,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 815,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 816,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 817,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 818,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 819,
+            "prop": "Image",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": false
+}
