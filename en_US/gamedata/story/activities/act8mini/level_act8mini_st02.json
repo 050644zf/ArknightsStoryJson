@@ -1,0 +1,6593 @@
+{
+    "lang": "en_US",
+    "eventid": "act8mini",
+    "eventName": "Vigilo",
+    "entryType": "MINI_ACTIVITY",
+    "storyCode": "",
+    "avgTag": "Interlude",
+    "storyName": "Memoria",
+    "storyInfo": "A Catastrophe looms. The Doctor steps onto the bridge, as if guided by prophecy, to lead Rhodes Island through the crisis. Kal'tsit determines that though the Doctor has lost most episodic memory, a basic understanding of the nature of Originium still remains.\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 2,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 4,
+            "prop": "name",
+            "attributes": {
+                "content": "4:11 P.M. \\ Overcast, Visibility: 10 km"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "name",
+            "attributes": {
+                "content": "Rhodes Island Landship, Medical Cabin"
+            }
+        },
+        {
+            "id": 6,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$path_intro",
+                "key": "$path_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 8,
+            "prop": "delay",
+            "attributes": {}
+        },
+        {
+            "id": 9,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 10,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_infirmary",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 4.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "Remove the electrodes.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 15,
+            "prop": "Decision",
+            "attributes": {
+                "options": "What's the prognosis?;......;My head feels hot and distended. Not good.",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line16",
+                "option2": "line16",
+                "option3": "line19"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line22"
+        },
+        {
+            "id": 17,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "name",
+            "attributes": {
+                "content": "No new developments.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line22"
+        },
+        {
+            "id": 20,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "name",
+            "attributes": {
+                "content": "You'll feel better after a quick rest.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr. {@nickname}, I've scanned your brain seven times over the past month or so, and the results are always the same.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "There's nothing wrong with your medial temporal lobe, and the neurons in other brain areas are as active as they are in most young people.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "name",
+            "attributes": {
+                "content": "Meaning you don't need to come to Medical for these unpleasant tests so often.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 28,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Then, what's wrong with my memory?",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line29"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "There's no doubt that you've lost a lot of your memory. Even someone like you wouldn't be able to manipulate the results.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "name",
+            "attributes": {
+                "content": "Those memories are episodic, chiefly concerning the subjective awareness of your identity, and even more so about all your experiences before you fell asleep in the Chernobog sarcophagus.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "In contrast, your procedural memory has recovered extremely quickly.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "From my reports or Amiya's and Dobermann's observations, this conclusion is clear.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "name",
+            "attributes": {
+                "content": "Your ability to command, as exhibited during the Chernobog incident, is not significantly worse than before.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 36,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Why would this happen?;......;In other words, I'm still useful?",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line37",
+                "option2": "line40",
+                "option3": "line43"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line46"
+        },
+        {
+            "id": 38,
+            "prop": "name",
+            "attributes": {
+                "content": "There are many reasons for memory loss. Some are force majeure, others are subjective.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "name",
+            "attributes": {
+                "content": "Medical testing can only rule out qualitative pathological changes.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line46"
+        },
+        {
+            "id": 41,
+            "prop": "name",
+            "attributes": {
+                "content": "Of course, you don't make as much noise as you used to.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "name",
+            "attributes": {
+                "content": "Considering your language center has not been damaged, I can only guess that the deprivation of episodic memory has caused some changes in your personality.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line46"
+        },
+        {
+            "id": 44,
+            "prop": "name",
+            "attributes": {
+                "content": "To Rhodes Island, you are far more than just 'useful.'",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "name",
+            "attributes": {
+                "content": "Even if you truly lost all your memories and become an ignorant bystander, Amiya would not have regretted saving you, and there will always be a place for you at Rhodes Island.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "In any case, I believe that the skills you possess will play just as key a role as they did in the past.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 49,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I want to be able to help you.;I want to be able to help Amiya.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line50",
+                "option2": "line50"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 51,
+            "prop": "name",
+            "attributes": {
+                "content": "I know.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "name",
+            "attributes": {
+                "content": "And I've seen how hard you've been working.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "name",
+            "attributes": {
+                "content": "After leaving Lungmen, we've been making our way through the wastelands for some time. The operators need an opportunity to rest, Amiya in particular.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#4"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "name",
+            "attributes": {
+                "content": "Likewise, you also need a chance to catch your breath, don't you?",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 57,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I just want some time to adjust.;......;I don't want to stop here.",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line58",
+                "option2": "line58",
+                "option3": "line58"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 59,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "With PRTS to help you, it won't take long for you to adapt to your work at Rhodes Island.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 61,
+            "prop": "name",
+            "attributes": {
+                "content": "However, I don't want you to push yourself.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "Rhodes Island is not the only thing that has just emerged from a terrible disaster. You have as well, Dr. {@nickname}.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "Your physical indicators have more or less returned to normal, but your memory is still damaged, and your mental state is unstable.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#2"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "name",
+            "attributes": {
+                "content": "As a patient, overwork can only harm you.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 67,
+            "prop": "Decision",
+            "attributes": {
+                "options": "You're also a patient.;Amiya is also a patient.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line68",
+                "option2": "line73"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line76"
+        },
+        {
+            "id": 69,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "name",
+            "attributes": {
+                "content": "Me? I appreciate your concern.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "name",
+            "attributes": {
+                "content": "Though I can't say I'm used to Oripathy, I can assure you that I'm the last person you should worry about.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line76"
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "Amiya knows you're concerned about her, and she's been paying more attention to her health lately.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "name",
+            "attributes": {
+                "content": "I have no choice but to admit, there are some areas in which your words hold more weight than mine.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr. {@nickname}, in the span of one short month, you've taken over the staffing of several departments on this ship.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "In addition, I've seen you reviewing past battles together with combat operators to further explore the possibilities of tactical optimization.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "You've even been reading during this entire examination. Are you looking at the briefing submitted by the new operator who just reported in a few days ago?",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "Furthermore, I've seen your notes.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "name",
+            "attributes": {
+                "content": "Those records about even the most trivial of the operators' details, those flashes of tactical inspiration...",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "Those calculations for determining Rhodes Island's business efficiency, and even those scrawls that I can't make sense of. They are all evidence of your commitment to your duty.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "name",
+            "attributes": {
+                "content": "Although most of these tasks can be completed with the assistance of PRTS, I think this is your preferred method.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 86,
+            "prop": "Decision",
+            "attributes": {
+                "options": "It's just a way of organizing my thoughts.;PRTS's data lacks a bit of that human touch.;You didn't see me badmouthing you, did you?!",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line87",
+                "option2": "line89",
+                "option3": "line91"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line93"
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "As the density of your notes increases, your cognition also improves.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line93"
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "PRTS is just a tool. Avoiding overreliance on tools is a good working habit.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line93"
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "So that was a complaint? I would rather take those words as a compliment.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "All of your abilities are recovering rapidly, not only due to the retention of your procedural memory, but also due to your extraordinary efforts.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "Conscious exercise will help your brain return more quickly to your pre-comatose state, and may even bring back your memory faster than expected.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 97,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Do you want me to recover as quickly as possible?",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line98"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "I am your doctor. There's not a doctor out there who does not wish for the quick recovery of her patient.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "name",
+            "attributes": {
+                "content": "That said, if you end up collapsing due to overwork, you'll disrupt Amiya's condition as well.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 102,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Are you only concerned about Amiya?;......;I see. You do care about me.",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line103",
+                "option2": "line103",
+                "option3": "line103"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 104,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "These sentiments of yours that occasionally leak through are quite unlike the past you. While this is rather intriguing, if I am the object of your feelings, let's just say we've no need of that.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "I've told you many times over that ensuring your physical and mental well-being has always been one of my duties.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#4"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "So, yes, even here, I still care about you. Even without a battle.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 110,
+            "prop": "Decision",
+            "attributes": {
+                "options": "It's strange that you'd talk to me like this.;......;Alright.",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line111",
+                "option2": "line111",
+                "option3": "line111"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 112,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#2"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "name",
+            "attributes": {
+                "content": "Today's exam is over.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 115,
+            "prop": "name",
+            "attributes": {
+                "content": "As I said, you don't need to report back here at the same time next week.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "The regular morning and evening check-ups will continue for a while. Lancet-2 will look after you for me.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 117,
+            "prop": "name",
+            "attributes": {
+                "content": "If we ever find that your physical condition does not support your continued work, you must immediately return to Medical.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "name",
+            "attributes": {
+                "content": "As for now, you may return to your work, Doctor.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 120,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 123,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_corridor",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 125,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "4:32 P.M. \\ Overcast, Visibility: 7 km"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "name",
+            "attributes": {
+                "content": "Rhodes Island Landship, Hallway outside the bridge"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 130,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "character",
+            "attributes": {
+                "name": "char_183_skgoat_1",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 132,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 133,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 134,
+            "prop": "name",
+            "attributes": {
+                "content": "Earthspirit? What brings you here?",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 136,
+            "prop": "name",
+            "attributes": {
+                "content": "I've updated the geological monitoring report I submitted this morning.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 138,
+            "prop": "name",
+            "attributes": {
+                "content": "You needed to make an adjustment so soon? That's unlike you.",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "The numbers changed quickly. Made me miss my afternoon nap.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "Forward the report to your team leader. My recommendations are at the bottom.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 143,
+            "prop": "name",
+            "attributes": {
+                "content": "Sure. Strong winds warning, is it?",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "That's no problem. The Engineering Department strengthened the storm shutters two days in advance, and Logistics notified everyone to stay away from the at-risk deck areas.",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 146,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 147,
+            "prop": "name",
+            "attributes": {
+                "content": "That's not all. Keep reading.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 149,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 150,
+            "prop": "name",
+            "attributes": {
+                "content": "Huh... There might be a strong windstorm ahead of our route? Should we slow down or make a detour?",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "name",
+            "attributes": {
+                "content": "How dangerous is this windstorm you're talking about here?",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "I don't know.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "name",
+            "attributes": {
+                "content": "I looked at anomalies in the data and made my best call. All I know for sure is there's more than one cyclone forming ahead, and it's far more intense than anyone would expect.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 156,
+            "prop": "name",
+            "attributes": {
+                "content": "Sounds pretty vague.",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "We set our route a month ago, it's already been approved. We're looking at a big mess if we change it on the fly.",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "You were in that meeting, right? We chose the route for its super low risk profile. Over the last decade, caravans from Lungmen to Leithania have been back and forth over this route dozens of times.",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 160,
+            "prop": "name",
+            "attributes": {
+                "content": "Yes. In theory, we've avoided the Catastrophe-prone areas, and the probability of encountering danger is low.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 162,
+            "prop": "name",
+            "attributes": {
+                "content": "But you're also not sure?",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "name",
+            "attributes": {
+                "content": "The bosses want us as far away from Ursus and Lungmen as soon as possible.",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "Whatever... I just needed to make sure you got my warning.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "name",
+            "attributes": {
+                "content": "Deciding what to do with it is not in my job description. That's up to you.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "Settle down, Earthspirit, we've got protocols. I'll notify the team leader, and we'll discuss...",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 170,
+            "prop": "Decision",
+            "attributes": {
+                "options": "There's no time for that.",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line171"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 172,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088",
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "name",
+            "attributes": {
+                "content": "Huh, Doctor?! Why are you here?",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "Shouldn't you be in your office?",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 176,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I was going up onto the bridge.",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line177"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "Now that's some coincidence...",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "If you're taking the report, are you going to explain the situation to our team leader in person?",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 181,
+            "prop": "Decision",
+            "attributes": {
+                "options": "The windstorm is right in front of us. He'll notice soon enough.;The situation is urgent, I'll let Amiya know.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line182",
+                "option2": "line182"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "What? It's that serious? Well that's not good...",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_183_skgoat_1",
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, you believe me?",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 187,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I believe in reality.;I believe my operators.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line188",
+                "option2": "line188"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "Then I'll go to the bridge with you. I'll continue to observe the situation in real time and report to you and Amiya.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 191,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Good. That's the best option.;Not going to ask for overtime?",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line192",
+                "option2": "line192"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 193,
+            "prop": "name",
+            "attributes": {
+                "content": "This is within the scope of my duties.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 194,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 195,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_bridge",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "4:39 P.M. \\ Overcast, Visibility: 4 km"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "Rhodes Island Landship, Bridge"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 201,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 202,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "name",
+            "attributes": {
+                "content": "Warning, the wind speed is increasing rapidly!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "At these numbers, our visibility's going to fall under one kilometer within a few minutes!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "Did you turn on the assisted driving function for sandstorm mode?",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "We've had it on for a while, it was part of the itinerary.",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "name",
+            "attributes": {
+                "content": "But Amiya, this might not be an ordinary sandstorm...",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$tense_intro",
+                "key": "$tense_loop",
+                "volume": 0.4,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 211,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "name",
+            "attributes": {
+                "content": "My god!",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "jump",
+                "power": 5.0,
+                "times": 2.0,
+                "fadetime": 0.51,
+                "block": "true"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 215,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 216,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_002_amiya_1#6",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "What is it, Pavel?",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_002_amiya_1#6",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "Sensors detecting thunderstorm clouds ahead!",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_002_amiya_1#6",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#7"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "Open the PA, tell the whole ship that Rhodes Island will pass through a thunderstorm shortly, and raise the alert level by one!",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "name",
+            "attributes": {
+                "content": "Central command personnel, slow us down right now!",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 226,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 227,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.0,
+                "xstrength": 50.0,
+                "ystrength": 50.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 229,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#5"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "name",
+            "attributes": {
+                "content": "Ugh... we're rocking a lot...",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#2"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "name",
+            "attributes": {
+                "content": "What's the situation?",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 234,
+            "prop": "name",
+            "attributes": {
+                "content": "The pressure on the hull side panels is skyrocketing!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "70% of the outermost storm shutters have been damaged and are basically failing!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "Also... multiple abnormal heat sources detected near the hull, energy amplitude approaching critical threshold!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#2"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "Does this mean...",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 240,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Yes. It's a Catastrophe.",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line241"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 242,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#5"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "name",
+            "attributes": {
+                "content": "Ah, Dr. {@nickname}!",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "How... can this be?",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 246,
+            "prop": "Decision",
+            "attributes": {
+                "options": "No time to explain.;It's a supercell.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line247",
+                "option2": "line247"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 248,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "name",
+            "attributes": {
+                "content": "Alright... I got it.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 251,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 252,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#7"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_transmissionget"
+            }
+        },
+        {
+            "id": 254,
+            "prop": "name",
+            "attributes": {
+                "content": "All hands, activate code red Catastrophe alert!",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "name",
+            "attributes": {
+                "content": "Evacuate all personnel on the first deck, bridge excluded. Gather all non-engineering personnel from the second to sixth levels in the central area for safety!",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 256,
+            "prop": "name",
+            "attributes": {
+                "content": "Central control, maintain minimum speed cruising...",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "Navigator, how long will this desert thunderstorm last?",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_012"
+            }
+        },
+        {
+            "id": 260,
+            "prop": "name",
+            "attributes": {
+                "content": "These sudden-onset storms usually pass within an hour or two...",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "name",
+            "attributes": {
+                "content": "It's hard to say for sure. Doctor? Earthspirit?",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 264,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Earthspirit, your analysis.",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line265"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 266,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_183_skgoat_1",
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "name",
+            "attributes": {
+                "content": "Yes, Doctor.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "name",
+            "attributes": {
+                "content": "Mr. Pavel, the Doctor gave you the report I completed an hour ago.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 270,
+            "prop": "name",
+            "attributes": {
+                "content": "Multiple small cyclones within two kilometers...? This doesn't bode well!",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "name",
+            "attributes": {
+                "content": "This Catastrophe is no ordinary desert thunderstorm... we could be looking at a maximum strength windstorm!",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 273,
+            "prop": "name",
+            "attributes": {
+                "content": "Can I borrow one of the sensors on the bridge?",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_183_skgoat_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "Of course. I should've seen it myself...",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "It's alright, Mr. Pavel. This is an extremely abnormal phenomenon and well beyond the scope of normal Catastrophe prediction. An experienced Catastrophe Messenger would have some trouble spotting all the signs in time.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "If not for the Doctor's assistance, I would've treated the outliers as errors and glossed over them.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 280,
+            "prop": "Decision",
+            "attributes": {
+                "options": "We still have time to move things in the right direction.;......;I'm getting a real bad feeling about this.",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line281",
+                "option2": "line281",
+                "option3": "line281"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 282,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_012",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 283,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, Amiya, the small cyclones ahead are converging and intensifying.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "In other words, the core of the multi-cyclone vortex is about to generate.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "name",
+            "attributes": {
+                "content": "Once the core forms, I estimate the cyclone will reach two kilometers in diameter and last at least seven to eight hours.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "name",
+            "attributes": {
+                "content": "What happens if Rhodes Island maintains its speed as it approaches the core?",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 289,
+            "prop": "name",
+            "attributes": {
+                "content": "If we come into contact with the vortex, the ship's hull may collide with high-speed active Originium dust, roughly equivalent to the simultaneous detonation of hundreds of maximum-payload Originium bombs across the bulwark.",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm sure you can guess how that might go for us.",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "Do we have enough time to change course?",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "I can try...",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 296,
+            "prop": "name",
+            "attributes": {
+                "content": "The core of the windstorm changes directions very quickly, and can reach a maximum speed of nearly 1,000 kilometers per hour.",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 298,
+            "prop": "name",
+            "attributes": {
+                "content": "Then there's no point in us trying.",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "name",
+            "attributes": {
+                "content": "Amiya, even if we try a full speed retreat, if we get unlucky with the direction, Rhodes Island won't escape the storm.",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_002_amiya_1",
+                "name2": "avg_npc_012",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "Then it seems like the only thing we can do is stay put.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "name",
+            "attributes": {
+                "content": "Mr. Pavel, give me a potential damage assessment.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_002_amiya_1",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "If we spend seven hours in a thunderstorm of a similar scale, the first to sixth decks will be damaged maybe 15%...",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "name",
+            "attributes": {
+                "content": "Of those, the first deck will take the hardest hits, and casualties are likely.",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_002_amiya_1#4",
+                "name2": "avg_npc_012",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "It'll be the biggest loss the ship takes in a year.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "name",
+            "attributes": {
+                "content": "But, I don't see any options...",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 310,
+            "prop": "Decision",
+            "attributes": {
+                "options": "There is a way.",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line311"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 312,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#2"
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor?",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 315,
+            "prop": "Decision",
+            "attributes": {
+                "options": "We won't have to take damage.;You don't want to have to dock for a month of repairs, right?",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line316",
+                "option2": "line316"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 317,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "name",
+            "attributes": {
+                "content": "Yes, if we have to stop in the wastelands, we could face other threats.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 319,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 320,
+            "prop": "Decision",
+            "attributes": {
+                "options": "We have another choice.;Since we can't retreat and don't want to stop, what else can we do?",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line321",
+                "option2": "line321"
+            }
+        },
+        {
+            "id": 321,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 322,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, are you suggesting that we continue straight ahead?",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "That's out of the question, visibility is too low!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "Even with assisted driving, I can't navigate. I'm from Sargon, plunging headfirst into a sandstorm like this is suicide!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 328,
+            "prop": "name",
+            "attributes": {
+                "content": "I understand your concerns, Mr. Kamal.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "But, I trust the Doctor.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 330,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#7"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr. {@nickname}, are you sure about leading Rhodes Island through the Catastrophe zone?",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 333,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I need Earthspirit to keep calculating the real-time coordinates of the vortex.;Yes.;I need PRTS to help me calculate the energy amplitude of the Originium on the surface.",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line334",
+                "option2": "line334",
+                "option3": "line334"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 335,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#7"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "Good, please cooperate with the Doctor.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 338,
+            "prop": "name",
+            "attributes": {
+                "content": "Calculating a safe route in such a short time sounds like a bad joke.",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 340,
+            "prop": "name",
+            "attributes": {
+                "content": "If anyone can do it, it's our Doctor.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "char_002_amiya_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 342,
+            "prop": "name",
+            "attributes": {
+                "content": "I've heard stories of the battles and all... but operating the landship is nothing like field command!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "I don't know about this... Of course, I don't doubt the Doctor's abilities, but I've never heard of this real-time calculation method...",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 346,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_183_skgoat_1"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "It just might work...",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_183_skgoat_1",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 350,
+            "prop": "name",
+            "attributes": {
+                "content": "Earthspirit, can you make sense of the Doctor's formulas?",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_183_skgoat_1",
+                "name2": "avg_npc_012",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "No.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "But they feel a bit familiar.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "name",
+            "attributes": {
+                "content": "Right... I heard about a similar formula from some whiz kid a couple days ago, but the Doctor's version is more complicated and varied.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 356,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I've given the route to the navigator.;Work with the central control staff if you need to change course rapidly.;Amiya, we're ready.",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line357",
+                "option2": "line357",
+                "option3": "line357"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 358,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "Let's head forward then!",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 360,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 361,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I'll help you issue instructions.;Leave it to me.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line362",
+                "option2": "line362"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line366"
+        },
+        {
+            "id": 363,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "No, Doctor, that would be too inefficient.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "name",
+            "attributes": {
+                "content": "Rhodes Island only needs one commander right now.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "Okay, Doctor, go forward until you're at my position.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 369,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#7"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "name",
+            "attributes": {
+                "content": "From the moment I saw you appear on the bridge, I trusted that the situation would definitely turn around.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "name",
+            "attributes": {
+                "content": "Attention, everyone on the bridge–",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "From now on, I am transferring command of the Rhodes Island landship to Dr. {@nickname}!",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 374,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Notify Closure and have her put all cabins into energy-saving mode!;All power to the engines!",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 375,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_012"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "name",
+            "attributes": {
+                "content": "Got it, Doctor!",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 378,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_transmissionget"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 380,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1"
+            }
+        },
+        {
+            "id": 381,
+            "prop": "name",
+            "attributes": {
+                "content": "Message from Closure: The engine is ready, and she wishes us 'good luck'...",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_002_amiya_1",
+                "name2": "char_183_skgoat_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 383,
+            "prop": "name",
+            "attributes": {
+                "content": "There's nothing wrong with going a little crazy every now and then.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_002_amiya_1",
+                "name2": "char_013_riop",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 385,
+            "prop": "name",
+            "attributes": {
+                "content": "If I knew I'd be sailing like this, I would've brought some booze.",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 387,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Rhodes Island, all ahead full!",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 388,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 390,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 392,
+            "prop": "CameraShake",
+            "attributes": {
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 60.0,
+                "fadeout": "false",
+                "block": "false"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "Image",
+            "attributes": {
+                "image": "bg_0_rhodes",
+                "fadetime": 0.0,
+                "xScale": 1.4,
+                "yScale": 1.4,
+                "x": 100.0
+            }
+        },
+        {
+            "id": 394,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$smallearthquake",
+                "channel": "bgs",
+                "volume": 1.0,
+                "block": "false",
+                "loop": "false"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "ImageTween",
+            "attributes": {
+                "image": "bg_0_rhodes",
+                "fadetime": 0.5,
+                "xScaleFrom": 1.4,
+                "yScaleFrom": 1.4,
+                "xScaleTo": 1.2,
+                "yScaleTo": 1.2,
+                "xFrom": 100.0,
+                "duration": 30.0
+            }
+        },
+        {
+            "id": 396,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 397,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm getting a nosebleed from this speed!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 399,
+            "prop": "name",
+            "attributes": {
+                "content": "That's because I elbowed your nose... Sorry, but the whole place is shaking so much I can't control my limbs.",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "Is the seismic damper malfunctioning?",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "Looks like it's not just my imagination - the whole ship's falling apart.",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "name",
+            "attributes": {
+                "content": "Earthspirit, you haven't taken your eyes off the screen at all...",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "Cyclone number two is continuing to move thirty degrees southeast, cyclone number three... cyclone number four...",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 404,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, hold my hand!",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 406,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.2,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 410,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 411,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 412,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 413,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I've got you, Amiya.",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 414,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 416,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 417,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.4,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fightgeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 419,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 423,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_bridge",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#5"
+            }
+        },
+        {
+            "id": 427,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, did I step on your foot...?",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 429,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Don't worry about it. You can hold on even tighter.;......;Your ears are making my face itchy.",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 430,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#4"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "name",
+            "attributes": {
+                "content": "Are we shaking less?",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 434,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Hard right, now!!",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 435,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 437,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 445,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "name",
+            "attributes": {
+                "content": "Haah... I didn't even notice that strong wind just now. If it caught us, there's no telling if we would've been able to stabilize the hull at this speed!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "Did the downburst make contact with the ground?",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "character",
+            "attributes": {
+                "name": "char_183_skgoat_1"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "name",
+            "attributes": {
+                "content": "Only two minutes until the core of the storm forms.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 452,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Maintain current trajectory and keep moving forward!",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 453,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "Wait, I see the cyclone!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 456,
+            "prop": "name",
+            "attributes": {
+                "content": "There's one on the left and another on the right!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "We're surrounded. Rhodes Island is going to collide in just two or three more minutes!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 459,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Keep going.",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 460,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop"
+            }
+        },
+        {
+            "id": 462,
+            "prop": "name",
+            "attributes": {
+                "content": "It's impossible to avoid them! We don't have enough space to maneuver!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 464,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Trust me.",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 465,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm trying real hard, Doctor!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 468,
+            "prop": "name",
+            "attributes": {
+                "content": "But I don't trust myself so much!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "name",
+            "attributes": {
+                "content": "Forget it, if Amiya's with you, I'm on board too. Even if I have to tie my hand to the steering handle, I'll keep pushing it forward until the very end!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 470,
+            "prop": "name",
+            "attributes": {
+                "content": "I just regret agreeing to swap shifts with that stinky lad, George...",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 472,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 474,
+            "prop": "CameraShake",
+            "attributes": {
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "false",
+                "block": "false"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 476,
+            "prop": "Image",
+            "attributes": {
+                "image": "avg_7_9",
+                "xScale": 1.2,
+                "yScale": 1.2,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 477,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$blizzard",
+                "channel": "bgs",
+                "volume": 1.0,
+                "block": "false",
+                "loop": "false"
+            }
+        },
+        {
+            "id": 478,
+            "prop": "ImageTween",
+            "attributes": {
+                "xTo": 128.0,
+                "duration": 5.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 481,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 482,
+            "prop": "name",
+            "attributes": {
+                "content": "Seventy-five meters. Fifty meters. Thirty meters...",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "(Gulps nervously) I've never seen a Catastrophe-cyclone up close before...",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor...",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 486,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Amiya, are you afraid?;......;You're hurting my hand.",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 487,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm a bit nervous, but I'm not afraid.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            }
+        },
+        {
+            "id": 490,
+            "prop": "name",
+            "attributes": {
+                "content": "I am a little nervous. But rest assured, Doctor, I'm not afraid.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            }
+        },
+        {
+            "id": 492,
+            "prop": "name",
+            "attributes": {
+                "content": "Sorry, Doctor, I'm a bit nervous. But I'm not afraid.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 494,
+            "prop": "name",
+            "attributes": {
+                "content": "We've been through times like this together before.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "name",
+            "attributes": {
+                "content": "The closer we might be to despair, the bigger everyone's hopes are, the more incredible the outcome will be.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, this is what you taught me.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 497,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 498,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Hope comes from the commitment to never give in, even at the bitter end.",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 499,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "name",
+            "attributes": {
+                "content": "Yes, Doctor, you once said the exact same words.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 501,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 502,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$alarmenter",
+                "channel": "bgs",
+                "volume": 1.0,
+                "block": "false",
+                "loop": "true"
+            }
+        },
+        {
+            "id": 503,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.4,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 504,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.4,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "bgs",
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 507,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.4,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "false"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_transmissionget"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "'Red alert, red alert...'"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "name",
+            "attributes": {
+                "content": "'Attention everyone, prepare for impact!'"
+            }
+        },
+        {
+            "id": 512,
+            "prop": "name",
+            "attributes": {
+                "content": "Just like before, we'll get through this crisis together.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "Image",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 514,
+            "prop": "Musicvolume",
+            "attributes": {
+                "volume": 0.0,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 515,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 516,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 517,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 518,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 519,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 520,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 521,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 522,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 524,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 525,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 528,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 529,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 530,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 531,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 532,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_0_rhodes3",
+                "screenadapt": "coverall",
+                "fadetime": 5.0
+            }
+        },
+        {
+            "id": 533,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.0,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 534,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 4.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 535,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 536,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 537,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$warm_intro",
+                "key": "$warm_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 538,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Yes, we survived back then.;Look.;I think my record's looking pretty good.",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 539,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 540,
+            "prop": "name",
+            "attributes": {
+                "content": "The wind is subsiding... and the color of the sky is changing too.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "name",
+            "attributes": {
+                "content": "Report, Rhodes Island has left the Catastrophe zone!!",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 542,
+            "prop": "name",
+            "attributes": {
+                "content": "The damage to all deck levels is less than 5%, and nobody was injured!",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 543,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 544,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "bgs",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 546,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 547,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 548,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_bridge",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 549,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 550,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 551,
+            "prop": "Musicvolume",
+            "attributes": {
+                "volume": 0.4,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 552,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#4"
+            }
+        },
+        {
+            "id": 553,
+            "prop": "name",
+            "attributes": {
+                "content": "Thank goodness...",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 554,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 555,
+            "prop": "name",
+            "attributes": {
+                "content": "My nose hurtsssss... Pavel, do you know you hit my nose again?",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 556,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 557,
+            "prop": "name",
+            "attributes": {
+                "content": "So what if I did? We're alive, I say! Alive!",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 558,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 559,
+            "prop": "name",
+            "attributes": {
+                "content": "Fine, but you owe me a drink.",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 560,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop",
+                "name2": "avg_npc_012",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 561,
+            "prop": "name",
+            "attributes": {
+                "content": "Whatever you want, it's on my tab. I almost made a big mistake.",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 562,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, it's all thanks to you!",
+                "name": "Navigator B"
+            }
+        },
+        {
+            "id": 563,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_183_skgoat_1"
+            }
+        },
+        {
+            "id": 564,
+            "prop": "name",
+            "attributes": {
+                "content": "Absolutely brilliant calculations, Doctor.",
+                "name": "Earthspirit"
+            }
+        },
+        {
+            "id": 565,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_013_riop"
+            }
+        },
+        {
+            "id": 566,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, is your command always so thrilling? Haha, I'd like to get another taste of that sometime!",
+                "name": "Central Control Staff"
+            }
+        },
+        {
+            "id": 567,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_088"
+            }
+        },
+        {
+            "id": 568,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, how in the world did you pull that off? It's like you've got prophetic Arts or something, suddenly showing up on the bridge right before we get hit by a Catastrophe!",
+                "name": "Navigator A"
+            }
+        },
+        {
+            "id": 569,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 570,
+            "prop": "Decision",
+            "attributes": {
+                "options": "To be fair, I was pretty anxious through that whole thing.;......;Shouldn't we celebrate?",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 571,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 572,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#2"
+            }
+        },
+        {
+            "id": 573,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor...",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 574,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 575,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 576,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 577,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "Amiya hugs you suddenly, and you realize that the hands on your waist are squeezing you tighter than they were at any point during the storm.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 578,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 579,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 580,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 581,
+            "prop": "character",
+            "attributes": {
+                "name": "char_002_amiya_1#10"
+            }
+        },
+        {
+            "id": 582,
+            "prop": "name",
+            "attributes": {
+                "content": "Thank you... Thank you standing by my side.",
+                "name": "Amiya"
+            }
+        },
+        {
+            "id": 583,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 584,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 585,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 586,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 587,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 588,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_room_2"
+            }
+        },
+        {
+            "id": 589,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 590,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$newhope01_intro",
+                "key": "$newhope01_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 591,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 592,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 593,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3",
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 594,
+            "prop": "name",
+            "attributes": {
+                "content": "Not half bad.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 595,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 596,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I did what I had to do.;......;Thanks.",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 597,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 598,
+            "prop": "name",
+            "attributes": {
+                "content": "The relationship between the self-replication speed of Originium and the increase in energy— you applied this knowledge to the calculation of wind-Catastrophe trajectories.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 599,
+            "prop": "name",
+            "attributes": {
+                "content": "You demonstrated similar abilities in the past, helping your colleagues at the time mitigate losses from Catastrophes. Some called you a Catastrophe expert.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 600,
+            "prop": "name",
+            "attributes": {
+                "content": "But we both know what you really specialize in.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 601,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 602,
+            "prop": "Decision",
+            "attributes": {
+                "options": "What do I specialize in?;......;Look, I really don't know.",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 603,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 604,
+            "prop": "name",
+            "attributes": {
+                "content": "That formula... You still remember it.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 605,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 606,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I didn't remember it before.;It jumped right into my head.",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 607,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 608,
+            "prop": "name",
+            "attributes": {
+                "content": "You created that formula yourself.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 609,
+            "prop": "name",
+            "attributes": {
+                "content": "You've recovered a lot of information about Originium and Catastrophes over the past month, and you left a lot of calculations in your notes.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 610,
+            "prop": "name",
+            "attributes": {
+                "content": "Perhaps the sudden crisis dredged up the latent memories from deep inside your consciousness, or perhaps you reinvented it using the knowledge you left behind.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 611,
+            "prop": "name",
+            "attributes": {
+                "content": "The fact that you could recall this formula proves that you still retain a basic understanding of the nature of Originium.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 612,
+            "prop": "name",
+            "attributes": {
+                "content": "In other words, you've never forgotten your identity as a researcher of Originium.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 613,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 614,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I want to continue this line of research.;This seems to be my duty.",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 615,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 616,
+            "prop": "name",
+            "attributes": {
+                "content": "You may see the study of Originium as your duty, but know that our actions should never be restricted by duty alone.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 617,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr. {@nickname}, what drives you to pursue the study of Originium so fervently?",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 618,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 619,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Both you and Amiya have Oripathy.;The suffering caused by Originium scars our world.;I want to bring an end to this calamity.",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 620,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 621,
+            "prop": "name",
+            "attributes": {
+                "content": "I once heard an answer to this question.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 622,
+            "prop": "name",
+            "attributes": {
+                "content": "It was very similar to what you said today, but also completely different.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 623,
+            "prop": "name",
+            "attributes": {
+                "content": "The person who uttered those words had an instinctive desire to unravel truths unknown, and also worked hard to save lives.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 624,
+            "prop": "name",
+            "attributes": {
+                "content": "But sometimes, salvation also meant destruction— that is what the same person told me.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 625,
+            "prop": "name",
+            "attributes": {
+                "content": "Do you still harbor that same answer deep within your brain?",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 626,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 627,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Does it still count as being there even if I don't remember it?;......;Whatever makes you happy.",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 628,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 629,
+            "prop": "name",
+            "attributes": {
+                "content": "Amiya said your performance on the bridge today was much like that of an actual 'prophet.'",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 630,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 631,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I did my homework.;......;Why are you staring at me like that?",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 632,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 633,
+            "prop": "name",
+            "attributes": {
+                "content": "The rational part of me wants to believe in science.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 634,
+            "prop": "name",
+            "attributes": {
+                "content": "When the results of your first brain examination came back, I thought I saw some errors in the process, and so there was a second time, a third time... and even a seventh time.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 635,
+            "prop": "name",
+            "attributes": {
+                "content": "The rational part of me told me that repeating the same results three times was enough to prove that you weren't lying.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 636,
+            "prop": "name",
+            "attributes": {
+                "content": "Without a shadow of a doubt, you really did lose a lot of your memories. You don't remember what you did to Theresa, and you forgot why you were standing here in the first place.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 637,
+            "prop": "name",
+            "attributes": {
+                "content": "All of this has caused a significant... dichotomy between you and the person I once knew.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 638,
+            "prop": "name",
+            "attributes": {
+                "content": "But just like I allowed you to do the seventh test, in this moment, I once again find myself doubting... Who exactly is standing in front of me?",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 639,
+            "prop": "name",
+            "attributes": {
+                "content": "How much of the past remains, and how much of you blooms anew?",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 640,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 641,
+            "prop": "Decision",
+            "attributes": {
+                "options": "You're being sentimental again.;It felt terrible having to sit through seven exams.",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 642,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 643,
+            "prop": "name",
+            "attributes": {
+                "content": "Perhaps, I won't deny it. Dealing with you always has a tendency to sway my emotions.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 644,
+            "prop": "name",
+            "attributes": {
+                "content": "But this is also born of extreme rationality.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 645,
+            "prop": "name",
+            "attributes": {
+                "content": "I hope you understand, there can be errors in our measurements. And in your case, I can no longer tolerate any errors.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 646,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            }
+        },
+        {
+            "id": 647,
+            "prop": "name",
+            "attributes": {
+                "content": "I would like to apologize to you regarding this matter.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 648,
+            "prop": "name",
+            "attributes": {
+                "content": "But taking a better grasp of your memory recuperation will also have real benefits for your body.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 649,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 650,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 651,
+            "prop": "Decision",
+            "attributes": {
+                "options": "There's something I've wanted to ask for a long time.",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 652,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 653,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 654,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Setting aside your role as a doctor, do you want me to regain my memories?",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 655,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 656,
+            "prop": "name",
+            "attributes": {
+                "content": "Situations are rarely black and white... and the same is true of human emotions.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 657,
+            "prop": "name",
+            "attributes": {
+                "content": "I've not concealed my hatred for you in the past, but... no matter how much I hate to admit it, there's something else there too.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 658,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 659,
+            "prop": "Decision",
+            "attributes": {
+                "options": "You want me doing everything I could before.;Do you miss the person you hate?;You're searching for the truth of the past.",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 660,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 661,
+            "prop": "name",
+            "attributes": {
+                "content": "If it's only strength I needed, I believe that you are good enough as you are... Perhaps, you can do even better.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 662,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            }
+        },
+        {
+            "id": 663,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 664,
+            "prop": "name",
+            "attributes": {
+                "content": "Do I... 'miss'...?",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 665,
+            "prop": "name",
+            "attributes": {
+                "content": "That word is far too simple. The languages of this world have developed over thousands of years, and yet I am still unable to choose the most suitable word to order my thoughts during the many moments I think about you.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 666,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            }
+        },
+        {
+            "id": 667,
+            "prop": "name",
+            "attributes": {
+                "content": "Without a doubt, I seek that answer.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 668,
+            "prop": "name",
+            "attributes": {
+                "content": "Ideally, I want to hear the truth from your mouth. But I will not give up looking for that truth in other ways.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 669,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 670,
+            "prop": "name",
+            "attributes": {
+                "content": "Now, it's my turn to ask you.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 671,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr. {@nickname}, do you want your memories back?",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 672,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 673,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I do.;I don't.",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 674,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 675,
+            "prop": "name",
+            "attributes": {
+                "content": "Your answer doesn't matter. I see your hesitation.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 676,
+            "prop": "name",
+            "attributes": {
+                "content": "Once your memories come back, many of your questions will be answered. However, not every answer will satisfy you.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 677,
+            "prop": "name",
+            "attributes": {
+                "content": "You will know where all the emotions pouring into you come from, whether it is the hatred from me and W, the unconditional trust from Amiya, or... even further back.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 678,
+            "prop": "name",
+            "attributes": {
+                "content": "Excess memories, intense emotions, will instantly flood your entire brain—",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 679,
+            "prop": "name",
+            "attributes": {
+                "content": "Trust me, what you will feel at that time will be far greater than exhaustion.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 680,
+            "prop": "name",
+            "attributes": {
+                "content": "What you should fear even more is, when the past finally catches up to you, you must decide.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 681,
+            "prop": "name",
+            "attributes": {
+                "content": "What if those memories are too strong and engulf all the hard work you've put in recently, and pull you back into the abyss that you failed to crawl out of over countless years?",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 682,
+            "prop": "name",
+            "attributes": {
+                "content": "Once the current you is defeated, everything you've worked so hard to build will collapse, and your will may no longer be your own.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 683,
+            "prop": "name",
+            "attributes": {
+                "content": "So, let me ask you once more—",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 684,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr. {@nickname}, are you ready?",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 685,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 686,
+            "prop": "Decision",
+            "attributes": {
+                "options": "......",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 687,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 688,
+            "prop": "name",
+            "attributes": {
+                "content": "If luck is on our side, you won't need to answer this question any time soon.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 689,
+            "prop": "name",
+            "attributes": {
+                "content": "I want to thank you. Over the past month or so, you've shown me some new possibilities.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 690,
+            "prop": "name",
+            "attributes": {
+                "content": "Especially today. I learned that you still remember the formula.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 691,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#4"
+            }
+        },
+        {
+            "id": 692,
+            "prop": "name",
+            "attributes": {
+                "content": "It turns out, you and I are not the only ones preparing for that day.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 693,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1"
+            }
+        },
+        {
+            "id": 694,
+            "prop": "name",
+            "attributes": {
+                "content": "I suspected this long ago, that home-use life functions restoration device was not supposed to have the defect of deleting one's memory—",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 695,
+            "prop": "name",
+            "attributes": {
+                "content": "In particular, it's impossible to selectively delete the part of the brain most likely involved in decision-making, but still retaining the parts most meaningful to you.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 696,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr. {@nickname}......",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 697,
+            "prop": "name",
+            "attributes": {
+                "content": "What I think is, she trusted you even more than I could fathom in the past.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 698,
+            "prop": "name",
+            "attributes": {
+                "content": "That being the case, we should continue to work hard.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 699,
+            "prop": "name",
+            "attributes": {
+                "content": "Just as I've said countless times already, I will help you, as long as we continue to stand together.",
+                "name": "Kal'tsit"
+            }
+        },
+        {
+            "id": 700,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 701,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 702,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 703,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 704,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 705,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_rhodescom",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 706,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 707,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 708,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 709,
+            "prop": "name",
+            "attributes": {
+                "content": "7:43 P.M. \\ Overcast"
+            }
+        },
+        {
+            "id": 710,
+            "prop": "name",
+            "attributes": {
+                "content": "Rhodes Island Landship, Command Center"
+            }
+        },
+        {
+            "id": 711,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$doorknockquite",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 712,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 713,
+            "prop": "name",
+            "attributes": {
+                "content": "Professor, are you here?",
+                "name": "???"
+            }
+        },
+        {
+            "id": 714,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 715,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Eyjafjalla? Come in.",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 716,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 717,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_empty"
+            }
+        },
+        {
+            "id": 718,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 719,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 720,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 721,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 722,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1"
+            }
+        },
+        {
+            "id": 723,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 724,
+            "prop": "name",
+            "attributes": {
+                "content": "Professor, they said you wanted to see me...",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 725,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 726,
+            "prop": "Decision",
+            "attributes": {
+                "options": "This is for you.",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 727,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 728,
+            "prop": "name",
+            "attributes": {
+                "content": "Is it about my application to become an operator...? Oh, it's been approved?",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 729,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#6"
+            }
+        },
+        {
+            "id": 730,
+            "prop": "name",
+            "attributes": {
+                "content": "That's great news. Everyone said you and Miss Amiya would turn me down because of my condition.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 731,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 732,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I convinced her.",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 733,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 734,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 735,
+            "prop": "name",
+            "attributes": {
+                "content": "I see, you even went out of your way to get it approved? Thank you...",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 736,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 737,
+            "prop": "Decision",
+            "attributes": {
+                "options": "The briefing you submitted this morning helped Rhodes Island through a crisis.",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 738,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 739,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#5"
+            }
+        },
+        {
+            "id": 740,
+            "prop": "name",
+            "attributes": {
+                "content": "You mean... the Catastrophe this afternoon?",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 741,
+            "prop": "name",
+            "attributes": {
+                "content": "Professor, did you read my analysis?",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 742,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 743,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Your Originium vein expansion observations were incredibly accurate.;You were able to predict a Catastrophe through an increase in Originium activation on the surface.",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 744,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 745,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 746,
+            "prop": "name",
+            "attributes": {
+                "content": "It was just a hunch.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 747,
+            "prop": "name",
+            "attributes": {
+                "content": "They said the density of Originium near the surface around here would be very low, but I saw the same situation in a volcano in southern Leithania...",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 748,
+            "prop": "name",
+            "attributes": {
+                "content": "Even a small amount of Originium proliferates rapidly over a brief period when the conditions are right.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 749,
+            "prop": "name",
+            "attributes": {
+                "content": "Two days ago, after finishing my daily treatment, I was walking around the dorms as usual when I saw the approaching phenomenon from the dust samples on the porthole.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 750,
+            "prop": "name",
+            "attributes": {
+                "content": "In sandy terrain, a sudden burst in Originium energy will cause the ground temperature to rise rapidly, leading to a significant increase in the possibility of large-scale wind-Catastrophes.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 751,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#3"
+            }
+        },
+        {
+            "id": 752,
+            "prop": "name",
+            "attributes": {
+                "content": "Um... I'm so sorry... I can go on and on about this stuff...",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 753,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 754,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Please continue.",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 755,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 756,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#2"
+            }
+        },
+        {
+            "id": 757,
+            "prop": "name",
+            "attributes": {
+                "content": "You've already seen the report, right?",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 758,
+            "prop": "name",
+            "attributes": {
+                "content": "Busy as you are, I never expected you'd read our random notes.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 759,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 760,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I also read your thesis.;Your research is very interesting.;I've said before, I'm a hard worker, but some folks are thinking I can use Arts.",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 761,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 762,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 763,
+            "prop": "name",
+            "attributes": {
+                "content": "Professor, are you interested in my research?",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 764,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            }
+        },
+        {
+            "id": 765,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#4"
+            }
+        },
+        {
+            "id": 766,
+            "prop": "name",
+            "attributes": {
+                "content": "Do mystical Originium Arts like that exist?",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 767,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 768,
+            "prop": "name",
+            "attributes": {
+                "content": "............",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 769,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 770,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 771,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#6"
+            }
+        },
+        {
+            "id": 772,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "jump",
+                "power": 20.0,
+                "fadetime": 0.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 773,
+            "prop": "name",
+            "attributes": {
+                "content": "Ah... I understand, you were making a joke.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 774,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 775,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 776,
+            "prop": "name",
+            "attributes": {
+                "content": "If you're not too busy, I'd love to stay over and have a nice chat with you again.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 777,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 778,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 779,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 780,
+            "prop": "Decision",
+            "attributes": {
+                "options": "After I get some work done.;You're welcome to look around.",
+                "values": "1;2"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 781,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            }
+        },
+        {
+            "id": 782,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 783,
+            "prop": "name",
+            "attributes": {
+                "content": "There are so many books on your desk...",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 784,
+            "prop": "name",
+            "attributes": {
+                "content": "Annals of the Great Yan Classics,' 'A Tower Without a Legend,' 'Columbia Judicial Observation Notes,' 'Conquest and Assimilation' ...Professor, are these the books you normally read?",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 785,
+            "prop": "name",
+            "attributes": {
+                "content": "Your interests are so diverse. It's nothing like the bookcases of the other professors I know.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 786,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 787,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I think this one will interest you the most.",
+                "values": "1"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 788,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            }
+        },
+        {
+            "id": 789,
+            "prop": "name",
+            "attributes": {
+                "content": "These are your... Catastrophe research notes?",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 790,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 791,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Just something to read over.;Just some thoughts I jotted down.;Just a rough draft.",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 792,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 793,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#6"
+            }
+        },
+        {
+            "id": 794,
+            "prop": "name",
+            "attributes": {
+                "content": "Thank you... Thank you so much! I'll study these thoroughly!",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 795,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 796,
+            "prop": "name",
+            "attributes": {
+                "content": "If I have any questions, may I come to talk to you?",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 797,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 798,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Any time.;You're always welcome.;As long as I can finish my other work.",
+                "values": "1;2;3"
+            },
+            "targetLine": {}
+        },
+        {
+            "id": 799,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            }
+        },
+        {
+            "id": 800,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 801,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 802,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 803,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "The young scholar clutches the notes you handed her tightly, lifts her head, and looks at you with conviction-filled eyes.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 804,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 805,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 806,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 807,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#1"
+            }
+        },
+        {
+            "id": 808,
+            "prop": "name",
+            "attributes": {
+                "content": "Professor... my life has been a series of wonderful surprises since coming to Rhodes Island.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 809,
+            "prop": "name",
+            "attributes": {
+                "content": "The stability of my Oripathy has given me a lot more confidence about my future, and people like you have given me the hope to keep moving forward.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 810,
+            "prop": "name",
+            "attributes": {
+                "content": "If you're working so hard, then what reason do any of us have to give up?",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 811,
+            "prop": "name",
+            "attributes": {
+                "content": "—Professor.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 812,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_180_amgoat_1#6"
+            }
+        },
+        {
+            "id": 813,
+            "prop": "name",
+            "attributes": {
+                "content": "Thank you so much for leading Rhodes Island forward, and on into the future.",
+                "name": "Eyjafjalla"
+            }
+        },
+        {
+            "id": 814,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 815,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 816,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 817,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 818,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 819,
+            "prop": "Image",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": false
+}
