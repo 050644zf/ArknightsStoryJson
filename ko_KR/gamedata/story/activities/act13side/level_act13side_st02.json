@@ -1,0 +1,4508 @@
+{
+    "lang": "ko_KR",
+    "eventid": "act13side",
+    "eventName": "니어 라이트",
+    "entryType": "ACTIVITY",
+    "storyCode": "NL-ST-2",
+    "avgTag": "브릿지",
+    "storyName": "권력과 힘",
+    "storyInfo": "올머 잉그라가 다시 풀려난다는 사실을 견디지 못하고 권력에 붙은 말키위츠. 한편, 아머레스 유니온은 감염자의 숙청을 주도했지만, 무에나의 방해로 라주라이트는 목적을 달성하지 못한다.\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G09",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#4",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "name",
+            "attributes": {
+                "content": "……박사?",
+                "name": "그라벨"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "name",
+            "attributes": {
+                "content": "레스토랑에서 돌아오고 나서 계속 미간을 찌푸리는데?",
+                "name": "그라벨"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#3"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "만약 피곤하다면 내가……",
+                "name": "그라벨"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 15,
+            "prop": "Decision",
+            "attributes": {
+                "options": "오늘 만찬을 어떻게 생각해?;말키위츠는 어떤 사람인 것 같아?",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line16",
+                "option2": "line21"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line25"
+        },
+        {
+            "id": 17,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "name",
+            "attributes": {
+                "content": "아주 적절했어, 박사. 이런 교류에 익숙해졌나 봐?",
+                "name": "그라벨"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "상무이사가 직접 나오지는 않았지만, 기업 고위직들이 박사한테 더 호의적인 게 보였어……",
+                "name": "그라벨"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 21,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line25"
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "……전에 말했다시피 빛의 기사 사건으로 한 대변인이 책임지고 사퇴했어.",
+                "name": "그라벨"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "말키위츠는 임시로 그 자리를 맡은 사람이야. 그전까지는 별로 알려지지 않은 인물이었거든……",
+                "name": "그라벨"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "속세의 세례를 받지 않아 인간미가 아직 남아있긴 하지만…… 이런 환경에서 그런 모습이 얼마나 갈지는 모르지.",
+                "name": "그라벨"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 26,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 27,
+            "prop": "Decision",
+            "attributes": {
+                "options": "로도스 아일랜드의 계획은 실행 가능성이 있을까?",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line28"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 29,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#2"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "그라벨"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#6"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "그 얘긴 나중에 하고…… 정말로 날 믿긴 하는 거야?",
+                "name": "그라벨"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "연합회의 침투는 어떤 조직적인 방식이 아니야…… 돈과 확실하게 발전하는 사회 앞에서 연합회가 아무것도 하지 않아도, 기사는 자연스럽게 자본 쪽으로 기울걸.",
+                "name": "그라벨"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#3"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "name",
+            "attributes": {
+                "content": "감정회가 로도스 아일랜드를 대우하는 이유도 다 빛의 기사 때문이야. 그렇다고 해도 박사처럼 치밀한 사람이…… 감정회를 잘못 상대했다가는 손해 볼 수도 있어.",
+                "name": "그라벨"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 37,
+            "prop": "Decision",
+            "attributes": {
+                "options": "충고 고마워.;그건 당연히 알고 있어.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line38",
+                "option2": "line38"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 39,
+            "prop": "Decision",
+            "attributes": {
+                "options": "그럼, 네 의견을 들려줄래?;그래서 네 의견은?",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line40",
+                "option2": "line40"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 41,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 42,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 44,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#3",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "……녹슨 구리의 기사가…… 또, 다시 복귀했나요?",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#3",
+                "name2": "avg_npc_222",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 49,
+            "prop": "name",
+            "attributes": {
+                "content": "네…… 기사 협회에서 영상이나 다른 기사의 증언을 토대로, 그 감염자 기사가 스스로 과도하게 아츠를 시전해 병이 악화한 거라고 국민원에 증명했으니까요.",
+                "name": "기업 직원"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "그리고, 사인도 '광석병'이라서 녹슨 구리의 기사는 직접적인 책임이 없다고 하니……",
+                "name": "기업 직원"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5",
+                "name2": "avg_npc_222",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 52,
+            "prop": "name",
+            "attributes": {
+                "content": "……정말 그렇다고 해도…… 우리가……",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1",
+                "name2": "avg_npc_222",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 54,
+            "prop": "name",
+            "attributes": {
+                "content": "먼저 나가계세요.",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1",
+                "name2": "avg_npc_222",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "알겠습니다.",
+                "name": "기업 직원"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 58,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 59,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 300.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_211_1#4",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 61,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 62,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 65,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 67,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "initamount": 0.0,
+                "amount": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G10",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 73,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 75,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "amount": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G09",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "……국민원 부심사관한테 연락해줘…… 개인 전화야.",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 81,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_telephonebusy",
+                "channel": "bgs",
+                "volume": 0.6,
+                "loop": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 83,
+            "prop": "soundvolume",
+            "attributes": {
+                "channel": "bgs",
+                "volume": 0.0,
+                "fadetime": 5.0
+            }
+        },
+        {
+            "id": 84,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "통화 연결음이 두 번 울렸다.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 87,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "말키위츠는 문득 어렸을 때 아버지 서재 책상 위에 있던 황동색 전화기가 떠올랐다.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 88,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 89,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_transmissionget",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 91,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "……대변인님, 결론을 내리셨나요?",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "차르니 씨가 다시는 증거를 잡지 못하도록 하면 된다, 이거죠?",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "그렇죠…… 하지만 이걸 아셔야 합니다. 나중에 일이 드러나면 당신이나 나나 책임을 피할 수 없을 겁니다.",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "name",
+            "attributes": {
+                "content": "그러므로, 그를 죽이는 게…… 가장 안전하죠.",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "약속드리죠.",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "name",
+            "attributes": {
+                "content": "확실하게…… 차르니 씨가 입을 다물도록 약속하죠.",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "대신, 구체적인 수단은 캐묻지 말아주세요.",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "name",
+            "attributes": {
+                "content": "알겠습니다…… 당신의 성의를 보여주신다면.",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "내일 바로 올머 잉그라의 재심에 착수하겠습니다. 7일 이내에, 당신으로부터 충분히 성의 있는 답변을 받을 수 있다면……",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "올머 잉그라는 이제 기사 스포츠에서 사라질 겁니다.",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "성의…… 말입니까.",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "네. 적어도 차르니 씨가 '영원히 배신하지 않는다'는 것을 증명해야 합니다.",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 112,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "말키위츠는 그 황동색 전화기를 기억하고 있다.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 115,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "그때는 지금처럼 전화기가 보급되지 않아, 케이블이 술집, 여행사와 시끄러운 공사현장 주변에 깔려 있었다.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 116,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "벨 소리가 울릴 때마다 온갖 희로애락이 조용히 찾아왔다.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 117,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "이게 바로 카시미어의 생활이다…… 현대의 생활.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 118,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 119,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#8"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "……하지만 이건 꼭 알려드리고 싶네요……",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "당신은 지금 대변인을 도발하고 있습니다.",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#8"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "당신도 알다시피 저는 갑자기 명령을 받아 지금 이 자리에 있고, 이사회에도 의지할 백이 없습니다.",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "그렇다고 당신 멋대로 저를 휘두를 수 있다는 말은 아닙니다.",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "name",
+            "attributes": {
+                "content": "아머레스 유니온의 지휘권은…… 전에 차르니 씨에게 있었던 걸로 알고 있습니다. 그렇다면 지금은……",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "name",
+            "attributes": {
+                "content": "……아아, 오해하지 마십시오. 저는 당신의 권력에 도전하는 게 아닙니다.",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 134,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "권력.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 137,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 138,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "저는 단지 우리의 향후 협력이 원활하게 이루어지길 바라는 마음에서 말씀드렸을 뿐입니다.",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "그렇게까지 말씀하신다면 저도 강하게 밀어붙일 생각은 없습니다. 너무 실례가 되니까요.",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "name",
+            "attributes": {
+                "content": "아무튼, 당신이 보증만 해주시면 됩니다. 솔직히 올머 잉그라는 부패한 귀족이죠. 그 사람 때문에 우리 사이가 틀어질 필요는 없지 않습니까?",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "……그렇죠.",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "name",
+            "attributes": {
+                "content": "그럼, 이제 더 할 얘기가 없겠군요.",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "……! 말키위츠 선생님, 잠시……",
+                "name": "수화기 너머 목소리"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 150,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$transmission",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 151,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 152,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_212_1"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "……웃고 있네.",
+                "name": "대변인 맥키"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#3",
+                "name2": "avg_npc_212_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 159,
+            "prop": "name",
+            "attributes": {
+                "content": "……! 맥키 선생님, 언제부터……",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#3",
+                "name2": "avg_npc_212_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 161,
+            "prop": "name",
+            "attributes": {
+                "content": "그런 미소는 처음 봐, 말키위츠.",
+                "name": "대변인 맥키"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4",
+                "name2": "avg_npc_212_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 163,
+            "prop": "name",
+            "attributes": {
+                "content": "무슨 일이시죠?",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4",
+                "name2": "avg_npc_212_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "아무렴, 아머레스 유니온의 명령이 정식으로 하달되었으니 이 일은 우리랑 어느 정도 관련이 있긴 하지. 하지만……",
+                "name": "대변인 맥키"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "name",
+            "attributes": {
+                "content": "……됐어, 아니다. 일이나 계속해.",
+                "name": "대변인 맥키"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4",
+                "name2": "avg_npc_212_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "……네, 맥키 선생님.",
+                "name": "대변인 말키위츠"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 170,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 171,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_npc_212_1",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 173,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 174,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_212_1#2"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "대변인 맥키"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "권력이란 언제나 달콤하지. 안 그래, 말키위츠?",
+                "name": "대변인 맥키"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 178,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 180,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 181,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 183,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 185,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "……밤거리는 산책하기 딱 좋다니까.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "일만 아니라면 말이지.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "보고합니다, 모니크 님께서 소대를 이끌고 이미 지정된 위치에 도착하셨습니다.",
+                "name": "아머레스 유니온 멤버"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "name",
+            "attributes": {
+                "content": "이번 작전의 목표는 명확합니다. 현재 이 구역에 숨어 있는 감염자는 약 백 명입니다.",
+                "name": "아머레스 유니온 멤버"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#2",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 193,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$escape_intro",
+                "key": "$escape_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 194,
+            "prop": "name",
+            "attributes": {
+                "content": "하아, 죽일 수 있으면 다 죽여. 위에서도 머릿수에 따라 돈 준다고 했으니.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "name",
+            "attributes": {
+                "content": "늘 하던 대로, 자기편은 건드리지 말고.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#2",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "네.",
+                "name": "아머레스 유니온 멤버"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 199,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 200,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 202,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 203,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G07",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "name",
+            "attributes": {
+                "content": "야! 아머레스 유니온을 본 사람이 있대!",
+                "name": "감염자 기사 A"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 209,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "뭐, 뭐야…… 말도 안 돼, 여긴 카봐렐리엘키의 중심이야! 여기서 대놓고 살인한다고!?",
+                "name": "감염자 기사 B"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 212,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 214,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 215,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G07",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 217,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_430_fartth_1"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "……너무 적어.",
+                "name": "저스티나"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_103nc_1",
+                "name2": "avg_430_fartth_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "뭐지? 거친 갈기가 너희 바람대로 아머레스 유니온의 주의를 끌지 않았냐?",
+                "name": "셰브치크"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_103nc_1",
+                "name2": "avg_430_fartth_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "그런데 수가 너무 적어.",
+                "name": "저스티나"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "name",
+            "attributes": {
+                "content": "우리가 놓친 게 있나……",
+                "name": "저스티나"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_103nc_1#2",
+                "name2": "avg_430_fartth_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 226,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "셰브치크"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_103nc_1",
+                "name2": "avg_430_fartth_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 228,
+            "prop": "name",
+            "attributes": {
+                "content": "최악의 상황에 대비해, 송곳니.",
+                "name": "셰브치크"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "아머레스 유니온을 얕보면 안 돼.",
+                "name": "셰브치크"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 231,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 233,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 234,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G10",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 236,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "빨, 빨리 도망가!",
+                "name": "감염자 기사 A"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "진정해, 대체 뭘 봤다는 거야?",
+                "name": "감염자 기사 B"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "파, 파, 파란색 활이다……",
+                "name": "감염자 기사 A"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "어, 어엉!? 그게 말이 돼!?",
+                "name": "감염자 기사 A"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "name",
+            "attributes": {
+                "content": "얼, 얼른 다른 사람한테도 알려, 흩어져서 움직이라고. 쓰레기장에라도 숨어. 그나마 괜찮을 거야!",
+                "name": "감염자 기사 A"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "name",
+            "attributes": {
+                "content": "일반 감염자는 반항하지 말라고 해. 절대 반항하면 안 돼……",
+                "name": "감염자 기사 A"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 248,
+            "prop": "name",
+            "attributes": {
+                "content": "지, 지, 지금 피누스 실베스트리스 기사단에 연락되는 사람 있을까…… 빨리……",
+                "name": "감염자 기사 B"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 250,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 251,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 253,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 254,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 256,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 260,
+            "prop": "name",
+            "attributes": {
+                "content": "……흥흥…… 흥흥흥……",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 262,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 264,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 265,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G07",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 266,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 267,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_216"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "보고합니다, 감염자 세 명을 발견했습니다.",
+                "name": "아머레스 유니온 멤버"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 271,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 273,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 274,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 276,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "흐으응…… 흥흥……",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 280,
+            "prop": "name",
+            "attributes": {
+                "content": "참, 이사회가 제시한 가격을 내가 알려 줬던가?",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "name",
+            "attributes": {
+                "content": "불법 감염자 한 명당 300 금화, 감염자 기사는 그 2배다.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 282,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 283,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 285,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G07",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 287,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 288,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_216"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "어딜 도망가!",
+                "name": "아머레스 유니온 멤버"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "name",
+            "attributes": {
+                "content": "……젠장! 들켰다!",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 295,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 296,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 297,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 298,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 299,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 301,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "name",
+            "attributes": {
+                "content": "……감염자 한 명이면 토너먼트 티켓 한 장이고, 감염자 기사 한 명이면 자동찻값의 반은 되지.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "그렇다면.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "name",
+            "attributes": {
+                "content": "그 외의 특수한 인물은 어떻게 처리할까?",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "네?",
+                "name": "아머레스 유니온 멤버"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "name",
+            "attributes": {
+                "content": "너희들 수신호 훈련 몇 가지나 받았어?",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "어, 아마 세 종류 배웠었나……",
+                "name": "아머레스 유니온 멤버"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#2",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "음, 뭐 됐다. 다 잊어버려. 내가…… 음…… 손가락을 튕긴다.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 315,
+            "prop": "name",
+            "attributes": {
+                "content": "내가 손가락을 튕기면 즉시 움직여. 망설이지 말고.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 317,
+            "prop": "name",
+            "attributes": {
+                "content": "네.",
+                "name": "아머레스 유니온 멤버"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "좋아. 그럼 난 인사나 하고 올까.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 321,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 322,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$nervous_intro",
+                "key": "$nervous_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 325,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "라주라이트 로이가 앞을 향해 걸어가자 가로등이 깜빡였다.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 327,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "푸른 바닥 타일은 앞으로 쭉 뻗어졌고, 거리에는 아무도 없었다.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 328,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "스산한 거리 옆에 있는 한 벤치.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 329,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "그리고 그 벤치에 앉아있는 쓸쓸해 보이는 자.",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 330,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 331,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 332,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 333,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I02_1",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 338,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 340,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I02_2",
+                "screenadapt": "coverall",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 341,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown3",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 342,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "안녕, 아름다운 밤이네. 그렇지?",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "혹시 신문 읽는 거 방해했나? 오늘 저녁 신문에는 빛의 기사 소식밖에 없던데.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 346,
+            "prop": "name",
+            "attributes": {
+                "content": "근처엔 아무도 없고 정말 썰렁하네. 요즘 이곳이 안전하지 않다고 들었는데……",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "크흠.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "혼자 여기서 뭐 해?",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "로이…… 난 일을 마치고 여기서 잠깐 쉬는 것뿐이야.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "아이고, 이제 퇴근하셨어? 이 시간에? 참 고생도 많네.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "name",
+            "attributes": {
+                "content": "그런데…… 여긴 무슨 일로 오셨대?",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "name",
+            "attributes": {
+                "content": "이 근처에는 감염자나 불법 이민자, 그리고 암시장 상인밖에 없는데.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "사람을 기다리고 있어.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "name",
+            "attributes": {
+                "content": "뭐야, 누굴 기다리는지까지 물어보게?",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 358,
+            "prop": "name",
+            "attributes": {
+                "content": "아니, 아니. 설마, 그럴 리가.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "사람을 기다린다라…… 으음, 누굴까. 혹시 아름다운 여자분? 하하하, 농담이야……",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "그런데 우리는 공무가 있어서 말이지.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "친구분이랑 같이 좀 피해주셔야겠는데.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "name",
+            "attributes": {
+                "content": "……넌 네 할 일 하고, 난 내 할 일 하면 돼.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "지금 무슨 말을 하는 건지 알잖아, 무에나.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "name",
+            "attributes": {
+                "content": "설마 아까 내가 가울어로 얘기했나?",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "name",
+            "attributes": {
+                "content": "……뭐 또 그렇게 말해. 당신이 여기 있으면 내 부하들이 긴장해서 실수할까 봐 그러지.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "name",
+            "attributes": {
+                "content": "하아.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 369,
+            "prop": "name",
+            "attributes": {
+                "content": "……무에나, 그거 알아? 내가 지금 당신을 죽이려면…… 얼마나 많은 시간을 들여야 할까?",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 371,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "로이는 천천히 손을 들었다."
+            }
+        },
+        {
+            "id": 373,
+            "prop": "name",
+            "attributes": {
+                "content": "어둠 속에는 준비를 마친 아머레스 유니온 자객들이 대기하고 있었다."
+            }
+        },
+        {
+            "id": 374,
+            "prop": "name",
+            "attributes": {
+                "content": "기분 탓일 수도 있겠지만, 어둠 속에 숨어 있는 이 은폐의 마스터들은 왠지 자신들의 위치가 이미 들통난 것 같았다."
+            }
+        },
+        {
+            "id": 375,
+            "prop": "name",
+            "attributes": {
+                "content": "무에나 니어."
+            }
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "그들은 기도하기 시작했다. 로이가 어떤 신호도 보내지 않기를……"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 378,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "name",
+            "attributes": {
+                "content": "……!",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 381,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 382,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 384,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I10",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 387,
+            "prop": "name",
+            "attributes": {
+                "content": "검을 든 흰 뿔의 살카즈."
+            }
+        },
+        {
+            "id": 388,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "name",
+            "attributes": {
+                "content": "…………하.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "정말로…… 아름다운 아가씨였네.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "name",
+            "attributes": {
+                "content": "제가 늦었나요?",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "name",
+            "attributes": {
+                "content": "아니.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 394,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 396,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 397,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I02_3",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown3",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 399,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 400,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 404,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 409,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I02_4",
+                "xScale": 0.85,
+                "yScale": 0.85,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 411,
+            "prop": "ImageTween",
+            "attributes": {
+                "xTo": 0.0,
+                "duration": 20.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 413,
+            "prop": "name",
+            "attributes": {
+                "content": "……왜 날 쳐다봐?",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": "이제 일하러 가야지, 로이.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": "……으음……",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "name",
+            "attributes": {
+                "content": "순간 로이와 살카즈의 시선이 마주쳤다."
+            }
+        },
+        {
+            "id": 418,
+            "prop": "name",
+            "attributes": {
+                "content": "그는 한 가지 일을 생각하고 있었다."
+            }
+        },
+        {
+            "id": 419,
+            "prop": "name",
+            "attributes": {
+                "content": "이후 어떻게 도망가야 덜 창피할까."
+            }
+        },
+        {
+            "id": 420,
+            "prop": "name",
+            "attributes": {
+                "content": "하하, 갑자기 생각이 바뀌었어. 저기, 곧 비가 올 것 같은데 나 우산을 안 가져왔거든.",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "name",
+            "attributes": {
+                "content": "그런데……",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "name",
+            "attributes": {
+                "content": "니어 가문이 감염자를 감싸려고 한다, 이렇게 이해해도 될까?",
+                "name": "로이"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "name",
+            "attributes": {
+                "content": "마음대로.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 425,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 427,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 428,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 429,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 431,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 435,
+            "prop": "name",
+            "attributes": {
+                "content": "……당신……",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_108"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "name",
+            "attributes": {
+                "content": "마가렛이 또 이겼네.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "name",
+            "attributes": {
+                "content": "네가 막았어야지.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 440,
+            "prop": "name",
+            "attributes": {
+                "content": "……죄송합니다.",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "name",
+            "attributes": {
+                "content": "하지만 마가렛 씨가 원하는 거라면 전 응원할 겁니다…… 마가렛 씨의 버팀목이 되어줄 거예요.",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 443,
+            "prop": "name",
+            "attributes": {
+                "content": "……네가? 살카즈가?",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "name",
+            "attributes": {
+                "content": "감염자 일은 로도스 아일랜드에 이미 알린 것으로 해 둔다.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "도와주셔서 감사드립니다…… 아머레스 유니온은 강적이에요.",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "근처에 숨은 모든 감염자를 죽이겠다고 작정했다면, 아마 우리로서는 막을 방법이 없었을 겁니다.",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 450,
+            "prop": "name",
+            "attributes": {
+                "content": "……난 그냥 여기 앉아있는 거야.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "name",
+            "attributes": {
+                "content": "그게 다야.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "……그동안 마가렛 씨가 겪은 일이 궁금하시다면 제가 아는 걸 다 말씀드릴게요.",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "name",
+            "attributes": {
+                "content": "물론 마가렛 씨한테 직접 듣고 싶으시다면……",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1#2",
+                "name2": "avg_npc_108",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 456,
+            "prop": "name",
+            "attributes": {
+                "content": "……관심 없어.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "눈빛을 보고 이제 이해했거든.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "name",
+            "attributes": {
+                "content": "마가렛의 아버지와 어머니도 그렇고, 심지어 과거의 나조차도 모두 그런 빛나는 시대를 품은 적이 있었으니까.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 459,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1#2",
+                "name2": "avg_npc_108",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 460,
+            "prop": "name",
+            "attributes": {
+                "content": "……당신은…… 확실히 마가렛 씨의 진정한 가족이시군요.",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 462,
+            "prop": "name",
+            "attributes": {
+                "content": "……너는 알아야 할 걸 이미 알았어. 앞으로 난 일절 관여하지 않는다.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "name",
+            "attributes": {
+                "content": "마가렛에게, 그리고…… 그 '로도스 아일랜드'에게도 알려줘. 겉보기에 아름다운 그랜드 나이트 영지가 어디까지 썩어들어갔는지 말이야.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "name",
+            "attributes": {
+                "content": "하지만 더 현실적인 조언을 하자면, 하루라도 빨리 이 그랜드 나이트 영지, 이 카시미어를 떠나는 것이다.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "name",
+            "attributes": {
+                "content": "이 시대에서 온 힘을 다해 도망쳐. 그것이야말로 모든 사람에게 몇 안 되는 올바른 선택이니까.",
+                "name": "무에나"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 467,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 468,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 300.0,
+                "fadetime": 3.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 470,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 471,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1"
+            }
+        },
+        {
+            "id": 472,
+            "prop": "name",
+            "attributes": {
+                "content": "……정말 복잡한 분이시네요.",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 474,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 476,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 477,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 478,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G10",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 480,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$darkness02_intro",
+                "key": "$darkness02_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 481,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 482,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "name",
+            "attributes": {
+                "content": "너…… 다가오지 마!",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 486,
+            "prop": "name",
+            "attributes": {
+                "content": "젠장, 아머레스 유니온이지? 너……",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 487,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "아, 아니야, 넌 살카즈잖아!? 대체 누구지?",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 490,
+            "prop": "name",
+            "attributes": {
+                "content": "제게는 적의가 없습니다. 그리고 아머레스 유니온은 이미 떠났어요.",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 492,
+            "prop": "name",
+            "attributes": {
+                "content": "무, 무슨 소리야……",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_094",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 494,
+            "prop": "name",
+            "attributes": {
+                "content": "……방금, 방금 이 살카즈가 아머레스 유니온을 막았어……",
+                "name": "감염자 난민"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "name",
+            "attributes": {
+                "content": "너, 뭐야? 어떻게 아머레스 유니온에 맞설 수 있지……?",
+                "name": "감염자 난민"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_094",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 497,
+            "prop": "name",
+            "attributes": {
+                "content": "……저는 감염자 의사입니다.",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 498,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 499,
+            "prop": "name",
+            "attributes": {
+                "content": "살카즈가 감염자 의사라고? 이게……",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_094",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 501,
+            "prop": "name",
+            "attributes": {
+                "content": "……말도 안 돼…… 너무 말이 안 돼서 거짓말 같지도 않네……",
+                "name": "감염자 난민"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 503,
+            "prop": "name",
+            "attributes": {
+                "content": "좋다…… 그럼 원하는 게 뭐야?",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 504,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 505,
+            "prop": "name",
+            "attributes": {
+                "content": "카시미어는 감염자에게 의료 서비스를 제공하는 걸로 알고 있는데…… 왜 당신들은 여기 숨어 있나요? 이 도시의 틈새에서……",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 507,
+            "prop": "name",
+            "attributes": {
+                "content": "……너 카시미어 사람이 아니지?",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "아니, 아마 카시미어 대부분 사람이 모를 수도 있어…… 잠깐, 네가 감염자 의사라고?",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "너, 너 설마 섹터 제로에서 왔나……!?",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 512,
+            "prop": "name",
+            "attributes": {
+                "content": "저는 어떤 의료 기업에서 왔습니다. 당신들이 말하는 섹터 제로는…… 그 감염자 수용 지역인가요?",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "name",
+            "attributes": {
+                "content": "감정회가 감염자 기사를 검사하고 치료하는 수용 치료 센터를 설립했습니다……",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 515,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 516,
+            "prop": "name",
+            "attributes": {
+                "content": "샤이닝은 급하게 말을 이어가지 않았다."
+            }
+        },
+        {
+            "id": 517,
+            "prop": "name",
+            "attributes": {
+                "content": "그녀는 눈앞에 있는 감염자의 눈에서 의심과 자신에 대한 불신, 공포 그리고 일말의 기대를 보았다."
+            }
+        },
+        {
+            "id": 518,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 519,
+            "prop": "name",
+            "attributes": {
+                "content": "……너 정말…… 카시미어 사람이 아니네. 하긴, 걔네들이 살카즈를 좋아할 리 없지. 저기, 미안하지만 이게 현실이야.",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 520,
+            "prop": "name",
+            "attributes": {
+                "content": "……거기서 감염자를 치료해 봤나?",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 521,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "네.",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 524,
+            "prop": "name",
+            "attributes": {
+                "content": "뭔가 이상하다고 생각되지 않아?",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 525,
+            "prop": "name",
+            "attributes": {
+                "content": "그렇게 큰 이동 플랫폼이 감염자 기사의 감옥이나 다름없어…… 알잖아, 감염자 기사는 그곳에서 검사와 치료를 받으며 '생활'하고 있어.",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "name",
+            "attributes": {
+                "content": "그런 상태를 '생활'이라고 할 수 있다면 말이지.",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 528,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 529,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 530,
+            "prop": "name",
+            "attributes": {
+                "content": "뭐 됐다. 아무래도 너희 외지인들은 확실히 모르는 것 같네.",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 531,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 532,
+            "prop": "name",
+            "attributes": {
+                "content": "하지만 모든 감염자를 그곳에서 생활하게 하면……",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 533,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 534,
+            "prop": "name",
+            "attributes": {
+                "content": "공간이 부족해, 그렇지?",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 535,
+            "prop": "name",
+            "attributes": {
+                "content": "그나마 돈을 벌 수 있는 감염자는 다시 경기에 출전하거나…… 막노동이라도 해. 어떤 막노동이든 다 있으니까.",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 536,
+            "prop": "name",
+            "attributes": {
+                "content": "그리고 기사가 되지 못한 놈들은 노예처럼 불법 노동자로 보내져…… 광부나 운반공처럼. 게다가 다 위험한 일이지.",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "만약 다치기라도 했다면 이러한 기본적인 일도 할 수 없어……",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "name",
+            "attributes": {
+                "content": "……그렇다면 맞혀 봐, 외지인. 그런 감염자들이 섹터 제로에서 어디로 갔을까?",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 539,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 540,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 15.0,
+                "randomness": 50.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "name",
+            "attributes": {
+                "content": "……!",
+                "name": "샤이닝"
+            }
+        },
+        {
+            "id": 542,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 543,
+            "prop": "name",
+            "attributes": {
+                "content": "너네는 그곳이 병원이 줄 알고, 기사들은 감옥인 줄 알고 있겠지. 하지만 다 틀렸어.",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 544,
+            "prop": "name",
+            "attributes": {
+                "content": "그곳에 보내진 감염자는 존엄이 깨끗이 씻겨지고, 가치마저 빼앗겨 결국엔 도마 위에 올라 난도질당하게 돼.",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "name",
+            "attributes": {
+                "content": "거긴 아름다운 도살장이라고, 살카즈.",
+                "name": "감염자 기사"
+            }
+        },
+        {
+            "id": 546,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 547,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 548,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 549,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 550,
+            "prop": "Image",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": true
+}
