@@ -1,0 +1,4508 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act13side",
+    "eventName": "ニアーライト",
+    "entryType": "ACTIVITY",
+    "storyCode": "NL-ST-2",
+    "avgTag": "幕間",
+    "storyName": "権と力",
+    "storyInfo": "錆銅が再び釈放されたことに憤ったマルキェヴィッチは、権力で望む結果を引き出すという選択をした。一方、無冑盟は感染者の粛清を進めていたが、ムリナールによって妨害され、ラズライトの目的は達成できなかったようだ。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G09",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#4",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "name",
+            "attributes": {
+                "content": "……ドクター？",
+                "name": "グラベル"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "name",
+            "attributes": {
+                "content": "ねえ、ドクター？　レストランから戻ってきてから、ず～っと眉間にしわが寄ってるわよ？",
+                "name": "グラベル"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#3"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "もしかして、疲れちゃったの？　それなら、あたしが――",
+                "name": "グラベル"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 15,
+            "prop": "Decision",
+            "attributes": {
+                "options": "今日の夕食会、君から見てどうだった？;君の目に、マルキェヴィッチはどう映っている？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line16",
+                "option2": "line21"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line25"
+        },
+        {
+            "id": 17,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "name",
+            "attributes": {
+                "content": "特に問題なかったわよ。ドクターってば、あの手の交流には慣れているみたいね？",
+                "name": "グラベル"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "常務取締役は顔を出さなかったけど、あの場にいた企業幹部たちはみんな、あなたをお気に召したみたいよ。",
+                "name": "グラベル"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 21,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line25"
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "……これは前にも話したことだけど、耀騎士の事件の時、その責任を負って、ある代弁者が辞任したの。",
+                "name": "グラベル"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "そこで、代わりにそのポジションへ臨時で就くことになったのが、マルキェヴィッチよ。それまでは全く無名の誰とも分からない人物だった。",
+                "name": "グラベル"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "そのせいか、洗礼を受けてない人間味みたいなものがまだ残ってるようだけど……今の環境にいたら、どれだけ持つかわからないわ。",
+                "name": "グラベル"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 26,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 27,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ロドスの計画は、実行できると思うか？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line28"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 29,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#2"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "グラベル"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#6"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "答える前に聞いておきたいんだけど……あたしのこと、本当に信用してくれてる？",
+                "name": "グラベル"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "――連合会は、組織的な干渉によって人々を掌握しているわけじゃないのよ。彼らが何もしなくても、お金と、変化する社会を前にすれば騎士は資本に傾いていく。だから連合会は手強いの。",
+                "name": "グラベル"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_237_gravel_1#3"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "name",
+            "attributes": {
+                "content": "監査会がロドスを手厚くもてなすのは、耀騎士の存在があるからこそよ。そうであっても、あなたのような周到な人は、より注意深く監査会に対応しないと、痛い目見るわよ。",
+                "name": "グラベル"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 37,
+            "prop": "Decision",
+            "attributes": {
+                "options": "忠告に感謝するよ。;もちろん、わかっているさ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line38",
+                "option2": "line38"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 39,
+            "prop": "Decision",
+            "attributes": {
+                "options": "では次に、君の考えを聞かせてもらえるかな？;それで、君の意見は？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line40",
+                "option2": "line40"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 41,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 42,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 44,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#3",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "……錆銅騎士が……復帰、したのですか？",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#3",
+                "name2": "avg_npc_222",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 49,
+            "prop": "name",
+            "attributes": {
+                "content": "はい……騎士協会は映像やほかの騎士たちの証言に基づいて、あの件は「感染者自身が過度なアーツ使用によって病状悪化を招いた結果」だと国民議会に証明したようです。",
+                "name": "企業職員"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "死因も「鉱石病」であるため、錆銅騎士に直接の責任はない、とのことで……",
+                "name": "企業職員"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5",
+                "name2": "avg_npc_222",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 52,
+            "prop": "name",
+            "attributes": {
+                "content": "……っ、だとしても……私たちは……",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1",
+                "name2": "avg_npc_222",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 54,
+            "prop": "name",
+            "attributes": {
+                "content": "……すみません。先に出ていてもらえますか。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1",
+                "name2": "avg_npc_222",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "かしこまりました。",
+                "name": "企業職員"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 58,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 59,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 300.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_211_1#4",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 61,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 62,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 65,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 67,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "initamount": 0.0,
+                "amount": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G10",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 73,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 75,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "amount": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G09",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "……国民議会副審官の……プライベート回線に繋いでくれ。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 81,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_telephonebusy",
+                "channel": "bgs",
+                "volume": 0.6,
+                "loop": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 83,
+            "prop": "soundvolume",
+            "attributes": {
+                "channel": "bgs",
+                "volume": 0.0,
+                "fadetime": 5.0
+            }
+        },
+        {
+            "id": 84,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "通話中を示すビープ音が二度鳴り響く。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 87,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "この時、マルキェヴィッチはふと思い出した。少年時代、父の書斎の机に黄銅色の電話が置かれていたことを――",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 88,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 89,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_transmissionget",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 91,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "……お待たせしました、代弁者様。お電話いただけたということは……先日の件、結論が出たのですね？",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "……要するに、チャルニー様が二度と証拠を握るような事態が起きないようにすればいいのでしょう？",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "仰る通りです。……ただ、一点ご留意いただきたいのですが――このことが明るみに出てしまえば、責任の矛先はあなたと私に向けられます。",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "name",
+            "attributes": {
+                "content": "ですから、彼を殺すことこそが最も安全な手段なのですよ。",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "――保証、いたします。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "name",
+            "attributes": {
+                "content": "確実に……チャルニー様の口封じをすると、お約束します。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、その具体的な手段については口出しをしないでいただけますか。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "name",
+            "attributes": {
+                "content": "いいでしょう……誠意さえ示していただけるのなら、ね。",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "では明日、オルマー・イングラの再審に着手します。七日以内に、あなたから十分誠意あるご回答をいただけましたら……",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "オルマー・イングラは騎士競技から姿を消すことになるでしょう。",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "……誠意。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "ええ。あなたには、チャルニー様が確実に、二度と裏切らないということを証明していただかなければなりません。",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 112,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "マルキェヴィッチは、あの黄銅色の電話を思い出した。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 115,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "当時はまだ今ほど電話が普及していなかった。通信用のケーブルはホテルやバー、轟音が響く工事現場を巻きつくように張り巡らされていた。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 116,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "呼び鈴が鳴るたび、喜びと悲しみが静かに訪れる。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 117,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "あの状態が、これがカジミエーシュの現代の一般的な生活なのだ。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 118,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 119,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#8"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "……一つ、ご理解いただかねばならないようですね。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたの発言は、一人の代弁者への挑発にあたります。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#8"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "確かに、私は急な命令でこの立場にいる人間ですし、理事会に後ろ盾となる人がいるわけでもありません。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "しかしそれは、あなたが私を軽んじてもいい理由にはなり得ないのです。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "name",
+            "attributes": {
+                "content": "無冑盟の指揮権は、チャルニー様の手に委ねられていましたよね。となれば、今は……",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "……！",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "name",
+            "attributes": {
+                "content": "どうか誤解なさらないでください。あなたの権力に対して、楯突こうという意図など……滅相もないことです。",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 134,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "権力。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 137,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 138,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "単に、今後の円滑な協力関係のために、と考えてお伝えしただけのことでした。",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "ですからそこまで仰るのなら、これ以上強く申し上げる気はありません。そのようなことをすれば、失礼に当たりますし……",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたが保証してくださるなら、それだけで結構です。オルマー・イングラのような腐敗した貴族のために、我々が仲たがいする必要はない、そうですよね？",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "……ええ、そうですね。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "name",
+            "attributes": {
+                "content": "さて、それでは――これ以上お話しすることもないようですし、私はこれで。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#2"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "――！　マルキェヴィッチ様、お待ちくださ――",
+                "name": "電話の声"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 150,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$transmission",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 151,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 152,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#5"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "name",
+            "attributes": {
+                "content": "…………",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_212_1"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "……笑っているのかい。",
+                "name": "代弁者マッキー"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#3",
+                "name2": "avg_npc_212_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 159,
+            "prop": "name",
+            "attributes": {
+                "content": "……！　マッキー様、いつの間にここへ……",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#3",
+                "name2": "avg_npc_212_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 161,
+            "prop": "name",
+            "attributes": {
+                "content": "――そんなふうに笑う君は初めて見たよ、マルキェヴィッチ君。",
+                "name": "代弁者マッキー"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4",
+                "name2": "avg_npc_212_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 163,
+            "prop": "name",
+            "attributes": {
+                "content": "ご用があって、いらしたのですよね？",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4",
+                "name2": "avg_npc_212_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、もちろん。無冑盟内の命令は、正式に下されたよ。しかし君も私もまだこの件の関係者だとはいえ……",
+                "name": "代弁者マッキー"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "name",
+            "attributes": {
+                "content": "……いや、何でもない。仕事に戻ってくれ。",
+                "name": "代弁者マッキー"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_211_1#4",
+                "name2": "avg_npc_212_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "……わかりました、マッキー様。",
+                "name": "代弁者マルキェヴィッチ"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 170,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 171,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_npc_212_1",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 173,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 174,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_212_1#2"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "代弁者マッキー"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "マルキェヴィッチ君。権力というのは、どこまでも甘く、舌に心地いいものだな。",
+                "name": "代弁者マッキー"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 178,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 180,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 181,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 183,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 185,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "……夜の街ってのは、散歩にはもってこいだな。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "ま、仕事さえなければの話だが。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "ご報告します。モニーク様が、指定の位置へ隊を率いて到着されました。",
+                "name": "無冑盟構成員"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "name",
+            "attributes": {
+                "content": "斥候が本作戦のターゲットを確認いたしました。対象となる感染者たちは現在この地区に潜伏中。約百人前後いるようです。",
+                "name": "無冑盟構成員"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#2",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 193,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$escape_intro",
+                "key": "$escape_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 194,
+            "prop": "name",
+            "attributes": {
+                "content": "了解、殺れるだけ殺っといてくれ。上が数に応じて金払うって言ってるからさ。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、いつも通り身内には手ぇ出すんじゃねーぞ。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#2",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "わかりました。",
+                "name": "無冑盟構成員"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 199,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 200,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 202,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 203,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G07",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "name",
+            "attributes": {
+                "content": "なあ、おい！　無冑盟を見た奴がいるってよ！",
+                "name": "感染者騎士A"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 209,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "う、嘘だろ……！？　ここはカヴァレリエルキのど真ん中だぞ！　こんな場所で大っぴらに殺しをやろうってのか！？",
+                "name": "感染者騎士B"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 212,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 214,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 215,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G07",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 217,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_430_fartth_1"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "……少なすぎる。",
+                "name": "ユスティナ"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_103nc_1",
+                "name2": "avg_430_fartth_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "お前たちの目論見通り、野鬃が無冑盟の注意を引いているからではないのか？",
+                "name": "シェブチック"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_103nc_1",
+                "name2": "avg_430_fartth_1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "それにしても、数が少なすぎるよ。",
+                "name": "ユスティナ"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "name",
+            "attributes": {
+                "content": "もしかして、見落とした……？",
+                "name": "ユスティナ"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_103nc_1#2",
+                "name2": "avg_430_fartth_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 226,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シェブチック"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_103nc_1",
+                "name2": "avg_430_fartth_1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 228,
+            "prop": "name",
+            "attributes": {
+                "content": "――最悪の事態に備えておけ、遠牙。",
+                "name": "シェブチック"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "無冑盟は侮れん相手だからな。",
+                "name": "シェブチック"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 231,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 233,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 234,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G10",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 236,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "急げ、早く逃げろ！",
+                "name": "感染者騎士A"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "落ち着け、何を見たってんだ？",
+                "name": "感染者騎士B"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "あ、あお、青い弓だよ……っ！",
+                "name": "感染者騎士A"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "うわっ、マジかよ！？　嘘だろ！？",
+                "name": "感染者騎士A"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "name",
+            "attributes": {
+                "content": "は、早くほかの連中にも伝えるんだ！　散らばって逃げるか、ゴミ捨て場にでも隠れろ、って！",
+                "name": "感染者騎士A"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "name",
+            "attributes": {
+                "content": "それから、普通の感染者たちには抵抗もさせちゃダメだ！　絶対に刃向かうなって言っておかないと――",
+                "name": "感染者騎士A"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 248,
+            "prop": "name",
+            "attributes": {
+                "content": "だだ、誰か、今すぐレッドパイン騎士団に連絡できる奴はいないか……！？　早くこのことを……！",
+                "name": "感染者騎士B"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 250,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 251,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 253,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 254,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 256,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 260,
+            "prop": "name",
+            "attributes": {
+                "content": "……フンフフ～ン……♪",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 262,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 264,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 265,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G07",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 266,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 267,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_216"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "ご報告します。感染者三名を発見しました。",
+                "name": "無冑盟構成員"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 271,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 273,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 274,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 276,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "フンフフン……♪　フフ～ン……♪",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 280,
+            "prop": "name",
+            "attributes": {
+                "content": "あ。そういや、理事会が提示してきた報酬のこと、伝えたっけ？",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "name",
+            "attributes": {
+                "content": "お上が仰るには、不法居留感染者一人につき金貨三百枚。それが感染者騎士なら、倍出すってよ。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 282,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 283,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 285,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G07",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 287,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 288,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_216"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "待て！",
+                "name": "無冑盟構成員"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "name",
+            "attributes": {
+                "content": "……クソッ！　見つかった！",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 295,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 296,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 297,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 298,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 299,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 301,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "name",
+            "attributes": {
+                "content": "……感染者一人で、メジャーのチケット一枚分。感染者騎士一人で高級車の半分くらいの額になるわけか。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "だったら……",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "name",
+            "attributes": {
+                "content": "固定の値札がついてない特別な相手には、どう対処したもんかな。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ……？",
+                "name": "無冑盟構成員"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "name",
+            "attributes": {
+                "content": "なあ、お前らってハンドサインは何種類教わってる？",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "ええと……三種類ほど、ですかね……",
+                "name": "無冑盟構成員"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#2",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "ふーん、わかった。そんならそいつは一旦忘れてくれ。もし俺が……そーだなあ……指を鳴らしたら、にしておくか。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 315,
+            "prop": "name",
+            "attributes": {
+                "content": "いいか？　俺が指を鳴らしたら即行動しろ。絶対に迷うな。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1",
+                "name2": "avg_npc_216",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 317,
+            "prop": "name",
+            "attributes": {
+                "content": "了解しました。",
+                "name": "無冑盟構成員"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_209_1#6",
+                "name2": "avg_npc_216",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "よーしよし。そいじゃ、俺は軽～く挨拶でもしてくるぜ。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 321,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 322,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$nervous_intro",
+                "key": "$nervous_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 325,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "「ラズライト」ロイが歩みを進めると、街灯が幾度か明滅する。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 327,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "延々と続くレンガの道には、まるで人の気配がない。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 328,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "ひっそりとした通りの脇に、ベンチが一つ置かれている。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 329,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "そして、そこには――孤独な男が腰掛けていた。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 330,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 331,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 332,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 333,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I02_1",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 338,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 340,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I02_2",
+                "screenadapt": "coverall",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 341,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown3",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 342,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "よ〜お兄さん。いい夜だな！　あんたもそう思うだろ？",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "おっと、新聞読むのに夢中だったか？　邪魔して悪かったな。今日の夕刊は耀騎士のニュースで持ちきりだもんなあ。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 346,
+            "prop": "name",
+            "attributes": {
+                "content": "しっかし、この辺は人っ子一人見当たらねーのな。まったく寒々しい眺めだ。聞いた話じゃ、最近はどうも物騒だっていうし。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "あ～……こほん。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "ところであんた、一人寂しくこんな所で何やってんだ？",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "ロイか。……先ほど仕事を終えたばかりでな。少し休憩していただけだ。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "うっわあ～……今帰り？　こんな時間に？　遅くまでご苦労なこったな。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "name",
+            "attributes": {
+                "content": "けどさあ……ここで何の仕事してたっての？",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "name",
+            "attributes": {
+                "content": "この辺にいる連中なんて、感染者か不法移民か……あとはせいぜい闇市の商人くらいだろ。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "私がここにいるのは、待ち合わせのためでしかない。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "name",
+            "attributes": {
+                "content": "なんだ、その相手まで聞いてくるつもりか？",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 358,
+            "prop": "name",
+            "attributes": {
+                "content": "いやいや、そんなつもりない、ない！",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "にしても、待ち合わせ……か。なるほどねえ。相手は美人の姉ちゃんとかか？　なーんつって。ハハッ、冗談よ。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "……けどさ、実は俺たち公務があるんだ。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "あんたとそのお友達には、ちょっとここを退いてもらえないかな～と思ってるんだけど、そこんとこどう？",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "name",
+            "attributes": {
+                "content": "……仕事があるのなら好きにしろ。だが、私には私の用がある。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "ふぅん。わかって言ってんだろうな、ムリナール。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "name",
+            "attributes": {
+                "content": "同じことを二度言わせるな。それとも私の言葉がガリア語にでも聞こえたのか？",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "name",
+            "attributes": {
+                "content": "……そういうわけじゃねーけどさ～。あんたがいると、俺の部下たちが緊張でミスっちゃうかもしんねーし、な？　頼むよ。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ～……",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 369,
+            "prop": "name",
+            "attributes": {
+                "content": "……今あんたを殺ろうとすりゃあ、どんだけ手を焼かされるかは……ご本人様ならよ～く知ってんだろ？",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 371,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "ロイがゆっくりと手を上げる。"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "name",
+            "attributes": {
+                "content": "暗がりの中で無冑盟の刺客たちは既に準備を整えていた。"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "name",
+            "attributes": {
+                "content": "だがこの時、闇に溶け込んだ隠密のプロたちは、奇妙な感覚を覚えていた。『誰かに、見られている』あるいは錯覚に過ぎないかもしれないが、その場にいた全員がみな一様に錯覚に陥っていた。"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "name",
+            "attributes": {
+                "content": "目の前にいるのはムリナール・ニアールだ。"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "彼らは祈り始める。ロイが合図を出しませんように、と――"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 378,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "name",
+            "attributes": {
+                "content": "――！",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 381,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 382,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 384,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I10",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 387,
+            "prop": "name",
+            "attributes": {
+                "content": "そこへ、剣を携えた白い角のサルカズが現れた。"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "name",
+            "attributes": {
+                "content": "…………ハハッ……",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "あれは冗談だってのに……マジで美人の姉ちゃんじゃねーか。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "name",
+            "attributes": {
+                "content": "もしや、遅刻しましたか？",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "name",
+            "attributes": {
+                "content": "いいや。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 394,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 396,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 397,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I02_3",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown3",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 399,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 400,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 404,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "name",
+            "attributes": {
+                "content": "…………",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 409,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "Image",
+            "attributes": {
+                "image": "23_I02_4",
+                "xScale": 0.85,
+                "yScale": 0.85,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 411,
+            "prop": "ImageTween",
+            "attributes": {
+                "xTo": 0.0,
+                "duration": 20.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 413,
+            "prop": "name",
+            "attributes": {
+                "content": "……なぜこちらを見ている？",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": "仕事があるんだろう、ロイ。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": "…………あー、そうだなあ……",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "name",
+            "attributes": {
+                "content": "ロイの視線が、サルカズのそれと一瞬交差した。"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "name",
+            "attributes": {
+                "content": "彼は考える。"
+            }
+        },
+        {
+            "id": 419,
+            "prop": "name",
+            "attributes": {
+                "content": "なるべく恥をさらさずに、この場から逃げる方法を。"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "name",
+            "attributes": {
+                "content": "あー、そういや深夜に雨が降るらしいが傘を忘れてきちまったぜ。ハハ、ハハハハ……",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "name",
+            "attributes": {
+                "content": "……で。",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "name",
+            "attributes": {
+                "content": "ニアール家は、感染者を庇護しようとしていると受け取っていいんだな？",
+                "name": "ロイ"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "name",
+            "attributes": {
+                "content": "勝手にしろ。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 425,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 427,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 428,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 429,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G05",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 431,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 435,
+            "prop": "name",
+            "attributes": {
+                "content": "……あの……",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_108"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "name",
+            "attributes": {
+                "content": "また、マーガレットが勝利した。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "name",
+            "attributes": {
+                "content": "お前は彼女を止めるべきだろう。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 440,
+            "prop": "name",
+            "attributes": {
+                "content": "……申し訳ありません。",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、これがマーガレットさんの望みなら、私は彼女をお支えします……",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 443,
+            "prop": "name",
+            "attributes": {
+                "content": "……お前のような一介のサルカズが？",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "name",
+            "attributes": {
+                "content": "感染者の件は、お前に伝達した以上、ロドスに知らせたも同然と捉えておく。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "はい。ご協力に感謝します……無冑盟は、強敵ですので。",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "彼がこの付近の感染者たちを全員殺すつもりであれば、我々にそれを阻止するすべなどありませんでした。",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 450,
+            "prop": "name",
+            "attributes": {
+                "content": "……私は何もしていない。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "name",
+            "attributes": {
+                "content": "ただ、ここに座っていただけだ。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "都市を追われてからのこの数年、マーガレットさんに起こったことを知りたいと望まれるなら、私の知る限りのことをお伝えしますが……いかがでしょうか。",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "name",
+            "attributes": {
+                "content": "無論、本人に直接尋ねたいということであれば……",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1#2",
+                "name2": "avg_npc_108",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 456,
+            "prop": "name",
+            "attributes": {
+                "content": "……いや、結構。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "マーガレットの目を見た時に理解している。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "name",
+            "attributes": {
+                "content": "あれの両親も、そして過去にはこの私も、今のマーガレットのような輝かしい時代を過ごしたことがある。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 459,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1#2",
+                "name2": "avg_npc_108",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 460,
+            "prop": "name",
+            "attributes": {
+                "content": "……あなたは……彼女の本当の家族なのですね。",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_108",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 462,
+            "prop": "name",
+            "attributes": {
+                "content": "……お前が知るべきことを知った今、私はこれ以上介入しない。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "name",
+            "attributes": {
+                "content": "マーガレットに……ロドスに教えてやるがいい。華やかに見える大騎士領の内情が、どれほど腐りきっているのかをな。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "name",
+            "attributes": {
+                "content": "まあ、より現実的なアドバイスをするのなら、一日も早く大騎士領を――カジミエーシュを去ることだ。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "name",
+            "attributes": {
+                "content": "この時代から全力で脱しろ。それだけが、万人にとって正しい選択なのだから。",
+                "name": "ムリナール"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 467,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 468,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 300.0,
+                "fadetime": 3.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 470,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 471,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1"
+            }
+        },
+        {
+            "id": 472,
+            "prop": "name",
+            "attributes": {
+                "content": "……本当に複雑な方ですね。",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 474,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 476,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 477,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 478,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_23_G10",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 480,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$darkness02_intro",
+                "key": "$darkness02_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 481,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 482,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "name",
+            "attributes": {
+                "content": "く……来るな！",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 486,
+            "prop": "name",
+            "attributes": {
+                "content": "クソが……！　貴様、無冑盟か？　どういうつもりで――",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 487,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "なっ、待て、サルカズだと！？　あんた一体何者だ！？",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 490,
+            "prop": "name",
+            "attributes": {
+                "content": "こちらに敵意はありません。無冑盟は既に、ここを去りました。",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 492,
+            "prop": "name",
+            "attributes": {
+                "content": "ほ、本当かよ……？",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_094",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 494,
+            "prop": "name",
+            "attributes": {
+                "content": "……こ、この人……さっきあの無冑盟たちの前に立ちはだかってたサルカズか……",
+                "name": "感染者難民"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "name",
+            "attributes": {
+                "content": "あんた、誰なんだ？　なんでわざわざ無冑盟に立ち向かったりなんて……",
+                "name": "感染者難民"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_094",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 497,
+            "prop": "name",
+            "attributes": {
+                "content": "……私は医者です。普段は、感染者の診療を行っています。",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 498,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 499,
+            "prop": "name",
+            "attributes": {
+                "content": "サルカズが感染者を診る、だと？　そんなばかな話が……",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_221",
+                "name2": "avg_npc_094",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 501,
+            "prop": "name",
+            "attributes": {
+                "content": "……現実味がなさすぎて、おとぎ話にすら思えてくるな。",
+                "name": "感染者難民"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 503,
+            "prop": "name",
+            "attributes": {
+                "content": "確かにな……わかった。それで、何しにきたんだ？",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 504,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 505,
+            "prop": "name",
+            "attributes": {
+                "content": "伺いたいことがあります。カジミエーシュには、感染者への医療提供制度がありますよね。それなのに、あなたたちが、こうした都市の隙間に隠れているのはなぜですか……？",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 507,
+            "prop": "name",
+            "attributes": {
+                "content": "……あんた、カジミエーシュ人じゃないのか？",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "いや、カジミエーシュ人でも知ってる奴の方が少ないか……ん？　待てよ、感染者を診る医者だとか言ってたよな……",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "ま、まさか零号地の……！？",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 512,
+            "prop": "name",
+            "attributes": {
+                "content": "私はとある製薬会社から来たのですが、あなたの言う「零号地」とは感染者収容地区のことでしょうか？",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "name",
+            "attributes": {
+                "content": "あの場所には、監査会の出資で、感染者騎士の検査と治療を行う収容治療センターが建てられていますが……",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 515,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 516,
+            "prop": "name",
+            "attributes": {
+                "content": "シャイニングは話を急がず、言葉を止める。"
+            }
+        },
+        {
+            "id": 517,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女は目の前の感染者たちの目に、疑惑、彼女への不信感、恐れ、そして僅かな期待が宿っているのを見た。"
+            }
+        },
+        {
+            "id": 518,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 519,
+            "prop": "name",
+            "attributes": {
+                "content": "……あんた、本当にカジミエーシュ人じゃないんだな……まあそれもそうか、連中はサルカズを嫌ってるし……って！　悪い、こんな言い方をして……ただ、これは本当の話で……",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 520,
+            "prop": "name",
+            "attributes": {
+                "content": "……とにかく、だ。あんた、あの場所で感染者を治療してたのか？",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 521,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "ええ。",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 524,
+            "prop": "name",
+            "attributes": {
+                "content": "だったら、何かおかしいとは思わなかったか……？",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 525,
+            "prop": "name",
+            "attributes": {
+                "content": "あのでっかい移動式プラットフォームは、感染者騎士の檻みたいなもんだ……知っての通り、感染者騎士はあそこで検査と治療を受けて、あの場所で「生活」することになる。",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "name",
+            "attributes": {
+                "content": "ま、あれを生活と呼べるならの話だが。",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 528,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 529,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 530,
+            "prop": "name",
+            "attributes": {
+                "content": "なるほど。あんたらよその人間は、こんなことすらはっきり知らないらしいな。",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 531,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 532,
+            "prop": "name",
+            "attributes": {
+                "content": "……ですが、感染者全員をあの場所で生活させるとなると……",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 533,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 534,
+            "prop": "name",
+            "attributes": {
+                "content": "スペースが足りない、って思うんだろ？",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 535,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、そうはならないのさ。……例えば、まだ金を稼げる感染者なら……治療を終えたら再度競技場に足を踏み入れるか、あるいは……肉体労働をすることになるだろう。",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 536,
+            "prop": "name",
+            "attributes": {
+                "content": "でもって騎士になれなかった連中は、奴隷同然の違法労働送りになるが……これが採掘業や運搬業ばかりで、その上どれもこれも危険な環境ときてる。",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "さらにケガでもした日には、そんな仕事すらできなくなって……",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "name",
+            "attributes": {
+                "content": "……よそ者のあんたでも、ここまで言えばわかるだろ？　そうなっちまった感染者たちが、零号地からどこへ行ったのか……",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 539,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 540,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 15.0,
+                "randomness": 50.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "name",
+            "attributes": {
+                "content": "……！",
+                "name": "シャイニング"
+            }
+        },
+        {
+            "id": 542,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_147_shining_1",
+                "name2": "avg_npc_221",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 543,
+            "prop": "name",
+            "attributes": {
+                "content": "……あんたらはあの場所を病院だと思ってるし、騎士たちはあれを監獄と捉えてるようだが……俺に言わせりゃ、両方ハズレだ。",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 544,
+            "prop": "name",
+            "attributes": {
+                "content": "あそこに送られた感染者は、尊厳を洗い落とされ、価値を剥ぎ取られて、まな板の上でなされるがまま最期を迎えることになる。",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "name",
+            "attributes": {
+                "content": "あの場所は見た目だけが綺麗な「屠畜場」なんだよ。",
+                "name": "感染者騎士"
+            }
+        },
+        {
+            "id": 546,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 547,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 548,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 549,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 550,
+            "prop": "Image",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": true
+}
