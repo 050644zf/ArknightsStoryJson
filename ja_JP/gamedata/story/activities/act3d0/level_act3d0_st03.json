@@ -60,7 +60,9 @@
             "prop": "playsound",
             "attributes": {
                 "key": "$beach",
-                "volume": 0.7
+                "volume": 0.7,
+                "channel": "B",
+                "loop": "true"
             }
         },
         {
@@ -453,6 +455,21 @@
         },
         {
             "id": 53,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "B",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 54,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 55,
             "prop": "Background",
             "attributes": {
                 "image": "bg_sunnytown_1",
@@ -461,14 +478,14 @@
             }
         },
         {
-            "id": 54,
+            "id": 56,
             "prop": "Character",
             "attributes": {
                 "fadetime": 0.0
             }
         },
         {
-            "id": 55,
+            "id": 57,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -477,7 +494,7 @@
             }
         },
         {
-            "id": 56,
+            "id": 58,
             "prop": "name",
             "attributes": {
                 "content": "   早くしろよ、この飾りは今晩のライブで使うんだ。",
@@ -485,7 +502,7 @@
             }
         },
         {
-            "id": 57,
+            "id": 59,
             "prop": "name",
             "attributes": {
                 "content": "   間に合わなかったらどやされるぞ！",
@@ -493,14 +510,14 @@
             }
         },
         {
-            "id": 58,
+            "id": 60,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#5"
             }
         },
         {
-            "id": 59,
+            "id": 61,
             "prop": "name",
             "attributes": {
                 "content": "   あ、あの方は……。",
@@ -508,14 +525,14 @@
             }
         },
         {
-            "id": 60,
+            "id": 62,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#4"
             }
         },
         {
-            "id": 61,
+            "id": 63,
             "prop": "name",
             "attributes": {
                 "content": "   わたくしの記憶が確かなら……。セカンドアベニューの「カフェ・ロビン」のオーナーのおじ様のお孫さんでしたわね。",
@@ -523,7 +540,7 @@
             }
         },
         {
-            "id": 62,
+            "id": 64,
             "prop": "name",
             "attributes": {
                 "content": "   あのお店、以前良く通っていましたわ。おじ様もすごく気さくな方でしたの。内装はお亡くなりになった奥様好みの花や鉢植えで飾られ、いつもご夫婦の好きだった音楽が流れていましたわ。",
@@ -531,7 +548,7 @@
             }
         },
         {
-            "id": 63,
+            "id": 65,
             "prop": "name",
             "attributes": {
                 "content": "   そういえば、身体が悪くなってきたからお店は孫に継がせると仰ってましたわね。",
@@ -539,7 +556,7 @@
             }
         },
         {
-            "id": 64,
+            "id": 66,
             "prop": "name",
             "attributes": {
                 "content": "   時間が経つのは早いものね。",
@@ -547,12 +564,12 @@
             }
         },
         {
-            "id": 65,
+            "id": 67,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 66,
+            "id": 68,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -565,7 +582,7 @@
             }
         },
         {
-            "id": 67,
+            "id": 69,
             "prop": "Background",
             "attributes": {
                 "image": "bg_hotel",
@@ -574,14 +591,14 @@
             }
         },
         {
-            "id": 68,
+            "id": 70,
             "prop": "Character",
             "attributes": {
                 "fadetime": 0.0
             }
         },
         {
-            "id": 69,
+            "id": 71,
             "prop": "cameraEffect",
             "attributes": {
                 "effect": "Grayscale",
@@ -591,29 +608,12 @@
             }
         },
         {
-            "id": 70,
+            "id": 72,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
                 "fadetime": 1.0,
                 "block": "true"
-            }
-        },
-        {
-            "id": 71,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_348_ceylon_4#7",
-                "name2": "char_340_shwaz_2#3",
-                "focus": 1.0
-            }
-        },
-        {
-            "id": 72,
-            "prop": "name",
-            "attributes": {
-                "content": "   どうして？",
-                "name": "セイロン"
             }
         },
         {
@@ -622,11 +622,28 @@
             "attributes": {
                 "name": "char_348_ceylon_4#7",
                 "name2": "char_340_shwaz_2#3",
-                "focus": 2.0
+                "focus": 1.0
             }
         },
         {
             "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "   どうして？",
+                "name": "セイロン"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_348_ceylon_4#7",
+                "name2": "char_340_shwaz_2#3",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 76,
             "prop": "name",
             "attributes": {
                 "content": "   私が鉱石病になってしまったからです、セイロン様。",
@@ -634,28 +651,11 @@
             }
         },
         {
-            "id": 75,
+            "id": 77,
             "prop": "name",
             "attributes": {
                 "content": "   私の側にいるとお身体に毒となります。必要な際にだけ呼んでいただければと……。",
                 "name": "シュヴァルツ"
-            }
-        },
-        {
-            "id": 76,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_348_ceylon_4#8",
-                "name2": "char_340_shwaz_2#3",
-                "focus": 1.0
-            }
-        },
-        {
-            "id": 77,
-            "prop": "name",
-            "attributes": {
-                "content": "   それは何？　痛いのかしら？",
-                "name": "セイロン"
             }
         },
         {
@@ -664,11 +664,28 @@
             "attributes": {
                 "name": "char_348_ceylon_4#8",
                 "name2": "char_340_shwaz_2#3",
-                "focus": 2.0
+                "focus": 1.0
             }
         },
         {
             "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "   それは何？　痛いのかしら？",
+                "name": "セイロン"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_348_ceylon_4#8",
+                "name2": "char_340_shwaz_2#3",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 81,
             "prop": "name",
             "attributes": {
                 "content": "   ……痛みはありません。ですが、最後には命を落とします。",
@@ -676,7 +693,7 @@
             }
         },
         {
-            "id": 80,
+            "id": 82,
             "prop": "name",
             "attributes": {
                 "content": "   不治の病とされています、セイロン様。",
@@ -684,7 +701,7 @@
             }
         },
         {
-            "id": 81,
+            "id": 83,
             "prop": "name",
             "attributes": {
                 "content": "   それに……。",
@@ -692,7 +709,7 @@
             }
         },
         {
-            "id": 82,
+            "id": 84,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#3",
@@ -701,7 +718,7 @@
             }
         },
         {
-            "id": 83,
+            "id": 85,
             "prop": "name",
             "attributes": {
                 "content": "   そんなもの、わたくしが治してみせるわ！",
@@ -709,7 +726,7 @@
             }
         },
         {
-            "id": 84,
+            "id": 86,
             "prop": "name",
             "attributes": {
                 "content": "   フンッ、待っていなさい！　このわたくしが、きっといつか鉱石病なんて打ち負かして、シュヴァルツを取り戻してみせますわ！",
@@ -717,12 +734,12 @@
             }
         },
         {
-            "id": 85,
+            "id": 87,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 86,
+            "id": 88,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -735,12 +752,12 @@
             }
         },
         {
-            "id": 87,
+            "id": 89,
             "prop": "largebg",
             "attributes": {}
         },
         {
-            "id": 88,
+            "id": 90,
             "prop": "Background",
             "attributes": {
                 "image": "bg_sunnytown_1",
@@ -749,14 +766,14 @@
             }
         },
         {
-            "id": 89,
+            "id": 91,
             "prop": "Character",
             "attributes": {
                 "fadetime": 0.0
             }
         },
         {
-            "id": 90,
+            "id": 92,
             "prop": "cameraEffect",
             "attributes": {
                 "effect": "Grayscale",
@@ -766,7 +783,7 @@
             }
         },
         {
-            "id": 91,
+            "id": 93,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -775,14 +792,14 @@
             }
         },
         {
-            "id": 92,
+            "id": 94,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#9"
             }
         },
         {
-            "id": 93,
+            "id": 95,
             "prop": "name",
             "attributes": {
                 "content": "   わたくしが源石の研究に取り組みたいと思ったのも、感染者になった彼女を治したいと思ったからなの。",
@@ -790,7 +807,7 @@
             }
         },
         {
-            "id": 94,
+            "id": 96,
             "prop": "name",
             "attributes": {
                 "content": "   これが長い間、わたくしを支えてきた原動力となりました。この夢のために、ヴィクトリアに留学することを決意しましたの。",
@@ -798,7 +815,7 @@
             }
         },
         {
-            "id": 95,
+            "id": 97,
             "prop": "name",
             "attributes": {
                 "content": "   難解な源石の研究は、初めは右も左もわかりませんでしたわ。何度諦めようと考えたかは覚えていませんが、それでも最後までやり抜きました。",
@@ -806,7 +823,7 @@
             }
         },
         {
-            "id": 96,
+            "id": 98,
             "prop": "name",
             "attributes": {
                 "content": "   ヴィクトリアはシエスタとは違う異国の地。研究のことを抜きにしても慣れない生活でした。",
@@ -814,12 +831,12 @@
             }
         },
         {
-            "id": 97,
+            "id": 99,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 98,
+            "id": 100,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -832,7 +849,7 @@
             }
         },
         {
-            "id": 99,
+            "id": 101,
             "prop": "largebg",
             "attributes": {
                 "imagegroup": "bg_beach_1/bg_beach_2",
@@ -841,14 +858,14 @@
             }
         },
         {
-            "id": 100,
+            "id": 102,
             "prop": "Character",
             "attributes": {
                 "fadetime": 0.0
             }
         },
         {
-            "id": 101,
+            "id": 103,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -857,14 +874,14 @@
             }
         },
         {
-            "id": 102,
+            "id": 104,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#9"
             }
         },
         {
-            "id": 103,
+            "id": 105,
             "prop": "name",
             "attributes": {
                 "content": "   ですが今となっては、わたくしはシエスタ人というよりは、ヴィクトリア人と言ったほうがしっくりくるまでになりましたわ。",
@@ -872,7 +889,7 @@
             }
         },
         {
-            "id": 104,
+            "id": 106,
             "prop": "name",
             "attributes": {
                 "content": "   ドクター、わたくしが手に入れたと思っていたものは、まさか全て嘘だったのですか？",
@@ -880,12 +897,12 @@
             }
         },
         {
-            "id": 105,
+            "id": 107,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 106,
+            "id": 108,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -897,7 +914,7 @@
             }
         },
         {
-            "id": 107,
+            "id": 109,
             "prop": "largebg",
             "attributes": {
                 "imagegroup": "bg_beach_1/bg_beach_2",
@@ -906,12 +923,12 @@
             }
         },
         {
-            "id": 108,
+            "id": 110,
             "prop": "Character",
             "attributes": {}
         },
         {
-            "id": 109,
+            "id": 111,
             "prop": "cameraEffect",
             "attributes": {
                 "effect": "Grayscale",
@@ -921,7 +938,7 @@
             }
         },
         {
-            "id": 110,
+            "id": 112,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -930,14 +947,14 @@
             }
         },
         {
-            "id": 111,
+            "id": 113,
             "prop": "Character",
             "attributes": {
                 "name": "char_340_shwaz_2#1"
             }
         },
         {
-            "id": 112,
+            "id": 114,
             "prop": "name",
             "attributes": {
                 "content": "   この場所を守るためなら、どんなことだってできますよ。",
@@ -945,12 +962,12 @@
             }
         },
         {
-            "id": 113,
+            "id": 115,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 114,
+            "id": 116,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -962,12 +979,12 @@
             }
         },
         {
-            "id": 115,
+            "id": 117,
             "prop": "Character",
             "attributes": {}
         },
         {
-            "id": 116,
+            "id": 118,
             "prop": "cameraEffect",
             "attributes": {
                 "effect": "Grayscale",
@@ -977,7 +994,7 @@
             }
         },
         {
-            "id": 117,
+            "id": 119,
             "prop": "largebg",
             "attributes": {
                 "imagegroup": "bg_beach_1/bg_beach_2",
@@ -986,7 +1003,7 @@
             }
         },
         {
-            "id": 118,
+            "id": 120,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -995,35 +1012,35 @@
             }
         },
         {
-            "id": 119,
+            "id": 121,
             "prop": "Decision",
             "attributes": {
                 "options": "自分もわからない。;彼女も苦しい胸中にあるのかもしれない。",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line120",
-                "option2": "line123"
+                "option1": "line122",
+                "option2": "line125"
             }
         },
         {
-            "id": 120,
+            "id": 122,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
             },
             "endOfOpt": false,
-            "targetLine": "line127"
+            "targetLine": "line129"
         },
         {
-            "id": 121,
+            "id": 123,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#5"
             }
         },
         {
-            "id": 122,
+            "id": 124,
             "prop": "name",
             "attributes": {
                 "content": "   ……ふぅ、そうですわね。確かにドクターには知る由もありませんものね。",
@@ -1031,23 +1048,23 @@
             }
         },
         {
-            "id": 123,
+            "id": 125,
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
             },
             "endOfOpt": false,
-            "targetLine": "line127"
+            "targetLine": "line129"
         },
         {
-            "id": 124,
+            "id": 126,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#9"
             }
         },
         {
-            "id": 125,
+            "id": 127,
             "prop": "name",
             "attributes": {
                 "content": "   わたくしにすら言うことのできない、胸中があるというのですか？",
@@ -1055,7 +1072,7 @@
             }
         },
         {
-            "id": 126,
+            "id": 128,
             "prop": "name",
             "attributes": {
                 "content": "   それに、どんなに苦しい胸中があろうと、犯した悪事が消えるわけではない。それは避けようのない事実ですわ。",
@@ -1063,7 +1080,7 @@
             }
         },
         {
-            "id": 127,
+            "id": 129,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
@@ -1071,14 +1088,14 @@
             "endOfOpt": true
         },
         {
-            "id": 128,
+            "id": 130,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#9"
             }
         },
         {
-            "id": 129,
+            "id": 131,
             "prop": "name",
             "attributes": {
                 "content": "   ドクター、わたくしは諦めるべきなのかしら？",
@@ -1086,23 +1103,23 @@
             }
         },
         {
-            "id": 130,
+            "id": 132,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 131,
+            "id": 133,
             "prop": "Decision",
             "attributes": {
                 "options": "その問いの答えを出すことは難しい……。",
                 "values": "3"
             },
             "targetLine": {
-                "option3": "line132"
+                "option3": "line134"
             }
         },
         {
-            "id": 132,
+            "id": 134,
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
@@ -1110,18 +1127,18 @@
             "endOfOpt": false
         },
         {
-            "id": 133,
+            "id": 135,
             "prop": "Decision",
             "attributes": {
                 "options": "だが紛れもなく、セイロンは一人の立派な源石学者だ。",
                 "values": "4"
             },
             "targetLine": {
-                "option4": "line134"
+                "option4": "line136"
             }
         },
         {
-            "id": 134,
+            "id": 136,
             "prop": "Predicate",
             "attributes": {
                 "references": "4"
@@ -1129,17 +1146,17 @@
             "endOfOpt": false
         },
         {
-            "id": 135,
+            "id": 137,
             "prop": "Character",
             "attributes": {}
         },
         {
-            "id": 136,
+            "id": 138,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 137,
+            "id": 139,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -1152,17 +1169,17 @@
             }
         },
         {
-            "id": 138,
+            "id": 140,
             "prop": "largebg",
             "attributes": {}
         },
         {
-            "id": 139,
+            "id": 141,
             "prop": "Background",
             "attributes": {}
         },
         {
-            "id": 140,
+            "id": 142,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -1171,54 +1188,54 @@
             }
         },
         {
-            "id": 141,
+            "id": 143,
             "prop": "name",
             "attributes": {
                 "content": "わたくしたちは、鉱石病に勝てるの？"
             }
         },
         {
-            "id": 142,
+            "id": 144,
             "prop": "name",
             "attributes": {
                 "content": "わたくしたちは、鉱石病患者を救えるの？"
             }
         },
         {
-            "id": 143,
+            "id": 145,
             "prop": "name",
             "attributes": {
                 "content": "この災害に終わりはあるの？"
             }
         },
         {
-            "id": 144,
+            "id": 146,
             "prop": "name",
             "attributes": {
                 "content": "終わりは見えない。何の確証もない。答えもわからない。"
             }
         },
         {
-            "id": 145,
+            "id": 147,
             "prop": "name",
             "attributes": {
                 "content": "諦めてもいいのかしら？　ええ、きっといいのだと思う。"
             }
         },
         {
-            "id": 146,
+            "id": 148,
             "prop": "name",
             "attributes": {
                 "content": "だけど、諦めたくない。"
             }
         },
         {
-            "id": 147,
+            "id": 149,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 148,
+            "id": 150,
             "prop": "Blocker",
             "attributes": {
                 "a": 1.0,
@@ -1231,7 +1248,7 @@
             }
         },
         {
-            "id": 149,
+            "id": 151,
             "prop": "largebg",
             "attributes": {
                 "imagegroup": "bg_beach_1/bg_beach_2",
@@ -1240,7 +1257,7 @@
             }
         },
         {
-            "id": 150,
+            "id": 152,
             "prop": "Blocker",
             "attributes": {
                 "a": 0.0,
@@ -1249,18 +1266,18 @@
             }
         },
         {
-            "id": 151,
+            "id": 153,
             "prop": "Decision",
             "attributes": {
                 "options": "この世界はやはり残酷かもしれない……。",
                 "values": "5"
             },
             "targetLine": {
-                "option5": "line152"
+                "option5": "line154"
             }
         },
         {
-            "id": 152,
+            "id": 154,
             "prop": "Predicate",
             "attributes": {
                 "references": "5"
@@ -1268,18 +1285,18 @@
             "endOfOpt": false
         },
         {
-            "id": 153,
+            "id": 155,
             "prop": "Decision",
             "attributes": {
                 "options": "だけど君がやってきた全ては、徒労ではない。",
                 "values": "6"
             },
             "targetLine": {
-                "option6": "line154"
+                "option6": "line156"
             }
         },
         {
-            "id": 154,
+            "id": 156,
             "prop": "Predicate",
             "attributes": {
                 "references": "6"
@@ -1287,18 +1304,18 @@
             "endOfOpt": false
         },
         {
-            "id": 155,
+            "id": 157,
             "prop": "Decision",
             "attributes": {
                 "options": "自分の選択を信じるべきだ。",
                 "values": "7"
             },
             "targetLine": {
-                "option7": "line156"
+                "option7": "line158"
             }
         },
         {
-            "id": 156,
+            "id": 158,
             "prop": "Predicate",
             "attributes": {
                 "references": "7"
@@ -1306,14 +1323,14 @@
             "endOfOpt": false
         },
         {
-            "id": 157,
+            "id": 159,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#2"
             }
         },
         {
-            "id": 158,
+            "id": 160,
             "prop": "name",
             "attributes": {
                 "content": "   ……ふぅ。あなたの言う通りですわ、ドクター。",
@@ -1321,7 +1338,7 @@
             }
         },
         {
-            "id": 159,
+            "id": 161,
             "prop": "name",
             "attributes": {
                 "content": "   さすが「先輩」というところですわね。この方面でわたくしが学ばねばならないことは、まだまだあるようですわね。",
@@ -1329,14 +1346,14 @@
             }
         },
         {
-            "id": 160,
+            "id": 162,
             "prop": "Character",
             "attributes": {
                 "name": "char_348_ceylon_4#4"
             }
         },
         {
-            "id": 161,
+            "id": 163,
             "prop": "name",
             "attributes": {
                 "content": "   ともかく、今のわたくしがやるべきは、ここであれこれ考えるのではなく、粛々と証拠を集めることですわね。",
@@ -1344,7 +1361,7 @@
             }
         },
         {
-            "id": 162,
+            "id": 164,
             "prop": "name",
             "attributes": {
                 "content": "   もし彼らが本当に市民の安全を放棄して危険に陥れるつもりなら、何がなんでもわたくしがそれを阻止しますわ。",
@@ -1352,7 +1369,7 @@
             }
         },
         {
-            "id": 163,
+            "id": 165,
             "prop": "name",
             "attributes": {
                 "content": "   それにわたくしは、自分が正しいと信じています。ですから、たとえ一人になったとしても、この都市を救うために最後までやり抜きますわ！",
@@ -1360,7 +1377,7 @@
             }
         },
         {
-            "id": 164,
+            "id": 166,
             "prop": "Character",
             "attributes": {
                 "name": "char_188_helage_1#2",
@@ -1369,28 +1386,11 @@
             }
         },
         {
-            "id": 165,
+            "id": 167,
             "prop": "name",
             "attributes": {
                 "content": "   良い啖呵の切り方だ。",
                 "name": "へラグ"
-            }
-        },
-        {
-            "id": 166,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_188_helage_1#2",
-                "name2": "char_348_ceylon_4#8",
-                "focus": 2.0
-            }
-        },
-        {
-            "id": 167,
-            "prop": "name",
-            "attributes": {
-                "content": "   あ、ヘラグおじ様。",
-                "name": "セイロン"
             }
         },
         {
@@ -1399,11 +1399,28 @@
             "attributes": {
                 "name": "char_188_helage_1#2",
                 "name2": "char_348_ceylon_4#8",
-                "focus": 1.0
+                "focus": 2.0
             }
         },
         {
             "id": 169,
+            "prop": "name",
+            "attributes": {
+                "content": "   あ、ヘラグおじ様。",
+                "name": "セイロン"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_188_helage_1#2",
+                "name2": "char_348_ceylon_4#8",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 171,
             "prop": "name",
             "attributes": {
                 "content": "   どうやら、心の整理はついたようだな。",
@@ -1411,7 +1428,7 @@
             }
         },
         {
-            "id": 170,
+            "id": 172,
             "prop": "Character",
             "attributes": {
                 "name": "char_188_helage_1#2",
@@ -1420,7 +1437,7 @@
             }
         },
         {
-            "id": 171,
+            "id": 173,
             "prop": "name",
             "attributes": {
                 "content": "   はい。おじ様、ドクター、わたくしの話を聞いてくださるかしら。",
@@ -1428,7 +1445,7 @@
             }
         },
         {
-            "id": 172,
+            "id": 174,
             "prop": "name",
             "attributes": {
                 "content": "   どんな状況であれ、シエスタの市民が危険に晒されるのだけは避けなければなりません。わたくしにとってはそれが最優先事項です。",
@@ -1436,28 +1453,11 @@
             }
         },
         {
-            "id": 173,
+            "id": 175,
             "prop": "name",
             "attributes": {
                 "content": "   ギャリソン遊園地の付近には、シエスタ市で最大の放送タワーがありますの。シエスタの放送システムは全てあそこで管理されておりますわ。",
                 "name": "セイロン"
-            }
-        },
-        {
-            "id": 174,
-            "prop": "Character",
-            "attributes": {
-                "name": "char_188_helage_1#3",
-                "name2": "char_348_ceylon_4#2",
-                "focus": 1.0
-            }
-        },
-        {
-            "id": 175,
-            "prop": "name",
-            "attributes": {
-                "content": "   放送タワー？",
-                "name": "へラグ"
             }
         },
         {
@@ -1466,11 +1466,28 @@
             "attributes": {
                 "name": "char_188_helage_1#3",
                 "name2": "char_348_ceylon_4#2",
-                "focus": 2.0
+                "focus": 1.0
             }
         },
         {
             "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "   放送タワー？",
+                "name": "へラグ"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_188_helage_1#3",
+                "name2": "char_348_ceylon_4#2",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 179,
             "prop": "name",
             "attributes": {
                 "content": "   ええ。しかしあの一帯はクローニンさんの管轄区域でもあります。彼もよく市内全域へ向けた放送を行っていますわ。",
@@ -1478,7 +1495,7 @@
             }
         },
         {
-            "id": 178,
+            "id": 180,
             "prop": "name",
             "attributes": {
                 "content": "   ですがライブの開始間際で人が集まってきたタイミングであれば、クローニンさんの部下たちも仕事で忙殺されているはずです。",
@@ -1486,7 +1503,7 @@
             }
         },
         {
-            "id": 179,
+            "id": 181,
             "prop": "name",
             "attributes": {
                 "content": "   そのタイミングで放送局を乗っ取り、シエスタ全域へ向けて火山の警報を流しましょう。",
@@ -1494,7 +1511,7 @@
             }
         },
         {
-            "id": 180,
+            "id": 182,
             "prop": "name",
             "attributes": {
                 "content": "   ですからなんとか、皆様のお力添えを頂ければと思いますの。",
@@ -1502,19 +1519,19 @@
             }
         },
         {
-            "id": 181,
+            "id": 183,
             "prop": "Dialog",
             "attributes": {}
         },
         {
-            "id": 182,
+            "id": 184,
             "prop": "Blocker",
             "attributes": {
                 "block": "true"
             }
         },
         {
-            "id": 183,
+            "id": 185,
             "prop": "Image",
             "attributes": {}
         }
