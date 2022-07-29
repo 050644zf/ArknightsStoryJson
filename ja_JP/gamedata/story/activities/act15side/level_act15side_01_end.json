@@ -1,0 +1,3197 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act15side",
+    "eventName": "将進酒",
+    "entryType": "ACTIVITY",
+    "storyCode": "IW-1",
+    "avgTag": "戦闘後",
+    "storyName": "化物",
+    "storyInfo": "客桟を去った後、勝手に行動に出たドゥは店主のテイから叱責されるのだった。リーは船頭の案内で梁府へと向かい、自分に依頼をしたリャンを訪問する。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 2,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 4,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Background",
+            "attributes": {
+                "image": "25_g04_yaninn",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 7,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$normalbattle_intro",
+                "key": "$normalbattle_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#1$1",
+                "name2": "avg_npc_296_1#1$1"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "ypos": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 30.0,
+                "ypos": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 13,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "jump",
+                "xpos": 100.0,
+                "ypos": 0.0,
+                "fadetime": 0.2,
+                "block": "false"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "jump",
+                "power": 0.0,
+                "times": 1.0,
+                "fadetime": 0.2,
+                "block": "true"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 19,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "ypos": 0.0,
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 130.0,
+                "ypos": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 0.0,
+                "ystrength": 0.0,
+                "vibrato": 0.0,
+                "randomness": 0.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "jump",
+                "xpos": 160.0,
+                "ypos": 0.0,
+                "fadetime": 0.2,
+                "block": "false"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "jump",
+                "power": 0.0,
+                "times": 1.0,
+                "fadetime": 0.2,
+                "block": "true"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fightgeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 29,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "ypos": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 200.0,
+                "ypos": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 33,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "jump",
+                "xpos": 50.0,
+                "ypos": 0.0,
+                "fadetime": 0.2,
+                "block": "false"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "jump",
+                "power": 0.0,
+                "times": 1.0,
+                "fadetime": 0.2,
+                "block": "true"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fightgeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 39,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "ypos": 0.0,
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 41,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 200.0,
+                "ypos": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#6$1"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……チッ。",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 46,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#6$1"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "  どうしました？　かかってこないのですか？",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "name",
+            "attributes": {
+                "content": "  もしや、先程の私の一撃でどこか怪我でも？",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 49,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#3$1"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……ふんっ、見てくれだけの小技でなにイキがってるのよ。",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "name",
+            "attributes": {
+                "content": "  盗人に逃げられたんなら、やり合っても仕方ないのよ。あんたみたいな――",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 53,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#1$1"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "name",
+            "attributes": {
+                "content": "  ――あんた、名乗りなさい。",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#1$1"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "  ウユウと。",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#1$1"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "  それが通り名？　盗人がそんな素直に本名を名乗らないでしょ。",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 59,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#2$1"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "  おや、存外賢いお方ですね。",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 61,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#1$1"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "  で、あたしが追うのを諦めるまで、あんたは道を開けるつもりはないのね？",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#7$1"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "name",
+            "attributes": {
+                "content": "  ほお、やっぱり賢い方ですね。",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#5$1"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……減らず口を！",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 67,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_305_1#1$1",
+                "name2": "avg_npc_305_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 68,
+            "prop": "name",
+            "attributes": {
+                "content": "  ぼうっとしてんな！　一気にやっちまうぞ！",
+                "name": "街の青年"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_305_1#1$1"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "name",
+            "attributes": {
+                "content": "  お嬢様！　俺たちも手伝います！",
+                "name": "街の青年"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 72,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 73,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "  ――そこまで！",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 76,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 77,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_300_1#1$1",
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 79,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_305_1#1$1"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "  ひぃ……",
+                "name": "街の青年"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_300_1#1$1"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "  ゴホンッ。",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "name",
+            "attributes": {
+                "content": "  素晴らしい！　実にお見事な腕前でございます。ところで、お立ち合いの皆様はお忘れかもしれませんが、ここは客桟でしてね。こう白昼堂々争うには、ちょいと耳目を引く場所です。",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#7$1"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……チッ。",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_300_1#5$1"
+            }
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "  加えて……巻き込まれた哀れな椅子やら机に関しては、観覧料ということで、私としても何か問うつもりはありませんが、替えを運ぶ奉公人の数にも限りがございましてな。",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_300_1#1$1"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "  本日のところはどうか私の顔を立てていただいて、この辺で手打ちにいたしませんか。皆様も、見せ物になるのは本意でないと思いますがいかがですかな？",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#3$1"
+            }
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……ふんっ。",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#1$1"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "  いやぁ申し訳ありませんね、ご主人。後ほど誤解を解いたら、お詫びに伺いますので！",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#7$1"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……そこまで言われちゃ仕方ないわ、今回は見逃してあげる。",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#1$1"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "name",
+            "attributes": {
+                "content": "  あいつとどんな関係かは知らないけど、分を弁えてさっさと突き出した方が身のためよ。",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#6$1"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "name",
+            "attributes": {
+                "content": "  かばい立てするようなら、あんたたちも同罪なんだからね！　この場を逃れたとしても、尚蜀はあんたたちみたいな無法者が居ていい場所じゃないの。",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#1$1"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "  本当に無法者だと思うなら、急ぎ通報すればいいだけではありませんか。わざわざお嬢さん自ら武力に訴えることもないでしょう？",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_300_1#1$1"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "name",
+            "attributes": {
+                "content": "  ウユウさんの仰るとおりですな。話し合うこともなしに手を出してしまえば、元はあった理もなくなろうというものです。",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#5$1"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……なっ！",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_300_1#4$1"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "  こちらのお嬢さん。",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "name",
+            "attributes": {
+                "content": "  そちらの方々を下げていただきましょうか。",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#6$1",
+                "name2": "avg_npc_305_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 111,
+            "prop": "name",
+            "attributes": {
+                "content": "  お、お嬢様このままこいつを見逃すんですか？　ひっ捕らえて、あの龍門人をおびき寄せれば――",
+                "name": "街の青年"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#6$1",
+                "name2": "avg_npc_305_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 113,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……黙って。",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#6$1",
+                "name2": "avg_npc_305_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 115,
+            "prop": "name",
+            "attributes": {
+                "content": "  どうせあの龍門人に逃げられたんだもの、こいつ一人捕らえたところで大して役に立たないわよ。",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#6$1",
+                "name2": "avgnew_455_nothing_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 117,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……それに、本当に捕らえられるの？　こいつまだ手の内を見せてないわよ？",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#6$1",
+                "name2": "avgnew_455_nothing_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 119,
+            "prop": "name",
+            "attributes": {
+                "content": "  何を仰いますか！　浮世を渡るには、和を尊ぶ精神こそが要というもの。お嬢さんがこの場は譲ると仰ってることですし、私もご厚意に甘えるだけですよ……",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#1$1",
+                "name2": "avgnew_455_nothing_1#7$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "  ウユウ、覚えたわよ。",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#1$1",
+                "name2": "avgnew_455_nothing_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 123,
+            "prop": "name",
+            "attributes": {
+                "content": "  曰く、「貴人に忘れ事多し」と。是非私のことも忘れてもらいたいんですがね。",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#1$1",
+                "name2": "avgnew_455_nothing_1#8$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 125,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 126,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 20.0,
+                "ypos": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.1
+            }
+        },
+        {
+            "id": 128,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 40.0,
+                "ypos": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.1
+            }
+        },
+        {
+            "id": 130,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#1$1",
+                "name2": "avgnew_455_nothing_1#8$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "  （そろーりそろりと。よし、この距離なら逃げられそうだ……）",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#1$1",
+                "name2": "avgnew_455_nothing_1#8$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 133,
+            "prop": "name",
+            "attributes": {
+                "content": "  あたしはテイのじじいの顔を立てたのよ。ここの敷居を跨いだら誰もあんたを守っちゃくれないわ。だったらいっそ、今からでもあたしの言う通りに――",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 135,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#1$1",
+                "name2": "avgnew_455_nothing_1#8$1",
+                "focus": 0.0
+            }
+        },
+        {
+            "id": 136,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 800.0,
+                "ypos": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 138,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#5$1"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "  ――ってちょっと！　ウユウは！？",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "name",
+            "attributes": {
+                "content": "  ど、どうしていないの！？　あんたたち何してるのよ！？",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#5$1",
+                "name2": "avg_npc_305_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……え、その……お嬢様が見逃すか見逃さないのかハッキリしないものですから……",
+                "name": "街の青年"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#5$1",
+                "name2": "avg_npc_305_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 146,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……言い訳してないで追いなさい！",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#5$1",
+                "name2": "avg_npc_305_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "  は、はい！",
+                "name": "街の青年"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 150,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 151,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 300.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_296_1#6$1",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 153,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 154,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#6$1",
+                "name2": "avgnew_npc_140_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 155,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……ドゥお嬢様、ちょっと騒ぎ過ぎじゃないですか？",
+                "name": "客桟の店員"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#5$1",
+                "name2": "avgnew_npc_140_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "  すっこんでて！",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#5$1",
+                "name2": "avgnew_npc_140_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 159,
+            "prop": "name",
+            "attributes": {
+                "content": "  ちょ、ちょっ――はぁ、まあいいや。人ん家の事情に首突っ込むもんじゃないし……",
+                "name": "客桟の店員"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#5$1"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "name",
+            "attributes": {
+                "content": "  じじいもじじいよ！　なんであいつらは止めなかったくせに、あたしの邪魔ばっかりするのよ！",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#5$1",
+                "name2": "avg_npc_300_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 163,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……大概にしなさい。",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#5$1",
+                "name2": "avg_npc_300_1#4$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "  なによその言い草！　じじいもあいつらが応峰路へ向ったと知ってたから、ここであいつらを待ってたんじゃないの！？",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "name",
+            "attributes": {
+                "content": "  街に何十もある客桟酒楼は、全部あたしたちの手の内なんだから分を弁えないコソ泥を捕まえるのなんて簡単――",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#5$1",
+                "name2": "avg_npc_300_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……分を弁えていないのは、どっちだ？",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#9$1",
+                "name2": "avg_npc_300_1#4$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 170,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……！",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#9$1",
+                "name2": "avg_npc_300_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 173,
+            "prop": "name",
+            "attributes": {
+                "content": "  お前はあの酒杯がどんなものか知らず、先ほどの龍門人が一体何者かだって知りはしない。",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "  並外れた手練が混じっていたことに気付いていたか？　相手が本気で事を荒立てることも辞さない態度を取っていたら、分が悪いのは私たちだ。道理という面でもな。",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#6$1",
+                "name2": "avg_npc_300_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "  でも――",
+                "name": "ドゥ"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_296_1#6$1",
+                "name2": "avg_npc_300_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "  でも？　お前はこの依頼がどういった意味を持つか分かるか？　お前が名も知らぬ顧客はどんな人物かを知っているか？",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "  お前ごときが、鏢局（ひょうきょく）の看板を好きに使う気か？",
+                "name": "テイ"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 181,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 182,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 184,
+            "prop": "Background",
+            "attributes": {
+                "image": "25_g02_yanalley_n",
+                "screenadapt": "coverall",
+                "fadetime": 0.1
+            }
+        },
+        {
+            "id": 185,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 187,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 188,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_294_1#7$1"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……誰も追ってきてないようです。",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_294_1#6$1"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$path_intro",
+                "key": "$path_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 192,
+            "prop": "name",
+            "attributes": {
+                "content": "  申し訳ない。本来であれば、私が先導して安全にご案内しなければならないのに……",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_294_1#5$1"
+            }
+        },
+        {
+            "id": 194,
+            "prop": "name",
+            "attributes": {
+                "content": "  まさか尚蜀の街中で、こんなことが起きようとは思ってもいませんでした。",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "name",
+            "attributes": {
+                "content": "  あの方を残してきてしまって、本当に問題ないのですか？　すべて押し付けた形になりましたが……",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "  さっきの店の番頭と、あの高飛車な嬢ちゃんは知らない仲じゃないでしょう。殿を務めてくれたあんちゃんは、そう簡単に抜け出せないかもしれませんねぇ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_1021_kroos2_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "  えっ……リーさんどうしてわかるのぉ？",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#8$1",
+                "name2": "avg_1021_kroos2_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 201,
+            "prop": "name",
+            "attributes": {
+                "content": "  あの嬢ちゃんは、明らかに店主がどう動くかを気にしていましたからねぇ。おれが見誤ることはありませんよ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "name",
+            "attributes": {
+                "content": "  見誤ってたら、この稼業なんてやってられませんからね。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#8$1",
+                "name2": "avg_1021_kroos2_1#8$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "  うーん……",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "name",
+            "attributes": {
+                "content": "  ウユウくんの逃げ足の速さを信じるしかないねぇ。この点に関しては彼を信じていいと思うよぉ。",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_294_1#4$1",
+                "name2": "avg_1021_kroos2_1#8$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 207,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……本当に大丈夫なのですか？",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_294_1#4$1",
+                "name2": "avg_1021_kroos2_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 209,
+            "prop": "name",
+            "attributes": {
+                "content": "  大丈夫。あの女の子も白昼堂々と、無茶はできないはずだよぉ。人は少なかったけど、中も外も通行人がいたからねぇ。",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_1021_kroos2_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "  ふぅ、ここでロドスの方に出会えるとは、本当に奇遇ですねぇ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_1021_kroos2_1#8$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "  リーさんが尚蜀に来たのは、事務所の依頼なのぉ？",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#9$1",
+                "name2": "avg_1021_kroos2_1#8$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "  そんなところですかね。まぁ古い友人の私的な依頼ですよ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#9$1",
+                "name2": "avg_1021_kroos2_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……その箱のことぉ？",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#9$1",
+                "name2": "avg_1021_kroos2_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "  ええ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#9$1",
+                "name2": "avg_npc_294_1#6$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "  しかし不思議なこともあるものですね。この尚蜀に、リャン様の物を奪おうとする者がいるなんて。",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_npc_294_1#6$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "  おかしなことでもないでしょう。何事もなく輸送できるようなものなら、あなたたちのリャン様がわざわざおれに頼むことはありゃしませんよ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_1021_kroos2_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "  リャン様？",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 226,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_1021_kroos2_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 227,
+            "prop": "name",
+            "attributes": {
+                "content": "  おれの同窓の友人で……尚蜀のウェイ・イェンウとでも思っといてください。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_1021_kroos2_1#8$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "  うわぁ……ウェイさんかぁ……",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_294_1#4$1",
+                "name2": "avg_1021_kroos2_1#8$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……その口ぶり、お二人とも龍門のウェイ氏とは親しくお付き合いをされているのですか？",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_npc_294_1#4$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "  そこいらの一般庶民ならともかく、龍門で飯の種を探してるような人間で、ウェイ・イェンウを知らないのはもぐりでしょう。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_npc_294_1#5$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "  ウェイ氏を知っているのと、ウェイ氏と知り合いであるのは、別物ですよ。",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#8$1",
+                "name2": "avg_npc_294_1#5$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "  そりゃそうだ。まあしかし、おれとウェイの腐れ縁については、今はいいでしょう。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#8$1",
+                "name2": "avg_npc_294_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 239,
+            "prop": "name",
+            "attributes": {
+                "content": "  はぁ。残念です、私のような者はウェイ氏などにはお目にかかる機会もございませんからね。",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 240,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#2$1",
+                "name2": "avg_npc_294_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……すごいって言葉は当てはまるでしょうが、そこまですごいことでもありませんよ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 242,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#2$1",
+                "name2": "avg_1021_kroos2_1#8$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 243,
+            "prop": "name",
+            "attributes": {
+                "content": "  話を聞く限り、そのリャンさんって人も、ウェイさんと同じくらい偉い人だよねぇ？",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_npc_294_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 245,
+            "prop": "name",
+            "attributes": {
+                "content": "  偉い人って扱いになるんですかねぇ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_npc_294_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "  なるでしょう、ならないはずがありません。",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 248,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_npc_294_1#6$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 249,
+            "prop": "name",
+            "attributes": {
+                "content": "  お待ちください、今の言葉はウェイ氏がという意味ですか？　それともリャン様が？",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#9$1",
+                "name2": "avg_npc_294_1#6$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 251,
+            "prop": "name",
+            "attributes": {
+                "content": "  じゃあ、なるってことで。いやはや、あいつも今じゃお偉いさんですか。あの頃は、ただの融通の効かない無鉄砲野郎にすぎなかったんですがねぇ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#9$1",
+                "name2": "avg_1021_kroos2_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 253,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……リーさんの方は相変わらずだねぇ。",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 254,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#10$1",
+                "name2": "avg_1021_kroos2_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 255,
+            "prop": "name",
+            "attributes": {
+                "content": "  ふっ、おれはずっと龍門であくせく働いてたもんで、尚蜀の高官様とはちーとも関係ない立場ですよ。もうずっと連絡もしてませんでしたよ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 256,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_294_1#4$1"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "  お二人ともあちらを、残してきた青年が。",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 260,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 261,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 262,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#5$1",
+                "name2": "char_empty",
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 263,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 264,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 265,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 266,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 267,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#5$1",
+                "name2": "avg_1021_kroos2_1#2$1",
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 269,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.1
+            }
+        },
+        {
+            "id": 270,
+            "prop": "name",
+            "attributes": {
+                "content": "  ウユウくん！　大丈夫だったぁ？",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#5$1",
+                "name2": "avg_1021_kroos2_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 272,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "name",
+            "attributes": {
+                "content": "  あいててて、お、恩人様、どうか触らないでいただけると、ぜ、全身が痛むんです……",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#5$1",
+                "name2": "avg_1021_kroos2_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "  まったくひどい目にあいましたよ。恩人様、あの小娘の怒った姿ときたら、獣のような形相でした！　あらゆる手を尽くしてなんとか凌いで、店主が仲裁に入っている隙に急いで逃げてきたんです――",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#5$1",
+                "name2": "avg_1021_kroos2_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……さっき走ってきてる時見た感じじゃ、どこも怪我してないみたいだけどぉ。",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "  扇子も開いてないし、どこがあらゆる手を尽くしたのぉ？",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#1$1",
+                "name2": "avg_1021_kroos2_1#7$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 280,
+            "prop": "name",
+            "attributes": {
+                "content": "  うぅ……さすが、恩人様の目はごまかせませんか。でもあんな派手に動いたのは久しぶりで、少し筋肉がつってしまったのは事実ですよ……",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avgnew_455_nothing_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 282,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……こちらのあんちゃんは？",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_1021_kroos2_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "  オペレーターのウユウくんだよぉ。",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avgnew_455_nothing_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 286,
+            "prop": "name",
+            "attributes": {
+                "content": "  まだ正式に入職こそしていませんが、ロドスのために身を粉にして尽くす所存でございまする。",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avgnew_455_nothing_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 288,
+            "prop": "name",
+            "attributes": {
+                "content": "  おや、新入りのオペレーターさんでしたか、お会いできて光栄の至りですねぇ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avgnew_455_nothing_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "  いやいや、恐縮でございまする！　恩人様によればロドスの協力者だとか。はは～さすがはロドス、よき縁に恵まれ、人々の信頼も篤いからこそ、あなたのような方とも誼を結べるというもの。",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#9$1",
+                "name2": "avgnew_455_nothing_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "  おれのことはリーと呼んでください。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#9$1",
+                "name2": "avgnew_455_nothing_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "  リー兄さん、ご丁寧にかたじけない。",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avgnew_455_nothing_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 296,
+            "prop": "name",
+            "attributes": {
+                "content": "  それで、さっき店の主人が仲裁に入ってくれたおかげで逃げ出せたと言いましたっけ？",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avgnew_455_nothing_1#6$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 298,
+            "prop": "name",
+            "attributes": {
+                "content": "  まさに。それがどうかしましたか？",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#2$1",
+                "name2": "avgnew_455_nothing_1#6$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 300,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……ふむ……どうやら単純な話じゃなさそうですねぇ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_294_1#6$1"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "name",
+            "attributes": {
+                "content": "  場所を変えましょう、ここでは人目につきすぎます。また何か問題でも起きたら、私では責任を負いきれません。",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_npc_294_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "  ならこのまま梁府（りゃんふ）に行きましょうか。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "name",
+            "attributes": {
+                "content": "  ロドスの方々も、ここまで来れば同舟の連れでしょう。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_npc_294_1#6$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "  リャン様からは、あなたを迎えに行くようにとしか言われておりませんので。これだけの人数で向かうのは少し……",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_npc_294_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "name",
+            "attributes": {
+                "content": "  はぁ、まあいいでしょう。",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#1$1",
+                "name2": "avg_npc_294_1#5$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "  リャン様もそこまで器が小さい方ではありません。先ほどは助けていただいたことですし、一緒に向かいましょう。",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1021_kroos2_1#10$1"
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "  リャンさんのお屋敷かぁ……私たちが、急にお邪魔しちゃいけないんじゃないかなぁ。",
+                "name": "クルース"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#10$1",
+                "name2": "avg_1021_kroos2_1#10$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 315,
+            "prop": "name",
+            "attributes": {
+                "content": "  なぁに、おれがいます。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#10$1",
+                "name2": "avgnew_455_nothing_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 317,
+            "prop": "name",
+            "attributes": {
+                "content": "  いやぁ、気持ちのいいおっしゃりようですね！",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_294_1#1$1"
+            }
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "  では……そうと決まれば、急ぎましょう。こちらです、どうぞ。",
+                "name": "船頭"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 321,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_footstep_stonestep",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 322,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 324,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 325,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#7$1"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 327,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_spiritwhoosh",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 328,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 329,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 330,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……！",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#6$1",
+                "name2": "avg_322_lmlee_1#7$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 333,
+            "prop": "name",
+            "attributes": {
+                "content": "  リー兄さん？",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "Character",
+            "attributes": {
+                "name": "avgnew_455_nothing_1#6$1",
+                "name2": "avg_322_lmlee_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 335,
+            "prop": "name",
+            "attributes": {
+                "content": "  ん？　あぁ……すぐに行きますよ。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#4$1"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 339,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 340,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 342,
+            "prop": "Image",
+            "attributes": {
+                "image": "25_i04",
+                "xScaleFrom": 1.0,
+                "yScaleFrom": 1.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 343,
+            "prop": "ImageTween",
+            "attributes": {
+                "xTo": 0.0,
+                "yTo": 0.0,
+                "xScaleFrom": 1.0,
+                "yScaleFrom": 1.0,
+                "xScaleTo": 0.85,
+                "yScaleTo": 0.85,
+                "duration": 30.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 346,
+            "prop": "name",
+            "attributes": {
+                "content": "  おや？",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……",
+                "name": "奇妙な物体"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……グォ？",
+                "name": "奇妙な物体"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "  こいつぁ……尚蜀ではこんな奇怪なペットが流行ってるんですかい……？",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "name",
+            "attributes": {
+                "content": "  グォッ！",
+                "name": "奇妙な物体"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 352,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 354,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 355,
+            "prop": "name",
+            "attributes": {
+                "content": "  リー兄さん！　早く行きますよ！",
+                "name": "ウユウ"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "Background",
+            "attributes": {
+                "image": "25_g02_yanalley_n",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 358,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_322_lmlee_1#4$1"
+            }
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……はいはい、今すぐにっと。",
+                "name": "リー"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 362,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.7
+            }
+        },
+        {
+            "id": 363,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 364,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 366,
+            "prop": "delay",
+            "attributes": {
+                "time": 4.0
+            }
+        },
+        {
+            "id": 367,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_306_1#1$1",
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_spiritwhoosh",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 369,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 370,
+            "prop": "name",
+            "attributes": {
+                "content": "  ……グォ……",
+                "name": "奇妙な物体"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 372,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 375,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 376,
+            "prop": "Image",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": true
+}
