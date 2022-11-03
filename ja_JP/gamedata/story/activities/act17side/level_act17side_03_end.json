@@ -1,0 +1,4999 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act17side",
+    "eventName": "狂人号",
+    "entryType": "ACTIVITY",
+    "storyCode": "SN-3",
+    "avgTag": "戦闘後",
+    "storyName": "静かな遊歩道",
+    "storyInfo": "溟痕の出現に、カルメンとケルシー、そして狩人たちは危機感を示す。その頃、私欲に走った町民たちは、ジョディを引き渡して難を逃れようと画策し、ジョディはティアゴに逃がされることになる。町を出た彼はウルピアヌスからも追われるが、それを救い出したのはエリジウムだ。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 2,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g18_lighthouse_square",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1",
+                "focus": 3.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 7,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$exciting_intro",
+                "key": "$exciting_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 8,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 10,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown1",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 11,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 13,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#8$1"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "name",
+            "attributes": {
+                "content": "報告にあった通りだな。この生き物が何なのか、非常に興味をそそられるところだ。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$Mon3tr_n"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "Character",
+            "attributes": {
+                "name": "npc_10002"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "name",
+            "attributes": {
+                "content": "（警告するように低く唸る）",
+                "name": "Mon3tr"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#1$1"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "おお……そう怒ってくれるな。君は人の言葉を理解することができるのだね。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#1$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 21,
+            "prop": "name",
+            "attributes": {
+                "content": "この恐魚の身体には、別の寄生体がいるようですけれど……こんなものを陸で見るのは初めてですわ。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#7$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "これは、イベリアでは「溟痕(めいこん)」と呼ばれるものだ。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "大いなる静謐のあと、イベリアの沿岸に住む民たちは、時折海が発光する様を見たと聞いている。最後に報告されたのは十七年前のことだがね。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "name",
+            "attributes": {
+                "content": "科学者はそれを、ある種のプランクトンが大量発生したことによるものだと考えていた。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#10$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 27,
+            "prop": "name",
+            "attributes": {
+                "content": "ときに、この機会に伺っておきたいのだが。エーギルの人々は……この不穏な現象を目にしたことがあるだろうか？",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#10$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 29,
+            "prop": "name",
+            "attributes": {
+                "content": "エーギルにおいて、過去にそうした現象が観測されたことはほとんどありません。ですが、蛍光植物の類いであれば、科学アカデミーの豪奢な庭園に行けば、飽きるほど目にすることができますわよ。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#1$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 31,
+            "prop": "name",
+            "attributes": {
+                "content": "なるほど。エーギル人も「観賞」の何たるかを知っているようだ。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#1$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "――「溟痕」という名だけは言い得て妙ですわね。これは、海が陸に残した痕跡ですから。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "name",
+            "attributes": {
+                "content": "言ってしまえば、今広がりつつあるこの「溟痕」は、本質的にはサルヴィエントで目にした恐魚と同じものなのです。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#4$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 36,
+            "prop": "name",
+            "attributes": {
+                "content": "ふむ……つまりは、この自然現象そのものが、「恐魚」という生物の一形態だということか。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#4$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 38,
+            "prop": "name",
+            "attributes": {
+                "content": "ええ。イベリアの生物学者の方々には、もっと努力していただかないといけませんわね。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#7$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 40,
+            "prop": "name",
+            "attributes": {
+                "content": "……想定よりも複雑な状況ではあるが、最悪の事態というわけでもなさそうだ。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 41,
+            "prop": "name",
+            "attributes": {
+                "content": "これまでに裁判所が発見し、処理や捕獲を行ってきた恐魚は、ほとんど毎月のように変化を続けている。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "name",
+            "attributes": {
+                "content": "一番変容が早かったケースは、三号海岸線で発生した。四、五日も経たないうちに、奴らの姿がまったく違う形へ変貌したのだ。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "name",
+            "attributes": {
+                "content": "すでに述べた通り――海はその独自の方法を以て、陸を侵食しているということです。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "name",
+            "attributes": {
+                "content": "さておき、今はロドスのオペレーターを救出してきます。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "ご一緒いたしますわ。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 49,
+            "prop": "name",
+            "attributes": {
+                "content": "その必要はない。君たちには、一刻も早くこの脅威を排除してもらうのが最も効果的な選択だろう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 51,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 52,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_474_gladiia_1#1",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 53,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 54,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#1$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 55,
+            "prop": "name",
+            "attributes": {
+                "content": "……イベリアは、彼女をもっと丁重に扱ってくださると思っていましたのに。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#1$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 57,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシー女史が慎重に扱うべき相手だということに異論はないが、今は目下明らかとなった敵への対処を優先すべきだ。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "して、エーギルの執政官殿はどうなさるおつもりかな？　まさかこのまま私とエーギルの傲慢さについて口論でも続けるのが、最善の選択とお思いか？",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 59,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#1$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "では、10分いただけるかしら。その間に面倒をすべて片付けて、私の部下たちと合流して参りますので。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 61,
+            "prop": "name",
+            "attributes": {
+                "content": "そのあと改めて、あの灯台へ向かう方法を検討いたしましょう。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#1$1",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "ならば、私はここで待つとしよう。この礼拝堂は長年無法の地と化していたが、幸い誰かが綺麗に磨き上げてくれているようだしな。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_447_1#9$1"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "name",
+            "attributes": {
+                "content": "裁判所がここに「在る」以上――この場所は、この戦における唯一の光となるだろう。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 67,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 69,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g16_lighthouse_street",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#4$1"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "name",
+            "attributes": {
+                "content": "おい、何が起きた？",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#4$1",
+                "name2": "avg_npc_462_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ、ティアゴさん！　どこに行ってたの！？",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "name",
+            "attributes": {
+                "content": "もう大変なのよ！　急に深海教徒たちが現れて、怪物までたくさん出てきちゃって！",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "name",
+            "attributes": {
+                "content": "しかも、その上……",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#4$1",
+                "name2": "avg_npc_462_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "その上、何だ？",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "っと、そうだ、アマイアは……あいつは、どこにいる？　それに、お前たちも怪物どもに怪我をさせられたりはしてないか？　……大体、連中はどうしてこの町を襲ってくるんだか……",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#4$1",
+                "name2": "avg_npc_462_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "それが、なんて言えばいいか……",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "name",
+            "attributes": {
+                "content": "あいつらは町の人を襲ったりはしなかったけど、その……戦ってるのよ。……審問官と。しかもその人、たった一人でやり合ってて……",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#7$1",
+                "name2": "avg_npc_462_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 84,
+            "prop": "name",
+            "attributes": {
+                "content": "――",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#7$1",
+                "name2": "avg_npc_462_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 86,
+            "prop": "name",
+            "attributes": {
+                "content": "でも、誰も裁判所に連絡なんてしてないの！　本当よ！",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "name",
+            "attributes": {
+                "content": "広場であの怪物の死体を見つけたすぐあとに、急に審問官が現れて……今思うと、もしかしてあの人たちが……あっ。",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 88,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 89,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 90,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "どうしたの、おじさん……あっ、こんにちは。",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 92,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "name",
+            "attributes": {
+                "content": "何かあったんですか？　顔色が良くないようですが……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "ジョディ、ついてこい。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 97,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ……？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_451_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "いいから、静かにしているんだ。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "name",
+            "attributes": {
+                "content": "ねえ、ティアゴさん。信じて……本当に私たちじゃないのよ。いくら足が速くたって、こんな短時間で通報なんてできっこないでしょう？",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 103,
+            "prop": "name",
+            "attributes": {
+                "content": "……ああ、わかってる。だが今はジョディを守らなきゃならんし、同時に状況も整理しなくちゃならん。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "name",
+            "attributes": {
+                "content": "ひょっとすると、誰かがとっくに報告を入れてたのかもしれんな。一週間、いや一ヶ月前でもおかしくないか。なんせその頃には、邪教徒の噂は広まってたんだ。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "そ、そんなはず……！　あったとしても、私じゃないし、私の夫でもないわ！",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "まさか、ファンさんが裁判所に見つかっちゃったとか……？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "……え？　あなた……",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "name",
+            "attributes": {
+                "content": "どうして、ファンが深海教会の人だってことを知ってるの？　一体いつから知ってたの？",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 113,
+            "prop": "name",
+            "attributes": {
+                "content": "ジョディ、もう行くぞ！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#4$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 115,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ……う、うん。",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 117,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral",
+                "loop": "true",
+                "channel": "bgs"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 119,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "bgs",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 120,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "ちょっと、ティアゴさん！",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "ああもう……行っちゃったわ。",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1",
+                "name2": "avg_npc_459_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "ほっとけよ。それより、町の状況はどうなってる？",
+                "name": "用心深い町民"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1",
+                "name2": "avg_npc_459_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "わ、わからないわ。あの審問官と、外から来た人たちが怪物と戦ってたけど、手伝えそうなことは何もなかったし……",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1",
+                "name2": "avg_npc_459_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 128,
+            "prop": "name",
+            "attributes": {
+                "content": "ってなると……審問官があの怪物たちを片付けたら、今度は俺たちの番が来たっておかしくないよな。",
+                "name": "用心深い町民"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1",
+                "name2": "avg_npc_459_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 130,
+            "prop": "name",
+            "attributes": {
+                "content": "そ、そうかもしれないけど……待って、あなた一体何考えてるの？",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1",
+                "name2": "avg_npc_459_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 132,
+            "prop": "name",
+            "attributes": {
+                "content": "あの審問官が怪物と一緒に死んでくれたら、そんなことにはならないはずだろ……？",
+                "name": "用心深い町民"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1",
+                "name2": "avg_npc_459_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 134,
+            "prop": "name",
+            "attributes": {
+                "content": "ちょっと！　何バカなこと言ってるのよ！",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1",
+                "name2": "avg_npc_459_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 136,
+            "prop": "name",
+            "attributes": {
+                "content": "考えてもみろ。この数年、労働者が恐魚に襲われたって話はほとんど聞いてないだろ？　むしろ、裁判所のほうがよっぽど俺たちを酷い目に遭わせてきたじゃないか。",
+                "name": "用心深い町民"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1",
+                "name2": "avg_npc_459_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 138,
+            "prop": "name",
+            "attributes": {
+                "content": "で、でも……",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1",
+                "name2": "avg_npc_459_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "もし、このあと裁判所の連中に詰問されでもしたら、自分が深海教徒じゃないってことをどうやって証明するつもりなんだ？",
+                "name": "用心深い町民"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1",
+                "name2": "avg_npc_459_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 142,
+            "prop": "name",
+            "attributes": {
+                "content": "……だったら、どうすればいいのよ？",
+                "name": "警戒心の薄い町民"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_462_1#1$1",
+                "name2": "avg_npc_459_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "……あの審問官が本当にあんな大量の恐魚を始末できるなら、俺たちがどうこうできる相手じゃない。となると、一番怪しい奴を裁判所に突き出して、疑いを晴らすしかないんじゃないか？",
+                "name": "用心深い町民"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "name",
+            "attributes": {
+                "content": "たとえば――深海教会と関わってそうなエーギル人とかな。",
+                "name": "用心深い町民"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 147,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 149,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g17_lighthouse_alley",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 150,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 152,
+            "prop": "name",
+            "attributes": {
+                "content": "グアアァ……",
+                "name": "恐魚"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 154,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 155,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_fish_howl"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1",
+                "name2": "char_empty",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 157,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "xpos": 100.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "xpos": 50.0,
+                "ypos": 200.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 160,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "ypos": 150.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 162,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1",
+                "name2": "avg_npc_457_1#1$1",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 163,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "ypos": 200.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 166,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 180.0,
+                "ypos": 150.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 168,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 169,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_453_1#1$1",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 170,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "……ほかの者たちは順調に撤退しているが、アマイアの姿が見当たらない。",
+                "name": "しんがりの深海教徒"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "name",
+            "attributes": {
+                "content": "気がかりなことに、この町には審問官だけでなく、アマイアが言っていたあのアビサルハンターも来ているようだ。",
+                "name": "しんがりの深海教徒"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、ここが陸地である以上、奴らはあの審問官ほどの脅威ではないだろう。",
+                "name": "しんがりの深海教徒"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "かくなる上は、奴らを足止めしつつ、アマイアを探して連れ出さなくては。",
+                "name": "しんがりの深海教徒"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "行こう。ほかの兄弟たちが無残に殺されていった今、我らが最後の一組となってしまった。……これ以上、むざむざと同胞たちを裁判所に傷つけられるわけにはいかない。",
+                "name": "しんがりの深海教徒"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 177,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "xpos": 20.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 181,
+            "prop": "name",
+            "attributes": {
+                "content": "（同意するように視線を向ける）",
+                "name": "恐魚"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 183,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 185,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 186,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_snowconutryinside",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 187,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#1$1"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "ジョディ、急げ！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "name",
+            "attributes": {
+                "content": "う、うん……！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "name",
+            "attributes": {
+                "content": "（町中が壊されちゃってた……それに、あそこにいたのはもしかして……恐魚？）",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 194,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 195,
+            "prop": "name",
+            "attributes": {
+                "content": "あれは全部裁判所の仕業だろうな。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "……！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "しかも、今この町にいるのは多分大審問官だ。たった一人で深海教徒の隠れ家を探しに来たってんなら、相当腕が立つだろうし、そう考えるのが妥当だろう。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "name",
+            "attributes": {
+                "content": "ま、どの道グランファーロに恐魚と邪教徒が現れた以上、どう弁明しようが焼け石に水だ。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_clothmovement"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "name",
+            "attributes": {
+                "content": "そら、持ってけ坊主。お前の父さんが残した灯りも一緒にな。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "ぼ、僕――",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "――ジョディ・フォンタナロッサ。お前は十分大きくなったし、俺はもう、自分の知るすべてを伝えてきたつもりだ。それにこれは、お前が新たな一歩を踏み出すための最後のチャンスなんだぞ。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "俺は……この数年ずっと、お前にすべての真相を話して、ここを離れるよう言ってやりたいと思ってた。だが……",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#10$1",
+                "name2": "avg_npc_451_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "うん、わかってる。……ティアゴおじさんは、僕にとってお父さんみたいな人だし、グランファーロは僕らの家だから。ここを離れたら……僕は、何もかも失うことになるもの。",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#10$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 212,
+            "prop": "name",
+            "attributes": {
+                "content": "……ああ。しかし、いずれお前はここを離れなくちゃならん。……思えば、若い奴は皆ここを離れたがるもんだが、お前は違ったな。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#10$1",
+                "name2": "avg_npc_451_1#8$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 214,
+            "prop": "name",
+            "attributes": {
+                "content": "よし、行くぞ。恐魚は確かに危険だが、対処方法はわかってる。俺が途中まで送ってやろう。審問官にバレんように出るなら、今しかないだろうしな。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 216,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 3.0
+            }
+        },
+        {
+            "id": 218,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$tank_n"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 220,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "……こりゃ何の音だ？",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "……ドアのほうからするような……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_451_1#9$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、そう思う。……待て、これは……",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 226,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 227,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#9$1"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 229,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#4$1"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "name",
+            "attributes": {
+                "content": "……っ、この……ッ！　恐魚ですら人を食ったりしないってのに、お前らはどうして平気で他人を食い物にしやがるんだ！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#5$1"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "name",
+            "attributes": {
+                "content": "ピョートル！　マヌエラ！　そこにいるんだろう、この臆病者！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_451_1#5$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 234,
+            "prop": "name",
+            "attributes": {
+                "content": "ど、どうしたの？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_451_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "奴らにドアを塞がれちまった……！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1",
+                "name2": "avg_npc_451_1#4$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ？　そ、そんな、どうして？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1",
+                "name2": "avg_npc_451_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "決まってる。お前がエーギル人だからさ。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "StopMusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "大方、この家ごと取り囲んでるんだろうし……屋根裏へ上がって、窓から屋根伝いに逃げよう。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 244,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 246,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#1$1"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$loneliness_intro",
+                "key": "$loneliness_loop",
+                "fadetime": 3.0,
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 248,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g16_lighthouse_street",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 251,
+            "prop": "name",
+            "attributes": {
+                "content": "私たち、知り合いなのでしょうか？",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 253,
+            "prop": "name",
+            "attributes": {
+                "content": "そうですよ、ローレンティーナ。……ところで、あの修道服はどこへやってしまったのですか？　あれのほうがずっと似合っていらしたのに。",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 254,
+            "prop": "name",
+            "attributes": {
+                "content": "……ああ、なるほど。ご自分の帰るべき場所を見つけたのですね。ほかのアビサルハンターがあなたを見つけて、連れ帰ろうとしている――といったところかしら？",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#3$1",
+                "name2": "avg_npc_449_1#11$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 256,
+            "prop": "name",
+            "attributes": {
+                "content": "「ローレンティーナ」……私の名前ですね。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#3$1",
+                "name2": "avg_npc_449_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "ええ。それと同時に、万物の主の名でもありますが。",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#11$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 260,
+            "prop": "name",
+            "attributes": {
+                "content": "万物の主？　それは一体、何なのでしょう？",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 262,
+            "prop": "name",
+            "attributes": {
+                "content": "海、あるいは海にある万物を代表するに相応しいものですよ。",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 264,
+            "prop": "name",
+            "attributes": {
+                "content": "残念ながら、見たところあなたの精神は不安定な状態のようですが……正気を取り戻したこともあるのでしょうか？　たとえば――クイントゥスを殺した時だとか。",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 266,
+            "prop": "name",
+            "attributes": {
+                "content": "クイン、トゥス……？",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#13$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 268,
+            "prop": "name",
+            "attributes": {
+                "content": "彼を殺した時、あなたは一度海と接触したにもかかわらずエーギルへすぐに戻ろうとはしなかったようですね。てっきり、あなたたちは皆一刻も早く故郷へ帰ろうとするものだと思っていたのですが。",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "もしや……この陸地には、あなたたちを導き、策を立ててくれる人物がいるのでしょうか？",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#8$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 271,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、ローレンティーナ。私たちはなぜ、こんな状況で巡り会うことになったのでしょう。",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#8$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 273,
+            "prop": "name",
+            "attributes": {
+                "content": "あら。あなた、とても冷たい手をしていますね。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#8$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "――昔は、本当に何でもお話ししたものです。",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "けれど、今は……",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 279,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 280,
+            "prop": "name",
+            "attributes": {
+                "content": "スペクター！",
+                "name": "スカジ"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 282,
+            "prop": "name",
+            "attributes": {
+                "content": "……あなたが私の名を思い出した時に、まだ、今この瞬間のことを覚えていたら――私に会いに来てください。",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_449_1#10$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "私は、密かに心を決めているのです。自分を取り戻したあなたが、私を探し出してくれたなら、すべての真相をお話しすると。",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "name",
+            "attributes": {
+                "content": "またお会いしましょう、ローレンティーナ。",
+                "name": "アマイア"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 287,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 288,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "char_empty",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 290,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 291,
+            "prop": "name",
+            "attributes": {
+                "content": "……ええ。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#3$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 293,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#3$1",
+                "name2": "char_263_skadi#3",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 295,
+            "prop": "name",
+            "attributes": {
+                "content": "……今の人、誰？",
+                "name": "スカジ"
+            }
+        },
+        {
+            "id": 296,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "char_263_skadi#3",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 297,
+            "prop": "name",
+            "attributes": {
+                "content": "わかりません。……ですが、あの方は私をご存知のようでした。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "char_263_skadi#3",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 299,
+            "prop": "name",
+            "attributes": {
+                "content": "……特段匂いはしなかったし、クイントゥスみたいなシーボーンではなさそうね。",
+                "name": "スカジ"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "name",
+            "attributes": {
+                "content": "何にせよ今は、これ以上構ってられないわ。",
+                "name": "スカジ"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "StopMusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 302,
+            "prop": "name",
+            "attributes": {
+                "content": "さっさと恐魚を片付けて、第二隊長と合流しましょ。",
+                "name": "スカジ"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 304,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 306,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 307,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g17_lighthouse_alley",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$jealous_intro",
+                "key": "$jealous_loop",
+                "fadetime": 3.0,
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 310,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "おい、近くに恐魚がいたりしないよな？",
+                "name": "扉を塞ぐ町民"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1",
+                "name2": "avg_npc_462_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "え、ええ……怪物の死体が転がってるくらいで、静かなものよ。もしかして、審問官が全部片付けてくれたのかしら？",
+                "name": "手伝う町民"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1",
+                "name2": "avg_npc_462_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 315,
+            "prop": "name",
+            "attributes": {
+                "content": "それなら好都合なんだが。なあ、お前も手伝ってくれよ。あいつらをしっかり閉じ込めとかなきゃいけないからさ。",
+                "name": "扉を塞ぐ町民"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1",
+                "name2": "avg_npc_462_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 317,
+            "prop": "name",
+            "attributes": {
+                "content": "わ、わかったわ。……うん、扉は塞げたわね。……だけど、町中滅茶苦茶な状況なのに、どうして今町長にこんなことしないといけないのかしら？",
+                "name": "手伝う町民"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1",
+                "name2": "avg_npc_462_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "全部終わったら、審問官が剣を向けてくるのは俺らに決まってるからだよ。――で、お前さ。礼拝堂のほうの様子を見て、審問官を呼んできてくれよ。",
+                "name": "扉を塞ぐ町民"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1",
+                "name2": "avg_npc_462_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 321,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ、私がいくの？　でも、まだどこかに怪物がいたりしたら……",
+                "name": "手伝う町民"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 323,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.3
+            }
+        },
+        {
+            "id": 324,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "って……あら？　屋根の上に人が……",
+                "name": "手伝う町民"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1",
+                "name2": "avg_npc_462_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 327,
+            "prop": "name",
+            "attributes": {
+                "content": "は？",
+                "name": "扉を塞ぐ町民"
+            }
+        },
+        {
+            "id": 328,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 329,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 330,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "name",
+            "attributes": {
+                "content": "っ、ありゃジョディとティアゴだ！　逃がすな、追っかけろ！",
+                "name": "扉を塞ぐ町民"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 334,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 337,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g16_lighthouse_street",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 340,
+            "prop": "CameraShake",
+            "attributes": {
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 3.0,
+                "randomness": 90.0,
+                "fadeout": "false",
+                "block": "false"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 342,
+            "prop": "name",
+            "attributes": {
+                "content": "走れ坊主、町の外まで走るんだ！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#4$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "う、うん！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 346,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "審問官には見つかるなよ！　あの人でなしどもにも、捕まるんじゃないぞ！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "大丈夫、わかってるよ！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 351,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ……はあ、っ……走れ、走り続けろ……！　とにかく、北へ向かえ！　あっちには、トランスポーターの拠点がある……きっとまだ、機能してる、はずだ……！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 354,
+            "prop": "name",
+            "attributes": {
+                "content": "北だね！　わかったよ！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "お前の、鞄の中に――っはあ、はぁ……い、くらか、金を入れてある……！　ほかの町、まで……ほかの、国まで……逃げるんだ！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 358,
+            "prop": "name",
+            "attributes": {
+                "content": "うん……！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#5$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "――ジョディ！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#5$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "聞いてるよ、おじさん！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 3.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 365,
+            "prop": "name",
+            "attributes": {
+                "content": "ティアゴは、次第に走るペースを落とし――"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "name",
+            "attributes": {
+                "content": "そうして、戸惑いながらも必死に町を走り抜けていくエーギルの背中を見送った。"
+            }
+        },
+        {
+            "id": 367,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_451_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 368,
+            "prop": "name",
+            "attributes": {
+                "content": "行け！　振り向かないで、走り続けろ！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 369,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#8$1"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "name",
+            "attributes": {
+                "content": "そうだ、そのまま……振り返らずに、ここを出るんだ。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 372,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 373,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 2.0,
+                "ystrength": 3.0,
+                "vibrato": 10.0,
+                "randomness": 90.0,
+                "fadeout": "false",
+                "block": "false"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "name",
+            "attributes": {
+                "content": "奴らを町から出すな！　あのエーギルを裁判所へ突き出してやれ！",
+                "name": "追ってくる声"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#1$1"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "……ジョディ。お前の言う通り――",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "name",
+            "attributes": {
+                "content": "ここは俺たちの家だ。どんなに時間が経とうが、どんなに不満があろうが、それだけは変わらない。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 378,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#2$1"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "name",
+            "attributes": {
+                "content": "――（エーギル語）無事を祈る。達者でいろよ、坊主……！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 381,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 382,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 384,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 385,
+            "prop": "name",
+            "attributes": {
+                "content": "ティアゴ！　あいつはどこに――",
+                "name": "追ってきた町民"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 387,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 388,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 390,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown1",
+                "delay": 0.5
+            }
+        },
+        {
+            "id": 391,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 392,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#7$1"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "name",
+            "attributes": {
+                "content": "黙ってろ、この腰抜け！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 395,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 396,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.2,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 397,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 398,
+            "prop": "name",
+            "attributes": {
+                "content": "なっ……あんたイカレてんのか！？　このままじゃ、裁判所はまた俺たちを異端扱いしてくるんだぞ！？",
+                "name": "追ってきた町民"
+            }
+        },
+        {
+            "id": 399,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#7$1"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "ハッ、恐魚より裁判所のほうが恐ろしいってか！？　お前はあんな怪物よりも、同じ人間が怖いってのか！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "name",
+            "attributes": {
+                "content": "裁判所の連中は、俺たちの何もかもを滅茶苦茶にしただろうが！　また同じ目に遭ってもいいっていうのかよ！",
+                "name": "追ってきた町民"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 404,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 405,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$punch_n1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 406,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.2,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 408,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#4$1"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "name",
+            "attributes": {
+                "content": "ッ……！　けっ、こんなもん痛くも痒くもねえぞ……！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "name",
+            "attributes": {
+                "content": "てめえ――って、嘘だろ……！？　あいつら、まだいたのか！？",
+                "name": "追ってきた町民"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 413,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 414,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_fish_howl",
+                "volume": 0.3
+            }
+        },
+        {
+            "id": 415,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 416,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 417,
+            "prop": "name",
+            "attributes": {
+                "content": "グジュ……グルル……",
+                "name": "恐魚"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1"
+            }
+        },
+        {
+            "id": 419,
+            "prop": "name",
+            "attributes": {
+                "content": "や、ヤバい！　礼拝堂へ戻ろう、審問官のそばにいれば安全――",
+                "name": "追ってきた町民"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 421,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 423,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#7$1"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 425,
+            "prop": "name",
+            "attributes": {
+                "content": "うるせえ、腑抜け野郎！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1"
+            }
+        },
+        {
+            "id": 427,
+            "prop": "name",
+            "attributes": {
+                "content": "――ごほ、げほっ……な、何すんだよ！　恐魚が来てるのが見えないのか！？",
+                "name": "追ってきた町民"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 429,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#7$1"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "name",
+            "attributes": {
+                "content": "見えるさ。だが、それが何だ？",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "name",
+            "attributes": {
+                "content": "グランファーロをこんなふうにしたのは恐魚か？　違うよな。やったのはお前らみたいな人間だ。……大いなる静謐なんぞより、お前らのほうがよっぽど恐ろしいくらいさ。",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "name",
+            "attributes": {
+                "content": "そうだ。自分たちの利己心と無関心さで、思いやりをなくしちまった挙げ句――己の臆病さから目を逸らし、災厄の責任をエーギル人に押し付けてきたお前らみたいな人間のほうがな！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "name",
+            "attributes": {
+                "content": "――い、いやいやいや、そんなこと言ってる場合じゃないだろ！　怪物が来てるんだぞ！　クソッ、あんたみたいな狂った奴と話してなんかいられるか！",
+                "name": "追ってきた町民"
+            }
+        },
+        {
+            "id": 435,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#4$1"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "name",
+            "attributes": {
+                "content": "そりゃそうだろうよ、欲張りのビビリ野郎め。お前らはマリーンが連れて行かれた時も、エーギルの同僚たちが連れて行かれた時も、懲罰軍の旗の下で縮こまってただけだからな！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "name",
+            "attributes": {
+                "content": "この人殺し！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "name",
+            "attributes": {
+                "content": "――ッ……！",
+                "name": "追ってきた町民"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 441,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 442,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$punch_n1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 444,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 445,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_459_1#1$1"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "name",
+            "attributes": {
+                "content": "うるせえ！　あんたはあのエーギルの女に惚れてたってだけのことだろうが！　皆が皆、あんたと同じイカレ野郎だと思うなよ！",
+                "name": "追ってきた町民"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#5$1"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "つべこべ言わずにかかってこい！　叩きのめしてやる！",
+                "name": "ティアゴ"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 450,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 452,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_451_1#5$1"
+            }
+        },
+        {
+            "id": 453,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 454,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "ギュウアァ――",
+                "name": "恐魚"
+            }
+        },
+        {
+            "id": 456,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 457,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 458,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 459,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 460,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 462,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 463,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 464,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1",
+                "name2": "avg_npc_457_1#1$1",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 465,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 466,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 467,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "殴り合う二人の鮮血が飛び散る。しかし、恐魚はそれを気にも留めずに、その場を素早くすり抜けていく。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 468,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$punch_n1",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 470,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "StopMusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 472,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "彼らの姿は、ここではまるで場違いだった。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 473,
+            "prop": "Subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 474,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 475,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 476,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g26_dusk_wild",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 477,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 478,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$nervous_intro",
+                "key": "$nervous_loop",
+                "fadetime": 3.0,
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 479,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 20.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#10$1",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 481,
+            "prop": "name",
+            "attributes": {
+                "content": "はあ……はぁ……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 482,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "あ、れ……？　ティアゴおじさん……？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "っはぁ、はあ……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 10.0,
+                "ystrength": 20.0,
+                "vibrato": 20.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 486,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1"
+            }
+        },
+        {
+            "id": 487,
+            "prop": "name",
+            "attributes": {
+                "content": "おじさん、どこにいるの……！？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "……っ……どうして……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#6$1"
+            }
+        },
+        {
+            "id": 490,
+            "prop": "name",
+            "attributes": {
+                "content": "す、すぐに……戻らなくちゃ……！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_445_1#1$1",
+                "blackstart": 0.3,
+                "blackend": 0.7
+            }
+        },
+        {
+            "id": 492,
+            "prop": "name",
+            "attributes": {
+                "content": "（エーギル語）止まれ、エーギル。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1"
+            }
+        },
+        {
+            "id": 494,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ、は、はい……！？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 496,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 497,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_445_1#1$1",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 498,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 499,
+            "prop": "name",
+            "attributes": {
+                "content": "お前がグランファーロ最後のエーギル人、ブレオガンの末裔だな。",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1"
+            }
+        },
+        {
+            "id": 501,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ……？　ブレオ……なんて仰ったんですか？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_445_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 503,
+            "prop": "name",
+            "attributes": {
+                "content": "――恐魚に殺されるか、裁判所に監禁されるか。どちらも嫌だというのなら、俺と共に来い。お前が必要だ。",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 504,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1",
+                "name2": "avg_npc_445_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 505,
+            "prop": "name",
+            "attributes": {
+                "content": "……もしかして、あなたも……あの人たちの、仲間だとか……？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1",
+                "name2": "avg_npc_445_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 507,
+            "prop": "name",
+            "attributes": {
+                "content": "違う！　俺は、かつての科学アカデミーでさえ一目置いていた、消えゆく伝説の遺したものを追っているだけだ。",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "奴の遺した最も重要な宝は、灯台でも絢爛なる大船でもなく、ほかでもない奴の末裔――",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "name",
+            "attributes": {
+                "content": "恐らく、それがお前である以上、お前が最後の手がかりとなる。",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#9$1",
+                "name2": "avg_npc_445_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 511,
+            "prop": "name",
+            "attributes": {
+                "content": "何を仰っているのか、よくわからないんですが……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 512,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#9$1",
+                "name2": "avg_npc_445_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 513,
+            "prop": "name",
+            "attributes": {
+                "content": "……では、お前の両親、そして祖父母は何に従事していた？　ティアゴというあの町長は実の父ではないだろう。",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#10$1",
+                "name2": "avg_npc_445_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 515,
+            "prop": "name",
+            "attributes": {
+                "content": "僕の、両親は……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 516,
+            "prop": "name",
+            "attributes": {
+                "content": "……イベリアの眼のために、行方不明になりました。",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 517,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#10$1",
+                "name2": "avg_npc_445_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 518,
+            "prop": "name",
+            "attributes": {
+                "content": "……それは不運だったな。だが、俺は一つ残酷な指摘をせねばなるまい。その不運こそ、お前がエーギルを救う鍵となりえるのだ、とな。",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 519,
+            "prop": "name",
+            "attributes": {
+                "content": "共に来い。同胞に手荒な真似はしたくない。",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 520,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_445_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 521,
+            "prop": "name",
+            "attributes": {
+                "content": "ま、待ってください、本当に何を仰っているのかわからないんです……！　そんなこと急に言われても、何が何だか……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 522,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_445_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 523,
+            "prop": "name",
+            "attributes": {
+                "content": "もう一度言う。共に来い。",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 524,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#2$1",
+                "name2": "avg_npc_445_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 525,
+            "prop": "name",
+            "attributes": {
+                "content": "ぼ、僕は……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 527,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 528,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 529,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 0.8,
+                "g": 0.8,
+                "b": 0.8,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 530,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_445_1#1$1"
+            }
+        },
+        {
+            "id": 531,
+            "prop": "name",
+            "attributes": {
+                "content": "……！",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 532,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#6$1"
+            }
+        },
+        {
+            "id": 533,
+            "prop": "name",
+            "attributes": {
+                "content": "な、何……！？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 534,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#6$1",
+                "name2": "avg_npc_450_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 535,
+            "prop": "name",
+            "attributes": {
+                "content": "――静かに。僕だよ、助けに来たんだ。",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 536,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#6$1",
+                "name2": "avg_npc_450_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "さあ、行こう。",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_445_1#1$1"
+            }
+        },
+        {
+            "id": 539,
+            "prop": "name",
+            "attributes": {
+                "content": "発煙装置か。小賢しい真似を……やはり、貴様のことは見逃すべきではなかったな。",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 540,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、貴様は何もわかっていない。そいつを連れて逃げたとして、どうするつもりだ？",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 542,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 543,
+            "prop": "name",
+            "attributes": {
+                "content": "何もわかっていない、か。確かに、この地が多くの謎を秘めていることは事実だ。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 544,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_445_1#1$1"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ウルピアヌス"
+            }
+        },
+        {
+            "id": 546,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 547,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 548,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 549,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 550,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 551,
+            "prop": "name",
+            "attributes": {
+                "content": "しかしそれを踏まえた上で、お前のように法を犯した人間は――",
+                "name": "大審問官"
+            }
+        },
+        {
+            "id": 552,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#2"
+            }
+        },
+        {
+            "id": 553,
+            "prop": "name",
+            "attributes": {
+                "content": "我々を満足させる答えを出すまで、この場を離れることなど許されないと心得ろ。",
+                "name": "大審問官"
+            }
+        },
+        {
+            "id": 554,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 555,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 556,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 557,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 558,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_storehouse",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 559,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 560,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_450_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 561,
+            "prop": "name",
+            "attributes": {
+                "content": "……撒いたみたいだね。よかった。やっぱり、審問官が近付いてきた時を狙って助けに入ったのはいい判断だったな。……まさかと思うけど、あの二人でやり合ったりはしないよね……？",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 562,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#10$1",
+                "name2": "avg_npc_450_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 563,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 564,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#10$1",
+                "name2": "avg_npc_450_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 565,
+            "prop": "name",
+            "attributes": {
+                "content": "……で、ちょっとは落ち着いた？",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 566,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1",
+                "name2": "avg_npc_450_1#11$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 567,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ、ご、ごめんなさい……！　あの……僕、町へ戻らないと……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 568,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1",
+                "name2": "avg_npc_450_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 569,
+            "prop": "name",
+            "attributes": {
+                "content": "戻るって……まあ、恐魚はほとんど片付けたみたいだけどさ。なんだか町は妙な雰囲気だし、ケルシー先生――うちのお医者さんとも連絡が取れない状況だから、危ないことはしないほうがいいよ。",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 570,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1",
+                "name2": "avg_npc_450_1#9$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 571,
+            "prop": "name",
+            "attributes": {
+                "content": "それに……見た感じ、君は町を離れようとしてたんでしょ？",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 572,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_450_1#9$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 573,
+            "prop": "name",
+            "attributes": {
+                "content": "……いえ、その……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 574,
+            "prop": "name",
+            "attributes": {
+                "content": "審問官が町へ来てるって話を聞いて。それで、ティアゴおじさんが僕を心配して逃がそうとしてくれただけなんです。",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 575,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_450_1#9$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 576,
+            "prop": "name",
+            "attributes": {
+                "content": "……裁判所か。",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 577,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_npc_450_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 578,
+            "prop": "name",
+            "attributes": {
+                "content": "じゃあ、さっきの人は？　君を捕まえて、一体何をするつもりだったのかな？",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 579,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1",
+                "name2": "avg_npc_450_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 580,
+            "prop": "name",
+            "attributes": {
+                "content": "……ええ、と……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 581,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1",
+                "name2": "avg_npc_450_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 582,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、ごめんね。無理に答えなくていいよ。",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 583,
+            "prop": "name",
+            "attributes": {
+                "content": "んー、ちょっとだけ考える時間をくれる？　ケルシー先生を探しに何とか町へ忍び込んでみるか、それとも先に君を逃がしてから動くかで悩んでてさ。",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 584,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1",
+                "name2": "avg_npc_450_1#11$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 585,
+            "prop": "name",
+            "attributes": {
+                "content": "それなら、僕も一緒に戻ります。",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 586,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1",
+                "name2": "avg_npc_450_1#9$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 587,
+            "prop": "name",
+            "attributes": {
+                "content": "……それ、本気？　でも、おじさんは君を逃がすために、あれこれ手を尽くしてくれてたんでしょ？",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 588,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1",
+                "name2": "avg_npc_450_1#9$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 589,
+            "prop": "name",
+            "attributes": {
+                "content": "……もし、裁判所の人たちがたくさん来ていたら、手を尽くしたところで逃げきれなかったはずです。裏を返せば、今戻る分には大丈夫だと思います。",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 590,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1",
+                "name2": "avg_npc_450_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 591,
+            "prop": "name",
+            "attributes": {
+                "content": "だったら聞くけど――君の「使命」に、命を懸けるだけの価値はあるのかい？",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 592,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_450_1#7$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 593,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ？　ど、どういうことですか……？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 594,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_450_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 595,
+            "prop": "name",
+            "attributes": {
+                "content": "はっきりした目的もなく、ただ使命というものへの憧れだけでグランファーロに戻ろうとしてるなら、やめたほうがいいってことさ。",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 596,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_npc_450_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 597,
+            "prop": "name",
+            "attributes": {
+                "content": "これは遊びじゃないんだ。僕としては……なるべく早くここを離れることを勧めるよ。巻き添えを避けたがってるほかの住民たちも連れて逃げるべきだ。",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 598,
+            "prop": "name",
+            "attributes": {
+                "content": "これは、森で野営してたらオリジムシの大群に襲われた、なんて規模の話とはわけが違う。――こんなことは言いたくないけど、普通の人に手伝えることなんて何もないと思うよ。",
+                "name": "エリジウム"
+            }
+        },
+        {
+            "id": 599,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#11$1",
+                "name2": "avg_npc_450_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 600,
+            "prop": "name",
+            "attributes": {
+                "content": "でも……何となくですけど、感じるんです。……僕には、果たすべき使命があるのかもしれない、って。",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 601,
+            "prop": "name",
+            "attributes": {
+                "content": "それに……僕は小さい頃から、この町であの伝説を聞いて、海岸線を眺めては、両親の遺したノートを読んで――そんなふうに育ってきました。だから、こんな形でこの町を離れるなんて嫌なんです。",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 602,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#10$1",
+                "name2": "avg_npc_450_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 603,
+            "prop": "name",
+            "attributes": {
+                "content": "……グランファーロは、僕の故郷ですから。",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 604,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 605,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 606,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 607,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 608,
+            "prop": "Character",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": true
+}

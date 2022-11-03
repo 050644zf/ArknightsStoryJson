@@ -1,0 +1,5088 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act17side",
+    "eventName": "狂人号",
+    "entryType": "ACTIVITY",
+    "storyCode": "SN-4",
+    "avgTag": "戦闘後",
+    "storyName": "灯台入り口",
+    "storyInfo": "イベリアの眼を起動させるべく、ダリオがその入り口を守り、ジョディはアイリーニと共に中へと踏み込んでいく。しかし、海から現れた「最後の騎士」は、この灯台を打ち砕くべき「大波」だと思い込んでいるようだ。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_room_2",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$warm_intro",
+                "key": "$warm_loop",
+                "volume": 0.4,
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#3",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "name",
+            "attributes": {
+                "content": "ふわあ～……すっかり夜が明けちゃったなあ。",
+                "name": "マリア"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#1"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "name",
+            "attributes": {
+                "content": "オペレーターさんたちの装備、思ってたよりずっと消耗が激しいみたいだし……でも、天災からこんなにたくさんの人を救えたんだから、本当にすごいよね。",
+                "name": "マリア"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#2"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "name",
+            "attributes": {
+                "content": "よーし、私も気合いを入れないと！",
+                "name": "マリア"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 16,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 17,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 18,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 19,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$dooropenquite"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 21,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_220_grani#3",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 22,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "マリアさ～ん、エンジニア部が発注したやつ、受け取りに来たよ！",
+                "name": "グラニ"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 25,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#1"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 28,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ、グラニちゃん！　ちょっと待ってて、どこにやったかなあ……ごめんね、ここ何日か掃除ができてなかったから、ちょっと散らかってて……",
+                "name": "マリア"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#1",
+                "name2": "char_220_grani#2",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "あはは！　なんか、前来た時よりカジミエーシュの工房っぽくなってるね……あれ？　何だろ、これ。",
+                "name": "グラニ"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#1",
+                "name2": "char_220_grani#3",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "……小説かな？",
+                "name": "グラニ"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#1",
+                "name2": "char_220_grani#3",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 34,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ、「最後の騎士」！　こんなところにあったんだ！　……考えてみたら、昨日の夜は部屋中ひっくり返してごそごそやってたし……その時図面の下に隠れちゃったのかな？　見つかってよかった！",
+                "name": "マリア"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#1",
+                "name2": "char_220_grani#2",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 36,
+            "prop": "name",
+            "attributes": {
+                "content": "「最後の騎士」？　お気に入りの本？",
+                "name": "グラニ"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#1",
+                "name2": "char_220_grani#2",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 38,
+            "prop": "name",
+            "attributes": {
+                "content": "うん。小さい頃にお姉ちゃんがくれたの。私、これが大好きでよく読んでたんだ。",
+                "name": "マリア"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#1",
+                "name2": "char_220_grani#3",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 40,
+            "prop": "name",
+            "attributes": {
+                "content": "なるほどね～。カジミエーシュの騎士小説かあ……",
+                "name": "グラニ"
+            }
+        },
+        {
+            "id": 41,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#1",
+                "name2": "char_220_grani#2",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 42,
+            "prop": "name",
+            "attributes": {
+                "content": "ねえ、これ借りてもいい？",
+                "name": "グラニ"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#1",
+                "name2": "char_220_grani#2",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 44,
+            "prop": "name",
+            "attributes": {
+                "content": "もちろん！",
+                "name": "マリア"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "name",
+            "attributes": {
+                "content": "あれっ、アーツユニットの理論書までここに置いちゃってたなんて……う～ん、ごめんね。もう少しかかりそうだから、このあと自分で届けに行くよ。",
+                "name": "マリア"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#1",
+                "name2": "char_220_grani#2",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "そのくらい待つよ、気にしないで。今回はしばらくロドスにいられるから、まだまだ時間もあるし。",
+                "name": "グラニ"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "name",
+            "attributes": {
+                "content": "暇つぶしに、この本読ませてもらうねー。",
+                "name": "グラニ"
+            }
+        },
+        {
+            "id": 49,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_061#1",
+                "name2": "char_220_grani#2",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "そう？　本当にごめんね、ありがとう。",
+                "name": "マリア"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 52,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 53,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_220_grani#2",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 54,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_paper2"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 56,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_220_grani#3",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 57,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "グラニ"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 59,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "「最後の騎士」。"
+            }
+        },
+        {
+            "id": 61,
+            "prop": "name",
+            "attributes": {
+                "content": "大げさなわりに、よくある名前だ。というのも、カジミエーシュの小説すべてを合わせれば、恐らく何百もの「最後の騎士」や、「最速の騎士」、「最強の騎士」が存在しているためである。"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "「でも、あの耀騎士が妹さんに贈った小説なんだから、きっと何か特別なお話なんだよね……？」"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "そう思いつつ、グラニがページをめくると、しおりが挟まれているのが目に入った。"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "name",
+            "attributes": {
+                "content": "そのしおりには、曲がりくねったカジミエーシュ語の筆記体で、作中のセリフを写したらしき一節が書き留められていた。"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "StopMusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 66,
+            "prop": "name",
+            "attributes": {
+                "content": "「騒がしい波があるならば、海を鎮めに行けば良い」……？",
+                "name": "グラニ"
+            }
+        },
+        {
+            "id": 67,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 68,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_sea"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 71,
+            "prop": "name",
+            "attributes": {
+                "content": "言い伝えによれば――最後の騎士はイベリアに戻ったのだという。その目が敵と見なしたのはどれも命あるものでなく、連なる山々と街、それと波ばかりだった。"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "name",
+            "attributes": {
+                "content": "そうして、最後の騎士は海岸に住み着き、野営をして日々を過ごし……ついには、兜の脱ぎ方すらも忘れてしまった。"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "それから、騎士は大波と戦い、姿を消したという話だ。その家族が海岸で形見を見つけ、騎士の国へと持ち帰って、山奥に埋めて弔ったと伝えられている。"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 75,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g19_lighthouse_front",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "その後、彼あるいは彼女の物語は、一人の詩人の耳に届いて、脚色され、歌い継がれて、意味と象徴性を与えられた。こうして、騎士は騎士の国へと帰り、大いに物議を醸したのだが――"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "しかしながら……"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 80,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 81,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 82,
+            "prop": "name",
+            "attributes": {
+                "content": "……狂気に堕ちた騎士は、海にも、時間にも、そして死にさえも打ち勝ったのだと信じる者もいる。曰く、騎士はそのまま、万物が終わりを迎えるまで、波を追い続けるのだという話だ。"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 84,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$industv2_intro",
+                "key": "$industv2_loop",
+                "volume": 0.4,
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 85,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 86,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "name",
+            "attributes": {
+                "content": "…………",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 88,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_474_gladiia_1#1"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは……何者なのかしら？",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "騎士は答えず、ただじっとグレイディーアを見つめていた。"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、グレイディーアは、その視線が自分を見ているわけではないということにすぐさま気が付いた。"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "騎士はただ……彼女が手にした鍵を見ていたのだ。"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "fadeout": "true",
+                "xstrength": 25.0,
+                "ystrength": 25.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "が、ァ……ぅ、グ……ァ……",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "name",
+            "attributes": {
+                "content": "騎士は口を開き、声を出そうとした。けれども、聞こえたのは筋肉が裂けていくかのような乾いたしわがれ声だった。"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "name",
+            "attributes": {
+                "content": "――騎士は、歩みを進め始めた。"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 100,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 103,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "name2": "avg_npc_447_1#1$1"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g16_lighthouse_street",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 106,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "name2": "avg_npc_447_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "あの鍵は、どこで手に入れたのだね？",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "name2": "avg_npc_447_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "name2": "avg_npc_447_1#8$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、言っておくが……ロドスの内部事情を探る意図はない。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "name",
+            "attributes": {
+                "content": "けれども、あれがブレオガンの遺産であり、四匹の巨獣の手を経てアビサルハンターの手に渡った以上、事の次第くらいは聞かせてもらいたいところでね。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "name2": "avg_npc_447_1#8$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 115,
+            "prop": "name",
+            "attributes": {
+                "content": "発見は偶然のことでした。先ほどいたアビサルハンターの一人が、カジミエーシュで見つけてきたのです。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "name2": "avg_npc_447_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 117,
+            "prop": "name",
+            "attributes": {
+                "content": "……これはまた、何とも遠い国だな。若い頃、師の付き添いでかの国からの使者を迎えたことがあるが……その時には、銀槍を手にした征戦騎士たちが理想を語るのを聞かせてもらったものだ。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし今では、カジミエーシュは随分変わったと聞いている。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "name2": "avg_npc_447_1#4$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 120,
+            "prop": "name",
+            "attributes": {
+                "content": "良くも悪くも、現代においてあらゆる政治的組織に起きているそうした変化は、イベリアとは無縁のものなのでしょうね。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "name2": "avg_npc_447_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "……我々は、罠にかかった獣のようなものだ。抗い、もがき、傷付いて、血を流し続けている。それでも、諦めの先に待つのは死のみだ。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "name",
+            "attributes": {
+                "content": "さて、いまだ「人」である反逆者たちを探し出す前に、新しい質問を一つさせてもらおう。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "あの少年がブレオガンの子孫などではないことくらい、君なら気付いているはずだ。そもそも、裁判所がそんな重要な手掛かりを見逃すわけもないのだからな。",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_003_kalts_1#1",
+                "name2": "avg_npc_447_1#5$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "無駄死にするだけだというのに、どうしてあの子を行かせた？",
+                "name": "聖徒カルメン"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 128,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 131,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g19_lighthouse_front",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 133,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_fish_howl",
+                "volume": 0.3
+            }
+        },
+        {
+            "id": 135,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "name",
+            "attributes": {
+                "content": "（仲間へ呼びかけるような音）",
+                "name": "恐魚"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 138,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 139,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 140,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1",
+                "name2": "avg_npc_457_1#1$1",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 142,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 143,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4009_irene_1#7$1"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "ッ……！　上官！",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "name",
+            "attributes": {
+                "content": "……数が増してきているな。だが、我々が灯台に辿り着くまで、奴らは姿を見せなかった。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "あ、あの、上官！　扉を開く方法を見つけました！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "name",
+            "attributes": {
+                "content": "ただ……イベリアの眼の中心施設は、この高い塔なんです！　リフトは起動できませんし――階段を上るしかありません！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 150,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_fish_howl",
+                "volume": 0.1
+            }
+        },
+        {
+            "id": 151,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "name",
+            "attributes": {
+                "content": "グジュ……ジュル……",
+                "name": "恐魚"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 154,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_skulsrsword",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 156,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 157,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 158,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 159,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4009_irene_1#7$1"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "name",
+            "attributes": {
+                "content": "――上官！　なんとかして、時間を稼ぎましょう！",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 162,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_skulsrsword",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 164,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 165,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 166,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1"
+            }
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "時間はもとより有限だ。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#2"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "name",
+            "attributes": {
+                "content": "アイリーニ、お前はそのエーギルを連れて先に行け。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 172,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#1$1"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 176,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "わかりました！　――ほら、急いで！",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ、待ってください……！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 181,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 182,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 183,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 184,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 20.0,
+                "vibrato": 20.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_fish_howl",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 186,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1",
+                "name2": "avg_npc_457_1#1$1"
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "ギュグググ、ギュアアッ！",
+                "name": "恐魚"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n",
+                "volume": 0.3
+            }
+        },
+        {
+            "id": 189,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "――！",
+                "name": "恐魚"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 192,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_skulsrsword",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 193,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 194,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_npc_457_1#1$1",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 195,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 196,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "……これは、彼女たちか？　――待て、この灯りの揺らめきは……私のアーツの領域に踏み入った者がいるようだな。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_npc_457_1#1$1"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "ウ、ジュジュ……ギュ……？",
+                "name": "恐魚"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 201,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 100.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 203,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "jump",
+                "xpos": 30.0,
+                "times": 1.0,
+                "fadetime": 0.2,
+                "block": "true"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "（奴らの様子がおかしい。怯えているのか？　いや、この生き物が恐怖を見せたことなどない。）",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "name",
+            "attributes": {
+                "content": "（とすれば――混乱しているのか？　奴らをそうさせているのは、一体……）",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1",
+                "name2": "avg_npc_457_1#1$1"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "name",
+            "attributes": {
+                "content": "ジュ……グギュ、ギュ……？",
+                "name": "恐魚"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 211,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "jump",
+                "xpos": 20.0,
+                "power": 20.0,
+                "times": 1.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "jump",
+                "power": 20.0,
+                "times": 1.0,
+                "fadetime": 0.4,
+                "block": "true"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "jump",
+                "xpos": 30.0,
+                "power": 20.0,
+                "times": 1.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "jump",
+                "power": 20.0,
+                "times": 1.0,
+                "fadetime": 0.4,
+                "block": "true"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 217,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_fish_howl",
+                "volume": 0.3
+            }
+        },
+        {
+            "id": 218,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 1.4,
+                "block": "true"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 221,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 222,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "大審問官が灯りを高く掲げると、恐魚たちは岩礁の陰へと後ずさっていった。"
+            }
+        },
+        {
+            "id": 226,
+            "prop": "name",
+            "attributes": {
+                "content": "けれども、再度辺りを見渡した彼は、あることに気が付いた。――怪物の血で赤く染まった岩礁の上に、朽ちて壊れた武器が散乱しているのだ。"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "name",
+            "attributes": {
+                "content": "それは裁判所の人々が使う武器だった。恩師であるカルメンが言っていたように、裁判所が、最後に残されたこの灯台の奪還を試みていたことの証左だ。"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "大いなる静謐がこの灯台に影響を及ぼすことはなく、これは完全な状態で在り続けている。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "name",
+            "attributes": {
+                "content": "しかしそれでも、その大いなる静謐以来、裁判所がこの眼を取り戻したことはついぞない。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "――かつて、この地は小高い丘だったと聞いている。ここからは都市が一望でき、美しい景色が広がっていたそうだ。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "name",
+            "attributes": {
+                "content": "イベリア人は日々、この場所を守り続けていた。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "name",
+            "attributes": {
+                "content": "ギ……ジュジュ、グギュ……！",
+                "name": "恐魚"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、お前たちはここを餌場とし、勝手に巣まで作ってしまった。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "ふっ……",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 239,
+            "prop": "name",
+            "attributes": {
+                "content": "とある感情が――"
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "久しく忘れていたそれが、湧き上がってくる。"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "一介の兵士から審問官となり、そして真実を目にするまで――千の喪失を経験し、そのたび立ち上がってきたダリオは、イベリアにおける数少ない大審問官の一人となった。"
+            }
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "審問官と大審問官の間には、たった一字の違いでも、天と地ほどの差が存在している。"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "name",
+            "attributes": {
+                "content": "彼は、鉄のように硬い意志と、その輝く灯り、そして磨き上げた剣を以て――イベリアのあらゆる敵に立ち向かい、経典に記された一言一句を実践し続けるのみだとばかり思っていた。"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし今、彼の胸中からは強い感情が迸っている。それは、教えられてきた法と正義だけによるものではなかった。"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "name",
+            "attributes": {
+                "content": "大審問官ダリオは、己が義憤に駆られているという事実を、当たり前のように平然と受け入れた。そして、そのハンドキャノンを恐魚に向け、視線を海へと投げかけた。"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 247,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 248,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.1,
+                "r": 0.93,
+                "g": 0.4,
+                "b": 0.32,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.93,
+                "g": 0.4,
+                "b": 0.32,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.05,
+                "r": 0.93,
+                "g": 0.4,
+                "b": 0.32,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.93,
+                "g": 0.4,
+                "b": 0.32,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$char_emp"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n",
+                "delay": 0.3
+            }
+        },
+        {
+            "id": 254,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.0,
+                "fadeout": "true",
+                "xstrength": 25.0,
+                "ystrength": 25.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 256,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_457_1#1$1",
+                "name2": "avg_npc_457_1#1$1"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 259,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 260,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "name",
+            "attributes": {
+                "content": "人類はこの先も生きていく。死ぬのはお前たちだ。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#2"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "これは、我々の法や経典に基づいてのことではない。――お前たちの言うところの、「弱肉強食」だ。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 264,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 265,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 266,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 268,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g20_lighthouse_core",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 270,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral",
+                "loop": "true",
+                "channel": "bgs"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 273,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 274,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "bgs",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 275,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "name",
+            "attributes": {
+                "content": "……ここです！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "やっぱり、記録の通りですね。この灯台は底部からエネルギー供給を受けていて、中心の柱は垂直方向にエリア分けされています。それで……このフロアの制御装置の役割は――",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1",
+                "name2": "avg_4009_irene_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 279,
+            "prop": "name",
+            "attributes": {
+                "content": "……何なのよ？",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 280,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 281,
+            "prop": "name",
+            "attributes": {
+                "content": "――ええと、信号の記録みたいです。",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 282,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 283,
+            "prop": "name",
+            "attributes": {
+                "content": "そう。きっとあとで必要になるんでしょうけど……今は、灯台全体へのエネルギー供給システムから稼働させないとね。とりあえず、上へ上がるわよ。",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "……増援の到着まで、何も起きなければいいんだけど。",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 286,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 287,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 20.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#2$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "っ――！？",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_4009_irene_1#2$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "どうかされましたか？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "……何でもないわ、ただの錯覚よ。だって、師匠……じゃなくて、上官が外で見張ってくださってるんだから、問題なんて起きるはずないもの。",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 296,
+            "prop": "name",
+            "attributes": {
+                "content": "そ、それならいいんですが……そうだ。灯台のシステムを再起動させたら、リフトも使えるようになるかもしれません。それなら、皆さんもすぐに追いついてこられるはずですよね。",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "name",
+            "attributes": {
+                "content": "急ぎましょう！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4009_irene_1#4$1"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 301,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 304,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g19_lighthouse_front",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 306,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 312,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_263_skadi#8",
+                "name2": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 313,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 315,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_skulsrsword",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 317,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$skadi_n",
+                "delay": 0.2
+            }
+        },
+        {
+            "id": 318,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.5,
+                "xstrength": 22.0,
+                "ystrength": 33.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 319,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 320,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 321,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.2,
+                "block": "true"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 324,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 327,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_263_skadi#4",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 328,
+            "prop": "name",
+            "attributes": {
+                "content": "妙ね。彼の身体には、何か……匂いが残っているわ。",
+                "name": "スカジ"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_263_skadi#4",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 330,
+            "prop": "name",
+            "attributes": {
+                "content": "知った匂いなの？",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_263_skadi#4",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 332,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたが興味を持たないような、よそにある陸の国の匂いよ。",
+                "name": "スカジ"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_263_skadi#4",
+                "name2": "avg_474_gladiia_1#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 334,
+            "prop": "name",
+            "attributes": {
+                "content": "それでも、あれはシーボーンと見て間違いはないわ。クイントゥスとは何かが違うようだけれどね。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_263_skadi#4",
+                "name2": "avg_474_gladiia_1#2",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "とはいえ、どうしてこうも多くの陸上生物がシーボーンになりえているのかしら。彼らには海との接点なんてそう多くないはずでしょう。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 340,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "jump",
+                "xpos": 0.0,
+                "power": 10.0,
+                "times": 3.0,
+                "fadetime": 4.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_walk_water",
+                "loop": "true",
+                "channel": "a"
+            }
+        },
+        {
+            "id": 342,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "loop": "true",
+                "channel": "bgs"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 344,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_263_skadi#4",
+                "name2": "avg_474_gladiia_1#5",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "コミュニケーションは取れないようだし、身体の自由を奪っておいたほうが良さそうね。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 346,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_263_skadi#8",
+                "name2": "avg_474_gladiia_1#5",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "来るわよ、構えて！",
+                "name": "スカジ"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "bgs",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 349,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "a",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 350,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 351,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 352,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "ypos": 200.0,
+                "fadetime": 0.3,
+                "block": "false"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.1
+            }
+        },
+        {
+            "id": 356,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 357,
+            "prop": "name",
+            "attributes": {
+                "content": "騎士は忽然と姿を消した。――アビサルハンターの視覚をもってすれば、その動きを捉えることはさほど難しくないといえども、それは相当の速さだ。"
+            }
+        },
+        {
+            "id": 358,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、それほどの速度を持ちながら、騎士はアビサルハンターを攻撃するのではなく――高く跳び上がると、巨大な灯台に向かって割れんばかりの咆哮を上げた。"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 360,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.5,
+                "ystrength": 50.0,
+                "vibrato": 50.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "name",
+            "attributes": {
+                "content": "ガ、ァアアアアッ！",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 367,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 368,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 369,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 371,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#1$1"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g20_lighthouse_core",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 374,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.0,
+                "ystrength": 20.0,
+                "vibrato": 20.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n",
+                "volume": 0.5,
+                "delay": 1.0
+            }
+        },
+        {
+            "id": 377,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 378,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_4009_irene_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 379,
+            "prop": "name",
+            "attributes": {
+                "content": "うわわっ――い、一体何が……！？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 381,
+            "prop": "name",
+            "attributes": {
+                "content": "慌てないで！　いいから登り続けなさい！",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "name",
+            "attributes": {
+                "content": "今は自分たちの任務に――灯台へ明かりを取り戻すことに集中するのよ！",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 384,
+            "prop": "name",
+            "attributes": {
+                "content": "は……はいっ！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 386,
+            "prop": "name",
+            "attributes": {
+                "content": "（それにしても、この振動……壁を攻撃されたのかしら？　でも、どうやって？　ここは地上から何十メートルも離れてるのに……まさか恐魚が大砲を持ち出すはずもないでしょうし。）",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 387,
+            "prop": "name",
+            "attributes": {
+                "content": "（となると……巨大な生き物に襲われてるとか？　だけど、あの振動以外には何も感じなかったし……）",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1",
+                "name2": "avg_4009_irene_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 389,
+            "prop": "name",
+            "attributes": {
+                "content": "（……師匠、どうかご無事で……！）",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 391,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 394,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g19_lighthouse_front",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 396,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 397,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 399,
+            "prop": "name",
+            "attributes": {
+                "content": "騎士は灯台を仰ぎ見る。それは微動だにしていなかった。"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "不満げな様子で、騎士はねじ曲がった武器を振る。かつて名工が生みだしたこの長槍には、今では深海の匂いが染み付いていた。"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "邪魔者はないと見た騎士は、もう一度塔を攻撃しようと身構えた。"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 403,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 404,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "focus": 3.0
+            }
+        },
+        {
+            "id": 406,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.3
+            }
+        },
+        {
+            "id": 408,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_skulsrsword",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 409,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 413,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.6
+            }
+        },
+        {
+            "id": 414,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 415,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "name2": "avg_npc_448_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": "――！",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "name2": "avg_npc_448_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 418,
+            "prop": "name",
+            "attributes": {
+                "content": "何をしている？",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 419,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "name2": "avg_npc_448_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 420,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "name2": "avg_npc_448_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 422,
+            "prop": "name",
+            "attributes": {
+                "content": "答えないのなら、教えてやろう。――お前はイベリアを侮辱し、挑発した。禁足地に踏み入って、重要な遺産を傷付けたのだ。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "name",
+            "attributes": {
+                "content": "己を省みるがいい。人としての尊厳すらも失ったのでなければな。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "name2": "avg_npc_448_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 425,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "name",
+            "attributes": {
+                "content": "……尊……厳……？",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 427,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "name2": "avg_npc_448_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 428,
+            "prop": "name",
+            "attributes": {
+                "content": "……ほう。発声器官は残っていたか。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 429,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "name2": "avg_npc_448_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 430,
+            "prop": "name",
+            "attributes": {
+                "content": "（不明瞭な発音）……海、は……要ら……ナい……",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "name",
+            "attributes": {
+                "content": "波、ヲ……打ち、砕ク……白、昼を……蹂躙、しテ……苦、痛ニ、報復……すル……",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "name",
+            "attributes": {
+                "content": "万、物……変化……続けテ、いル……大樹ハ、大地に……根ヲ、下ろシ、た……",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "name2": "avg_npc_448_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 434,
+            "prop": "name",
+            "attributes": {
+                "content": "……その構えに、鎧兜、そして槍……",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 435,
+            "prop": "name",
+            "attributes": {
+                "content": "カジミエーシュ人か？",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "name2": "avg_npc_448_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 437,
+            "prop": "name",
+            "attributes": {
+                "content": "私……私、は……",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "name2": "avg_npc_448_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 439,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.0,
+                "fadeout": "true",
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 20.0,
+                "randomness": 90.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "name",
+            "attributes": {
+                "content": "騎士、だァアッ！",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 444,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 445,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 446,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1",
+                "name2": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 100.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 0.4,
+                "block": "true"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_skulsrsword"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "fadeout": "true",
+                "xstrength": 5.0,
+                "ystrength": 5.0,
+                "vibrato": 50.0,
+                "randomness": 90.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 0.2,
+                "delay": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 453,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$swordtsing2"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 455,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#2",
+                "name2": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 456,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "xpos": 30.0,
+                "ypos": 30.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "jump",
+                "xpos": 50.0,
+                "ypos": 20.0,
+                "times": 1.0,
+                "power": 10.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 459,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 460,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.1,
+                "r": 0.93,
+                "g": 0.4,
+                "b": 0.32,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.93,
+                "g": 0.4,
+                "b": 0.32,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 462,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.05,
+                "r": 0.93,
+                "g": 0.4,
+                "b": 0.32,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.93,
+                "g": 0.4,
+                "b": 0.32,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$char_emp"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n",
+                "delay": 0.3
+            }
+        },
+        {
+            "id": 466,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.0,
+                "fadeout": "true",
+                "xstrength": 25.0,
+                "ystrength": 25.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "jump",
+                "xpos": 400.0,
+                "times": 1.0,
+                "power": 20.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 468,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 469,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 470,
+            "prop": "name",
+            "attributes": {
+                "content": "……這イ、ずル……鋼鉄……波……",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#1"
+            }
+        },
+        {
+            "id": 472,
+            "prop": "name",
+            "attributes": {
+                "content": "（灯りが効いていないな。……それに見たところ、我々のほかに船が上陸した形跡はない。）",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "name",
+            "attributes": {
+                "content": "（溟痕は奴を避けており、恐魚の混乱も恐らく奴が原因だ。）",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 474,
+            "prop": "name",
+            "attributes": {
+                "content": "（となれば、あれは……人の形を模倣したシーボーンか？）",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 476,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 477,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 478,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "jump",
+                "power": 30.0,
+                "times": 1.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "ypos": 100.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 481,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 482,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 483,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#2"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "イベリアの眼を破壊するつもりか？　裁判所がそれを許すとは思うなよ。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 486,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 487,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.1,
+                "r": 0.93,
+                "g": 0.4,
+                "b": 0.32,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.93,
+                "g": 0.4,
+                "b": 0.32,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.05,
+                "r": 0.93,
+                "g": 0.4,
+                "b": 0.32,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 490,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.93,
+                "g": 0.4,
+                "b": 0.32,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$char_emp"
+            }
+        },
+        {
+            "id": 492,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n",
+                "delay": 0.3
+            }
+        },
+        {
+            "id": 493,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "fadeout": "true",
+                "xstrength": 25.0,
+                "ystrength": 25.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 494,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 495,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "ypos": 100.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 497,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "jump",
+                "xpos": 50.0,
+                "power": 30.0,
+                "times": 1.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 498,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 499,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 501,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "name",
+            "attributes": {
+                "content": "ぐ、アぁッ――！",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 503,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_183#2"
+            }
+        },
+        {
+            "id": 504,
+            "prop": "name",
+            "attributes": {
+                "content": "――今だ！",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#2$1"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "name",
+            "attributes": {
+                "content": "……おやすみなさい、騎士さん。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 507,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "――ッ！？",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 510,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#2$1"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 512,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_skulsrsword",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 513,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.3
+            }
+        },
+        {
+            "id": 514,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 515,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 516,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown3",
+                "delay": 0.2
+            }
+        },
+        {
+            "id": 517,
+            "prop": "Characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "xpos": 300.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 518,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 519,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 520,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 521,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_183#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "ほかの二人はどこにいる？",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_183#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 524,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女たちのことでしたら……騎士さんのお友達と、交流しているところですよ。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 525,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 526,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_183#1"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 20.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 528,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$skadi_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 529,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$swordtsing4",
+                "volume": 0.6,
+                "delay": 0.1
+            }
+        },
+        {
+            "id": 530,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$swordtsing6",
+                "volume": 0.6,
+                "delay": 0.2
+            }
+        },
+        {
+            "id": 531,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 532,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#4$1",
+                "name2": "avg_npc_183#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 533,
+            "prop": "name",
+            "attributes": {
+                "content": "……そう遠くない場所で、戦う物音が聞こえる。実に「文明的な」交流らしいな。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 534,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#2$1",
+                "name2": "avg_npc_183#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 535,
+            "prop": "name",
+            "attributes": {
+                "content": "そうかもしれません。ですが、私は暇を持て余してしまったので、こちらへ参りました。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 536,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#2$1",
+                "name2": "avg_npc_183#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "……お前の様子は、サルヴィエントで見た時とは変わったように見える。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "name",
+            "attributes": {
+                "content": "それと同時に、グランファーロで会った時とも違う。どうやら、刻一刻と変化し続けているようだな。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 539,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#3$1",
+                "name2": "avg_npc_183#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 540,
+            "prop": "name",
+            "attributes": {
+                "content": "海は私を目覚めさせてくれるのです。たとえそれが、潮風に運ばれてきたほんの少しの香りだけであろうとも。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#2$1",
+                "name2": "avg_npc_183#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 542,
+            "prop": "name",
+            "attributes": {
+                "content": "けれど……海の懐へ帰ろうとしたら、スカジに止められてしまったのです。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 543,
+            "prop": "name",
+            "attributes": {
+                "content": "あの子ったら、一体何に怯えているのかしら……？",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 544,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#2$1",
+                "name2": "avg_npc_183#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 545,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 546,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 547,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 548,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_walk_water"
+            }
+        },
+        {
+            "id": 549,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 550,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 551,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 552,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#2$1",
+                "name2": "avg_npc_183#1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 553,
+            "prop": "name",
+            "attributes": {
+                "content": "この状況では、グレイディーアに説明を求めなければならんな。",
+                "name": "大審問官ダリオ"
+            }
+        },
+        {
+            "id": 554,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#2$1",
+                "name2": "avg_npc_183#1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 555,
+            "prop": "name",
+            "attributes": {
+                "content": "（エーギル語）騎士よ、素敵な騎士よ。安らかなる眠りの底へとお戻りください。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 556,
+            "prop": "name",
+            "attributes": {
+                "content": "（エーギル語）我々は、敵同士ではないのですから。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 557,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 558,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 559,
+            "prop": "name",
+            "attributes": {
+                "content": "歌うようにして囁いたローレンティーナの声を、騎士は気にも留めなかった。"
+            }
+        },
+        {
+            "id": 560,
+            "prop": "name",
+            "attributes": {
+                "content": "それどころか、先ほど攻撃してきた「敵」に向かってわずかに首をかしげると、すぐさま視線を灯台へと向ける。"
+            }
+        },
+        {
+            "id": 561,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#2$1"
+            }
+        },
+        {
+            "id": 562,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、なんて悲しいことでしょう。あなたの耳には、もはや言葉など届かないのですね。まるで暗雲に目を覆われているかのよう……",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 563,
+            "prop": "name",
+            "attributes": {
+                "content": "そんな狂気に陥ってさえ、その意志が機械仕掛けのように働いて、肉体を動かし続けているということでしょうか？",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 564,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_448_1#1$1"
+            }
+        },
+        {
+            "id": 565,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "最後の騎士"
+            }
+        },
+        {
+            "id": 566,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1023_ghost2_1#2$1"
+            }
+        },
+        {
+            "id": 567,
+            "prop": "name",
+            "attributes": {
+                "content": "――我々と、この一曲を。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 568,
+            "prop": "name",
+            "attributes": {
+                "content": "嵐よ、共に踊りましょう。",
+                "name": "スペクター"
+            }
+        },
+        {
+            "id": 569,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 570,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 571,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 572,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 573,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g20_lighthouse_core",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 574,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 575,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 576,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1"
+            }
+        },
+        {
+            "id": 577,
+            "prop": "name",
+            "attributes": {
+                "content": "ありました！　メインのコントロールパネルです！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 578,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 579,
+            "prop": "name",
+            "attributes": {
+                "content": "動かせそう？",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 580,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 581,
+            "prop": "name",
+            "attributes": {
+                "content": "わ、わかりません。図面よりもずっと複雑ですし、実際に動かしたこともないので……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 582,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 583,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#13$1",
+                "name2": "avg_4009_irene_1#7$1"
+            }
+        },
+        {
+            "id": 584,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 10.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 585,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 586,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 587,
+            "prop": "name",
+            "attributes": {
+                "content": "うわっ……またですね……一体、外で何が起きてるんでしょうか？",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 588,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 589,
+            "prop": "name",
+            "attributes": {
+                "content": "……私たち、ここで起こりうる危険を甘く見積もってたかもしれないわね。このままじゃ、懲罰軍の技師が到着するまで持ちこたえられるかどうか……",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 590,
+            "prop": "name",
+            "attributes": {
+                "content": "いいえ、もっと言うと、たとえ援軍が到着しても……この状況で灯台を修理するなんて、高速戦艦の砲火を浴びながら陣地を設営するのと同等の犠牲を払うことになるでしょうね。",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 591,
+            "prop": "name",
+            "attributes": {
+                "content": "……市民ジョディ。あなたは紛れもなく、イベリアの民よ。今は、あなたの出自やグランファーロの過去のことなんて、とやかく言わないわ。",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 592,
+            "prop": "name",
+            "attributes": {
+                "content": "これは一刻を争う事態なの。今すぐに、イベリアの眼の持つあらゆる情報を集めてちょうだい。私と師匠がこの塔を守るから――",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 593,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 594,
+            "prop": "name",
+            "attributes": {
+                "content": "は、はい……ひとまず、ログの取得は済ませました。……パネル自体は使えますし、塔の底部にある動力も機能しているみたいで……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 595,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 596,
+            "prop": "name",
+            "attributes": {
+                "content": "……そ、そう。仕事が速いのね。褒めてあげるわ。",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 597,
+            "prop": "name",
+            "attributes": {
+                "content": "それで？　灯台の再起動は、どれくらいでできるのかしら？",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 598,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 599,
+            "prop": "name",
+            "attributes": {
+                "content": "え、ええと、やってみます！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 600,
+            "prop": "name",
+            "attributes": {
+                "content": "ただ、その……皆さんが怪物と戦ってくださっていることは重々承知の上なのですが、これだけは言わせてください……！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 601,
+            "prop": "name",
+            "attributes": {
+                "content": "パネルが使えるということは、再起動自体はそう難しくはないと思います。両親のノートにも手順が書いてありましたし……と、とはいえ初めてのことなので……賭けみたいなものなのですが……",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 602,
+            "prop": "name",
+            "attributes": {
+                "content": "と、とにかく、時間がかかるのは間違いありません……！　ですから僕たちで――",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 603,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 604,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#1$1",
+                "name2": "avg_4009_irene_1#1$1"
+            }
+        },
+        {
+            "id": 605,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 606,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "ystrength": 20.0,
+                "vibrato": 10.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 607,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 608,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_4009_irene_1#7$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 609,
+            "prop": "name",
+            "attributes": {
+                "content": "う、うわわっ……！",
+                "name": "ジョディ"
+            }
+        },
+        {
+            "id": 610,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4042_lumen_1#8$1",
+                "name2": "avg_4009_irene_1#4$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 611,
+            "prop": "name",
+            "attributes": {
+                "content": "この場を守らなきゃ、ってことね。",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 612,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_4009_irene_1#4$1"
+            }
+        },
+        {
+            "id": 613,
+            "prop": "name",
+            "attributes": {
+                "content": "――下は見ないで。続けてちょうだい。",
+                "name": "審問官アイリーニ"
+            }
+        },
+        {
+            "id": 614,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 615,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 616,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 617,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 618,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 619,
+            "prop": "Image",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}
