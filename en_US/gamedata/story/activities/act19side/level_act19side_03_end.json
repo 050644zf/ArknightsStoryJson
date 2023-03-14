@@ -1,0 +1,3750 @@
+{
+    "lang": "en_US",
+    "eventid": "act19side",
+    "eventName": "Dorothy's Vision",
+    "entryType": "ACTIVITY",
+    "storyCode": "DV-3",
+    "avgTag": "After Operation",
+    "storyName": "Power Armor",
+    "storyInfo": "Back in the city, Saria takes the Doctor and Mechanist to a bar to meet a former scientist, only to get a stern warning. At the test site, Silence notes some similarities between the experiments there and her past with the Diαbolic Experiments.\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_bar_1",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$bar_intro",
+                "key": "$bar_loop",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 10,
+            "prop": "name",
+            "attributes": {
+                "content": "This smell is familiar...",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "name",
+            "attributes": {
+                "content": "Too bad there's still work to be done. I miss the sensation of alcohol rushing through my body.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 13,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I've heard your special drink is machine oil.;I've heard you stand on a chair and recite poems when you get drunk.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line15",
+                "option2": "line21"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line26"
+        },
+        {
+            "id": 16,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "name",
+            "attributes": {
+                "content": "You're listening to Blaze, huh?",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "name",
+            "attributes": {
+                "content": "She's always complaining about all the rumors there are about her, and complaining that I take things too rough in her weapon test sessions.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "'Machine oil' is the name of my favorite cocktail.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "Regular patrons of Just One More Pint know it well.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line26"
+        },
+        {
+            "id": 22,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "If you want to dig deep into those kinds of rumors, Doctor, take Blaze up on it next time she invites you to drink.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "Logos and the others will—",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "name",
+            "attributes": {
+                "content": "Let's just say that what you see will make you forget any rumors about me.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 27,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "name",
+            "attributes": {
+                "content": "Have you found your man, Saria?",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "He spends twenty hours a day here.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "name",
+            "attributes": {
+                "content": "Two Trimounts Sunshines, please.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "You don't look like someone who drinks during work hours.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_532_1#9$1"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm not.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_532_1#10$1"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "name",
+            "attributes": {
+                "content": "I've never been one to let alcohol interfere with my brain, regardless of the hour.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "name",
+            "attributes": {
+                "content": "Live a little, Saria.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1"
+            }
+        },
+        {
+            "id": 41,
+            "prop": "name",
+            "attributes": {
+                "content": "Both of these are yours.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "name",
+            "attributes": {
+                "content": "And you'd better pull yourself together, because I'm not buying a third.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "name",
+            "attributes": {
+                "content": "What? Have you gone homeless too, after leaving Rhine?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "name",
+            "attributes": {
+                "content": "How many drinks I'm willing to buy for you depends on how much your information is worth to me.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "name",
+            "attributes": {
+                "content": "Well then, spit it out. What do you want to know?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 49,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "See the liquid in this test tube?",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "name",
+            "attributes": {
+                "content": "Hm? Hmm...",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "name",
+            "attributes": {
+                "content": "It's not for drinking.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "Well then, why are you asking me?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "Show me your right hand.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 59,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "What are you doing?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 61,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "You're right-handed, but you're holding the glass with your left.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "Does your right arm still hurt from the subdermal Arts Unit implant?",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "name",
+            "attributes": {
+                "content": "The what?",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 67,
+            "prop": "name",
+            "attributes": {
+                "content": "Saria...",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "name",
+            "attributes": {
+                "content": "Who's the helmet, and the hood?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "name",
+            "attributes": {
+                "content": "Rhine Engineering? Volvort Kochinski? Maybe... one of those places whose name we dare not speak?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "name",
+            "attributes": {
+                "content": "Did they change their minds? Decide to shut me up forever?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "name",
+            "attributes": {
+                "content": "I promise you, I have nothing to do with any of the organizations you mentioned. Not now, not ever.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "Promise? Words like that ain't even worth the booze in front of me.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, he may not be willing to talk with us here.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "It's you I don't trust, especially not that getup.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "You reek of the Columbian tech elite, know what I mean?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "name",
+            "attributes": {
+                "content": "The hood can stay. I feel better about you.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 84,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Why don't you take a break, Mechanist?;How about you go get yourself a drink?",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line86",
+                "option2": "line86"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 87,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "Alright, I'll be over there.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 90,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "character",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 92,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 93,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "Saria, you've picked up so many tabs for me, let me give you some honest advice.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "Don't dig any deeper, if you don't want to end up like me.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "This test tube of yours, that power armor—you're biting off more than you can chew.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "name",
+            "attributes": {
+                "content": "Yes, more than even you can chew.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 102,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 103,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 106,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 107,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g9_headquarter",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 110,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 111,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 113,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 114,
+            "prop": "name",
+            "attributes": {
+                "content": "Do you understand what it is you've just said?",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 115,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "Of course.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 117,
+            "prop": "name",
+            "attributes": {
+                "content": "It was you who reminded me. I'm not senile yet.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 119,
+            "prop": "name",
+            "attributes": {
+                "content": "This is a very serious accusation.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "Is it now? An accusation?",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "Oh, the accusation that you have something to do with Muelsyse's disappearance? Or the one that you're trying to seize control of Rhine Lab?",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "name",
+            "attributes": {
+                "content": "You need stronger evidence than that to blackmail me.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "Relax, old friend.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "name",
+            "attributes": {
+                "content": "How long have we worked together? Ten years and then some?",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "name",
+            "attributes": {
+                "content": "Did you think I was the type to come chat with an old friend carrying a bunch of papers, voice recordings and legal drafts?",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#5$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "You...",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#5$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 133,
+            "prop": "name",
+            "attributes": {
+                "content": "Just because you did it to me doesn't mean I intend to return the favor.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "name",
+            "attributes": {
+                "content": "Columbians like to put everything on the negotiating table. But you forget, I'm a cunning old Leithanian goat, who likes to play dumb.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 136,
+            "prop": "name",
+            "attributes": {
+                "content": "What exactly do you want?",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 138,
+            "prop": "name",
+            "attributes": {
+                "content": "Just passing by, and to encourage an old friend.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#5$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "I don't understand. I thought you were on Control's side.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#5$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 142,
+            "prop": "name",
+            "attributes": {
+                "content": "You don't understand? We're researchers, after all. There's always more we don't understand than we do. That's part of the fun.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "name",
+            "attributes": {
+                "content": "You're a lot like Kirsten. Too young, and too smart.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "You're always trying to fly high, not realizing how difficult it is for the others to keep up with you.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "name",
+            "attributes": {
+                "content": "All I want is to be left in peace to do my research, and not be dragged along the ground.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "name",
+            "attributes": {
+                "content": "It may only take a couple of years of your administration for the military and big capital to pick Rhine Lab to the bone, but it won't happen tomorrow.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm surprised you have such a high opinion of me.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 150,
+            "prop": "name",
+            "attributes": {
+                "content": "You'll need to deal with the Director of Defense first, however, in order to get to Kirsten.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 152,
+            "prop": "name",
+            "attributes": {
+                "content": "I didn't think Defense had a director.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 154,
+            "prop": "name",
+            "attributes": {
+                "content": "Look at you, your memory failing at such a tender age.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "name",
+            "attributes": {
+                "content": "Kirsten never accepted Saria's resignation.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 157,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 158,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 161,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 162,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_bar_1",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 165,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$bar_intro",
+                "key": "$bar_loop",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 166,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 168,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 169,
+            "prop": "name",
+            "attributes": {
+                "content": "I never understood how you think, Saria.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "name",
+            "attributes": {
+                "content": "No one talks about that ever since everything went down at Loken... my old employer.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "They all chose to cut ties, no matter how much or how little they knew about the experiments.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "name",
+            "attributes": {
+                "content": "That's what smart people do.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "Does that mean you're not smart?",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "Ha... tongue still as sharp as ever, huh?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "I would run if I could. They won't let me.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "You ask if my right hand hurts? Of course it does! But did you think they would let me live this long if I didn't give up my hand and become a test subject?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "name",
+            "attributes": {
+                "content": "I was the goddamned surgeon! Even if I had no idea what they wanted me to implant!",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 181,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 182,
+            "prop": "name",
+            "attributes": {
+                "content": "Still capable of anger, I see. Looks like alcohol hasn't completely numbed you.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 184,
+            "prop": "name",
+            "attributes": {
+                "content": "You've changed, Saria.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "I could see you were angry when you first came to me, a few years ago.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "Oh?",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "You weren't exactly wearing it on your face.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "But I could see it. I felt the same way, when I learned what kind of experiments I was involved in.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "name",
+            "attributes": {
+                "content": "There are other ways, if you want to take down Rhine Lab.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "name",
+            "attributes": {
+                "content": "You're one of the founders. Anybody after Rhine will be queueing up to take your hand.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#10$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 194,
+            "prop": "name",
+            "attributes": {
+                "content": "Taking down Rhine won't solve anything.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "name",
+            "attributes": {
+                "content": "Kill one beast, only for its flesh and blood to feed yet more beasts. The fall of Loken Watertank is proof.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#10$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "Excuses.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "You've gone all over the place for Rhine. You're opposed to them on the surface, but what you're actually doing is cleaning up their messes.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "When I saw you, I knew the rumors were true.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "name",
+            "attributes": {
+                "content": "You were willing to go to jail for Rhine Lab.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 202,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#10$1",
+                "name2": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "Decision",
+            "attributes": {
+                "options": "The Mansfield incident?;Sounds right, but something feels off...",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line204",
+                "option2": "line204"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 205,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "Not the smartest thing to deal in rumors.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "The fall of HydeBro was a headache for the Director of Energy, wasn't it?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "name",
+            "attributes": {
+                "content": "The loss of a key supplier has thrown a wrench into his requests for a new laboratory site. He lost a few major orders, didn't he?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "It was a setback to whatever experiments he had going on.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 212,
+            "prop": "name",
+            "attributes": {
+                "content": "It wasn't me who sent the Hyde brothers to jail.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "MusicVolume",
+            "attributes": {
+                "volume": 0.2,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "You played a big part.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "name",
+            "attributes": {
+                "content": "I know the rules. With the Hyde brothers locked up, the prosecutors no doubt wanted to use them to hook bigger fins.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "Why was there no mention of Rhine Lab in the news? Why does Rhine always emerge unscathed from these things?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "name",
+            "attributes": {
+                "content": "The truth is you've been following the trail, cleaning up all Rhine's little mistakes left along the way.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "That's why you came looking for me...",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "name",
+            "attributes": {
+                "content": "You wanted to know whether or not Rhine had anything to do with this reagent.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "Deep down, you're still the Rhine's Director of Defense. You still think it's your job to pick up after them.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "name",
+            "attributes": {
+                "content": "There's something at Rhine that you can't let go of. Or maybe it's someone. Some sentiment.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "Ha, looks like you do have emotions after all, Saria!",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "name",
+            "attributes": {
+                "content": "At the end of the day, we're all flesh and blood.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 226,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 227,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 230,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 231,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "amount": 0.8,
+                "keep": "true"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g4_corridor",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 234,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 236,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$firestorm",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 237,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 5.0,
+                "xstrength": 50.0,
+                "ystrength": 50.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "Delay",
+            "attributes": {
+                "time": 6.5
+            }
+        },
+        {
+            "id": 239,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_530_1#1$1"
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "The subject is out of control!",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "Restraints have failed!",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "Not getting any neural signals from the subject! Attempting sedative injection... negative!",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_528_1#1$1"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "The subject is activating Originium Arts!",
+                "name": "Rhine Defense Section Employee"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 246,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.07,
+                "block": "true"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_atk_aim",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 248,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.5,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.07,
+                "block": "true"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.07,
+                "block": "true"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.6,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 253,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_528_1#1$1"
+            }
+        },
+        {
+            "id": 254,
+            "prop": "name",
+            "attributes": {
+                "content": "A monster... it's a huge monster...",
+                "name": "Rhine Defense Section Employee"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "name",
+            "attributes": {
+                "content": "No, the flames are manifesting...",
+                "name": "Rhine Defense Section Employee"
+            }
+        },
+        {
+            "id": 256,
+            "prop": "name",
+            "attributes": {
+                "content": "Get the Director on the line, now!",
+                "name": "Rhine Defense Section Employee"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 258,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "character",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 260,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 261,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 262,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 264,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 265,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 266,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 267,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#6$1",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 269,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 270,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#6$1"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "name",
+            "attributes": {
+                "content": "Fire... the fire... cough...",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "name",
+            "attributes": {
+                "content": "Ifrit, where are you...?",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#5$1"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "name",
+            "attributes": {
+                "content": "Ifrit!",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 276,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 277,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.8
+            }
+        },
+        {
+            "id": 278,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_202_demkni_1#1$1",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 280,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 281,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#5$1"
+            }
+        },
+        {
+            "id": 282,
+            "prop": "name",
+            "attributes": {
+                "content": "Saria...?",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 284,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 286,
+            "prop": "name",
+            "attributes": {
+                "content": "She felt no heat in the fiery corridor."
+            }
+        },
+        {
+            "id": 287,
+            "prop": "name",
+            "attributes": {
+                "content": "The eyes of the Vouivre were harder than rock, colder than steel."
+            }
+        },
+        {
+            "id": 288,
+            "prop": "name",
+            "attributes": {
+                "content": "She could not read the emotions within them."
+            }
+        },
+        {
+            "id": 289,
+            "prop": "name",
+            "attributes": {
+                "content": "To this day, she does not know what she saw in the Vouivre's eyes."
+            }
+        },
+        {
+            "id": 290,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 291,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 293,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 294,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "fadetime": 0.0,
+                "amount": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g4_corridor",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 296,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 297,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$drift_intro",
+                "key": "$drift_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 298,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 300,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_535_1#7$1"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "Are you okay, Doc Silence?",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#6$1"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "name",
+            "attributes": {
+                "content": "I...",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_535_1#8$1"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "name",
+            "attributes": {
+                "content": "You've gotta be tired.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "name",
+            "attributes": {
+                "content": "You've been taking care of Doc Moore, and the rest of us.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_535_1#4$1"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm wicked sorry I acted like that, and almost got you hurt.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_535_1#8$1"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "name",
+            "attributes": {
+                "content": "Rhodes Island isn't like Rhine Lab. You and Greyy have been so good to us, and you never asked for nothing for it.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#10$1"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "name",
+            "attributes": {
+                "content": "Is that true?",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm no saint, Sonny.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#6$1"
+            }
+        },
+        {
+            "id": 315,
+            "prop": "name",
+            "attributes": {
+                "content": "I was a Rhine Lab researcher. My experiments almost wiped out an entire city block, countless people along with it...",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_535_1#7$1"
+            }
+        },
+        {
+            "id": 317,
+            "prop": "name",
+            "attributes": {
+                "content": "Huh?",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#10$1"
+            }
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "There was a girl. She was close to me... almost like family.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "name",
+            "attributes": {
+                "content": "She was the subject of the experiment.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 321,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_535_1#8$1"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "name",
+            "attributes": {
+                "content": "What happened to her?",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#10$1"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "name",
+            "attributes": {
+                "content": "She's still alive.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "But only alive. All these years, I've tried and failed to give her back the life she should have had, a normal life.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "But I couldn't stop the situation from deteriorating.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_535_1#8$1"
+            }
+        },
+        {
+            "id": 328,
+            "prop": "name",
+            "attributes": {
+                "content": "Don't blame yourself. I'm sure you never meant to hurt her.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#10$1"
+            }
+        },
+        {
+            "id": 330,
+            "prop": "name",
+            "attributes": {
+                "content": "Ha... haha...",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "Funny, that's how I comforted myself in the past.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#6$1"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "name",
+            "attributes": {
+                "content": "I didn't know. It was others who were truly to blame.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "name",
+            "attributes": {
+                "content": "But was that really so?",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "As the overseer in the field, did I really not know the risks of our research?"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "name",
+            "attributes": {
+                "content": "The answer is clear."
+            }
+        },
+        {
+            "id": 338,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#10$1"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "name",
+            "attributes": {
+                "content": "Either I was blinded by the tantalizing promise of a breakthrough..."
+            }
+        },
+        {
+            "id": 340,
+            "prop": "name",
+            "attributes": {
+                "content": "Or I was far less a researcher than I thought I was."
+            }
+        },
+        {
+            "id": 341,
+            "prop": "name",
+            "attributes": {
+                "content": "And that's harder to do than to hate someone else."
+            }
+        },
+        {
+            "id": 342,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#10$1"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "Perhaps the one I truly could not forgive was...",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_535_1#7$1"
+            }
+        },
+        {
+            "id": 346,
+            "prop": "name",
+            "attributes": {
+                "content": "I never knew your story.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#10$1"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "It's more than just a story. It's why I came here.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_535_1#1$1"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "name",
+            "attributes": {
+                "content": "Aren't you trying to save your friend?",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#10$1"
+            }
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "Of course, I have to save Joyce.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#8$1"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "name",
+            "attributes": {
+                "content": "But I want to save you, and Elena, and Director Franks.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#7$1"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "I want to stop all this, before we get to the point of no return.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_535_1#7$1"
+            }
+        },
+        {
+            "id": 358,
+            "prop": "name",
+            "attributes": {
+                "content": "You believe me?",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_108_silent_1#7$1"
+            }
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "Like I said, I believe in the truth, in what I see for myself.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "And I recall that I've seen something like it.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "The silver things following us—they look like the result of Originium Arts gone awry.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 364,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 367,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 368,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1"
+            }
+        },
+        {
+            "id": 369,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g9_headquarter",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 371,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 372,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 374,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 375,
+            "prop": "name",
+            "attributes": {
+                "content": "By the way, I had Ben bring you something. It should be on your desk now.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#7$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 377,
+            "prop": "name",
+            "attributes": {
+                "content": "Ben?",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 378,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#7$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 379,
+            "prop": "name",
+            "attributes": {
+                "content": "You forgot again? You told him to have tea with me. He talked so much that he nearly drank my entire stash.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#7$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 381,
+            "prop": "name",
+            "attributes": {
+                "content": "I don't remember you owing me anything.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#7$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 383,
+            "prop": "name",
+            "attributes": {
+                "content": "Oh? That wasn't what you said when I'd just completed my chimeric organism experiments.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 385,
+            "prop": "name",
+            "attributes": {
+                "content": "The Diαbolic Experiments.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 387,
+            "prop": "name",
+            "attributes": {
+                "content": "Glad you remember.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "name",
+            "attributes": {
+                "content": "My student used an anesthetic of her own design during the final phase.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "name",
+            "attributes": {
+                "content": "To shocking results.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "Silence was such a smart girl. I miss her.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "name",
+            "attributes": {
+                "content": "After the project was suspended, I reviewed the data logs and found that it was no coincidence.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 393,
+            "prop": "name",
+            "attributes": {
+                "content": "What data?",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 395,
+            "prop": "name",
+            "attributes": {
+                "content": "You're not the only one who digs through the trash.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 396,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 397,
+            "prop": "name",
+            "attributes": {
+                "content": "You mean Loken Watertank? Those data were...",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 399,
+            "prop": "name",
+            "attributes": {
+                "content": "Let's not dwell on clerical matters, shall we?",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "Loken Williams was a genius. Reviewing his data made me realize that I was taking the long way round.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "I was trying to increase the subject's cell activity, in order to increase sync rate with the energy contained within the embedded shards.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "name",
+            "attributes": {
+                "content": "Who would have thought that suppressing the subject's neural responses would be the way to go?",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 404,
+            "prop": "name",
+            "attributes": {
+                "content": "Suppress?",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "I made some small changes to your formula based on this conjecture.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "name",
+            "attributes": {
+                "content": "I hope you'll forgive the initiative.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 409,
+            "prop": "name",
+            "attributes": {
+                "content": "You're a sly one, old goat.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 411,
+            "prop": "name",
+            "attributes": {
+                "content": "Why the irritation? I simply offered a gift before you asked for it.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "name",
+            "attributes": {
+                "content": "Is it really so disappointing to lose a weapon against me?",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 413,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": "It had better be of use to my experiments.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "avg_npc_531_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": "I promise you'll like it.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "name",
+            "attributes": {
+                "content": "Oh, and if you're successful, could you pick up the tab on the ten boxes of black bean tea that Muelsyse owes me?",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "name",
+            "attributes": {
+                "content": "I would have won that bet, if not for my formula.",
+                "name": "Parvis"
+            }
+        },
+        {
+            "id": 419,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 420,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 423,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_bar_1",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 426,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 427,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 428,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 429,
+            "prop": "name",
+            "attributes": {
+                "content": "Back on topic.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "name",
+            "attributes": {
+                "content": "The reagent.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#1$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 432,
+            "prop": "name",
+            "attributes": {
+                "content": "I had a sniff when you took it out.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "name",
+            "attributes": {
+                "content": "Yes, it's the exact same smell.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "name",
+            "attributes": {
+                "content": "Ha, it's the ghosts of the ones who died on my operating table, back to haunt me.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 435,
+            "prop": "name",
+            "attributes": {
+                "content": "Thicker and more numerous...",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#8$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 437,
+            "prop": "name",
+            "attributes": {
+                "content": "Who?",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#8$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 439,
+            "prop": "name",
+            "attributes": {
+                "content": "Who, you ask?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "name",
+            "attributes": {
+                "content": "Who salvaged the most from the ruins of Loken Watertank?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "name",
+            "attributes": {
+                "content": "Time to go home, Saria.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#8$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 443,
+            "prop": "name",
+            "attributes": {
+                "content": "Rhine Lab.",
+                "name": "Saria"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#8$1",
+                "name2": "avg_npc_523_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 445,
+            "prop": "name",
+            "attributes": {
+                "content": "See, you knew the answer all along.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "name",
+            "attributes": {
+                "content": "You already met the Tin Man. He helped you find me.",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "Who was the main sponsor of the Diαbolic Experiments? Who was Loken Watertank's investor?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "Who had the means to hire multiple labs to engage in similar experiments at the same time?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "name",
+            "attributes": {
+                "content": "How irresistible did the order have to be, to make those labs put their petty patent feuds aside and sit down to share data?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "name",
+            "attributes": {
+                "content": "And...",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "name",
+            "attributes": {
+                "content": "Whose hands did the surviving subjects pass through before they were sent out of Columbia?",
+                "name": "Drunkard"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 453,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_532_1#8$1",
+                "name2": "avg_npc_523_1#1$1"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Do you mean...",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line455"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 456,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 457,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 458,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 459,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 460,
+            "prop": "name",
+            "attributes": {
+                "content": "Looks like a pretty lively conversation.",
+                "name": "???"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "name",
+            "attributes": {
+                "content": "I hope I didn't miss too much.",
+                "name": "???"
+            }
+        },
+        {
+            "id": 462,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 463,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 466,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 467,
+            "prop": "Image",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": true
+}

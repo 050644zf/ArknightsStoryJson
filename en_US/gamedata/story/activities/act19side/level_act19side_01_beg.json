@@ -1,0 +1,4567 @@
+{
+    "lang": "en_US",
+    "eventid": "act19side",
+    "eventName": "Dorothy's Vision",
+    "entryType": "ACTIVITY",
+    "storyCode": "DV-1",
+    "avgTag": "Before Operation",
+    "storyName": "Trimounts Streets",
+    "storyInfo": "The Doctor and Mechanist go into the alley to investigate Muelsyse's disappearance, only to find themselves ambushed. Outside the city, the Pioneers seek to bargain hostages for their freedom. They fail.\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g6_mainstreet",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 9,
+            "prop": "name",
+            "attributes": {
+                "content": "3:56 P.M. \\ Overcast"
+            }
+        },
+        {
+            "id": 10,
+            "prop": "name",
+            "attributes": {
+                "content": "Main District of Trimounts"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1$1"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "name",
+            "attributes": {
+                "content": "This is the third time you've paged through Ptilopsis's personal log, Doctor.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "Any new discoveries?",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 15,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Ptilopsis keeps some detail-rich records.;Pioneer Team leader had a good education.;Elena's coffee ought to be pretty good.",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line17",
+                "option2": "line24",
+                "option3": "line30"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line35"
+        },
+        {
+            "id": 18,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "Ptilopsis has a kind of special chip implanted in her brain.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "'Device #9'—Mayer calls it. Guessing that's Rhine Lab's internal codename for that tech.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "name",
+            "attributes": {
+                "content": "It's plugged up there directly into her nervous system. Functions as a regular part of her mind, and logs data on neural activity in each region and lobe all the while.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "Which means you've just been looking at every last thing Ptilopsis's visual processors—her own two eyes—have been seeing.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 24,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line35"
+        },
+        {
+            "id": 25,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "name",
+            "attributes": {
+                "content": "Columbia's Pioneer Team members come from all backgrounds.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "name",
+            "attributes": {
+                "content": "Youth dissatisfied with their lives, middle-aged couples drowning in debt, petty criminals who don't want to end up behind bars—",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "name",
+            "attributes": {
+                "content": "And of course, Infected powerless to cough up exorbitant insurance, who don't resign themselves to being shut away in quarantine zones for 'treatment.'",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 30,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line35"
+        },
+        {
+            "id": 31,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm more interested in the agrypnotic Franks has been using, personally.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "I love a drink after work as much as the next, but all that fluid intake on the job's bound to cut up your train of thought.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 35,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 36,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "name",
+            "attributes": {
+                "content": "From the logs Ptilopsis keeps synchronized with us, we can tell that along with her, there's our other Rhodes Island-partnered operator, Elena in Rhine Lab's Energy Section...",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "name",
+            "attributes": {
+                "content": "Along with Rhine Lab Originium Art Section's Director, Dorothy Franks. That's everyone caught up in this abduction by the Pioneers.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "name",
+            "attributes": {
+                "content": "And practically simultaneously, Saria informed us Rhine Lab Ecological Section's Director Muelsyse went missing after she sent out an SOS, and there's no telling if she's currently alive or dead.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 41,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Think there's an issue at Rhine Lab?;......;Are research jobs seriously this high-risk?",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line43",
+                "option2": "line47",
+                "option3": "line51"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line55"
+        },
+        {
+            "id": 44,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "name",
+            "attributes": {
+                "content": "At present, looks like it.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 47,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line55"
+        },
+        {
+            "id": 48,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 49,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 51,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line55"
+        },
+        {
+            "id": 52,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "name",
+            "attributes": {
+                "content": "Welcome to Columbia.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 55,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 56,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "name",
+            "attributes": {
+                "content": "Sky-high odds Rhine Lab is already in crisis, if things are pushing Saria to ask Rhodes Island for help.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "Lucky the landship's nearby, or else we'd be hard-pressed to make an expeditious response.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 59,
+            "prop": "name",
+            "attributes": {
+                "content": "The kidnapping's gone down at a new site about a hundred or so klicks out from Trimounts, but Kal'tsit's concerned this has something to do with the experiments that got shut down a while back.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 61,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "Decision",
+            "attributes": {
+                "options": "What do they do at that site?;Originium mutation experimentation...;Tell me some more about Trimounts.",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line63",
+                "option2": "line67",
+                "option3": "line71"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line75"
+        },
+        {
+            "id": 64,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "name",
+            "attributes": {
+                "content": "The stuff they show to outsiders indicates it's your typical testing grounds, currently in the middle of construction.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 67,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line75"
+        },
+        {
+            "id": 68,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "name",
+            "attributes": {
+                "content": "Kal'tsit's cleared us to access all relevant files before we enter Trimounts.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 71,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line75"
+        },
+        {
+            "id": 72,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "The city's the beating heart of Columbian science and technology. Hundreds of tech companies are headquartered in Trimounts.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 75,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 76,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "The 'Diαbolic Crisis,' 'Loken Watertank,' the 'Lumberyard.'",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "Each name means something to one of our Rhodes Island operators, and behind their fronts, ties to hundreds of similar experiments.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "Most of these experiments have involved Originium's mutative effects on living beings' cells, and each one has been incredibly dangerous.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "name",
+            "attributes": {
+                "content": "In Columbia, more often than not, tech giants like Rhine Lab aren't going to participate directly in such high-risk experiments.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "They'll have smaller-scale organizations carry them out on their behalf, hire a Pioneer Team, construct a suitable site out in the wasteland fringes of the city to execute their experimental work.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "name",
+            "attributes": {
+                "content": "In this case, Ptilopsis is at Site 359, which is one of those.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 84,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I remember your previous work experience...;Have you done work at similar sites before?",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line86",
+                "option2": "line86"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 87,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "Work? I'm not gracing my time there with the word 'work.'",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "Those megacorps 'plagiarized' what I created, and applied it all in places it wasn't meant to be.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "See that billboard, about fifty meters out? 'Volvort Kochinski's Automatic Popcorn-a-Tron for the home—faster, sweeter, every time.'",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "I still have the prototype sketch for its energy core on my terminal.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "It was supposed to be used in automatic wasteland road-cleaners at first, but my manager decided it'd never sell as a product.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "name",
+            "attributes": {
+                "content": "He says, what kind of HR company's spending on better equipment for Pioneers?",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "Brought my mind to Rhodes Island after that. Our course-clearer team in Engineering's using the very latest model.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "I've long seen it coming. Be it Volvort Kochinski or Rhine Lab, in the end, all these so-called tech firms are going to be destroyed by their own creations—",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "Because they've never respected the creations themselves.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 98,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "Decision",
+            "attributes": {
+                "options": "What if Muelsyse got killed by her very own experiments?;It's not some horrific test subject holding Ptilopsis hostage, right?!",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line100",
+                "option2": "line100"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 101,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "name",
+            "attributes": {
+                "content": "Was that a laugh line, Doctor?",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "name",
+            "attributes": {
+                "content": "Because what you said isn't sci-fi flick material, or a dumb joke.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "Chances are it's tomorrow's news.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 107,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Now I get why Closure admires AND fears you...;......;No wonder you and Logos make a good team.",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line109",
+                "option2": "line114",
+                "option3": "line118"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line124"
+        },
+        {
+            "id": 110,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "name",
+            "attributes": {
+                "content": "You mean her occasional stints as target practice for my new weapons?",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "She can stop interrupting my work with her ridiculous ideas, and then she won't need to fear me.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 114,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line124"
+        },
+        {
+            "id": 115,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 117,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 118,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line124"
+        },
+        {
+            "id": 119,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "name",
+            "attributes": {
+                "content": "As a partner, Logos is pretty good.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "But can you give him a reminder, Doctor?",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "If he could cut some of his speechcraft, mission times would go down by at least 30%, and I could spend more time on my actual job.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 124,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 125,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "Done processing the intel, Doctor.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "This is as much useful info as we have for now. I've already set the most important files to top priority on lookup. You can read them via PRTS at any time.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 129,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Any more news?",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line131"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 132,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "name",
+            "attributes": {
+                "content": "Ptilopsis's logs haven't been updated past this point.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "name",
+            "attributes": {
+                "content": "Device #9's data transmission should be more stable ever since Mayer adjusted it.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "name",
+            "attributes": {
+                "content": "So unless something physically happened to Ptilopsis...",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 137,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I'm getting concerned for her.;Fingers crossed Silence and Greyy find her ASAP.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line139",
+                "option2": "line139"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 140,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "Silence will notify us of any developments at the site as they happen.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "name",
+            "attributes": {
+                "content": "Saria's copied the info. She'll be rendezvousing with us in an hour.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, any other proposals for the time we have left?",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 145,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Go to where Muelsyse hit trouble, take a look.",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line147"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 148,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm a mechanist. I'm no detective's assistant.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 150,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 151,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "Decision",
+            "attributes": {
+                "options": "But it's all we can do right now.;And I'm just an Originium researcher.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line153",
+                "option2": "line153"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 154,
+            "prop": "Decision",
+            "attributes": {
+                "options": "You're the only one I can count on, Mechanist.",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line155"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 156,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "Alright, Doctor. In that case, we move now.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "Here's hoping I'm back on the landship by tomorrow, at my beloved workbench.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 160,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 161,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 165,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g2_edgeofbase",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 167,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 168,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 170,
+            "prop": "name",
+            "attributes": {
+                "content": "6:47 P.M. \\ Overcast"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "Test Site 359 Observation Station, Trimounts Outskirts"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 173,
+            "prop": "name",
+            "attributes": {
+                "content": "Anything new with the people on-site?",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "Nothing, officer.",
+                "name": "Rhine Defense Member"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "You shot word to your Director Clooney or whatever at Rhine, right? When exactly will he be here?",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "Director Clooney's in a... meeting right now.",
+                "name": "Rhine Defense Member"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#5$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 181,
+            "prop": "name",
+            "attributes": {
+                "content": "Meeting? You're telling me he's still in a meeting? What kind of meeting's more important than his employees' lives?",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "name",
+            "attributes": {
+                "content": "Dammit!",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "Give me those binoculars.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#5$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "Uh... okay.",
+                "name": "Rhine Defense Member"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "You don't think those Pioneers are gonna follow through, do you?",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "Let me tell you—they will.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "Push them enough, and they'll do any fricking thing.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 191,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 192,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#1$2",
+                "name2": "avg_108_silent_1#1$1",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 194,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 195,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#1$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 196,
+            "prop": "name",
+            "attributes": {
+                "content": "So you mean our colleagues at the site could be in mortal danger?",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "Who are you?",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#1$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 200,
+            "prop": "name",
+            "attributes": {
+                "content": "Olivia Silence, Rhine Lab researcher, and Rhodes Island Pharmaceuticals-partnered Medic Operator.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "name",
+            "attributes": {
+                "content": "This is my colleague from Rhodes Island, Mr. Greyy with the Engineering Department.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#4$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 203,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "jump",
+                "power": 5.0,
+                "times": 2.0,
+                "fadetime": 0.51,
+                "block": "true"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "H-Hello! I'm a Rhodes Island electrical engineer... but I'm still interning!",
+                "name": "Greyy"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "Rhodes Island? What kind of useless crap does that company do?",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#5$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "Er...",
+                "name": "Greyy"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "Forget it, save the explanation. One day passes in Trimounts and a barge of fresh company names unloads out of the sewers.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "You're Rhine Lab, right? Got any pull in the office?",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#5$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "Pull? Ma'am, I'm not too sure what you mean...",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "Forget it, I knew you wouldn't be in charge.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "name",
+            "attributes": {
+                "content": "You strike me as one of those... eggheads-swimming-in-books types, like the hostages they've got.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "You guys and those guys might as well live on different planets.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#5$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "I heard they were the Pioneers working at this site...",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "Pioneers.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "name",
+            "attributes": {
+                "content": "The name rings too nice for anything except billboards.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "And I know better than anyone what kind of people they are. Convicts, gamblers, Infected who can't stick the medical fees... Nothing to lose by the time they went out to the wastes.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#1$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "Excuse me... could we try and talk to them?",
+                "name": "Greyy"
+            }
+        },
+        {
+            "id": 226,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#6$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 227,
+            "prop": "name",
+            "attributes": {
+                "content": "You might have realized already, but Dr. Silence and I are both Infected. We're in a place to understand their situation.",
+                "name": "Greyy"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "Rhine Lab makes stupid cash, doesn't it? So does Rhodes Island or whatever?",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "name",
+            "attributes": {
+                "content": "You've got these, let's say 'well-intentioned,' companies paying your insurance premiums—that's the key thing.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "That's why you can shut up about understanding them.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#5$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "Premiums? Which part exactly is...",
+                "name": "Greyy"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#5$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "It's the way things work here in Columbia. A policy aimed at Infected.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "Ma'am, please trust us—Rhodes Island is a pharmaceutical corporation dedicated to addressing Infected issues.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "Addressing issues? If I gave you a crossbow and told you to square away those kidnappers from here, would you do it?",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#5$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "...I couldn't.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm a doctor.",
+                "name": "Silence"
+            }
+        },
+        {
+            "id": 242,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "name",
+            "attributes": {
+                "content": "What about him?",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#4$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 245,
+            "prop": "name",
+            "attributes": {
+                "content": "Me? N-No, I don't think we've reached the point where we have to resort to violence...",
+                "name": "Greyy"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "Then it looks to me like you two can't help much at all.",
+                "name": "Mary"
+            }
+        },
+        {
+            "id": 248,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 249,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 252,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g3_cottage",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 254,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 256,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 257,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 259,
+            "prop": "name",
+            "attributes": {
+                "content": "No sign of anyone coming, sir.",
+                "name": "Pioneer Team Member"
+            }
+        },
+        {
+            "id": 260,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 261,
+            "prop": "name",
+            "attributes": {
+                "content": "They're playing it cool.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "Say, you think the megacorps might not, uh... care if their hires die?",
+                "name": "Pioneer Team Member"
+            }
+        },
+        {
+            "id": 264,
+            "prop": "name",
+            "attributes": {
+                "content": "What with those two being Infected and all.",
+                "name": "Pioneer Team Member"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 266,
+            "prop": "name",
+            "attributes": {
+                "content": "Don't give me that.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "name",
+            "attributes": {
+                "content": "Infected aren't subhuman or nothing. At the very least, we don't wanna treat each other like that.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "Alright... said that on the Pioneer recruitment ads too.",
+                "name": "Pioneer Team Member"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 271,
+            "prop": "name",
+            "attributes": {
+                "content": "Well, count our lucky stars the ads ain't all lies, then.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "name",
+            "attributes": {
+                "content": "Would you kindly drop the communicator, Dr. Urbica?",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#9$1"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Elena"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 276,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.8,
+                "xstrength": 50.0,
+                "ystrength": 50.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "He said drop it! No funny business!",
+                "name": "Pioneer Team Member"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#9$1"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "name",
+            "attributes": {
+                "content": "Alright.",
+                "name": "Elena"
+            }
+        },
+        {
+            "id": 280,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 281,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 282,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 283,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "ypos": 40.0,
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 284,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.6
+            }
+        },
+        {
+            "id": 285,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#3$1"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm... I'm putting it down. Please don't hurt us.",
+                "name": "Elena"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 288,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 2.5
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.7
+            }
+        },
+        {
+            "id": 290,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 291,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "Sir, she was sending messages!",
+                "name": "Pioneer Team Member"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_535_1#11$1"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "Bring me those comms, Sam.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 296,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#3$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 299,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#3$1",
+                "name2": "avg_npc_534_1#1$1",
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 301,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 302,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 303,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 2.5
+            }
+        },
+        {
+            "id": 304,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 305,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 306,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 307,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "ypos": 50.0,
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 308,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 100.0,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 310,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.2
+            }
+        },
+        {
+            "id": 311,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 300.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_135_halo_1#3$1",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 313,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 314,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 315,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 316,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_npc_535_1#11$1"
+            }
+        },
+        {
+            "id": 317,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 319,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 321,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 322,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "xpos": 100.0,
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 324,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 325,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "Hmm. Only half-typed. Didn't get to send anything yet.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#3$1"
+            }
+        },
+        {
+            "id": 328,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Elena"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_535_1#11$1"
+            }
+        },
+        {
+            "id": 330,
+            "prop": "name",
+            "attributes": {
+                "content": "These are our exact coordinates. You want them to send a drone in or something?",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "Let me give you another idea. Change this to an SOS, send it to your tutor, your manager... whoever.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "name",
+            "attributes": {
+                "content": "Tell them—I'm waiting. And my patience is running out.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#9$1"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "name",
+            "attributes": {
+                "content": "What exactly are you after?",
+                "name": "Elena"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_535_1#11$1"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "Well that's wicked simple, doctor.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "name",
+            "attributes": {
+                "content": "Me and my friends here, we all just wanna leave this place alive. That's all.",
+                "name": "Sonny"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 339,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 340,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 342,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 343,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g7_mainstreet_n",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 345,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$m_dia_street_intro",
+                "key": "$m_dia_street_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 346,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 348,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_npc_530_1#1$1"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 350,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 352,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 354,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 355,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "Director, finally, you're back! Can you spare a moment?",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#7$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 358,
+            "prop": "name",
+            "attributes": {
+                "content": "You're... Ben. Ben from Structural.",
+                "name": "???"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#7$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "Y-You remember my name?",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "Call me Ferdinand. Nine whole directors at Rhine Lab and all.",
+                "name": "???"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "Sir... Ferdinand.",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 366,
+            "prop": "name",
+            "attributes": {
+                "content": "My next meeting is in ten minutes.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "I can spare you seven of those.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 369,
+            "prop": "name",
+            "attributes": {
+                "content": "Ahh... alright, thank you, thank you.",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "name",
+            "attributes": {
+                "content": "Sir, do you know where Control is right now?",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "name",
+            "attributes": {
+                "content": "I've got Structural's application for equipment purchases here. Control was supposed to give us an answer three days ago... but we haven't heard anything from her.",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "Structural's having to suspend a lot of its experiments right now...",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 374,
+            "prop": "name",
+            "attributes": {
+                "content": "Give me the form.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 376,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 378,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 379,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 380,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 381,
+            "prop": "name",
+            "attributes": {
+                "content": "—",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "name",
+            "attributes": {
+                "content": "Alright, go procure.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 384,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 100.0,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 385,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 386,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 387,
+            "prop": "name",
+            "attributes": {
+                "content": "Did... Did you just sign? The handbook says large-scale equipment purchases this expensive have to go through Control...",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 389,
+            "prop": "name",
+            "attributes": {
+                "content": "How long have you been with Rhine Lab? Just a couple of months?",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 391,
+            "prop": "name",
+            "attributes": {
+                "content": "Yes, sir... I reported in a month ago.",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 393,
+            "prop": "name",
+            "attributes": {
+                "content": "See this site in front of you?",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 395,
+            "prop": "name",
+            "attributes": {
+                "content": "Huh?",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 396,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 397,
+            "prop": "name",
+            "attributes": {
+                "content": "Isn't it monumental?",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#2$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 399,
+            "prop": "name",
+            "attributes": {
+                "content": "Fifteen years ago, this place was still wasteland, not even a single nomadic plate yet.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "You wouldn't see Rhine Lab on a foldout of Trimounts back in those days.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#2$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 402,
+            "prop": "name",
+            "attributes": {
+                "content": "I...",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 404,
+            "prop": "name",
+            "attributes": {
+                "content": "Meet Parvis for tea, if get the chance.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "You've got a lot to learn, Ben. And you won't find it in your handbook.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 407,
+            "prop": "name",
+            "attributes": {
+                "content": "A-Alright... Got it, sir.",
+                "name": "Rhine Lab Tech"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 409,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 410,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 300.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 412,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 413,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 0.51
+            }
+        },
+        {
+            "id": 414,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": "Well look at that, I still have four minutes left.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 418,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$transmission",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 419,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 420,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 421,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 422,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 423,
+            "prop": "CharacterCutin",
+            "attributes": {
+                "widgetID": "1",
+                "name": "avg_npc_536_1#1$1",
+                "style": "cutin",
+                "fadetime": 0.5,
+                "offsetx": 300.0,
+                "width": 200.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "name",
+            "attributes": {
+                "content": "Not often you call me when it's light out, Ferdinand.",
+                "name": "???"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 427,
+            "prop": "name",
+            "attributes": {
+                "content": "Ho'olheyak.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "name",
+            "attributes": {
+                "content": "Are you done with everything I asked?",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 429,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "name",
+            "attributes": {
+                "content": "Mmhm... at least three empty seats for Rhine Lab's directors' meeting today?",
+                "name": "Ho'olheyak"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 432,
+            "prop": "name",
+            "attributes": {
+                "content": "No. That's not enough.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "name",
+            "attributes": {
+                "content": "Oh? Which director's next?",
+                "name": "Ho'olheyak"
+            }
+        },
+        {
+            "id": 435,
+            "prop": "name",
+            "attributes": {
+                "content": "Are you finally fed up with the old goat behind the chimeric organism experiments, or do you want the dreamer at the test site to never come back?",
+                "name": "Ho'olheyak"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 437,
+            "prop": "name",
+            "attributes": {
+                "content": "Word is Rhodes Island's people went to the site.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "name",
+            "attributes": {
+                "content": "The experiment's almost complete. I don't want anyone getting in the way before it's done, understood?",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "name",
+            "attributes": {
+                "content": "You want me on site?",
+                "name": "Ho'olheyak"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 442,
+            "prop": "name",
+            "attributes": {
+                "content": "No, no need for that.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "name",
+            "attributes": {
+                "content": "How cruel. Your assistant's one of the hostages, isn't she? I saw that Elena girl once. She's as pretty as she is hardworking.",
+                "name": "Ho'olheyak"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "name",
+            "attributes": {
+                "content": "I had a feeling you'd like her.",
+                "name": "Ho'olheyak"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "She's with Energy. She can wrangle the Pioneers.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "You keep an eye on developments in the city.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "name",
+            "attributes": {
+                "content": "It's unlikely Rhodes Island would only send two operators to the site. Don't forget, Saria's had a line to them all this time.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "name",
+            "attributes": {
+                "content": "Oh? Your Defense Director again?",
+                "name": "Ho'olheyak"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "Saria's already stalled our experiments long enough... Both the Colonel and I are running short of patience.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "name",
+            "attributes": {
+                "content": "Remember, they can't find anything this time.",
+                "name": "Ferdinand"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 456,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$transmission",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 457,
+            "prop": "CharacterCutin",
+            "attributes": {
+                "widgetID": "1",
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.8
+            }
+        },
+        {
+            "id": 459,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 460,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 462,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1$1"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g8_alley_n",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 465,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 467,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1$1"
+            }
+        },
+        {
+            "id": 468,
+            "prop": "name",
+            "attributes": {
+                "content": "This is the place, Doctor.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "name",
+            "attributes": {
+                "content": "The last message we got from Saria was sent from this alley.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 470,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 471,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 472,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Looks normal to me.;We aren't exactly near Rhine Lab HQ.;Right by the commercial sector.",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line473",
+                "option2": "line477",
+                "option3": "line481"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line486"
+        },
+        {
+            "id": 474,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "name",
+            "attributes": {
+                "content": "There's hundreds of these alleys in Trimounts.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 476,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 477,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line486"
+        },
+        {
+            "id": 478,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "name",
+            "attributes": {
+                "content": "Here to there is about a half-hour trip by car.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 481,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line486"
+        },
+        {
+            "id": 482,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "That's the exact sector she was in.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "She was waiting for Muelsyse. They'd agreed to meet at a specific time.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 486,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 487,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Seems like Muelsyse got chased here.",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line489"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 490,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "name",
+            "attributes": {
+                "content": "If she wasn't being pursued, she'd never choose to set foot in this alley.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 492,
+            "prop": "name",
+            "attributes": {
+                "content": "No matter who it was, acting in the open streets would've obviously been too risky.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 494,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Silence told me about Muelsyse's ability.;Saria gave me a report on Muelsyse once.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line496",
+                "option2": "line496"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 497,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 498,
+            "prop": "name",
+            "attributes": {
+                "content": "Right... search complete.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 499,
+            "prop": "name",
+            "attributes": {
+                "content": "'Ability to manipulate water molecules'—would that be energy conversion-type or matter restructuring-type in terms of Originium Arts? No matter which principle it is, it's powerful at a glance.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "name",
+            "attributes": {
+                "content": "'Water molecules'—no flaws visible to the naked eye?",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 501,
+            "prop": "name",
+            "attributes": {
+                "content": "Even more interesting. Experimental research folks and us mechanists are alike. Our powers of observation are usually razor-keen.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "name",
+            "attributes": {
+                "content": "If it fooled even Silence and Mayer, then it's not your ordinary Arts illusion.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 503,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 504,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Muelsyse wouldn't go down easy in a fight.;Muelsyse has strong self-preservation abilities.;Muelsyse is basically fight and flight in one.",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line506",
+                "option2": "line506",
+                "option3": "line506"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 507,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "There's a couple of scorch marks on the ground.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "name",
+            "attributes": {
+                "content": "Not very wide-range... whoever did it, all signs point to some kind of technical equipment used to heat the air surrounding Muelsyse.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "Considering her Arts are heavily dependent on water molecules, her opponent must've known her very well.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 512,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "Decision",
+            "attributes": {
+                "options": "As well as we do.",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line514"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 515,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 516,
+            "prop": "name",
+            "attributes": {
+                "content": "You mean...",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 517,
+            "prop": "name",
+            "attributes": {
+                "content": "They might be a Rhine insider too?",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 518,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 519,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$e_atk_cadkgt_s_lp",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 520,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 521,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, watch out!",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 524,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 0.51
+            }
+        },
+        {
+            "id": 525,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 528,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 529,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 530,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 531,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 532,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 533,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 534,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 535,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$nervous_intro",
+                "key": "$nervous_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 536,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 537,
+            "prop": "Decision",
+            "attributes": {
+                "options": "That was close...;I was almost well-done there.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line538",
+                "option2": "line538"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 539,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 540,
+            "prop": "name",
+            "attributes": {
+                "content": "That was an energy weapon.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "name",
+            "attributes": {
+                "content": "Shot from deep inside the alley. Enemy's only thirty meters from us, give or take.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 542,
+            "prop": "name",
+            "attributes": {
+                "content": "And getting closer.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 543,
+            "prop": "name",
+            "attributes": {
+                "content": "Doctor, you'll want to stay behind me.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 544,
+            "prop": "name",
+            "attributes": {
+                "content": "Defense system active.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 546,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 547,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Think we're in an ambush?;Can we hold out?",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line548",
+                "option2": "line548"
+            }
+        },
+        {
+            "id": 548,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 549,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 550,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 551,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_mechawalk"
+            }
+        },
+        {
+            "id": 552,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_526_1#1$1",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 553,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.5
+            }
+        },
+        {
+            "id": 554,
+            "prop": "name",
+            "attributes": {
+                "content": "—",
+                "name": "???"
+            }
+        },
+        {
+            "id": 555,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_mechalock"
+            }
+        },
+        {
+            "id": 556,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 557,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 558,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 559,
+            "prop": "name",
+            "attributes": {
+                "content": "Dr. {@nickname}, I've never seen this model of power armor before. It's new.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 560,
+            "prop": "name",
+            "attributes": {
+                "content": "Without testing, I can't tell you exactly how destructive any weapon hooked up to this could get.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 561,
+            "prop": "name",
+            "attributes": {
+                "content": "And by that, I mean we need a change of plans.",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 562,
+            "prop": "name",
+            "attributes": {
+                "content": "Escape system active—now get on my back!",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 563,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 564,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 565,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 566,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 567,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 568,
+            "prop": "Image",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": true
+}
