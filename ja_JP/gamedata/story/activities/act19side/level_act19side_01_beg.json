@@ -1,0 +1,4567 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act19side",
+    "eventName": "翠玉の夢",
+    "entryType": "ACTIVITY",
+    "storyCode": "DV-1",
+    "avgTag": "戦闘前",
+    "storyName": "トリマウンツ街道",
+    "storyInfo": "ミュルジス失踪の調査に向かったドクターとMechanistは、路地で待ち伏せに遭う。一方基地のほうでは、開拓者たちが人質をとって自由を得ようと動き出していた。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g6_mainstreet",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 9,
+            "prop": "name",
+            "attributes": {
+                "content": "p.m. 3:56 天気/曇天"
+            }
+        },
+        {
+            "id": 10,
+            "prop": "name",
+            "attributes": {
+                "content": "トリマウンツ中心部"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1$1"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、今見ていたのは……フィリオプシスの個人記録か。これでもう三回目だな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "新しい発見はあったか？",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 15,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "Decision",
+            "attributes": {
+                "options": "彼女の記録はつくづく詳細だな。;開拓隊のリーダーはまともな教育を受けているようだ。;エレナのコーヒーが美味しそうだった。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line17",
+                "option2": "line24",
+                "option3": "line30"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line35"
+        },
+        {
+            "id": 18,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "それは、フィリオプシスの脳に特殊なチップが埋め込まれているからだ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "メイヤーは『九号デバイス』と呼んでいたが、恐らくライン生命内部でのコード名だろう。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "name",
+            "attributes": {
+                "content": "このチップは、フィリオプシスの脳神経へ直に接続されており、大脳の一部として正常に機能すると同時に、脳内各部位での神経活動データを記録している。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "つまり、君が今見たのはフィリオプシスの視覚処理器官――彼女の両目で観測したすべての記録だ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 24,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line35"
+        },
+        {
+            "id": 25,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "name",
+            "attributes": {
+                "content": "クルビア開拓隊の出自は様々だからな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "name",
+            "attributes": {
+                "content": "生活に不満を抱いた若者や、借金を抱え暮らしが行き詰まった中年夫婦、盗みを働き逮捕され刑務所送りを拒んだ犯罪者――",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "name",
+            "attributes": {
+                "content": "そして、高額な保険料は払えないが、収容区画に閉じ込められたくもないと考える感染者もいる。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 30,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line35"
+        },
+        {
+            "id": 31,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "私としては、フランクスが使っているカフェイン剤のほうが興味をそそられるがな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "飲料の摂取は時と場合を選ぶものだ。仕事終わりのアルコールは格別だが、仕事中にカフェイン飲料を飲みすぎると、思考が中断されやすくなる。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 35,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 36,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "name",
+            "attributes": {
+                "content": "ともあれ……フィリオプシスが同期してきた記録によると、彼女のほかに、同じくロドスのオペレーターであるライン生命エネルギー課のエレナと……",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "name",
+            "attributes": {
+                "content": "ライン生命アーツ応用課主任のドロシー・フランクスが、開拓者たちに誘拐されたようだな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "name",
+            "attributes": {
+                "content": "またそれとほぼ同時に、サリアからの連絡が入っている。ライン生命生態課主任のミュルジスが救援を求める緊急メッセージを送ったあとに失踪し、現在生死不明とのことだ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 41,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ライン生命に何かあったようだ。;……;研究者というのはそんなに危険な仕事だったかな。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line43",
+                "option2": "line47",
+                "option3": "line51"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line55"
+        },
+        {
+            "id": 44,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "name",
+            "attributes": {
+                "content": "現状を見るに、そのようだな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 47,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line55"
+        },
+        {
+            "id": 48,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 49,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 51,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line55"
+        },
+        {
+            "id": 52,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、ここではな。クルビアへようこそ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 55,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 56,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "name",
+            "attributes": {
+                "content": "サリアがロドスに支援を要請してきた以上、ライン生命は危機に瀕している可能性が高い。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "本艦が付近にいたのは幸いだったな。そうでなければ、迅速な対応は難しかっただろう。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 59,
+            "prop": "name",
+            "attributes": {
+                "content": "さて、この誘拐事件はトリマウンツから100キロ以上離れた新設基地で起きたものだが……ケルシーはこの件に以前中断された例の実験が関わっているのでは、と危惧している。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 61,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "Decision",
+            "attributes": {
+                "options": "その基地の建設目的は？;源石変異実験、か……;トリマウンツについて、もう少し詳しく教えてくれ。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line63",
+                "option2": "line67",
+                "option3": "line71"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line75"
+        },
+        {
+            "id": 64,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "name",
+            "attributes": {
+                "content": "対外的な資料によれば、普通の実験施設だな。現在建設中とある。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 67,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line75"
+        },
+        {
+            "id": 68,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "name",
+            "attributes": {
+                "content": "トリマウンツに入る前、ケルシーは我々に実験の関連ファイルすべての閲覧権限を与えた。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 71,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line75"
+        },
+        {
+            "id": 72,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "この都市はクルビアの科学と技術の中心だ。数百ものテクノロジー企業が、本社をトリマウンツに置いている。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 75,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 76,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "――「炎魔事件」、「ローキャン水槽」、そして「伐採場」……",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "今口にした言葉はそれぞれ別のオペレーターに関係しており、さらにその背後には数百もの類似実験が存在する。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "その多くが生物細胞に対する源石の変異作用に関するもので、どれも非常に危険な実験だ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "name",
+            "attributes": {
+                "content": "クルビアでは、ライン生命のような大手テクノロジー企業は、その手のハイリスクな実験に直接の関与はしないのが通例だ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "彼らは開拓隊を雇って都市郊外の荒れ地に実験基地を建設させ、実験そのものは小規模な機関に委託して行わせている。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "name",
+            "attributes": {
+                "content": "今回フィリオプシスが向かった359号基地もその一つだ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 84,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "Decision",
+            "attributes": {
+                "options": "確か、君の昔の仕事は……;似たような基地で仕事をしたことがあるのか？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line86",
+                "option2": "line86"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 87,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "あの経験を「仕事」と呼ぶのは御免こうむる。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "大企業どもは私の作品を「盗用」し、本来用いるべきでない分野に用いたんだ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "たとえば――50メートル先にあるあの看板が見えるか？　「ヴォルヴォート・コシンスキーの家庭用自動ポップコーンメーカー　速く美味しく高品質」……などと謳う広告だ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "あの機械に使われたエネルギーコアの試作設計図は、今でも私の端末に残っている。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "あの部品は元々、荒れ地向けの自動路面整備機に使う予定だったんだが、当時の上司がそんな製品は売れないに決まっていると言い出してな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "name",
+            "attributes": {
+                "content": "奴はこうも言っていたよ。「開拓者のために良い機材を買いたがる企業なんかどこにある？」……と。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "その後私は、路面整備機のアイデアと共にロドスへとやってきた。そして今、航路障害排除チームのエンジニアが使っているのがその最新型というわけだ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "――私には昔からわかっていたことだが、ヴォルヴォート・コシンスキーにせよ、ライン生命にせよ、いわゆるテクノロジー企業というものは最終的には自らの創造物によって破壊される運命にある。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "奴らは創造という行為を尊重したことがないからな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 98,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ミュルジスも自身の実験の産物に追い詰められたのか？;フィリオプシスは凶悪な実験体に攫われたとか……！？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line100",
+                "option2": "line100"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 101,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "name",
+            "attributes": {
+                "content": "今のは笑ったほうがよかったか？",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、君の言ったことはSF話にもジョークにもなりえないし――",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "なんなら、明日のニュースとして報道されてもおかしくないんだ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 107,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "Decision",
+            "attributes": {
+                "options": "クロージャが君に敬意と恐れを抱く理由がわかってきた。;……;Logosと上手くやっているだけのことはあるな。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line109",
+                "option2": "line114",
+                "option3": "line118"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line124"
+        },
+        {
+            "id": 110,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "name",
+            "attributes": {
+                "content": "それは私が時折彼女を新しい武器の実験台にしているからか？",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "くだらんアイデアで私の仕事を邪魔しなければ、恐れを抱く必要などないと思うがな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 114,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line124"
+        },
+        {
+            "id": 115,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 117,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 118,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line124"
+        },
+        {
+            "id": 119,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "name",
+            "attributes": {
+                "content": "確かに、Logosは悪くないパートナーではある。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "だが……君からも彼に言ってやってくれないか？",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "あの面倒な言い回しを控えてくれたら、任務遂行にかかる時間が少なくとも30パーセントは短縮され、私もより多くの時間を実作業に充てることができるはずだ、とな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 124,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 125,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "――では、情報整理はこの辺りにしておこう。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "今のところ、有益な情報はこの程度だな。最重要ファイルの閲覧優先度は上げておいたし、PRTSを通じていつでも確認可能だ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 129,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "Decision",
+            "attributes": {
+                "options": "現状、連絡はなしか？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line131"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 132,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "name",
+            "attributes": {
+                "content": "フィリオプシスの映像記録に関しては、あれ以降同期更新がない。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "name",
+            "attributes": {
+                "content": "九号デバイスのデータ通信は、メイヤーの調整後安定傾向にあるとはいえ……",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "name",
+            "attributes": {
+                "content": "それはフィリオプシスの身体に問題がなければ、の話だからな……",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 137,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "Decision",
+            "attributes": {
+                "options": "少し心配だ。;サイレンスとグレイが早く合流してくれるといいが。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line139",
+                "option2": "line139"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 140,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "何にせよ、基地内での動向はサイレンスが伝えてくれる手はずだ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "name",
+            "attributes": {
+                "content": "それと、サリアからは連絡があった。一時間後にこちらへ合流するとのことだ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、彼女を待つ間で実行可能なタスクはあるか？",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 145,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ミュルジスが行方をくらませた場所へ行ってみよう。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line147"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 148,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "name",
+            "attributes": {
+                "content": "……私はメカニックであって探偵助手ではないからな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 150,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 151,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "Decision",
+            "attributes": {
+                "options": "それでもこれは、今できる唯一のことだ。;奇遇だな。こちらもただの源石研究者だ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line153",
+                "option2": "line153"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 154,
+            "prop": "Decision",
+            "attributes": {
+                "options": "頼れるのは君だけなんだ、Mechanist。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line155"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 156,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "仕方がない……であれば、すぐに出発するぞ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "願わくば、明日には船に戻って愛しい作業台と再会できるといいんだが。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 160,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 161,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 165,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g2_edgeofbase",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 167,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 168,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 170,
+            "prop": "name",
+            "attributes": {
+                "content": "p.m. 6:47 天気/曇天"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "トリマウンツ郊外 359号実験基地監視ステーション"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 173,
+            "prop": "name",
+            "attributes": {
+                "content": "基地内の人から新しい連絡はあった？",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "ありません、保安官。",
+                "name": "ライン生命警備課職員"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "そう。フェルディナンドとかいう主任には連絡したんでしょ？　彼は一体いつ来るの？",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "主任は、その……現在会議中でして。",
+                "name": "ライン生命警備課職員"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#5$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 181,
+            "prop": "name",
+            "attributes": {
+                "content": "何ですって？　会議がどうとか悠長なこと言ってる場合！？　部下の命より大事な議題なんかあるわけないでしょ！",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "name",
+            "attributes": {
+                "content": "ふざけてんじゃないわよ！",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "はあ……望遠鏡貸して。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#5$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ……はい。",
+                "name": "ライン生命警備課職員"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1",
+                "name2": "avg_npc_528_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは開拓隊が本気で何かしでかすとは思ってないわけ？",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "言っておくけど、あいつらはやるわよ。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "本当に追い込まれたら何だってやりかねないの。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 191,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 192,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#1$2",
+                "name2": "avg_108_silent_1#1$1",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 194,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 195,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#1$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 196,
+            "prop": "name",
+            "attributes": {
+                "content": "それは……基地にいる同僚たちが危ないってことですか？",
+                "name": "サイレンス"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "……あなたは？",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#1$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 200,
+            "prop": "name",
+            "attributes": {
+                "content": "オリヴィア・サイレンス。ライン生命の研究員で、ロドス・アイランド製薬の医療オペレーターです。",
+                "name": "サイレンス"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "name",
+            "attributes": {
+                "content": "こちらはロドスでの同僚、エンジニア部のグレイです。",
+                "name": "サイレンス"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#4$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 203,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "jump",
+                "power": 5.0,
+                "times": 2.0,
+                "fadetime": 0.51,
+                "block": "true"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "は、初めまして！　僕はロドスの電気工学エンジニアで……と言っても、まだ実習生なんですが……！",
+                "name": "グレイ"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "ロドス？　知らない名前ね。どういう会社なの？",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#5$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "ええと……",
+                "name": "グレイ"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "いえ、忘れて。説明はいらないわ。このトリマウンツでは、新しい会社が一日に何十社と立ち上げられていてもおかしくないから。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "それより、そっちのあなたはライン生命の人なのよね？　社内での発言権はある？",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#5$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "発言権……？　仰る意味がよくわからないんですが……",
+                "name": "サイレンス"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "もういいわ、あなたは何かの責任者ってわけでもなさそうだし。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "name",
+            "attributes": {
+                "content": "見た感じ、中にいる人質たちと同じ本の虫でしょ。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたたちは連中への対処法なんか知ってそうもないわね。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#5$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "相手は基地で働く開拓隊の人たちだと聞きましたけど……",
+                "name": "サイレンス"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "……開拓隊、ね。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "name",
+            "attributes": {
+                "content": "そういう聞こえのいい肩書きは、広告上のものでしかないの。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "あいつらがどんな連中かなんて、私が一番よくわかってるわ。犯罪者やギャンブル中毒、医療費を払えない感染者……荒野へと踏み込んだ時点でもはや何も持ってない人間ばかりよ。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#1$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "あの……その人たちと話してみてもいいですか？",
+                "name": "グレイ"
+            }
+        },
+        {
+            "id": 226,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#6$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 227,
+            "prop": "name",
+            "attributes": {
+                "content": "お気付きかもしれませんが、僕もサイレンス先生も感染者ですから……彼らの境遇を理解できると思うんです。",
+                "name": "グレイ"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "そうかしら。ライン生命とそのロドスとかいう会社は、両方相当稼ぎがいいんでしょ？",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたたちのバックには、保険料を払ってくれる「良心的」な会社がついている――そこが、彼らとの決定的な違いよ。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "だから、相互理解なんてばかげた夢を見るのはやめなさい。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#5$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "今言ってた「保険料」って何のことですか……？",
+                "name": "グレイ"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#5$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "……クルビアには、感染者に対する特殊政策としてそういうのがあるの。",
+                "name": "サイレンス"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "――保安官、どうか私たちを信じてもらえませんか。ロドスは感染者問題の解決を専門とする製薬会社なんです。",
+                "name": "サイレンス"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "だったらあなたにクロスボウでも渡せば、誘拐犯たちをとっちめるのを手伝ってくれるわけ？",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#5$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "……私にはできません。",
+                "name": "サイレンス"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "私は医者ですから。",
+                "name": "サイレンス"
+            }
+        },
+        {
+            "id": 242,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "name",
+            "attributes": {
+                "content": "なら、彼は？",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_1027_greyy2_1#4$2",
+                "name2": "avg_108_silent_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 245,
+            "prop": "name",
+            "attributes": {
+                "content": "僕ですか？　で、できません……というか、今はまだ戦わなければいけない状況にはなっていないと思います……",
+                "name": "グレイ"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_527_1#1$1"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "じゃあ、あなたたちでは何の力にもならなさそうね。",
+                "name": "メアリー"
+            }
+        },
+        {
+            "id": 248,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 249,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 252,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g3_cottage",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 254,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 256,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 257,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 259,
+            "prop": "name",
+            "attributes": {
+                "content": "……誰も来ないな、リーダー。",
+                "name": "開拓隊の隊員"
+            }
+        },
+        {
+            "id": 260,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 261,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ。向こうは相当冷静なんだろう。",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "もしかすると……大企業の連中は部下の命なんて何とも思ってないんじゃないか？",
+                "name": "開拓隊の隊員"
+            }
+        },
+        {
+            "id": 264,
+            "prop": "name",
+            "attributes": {
+                "content": "特に、あの二人は感染者だしさ。",
+                "name": "開拓隊の隊員"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 266,
+            "prop": "name",
+            "attributes": {
+                "content": "そういう言い方はよせ。",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "name",
+            "attributes": {
+                "content": "感染者だからって、ほかより劣ってるなんてことはない。少なくとも俺たちだけは、お互いをそんなふうに見るべきじゃないだろう。",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "そうだな……思えば開拓隊の募集広告にもそう書いてあったっけ。",
+                "name": "開拓隊の隊員"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 271,
+            "prop": "name",
+            "attributes": {
+                "content": "だったら、その広告の全部が全部嘘だったわけじゃないことに感謝しないとな。",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "name",
+            "attributes": {
+                "content": "――さて、悪いが通信機を下ろしてもらえるか？　ウビカ博士。",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#9$1"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "エレナ"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 276,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.8,
+                "xstrength": 50.0,
+                "ystrength": 50.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "下ろせと言われただろ！　妙な動きはせずに従うんだ！",
+                "name": "開拓隊の隊員"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#9$1"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "name",
+            "attributes": {
+                "content": "……わかった。",
+                "name": "エレナ"
+            }
+        },
+        {
+            "id": 280,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 281,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 282,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 283,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "ypos": 40.0,
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 284,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.6
+            }
+        },
+        {
+            "id": 285,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#3$1"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "name",
+            "attributes": {
+                "content": "ほら……お、下ろしたよ。だから暴力は振るわないでね。",
+                "name": "エレナ"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 288,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 2.5
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.7
+            }
+        },
+        {
+            "id": 290,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 291,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "……！　リーダー、こいつ外にメッセージを送ろうとしてたみたいだぞ！",
+                "name": "開拓隊の隊員"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_535_1#11$1"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "確認する。通信機を持ってきてくれ、サム。",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 296,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#3$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 299,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#3$1",
+                "name2": "avg_npc_534_1#1$1",
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 301,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 302,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 303,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 2.5
+            }
+        },
+        {
+            "id": 304,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 305,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 306,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 307,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "ypos": 50.0,
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 308,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 100.0,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 310,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.2
+            }
+        },
+        {
+            "id": 311,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 300.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_135_halo_1#3$1",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 313,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 314,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 315,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 316,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_npc_535_1#11$1"
+            }
+        },
+        {
+            "id": 317,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 319,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 321,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 322,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "xpos": 100.0,
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 324,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 325,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_534_1#1$1",
+                "name2": "avg_npc_535_1#11$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "……まだ途中までしか書かれてないし、送信はされてないな。",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#3$1"
+            }
+        },
+        {
+            "id": 328,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "エレナ"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_535_1#11$1"
+            }
+        },
+        {
+            "id": 330,
+            "prop": "name",
+            "attributes": {
+                "content": "これは……現在地の正確な座標か。向こうにドローンでも送り込ませるつもりだったのか？",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "その考えはお勧めしない。それより、真剣に助けを求める文面に変えて、あんたの先生や上司……誰宛てでもいいから送ってくれ。",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "name",
+            "attributes": {
+                "content": "そいつらに伝えるんだ。俺はここで待っているが、その我慢にも限界がある、ってな。",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_135_halo_1#9$1"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "name",
+            "attributes": {
+                "content": "……一体何がしたいの？",
+                "name": "エレナ"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_535_1#11$1"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "単純なことさ。",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "name",
+            "attributes": {
+                "content": "俺と仲間たちは皆、生きてここから出たいだけだ。",
+                "name": "サニー"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 339,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 340,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 342,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 343,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g7_mainstreet_n",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 345,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$m_dia_street_intro",
+                "key": "$m_dia_street_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 346,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 348,
+            "prop": "Character",
+            "attributes": {
+                "name": "char_empty",
+                "name2": "avg_npc_530_1#1$1"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 350,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 352,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "left",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "fadetime": 0.7
+            }
+        },
+        {
+            "id": 354,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 355,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "主任、お待ちしておりました！　少しお時間をいただいてもよろしいでしょうか？",
+                "name": "ライン生命研究員"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#7$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 358,
+            "prop": "name",
+            "attributes": {
+                "content": "君は……構造課のベンだったな。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#7$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "わ、私の名前を覚えてくださっていたのですか？",
+                "name": "ライン生命研究員"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "無論だ。ところで、私のことはフェルディナンドと呼びたまえ。ライン生命には九人も主任がいるからな。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "で……では、フェルディナンド……さん。",
+                "name": "ライン生命研究員"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 366,
+            "prop": "name",
+            "attributes": {
+                "content": "それで、要件は？　あと10分で次の会議が始まる予定でね。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "今から7分あげよう。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 369,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ……はい、ありがとうございます。",
+                "name": "ライン生命研究員"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "name",
+            "attributes": {
+                "content": "あの、統括がどちらにいらっしゃるかご存じありませんか？",
+                "name": "ライン生命研究員"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "name",
+            "attributes": {
+                "content": "構造課の備品購入申請について、三日前に統括からお返事をいただく予定だったのですが……ずっと連絡が取れないんです。",
+                "name": "ライン生命研究員"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "それで今、課内では多くの実験が中断状態でして……",
+                "name": "ライン生命研究員"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 374,
+            "prop": "name",
+            "attributes": {
+                "content": "申請書を見せなさい。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 376,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 378,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 379,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 380,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 381,
+            "prop": "name",
+            "attributes": {
+                "content": "――",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "name",
+            "attributes": {
+                "content": "よろしい、購入を許可しよう。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 384,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 100.0,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 385,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 386,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 387,
+            "prop": "name",
+            "attributes": {
+                "content": "さ……サインしてくださったんですか？　しかし、マニュアルでは多額の大型設備を購入する際は必ず統括の確認を通すようにと……",
+                "name": "ライン生命研究員"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 389,
+            "prop": "name",
+            "attributes": {
+                "content": "君はライン生命に入ってどのくらいになる？　まだ数ヶ月しないくらいか？",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 391,
+            "prop": "name",
+            "attributes": {
+                "content": "は、はい……一ヶ月前入社したばかりです。",
+                "name": "ライン生命研究員"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 393,
+            "prop": "name",
+            "attributes": {
+                "content": "そうか。では見たまえ、この先端技術を駆使した建物の数々を。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 395,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ……？",
+                "name": "ライン生命研究員"
+            }
+        },
+        {
+            "id": 396,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 397,
+            "prop": "name",
+            "attributes": {
+                "content": "実に壮大な光景だと思わんかね。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#2$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 399,
+            "prop": "name",
+            "attributes": {
+                "content": "だが……十五年前、ここは移動区画の一つもないような単なる荒れ地だった。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "その当時、トリマウンツの地図上に「ライン生命」の文字はなかったんだ。それが今ではこの通りさ。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#2$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 402,
+            "prop": "name",
+            "attributes": {
+                "content": "ええと……",
+                "name": "ライン生命研究員"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 404,
+            "prop": "name",
+            "attributes": {
+                "content": "詳しく聞いてみたければ、時間がある時にパルヴィスとお茶でもするといい。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "君にはまだ学ぶべきことがたくさんあるということだよ、ベン。その上、それはマニュアルに書いてあるようなことではないんだ。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "avg_npc_530_1#1$1",
+                "focus": 2.0
+            }
+        },
+        {
+            "id": 407,
+            "prop": "name",
+            "attributes": {
+                "content": "わ、わかりました……覚えておきます。",
+                "name": "ライン生命研究員"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 409,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 410,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "right",
+                "type": "move",
+                "xpos": 300.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#1$1",
+                "name2": "char_empty",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 412,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 413,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 0.51
+            }
+        },
+        {
+            "id": 414,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": "よし。あと4分あるな。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 418,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$transmission",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 419,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 420,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 421,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 422,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 423,
+            "prop": "CharacterCutin",
+            "attributes": {
+                "widgetID": "1",
+                "name": "avg_npc_536_1#1$1",
+                "style": "cutin",
+                "fadetime": 0.5,
+                "offsetx": 300.0,
+                "width": 200.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "name",
+            "attributes": {
+                "content": "明るいうちに連絡してくるなんて珍しいわね、フェルディナンド。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 427,
+            "prop": "name",
+            "attributes": {
+                "content": "……ホルハイヤ。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "name",
+            "attributes": {
+                "content": "君に依頼した件はすべて片付いたか？",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 429,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "name",
+            "attributes": {
+                "content": "そうねえ……今日の十課会議は、少なくとも三つ空席があると思うわよ。",
+                "name": "ホルハイヤ"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 432,
+            "prop": "name",
+            "attributes": {
+                "content": "まだだ、まだ足りん。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "name",
+            "attributes": {
+                "content": "ふぅん？　それじゃ、お次はどの主任？",
+                "name": "ホルハイヤ"
+            }
+        },
+        {
+            "id": 435,
+            "prop": "name",
+            "attributes": {
+                "content": "ついにあの源石嵌合体（かんごうたい）実験にお熱な食えない爺さんヤギにうんざりした？　あるいは基地にいる夢想家に二度と戻ってきてほしくないとか？",
+                "name": "ホルハイヤ"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 437,
+            "prop": "name",
+            "attributes": {
+                "content": "……ロドスの人間が基地へ向かったそうだ。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "name",
+            "attributes": {
+                "content": "実験はもうじき完了する。それまでは、誰にも邪魔をされたくないんだ。わかるな？",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "name",
+            "attributes": {
+                "content": "基地へ向かってほしいの？",
+                "name": "ホルハイヤ"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 442,
+            "prop": "name",
+            "attributes": {
+                "content": "いや、その必要はない。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "name",
+            "attributes": {
+                "content": "本当に薄情な人ね。あのエレナとかいうあなたの助手も誘拐されたんでしょ？　私も一度会ったことがあるけど、とっても可愛くて勤勉な子だったじゃない。",
+                "name": "ホルハイヤ"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは彼女をすごく気に入ってるものと思ってたわ。",
+                "name": "ホルハイヤ"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "だからこそさ。エレナであれば、エネルギー課の一員として開拓者に対処できるはずだ。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "それより、君は引き続き、都市内の状況を監視していてくれ。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "name",
+            "attributes": {
+                "content": "ロドスのことだ、オペレーター二名を基地に派遣しただけで終わるはずがない。奴らが常にサリアと連絡を取り合っていることを忘れてくれるなよ。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "name",
+            "attributes": {
+                "content": "あら、また警備課の主任さんが絡んでるの？",
+                "name": "ホルハイヤ"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_522_1#6$1",
+                "name2": "char_empty",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ。彼女のせいで、我々の実験には相当の遅れが出ている……私も大佐も我慢の限界だ。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "name",
+            "attributes": {
+                "content": "今回は、奴らに何一つ見つけさせるなよ。",
+                "name": "フェルディナンド"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 456,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$transmission",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 457,
+            "prop": "CharacterCutin",
+            "attributes": {
+                "widgetID": "1",
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.8
+            }
+        },
+        {
+            "id": 459,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 460,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 462,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1$1"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g8_alley_n",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 465,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 467,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1$1"
+            }
+        },
+        {
+            "id": 468,
+            "prop": "name",
+            "attributes": {
+                "content": "着いたぞ、ドクター。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "name",
+            "attributes": {
+                "content": "ミュルジスからサリアへの連絡は、この場所から送られたメッセージを最後に途切れている。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 470,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 471,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 472,
+            "prop": "Decision",
+            "attributes": {
+                "options": "特に変わったところはなさそうだ。;ライン生命本部からは離れた場所だな。;ここは……商業エリアの近くか。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line473",
+                "option2": "line477",
+                "option3": "line481"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line486"
+        },
+        {
+            "id": 474,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "name",
+            "attributes": {
+                "content": "そうだな。トリマウンツには、こういう路地が数百はある。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 476,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 477,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line486"
+        },
+        {
+            "id": 478,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ。ここから本部まで行くとなると、車で三十分はかかる。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 481,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line486"
+        },
+        {
+            "id": 482,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "メッセージを受け取った時、サリアは商業エリアにいたそうだ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女はミュルジスを待っていた。二人は会う約束をしていたんだ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 486,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 487,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ミュルジスはここに追い込まれたと見える。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line489"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 490,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "name",
+            "attributes": {
+                "content": "でなければ、こんな道に足を踏み入れることはないだろうしな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 492,
+            "prop": "name",
+            "attributes": {
+                "content": "誰を相手取るにせよ、街中でやり合うのはリスクが高いものだ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 494,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "Decision",
+            "attributes": {
+                "options": "――ミュルジスの能力にはサイレンスが言及していた。;確か、サリアがミュルジスの資料をまとめていたな。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line496",
+                "option2": "line496"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 497,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 498,
+            "prop": "name",
+            "attributes": {
+                "content": "確認してみよう……検索完了。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 499,
+            "prop": "name",
+            "attributes": {
+                "content": "「『水分子を操る能力』――これはエネルギー変換系、あるいは物質再構築系の能力と思われる」……か。どういった原理にしろ、いかにも強力なアーツだな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "name",
+            "attributes": {
+                "content": "「応用として、水で分身を作り出すことができ、それを肉眼で看破するのは不可能」……という記述もある。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 501,
+            "prop": "name",
+            "attributes": {
+                "content": "実に興味をそそられるな。実験研究に携わる人間というのは、我々メカニック同様、普段から鋭い観察力を持っているというのに……",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "name",
+            "attributes": {
+                "content": "サイレンスやメイヤーまでもが騙されるとなれば、それはもはや相手の知覚に作用するような幻覚とは別物だろう。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 503,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 504,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ミュルジスの戦闘能力は低くない。;彼女は自分を守るには十分な力を持っている。;戦闘も逃走も得意分野というわけか。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line506",
+                "option2": "line506",
+                "option3": "line506"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 507,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "……地面に焼け跡が残っている。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "name",
+            "attributes": {
+                "content": "範囲はそう広くないな……ミュルジスを襲撃した人物は、何らかの機材を用いて彼女の周囲の空気を加熱した可能性が高い。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女のアーツが水分子に大きく依存していることを加味すると、その襲撃者はミュルジスをよく理解していると考えていいだろう。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 512,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "Decision",
+            "attributes": {
+                "options": "我々が彼女を理解しているのと同様にな。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line514"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 515,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 516,
+            "prop": "name",
+            "attributes": {
+                "content": "それはもしや……",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 517,
+            "prop": "name",
+            "attributes": {
+                "content": "向こうにもライン生命内部の人間がいる、ということか？",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 518,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 519,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$e_atk_cadkgt_s_lp",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 520,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 521,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.51
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "――ッ、危ない！",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 524,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "fadetime": 0.51
+            }
+        },
+        {
+            "id": 525,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 528,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 529,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 530,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 531,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 532,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 533,
+            "prop": "characteraction",
+            "attributes": {
+                "name": "middle",
+                "type": "move",
+                "xpos": 200.0,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 534,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 535,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$nervous_intro",
+                "key": "$nervous_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 536,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 537,
+            "prop": "Decision",
+            "attributes": {
+                "options": "間一髪だったな……;焼き肉になるところだった。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line538",
+                "option2": "line538"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 539,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 540,
+            "prop": "name",
+            "attributes": {
+                "content": "今のは……エネルギー兵器だな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "name",
+            "attributes": {
+                "content": "30メートルほど先、路地の奥から撃ってきたようだ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 542,
+            "prop": "name",
+            "attributes": {
+                "content": "……向こうは今も接近してきている。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 543,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、私の後ろへ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 544,
+            "prop": "name",
+            "attributes": {
+                "content": "携帯式防御システムを起動した。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 546,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 547,
+            "prop": "Decision",
+            "attributes": {
+                "options": "待ち伏せされたのか？;我々だけで対処できるだろうか？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line548",
+                "option2": "line548"
+            }
+        },
+        {
+            "id": 548,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 549,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 550,
+            "prop": "character",
+            "attributes": {}
+        },
+        {
+            "id": 551,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_mechawalk"
+            }
+        },
+        {
+            "id": 552,
+            "prop": "character",
+            "attributes": {
+                "name": "avg_npc_526_1#1$1",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 553,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.5
+            }
+        },
+        {
+            "id": 554,
+            "prop": "name",
+            "attributes": {
+                "content": "――",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 555,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_mechalock"
+            }
+        },
+        {
+            "id": 556,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 557,
+            "prop": "Character",
+            "attributes": {
+                "name": "avg_npc_521_1#1$1",
+                "focus": 1.0
+            }
+        },
+        {
+            "id": 558,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 559,
+            "prop": "name",
+            "attributes": {
+                "content": "これは……初めて見るパワードスーツだ。恐らく新型だろう。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 560,
+            "prop": "name",
+            "attributes": {
+                "content": "奴の装備の破壊力を知るには、実際この目で確かめるほかなさそうだな。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 561,
+            "prop": "name",
+            "attributes": {
+                "content": "つまりは――計画変更だ。",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 562,
+            "prop": "name",
+            "attributes": {
+                "content": "脱出システム起動！　ドクター、私の背に乗れ！",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 563,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 564,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 565,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 566,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 567,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 568,
+            "prop": "Image",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": true
+}
