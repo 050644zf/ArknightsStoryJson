@@ -134,11 +134,12 @@
             "id": 15,
             "prop": "Decision",
             "attributes": {
-                "options": "What",
+                "options": "What'd you think of the meal?;What do you think of Malkiewicz?",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line16"
+                "option1": "line16",
+                "option2": "line21"
             }
         },
         {
@@ -147,7 +148,8 @@
             "attributes": {
                 "references": "1"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line25"
         },
         {
             "id": 17,
@@ -184,7 +186,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line25"
         },
         {
             "id": 22,
@@ -218,7 +222,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 26,
@@ -229,17 +234,20 @@
             "id": 27,
             "prop": "Decision",
             "attributes": {
-                "options": "Do you think Rhodes Island",
+                "options": "Do you think Rhodes Island's plan is feasible?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line28"
+            }
         },
         {
             "id": 28,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 29,
@@ -310,14 +318,18 @@
                 "options": "Thanks for the warning.;That much I already know.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line38",
+                "option2": "line38"
+            }
         },
         {
             "id": 38,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 39,
@@ -326,14 +338,18 @@
                 "options": "So, what are you thinking?;What should I do then?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line40",
+                "option2": "line40"
+            }
         },
         {
             "id": 40,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 41,
@@ -740,7 +756,7 @@
             "id": 87,
             "prop": "Subtitle",
             "attributes": {
-                "text": "Malkiewicz suddenly flashes back to his childhood, to the copper-colored telephone that sat on the desk in his father",
+                "text": "Malkiewicz suddenly flashes back to his childhood, to the copper-colored telephone that sat on the desk in his father's study.",
                 "x": 300.0,
                 "y": 370.0,
                 "alignment": "center",
@@ -4652,5 +4668,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

@@ -1312,7 +1312,7 @@
             "id": 154,
             "prop": "Decision",
             "attributes": {
-                "options": "Well done!;......;Seems they",
+                "options": "Well done!;......;Seems they're getting along better?",
                 "values": "1;2;3"
             },
             "targetLine": {
@@ -1327,8 +1327,7 @@
             "attributes": {
                 "references": "1;2;3"
             },
-            "endOfOpt": false,
-            "targetLine": "line171"
+            "endOfOpt": false
         },
         {
             "id": 156,
@@ -1377,11 +1376,13 @@
             "id": 161,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I'm doing okay.;......;She has to cooperate.",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line162"
+                "option1": "line162",
+                "option2": "line167",
+                "option3": "line171"
             }
         },
         {
@@ -1435,7 +1436,8 @@
             "attributes": {
                 "references": "2"
             },
-            "endOfOpt": true
+            "endOfOpt": false,
+            "targetLine": "line175"
         },
         {
             "id": 168,
@@ -1470,7 +1472,8 @@
             "attributes": {
                 "references": "3"
             },
-            "endOfOpt": true
+            "endOfOpt": false,
+            "targetLine": "line175"
         },
         {
             "id": 172,
@@ -1572,17 +1575,22 @@
             "id": 183,
             "prop": "Decision",
             "attributes": {
-                "options": "Then let",
+                "options": "Then let's buy them some time!;......;She's the foot-in-mouth type, huh?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line184",
+                "option2": "line184",
+                "option3": "line184"
+            }
         },
         {
             "id": 184,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 185,
@@ -1633,17 +1641,20 @@
             "id": 190,
             "prop": "Decision",
             "attributes": {
-                "options": "We",
+                "options": "We'll defeat them both.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line191"
+            }
         },
         {
             "id": 191,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 192,
@@ -1738,5 +1749,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

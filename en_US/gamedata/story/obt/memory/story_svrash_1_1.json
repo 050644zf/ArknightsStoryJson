@@ -6,7 +6,7 @@
     "storyCode": null,
     "avgTag": "Interlude",
     "storyName": "Unpredictable",
-    "storyInfo": "Karlan Trade is one of Rhodes Island's biggest clients, but a shipment of analgesics meant for their Infected employees goes missing. The Doctor uncovers the mastermind behind the plot, and develops a relationship with the president of Karlan Trade.\n",
+    "storyInfo": "喀兰贸易是罗德岛的大客户，一批应该送到感染者员工手上的镇痛剂却没有送达。博士出手揪出幕后黑手，并与喀兰贸易总裁产生交集。\n",
     "storyList": [
         {
             "id": 0,
@@ -366,11 +366,13 @@
             "id": 41,
             "prop": "Decision",
             "attributes": {
-                "options": "Silverash? Who",
+                "options": "Silverash? Who's that?;What kind of person is Silverash?;Silverash... What a unique surname...",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line42"
+                "option1": "line42",
+                "option2": "line42",
+                "option3": "line42"
             }
         },
         {
@@ -1004,17 +1006,20 @@
             "id": 117,
             "prop": "Decision",
             "attributes": {
-                "options": "Leaning toward ",
+                "options": "Leaning toward 'blame middle management' then?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line118"
+            }
         },
         {
             "id": 118,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 119,
@@ -1059,17 +1064,23 @@
             "id": 124,
             "prop": "Decision",
             "attributes": {
-                "options": "We need to confirm his true beliefs.;We need to be careful.;We can",
+                "options": "We need to confirm his true beliefs.;We need to be careful.;We can't ignore Cliffheart's feelings.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line125",
+                "option2": "line128",
+                "option3": "line132"
+            }
         },
         {
             "id": 125,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line135"
         },
         {
             "id": 126,
@@ -1092,7 +1103,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line135"
         },
         {
             "id": 129,
@@ -1124,7 +1137,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line135"
         },
         {
             "id": 133,
@@ -1147,7 +1162,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 136,
@@ -1177,14 +1193,17 @@
                 "options": "I have an idea.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line140"
+            }
         },
         {
             "id": 140,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 141,
@@ -2197,14 +2216,18 @@
                 "options": "That only proves his management skills.;He could still have scalped the drugs.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line258",
+                "option2": "line258"
+            }
         },
         {
             "id": 258,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 259,
@@ -2234,14 +2257,17 @@
                 "options": "Where the drugs ended up.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line263"
+            }
         },
         {
             "id": 263,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 264,
@@ -2833,17 +2859,22 @@
             "id": 331,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I'll be fine.;I'm used to it.;Scumbags. The whole lot of them.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line332",
+                "option2": "line332",
+                "option3": "line332"
+            }
         },
         {
             "id": 332,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 333,
@@ -2870,17 +2901,20 @@
             "id": 336,
             "prop": "Decision",
             "attributes": {
-                "options": "He",
+                "options": "He's coming for inspection in two days.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line337"
+            }
         },
         {
             "id": 337,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 338,
@@ -3820,17 +3854,21 @@
             "id": 452,
             "prop": "Decision",
             "attributes": {
-                "options": "That way, none of our people will be present.;With no outsiders, we",
+                "options": "That way, none of our people will be present.;With no outsiders, we'll see his honest reaction.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line453",
+                "option2": "line453"
+            }
         },
         {
             "id": 453,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 454,
@@ -5269,17 +5307,23 @@
             "id": 627,
             "prop": "Decision",
             "attributes": {
-                "options": "Enough is enough.;The Infected expect nothing.;That",
+                "options": "Enough is enough.;The Infected expect nothing.;That's the goal we're striving for.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line628",
+                "option2": "line635",
+                "option3": "line642"
+            }
         },
         {
             "id": 628,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line649"
         },
         {
             "id": 629,
@@ -5340,7 +5384,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line649"
         },
         {
             "id": 636,
@@ -5401,7 +5447,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line649"
         },
         {
             "id": 643,
@@ -5462,7 +5510,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 650,
@@ -5484,14 +5533,17 @@
                 "options": "Good enough.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line653"
+            }
         },
         {
             "id": 653,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 654,
@@ -6121,17 +6173,22 @@
             "id": 730,
             "prop": "Decision",
             "attributes": {
-                "options": "That",
+                "options": "That's our duty at Rhodes Island.;You can always trust in Rhodes Island.;The lives of the Infected are just as precious.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line731",
+                "option2": "line731",
+                "option3": "line731"
+            }
         },
         {
             "id": 731,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 732,
@@ -6201,17 +6258,20 @@
             "id": 740,
             "prop": "Decision",
             "attributes": {
-                "options": "...That",
+                "options": "...That's exactly right.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line741"
+            }
         },
         {
             "id": 741,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 742,
@@ -6331,14 +6391,17 @@
                 "options": "When did you find out?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line757"
+            }
         },
         {
             "id": 757,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 758,
@@ -6377,14 +6440,17 @@
                 "options": "No.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line763"
+            }
         },
         {
             "id": 763,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 764,
@@ -6443,17 +6509,21 @@
             "id": 771,
             "prop": "Decision",
             "attributes": {
-                "options": "You flatter me.;I",
+                "options": "You flatter me.;I'm not so sure about that.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line772",
+                "option2": "line772"
+            }
         },
         {
             "id": 772,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 773,
@@ -6492,14 +6562,19 @@
                 "options": "You seem to think highly of Rhodes Island.;Am I that famous?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line778",
+                "option2": "line783"
+            }
         },
         {
             "id": 778,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line787"
         },
         {
             "id": 779,
@@ -6540,7 +6615,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line787"
         },
         {
             "id": 784,
@@ -6572,7 +6649,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 788,
@@ -6602,14 +6680,19 @@
                 "options": "It did.;It did not.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line792",
+                "option2": "line797"
+            }
         },
         {
             "id": 792,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line802"
         },
         {
             "id": 793,
@@ -6650,7 +6733,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line802"
         },
         {
             "id": 798,
@@ -6691,7 +6776,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 803,
@@ -6761,17 +6847,20 @@
             "id": 811,
             "prop": "Decision",
             "attributes": {
-                "options": "You would",
+                "options": "You would've lost a partner, that's all.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line812"
+            }
         },
         {
             "id": 812,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 813,
@@ -6835,14 +6924,18 @@
                 "options": "Very.;I choose my partners carefully.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line821",
+                "option2": "line821"
+            }
         },
         {
             "id": 821,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 822,
@@ -7350,5 +7443,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

@@ -59,7 +59,7 @@
             "id": 6,
             "prop": "Subtitle",
             "attributes": {
-                "text": "'These lands are no longer masterless.",
+                "text": "'These lands are no longer masterless.'",
                 "x": 300.0,
                 "y": 370.0,
                 "alignment": "center",
@@ -72,7 +72,7 @@
             "id": 7,
             "prop": "Subtitle",
             "attributes": {
-                "text": "'All who live on these lands worship and revere Your Holiness.",
+                "text": "'All who live on these lands worship and revere Your Holiness.'",
                 "x": 300.0,
                 "y": 370.0,
                 "alignment": "center",
@@ -85,7 +85,7 @@
             "id": 8,
             "prop": "Subtitle",
             "attributes": {
-                "text": "'And so, please tell us, what is our name?",
+                "text": "'And so, please tell us, what is our name?'",
                 "x": 300.0,
                 "y": 370.0,
                 "alignment": "center",
@@ -111,7 +111,7 @@
             "id": 10,
             "prop": "Subtitle",
             "attributes": {
-                "text": "'I have a name for thee. From this day, these lands shall be called Kjerag, and thou shalt be known as the children of Kjerag.",
+                "text": "'I have a name for thee. From this day, these lands shall be called Kjerag, and thou shalt be known as the children of Kjerag.'",
                 "x": 300.0,
                 "y": 370.0,
                 "alignment": "center",
@@ -124,7 +124,7 @@
             "id": 11,
             "prop": "Subtitle",
             "attributes": {
-                "text": " —",
+                "text": " —'Kjeragandr,' Page 2",
                 "x": 300.0,
                 "y": 370.0,
                 "alignment": "center",
@@ -1405,8 +1405,7 @@
             "attributes": {
                 "references": "1;2;3"
             },
-            "endOfOpt": false,
-            "targetLine": "line170"
+            "endOfOpt": false
         },
         {
             "id": 157,
@@ -1460,12 +1459,13 @@
             "id": 163,
             "prop": "Decision",
             "attributes": {
-                "options": "(Indescribable shrieking);Your hand",
+                "options": "(Indescribable shrieking);Your hand's so cold!;(Attacks reflexively)",
                 "values": "1;2;3"
             },
             "targetLine": {
                 "option1": "line164",
-                "option2": "line167"
+                "option2": "line167",
+                "option3": "line170"
             }
         },
         {
@@ -1524,7 +1524,8 @@
             "attributes": {
                 "references": "3"
             },
-            "endOfOpt": true
+            "endOfOpt": false,
+            "targetLine": "line173"
         },
         {
             "id": 171,
@@ -1598,17 +1599,22 @@
             "id": 180,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I'm fine.;......;Scared me shitless!",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line181",
+                "option2": "line181",
+                "option3": "line181"
+            }
         },
         {
             "id": 181,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 182,
@@ -1651,17 +1657,23 @@
             "id": 187,
             "prop": "Decision",
             "attributes": {
-                "options": "How did this ceremony come about?;You don",
+                "options": "How did this ceremony come about?;You don't seem all that excited to me.;Anything fun you recommend?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line188",
+                "option2": "line195",
+                "option3": "line204"
+            }
         },
         {
             "id": 188,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line209"
         },
         {
             "id": 189,
@@ -1720,7 +1732,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line209"
         },
         {
             "id": 196,
@@ -1793,7 +1807,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line209"
         },
         {
             "id": 205,
@@ -1834,7 +1850,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 210,
@@ -2052,14 +2069,17 @@
                 "options": "A different version?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line237"
+            }
         },
         {
             "id": 237,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 238,
@@ -2087,7 +2107,7 @@
             "id": 241,
             "prop": "Subtitle",
             "attributes": {
-                "text": "Every year, to calm Kjeragandr",
+                "text": "Every year, to calm Kjeragandr's fury, Kjerag chose a girl to be its Saintess, who was to sit atop Mount Karlan and pray until her death.",
                 "x": 300.0,
                 "y": 370.0,
                 "alignment": "center",
@@ -2100,7 +2120,7 @@
             "id": 242,
             "prop": "Subtitle",
             "attributes": {
-                "text": "Kjeragandr is said to have appeared before the masses as a young girl, and so everyone believed that a maiden",
+                "text": "Kjeragandr is said to have appeared before the masses as a young girl, and so everyone believed that a maiden's pure soul could reach Her and beckon Her back to us.",
                 "x": 300.0,
                 "y": 370.0,
                 "alignment": "center",
@@ -2139,7 +2159,7 @@
             "id": 245,
             "prop": "Subtitle",
             "attributes": {
-                "text": "Many of the Vine-Bear Court",
+                "text": "Many of the Vine-Bear Court's buildings were leveled, and many of its texts, kept since ancient times, were destroyed. Ever since, the Vine-Bear Court's understanding of its past has been wildly off the mark.",
                 "x": 300.0,
                 "y": 370.0,
                 "alignment": "center",
@@ -2212,14 +2232,19 @@
                 "options": "Sounds a lot more realistic.;Sounds like something you saw with your own eyes.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line253",
+                "option2": "line256"
+            }
         },
         {
             "id": 253,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line259"
         },
         {
             "id": 254,
@@ -2242,7 +2267,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line259"
         },
         {
             "id": 257,
@@ -2265,7 +2292,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 260,
@@ -3572,7 +3600,7 @@
             "id": 411,
             "prop": "Subtitle",
             "attributes": {
-                "text": "'She is the Kjeragandr",
+                "text": "'She is the Kjeragandr's vicar on Terra. She is Kjeragandr's supreme emissary on the mountaintop.'",
                 "x": 300.0,
                 "y": 370.0,
                 "alignment": "center",
@@ -3830,5 +3858,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

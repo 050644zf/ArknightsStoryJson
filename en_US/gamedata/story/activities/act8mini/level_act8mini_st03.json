@@ -742,7 +742,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  Of course, Dr. {@nickname}. You are not like that one.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1"
         },
@@ -751,7 +751,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  Is there anyone out there like us?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1"
         },
@@ -760,7 +760,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  ...Is anyone out there like you?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1"
         },
@@ -877,12 +877,13 @@
             "id": 104,
             "prop": "Decision",
             "attributes": {
-                "options": "Not going to urge me to work today?;...I",
+                "options": "Not going to urge me to work today?;...I'm fine.;Don't worry, I'm feeling pretty energetic.",
                 "values": "1;2;3"
             },
             "targetLine": {
                 "option1": "line105",
-                "option2": "line105"
+                "option2": "line105",
+                "option3": "line105"
             }
         },
         {
@@ -891,14 +892,16 @@
             "attributes": {
                 "references": "1;2;3"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line112"
         },
         {
             "id": 106,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 107,
@@ -921,7 +924,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 110,
@@ -944,7 +948,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 113,
@@ -1001,7 +1006,7 @@
             "id": 120,
             "prop": "Decision",
             "attributes": {
-                "options": "Huh. So in other words, there",
+                "options": "Huh. So in other words, there's nothing on today's schedule?;Do I actually get a day off?",
                 "values": "1;2"
             },
             "targetLine": {}
@@ -1534,7 +1539,7 @@
             "id": 188,
             "prop": "Decision",
             "attributes": {
-                "options": "It",
+                "options": "It's fine... You're exactly right.;My life is not solely my own, and I need to remind myself from time to time.",
                 "values": "1;2"
             },
             "targetLine": {}
@@ -1868,7 +1873,7 @@
             "id": 233,
             "prop": "Decision",
             "attributes": {
-                "options": "This is... Ace",
+                "options": "This is... Ace's shield.",
                 "values": "1"
             },
             "targetLine": {}
@@ -2019,7 +2024,7 @@
             "id": 252,
             "prop": "Decision",
             "attributes": {
-                "options": "Sorry, I",
+                "options": "Sorry, I'm no help at all.;But... this is Ace's shield. I should at least...",
                 "values": "1;2"
             },
             "targetLine": {}
@@ -2163,7 +2168,7 @@
             "id": 271,
             "prop": "Decision",
             "attributes": {
-                "options": "By the way, who are ",
+                "options": "By the way, who are 'they?'",
                 "values": "1"
             },
             "targetLine": {}
@@ -2707,7 +2712,7 @@
             "id": 343,
             "prop": "Decision",
             "attributes": {
-                "options": "It",
+                "options": "It's fine, don't worry about it.",
                 "values": "1"
             },
             "targetLine": {}
@@ -3879,7 +3884,7 @@
             "id": 488,
             "prop": "Decision",
             "attributes": {
-                "options": "No problem, but what did you need me for?;......;Sure, but what",
+                "options": "No problem, but what did you need me for?;......;Sure, but what's the rush?",
                 "values": "1;2;3"
             },
             "targetLine": {}
@@ -4004,7 +4009,7 @@
             "id": 505,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I'll be glad to have some then.",
                 "values": "1"
             },
             "targetLine": {}
@@ -4311,7 +4316,7 @@
             "id": 546,
             "prop": "Decision",
             "attributes": {
-                "options": "Huh... is she here?;......;That",
+                "options": "Huh... is she here?;......;That's strange. Kal'tsit lets her around Rhodes Island?",
                 "values": "1;2;3"
             },
             "targetLine": {}
@@ -4657,7 +4662,7 @@
             "id": 590,
             "prop": "Decision",
             "attributes": {
-                "options": "Nothing in particular. It",
+                "options": "Nothing in particular. It's just been a long time since I've talked to people like this.",
                 "values": "1"
             },
             "targetLine": {}
@@ -4699,7 +4704,7 @@
             "id": 596,
             "prop": "Decision",
             "attributes": {
-                "options": "I think I saw something strange in the operators",
+                "options": "I think I saw something strange in the operators' storage room.",
                 "values": "1"
             },
             "targetLine": {}
@@ -4983,7 +4988,7 @@
             "id": 633,
             "prop": "Decision",
             "attributes": {
-                "options": "Maybe it",
+                "options": "Maybe it's some kind of safe?;...Not sure.;Do you reckon it can fly?",
                 "values": "1;2;3"
             },
             "targetLine": {}
@@ -5359,7 +5364,7 @@
             "id": 682,
             "prop": "Decision",
             "attributes": {
-                "options": "No matter how you look at it, it",
+                "options": "No matter how you look at it, it's just a bottle of beer?",
                 "values": "1"
             },
             "targetLine": {}
@@ -5545,7 +5550,7 @@
             "id": 707,
             "prop": "Decision",
             "attributes": {
-                "options": "Just put it in the room, next to Ace",
+                "options": "Just put it in the room, next to Ace's shield.",
                 "values": "1"
             },
             "targetLine": {}
@@ -5624,7 +5629,7 @@
             "id": 716,
             "prop": "Decision",
             "attributes": {
-                "options": "Wasn",
+                "options": "Wasn't that the bet?",
                 "values": "1"
             },
             "targetLine": {}

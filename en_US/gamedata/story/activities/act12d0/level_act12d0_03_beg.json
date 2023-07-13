@@ -861,11 +861,13 @@
             "id": 100,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You've come a long way.;......;Well, at least you're healthier than anyone now.",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line101"
+                "option1": "line101",
+                "option2": "line105",
+                "option3": "line110"
             }
         },
         {
@@ -874,7 +876,8 @@
             "attributes": {
                 "references": "1"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line113"
         },
         {
             "id": 102,
@@ -906,7 +909,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line113"
         },
         {
             "id": 106,
@@ -947,7 +952,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line113"
         },
         {
             "id": 111,
@@ -970,23 +977,27 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 114,
             "prop": "Decision",
             "attributes": {
-                "options": "So how",
+                "options": "So how'd that ceremony back then turn out?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line115"
+            }
         },
         {
             "id": 115,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 116,
@@ -1417,5 +1428,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

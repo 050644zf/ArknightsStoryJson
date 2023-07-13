@@ -137,11 +137,12 @@
             "id": 16,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You're... 12F?;And you are...?",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line17"
+                "option1": "line17",
+                "option2": "line20"
             }
         },
         {
@@ -150,7 +151,8 @@
             "attributes": {
                 "references": "1"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line23"
         },
         {
             "id": 18,
@@ -175,7 +177,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line23"
         },
         {
             "id": 21,
@@ -200,23 +204,30 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 24,
             "prop": "Decision",
             "attributes": {
-                "options": "Don",
+                "options": "Don't be so polite!;......;You don't need to be so reserved.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line25",
+                "option2": "line28",
+                "option3": "line31"
+            }
         },
         {
             "id": 25,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line34"
         },
         {
             "id": 26,
@@ -241,7 +252,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line34"
         },
         {
             "id": 29,
@@ -266,7 +279,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line34"
         },
         {
             "id": 32,
@@ -291,7 +306,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 35,
@@ -315,17 +331,23 @@
             "id": 37,
             "prop": "Decision",
             "attributes": {
-                "options": "(In turn, ask him whether he",
+                "options": "(In turn, ask him whether he's afraid.);(As ever, be silent.);(Painstakingly, explain to him how you're already used to this.)",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line38",
+                "option2": "line48",
+                "option3": "line50"
+            }
         },
         {
             "id": 38,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line68"
         },
         {
             "id": 39,
@@ -413,7 +435,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line68"
         },
         {
             "id": 49,
@@ -429,7 +453,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line68"
         },
         {
             "id": 51,
@@ -589,7 +615,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 69,
@@ -598,14 +625,19 @@
                 "options": "(Maintain silence.);(Inquire what his purpose for asking is.)",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line70",
+                "option2": "line74"
+            }
         },
         {
             "id": 70,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line110"
         },
         {
             "id": 71,
@@ -639,7 +671,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line110"
         },
         {
             "id": 75,
@@ -961,7 +995,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 111,
@@ -989,5 +1024,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

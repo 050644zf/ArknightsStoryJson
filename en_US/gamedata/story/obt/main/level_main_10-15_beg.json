@@ -689,11 +689,12 @@
             "id": 81,
             "prop": "Decision",
             "attributes": {
-                "options": "He",
+                "options": "He's familiar with our combat style.;His Arts are targeted at Amiya.",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line82"
+                "option1": "line82",
+                "option2": "line82"
             }
         },
         {
@@ -881,17 +882,20 @@
             "id": 104,
             "prop": "Decision",
             "attributes": {
-                "options": "He",
+                "options": "He's stalling for time.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line105"
+            }
         },
         {
             "id": 105,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 106,
@@ -3170,7 +3174,7 @@
             "id": 375,
             "prop": "Subtitle",
             "attributes": {
-                "text": "Run into the darkness before you. Don",
+                "text": "Run into the darkness before you. Don't think.",
                 "x": 300.0,
                 "y": 370.0,
                 "alignment": "center",
@@ -3398,14 +3402,17 @@
                 "options": "No.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line401"
+            }
         },
         {
             "id": 401,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 402,
@@ -3448,17 +3455,20 @@
             "id": 407,
             "prop": "Decision",
             "attributes": {
-                "options": "He",
+                "options": "He's hoping you'll do this.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line408"
+            }
         },
         {
             "id": 408,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 409,
@@ -4511,14 +4521,17 @@
                 "options": "Appreciated. Thank you, Misery.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line533"
+            }
         },
         {
             "id": 533,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 534,
@@ -4529,17 +4542,22 @@
             "id": 535,
             "prop": "Decision",
             "attributes": {
-                "options": "Amiya, we",
+                "options": "Amiya, we're switching battlefields.;Closure, position drones.;Feist, zipline.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line536",
+                "option2": "line536",
+                "option3": "line536"
+            }
         },
         {
             "id": 536,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 537,
@@ -4548,14 +4566,17 @@
                 "options": "And now, we jump.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line538"
+            }
         },
         {
             "id": 538,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 539,
@@ -4687,17 +4708,20 @@
             "id": 555,
             "prop": "Decision",
             "attributes": {
-                "options": "He",
+                "options": "He's not scared of us approaching him.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line556"
+            }
         },
         {
             "id": 556,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 557,
@@ -4804,17 +4828,22 @@
             "id": 570,
             "prop": "Decision",
             "attributes": {
-                "options": "Amiya, you keep all of Manfred",
+                "options": "Amiya, you keep all of Manfred's attention.;Closure, Feist, ready our retreat from the tower.;The one we're waiting for is almost here.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line571",
+                "option2": "line571",
+                "option3": "line571"
+            }
         },
         {
             "id": 571,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 572,
@@ -6001,5 +6030,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

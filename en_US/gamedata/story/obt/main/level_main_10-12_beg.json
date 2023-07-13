@@ -2303,8 +2303,7 @@
             "attributes": {
                 "references": "1;2"
             },
-            "endOfOpt": false,
-            "targetLine": "line305"
+            "endOfOpt": false
         },
         {
             "id": 275,
@@ -2512,11 +2511,13 @@
             "id": 300,
             "prop": "Decision",
             "attributes": {
-                "options": "Maybe because I don",
+                "options": "Maybe because I don't remember the past.;Maybe because I only care about the present.;Maybe because I'm looking ahead to the future.",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line301"
+                "option1": "line301",
+                "option2": "line305",
+                "option3": "line309"
             }
         },
         {
@@ -2525,7 +2526,8 @@
             "attributes": {
                 "references": "1"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line314"
         },
         {
             "id": 302,
@@ -2558,7 +2560,8 @@
             "attributes": {
                 "references": "2"
             },
-            "endOfOpt": true
+            "endOfOpt": false,
+            "targetLine": "line314"
         },
         {
             "id": 306,
@@ -2590,7 +2593,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line314"
         },
         {
             "id": 310,
@@ -2631,7 +2636,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 315,
@@ -2785,33 +2791,40 @@
             "id": 333,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I'm here today as a result of my choices.;My choices determine how I move forward.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line334",
+                "option2": "line334"
+            }
         },
         {
             "id": 334,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 335,
             "prop": "Decision",
             "attributes": {
-                "options": "Someone once said I",
+                "options": "Someone once said I'd find my own path.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line336"
+            }
         },
         {
             "id": 336,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 337,
@@ -2820,14 +2833,17 @@
                 "options": "Vina, I want to share those words with you too.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line338"
+            }
         },
         {
             "id": 338,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 339,
@@ -2864,14 +2880,17 @@
                 "options": "You always have the right to choose.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line344"
+            }
         },
         {
             "id": 344,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 345,
@@ -4504,5 +4523,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

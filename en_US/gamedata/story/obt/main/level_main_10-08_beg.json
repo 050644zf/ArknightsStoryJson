@@ -1756,11 +1756,12 @@
             "id": 210,
             "prop": "Decision",
             "attributes": {
-                "options": "It",
+                "options": "It's not often you split up.;Did something happen?",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line211"
+                "option1": "line211",
+                "option2": "line211"
             }
         },
         {
@@ -1819,17 +1820,21 @@
             "id": 218,
             "prop": "Decision",
             "attributes": {
-                "options": "It",
+                "options": "It's hard to push forward with expectations on your shoulders.;Need me to say anything to them?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line219",
+                "option2": "line219"
+            }
         },
         {
             "id": 219,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 220,
@@ -2004,17 +2009,22 @@
             "id": 243,
             "prop": "Decision",
             "attributes": {
-                "options": "It",
+                "options": "It's time for us to leave.;Let's enjoy the Londinium air.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line244",
+                "option2": "line247"
+            }
         },
         {
             "id": 244,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line250"
         },
         {
             "id": 245,
@@ -2037,7 +2047,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line250"
         },
         {
             "id": 248,
@@ -2060,7 +2072,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 251,
@@ -3767,14 +3780,18 @@
                 "options": "Might be a trap.;Perhaps we have a helping hand.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line462",
+                "option2": "line462"
+            }
         },
         {
             "id": 462,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 463,
@@ -3811,14 +3828,17 @@
                 "options": "What do you think?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line468"
+            }
         },
         {
             "id": 468,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 469,
@@ -3853,14 +3873,17 @@
                 "options": "What about the Self-Salvation Corps?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line474"
+            }
         },
         {
             "id": 474,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 475,
@@ -3924,17 +3947,20 @@
             "id": 483,
             "prop": "Decision",
             "attributes": {
-                "options": "Alright, we",
+                "options": "Alright, we'll proceed as planned.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line484"
+            }
         },
         {
             "id": 484,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 485,
@@ -3953,14 +3979,20 @@
                 "options": "Team Morgan, to the east entrance.;The 3rd will split up and distract the north and southwest entrances.;Closure will stay on surveillance and support.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line488",
+                "option2": "line491",
+                "option3": "line494"
+            }
         },
         {
             "id": 488,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line497"
         },
         {
             "id": 489,
@@ -3983,7 +4015,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line497"
         },
         {
             "id": 492,
@@ -4006,7 +4040,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line497"
         },
         {
             "id": 495,
@@ -4029,7 +4065,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 498,
@@ -4048,14 +4085,17 @@
                 "options": "Amiya, send a signal to the others.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line501"
+            }
         },
         {
             "id": 501,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 502,
@@ -4128,17 +4168,22 @@
             "id": 511,
             "prop": "Decision",
             "attributes": {
-                "options": "No, PRTS is helping me.;I",
+                "options": "No, PRTS is helping me.;I've got X-ray vision.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line512",
+                "option2": "line517"
+            }
         },
         {
             "id": 512,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line521"
         },
         {
             "id": 513,
@@ -4177,7 +4222,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line521"
         },
         {
             "id": 518,
@@ -4209,7 +4256,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 522,
@@ -4284,17 +4332,20 @@
             "id": 531,
             "prop": "Decision",
             "attributes": {
-                "options": "Let",
+                "options": "Let's go south.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line532"
+            }
         },
         {
             "id": 532,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 533,
@@ -4950,17 +5001,22 @@
             "id": 614,
             "prop": "Decision",
             "attributes": {
-                "options": "So I",
+                "options": "So I'm not getting out of this, huh?;......;When do I get to be master of my own fate?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line615",
+                "option2": "line615",
+                "option3": "line615"
+            }
         },
         {
             "id": 615,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 616,
@@ -5077,5 +5133,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

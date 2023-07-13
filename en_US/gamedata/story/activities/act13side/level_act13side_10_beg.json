@@ -1083,11 +1083,12 @@
             "id": 121,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You've got to go, Amiya.;As leaders of Rhodes Island, we can't afford to miss this.",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line122"
+                "option1": "line122",
+                "option2": "line122"
             }
         },
         {
@@ -5419,17 +5420,21 @@
             "id": 630,
             "prop": "Decision",
             "attributes": {
-                "options": "Amiya, hold my hand.;Stay close to me. Don",
+                "options": "Amiya, hold my hand.;Stay close to me. Don't get separated in the crowd.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line631",
+                "option2": "line631"
+            }
         },
         {
             "id": 631,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 632,
@@ -5885,17 +5890,22 @@
             "id": 686,
             "prop": "Decision",
             "attributes": {
-                "options": "Even if we know very little about him, I can",
+                "options": "Even if we know very little about him, I can't deny that he is a hero.;......;Even if he stands in Nearl's way, I can't deny he's a tough opponent.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line687",
+                "option2": "line687",
+                "option3": "line687"
+            }
         },
         {
             "id": 687,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 688,
@@ -7923,5 +7933,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

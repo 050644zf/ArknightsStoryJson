@@ -113,7 +113,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Remove the electrodes.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -126,11 +126,13 @@
             "id": 15,
             "prop": "Decision",
             "attributes": {
-                "options": "What",
+                "options": "What's the prognosis?;......;My head feels hot and distended. Not good.",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line16"
+                "option1": "line16",
+                "option2": "line16",
+                "option3": "line19"
             }
         },
         {
@@ -139,7 +141,8 @@
             "attributes": {
                 "references": "1;2"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line22"
         },
         {
             "id": 17,
@@ -153,7 +156,7 @@
             "prop": "name",
             "attributes": {
                 "content": "No new developments.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -162,7 +165,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line22"
         },
         {
             "id": 20,
@@ -176,7 +181,7 @@
             "prop": "name",
             "attributes": {
                 "content": "You'll feel better after a quick rest.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -185,14 +190,15 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 23,
             "prop": "name",
             "attributes": {
                 "content": "Dr. {@nickname}, I've scanned your brain seven times over the past month or so, and the results are always the same.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -201,7 +207,7 @@
             "prop": "name",
             "attributes": {
                 "content": "There's nothing wrong with your medial temporal lobe, and the neurons in other brain areas are as active as they are in most young people.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -217,7 +223,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Meaning you don't need to come to Medical for these unpleasant tests so often.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -230,24 +236,27 @@
             "id": 28,
             "prop": "Decision",
             "attributes": {
-                "options": "Then, what",
+                "options": "Then, what's wrong with my memory?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line29"
+            }
         },
         {
             "id": 29,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 30,
             "prop": "name",
             "attributes": {
                 "content": "There's no doubt that you've lost a lot of your memory. Even someone like you wouldn't be able to manipulate the results.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -256,7 +265,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Those memories are episodic, chiefly concerning the subjective awareness of your identity, and even more so about all your experiences before you fell asleep in the Chernobog sarcophagus.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -265,7 +274,7 @@
             "prop": "name",
             "attributes": {
                 "content": "In contrast, your procedural memory has recovered extremely quickly.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -274,7 +283,7 @@
             "prop": "name",
             "attributes": {
                 "content": "From my reports or Amiya's and Dobermann's observations, this conclusion is clear.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -283,7 +292,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Your ability to command, as exhibited during the Chernobog incident, is not significantly worse than before.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -296,24 +305,30 @@
             "id": 36,
             "prop": "Decision",
             "attributes": {
-                "options": "Why would this happen?;......;In other words, I",
+                "options": "Why would this happen?;......;In other words, I'm still useful?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line37",
+                "option2": "line40",
+                "option3": "line43"
+            }
         },
         {
             "id": 37,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line46"
         },
         {
             "id": 38,
             "prop": "name",
             "attributes": {
                 "content": "There are many reasons for memory loss. Some are force majeure, others are subjective.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -322,7 +337,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Medical testing can only rule out qualitative pathological changes.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -331,14 +346,16 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line46"
         },
         {
             "id": 41,
             "prop": "name",
             "attributes": {
                 "content": "Of course, you don't make as much noise as you used to.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -347,7 +364,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Considering your language center has not been damaged, I can only guess that the deprivation of episodic memory has caused some changes in your personality.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -356,14 +373,16 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line46"
         },
         {
             "id": 44,
             "prop": "name",
             "attributes": {
                 "content": "To Rhodes Island, you are far more than just 'useful.'",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -372,7 +391,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Even if you truly lost all your memories and become an ignorant bystander, Amiya would not have regretted saving you, and there will always be a place for you at Rhodes Island.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -381,14 +400,15 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 47,
             "prop": "name",
             "attributes": {
                 "content": "In any case, I believe that the skills you possess will play just as key a role as they did in the past.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -404,21 +424,25 @@
                 "options": "I want to be able to help you.;I want to be able to help Amiya.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line50",
+                "option2": "line50"
+            }
         },
         {
             "id": 50,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 51,
             "prop": "name",
             "attributes": {
                 "content": "I know.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -427,7 +451,7 @@
             "prop": "name",
             "attributes": {
                 "content": "And I've seen how hard you've been working.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -436,7 +460,7 @@
             "prop": "name",
             "attributes": {
                 "content": "After leaving Lungmen, we've been making our way through the wastelands for some time. The operators need an opportunity to rest, Amiya in particular.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -452,7 +476,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Likewise, you also need a chance to catch your breath, don't you?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#4"
         },
@@ -465,17 +489,22 @@
             "id": 57,
             "prop": "Decision",
             "attributes": {
-                "options": "I just want some time to adjust.;......;I don",
+                "options": "I just want some time to adjust.;......;I don't want to stop here.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line58",
+                "option2": "line58",
+                "option3": "line58"
+            }
         },
         {
             "id": 58,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 59,
@@ -489,7 +518,7 @@
             "prop": "name",
             "attributes": {
                 "content": "With PRTS to help you, it won't take long for you to adapt to your work at Rhodes Island.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -498,7 +527,7 @@
             "prop": "name",
             "attributes": {
                 "content": "However, I don't want you to push yourself.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -507,7 +536,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Rhodes Island is not the only thing that has just emerged from a terrible disaster. You have as well, Dr. {@nickname}.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -516,7 +545,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Your physical indicators have more or less returned to normal, but your memory is still damaged, and your mental state is unstable.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -532,7 +561,7 @@
             "prop": "name",
             "attributes": {
                 "content": "As a patient, overwork can only harm you.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#2"
         },
@@ -545,17 +574,22 @@
             "id": 67,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You're also a patient.;Amiya is also a patient.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line68",
+                "option2": "line73"
+            }
         },
         {
             "id": 68,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line76"
         },
         {
             "id": 69,
@@ -569,7 +603,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Me? I appreciate your concern.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -585,7 +619,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Though I can't say I'm used to Oripathy, I can assure you that I'm the last person you should worry about.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -594,14 +628,16 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line76"
         },
         {
             "id": 74,
             "prop": "name",
             "attributes": {
                 "content": "Amiya knows you're concerned about her, and she's been paying more attention to her health lately.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -610,7 +646,7 @@
             "prop": "name",
             "attributes": {
                 "content": "I have no choice but to admit, there are some areas in which your words hold more weight than mine.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -619,14 +655,15 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 77,
             "prop": "name",
             "attributes": {
                 "content": "Dr. {@nickname}, in the span of one short month, you've taken over the staffing of several departments on this ship.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -635,7 +672,7 @@
             "prop": "name",
             "attributes": {
                 "content": "In addition, I've seen you reviewing past battles together with combat operators to further explore the possibilities of tactical optimization.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -644,7 +681,7 @@
             "prop": "name",
             "attributes": {
                 "content": "You've even been reading during this entire examination. Are you looking at the briefing submitted by the new operator who just reported in a few days ago?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#1"
         },
@@ -660,7 +697,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Furthermore, I've seen your notes.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -669,7 +706,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Those records about even the most trivial of the operators' details, those flashes of tactical inspiration...",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -678,7 +715,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Those calculations for determining Rhodes Island's business efficiency, and even those scrawls that I can't make sense of. They are all evidence of your commitment to your duty.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -687,7 +724,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Although most of these tasks can be completed with the assistance of PRTS, I think this is your preferred method.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -700,24 +737,30 @@
             "id": 86,
             "prop": "Decision",
             "attributes": {
-                "options": "It",
+                "options": "It's just a way of organizing my thoughts.;PRTS's data lacks a bit of that human touch.;You didn't see me badmouthing you, did you?!",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line87",
+                "option2": "line89",
+                "option3": "line91"
+            }
         },
         {
             "id": 87,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line93"
         },
         {
             "id": 88,
             "prop": "name",
             "attributes": {
                 "content": "As the density of your notes increases, your cognition also improves.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -726,14 +769,16 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line93"
         },
         {
             "id": 90,
             "prop": "name",
             "attributes": {
                 "content": "PRTS is just a tool. Avoiding overreliance on tools is a good working habit.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -742,14 +787,16 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line93"
         },
         {
             "id": 92,
             "prop": "name",
             "attributes": {
                 "content": "So that was a complaint? I would rather take those words as a compliment.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -758,14 +805,15 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 94,
             "prop": "name",
             "attributes": {
                 "content": "All of your abilities are recovering rapidly, not only due to the retention of your procedural memory, but also due to your extraordinary efforts.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -774,7 +822,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Conscious exercise will help your brain return more quickly to your pre-comatose state, and may even bring back your memory faster than expected.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -790,21 +838,24 @@
                 "options": "Do you want me to recover as quickly as possible?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line98"
+            }
         },
         {
             "id": 98,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 99,
             "prop": "name",
             "attributes": {
                 "content": "I am your doctor. There's not a doctor out there who does not wish for the quick recovery of her patient.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -813,7 +864,7 @@
             "prop": "name",
             "attributes": {
                 "content": "That said, if you end up collapsing due to overwork, you'll disrupt Amiya's condition as well.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -829,14 +880,19 @@
                 "options": "Are you only concerned about Amiya?;......;I see. You do care about me.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line103",
+                "option2": "line103",
+                "option3": "line103"
+            }
         },
         {
             "id": 103,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 104,
@@ -850,7 +906,7 @@
             "prop": "name",
             "attributes": {
                 "content": "These sentiments of yours that occasionally leak through are quite unlike the past you. While this is rather intriguing, if I am the object of your feelings, let's just say we've no need of that.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -859,7 +915,7 @@
             "prop": "name",
             "attributes": {
                 "content": "I've told you many times over that ensuring your physical and mental well-being has always been one of my duties.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -875,7 +931,7 @@
             "prop": "name",
             "attributes": {
                 "content": "So, yes, even here, I still care about you. Even without a battle.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#4"
         },
@@ -888,17 +944,22 @@
             "id": 110,
             "prop": "Decision",
             "attributes": {
-                "options": "It",
+                "options": "It's strange that you'd talk to me like this.;......;Alright.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line111",
+                "option2": "line111",
+                "option3": "line111"
+            }
         },
         {
             "id": 111,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 112,
@@ -912,7 +973,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Today's exam is over.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#2"
         },
@@ -928,7 +989,7 @@
             "prop": "name",
             "attributes": {
                 "content": "As I said, you don't need to report back here at the same time next week.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -937,7 +998,7 @@
             "prop": "name",
             "attributes": {
                 "content": "The regular morning and evening check-ups will continue for a while. Lancet-2 will look after you for me.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -946,7 +1007,7 @@
             "prop": "name",
             "attributes": {
                 "content": "If we ever find that your physical condition does not support your continued work, you must immediately return to Medical.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -955,7 +1016,7 @@
             "prop": "name",
             "attributes": {
                 "content": "As for now, you may return to your work, Doctor.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -1399,17 +1460,20 @@
             "id": 170,
             "prop": "Decision",
             "attributes": {
-                "options": "There",
+                "options": "There's no time for that.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line171"
+            }
         },
         {
             "id": 171,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 172,
@@ -1450,14 +1514,17 @@
                 "options": "I was going up onto the bridge.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line177"
+            }
         },
         {
             "id": 177,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 178,
@@ -1486,17 +1553,21 @@
             "id": 181,
             "prop": "Decision",
             "attributes": {
-                "options": "The windstorm is right in front of us. He",
+                "options": "The windstorm is right in front of us. He'll notice soon enough.;The situation is urgent, I'll let Amiya know.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line182",
+                "option2": "line182"
+            }
         },
         {
             "id": 182,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 183,
@@ -1537,14 +1608,18 @@
                 "options": "I believe in reality.;I believe my operators.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line188",
+                "option2": "line188"
+            }
         },
         {
             "id": 188,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 189,
@@ -1564,17 +1639,21 @@
             "id": 191,
             "prop": "Decision",
             "attributes": {
-                "options": "Good. That",
+                "options": "Good. That's the best option.;Not going to ask for overtime?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line192",
+                "option2": "line192"
+            }
         },
         {
             "id": 192,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 193,
@@ -1969,17 +2048,20 @@
             "id": 240,
             "prop": "Decision",
             "attributes": {
-                "options": "Yes. It",
+                "options": "Yes. It's a Catastrophe.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line241"
+            }
         },
         {
             "id": 241,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 242,
@@ -2015,17 +2097,21 @@
             "id": 246,
             "prop": "Decision",
             "attributes": {
-                "options": "No time to explain.;It",
+                "options": "No time to explain.;It's a supercell.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line247",
+                "option2": "line247"
+            }
         },
         {
             "id": 247,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 248,
@@ -2156,14 +2242,17 @@
                 "options": "Earthspirit, your analysis.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line265"
+            }
         },
         {
             "id": 265,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 266,
@@ -2291,17 +2380,22 @@
             "id": 280,
             "prop": "Decision",
             "attributes": {
-                "options": "We still have time to move things in the right direction.;......;I",
+                "options": "We still have time to move things in the right direction.;......;I'm getting a real bad feeling about this.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line281",
+                "option2": "line281",
+                "option3": "line281"
+            }
         },
         {
             "id": 281,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 282,
@@ -2556,14 +2650,17 @@
                 "options": "There is a way.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line311"
+            }
         },
         {
             "id": 311,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 312,
@@ -2590,17 +2687,21 @@
             "id": 315,
             "prop": "Decision",
             "attributes": {
-                "options": "We won",
+                "options": "We won't have to take damage.;You don't want to have to dock for a month of repairs, right?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line316",
+                "option2": "line316"
+            }
         },
         {
             "id": 316,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 317,
@@ -2627,17 +2728,21 @@
             "id": 320,
             "prop": "Decision",
             "attributes": {
-                "options": "We have another choice.;Since we can",
+                "options": "We have another choice.;Since we can't retreat and don't want to stop, what else can we do?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line321",
+                "option2": "line321"
+            }
         },
         {
             "id": 321,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 322,
@@ -2737,14 +2842,19 @@
                 "options": "I need Earthspirit to keep calculating the real-time coordinates of the vortex.;Yes.;I need PRTS to help me calculate the energy amplitude of the Originium on the surface.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line334",
+                "option2": "line334",
+                "option3": "line334"
+            }
         },
         {
             "id": 334,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 335,
@@ -2925,17 +3035,22 @@
             "id": 356,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I've given the route to the navigator.;Work with the central control staff if you need to change course rapidly.;Amiya, we're ready.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line357",
+                "option2": "line357",
+                "option3": "line357"
+            }
         },
         {
             "id": 357,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 358,
@@ -2962,24 +3077,30 @@
             "id": 361,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I'll help you issue instructions.;Leave it to me.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line362",
+                "option2": "line362"
+            }
         },
         {
             "id": 362,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line366"
         },
         {
             "id": 363,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 364,
@@ -3004,7 +3125,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 367,
@@ -3392,7 +3514,7 @@
             "id": 413,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I've got you, Amiya.",
                 "values": "1"
             },
             "targetLine": {}
@@ -3535,7 +3657,7 @@
             "id": 429,
             "prop": "Decision",
             "attributes": {
-                "options": "Don",
+                "options": "Don't worry about it. You can hold on even tighter.;......;Your ears are making my face itchy.",
                 "values": "1;2;3"
             },
             "targetLine": {}
@@ -4010,7 +4132,7 @@
             "id": 486,
             "prop": "Decision",
             "attributes": {
-                "options": "Amiya, are you afraid?;......;You",
+                "options": "Amiya, are you afraid?;......;You're hurting my hand.",
                 "values": "1;2;3"
             },
             "targetLine": {}
@@ -4470,7 +4592,7 @@
             "id": 538,
             "prop": "Decision",
             "attributes": {
-                "options": "Yes, we survived back then.;Look.;I think my record",
+                "options": "Yes, we survived back then.;Look.;I think my record's looking pretty good.",
                 "values": "1;2;3"
             },
             "targetLine": {}
@@ -4737,7 +4859,7 @@
             "id": 570,
             "prop": "Decision",
             "attributes": {
-                "options": "To be fair, I was pretty anxious through that whole thing.;......;Shouldn",
+                "options": "To be fair, I was pretty anxious through that whole thing.;......;Shouldn't we celebrate?",
                 "values": "1;2;3"
             },
             "targetLine": {}
@@ -4939,7 +5061,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Not half bad.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -4969,7 +5091,7 @@
             "prop": "name",
             "attributes": {
                 "content": "The relationship between the self-replication speed of Originium and the increase in energy— you applied this knowledge to the calculation of wind-Catastrophe trajectories.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -4978,7 +5100,7 @@
             "prop": "name",
             "attributes": {
                 "content": "You demonstrated similar abilities in the past, helping your colleagues at the time mitigate losses from Catastrophes. Some called you a Catastrophe expert.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -4987,7 +5109,7 @@
             "prop": "name",
             "attributes": {
                 "content": "But we both know what you really specialize in.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5000,7 +5122,7 @@
             "id": 602,
             "prop": "Decision",
             "attributes": {
-                "options": "What do I specialize in?;......;Look, I really don",
+                "options": "What do I specialize in?;......;Look, I really don't know.",
                 "values": "1;2;3"
             },
             "targetLine": {}
@@ -5017,7 +5139,7 @@
             "prop": "name",
             "attributes": {
                 "content": "That formula... You still remember it.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5030,7 +5152,7 @@
             "id": 606,
             "prop": "Decision",
             "attributes": {
-                "options": "I didn",
+                "options": "I didn't remember it before.;It jumped right into my head.",
                 "values": "1;2"
             },
             "targetLine": {}
@@ -5047,7 +5169,7 @@
             "prop": "name",
             "attributes": {
                 "content": "You created that formula yourself.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5056,7 +5178,7 @@
             "prop": "name",
             "attributes": {
                 "content": "You've recovered a lot of information about Originium and Catastrophes over the past month, and you left a lot of calculations in your notes.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5065,7 +5187,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Perhaps the sudden crisis dredged up the latent memories from deep inside your consciousness, or perhaps you reinvented it using the knowledge you left behind.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5074,7 +5196,7 @@
             "prop": "name",
             "attributes": {
                 "content": "The fact that you could recall this formula proves that you still retain a basic understanding of the nature of Originium.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5083,7 +5205,7 @@
             "prop": "name",
             "attributes": {
                 "content": "In other words, you've never forgotten your identity as a researcher of Originium.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5113,7 +5235,7 @@
             "prop": "name",
             "attributes": {
                 "content": "You may see the study of Originium as your duty, but know that our actions should never be restricted by duty alone.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5122,7 +5244,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Dr. {@nickname}, what drives you to pursue the study of Originium so fervently?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5152,7 +5274,7 @@
             "prop": "name",
             "attributes": {
                 "content": "I once heard an answer to this question.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5161,7 +5283,7 @@
             "prop": "name",
             "attributes": {
                 "content": "It was very similar to what you said today, but also completely different.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5170,7 +5292,7 @@
             "prop": "name",
             "attributes": {
                 "content": "The person who uttered those words had an instinctive desire to unravel truths unknown, and also worked hard to save lives.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5179,7 +5301,7 @@
             "prop": "name",
             "attributes": {
                 "content": "But sometimes, salvation also meant destruction— that is what the same person told me.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5188,7 +5310,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Do you still harbor that same answer deep within your brain?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5201,7 +5323,7 @@
             "id": 627,
             "prop": "Decision",
             "attributes": {
-                "options": "Does it still count as being there even if I don",
+                "options": "Does it still count as being there even if I don't remember it?;......;Whatever makes you happy.",
                 "values": "1;2;3"
             },
             "targetLine": {}
@@ -5218,7 +5340,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Amiya said your performance on the bridge today was much like that of an actual 'prophet.'",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5248,7 +5370,7 @@
             "prop": "name",
             "attributes": {
                 "content": "The rational part of me wants to believe in science.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5257,7 +5379,7 @@
             "prop": "name",
             "attributes": {
                 "content": "When the results of your first brain examination came back, I thought I saw some errors in the process, and so there was a second time, a third time... and even a seventh time.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5266,7 +5388,7 @@
             "prop": "name",
             "attributes": {
                 "content": "The rational part of me told me that repeating the same results three times was enough to prove that you weren't lying.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5275,7 +5397,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Without a shadow of a doubt, you really did lose a lot of your memories. You don't remember what you did to Theresa, and you forgot why you were standing here in the first place.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5284,7 +5406,7 @@
             "prop": "name",
             "attributes": {
                 "content": "All of this has caused a significant... dichotomy between you and the person I once knew.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5293,7 +5415,7 @@
             "prop": "name",
             "attributes": {
                 "content": "But just like I allowed you to do the seventh test, in this moment, I once again find myself doubting... Who exactly is standing in front of me?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5302,7 +5424,7 @@
             "prop": "name",
             "attributes": {
                 "content": "How much of the past remains, and how much of you blooms anew?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5315,7 +5437,7 @@
             "id": 641,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You're being sentimental again.;It felt terrible having to sit through seven exams.",
                 "values": "1;2"
             },
             "targetLine": {}
@@ -5332,7 +5454,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Perhaps, I won't deny it. Dealing with you always has a tendency to sway my emotions.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5341,7 +5463,7 @@
             "prop": "name",
             "attributes": {
                 "content": "But this is also born of extreme rationality.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5350,7 +5472,7 @@
             "prop": "name",
             "attributes": {
                 "content": "I hope you understand, there can be errors in our measurements. And in your case, I can no longer tolerate any errors.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5366,7 +5488,7 @@
             "prop": "name",
             "attributes": {
                 "content": "I would like to apologize to you regarding this matter.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5375,7 +5497,7 @@
             "prop": "name",
             "attributes": {
                 "content": "But taking a better grasp of your memory recuperation will also have real benefits for your body.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5395,7 +5517,7 @@
             "id": 651,
             "prop": "Decision",
             "attributes": {
-                "options": "There",
+                "options": "There's something I've wanted to ask for a long time.",
                 "values": "1"
             },
             "targetLine": {}
@@ -5433,7 +5555,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Situations are rarely black and white... and the same is true of human emotions.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5442,7 +5564,7 @@
             "prop": "name",
             "attributes": {
                 "content": "I've not concealed my hatred for you in the past, but... no matter how much I hate to admit it, there's something else there too.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5455,7 +5577,7 @@
             "id": 659,
             "prop": "Decision",
             "attributes": {
-                "options": "You want me doing everything I could before.;Do you miss the person you hate?;You",
+                "options": "You want me doing everything I could before.;Do you miss the person you hate?;You're searching for the truth of the past.",
                 "values": "1;2;3"
             },
             "targetLine": {}
@@ -5472,7 +5594,7 @@
             "prop": "name",
             "attributes": {
                 "content": "If it's only strength I needed, I believe that you are good enough as you are... Perhaps, you can do even better.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5495,7 +5617,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Do I... 'miss'...?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5504,7 +5626,7 @@
             "prop": "name",
             "attributes": {
                 "content": "That word is far too simple. The languages of this world have developed over thousands of years, and yet I am still unable to choose the most suitable word to order my thoughts during the many moments I think about you.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5520,7 +5642,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Without a doubt, I seek that answer.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5529,7 +5651,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Ideally, I want to hear the truth from your mouth. But I will not give up looking for that truth in other ways.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5545,7 +5667,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Now, it's my turn to ask you.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5554,7 +5676,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Dr. {@nickname}, do you want your memories back?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5567,7 +5689,7 @@
             "id": 673,
             "prop": "Decision",
             "attributes": {
-                "options": "I do.;I don",
+                "options": "I do.;I don't.",
                 "values": "1;2"
             },
             "targetLine": {}
@@ -5584,7 +5706,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Your answer doesn't matter. I see your hesitation.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5593,7 +5715,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Once your memories come back, many of your questions will be answered. However, not every answer will satisfy you.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5602,7 +5724,7 @@
             "prop": "name",
             "attributes": {
                 "content": "You will know where all the emotions pouring into you come from, whether it is the hatred from me and W, the unconditional trust from Amiya, or... even further back.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5611,7 +5733,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Excess memories, intense emotions, will instantly flood your entire brain—",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5620,7 +5742,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Trust me, what you will feel at that time will be far greater than exhaustion.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5629,7 +5751,7 @@
             "prop": "name",
             "attributes": {
                 "content": "What you should fear even more is, when the past finally catches up to you, you must decide.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5638,7 +5760,7 @@
             "prop": "name",
             "attributes": {
                 "content": "What if those memories are too strong and engulf all the hard work you've put in recently, and pull you back into the abyss that you failed to crawl out of over countless years?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5647,7 +5769,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Once the current you is defeated, everything you've worked so hard to build will collapse, and your will may no longer be your own.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5656,7 +5778,7 @@
             "prop": "name",
             "attributes": {
                 "content": "So, let me ask you once more—",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5665,7 +5787,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Dr. {@nickname}, are you ready?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5695,7 +5817,7 @@
             "prop": "name",
             "attributes": {
                 "content": "If luck is on our side, you won't need to answer this question any time soon.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5704,7 +5826,7 @@
             "prop": "name",
             "attributes": {
                 "content": "I want to thank you. Over the past month or so, you've shown me some new possibilities.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5713,7 +5835,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Especially today. I learned that you still remember the formula.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -5729,7 +5851,7 @@
             "prop": "name",
             "attributes": {
                 "content": "It turns out, you and I are not the only ones preparing for that day.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#4"
         },
@@ -5745,7 +5867,7 @@
             "prop": "name",
             "attributes": {
                 "content": "I suspected this long ago, that home-use life functions restoration device was not supposed to have the defect of deleting one's memory—",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1"
         },
@@ -5754,7 +5876,7 @@
             "prop": "name",
             "attributes": {
                 "content": "In particular, it's impossible to selectively delete the part of the brain most likely involved in decision-making, but still retaining the parts most meaningful to you.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1"
         },
@@ -5763,7 +5885,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Dr. {@nickname}......",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1"
         },
@@ -5772,7 +5894,7 @@
             "prop": "name",
             "attributes": {
                 "content": "What I think is, she trusted you even more than I could fathom in the past.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1"
         },
@@ -5781,7 +5903,7 @@
             "prop": "name",
             "attributes": {
                 "content": "That being the case, we should continue to work hard.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1"
         },
@@ -5790,7 +5912,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Just as I've said countless times already, I will help you, as long as we continue to stand together.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1"
         },
@@ -6266,7 +6388,7 @@
             "id": 760,
             "prop": "Decision",
             "attributes": {
-                "options": "I also read your thesis.;Your research is very interesting.;I",
+                "options": "I also read your thesis.;Your research is very interesting.;I've said before, I'm a hard worker, but some folks are thinking I can use Arts.",
                 "values": "1;2;3"
             },
             "targetLine": {}
@@ -6420,7 +6542,7 @@
             "id": 780,
             "prop": "Decision",
             "attributes": {
-                "options": "After I get some work done.;You",
+                "options": "After I get some work done.;You're welcome to look around.",
                 "values": "1;2"
             },
             "targetLine": {}
@@ -6558,7 +6680,7 @@
             "id": 798,
             "prop": "Decision",
             "attributes": {
-                "options": "Any time.;You",
+                "options": "Any time.;You're always welcome.;As long as I can finish my other work.",
                 "values": "1;2;3"
             },
             "targetLine": {}

@@ -973,7 +973,7 @@
             "id": 117,
             "prop": "Decision",
             "attributes": {
-                "options": "I know.;......;Kal",
+                "options": "I know.;......;Kal'tsit gave the signal to retreat.",
                 "values": "1;2;3"
             },
             "targetLine": {
@@ -1207,7 +1207,7 @@
             "id": 147,
             "prop": "Decision",
             "attributes": {
-                "options": "Rhodes Island, follow Mon3tr!;Rhodes Island, cover Corps",
+                "options": "Rhodes Island, follow Mon3tr!;Rhodes Island, cover Corps' retreat!",
                 "values": "1;2"
             },
             "targetLine": {
@@ -1221,8 +1221,7 @@
             "attributes": {
                 "references": "1;2"
             },
-            "endOfOpt": false,
-            "targetLine": "line154"
+            "endOfOpt": false
         },
         {
             "id": 149,
@@ -1254,11 +1253,12 @@
             "id": 153,
             "prop": "Decision",
             "attributes": {
-                "options": "And Amiya",
+                "options": "And Amiya's group.;Inform Amiya, Ascalon and Logos.",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line154"
+                "option1": "line154",
+                "option2": "line154"
             }
         },
         {
@@ -1267,7 +1267,7 @@
             "attributes": {
                 "references": "1;2"
             },
-            "endOfOpt": true
+            "endOfOpt": false
         },
         {
             "id": 155,
@@ -2437,11 +2437,12 @@
             "id": 298,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I've heard these words before.;I've heard a similar language before.",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line299"
+                "option1": "line299",
+                "option2": "line299"
             }
         },
         {
@@ -2456,17 +2457,21 @@
             "id": 300,
             "prop": "Decision",
             "attributes": {
-                "options": "It",
+                "options": "It's a kind of hypnotic suggestion.;It's unorthodox Arts.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line301",
+                "option2": "line301"
+            }
         },
         {
             "id": 301,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 302,
@@ -2503,14 +2508,17 @@
                 "options": "But Amiya...",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line307"
+            }
         },
         {
             "id": 307,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 308,
@@ -2544,17 +2552,21 @@
             "id": 312,
             "prop": "Decision",
             "attributes": {
-                "options": "Shining...;You",
+                "options": "Shining...;You're affected too?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line313",
+                "option2": "line313"
+            }
         },
         {
             "id": 313,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 314,
@@ -2600,14 +2612,18 @@
                 "options": "Rampant power?;Could it be...?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line320",
+                "option2": "line320"
+            }
         },
         {
             "id": 320,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 321,
@@ -2653,14 +2669,17 @@
                 "options": "......",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line327"
+            }
         },
         {
             "id": 327,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 328,
@@ -2706,30 +2725,37 @@
                 "options": "Amiya is in danger.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line334"
+            }
         },
         {
             "id": 334,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 335,
             "prop": "Decision",
             "attributes": {
-                "options": "That",
+                "options": "That's what I'm most worried about.;Whether Theresa is responsible for it or not.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line336",
+                "option2": "line336"
+            }
         },
         {
             "id": 336,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 337,
@@ -4390,14 +4416,17 @@
                 "options": "Amiya!!",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line534"
+            }
         },
         {
             "id": 534,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 535,
@@ -4406,14 +4435,17 @@
                 "options": "Closure, your drone!",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line536"
+            }
         },
         {
             "id": 536,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 537,
@@ -5030,7 +5062,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Dr. {@nickname}...",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "avg_npc_062"
         },
@@ -5039,7 +5071,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Take Amiya... go.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "avg_npc_062"
         },
@@ -5340,7 +5372,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Theresis...",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#2"
         },
@@ -5451,7 +5483,7 @@
             "prop": "name",
             "attributes": {
                 "content": "*cough*... *cough* *cough*...",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#2"
         },
@@ -5460,7 +5492,7 @@
             "prop": "name",
             "attributes": {
                 "content": "You... you're just accelerating destruction.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#2"
         },
@@ -5601,7 +5633,7 @@
             "prop": "name",
             "attributes": {
                 "content": "...No!",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#2"
         },
@@ -5702,5 +5734,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

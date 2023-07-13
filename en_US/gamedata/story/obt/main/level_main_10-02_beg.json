@@ -976,11 +976,12 @@
             "id": 117,
             "prop": "Decision",
             "attributes": {
-                "options": "And the other nobles don",
+                "options": "And the other nobles don't care?;What's going on in Parliament?",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line118"
+                "option1": "line118",
+                "option2": "line131"
             }
         },
         {
@@ -989,7 +990,8 @@
             "attributes": {
                 "references": "1"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line138"
         },
         {
             "id": 119,
@@ -1092,7 +1094,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line138"
         },
         {
             "id": 132,
@@ -1147,7 +1151,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 139,
@@ -2750,17 +2755,21 @@
             "id": 327,
             "prop": "Decision",
             "attributes": {
-                "options": "They don",
+                "options": "They don't seem to be after us.;Think we haven't been made yet.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line328",
+                "option2": "line328"
+            }
         },
         {
             "id": 328,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 329,
@@ -2874,17 +2883,22 @@
             "id": 343,
             "prop": "Decision",
             "attributes": {
-                "options": "Actually, I thought it",
+                "options": "Actually, I thought it'd be a Confessarius.;......;Surely we wouldn't be that incompetent?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line344",
+                "option2": "line344",
+                "option3": "line344"
+            }
         },
         {
             "id": 344,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 345,
@@ -3150,17 +3164,21 @@
             "id": 378,
             "prop": "Decision",
             "attributes": {
-                "options": "It",
+                "options": "It's pretty obvious.;He thinks the Sarkaz are after him.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line379",
+                "option2": "line379"
+            }
         },
         {
             "id": 379,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 380,
@@ -3631,5 +3649,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

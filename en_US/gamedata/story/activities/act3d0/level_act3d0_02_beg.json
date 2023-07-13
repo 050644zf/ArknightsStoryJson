@@ -378,11 +378,12 @@
             "id": 44,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I'm already getting pumped up!;This kind of music is a bit intense for me...",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line45"
+                "option1": "line45",
+                "option2": "line45"
             }
         },
         {
@@ -461,14 +462,17 @@
                 "options": "You must really love this city.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line54"
+            }
         },
         {
             "id": 54,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 55,
@@ -511,14 +515,18 @@
                 "options": "It sounds like you really trust her.;Are you talking about your mother?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line60",
+                "option2": "line60"
+            }
         },
         {
             "id": 60,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 61,
@@ -926,17 +934,20 @@
             "id": 108,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You're a Catastrophe Messenger, and you don't even know this much?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line109"
+            }
         },
         {
             "id": 109,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 110,
@@ -1179,17 +1190,22 @@
             "id": 137,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You're jumping to conclusions...;If this is a joke, it's not very funny.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line138",
+                "option2": "line141"
+            }
         },
         {
             "id": 138,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line144"
         },
         {
             "id": 139,
@@ -1212,7 +1228,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line144"
         },
         {
             "id": 142,
@@ -1235,7 +1253,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 145,
@@ -1392,14 +1411,18 @@
                 "options": "Ceylon, watch out!;Hurry! We need to get out of here!",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line163",
+                "option2": "line163"
+            }
         },
         {
             "id": 163,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 164,
@@ -1433,5 +1456,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

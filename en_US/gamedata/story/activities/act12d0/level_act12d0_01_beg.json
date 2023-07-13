@@ -119,7 +119,7 @@
             "id": 14,
             "prop": "Decision",
             "attributes": {
-                "options": "What is freedom?;I",
+                "options": "What is freedom?;I'm free!",
                 "values": "1;2"
             },
             "targetLine": {
@@ -226,7 +226,7 @@
             "id": 27,
             "prop": "Decision",
             "attributes": {
-                "options": "I want to build my kingdom here!;No, on second thought, I",
+                "options": "I want to build my kingdom here!;No, on second thought, I'm more of a masochist.",
                 "values": "3;4"
             },
             "targetLine": {
@@ -240,7 +240,8 @@
             "attributes": {
                 "references": "3"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line55"
         },
         {
             "id": 29,
@@ -283,7 +284,8 @@
             "attributes": {
                 "references": "4"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line55"
         },
         {
             "id": 35,
@@ -353,11 +355,12 @@
             "id": 44,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You're right. It's time for me to rest.;No, there are people waiting for me.",
                 "values": "5;6"
             },
             "targetLine": {
-                "option5": "line45"
+                "option5": "line45",
+                "option6": "line49"
             }
         },
         {
@@ -366,7 +369,8 @@
             "attributes": {
                 "references": "5"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line55"
         },
         {
             "id": 46,
@@ -394,7 +398,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "6"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line55"
         },
         {
             "id": 50,
@@ -436,7 +442,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3;4;5;6"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 56,
@@ -590,14 +597,19 @@
                 "options": "No, I want to go back!;Open my eyes",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line75",
+                "option2": "line78"
+            }
         },
         {
             "id": 75,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line79"
         },
         {
             "id": 76,
@@ -618,14 +630,17 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line79"
         },
         {
             "id": 79,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 80,
@@ -899,14 +914,20 @@
                 "options": "Are you both alright?;......;Was that you who just slapped me?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line111",
+                "option2": "line116",
+                "option3": "line126"
+            }
         },
         {
             "id": 111,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line129"
         },
         {
             "id": 112,
@@ -949,7 +970,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 117,
@@ -971,17 +993,22 @@
             "id": 119,
             "prop": "Decision",
             "attributes": {
-                "options": "I have amnesia.;And who might you be, Ma",
+                "options": "I have amnesia.;And who might you be, Ma'am?",
                 "values": "4;5"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option4": "line120",
+                "option5": "line123"
+            }
         },
         {
             "id": 120,
             "prop": "Predicate",
             "attributes": {
                 "references": "4"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line129"
         },
         {
             "id": 121,
@@ -1004,7 +1031,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "5"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line129"
         },
         {
             "id": 124,
@@ -1027,7 +1056,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line129"
         },
         {
             "id": 127,
@@ -1050,7 +1081,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;3;4;5"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 130,
@@ -1104,14 +1136,19 @@
                 "options": "Please elaborate.;......;I want the whole story!",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line136",
+                "option2": "line136",
+                "option3": "line136"
+            }
         },
         {
             "id": 136,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 137,
@@ -1183,14 +1220,17 @@
                 "options": "So you thought someone would attack us?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line145"
+            }
         },
         {
             "id": 145,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 146,
@@ -1215,14 +1255,17 @@
                 "options": "What about the others?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line149"
+            }
         },
         {
             "id": 149,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 150,
@@ -1262,17 +1305,20 @@
             "id": 154,
             "prop": "Decision",
             "attributes": {
-                "options": "Where",
+                "options": "Where's the aircraft?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line155"
+            }
         },
         {
             "id": 155,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 156,
@@ -1294,17 +1340,20 @@
             "id": 158,
             "prop": "Decision",
             "attributes": {
-                "options": "Let",
+                "options": "Let's go check on it.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line159"
+            }
         },
         {
             "id": 159,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 160,
@@ -1740,17 +1789,20 @@
             "id": 211,
             "prop": "Decision",
             "attributes": {
-                "options": "Gavial, what",
+                "options": "Gavial, what're they saying?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line212"
+            }
         },
         {
             "id": 212,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 213,
@@ -1900,5 +1952,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

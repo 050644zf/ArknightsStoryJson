@@ -437,7 +437,7 @@
             "id": 49,
             "prop": "Decision",
             "attributes": {
-                "options": "You were amazing!;......;You",
+                "options": "You were amazing!;......;You're certainly making a lot of noise.",
                 "values": "1;2;3"
             },
             "targetLine": {
@@ -1115,11 +1115,13 @@
             "id": 129,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You'll need to do something to find it out then.;......;Can we really have you running ops right now?",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line130"
+                "option1": "line130",
+                "option2": "line130",
+                "option3": "line130"
             }
         },
         {
@@ -1181,14 +1183,17 @@
                 "options": "(Amiya...)",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line138"
+            }
         },
         {
             "id": 138,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 139,
@@ -1265,14 +1270,19 @@
                 "options": "Got too excited and went to crack some skulls?;......;Probably went to do frivolous collateral damage.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line148",
+                "option2": "line148",
+                "option3": "line148"
+            }
         },
         {
             "id": 148,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 149,
@@ -1324,14 +1334,17 @@
                 "options": "What about the other teams?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line155"
+            }
         },
         {
             "id": 155,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 156,
@@ -1362,17 +1375,20 @@
             "id": 159,
             "prop": "Decision",
             "attributes": {
-                "options": "What about Superintendent Ch",
+                "options": "What about Superintendent Ch'en?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line160"
+            }
         },
         {
             "id": 160,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 161,
@@ -1533,14 +1549,20 @@
                 "options": "Leave it to me!;......;Should I be taking this more seriously?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line180",
+                "option2": "line184",
+                "option3": "line189"
+            }
         },
         {
             "id": 180,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line193"
         },
         {
             "id": 181,
@@ -1572,7 +1594,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line193"
         },
         {
             "id": 185,
@@ -1613,7 +1637,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line193"
         },
         {
             "id": 190,
@@ -1645,7 +1671,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 194,
@@ -1670,14 +1697,19 @@
                 "options": "Me look after her? Have you seen me?;......;I can protect an elite operator? News to me.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line197",
+                "option2": "line197",
+                "option3": "line197"
+            }
         },
         {
             "id": 197,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 198,
@@ -1756,14 +1788,19 @@
                 "options": "Good idea!;......;Is that really necessary?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line207",
+                "option2": "line207",
+                "option3": "line207"
+            }
         },
         {
             "id": 207,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 208,
@@ -1888,7 +1925,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  Tell them we need to eliminate all Reunion elements that have not joined up with their main force first.",
-                "name": "Ch"
+                "name": "Ch'en"
             },
             "figure_art": "char_010_chen_1#1"
         },
@@ -1976,7 +2013,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  I wouldn't say we're 'fighting together' now. It's more like we're 'co-belligerents.' How did you get back here anyway?",
-                "name": "Ch"
+                "name": "Ch'en"
             },
             "figure_art": "char_010_chen_1#1"
         },
@@ -2012,7 +2049,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  Hm. Let me think.",
-                "name": "Ch"
+                "name": "Ch'en"
             },
             "figure_art": "char_010_chen_1#1"
         },
@@ -2048,7 +2085,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  Oh, right. You went behind my back to save Rhodes Island. You could have told me in private.",
-                "name": "Ch"
+                "name": "Ch'en"
             },
             "figure_art": "char_010_chen_1#1"
         },
@@ -2084,7 +2121,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  Both.",
-                "name": "Ch"
+                "name": "Ch'en"
             },
             "figure_art": "char_010_chen_1#1"
         },
@@ -2120,7 +2157,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  Eyes forward!",
-                "name": "Ch"
+                "name": "Ch'en"
             },
             "figure_art": "char_010_chen_1#1"
         },
@@ -2186,7 +2223,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  Hold!",
-                "name": "Ch"
+                "name": "Ch'en"
             }
         },
         {
@@ -2240,7 +2277,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  Hold!",
-                "name": "Ch"
+                "name": "Ch'en"
             }
         },
         {
@@ -2283,7 +2320,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  ——Now!",
-                "name": "Ch"
+                "name": "Ch'en"
             },
             "figure_art": "char_010_chen_1#2"
         },
@@ -2315,7 +2352,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  Pikes up!",
-                "name": "Ch"
+                "name": "Ch'en"
             },
             "figure_art": "char_010_chen_1#2"
         },
@@ -2324,7 +2361,7 @@
             "prop": "name",
             "attributes": {
                 "content": "  Don't let a single one of them out of our city!",
-                "name": "Ch"
+                "name": "Ch'en"
             },
             "figure_art": "char_010_chen_1#2"
         },
@@ -2619,5 +2656,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

@@ -426,7 +426,7 @@
             "id": 49,
             "prop": "Decision",
             "attributes": {
-                "options": "Indeed, it doesn",
+                "options": "Indeed, it doesn't add up.",
                 "values": "1"
             },
             "targetLine": {
@@ -445,11 +445,13 @@
             "id": 51,
             "prop": "Decision",
             "attributes": {
-                "options": "Someone",
+                "options": "Someone's pulling the strings.;I can't determine what the purpose would be.;Their actions aren't exactly reasonable.",
                 "values": "4;5;6"
             },
             "targetLine": {
-                "option4": "line52"
+                "option4": "line52",
+                "option5": "line61",
+                "option6": "line70"
             }
         },
         {
@@ -492,7 +494,7 @@
             "id": 57,
             "prop": "Decision",
             "attributes": {
-                "options": "No, he doesn",
+                "options": "No, he doesn't stand to gain anything from this.",
                 "values": "4"
             },
             "targetLine": {
@@ -511,7 +513,7 @@
             "id": 59,
             "prop": "Decision",
             "attributes": {
-                "options": "(I have my own ideas about who",
+                "options": "(I have my own ideas about who's behind it, but...)",
                 "values": "4"
             },
             "targetLine": {
@@ -524,14 +526,16 @@
             "attributes": {
                 "references": "4"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line81"
         },
         {
             "id": 61,
             "prop": "Predicate",
             "attributes": {
                 "references": "5"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 62,
@@ -568,14 +572,17 @@
                 "options": "That makes no sense.",
                 "values": "5"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option5": "line67"
+            }
         },
         {
             "id": 67,
             "prop": "Predicate",
             "attributes": {
                 "references": "5"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 68,
@@ -584,21 +591,26 @@
                 "options": "A crime is a far graver offense than dereliction of duty.",
                 "values": "5"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option5": "line69"
+            }
         },
         {
             "id": 69,
             "prop": "Predicate",
             "attributes": {
                 "references": "5"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line81"
         },
         {
             "id": 70,
             "prop": "Predicate",
             "attributes": {
                 "references": "6"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 71,
@@ -648,17 +660,20 @@
             "id": 77,
             "prop": "Decision",
             "attributes": {
-                "options": "Someone anticipated Enciodes",
+                "options": "Someone anticipated Enciodes's plans.",
                 "values": "6"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option6": "line78"
+            }
         },
         {
             "id": 78,
             "prop": "Predicate",
             "attributes": {
                 "references": "6"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 79,
@@ -667,21 +682,26 @@
                 "options": "And used the premise we just discussed to incite them.",
                 "values": "6"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option6": "line80"
+            }
         },
         {
             "id": 80,
             "prop": "Predicate",
             "attributes": {
                 "references": "6"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line81"
         },
         {
             "id": 81,
             "prop": "Predicate",
             "attributes": {
                 "references": "4;5;6"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 82,
@@ -938,14 +958,19 @@
                 "options": "Thank you for your trust, Arctosz.;Thanks for the tip, Arctosz.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line116",
+                "option2": "line121"
+            }
         },
         {
             "id": 116,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line124"
         },
         {
             "id": 117,
@@ -984,7 +1009,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line124"
         },
         {
             "id": 122,
@@ -1007,7 +1034,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 125,
@@ -1108,14 +1136,17 @@
                 "options": "In that case, Arctosz...",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line138"
+            }
         },
         {
             "id": 138,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 139,
@@ -1152,30 +1183,38 @@
                 "options": "Us making amends could also mean...;If our enemy is able to predict your response...",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line144",
+                "option2": "line144"
+            }
         },
         {
             "id": 144,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 145,
             "prop": "Decision",
             "attributes": {
-                "options": "Then they no longer need to use me as a smokescreen.;They",
+                "options": "Then they no longer need to use me as a smokescreen.;They've finished their preparations, and there's not much time left.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line146",
+                "option2": "line146"
+            }
         },
         {
             "id": 146,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 147,
@@ -2107,5 +2146,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

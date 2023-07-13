@@ -222,7 +222,7 @@
             "id": 25,
             "prop": "Decision",
             "attributes": {
-                "options": "Decent.;......;I",
+                "options": "Decent.;......;I've never felt more alive.",
                 "values": "1;2;3"
             },
             "targetLine": {
@@ -619,11 +619,13 @@
             "id": 71,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I've seen it in magazines.;......;I have no idea.",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line72"
+                "option1": "line72",
+                "option2": "line76",
+                "option3": "line79"
             }
         },
         {
@@ -632,7 +634,8 @@
             "attributes": {
                 "references": "1"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line82"
         },
         {
             "id": 73,
@@ -668,7 +671,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line82"
         },
         {
             "id": 77,
@@ -693,7 +698,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line82"
         },
         {
             "id": 80,
@@ -716,7 +723,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 83,
@@ -1033,14 +1041,17 @@
                 "options": "A former Great Chief...?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line121"
+            }
         },
         {
             "id": 121,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 122,
@@ -1083,14 +1094,17 @@
                 "options": "Now what was that about Gavial?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line127"
+            }
         },
         {
             "id": 127,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 128,
@@ -1124,14 +1138,18 @@
                 "options": "Because they ostracized you?;Every single one? !",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line132",
+                "option2": "line132"
+            }
         },
         {
             "id": 132,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 133,
@@ -1601,14 +1619,20 @@
                 "options": "Yes.;......;You can stay if you want.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line188",
+                "option2": "line191",
+                "option3": "line194"
+            }
         },
         {
             "id": 188,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line197"
         },
         {
             "id": 189,
@@ -1631,7 +1655,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line197"
         },
         {
             "id": 192,
@@ -1654,7 +1680,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line197"
         },
         {
             "id": 195,
@@ -1679,7 +1707,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 198,
@@ -2227,14 +2256,17 @@
                 "options": "What are they arguing about?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line261"
+            }
         },
         {
             "id": 261,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 262,
@@ -2364,5 +2396,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

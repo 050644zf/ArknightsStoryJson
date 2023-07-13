@@ -1198,12 +1198,13 @@
             "id": 141,
             "prop": "Decision",
             "attributes": {
-                "options": "Good morning, Greyy.;Hey, Greyy. What",
+                "options": "Good morning, Greyy.;Hey, Greyy. What's with all that stuff?;Greyy, are you moving?",
                 "values": "1;2;3"
             },
             "targetLine": {
                 "option1": "line142",
-                "option2": "line142"
+                "option2": "line142",
+                "option3": "line142"
             }
         },
         {
@@ -1255,17 +1256,21 @@
             "id": 148,
             "prop": "Decision",
             "attributes": {
-                "options": "How",
+                "options": "How's your defense coming along?;How's your thesis?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line149",
+                "option2": "line149"
+            }
         },
         {
             "id": 149,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 150,
@@ -1340,17 +1345,21 @@
             "id": 159,
             "prop": "Decision",
             "attributes": {
-                "options": "Very good. Keep it up.;I",
+                "options": "Very good. Keep it up.;I'm very strict.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line160",
+                "option2": "line160"
+            }
         },
         {
             "id": 160,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 161,
@@ -1368,17 +1377,21 @@
             "id": 163,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I'm sure that office will love to see you again.;Why don't you put those away and let's chat?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line164",
+                "option2": "line164"
+            }
         },
         {
             "id": 164,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 165,
@@ -1433,14 +1446,17 @@
                 "options": "Have a safe trip.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line172"
+            }
         },
         {
             "id": 172,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 173,
@@ -4269,14 +4285,17 @@
                 "options": "Morning.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line507"
+            }
         },
         {
             "id": 507,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 508,
@@ -4345,5 +4364,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

@@ -2304,7 +2304,7 @@
             "id": 266,
             "prop": "Decision",
             "attributes": {
-                "options": "Closure",
+                "options": "Closure's always complaining that we're in the red. We had to think of something.",
                 "values": "1"
             },
             "targetLine": {
@@ -2406,7 +2406,7 @@
             "id": 278,
             "prop": "Decision",
             "attributes": {
-                "options": "That",
+                "options": "That's why we're here.",
                 "values": "1"
             },
             "targetLine": {
@@ -2462,11 +2462,13 @@
             "id": 285,
             "prop": "Decision",
             "attributes": {
-                "options": "I can",
+                "options": "I can't say I've given anyone's 'standing' that much thought.;I respect Nearl, and that's got nothing to do with standing.;Margaret Nearl is one of our operators. I've never thought of her as the Radiant Knight.",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line286"
+                "option1": "line286",
+                "option2": "line292",
+                "option3": "line299"
             }
         },
         {
@@ -2475,7 +2477,8 @@
             "attributes": {
                 "references": "1"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line306"
         },
         {
             "id": 287,
@@ -2521,7 +2524,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line306"
         },
         {
             "id": 293,
@@ -2574,7 +2579,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line306"
         },
         {
             "id": 300,
@@ -2629,7 +2636,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 307,
@@ -2688,17 +2696,21 @@
             "id": 314,
             "prop": "Decision",
             "attributes": {
-                "options": "Because you were tasked to be my bodyguard?;Because that",
+                "options": "Because you were tasked to be my bodyguard?;Because that's an order from the Adeptus?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line315",
+                "option2": "line315"
+            }
         },
         {
             "id": 315,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 316,
@@ -2753,14 +2765,18 @@
                 "options": "Of course.;Yes.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line323",
+                "option2": "line323"
+            }
         },
         {
             "id": 323,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 324,
@@ -2790,30 +2806,36 @@
                 "options": "A better world.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line328"
+            }
         },
         {
             "id": 328,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 329,
             "prop": "Decision",
             "attributes": {
-                "options": "As long as it",
+                "options": "As long as it's something better, I'd call that a win.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line330"
+            }
         },
         {
             "id": 330,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 331,
@@ -2852,14 +2874,17 @@
                 "options": "Say, Gravel?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line336"
+            }
         },
         {
             "id": 336,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 337,
@@ -2886,17 +2911,20 @@
             "id": 340,
             "prop": "Decision",
             "attributes": {
-                "options": "If you don",
+                "options": "If you don't think I'm worthy of your sacrifice, then don't make it.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line341"
+            }
         },
         {
             "id": 341,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 342,
@@ -2936,17 +2964,20 @@
             "id": 346,
             "prop": "Decision",
             "attributes": {
-                "options": "If you think I",
+                "options": "If you think I'm worthy of your sacrifice, then live on for us.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line347"
+            }
         },
         {
             "id": 347,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 348,
@@ -2973,33 +3004,39 @@
             "id": 351,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You're a brilliant knight, and you're a partner of Rhodes Island.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line352"
+            }
         },
         {
             "id": 352,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 353,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You're free.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line354"
+            }
         },
         {
             "id": 354,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 355,
@@ -4190,5 +4227,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

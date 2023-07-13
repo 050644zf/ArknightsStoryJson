@@ -138,11 +138,12 @@
             "id": 14,
             "prop": "Decision",
             "attributes": {
-                "options": "Let",
+                "options": "Let's go!;Now's not the time to talk!",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line15"
+                "option1": "line15",
+                "option2": "line15"
             }
         },
         {
@@ -321,14 +322,17 @@
                 "options": "Huh?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line36"
+            }
         },
         {
             "id": 36,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 37,
@@ -375,17 +379,20 @@
             "id": 42,
             "prop": "Decision",
             "attributes": {
-                "options": "Ceylon, let",
+                "options": "Ceylon, let's get out of here first.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line43"
+            }
         },
         {
             "id": 43,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 44,
@@ -478,17 +485,21 @@
             "id": 55,
             "prop": "Decision",
             "attributes": {
-                "options": "We finally... made it... to the beach...;I can",
+                "options": "We finally... made it... to the beach...;I can't... run any longer either...",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line56",
+                "option2": "line56"
+            }
         },
         {
             "id": 56,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 57,
@@ -695,7 +706,10 @@
                 "options": "Ifrit, try not to go overboard!;Burn off all their clothes and call it a day.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line84",
+                "option2": "line84"
+            }
         },
         {
             "id": 83,
@@ -712,7 +726,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 85,
@@ -803,5 +818,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

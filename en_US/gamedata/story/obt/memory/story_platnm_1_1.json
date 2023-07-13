@@ -2496,7 +2496,7 @@
             "id": 317,
             "prop": "Decision",
             "attributes": {
-                "options": "Let",
+                "options": "Let's see... A leave application form?",
                 "values": "1"
             },
             "targetLine": {
@@ -2678,7 +2678,7 @@
             "id": 340,
             "prop": "Decision",
             "attributes": {
-                "options": "And we",
+                "options": "And we're leaving right now.",
                 "values": "1"
             },
             "targetLine": {
@@ -2741,7 +2741,7 @@
             "id": 348,
             "prop": "Decision",
             "attributes": {
-                "options": "Sheesh. Do you know how long you",
+                "options": "Sheesh. Do you know how long you've put off this tiny wish of yours?",
                 "values": "1"
             },
             "targetLine": {
@@ -4818,11 +4818,12 @@
             "id": 613,
             "prop": "Decision",
             "attributes": {
-                "options": "What",
+                "options": "What's wrong? Why are you taking a nap in front of my office?;You're finally awake. Did you need me for something?",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line614"
+                "option1": "line614",
+                "option2": "line614"
             }
         },
         {
@@ -4900,14 +4901,19 @@
                 "options": "A leave application?;......;Again? How many times does that make this month?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line624",
+                "option2": "line624",
+                "option3": "line624"
+            }
         },
         {
             "id": 624,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 625,
@@ -4957,17 +4963,21 @@
             "id": 631,
             "prop": "Decision",
             "attributes": {
-                "options": "Uhh... Let",
+                "options": "Uhh... Let's start with that one first.;What is it this time?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line632",
+                "option2": "line632"
+            }
         },
         {
             "id": 632,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 633,
@@ -5055,5 +5065,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

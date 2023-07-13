@@ -123,11 +123,12 @@
             "id": 14,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I've heard your special drink is machine oil.;I've heard you stand on a chair and recite poems when you get drunk.",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line15"
+                "option1": "line15",
+                "option2": "line21"
             }
         },
         {
@@ -136,7 +137,8 @@
             "attributes": {
                 "references": "1"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line26"
         },
         {
             "id": 16,
@@ -186,7 +188,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line26"
         },
         {
             "id": 22,
@@ -227,7 +231,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 27,
@@ -701,17 +706,21 @@
             "id": 85,
             "prop": "Decision",
             "attributes": {
-                "options": "Why don",
+                "options": "Why don't you take a break, Mechanist?;How about you go get yourself a drink?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line86",
+                "option2": "line86"
+            }
         },
         {
             "id": 86,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 87,
@@ -1192,7 +1201,7 @@
             "id": 143,
             "prop": "name",
             "attributes": {
-                "content": "You're a lot like Kirsten. Too young, and too smart.",
+                "content": "You're a lot like Kristen. Too young, and too smart.",
                 "name": "Parvis"
             },
             "figure_art": "avg_npc_531_1#1$1"
@@ -1255,7 +1264,7 @@
             "id": 150,
             "prop": "name",
             "attributes": {
-                "content": "You'll need to deal with the Director of Defense first, however, in order to get to Kirsten.",
+                "content": "You'll need to deal with the Director of Defense first, however, in order to get to Kristen.",
                 "name": "Parvis"
             },
             "figure_art": "avg_npc_531_1#1$1"
@@ -1300,7 +1309,7 @@
             "id": 155,
             "prop": "name",
             "attributes": {
-                "content": "Kirsten never accepted Saria's resignation.",
+                "content": "Kristen never accepted Saria's resignation.",
                 "name": "Parvis"
             },
             "figure_art": "avg_npc_531_1#1$1"
@@ -1723,14 +1732,18 @@
                 "options": "The Mansfield incident?;Sounds right, but something feels off...",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line204",
+                "option2": "line204"
+            }
         },
         {
             "id": 204,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 205,
@@ -3824,7 +3837,9 @@
                 "options": "Do you mean...",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": ""
+            }
         },
         {
             "id": 455,

@@ -1207,11 +1207,13 @@
             "id": 139,
             "prop": "Decision",
             "attributes": {
-                "options": "You told me they don",
+                "options": "You told me they don't take Oripathy seriously here.;.......;You really didn't ask.",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line140"
+                "option1": "line140",
+                "option2": "line143",
+                "option3": "line146"
             }
         },
         {
@@ -1220,7 +1222,8 @@
             "attributes": {
                 "references": "1"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line149"
         },
         {
             "id": 141,
@@ -1243,7 +1246,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line149"
         },
         {
             "id": 144,
@@ -1266,7 +1271,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line149"
         },
         {
             "id": 147,
@@ -1289,7 +1296,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 150,
@@ -1473,17 +1481,22 @@
             "id": 170,
             "prop": "Decision",
             "attributes": {
-                "options": "Gavial isn",
+                "options": "Gavial isn't like that.;......;Too bad.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line171",
+                "option2": "line171",
+                "option3": "line171"
+            }
         },
         {
             "id": 171,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 172,
@@ -1983,5 +1996,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

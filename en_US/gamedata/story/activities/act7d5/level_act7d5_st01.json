@@ -157,11 +157,13 @@
             "id": 19,
             "prop": "Decision",
             "attributes": {
-                "options": "Know your limits. You",
+                "options": "Know your limits. You're pushing yourself too hard.;......;Here, have a sports drink.",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line20"
+                "option1": "line20",
+                "option2": "line25",
+                "option3": "line30"
             }
         },
         {
@@ -170,7 +172,8 @@
             "attributes": {
                 "references": "1"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line35"
         },
         {
             "id": 21,
@@ -211,7 +214,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line35"
         },
         {
             "id": 26,
@@ -252,7 +257,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line35"
         },
         {
             "id": 31,
@@ -293,7 +300,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 36,
@@ -395,14 +403,17 @@
                 "options": "You look like you have something to say.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line49"
+            }
         },
         {
             "id": 49,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 50,
@@ -497,30 +508,36 @@
                 "options": "Can I ask...?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line61"
+            }
         },
         {
             "id": 61,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 62,
             "prop": "Decision",
             "attributes": {
-                "options": "What exactly are these ",
+                "options": "What exactly are these 'pets'?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line63"
+            }
         },
         {
             "id": 63,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 64,
@@ -570,14 +587,17 @@
                 "options": "......",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line70"
+            }
         },
         {
             "id": 70,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 71,
@@ -649,17 +669,20 @@
             "id": 79,
             "prop": "Decision",
             "attributes": {
-                "options": "Couldn",
+                "options": "Couldn't hurt to try?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line80"
+            }
         },
         {
             "id": 80,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 81,
@@ -668,14 +691,17 @@
                 "options": "Like, try asking the next one who walks by.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line82"
+            }
         },
         {
             "id": 82,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 83,
@@ -747,17 +773,20 @@
             "id": 92,
             "prop": "Decision",
             "attributes": {
-                "options": "Someone",
+                "options": "Someone's coming.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line93"
+            }
         },
         {
             "id": 93,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 94,
@@ -5602,5 +5631,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

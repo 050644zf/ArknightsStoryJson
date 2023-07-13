@@ -2953,7 +2953,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Did anyone follow you?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#2"
         },
@@ -2994,7 +2994,7 @@
             "prop": "name",
             "attributes": {
                 "content": "You've already done very well. Your father would be proud.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#4"
         },
@@ -3067,7 +3067,7 @@
             "prop": "name",
             "attributes": {
                 "content": "Heidi, you are well prepared.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#4"
         },
@@ -3131,7 +3131,7 @@
             "prop": "name",
             "attributes": {
                 "content": "I've confirmed that she is currently safe.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#4"
         },
@@ -3140,7 +3140,7 @@
             "prop": "name",
             "attributes": {
                 "content": "It's been a long time since I was in Londinium, so I have a number of matters I need to take care of.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#4"
         },
@@ -3231,7 +3231,7 @@
             "prop": "name",
             "attributes": {
                 "content": "——You're alive.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -3240,7 +3240,7 @@
             "prop": "name",
             "attributes": {
                 "content": "And what exactly do you wish me to explain, W?",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1#3"
         },
@@ -3453,11 +3453,12 @@
             "id": 415,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You've been preoccupied ever since the train.;What did you see on the train?",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line416"
+                "option1": "line416",
+                "option2": "line416"
             }
         },
         {
@@ -3528,14 +3529,17 @@
                 "options": "......",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line425"
+            }
         },
         {
             "id": 425,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 426,
@@ -3569,33 +3573,40 @@
             "id": 430,
             "prop": "Decision",
             "attributes": {
-                "options": "Kal",
+                "options": "Kal'tsit said she already...;Kal'tsit said I...",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line431",
+                "option2": "line431"
+            }
         },
         {
             "id": 431,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 432,
             "prop": "Decision",
             "attributes": {
-                "options": "And W",
+                "options": "And W's attitude towards me...",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line433"
+            }
         },
         {
             "id": 433,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 434,
@@ -3654,17 +3665,20 @@
             "id": 441,
             "prop": "Decision",
             "attributes": {
-                "options": "What",
+                "options": "What's this about...?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line442"
+            }
         },
         {
             "id": 442,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 443,
@@ -3750,17 +3764,20 @@
             "id": 453,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You're hurting.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line454"
+            }
         },
         {
             "id": 454,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 455,
@@ -3828,17 +3845,20 @@
             "id": 463,
             "prop": "Decision",
             "attributes": {
-                "options": "That",
+                "options": "That's not your responsibility.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line464"
+            }
         },
         {
             "id": 464,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 465,
@@ -3918,14 +3938,17 @@
                 "options": "And if the truth brings about more pain?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line475"
+            }
         },
         {
             "id": 475,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 476,
@@ -3959,17 +3982,21 @@
             "id": 480,
             "prop": "Decision",
             "attributes": {
-                "options": "You can be afraid, Amiya.;I",
+                "options": "You can be afraid, Amiya.;I'm afraid too, Amiya.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line481",
+                "option2": "line481"
+            }
         },
         {
             "id": 481,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 482,
@@ -3978,14 +4005,17 @@
                 "options": "But we will walk onwards together.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line483"
+            }
         },
         {
             "id": 483,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 484,
@@ -4040,14 +4070,17 @@
                 "options": "This is also an answer I need.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line491"
+            }
         },
         {
             "id": 491,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 492,
@@ -4252,5 +4285,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

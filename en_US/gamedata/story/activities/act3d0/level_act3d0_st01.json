@@ -52,7 +52,7 @@
             "prop": "name",
             "attributes": {
                 "content": "   Just tell me the results.",
-                "name": "Woman"
+                "name": "Woman's Voice"
             }
         },
         {
@@ -97,7 +97,7 @@
             "prop": "name",
             "attributes": {
                 "content": "   So?",
-                "name": "Woman"
+                "name": "Woman's Voice"
             }
         },
         {
@@ -126,7 +126,7 @@
             "prop": "name",
             "attributes": {
                 "content": "   You've got to be kidding me!!",
-                "name": "Woman"
+                "name": "Woman's Voice"
             }
         },
         {
@@ -134,7 +134,7 @@
             "prop": "name",
             "attributes": {
                 "content": "   Although my methods may be a bit simple, I'm sure that there's something amiss about this sample here.",
-                "name": "Woman"
+                "name": "Woman's Voice"
             }
         },
         {
@@ -142,7 +142,7 @@
             "prop": "name",
             "attributes": {
                 "content": "   The volcano was already in a precarious state last year!",
-                "name": "Woman"
+                "name": "Woman's Voice"
             }
         },
         {
@@ -150,7 +150,7 @@
             "prop": "name",
             "attributes": {
                 "content": "   But they didn't even send a warning or make a news report! Nothing at all!!",
-                "name": "Woman"
+                "name": "Woman's Voice"
             }
         },
         {
@@ -777,11 +777,12 @@
             "id": 95,
             "prop": "Decision",
             "attributes": {
-                "options": "I didn",
+                "options": "I didn't expect it to be this lively here.;They've been holding one large event after another.",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line96"
+                "option1": "line96",
+                "option2": "line96"
             }
         },
         {
@@ -883,7 +884,7 @@
             "prop": "name",
             "attributes": {
                 "content": "   ...I'm not interested in that place. Just go there yourselves.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1"
         },
@@ -915,7 +916,7 @@
             "prop": "name",
             "attributes": {
                 "content": "   Stop right there. You're not allowed to go since you're still recovering.",
-                "name": "Kal"
+                "name": "Kal'tsit"
             },
             "figure_art": "char_003_kalts_1"
         },
@@ -976,17 +977,21 @@
             "id": 118,
             "prop": "Decision",
             "attributes": {
-                "options": "I don",
+                "options": "I don't mind a place like this.;Her recommendations are definitely spot on.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line119",
+                "option2": "line119"
+            }
         },
         {
             "id": 119,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 120,
@@ -1120,14 +1125,17 @@
                 "options": "You brought your violin, Amiya?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line136"
+            }
         },
         {
             "id": 136,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 137,
@@ -1158,17 +1166,20 @@
             "id": 140,
             "prop": "Decision",
             "attributes": {
-                "options": "But I don",
+                "options": "But I don't think those guys are any better than you.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line141"
+            }
         },
         {
             "id": 141,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 142,
@@ -1839,17 +1850,21 @@
             "id": 221,
             "prop": "Decision",
             "attributes": {
-                "options": "Wouldn",
+                "options": "Wouldn't it be great if Oripathy could be cured so easily?;Tourist cities always have some way to make a quick buck.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line222",
+                "option2": "line222"
+            }
         },
         {
             "id": 222,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 223,
@@ -2445,17 +2460,23 @@
             "id": 293,
             "prop": "Decision",
             "attributes": {
-                "options": "You should go, Amiya.;Don",
+                "options": "You should go, Amiya.;Don't stress her out.;Can't I also help out?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line294",
+                "option2": "line298",
+                "option3": "line304"
+            }
         },
         {
             "id": 294,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line310"
         },
         {
             "id": 295,
@@ -2489,7 +2510,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line310"
         },
         {
             "id": 299,
@@ -2541,7 +2564,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line310"
         },
         {
             "id": 305,
@@ -2593,7 +2618,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 311,
@@ -2689,17 +2715,22 @@
             "id": 322,
             "prop": "Decision",
             "attributes": {
-                "options": "Amiya should spend more time with her peers.;(Guess I",
+                "options": "Amiya should spend more time with her peers.;(Guess I'll go take a look the beachside open-air hotel by myself.);Maybe I really should change into something a bit more summery...",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line323",
+                "option2": "line323",
+                "option3": "line323"
+            }
         },
         {
             "id": 323,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 324,
@@ -3041,14 +3072,17 @@
                 "options": "......",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line365"
+            }
         },
         {
             "id": 365,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 366,
@@ -3070,17 +3104,20 @@
             "id": 368,
             "prop": "Decision",
             "attributes": {
-                "options": "...I",
+                "options": "...I'm a bit scared of sun exposure.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line369"
+            }
         },
         {
             "id": 369,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 370,
@@ -3105,14 +3142,17 @@
                 "options": "......",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line373"
+            }
         },
         {
             "id": 373,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 374,
@@ -3150,17 +3190,20 @@
             "id": 378,
             "prop": "Decision",
             "attributes": {
-                "options": "(Weren",
+                "options": "(Weren't the drinks supposed to be free?!)",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line379"
+            }
         },
         {
             "id": 379,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 380,
@@ -3225,14 +3268,17 @@
                 "options": "Are you from here?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line388"
+            }
         },
         {
             "id": 388,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 389,
@@ -3358,14 +3404,19 @@
                 "options": "What a weird person.;What a friendly person.;What a good-looking person.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line405",
+                "option2": "line405",
+                "option3": "line405"
+            }
         },
         {
             "id": 405,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 406,
@@ -3414,14 +3465,17 @@
                 "options": "I have a call?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line412"
+            }
         },
         {
             "id": 412,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 413,
@@ -3507,5 +3561,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

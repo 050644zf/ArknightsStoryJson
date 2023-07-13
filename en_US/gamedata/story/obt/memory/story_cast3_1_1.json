@@ -166,7 +166,7 @@
             "id": 19,
             "prop": "Decision",
             "attributes": {
-                "options": "Well done, Castle-3.;......;I",
+                "options": "Well done, Castle-3.;......;I've been sitting here for five minutes already.",
                 "values": "1;2;3"
             },
             "targetLine": {
@@ -235,7 +235,7 @@
             "id": 28,
             "prop": "Decision",
             "attributes": {
-                "options": "Great work, everyone.;You didn",
+                "options": "Great work, everyone.;You didn't sleep the whole night. You must be exhausted.",
                 "values": "1;2"
             },
             "targetLine": {
@@ -311,7 +311,7 @@
             "id": 37,
             "prop": "Decision",
             "attributes": {
-                "options": "Just doing my job.;I don",
+                "options": "Just doing my job.;I don't get to go out often. It's a nice change of pace.",
                 "values": "1;2"
             },
             "targetLine": {
@@ -325,8 +325,7 @@
             "attributes": {
                 "references": "1;2"
             },
-            "endOfOpt": false,
-            "targetLine": "line60"
+            "endOfOpt": false
         },
         {
             "id": 39,
@@ -483,11 +482,12 @@
             "id": 59,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I'd like a bowl of soup, please.;I'm not hungry. Just some water will do.",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line60"
+                "option1": "line60",
+                "option2": "line60"
             }
         },
         {
@@ -496,7 +496,7 @@
             "attributes": {
                 "references": "1;2"
             },
-            "endOfOpt": true
+            "endOfOpt": false
         },
         {
             "id": 61,
@@ -826,7 +826,7 @@
             "id": 100,
             "prop": "Decision",
             "attributes": {
-                "options": "Is this really a voice recorder?;That",
+                "options": "Is this really a voice recorder?;That's not some kind of Originium bomb, is it?!",
                 "values": "1;2"
             },
             "targetLine": {
@@ -840,8 +840,7 @@
             "attributes": {
                 "references": "1;2"
             },
-            "endOfOpt": false,
-            "targetLine": "line108"
+            "endOfOpt": false
         },
         {
             "id": 102,
@@ -884,11 +883,12 @@
             "id": 107,
             "prop": "Decision",
             "attributes": {
-                "options": "Let",
+                "options": "Let's not get ahead of ourselves.;Let's sit a little further away from it.",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line108"
+                "option1": "line108",
+                "option2": "line108"
             }
         },
         {
@@ -897,7 +897,7 @@
             "attributes": {
                 "references": "1;2"
             },
-            "endOfOpt": true
+            "endOfOpt": false
         },
         {
             "id": 109,
@@ -1328,8 +1328,7 @@
             "attributes": {
                 "references": "1;2;3"
             },
-            "endOfOpt": false,
-            "targetLine": "line178"
+            "endOfOpt": false
         },
         {
             "id": 161,
@@ -1459,11 +1458,12 @@
             "id": 177,
             "prop": "Decision",
             "attributes": {
-                "options": "They",
+                "options": "They're singing.;They're reminiscing about an old friend.",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line178"
+                "option1": "line178",
+                "option2": "line178"
             }
         },
         {
@@ -1472,7 +1472,7 @@
             "attributes": {
                 "references": "1;2"
             },
-            "endOfOpt": true
+            "endOfOpt": false
         },
         {
             "id": 179,
@@ -1533,11 +1533,13 @@
             "id": 186,
             "prop": "Decision",
             "attributes": {
-                "options": "They",
+                "options": "They're singing.;......;The point is to express your feelings.",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line187"
+                "option1": "line187",
+                "option2": "line187",
+                "option3": "line187"
             }
         },
         {
@@ -1780,17 +1782,22 @@
             "id": 215,
             "prop": "Decision",
             "attributes": {
-                "options": "No problem.;......;You",
+                "options": "No problem.;......;You're acting kind of sketchy.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line216",
+                "option2": "line216",
+                "option3": "line216"
+            }
         },
         {
             "id": 216,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 217,
@@ -1869,17 +1876,21 @@
             "id": 227,
             "prop": "Decision",
             "attributes": {
-                "options": "Let",
+                "options": "Let's go together.;I'm just in the mood for a walk.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line228",
+                "option2": "line228"
+            }
         },
         {
             "id": 228,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 229,
@@ -2131,17 +2142,22 @@
             "id": 259,
             "prop": "Decision",
             "attributes": {
-                "options": "On this day?;......;You",
+                "options": "On this day?;......;You're talking kind of weird, Castle-3.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line260",
+                "option2": "line260",
+                "option3": "line260"
+            }
         },
         {
             "id": 260,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 261,
@@ -2193,17 +2209,22 @@
             "id": 267,
             "prop": "Decision",
             "attributes": {
-                "options": "I can see that your body",
+                "options": "I can see that your body's full of wear and tear.;......;Those marks...",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line268",
+                "option2": "line268",
+                "option3": "line268"
+            }
         },
         {
             "id": 268,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 269,
@@ -2246,17 +2267,21 @@
             "id": 274,
             "prop": "Decision",
             "attributes": {
-                "options": "I would like to know.;I",
+                "options": "I would like to know.;I've wanted to ask for a while.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line275",
+                "option2": "line275"
+            }
         },
         {
             "id": 275,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 276,
@@ -3005,14 +3030,18 @@
                 "options": "As a way to memorialize the operator?;As a way to memorialize the incident?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line368",
+                "option2": "line368"
+            }
         },
         {
             "id": 368,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 369,
@@ -3082,17 +3111,21 @@
             "id": 377,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You're imitating the operator?;You're imitating him leaving the marks?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line378",
+                "option2": "line378"
+            }
         },
         {
             "id": 378,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 379,
@@ -3153,17 +3186,20 @@
             "id": 386,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You're learning.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line387"
+            }
         },
         {
             "id": 387,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 388,
@@ -3215,17 +3251,21 @@
             "id": 394,
             "prop": "Decision",
             "attributes": {
-                "options": "I hope it",
+                "options": "I hope it'll be placed in a special storage.;I will remember every battle we fought together.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line395",
+                "option2": "line395"
+            }
         },
         {
             "id": 395,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 396,
@@ -3448,14 +3488,17 @@
                 "options": "What?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line423"
+            }
         },
         {
             "id": 423,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 424,
@@ -3489,17 +3532,22 @@
             "id": 428,
             "prop": "Decision",
             "attributes": {
-                "options": "That",
+                "options": "That's why you asked me to come with you?;......;So that's why you were acting so strange today.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line429",
+                "option2": "line429",
+                "option3": "line429"
+            }
         },
         {
             "id": 429,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 430,
@@ -3690,17 +3738,22 @@
             "id": 453,
             "prop": "Decision",
             "attributes": {
-                "options": "I think Chiave",
+                "options": "I think Chiave's on to something.;......;Castle-3, what do you think?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line454",
+                "option2": "line454",
+                "option3": "line454"
+            }
         },
         {
             "id": 454,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 455,
@@ -3789,17 +3842,20 @@
             "id": 467,
             "prop": "Decision",
             "attributes": {
-                "options": "Castle-3, what",
+                "options": "Castle-3, what's with that all of a...",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line468"
+            }
         },
         {
             "id": 468,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 469,
@@ -3863,14 +3919,17 @@
                 "options": "Castle-3, to the left!",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line477"
+            }
         },
         {
             "id": 477,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 478,
@@ -4001,14 +4060,17 @@
                 "options": "Castle-3, attack the rock face 30 degrees to the left ahead of us!",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line493"
+            }
         },
         {
             "id": 493,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 494,
@@ -4163,14 +4225,17 @@
                 "options": "Disasters leave us more than just trouble sometimes.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line512"
+            }
         },
         {
             "id": 512,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 513,
@@ -4191,14 +4256,17 @@
                 "options": "Castle-3, through this opening!",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line516"
+            }
         },
         {
             "id": 516,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 517,
@@ -4412,17 +4480,22 @@
             "id": 542,
             "prop": "Decision",
             "attributes": {
-                "options": "Well done, Castle-3.;......;Castle-3, you aren",
+                "options": "Well done, Castle-3.;......;Castle-3, you aren't slowing down.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line543",
+                "option2": "line543",
+                "option3": "line543"
+            }
         },
         {
             "id": 543,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 544,
@@ -4456,17 +4529,21 @@
             "id": 548,
             "prop": "Decision",
             "attributes": {
-                "options": "Not with Chiave?;Freedom",
+                "options": "Not with Chiave?;Freedom's the other way.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line549",
+                "option2": "line549"
+            }
         },
         {
             "id": 549,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 550,
@@ -4521,14 +4598,19 @@
                 "options": "Indeed we are.;......;Those are some strong winds.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line557",
+                "option2": "line557",
+                "option3": "line557"
+            }
         },
         {
             "id": 557,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 558,
@@ -4565,14 +4647,19 @@
                 "options": "Immortal...;This seems like the right time for a song.;I shall become an immortal gale.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line563",
+                "option2": "line563",
+                "option3": "line563"
+            }
         },
         {
             "id": 563,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 564,
@@ -4609,14 +4696,19 @@
                 "options": "Castle-3, imitating others again?;......;Castle-3, you learned how to sing.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line569",
+                "option2": "line569",
+                "option3": "line569"
+            }
         },
         {
             "id": 569,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 570,
@@ -4680,14 +4772,17 @@
                 "options": "Keep running, Castle-3.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line578"
+            }
         },
         {
             "id": 578,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 579,
@@ -5049,14 +5144,19 @@
                 "options": "We finished a mission together.;We went on an adventure together.;We sang a song together.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line624",
+                "option2": "line624",
+                "option3": "line624"
+            }
         },
         {
             "id": 624,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 625,
@@ -5122,17 +5222,22 @@
             "id": 633,
             "prop": "Decision",
             "attributes": {
-                "options": "Perhaps he learned the concept of ",
+                "options": "Perhaps he learned the concept of 'death.';Perhaps he learned the immortality of 'life.';Perhaps he's satisfied with his existence as a robot.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line634",
+                "option2": "line634",
+                "option3": "line634"
+            }
         },
         {
             "id": 634,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 635,
@@ -5175,17 +5280,20 @@
             "id": 640,
             "prop": "Decision",
             "attributes": {
-                "options": "What",
+                "options": "What's the difference?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line641"
+            }
         },
         {
             "id": 641,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 642,
@@ -5244,17 +5352,22 @@
             "id": 649,
             "prop": "Decision",
             "attributes": {
-                "options": "Not one bit.;......;Let",
+                "options": "Not one bit.;......;Let's sleep on the idea.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line650",
+                "option2": "line650",
+                "option3": "line650"
+            }
         },
         {
             "id": 650,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 651,
@@ -5413,17 +5526,21 @@
             "id": 670,
             "prop": "Decision",
             "attributes": {
-                "options": "Castle-3, you",
+                "options": "Castle-3, you're okay?;Your memory bank's fine?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line671",
+                "option2": "line671"
+            }
         },
         {
             "id": 671,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 672,
@@ -5457,17 +5574,22 @@
             "id": 676,
             "prop": "Decision",
             "attributes": {
-                "options": "That",
+                "options": "That's great.;......;I knew Closure wasn't going to write you off that easily.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line677",
+                "option2": "line677",
+                "option3": "line677"
+            }
         },
         {
             "id": 677,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 678,
@@ -5520,14 +5642,19 @@
                 "options": "You got a little too anxious?;......;You started crying?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line685",
+                "option2": "line685",
+                "option3": "line685"
+            }
         },
         {
             "id": 685,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 686,
@@ -5750,17 +5877,22 @@
             "id": 713,
             "prop": "Decision",
             "attributes": {
-                "options": "Right.;We",
+                "options": "Right.;We'll always be together.;I won't ever let go.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line714",
+                "option2": "line714",
+                "option3": "line714"
+            }
         },
         {
             "id": 714,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 715,
@@ -5841,5 +5973,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

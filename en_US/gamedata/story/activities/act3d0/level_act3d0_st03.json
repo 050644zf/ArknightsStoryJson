@@ -94,7 +94,7 @@
             "id": 10,
             "prop": "Decision",
             "attributes": {
-                "options": "I",
+                "options": "I'm a little worried about you.",
                 "values": "1"
             },
             "targetLine": {
@@ -1052,11 +1052,12 @@
             "id": 121,
             "prop": "Decision",
             "attributes": {
-                "options": "I don",
+                "options": "I don't know.;She might be struggling too.",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line122"
+                "option1": "line122",
+                "option2": "line125"
             }
         },
         {
@@ -1065,7 +1066,8 @@
             "attributes": {
                 "references": "1"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line129"
         },
         {
             "id": 123,
@@ -1088,7 +1090,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line129"
         },
         {
             "id": 126,
@@ -1120,7 +1124,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 130,
@@ -1147,17 +1152,20 @@
             "id": 133,
             "prop": "Decision",
             "attributes": {
-                "options": "I can",
+                "options": "I can't answer that for you...",
                 "values": "3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option3": "line134"
+            }
         },
         {
             "id": 134,
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 135,
@@ -1166,14 +1174,17 @@
                 "options": "But you are a true Originium researcher.",
                 "values": "4"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option4": "line136"
+            }
         },
         {
             "id": 136,
             "prop": "Predicate",
             "attributes": {
                 "references": "4"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 137,
@@ -1299,49 +1310,58 @@
             "id": 153,
             "prop": "Decision",
             "attributes": {
-                "options": "Perhaps the land we",
+                "options": "Perhaps the land we've been born into is blighted...",
                 "values": "5"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option5": "line154"
+            }
         },
         {
             "id": 154,
             "prop": "Predicate",
             "attributes": {
                 "references": "5"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 155,
             "prop": "Decision",
             "attributes": {
-                "options": "But the things that you",
+                "options": "But the things that you've done have not been in vain.",
                 "values": "6"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option6": "line156"
+            }
         },
         {
             "id": 156,
             "prop": "Predicate",
             "attributes": {
                 "references": "6"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 157,
             "prop": "Decision",
             "attributes": {
-                "options": "Believe in the choices you",
+                "options": "Believe in the choices you've made.",
                 "values": "7"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option7": "line158"
+            }
         },
         {
             "id": 158,
             "prop": "Predicate",
             "attributes": {
                 "references": "7"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 159,
@@ -1580,5 +1600,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

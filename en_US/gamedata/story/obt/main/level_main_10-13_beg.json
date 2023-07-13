@@ -2621,11 +2621,12 @@
             "id": 313,
             "prop": "Decision",
             "attributes": {
-                "options": "Relax. Amiya",
+                "options": "Relax. Amiya's looking out for all of you.;Amiya won't see our people become cold war machines.",
                 "values": "1;2"
             },
             "targetLine": {
-                "option1": "line314"
+                "option1": "line314",
+                "option2": "line314"
             }
         },
         {
@@ -2795,17 +2796,21 @@
             "id": 334,
             "prop": "Decision",
             "attributes": {
-                "options": "You",
+                "options": "You'll find a way.;I believe in you, Closure.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line335",
+                "option2": "line335"
+            }
         },
         {
             "id": 335,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 336,
@@ -2883,14 +2888,17 @@
                 "options": "He has work to do.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line346"
+            }
         },
         {
             "id": 346,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 347,
@@ -3922,14 +3930,17 @@
                 "options": "Amiya, focus your energy.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line473"
+            }
         },
         {
             "id": 473,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 474,
@@ -4855,5 +4866,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

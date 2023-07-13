@@ -310,11 +310,13 @@
             "id": 36,
             "prop": "Decision",
             "attributes": {
-                "options": "(Tell her about Gavial",
+                "options": "(Tell her about Gavial's life at Rhodes Island.);......;(Tell her about Gavial as a doctor.)",
                 "values": "1;2;3"
             },
             "targetLine": {
-                "option1": "line37"
+                "option1": "line37",
+                "option2": "line40",
+                "option3": "line44"
             }
         },
         {
@@ -323,7 +325,8 @@
             "attributes": {
                 "references": "1"
             },
-            "endOfOpt": false
+            "endOfOpt": false,
+            "targetLine": "line48"
         },
         {
             "id": 38,
@@ -348,7 +351,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line48"
         },
         {
             "id": 41,
@@ -382,7 +387,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line48"
         },
         {
             "id": 45,
@@ -414,7 +421,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 49,
@@ -436,17 +444,23 @@
             "id": 51,
             "prop": "Decision",
             "attributes": {
-                "options": "It",
+                "options": "It'd be sad, for sure.;......;I'd be glad she found a new path in life.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line52",
+                "option2": "line54",
+                "option3": "line57"
+            }
         },
         {
             "id": 52,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line60"
         },
         {
             "id": 53,
@@ -462,7 +476,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line60"
         },
         {
             "id": 55,
@@ -485,7 +501,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line60"
         },
         {
             "id": 58,
@@ -510,7 +528,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 61,
@@ -532,17 +551,22 @@
             "id": 63,
             "prop": "Decision",
             "attributes": {
-                "options": "Good luck.;(Nod.);And I won",
+                "options": "Good luck.;(Nod.);And I won't let you take her from me!",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line64",
+                "option2": "line64",
+                "option3": "line64"
+            }
         },
         {
             "id": 64,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 65,
@@ -551,14 +575,17 @@
                 "options": "So how DID that ceremony back then turn out?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line66"
+            }
         },
         {
             "id": 66,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 67,
@@ -938,14 +965,17 @@
                 "options": "What kind of person is Zumama?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line112"
+            }
         },
         {
             "id": 112,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 113,
@@ -1008,14 +1038,17 @@
                 "options": "......",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line120"
+            }
         },
         {
             "id": 120,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 121,
@@ -1189,5 +1222,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }
