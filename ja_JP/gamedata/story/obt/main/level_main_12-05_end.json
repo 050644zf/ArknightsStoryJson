@@ -1,0 +1,5069 @@
+{
+    "lang": "ja_JP",
+    "eventid": "main_12",
+    "eventName": "驚靂蕭然",
+    "entryType": "MAINLINE",
+    "storyCode": "12-6",
+    "avgTag": "戦闘後",
+    "storyName": "誰が為の戦争",
+    "storyInfo": "ホルンとMiseryが自救軍の撤退を援護するも、危機的状況に陥る。そこに最後の蒸気騎士が現れた。そしてWがフェイスト小隊の支援に駆け付ける。一方、ノーポート区のグラスゴーは物資不足という難題を抱えていた。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 2,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 4,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_indoor_u",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 7,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_416_1#1$1",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 11,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_242",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 13,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 14,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.8,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "posfrom": "0,0",
+                "posto": "100,0",
+                "afrom": 1.0,
+                "ato": 1.0,
+                "duration": 0.2
+            }
+        },
+        {
+            "id": 16,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "action": "jump",
+                "posfrom": "0,0",
+                "posto": "200,0",
+                "power": 2.0,
+                "times": 2.0,
+                "afrom": 1.0,
+                "ato": 1.0,
+                "duration": 0.4,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 18,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 19,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 21,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_242",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "うぐっ……あぁ……",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_242"
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "ここには……本当に何もないんだ。",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_242"
+        },
+        {
+            "id": 24,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_416_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "name",
+            "attributes": {
+                "content": "とぼけんじゃねぇぞ！　コンロを使ってただろ、この目ではっきり見たんだよ。お前どこで食いもんを手に入れた？",
+                "name": "飢えた暴徒"
+            },
+            "figure_art": "avg_npc_416_1#1$1"
+        },
+        {
+            "id": 26,
+            "prop": "name",
+            "attributes": {
+                "content": "何で毎日食いもんが手に入るんだよ！？",
+                "name": "飢えた暴徒"
+            },
+            "figure_art": "avg_npc_416_1#1$1"
+        },
+        {
+            "id": 27,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_242",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "name",
+            "attributes": {
+                "content": "俺は……たまたま拾っただけだ……",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_242"
+        },
+        {
+            "id": 29,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_416_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "拾った？",
+                "name": "飢えた暴徒"
+            },
+            "figure_art": "avg_npc_416_1#1$1"
+        },
+        {
+            "id": 31,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 32,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fightgeneral",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 36,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_runstop",
+                "volume": 0.5,
+                "delay": 0.2
+            }
+        },
+        {
+            "id": 37,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "action": "jump",
+                "posfrom": "100,0",
+                "posto": "130,0",
+                "power": 2.0,
+                "times": 1.0,
+                "afrom": 1.0,
+                "ato": 1.0,
+                "duration": 0.1
+            }
+        },
+        {
+            "id": 38,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 40,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 41,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.3
+            }
+        },
+        {
+            "id": 42,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.3
+            }
+        },
+        {
+            "id": 43,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 44,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 45,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_417_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "name",
+            "attributes": {
+                "content": "あんまりやり過ぎるなよ。そいつが鉱石病の急性発作を起こさないように気を付けろ。そうなったら俺たちまでおしまいだ。",
+                "name": "冷静な暴徒"
+            },
+            "figure_art": "avg_npc_417_1#1$1"
+        },
+        {
+            "id": 47,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 48,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 49,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_416_1#1$1",
+                "posfrom": "130,0",
+                "posto": "130,0",
+                "afrom": 1.0,
+                "ato": 1.0,
+                "duration": 0.0
+            }
+        },
+        {
+            "id": 50,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_242",
+                "posfrom": "95,0",
+                "posto": "95,0",
+                "afrom": 1.0,
+                "ato": 1.0,
+                "duration": 0.0
+            }
+        },
+        {
+            "id": 51,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_416_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "name",
+            "attributes": {
+                "content": "倉庫はどこにある？　言え！",
+                "name": "飢えた暴徒"
+            },
+            "figure_art": "avg_npc_416_1#1$1"
+        },
+        {
+            "id": 53,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_242",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "name",
+            "attributes": {
+                "content": "本当に俺は……ただ拾っただけなんだよ……誰かが窓枠のところに置いていったんだ……",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_242"
+        },
+        {
+            "id": 55,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_416_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "まだそんなデタラメなことを──",
+                "name": "飢えた暴徒"
+            },
+            "figure_art": "avg_npc_416_1#1$1"
+        },
+        {
+            "id": 57,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 58,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 59,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "bstart": 0.2,
+                "bend": 0.7,
+                "name": "avg_npc_334",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 60,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 61,
+            "prop": "name",
+            "attributes": {
+                "content": "彼の話がそんなに信用できないのかな？",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_334"
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "感染者だってたまにはツキが回ってきて、食べ物を拾うことがあるだろう。それの何がデタラメなんだい？",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_334"
+        },
+        {
+            "id": 63,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_416_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "name",
+            "attributes": {
+                "content": "誰だてめぇ。食いもんを獲りに来たのか？",
+                "name": "飢えた暴徒"
+            },
+            "figure_art": "avg_npc_416_1#1$1"
+        },
+        {
+            "id": 65,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_334",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "name",
+            "attributes": {
+                "content": "ご機嫌よう、俺の名はレイド。",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_334"
+        },
+        {
+            "id": 67,
+            "prop": "name",
+            "attributes": {
+                "content": "――以前ウルサスにいた頃は、「紅の刀」と呼ばれていた。",
+                "name": "レイド"
+            },
+            "figure_art": "avg_npc_334"
+        },
+        {
+            "id": 68,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 69,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 70,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 73,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g15_customs",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_419_1#1$1"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_419_1#1$1"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 77,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$warchaos_intro",
+                "key": "$warchaos_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 78,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_battlefield_environment",
+                "volume": 0.4,
+                "loop": "true",
+                "channel": "war"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 81,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_daggerexsheath",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 83,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_knife",
+                "delay": 0.2,
+                "channel": "left",
+                "volume": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 88,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_knife",
+                "delay": 0.4,
+                "channel": "right",
+                "volume": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 92,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 93,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 94,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_419_1#1$1",
+                "posfrom": "0,0",
+                "posto": "0,-150",
+                "duration": 0.5,
+                "isblock": "false"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_419_1#1$1",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 96,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_419_1#1$1",
+                "posfrom": "0,0",
+                "posto": "0,-50",
+                "duration": 1.5,
+                "isblock": "false"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_419_1#1$1",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 99,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 100,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_235",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 101,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 102,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_235",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "name",
+            "attributes": {
+                "content": "スピードを上げろ、俺たちからはぐれるな。",
+                "name": "Misery"
+            },
+            "figure_art": "avg_npc_235"
+        },
+        {
+            "id": 104,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "持ちこたえて！　もうすぐで着くわ！",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 106,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_398_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "name",
+            "attributes": {
+                "content": "くそっ、奴らどんどん人数が増えてやがる。",
+                "name": "自救軍戦士"
+            },
+            "figure_art": "avg_npc_398_1#1$1"
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "白狼、あんたとあんたの一族の話は聞いたことがある。",
+                "name": "自救軍戦士"
+            },
+            "figure_art": "avg_npc_398_1#1$1"
+        },
+        {
+            "id": 109,
+            "prop": "name",
+            "attributes": {
+                "content": "今日ここで、あんたと肩を並べて戦えて光栄だったよ。",
+                "name": "自救軍戦士"
+            },
+            "figure_art": "avg_npc_398_1#1$1"
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "俺たちのロンディニウムのため、俺たちのヴィクトリアのために――",
+                "name": "自救軍戦士"
+            },
+            "figure_art": "avg_npc_398_1#1$1"
+        },
+        {
+            "id": 111,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "何をするつもり──",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 113,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 114,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 115,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 116,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_runstop",
+                "volume": 1.0,
+                "delay": 1.5
+            }
+        },
+        {
+            "id": 117,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.8
+            }
+        },
+        {
+            "id": 118,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_419_1#1$1",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 120,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_398_1#1$1",
+                "posfrom": "-200,0",
+                "posto": "150,0",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 0.4,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 123,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_ftrub"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 0.6,
+                "delay": 0.2
+            }
+        },
+        {
+            "id": 125,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 126,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 128,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 131,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 135,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#8",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#8"
+        },
+        {
+            "id": 137,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_235",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "name",
+            "attributes": {
+                "content": "止まるな、走り続けろ！",
+                "name": "Misery"
+            },
+            "figure_art": "avg_npc_235"
+        },
+        {
+            "id": 139,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_419_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "サルカズの裏切り者とヴィクトリアの虫けらどもめ、時間の無駄でしかない追いかけっこもそろそろ終わりにしようぜ。",
+                "name": "サルカズ兵士"
+            },
+            "figure_art": "avg_npc_419_1#1$1"
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "どこへ逃げようとしてるんだ？　自分の死から逃れたいのか？",
+                "name": "サルカズ兵士"
+            },
+            "figure_art": "avg_npc_419_1#1$1"
+        },
+        {
+            "id": 142,
+            "prop": "name",
+            "attributes": {
+                "content": "テメーら、それから陰に隠れてるテメーらの仲間も全員、俺たちが殺してやるよ。これがテメーらに返す借りだ！",
+                "name": "サルカズ兵士"
+            },
+            "figure_art": "avg_npc_419_1#1$1"
+        },
+        {
+            "id": 143,
+            "prop": "name",
+            "attributes": {
+                "content": "これがロンディニウム、ヴィクトリア、そしてこの大地の一人一人に返す借りだ！",
+                "name": "サルカズ兵士"
+            },
+            "figure_art": "avg_npc_419_1#1$1"
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "逃げろよ。逃げてみやがれ。だが、テメーらは嵐からは絶対に逃げられねぇ、戦争からは逃げられねぇんだよ！",
+                "name": "サルカズ兵士"
+            },
+            "figure_art": "avg_npc_419_1#1$1"
+        },
+        {
+            "id": 145,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#8",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "name",
+            "attributes": {
+                "content": "黙れ！",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#8"
+        },
+        {
+            "id": 147,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "（チッ、人数が多すぎる。何とかしてここを突破しないと！）",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#2"
+        },
+        {
+            "id": 149,
+            "prop": "name",
+            "attributes": {
+                "content": "（残る手榴弾はあと一つ……）",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#2"
+        },
+        {
+            "id": 150,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "name",
+            "attributes": {
+                "content": "ロッベン、この手榴弾を渡しておくわ。下へ行って、動力エリア内にある下層デッキを直接爆破して。",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 152,
+            "prop": "name",
+            "attributes": {
+                "content": "Miseryさん、彼らを守ってください。あなたたちはまだ前へと進み続けなければなりません。",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 153,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_235",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "name",
+            "attributes": {
+                "content": "あんたは──",
+                "name": "Misery"
+            },
+            "figure_art": "avg_npc_235"
+        },
+        {
+            "id": 155,
+            "prop": "name",
+            "attributes": {
+                "content": "……わかった、安心しろ。",
+                "name": "Misery"
+            },
+            "figure_art": "avg_npc_235"
+        },
+        {
+            "id": 156,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "あとは、運に任せましょう。",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#1"
+        },
+        {
+            "id": 158,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_414_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "name",
+            "attributes": {
+                "content": "ホルンさん、あなた──",
+                "name": "ロッベン"
+            },
+            "figure_art": "avg_npc_414_1#1$1"
+        },
+        {
+            "id": 160,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "name",
+            "attributes": {
+                "content": "口を閉じなさい。殴って言い聞かせる暇すら惜しい。",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 162,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 12.0,
+                "ystrength": 12.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "name",
+            "attributes": {
+                "content": "早く！",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 164,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 165,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 166,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 167,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "ホルンは振り返り、波のように押し寄せる敵へと向き直った。"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女は薄笑いを浮かべて思った──そろそろすべてを終わらせるべきだと。"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "name",
+            "attributes": {
+                "content": "終わりのない逃亡、果てのない争い、そして何度も訪れる一睡もできない夜。"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "軍人とは本来戦争の中で死ぬべきだ。"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 173,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#6",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "バグパイプ……今頃どうしてるかしらね。",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#6"
+        },
+        {
+            "id": 175,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 176,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女は武器を握りしめ、突撃の体勢を取った。"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "暗雲立ち込める空の下、遠くから近づいてくる奇怪な音があった。"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 180,
+            "prop": "musicvolume",
+            "attributes": {
+                "volume": 0.3,
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 181,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 0.2,
+                "fadetime": 2.0,
+                "channel": "war"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 183,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_steamrelease",
+                "volume": 0.3
+            }
+        },
+        {
+            "id": 184,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 185,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_steamrelease",
+                "volume": 0.5,
+                "loop": "false",
+                "channel": "knight1"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_steamrelease",
+                "volume": 0.8,
+                "loop": "false",
+                "channel": "knight2",
+                "delay": 1.5
+            }
+        },
+        {
+            "id": 187,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 188,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.0,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "それはとても聞き覚えのある音だ。ロンディニウムでは久しく鳴っていなかった音だ。"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "人々が遠い記憶と曖昧な噂の中にしか、その発生源を見出すことのできない音──"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 192,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_atk_stmwpn_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 194,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_atk_stmwpn_n",
+                "volume": 1.0,
+                "loop": "false",
+                "channel": "atkstm",
+                "delay": 0.3
+            }
+        },
+        {
+            "id": 195,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.9,
+                "g": 0.25,
+                "b": 0.2,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.7,
+                "r": 0.9,
+                "g": 0.25,
+                "b": 0.2,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.9,
+                "g": 0.25,
+                "b": 0.2,
+                "fadetime": 0.2,
+                "block": "true"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.7,
+                "r": 0.9,
+                "g": 0.25,
+                "b": 0.2,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.9,
+                "g": 0.25,
+                "b": 0.2,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 50.0,
+                "ystrength": 50.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 202,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 208,
+            "prop": "musicvolume",
+            "attributes": {
+                "volume": 0.6,
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 209,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 0.4,
+                "fadetime": 2.0,
+                "channel": "war"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_414_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "あれは──",
+                "name": "ロッベン"
+            },
+            "figure_art": "avg_npc_414_1#1$1"
+        },
+        {
+            "id": 212,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#4",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "！",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#4"
+        },
+        {
+            "id": 214,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_235",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "ホルン、今のうちだ。行くぞ！",
+                "name": "Misery"
+            },
+            "figure_art": "avg_npc_235"
+        },
+        {
+            "id": 216,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 217,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 218,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_235",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 219,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 220,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_419_1#1$1",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 221,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_419_1#1$1",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "name",
+            "attributes": {
+                "content": "──",
+                "name": "サルカズ兵士"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "お前は……何だ？",
+                "name": "サルカズ兵士"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 225,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 226,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_mechawalk",
+                "channel": "a",
+                "loop": "true"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.8
+            }
+        },
+        {
+            "id": 229,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "a",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 230,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.01
+            }
+        },
+        {
+            "id": 231,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_651_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 232,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_mechawalk",
+                "channel": "b",
+                "loop": "true"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.8
+            }
+        },
+        {
+            "id": 235,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "b",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 236,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.01
+            }
+        },
+        {
+            "id": 237,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_mechawalk",
+                "channel": "c",
+                "loop": "true"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.8
+            }
+        },
+        {
+            "id": 240,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "c",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 241,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 242,
+            "prop": "bgeffect",
+            "attributes": {
+                "name": "$eb_steamrelease",
+                "layer": 2.0
+            }
+        },
+        {
+            "id": 243,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_steamrelease"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "bgeffect",
+            "attributes": {
+                "layer": 2.0
+            }
+        },
+        {
+            "id": 245,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 246,
+            "prop": "name",
+            "attributes": {
+                "content": "（重苦しい噴射音）",
+                "name": "「最後の蒸気騎士」"
+            },
+            "figure_art": "avg_npc_651_1#1$1"
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "『ヴィクトリア』。",
+                "name": "「最後の蒸気騎士」"
+            },
+            "figure_art": "avg_npc_651_1#1$1"
+        },
+        {
+            "id": 248,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 249,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 250,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "war",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 251,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 254,
+            "prop": "Background",
+            "attributes": {
+                "image": "27_g7_subway",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 256,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$escape_intro",
+                "key": "$escape_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 257,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 259,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 260,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 261,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_doorclose",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 262,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 264,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4040_rockr_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "name",
+            "attributes": {
+                "content": "くそっ、このゲート──",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#10$1"
+        },
+        {
+            "id": 266,
+            "prop": "name",
+            "attributes": {
+                "content": "分厚すぎる、向こうに声が届かない！",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#10$1"
+        },
+        {
+            "id": 267,
+            "prop": "name",
+            "attributes": {
+                "content": "チッ！　あいつらが指揮官とキャサリンさんを連れて行ったのは、彼女たちをサルカズとの交換条件に使う気じゃないでしょうね？",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#10$1"
+        },
+        {
+            "id": 268,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4040_rockr_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "あの恥知らずの裏切り者ども──",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#3$1"
+        },
+        {
+            "id": 270,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4072_ironmn_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "name",
+            "attributes": {
+                "content": "シャイニングさん、こいつをこじ開けられるか？",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#1$1"
+        },
+        {
+            "id": 272,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4072_ironmn_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "name",
+            "attributes": {
+                "content": "これ以上ここで足止め食らってるわけにはいかないんだ。サルカズたちがいつやってくるかもわかんねーしな。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#10$1"
+        },
+        {
+            "id": 274,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 275,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 276,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_147_shining_1",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 277,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 278,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_147_shining_1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "name",
+            "attributes": {
+                "content": "やってみましょう。",
+                "name": "シャイニング"
+            },
+            "figure_art": "char_147_shining_1"
+        },
+        {
+            "id": 280,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_411_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "name",
+            "attributes": {
+                "content": "いや、ダメだって！　大きな音を出しちゃダメ！　それじゃもっと早く敵を引きつけるだけだから！",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_411_1#11$1"
+        },
+        {
+            "id": 282,
+            "prop": "name",
+            "attributes": {
+                "content": "ここにいるのは重傷者と非戦闘員なんだよ。もし、本当に王庭の奴らと戦うことになったら、あたしたちは逃げられても、彼らはどうするの？",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_411_1#11$1"
+        },
+        {
+            "id": 283,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4072_ironmn_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "だけど、ここにいたって結局死ぬのはおんなじだろ？　あいつらが何考えてるかは知んねーけど、俺たちをただ閉じ込めておくだけってことはねーはずだ。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#10$1"
+        },
+        {
+            "id": 285,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_411_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "name",
+            "attributes": {
+                "content": "あたしのドローンには小型レーザーカッターが付いてる。この鋼板は分厚いけど、もう少し時間をくれれば……",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_411_1#8$1"
+        },
+        {
+            "id": 287,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4072_ironmn_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "name",
+            "attributes": {
+                "content": "どんくらいだ？",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#8$1"
+        },
+        {
+            "id": 289,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_411_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "急かさないでってば！　まずは出力テストをしなきゃ……",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_411_1#11$1"
+        },
+        {
+            "id": 291,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 292,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 293,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4040_rockr_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4072_ironmn_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "name",
+            "attributes": {
+                "content": "フェイスト、ビルの件は覚えてるでしょ？",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#1$1"
+        },
+        {
+            "id": 296,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4040_rockr_1#10$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "name",
+            "attributes": {
+                "content": "きっと……きっとあの化け物がまたあたしたちの中に紛れ込んでたに違いない、あいつがまたあたしたちを騙したんだ！",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#10$1"
+        },
+        {
+            "id": 298,
+            "prop": "name",
+            "attributes": {
+                "content": "あまりにうかつだった、もっと早く気付くべきだったのに！",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#10$1"
+        },
+        {
+            "id": 299,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4040_rockr_1#4$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "name",
+            "attributes": {
+                "content": "姿を変えられるサルカズ……まだここにいるのかな？",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#4$1"
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "あんなのがいたら、あたしたちは一体……誰を信じればいいの？",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#4$1"
+        },
+        {
+            "id": 302,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4072_ironmn_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#1$1"
+        },
+        {
+            "id": 304,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4072_ironmn_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "name",
+            "attributes": {
+                "content": "もし……そうじゃなかったら？",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#9$1"
+        },
+        {
+            "id": 306,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4040_rockr_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "だってあの人たちは戦友だよ！　あたしたちと同じロンディニウムの工員でしょ！",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#8$1"
+        },
+        {
+            "id": 308,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4072_ironmn_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "name",
+            "attributes": {
+                "content": "んなの分かってるよ。俺はあいつらと一緒に育ったんだからさ。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#1$1"
+        },
+        {
+            "id": 310,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4072_ironmn_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "けど、もし……",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#9$1"
+        },
+        {
+            "id": 312,
+            "prop": "name",
+            "attributes": {
+                "content": "もしこれがあいつら自身の選択だったら、トミーやパットやダイ、あいつらが他の連中と一緒にこれを決めたんだとしたら？",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#9$1"
+        },
+        {
+            "id": 313,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4040_rockr_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "name",
+            "attributes": {
+                "content": "そんな、どうして……あたしたちは仲間なんじゃないの！？",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#8$1"
+        },
+        {
+            "id": 315,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4072_ironmn_1#3$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "name",
+            "attributes": {
+                "content": "ま、仲間に裏切られた事実を認めるより、仲間が入れ替わったって思う方が楽だよな。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#3$1"
+        },
+        {
+            "id": 317,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4072_ironmn_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "name",
+            "attributes": {
+                "content": "だけどさ、もう起こっちまったんだよ。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#1$1"
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "あいつらの考えなら、ちったぁわかるぜ。怒りが燃やした情熱が消えちまうとさ、戦い続ける選択をするのは簡単じゃねーもんな。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#1$1"
+        },
+        {
+            "id": 320,
+            "prop": "name",
+            "attributes": {
+                "content": "指揮官も言ってたろ？　結局さ、俺たちは普通の人間なんだよ。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#1$1"
+        },
+        {
+            "id": 321,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4072_ironmn_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "name",
+            "attributes": {
+                "content": "認めるしかない……俺だって同じだ。ここを離れるのが怖ぇ。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#9$1"
+        },
+        {
+            "id": 323,
+            "prop": "name",
+            "attributes": {
+                "content": "逃避や退却ってのは、俺たち一般人が戦争に直面した時……真っ先に選択しちまうもんだよ。それも無意識にな。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#9$1"
+        },
+        {
+            "id": 324,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4040_rockr_1#10$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "だったら残ったっていい！　君の友達と一緒に！",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#10$1"
+        },
+        {
+            "id": 326,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4072_ironmn_1#4$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "name",
+            "attributes": {
+                "content": "そんなことするわけないだろ。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#4$1"
+        },
+        {
+            "id": 328,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4072_ironmn_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "俺は恐怖としっかり向き合わなきゃならないんだ。そうすることで……勇気の価値ってのを自分に言い聞かせることができんだから。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#1$1"
+        },
+        {
+            "id": 330,
+            "prop": "name",
+            "attributes": {
+                "content": "あいつらはまだ、本当の一線を越えちゃいねーって俺は信じてる。ただ、恐怖に取り憑かれちまっただけだってな。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#1$1"
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "でもそんなことは、もう重要じゃねーんだ。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#1$1"
+        },
+        {
+            "id": 332,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4072_ironmn_1#4$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "name",
+            "attributes": {
+                "content": "俺はばあちゃんと指揮官を助けに行くよ。前の時と一緒だ。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#4$1"
+        },
+        {
+            "id": 334,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4072_ironmn_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "name",
+            "attributes": {
+                "content": "だけど、負傷者たちには一刻の猶予もない。",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#1$1"
+        },
+        {
+            "id": 336,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 337,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 338,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_drone"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 340,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_411_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "name",
+            "attributes": {
+                "content": "レーザーカッターでの切断作業を開始したよ！　えーっと……大体二十分くらいかな？",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_411_1#1$1"
+        },
+        {
+            "id": 342,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4040_rockr_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "あたしも手伝う。工具ならいつも持ち歩いてるし！",
+                "name": "ロックロック"
+            },
+            "figure_art": "avg_4040_rockr_1#12$1"
+        },
+        {
+            "id": 344,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_411_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "ロックロックちゃんのハンマーとレンチは、この扉には役に立たないよ。",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_411_1#8$1"
+        },
+        {
+            "id": 346,
+            "prop": "name",
+            "attributes": {
+                "content": "気楽に待っててよ、もう少しでここを静かに出られるから……",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_411_1#8$1"
+        },
+        {
+            "id": 347,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 348,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_411_1#8$1",
+                "focus": "none"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 50.0,
+                "ystrength": 50.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 352,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 358,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_411_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "な、なに？　サルカズの行動は検知してないんだけど！？",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_411_1#5$1"
+        },
+        {
+            "id": 360,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4072_ironmn_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "シャイニングさん──",
+                "name": "フェイスト"
+            },
+            "figure_art": "avg_4072_ironmn_1#7$1"
+        },
+        {
+            "id": 362,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 363,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 364,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 365,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "char_147_shining_1",
+                "posfrom": "-100,0",
+                "posto": "0,0",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 366,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 367,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_swordexsheath"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 369,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 370,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_412_1#10$1",
+                "bstart": 0.2,
+                "bend": 0.7,
+                "posfrom": "200,0",
+                "posto": "0,0",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 371,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 372,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_412_1#10$1",
+                "bstart": 0.2,
+                "bend": 0.7,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "name",
+            "attributes": {
+                "content": "あら、シャイニングじゃない。久しぶりね。そういえば最近、家族の集まりに行ったって聞いたけど？",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_412_1#10$1"
+        },
+        {
+            "id": 374,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "char_147_shining_1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "name",
+            "attributes": {
+                "content": "……Wさん、いらっしゃったのですか。",
+                "name": "シャイニング"
+            },
+            "figure_art": "char_147_shining_1"
+        },
+        {
+            "id": 376,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 377,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 378,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$m_dia_street_intro",
+                "key": "$m_dia_street_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 379,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_411_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "name",
+            "attributes": {
+                "content": "W！　今の音、ロンディニウム中に響き渡ったからね！　全部とは言わないけど、半分は絶対！！！",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_411_1#11$1"
+        },
+        {
+            "id": 381,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 382,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 383,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "char_147_shining_1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_412_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "name",
+            "attributes": {
+                "content": "盛大だったでしょ？　あたし、爆薬の分量調整にはとっても自信があるもの。",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#1$1"
+        },
+        {
+            "id": 386,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_412_1#10$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 387,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシーが可哀そうなくらいコテンパンに負けたって聞いたから、多忙なスケジュールの合間を縫って見に来てあげたのよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#10$1"
+        },
+        {
+            "id": 388,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 389,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 390,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_412_1#12$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "name",
+            "attributes": {
+                "content": "あ～らら、ホントにひどい有様ね。テレシスも容赦ないわ。",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#12$1"
+        },
+        {
+            "id": 392,
+            "prop": "name",
+            "attributes": {
+                "content": "あいつなら「自分の旧友」に対して、多少なりとも優しくするものと思ってたんだけど。",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#12$1"
+        },
+        {
+            "id": 393,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "char_147_shining_1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "name",
+            "attributes": {
+                "content": "先生はまだ目を覚ましていません。",
+                "name": "シャイニング"
+            },
+            "figure_art": "char_147_shining_1"
+        },
+        {
+            "id": 395,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_412_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 396,
+            "prop": "name",
+            "attributes": {
+                "content": "ほんと残念だわ、涙を数滴くらいは絞り出してあげるべきかしら。",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#1$1"
+        },
+        {
+            "id": 397,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_412_1#10$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "name",
+            "attributes": {
+                "content": "それとも、今の内にこのクソババアが二度とあたしに歯向かうことができないようにしてやろうかしら？",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#10$1"
+        },
+        {
+            "id": 399,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 400,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 401,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$Mon3tr_n"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "（しわがれた雄たけび）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 404,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 405,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 406,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "char_147_shining_1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_412_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "name",
+            "attributes": {
+                "content": "うぇっ、こいつまだ生きてたのね。",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#2$1"
+        },
+        {
+            "id": 409,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 410,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_walk_stage",
+                "channel": "n",
+                "loop": "false"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "n",
+                "fadetime": 4.0
+            }
+        },
+        {
+            "id": 412,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "posfrom": "0,0",
+                "posto": "300,0",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 413,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 414,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 415,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 416,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_412_1#10$1",
+                "posfrom": "-200,0",
+                "posto": "150,0",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 417,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "npc_10002",
+                "posfrom": "200,0",
+                "posto": "0,0",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 0.3
+            }
+        },
+        {
+            "id": 418,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 419,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$p_skill_Mon3trburst",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 420,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "npc_10002",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "name",
+            "attributes": {
+                "content": "（威嚇する唸り声）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 422,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 423,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "npc_10002",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 425,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_runstop"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_412_1#10$1",
+                "posfrom": "150,0",
+                "posto": "0,0",
+                "afrom": 1.0,
+                "ato": 1.0,
+                "duration": 0.6
+            }
+        },
+        {
+            "id": 427,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 428,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_412_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 429,
+            "prop": "name",
+            "attributes": {
+                "content": "チッ、何でこんなに凶暴なのよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#8$1"
+        },
+        {
+            "id": 430,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 431,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 432,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_147_shining_1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "name",
+            "attributes": {
+                "content": "Mon3trもひどい損傷を受け、二時間前にようやく運動機能が回復したばかりです。とはいえ、やはり刺激するのは控えた方がいいでしょう、Wさん。",
+                "name": "シャイニング"
+            },
+            "figure_art": "char_147_shining_1"
+        },
+        {
+            "id": 434,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 435,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 436,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_412_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "npc_10002",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "name",
+            "attributes": {
+                "content": "ハァ。あたしはあんたのご主人の命を救ってあげたのよ？　少しくらい敬うことを覚えたら？",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#1$1"
+        },
+        {
+            "id": 439,
+            "prop": "name",
+            "attributes": {
+                "content": "でないと、フフッ──",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#1$1"
+        },
+        {
+            "id": 440,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "npc_10002",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 442,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$Mon3tr_n"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "name",
+            "attributes": {
+                "content": "（妥協するように低く唸る）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 444,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_412_1#10$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "name",
+            "attributes": {
+                "content": "分かってるじゃない。それでいいのよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#10$1"
+        },
+        {
+            "id": 446,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 447,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 448,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_411_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "name",
+            "attributes": {
+                "content": "王庭軍の奴らがこっちに向かってる！　早く、奴らが来る前に──",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_411_1#4$1"
+        },
+        {
+            "id": 450,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_412_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "name",
+            "attributes": {
+                "content": "ギャーギャーうっさいわね、クロージャ。耳が痛くなるでしょ。",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#8$1"
+        },
+        {
+            "id": 452,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_411_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "誰のせいだと思ってんの！",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_411_1#4$1"
+        },
+        {
+            "id": 454,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_412_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "なら、あんたたちのお仲間にとっとと足を動かすよう言いなさい。",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#1$1"
+        },
+        {
+            "id": 456,
+            "prop": "name",
+            "attributes": {
+                "content": "ロンディニウムの外にいくつか良さげな場所を知ってるんだけど、あんたたち見に来たくない？",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#1$1"
+        },
+        {
+            "id": 457,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 458,
+            "prop": "musicvolume",
+            "attributes": {
+                "volume": 0.3,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 459,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 460,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 462,
+            "prop": "Background",
+            "attributes": {
+                "image": "37_g1_glasgowboxinggym",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 464,
+            "prop": "musicvolume",
+            "attributes": {
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 465,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 467,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#1$1",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 468,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#1$1",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 469,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 470,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "name",
+            "attributes": {
+                "content": "私たちの物資ですが、楽観的に見積もれば、まだあと一週間は持ちます。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#1$1"
+        },
+        {
+            "id": 472,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#6$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "name",
+            "attributes": {
+                "content": "悲観的に見積もったら？",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#6$1"
+        },
+        {
+            "id": 474,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#8$1"
+        },
+        {
+            "id": 476,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#6$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 477,
+            "prop": "name",
+            "attributes": {
+                "content": "うん、わかった。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#6$1"
+        },
+        {
+            "id": 478,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "name",
+            "attributes": {
+                "content": "カドールと何とかする。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#1$1"
+        },
+        {
+            "id": 480,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#5$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 481,
+            "prop": "name",
+            "attributes": {
+                "content": "外の状況は今どんな風ですか？",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#5$1"
+        },
+        {
+            "id": 482,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "普段は一万人足らずの街に、数倍の人口が押し込められた。追加の補給もなければ、警察や法律もない。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#9$1"
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "これだけ日数が経っても私たちが生きていられるのは、市民たちにまだ道徳心が残ってるおかげ。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#9$1"
+        },
+        {
+            "id": 485,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#10$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 486,
+            "prop": "name",
+            "attributes": {
+                "content": "カドールの拳が硬いだけかもしれませんよ。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#10$1"
+        },
+        {
+            "id": 487,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "否定はしない。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#9$1"
+        },
+        {
+            "id": 489,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#5$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 490,
+            "prop": "name",
+            "attributes": {
+                "content": "大公爵たちの動きについて何か分かったことはありますか？　聞いた話によると……ウィンダミア公爵軍の駐屯地はここからそんな遠くないはずですが。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#5$1"
+        },
+        {
+            "id": 491,
+            "prop": "name",
+            "attributes": {
+                "content": "彼らは……私たちの境遇を見て見ぬふりはしないはずです。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#5$1"
+        },
+        {
+            "id": 492,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "name",
+            "attributes": {
+                "content": "噂では……夜に空を横切る光を見たって人が複数いるらしい。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#1$1"
+        },
+        {
+            "id": 494,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#8$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "name",
+            "attributes": {
+                "content": "私たちはみんな、サルカズの空飛ぶ物体を目にした……ロンディニウムから切り離された日、あの影が区画全体を横切っていくところを。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#8$1"
+        },
+        {
+            "id": 496,
+            "prop": "name",
+            "attributes": {
+                "content": "恐らく、大公爵たちはあれを恐れている。彼らは今、探りを入れるようにしか攻めることができない。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#8$1"
+        },
+        {
+            "id": 497,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 498,
+            "prop": "name",
+            "attributes": {
+                "content": "もちろん、すでに外は争いでめちゃめちゃになってロンディニウムが木っ端微塵になっている可能性もあるけど、それはわからない。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#1$1"
+        },
+        {
+            "id": 499,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "name",
+            "attributes": {
+                "content": "ここにまだ生きてる人がいることを、大公爵たちが知らないという可能性は？",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#6$1"
+        },
+        {
+            "id": 501,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女……大公爵たちは……私たちがみんな死んだと思ってるとか。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#6$1"
+        },
+        {
+            "id": 502,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 503,
+            "prop": "name",
+            "attributes": {
+                "content": "もし情報を発信できれば……",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#8$1"
+        },
+        {
+            "id": 504,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#6$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "name",
+            "attributes": {
+                "content": "どうやって？　都市間通信ネットワークはとっくに麻痺してる。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#6$1"
+        },
+        {
+            "id": 506,
+            "prop": "name",
+            "attributes": {
+                "content": "私たちみたいな封鎖エリアに閉じ込められた哀れな人間は、明日の食料の心配をするくらいしかできない。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#6$1"
+        },
+        {
+            "id": 507,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "……本当に信じられません。ほんの数日前までは、ビデオシアターでランクウッドのB級映画を見ていたのに。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#1$1"
+        },
+        {
+            "id": 509,
+            "prop": "name",
+            "attributes": {
+                "content": "あれは何というタイトルでしたっけ？　『ミュータント・バトルロイヤル』？",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#1$1"
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "B級映画らしい感じでしたけど、エンディングは意外と感動的でしたね。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#1$1"
+        },
+        {
+            "id": 511,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 512,
+            "prop": "name",
+            "attributes": {
+                "content": "知らない、寝てた。最後の爆発で移動都市がバラバラになったシーンは見た。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#1$1"
+        },
+        {
+            "id": 513,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "name",
+            "attributes": {
+                "content": "あと覚えてるのはマクラーレンの金払いが良かったことくらい。当然と言えば当然。私たちは何度も彼のためにビデオシアターでの騒ぎを鎮めてあげた。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#9$1"
+        },
+        {
+            "id": 515,
+            "prop": "name",
+            "attributes": {
+                "content": "彼が無事だといいけど。今の外の状況は彼の適応障害に良くない。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#9$1"
+        },
+        {
+            "id": 516,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 517,
+            "prop": "name",
+            "attributes": {
+                "content": "ビデオシアターに行ってみましたが、扉はがっちり閉まっていて入れませんでした。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#1$1"
+        },
+        {
+            "id": 518,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#5$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 519,
+            "prop": "name",
+            "attributes": {
+                "content": "そう言えば、どうしていつもビデオシアターで寝てるんですか？　私たち初めて会った時だって……",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#5$1"
+        },
+        {
+            "id": 520,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 521,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたの笑い声で私が目を覚ました。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#1$1"
+        },
+        {
+            "id": 522,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#10$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "name",
+            "attributes": {
+                "content": "ごめんなさい。でも、あの映画ほんとに面白かったんですよ。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#10$1"
+        },
+        {
+            "id": 524,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 525,
+            "prop": "name",
+            "attributes": {
+                "content": "結局のところ、ビデオシアターで寝てるあなたが悪いのでは。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#1$1"
+        },
+        {
+            "id": 526,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "name",
+            "attributes": {
+                "content": "あそこは寝心地が良い。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#9$1"
+        },
+        {
+            "id": 528,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 529,
+            "prop": "name",
+            "attributes": {
+                "content": "あの監督、コメディー界ではすっごく有名で、私はあの人の──",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#1$1"
+        },
+        {
+            "id": 530,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 531,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_hungry",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 532,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 533,
+            "prop": "name",
+            "attributes": {
+                "content": "デルフィーンのお腹が悪いタイミングで鳴り、ようやく少し和んだ空気を現実に引き戻したのだった。"
+            }
+        },
+        {
+            "id": 534,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 535,
+            "prop": "name",
+            "attributes": {
+                "content": "……ごめんなさい。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#6$1"
+        },
+        {
+            "id": 536,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "あなた食べる量が少なすぎる。そんな調子じゃ体力が持たない。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#1$1"
+        },
+        {
+            "id": 538,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 539,
+            "prop": "name",
+            "attributes": {
+                "content": "平気ですよ。私たちは、これからも耐えていかなきゃいけないんですし。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#6$1"
+        },
+        {
+            "id": 540,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#6$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "name",
+            "attributes": {
+                "content": "……昔の生活は終わった。すべてが一瞬で今の姿に変わったから。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#6$1"
+        },
+        {
+            "id": 542,
+            "prop": "name",
+            "attributes": {
+                "content": "周りは狂った人と死体だらけ、それとサルカズが建てた封鎖壁……この数日間あそこを突破しようとした連中もいるけど、彼らの首は今もまだ壁に吊るされてる。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#6$1"
+        },
+        {
+            "id": 543,
+            "prop": "name",
+            "attributes": {
+                "content": "私はいまだに理解できない、どうして──",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#6$1"
+        },
+        {
+            "id": 544,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "name",
+            "attributes": {
+                "content": "戦争は始まったんです、ベアード。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#1$1"
+        },
+        {
+            "id": 546,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#7$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 547,
+            "prop": "name",
+            "attributes": {
+                "content": "分かってる、分かってるよ！　でも「戦争が始まった」なんてたった数文字で……",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#7$1"
+        },
+        {
+            "id": 548,
+            "prop": "name",
+            "attributes": {
+                "content": "あらゆる過去が一瞬で消えてしまうなんて。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#7$1"
+        },
+        {
+            "id": 549,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#10$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 550,
+            "prop": "name",
+            "attributes": {
+                "content": "これは誰の戦争なの？",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#10$1"
+        },
+        {
+            "id": 551,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_866_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 552,
+            "prop": "name",
+            "attributes": {
+                "content": "公爵たちが……ヴィクトリアを守るために……",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#8$1"
+        },
+        {
+            "id": 553,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_863_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 554,
+            "prop": "name",
+            "attributes": {
+                "content": "私に分かるのは、これが私の戦争じゃないってことだけ。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#1$1"
+        },
+        {
+            "id": 555,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 556,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 557,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_cardboard",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 558,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 559,
+            "prop": "name",
+            "attributes": {
+                "content": "ふいに暗闇から微かな物音が聞こえた。それに加え、缶同士が軽くぶつかり合う音も。"
+            }
+        },
+        {
+            "id": 560,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 561,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_863_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 562,
+            "prop": "name",
+            "attributes": {
+                "content": "……あなたそこで何してるの？",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#10$1"
+        },
+        {
+            "id": 563,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 564,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 565,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 566,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_177",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 567,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.7
+            }
+        },
+        {
+            "id": 568,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_177",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 569,
+            "prop": "name",
+            "attributes": {
+                "content": "えっと……その……",
+                "name": "臆病な市民"
+            },
+            "figure_art": "avg_npc_177"
+        },
+        {
+            "id": 570,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_863_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 571,
+            "prop": "name",
+            "attributes": {
+                "content": "今日の夜番はあなたじゃない。",
+                "name": "ベアード"
+            },
+            "figure_art": "avg_npc_863_1#10$1"
+        },
+        {
+            "id": 572,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_866_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 573,
+            "prop": "name",
+            "attributes": {
+                "content": "今コートの中に何を隠したんですか？",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_npc_866_1#7$1"
+        },
+        {
+            "id": 574,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_177",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 575,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "action": "shake",
+                "random": "true",
+                "power": 5.0,
+                "times": 60.0,
+                "duration": 0.3
+            }
+        },
+        {
+            "id": 576,
+            "prop": "name",
+            "attributes": {
+                "content": "く……来るな！",
+                "name": "臆病な市民"
+            }
+        },
+        {
+            "id": 577,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 578,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 579,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 580,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 581,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}
