@@ -1,0 +1,4212 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act25side",
+    "eventName": "孤星",
+    "entryType": "ACTIVITY",
+    "storyCode": "CW-8",
+    "avgTag": "戦闘後",
+    "storyName": "交差する今昔",
+    "storyInfo": "ヤラがサイレンスを、ケルシーが「保存者」を止める中、一筋の光がトリマウンツの都市を駆ける。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 2,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 4,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Background",
+            "attributes": {
+                "image": "38_g8_storage",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 6,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 7,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$act17_intro",
+                "key": "$act17_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_energybody",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 11,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 12,
+            "prop": "name",
+            "attributes": {
+                "content": "僕の質問に答えるんだ。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 14,
+            "prop": "Decision",
+            "attributes": {
+                "options": "し、しもべ？;……;ケルシーのしもべになった覚えはないんだが……",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line15",
+                "option2": "line15",
+                "option3": "line15"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 16,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_003_kalts_1#1",
+                "duration": 1.0,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "name",
+            "attributes": {
+                "content": "……Dr.{@nickname}は記憶を失っており、あなたの知るあの者たちの誰でもありません。もはやそうではなくなったのです。",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#1"
+        },
+        {
+            "id": 18,
+            "prop": "name",
+            "attributes": {
+                "content": "今のドクターはテラの一員であり、ロドスの一員です。",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#1"
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "我々は今日まで、共に多くを経験してきました。",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#1"
+        },
+        {
+            "id": 20,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 21,
+            "prop": "name",
+            "attributes": {
+                "content": "……ロドス？",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）ロドスか。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "……なるほど。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "それで「記憶喪失」というわけか。なぜ君はこの……「ドクター」にすべてを話さなかったんだ？",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_003_kalts_1#1"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#1"
+        },
+        {
+            "id": 27,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 28,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、わかったぞ。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "name",
+            "attributes": {
+                "content": "君は、過去の「ドクター」の実在性を疑っているのだな。もはや信用できない昔の記憶を復元するよりも、新たに世界を認識したこのドクターを信じることにしたわけか。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "ふむ……それも無理もない話だ。地上で発生するすべては偽れぬ事実であり、十分な介入があればテラは今のようにはなっていないだろうからな。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "name",
+            "attributes": {
+                "content": "どうやら、何一つ我々の望んだ通りにはなっていないようだね。君は覚えていないようだが……Dr.{@nickname}。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "ここで君たちに出会えるとは、まったく貴重な機会だ。しかしこの状況を思うと……",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 34,
+            "prop": "Decision",
+            "attributes": {
+                "options": "......",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line35"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 36,
+            "prop": "name",
+            "attributes": {
+                "content": "記憶を失くした「Dr.{@nickname}」と、ケルシーを名乗るAMa-10よ。君たちがここへ来た理由は何かな？",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "name",
+            "attributes": {
+                "content": "クリステンが君たちを焦らせたからか？　あるいは、すべてが君たちに制御可能な範囲を超えたからか？",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 39,
+            "prop": "Decision",
+            "attributes": {
+                "options": "こちらの質問に答えてもらっていないようだが。;偉そうにするのはやめてくれ！;自己紹介は対等な会話の前提だろう。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line40",
+                "option2": "line40",
+                "option3": "line40"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 41,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "name",
+            "attributes": {
+                "content": "僕はある計画において、人格を模倣して作られたシミュレーションシステムだ。これまで数万年、この暗い広間を――そして、数十万人の同胞の冷たい身体を見守ってきた。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "name",
+            "attributes": {
+                "content": "かつての僕は最後の希望であり、悲観的な試みであり、ニヒリズムの代名詞でもあった。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "name",
+            "attributes": {
+                "content": "だが今は、ちっぽけな君たちからすれば……クリステンの狂った計画の共犯者であり、その黒幕とでもいうべきだろう。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "name",
+            "attributes": {
+                "content": "僕は瀕死の「保存者」であり、君の目に映るすべてに畏敬の念を抱いている、文明の滅びそのものなのだよ。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 47,
+            "prop": "musicvolume",
+            "attributes": {
+                "volume": 0.2,
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 48,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 49,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "Background",
+            "attributes": {
+                "image": "38_g15_energywell_glowed",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 52,
+            "prop": "musicvolume",
+            "attributes": {
+                "volume": 0.6,
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 53,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 55,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 56,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "name",
+            "attributes": {
+                "content": "ここで間違いない。伝達物質の反応も……強く出ているし……",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 58,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#4$2"
+            }
+        },
+        {
+            "id": 59,
+            "prop": "name",
+            "attributes": {
+                "content": "私は――",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#4$2"
+        },
+        {
+            "id": 60,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 61,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "0,-80",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 62,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#9$1",
+                "posfrom": "-300,0",
+                "posto": "0,-50",
+                "duration": 0.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown3",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 64,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 65,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,-80",
+                "posto": "0,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 66,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "posfrom": "0,-50",
+                "posto": "0,0",
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 67,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "250,0",
+                "duration": 2.0,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 69,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#9$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "name",
+            "attributes": {
+                "content": "ヤラ主任……？",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#9$2"
+        },
+        {
+            "id": 71,
+            "prop": "name",
+            "attributes": {
+                "content": "どうしてここに？",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#9$2"
+        },
+        {
+            "id": 72,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "……あなたは私の祝福を携えて、ここまでたどり着いたのね。それもいいでしょう。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 74,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 76,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "私を……止めに来たんですね。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 78,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#10$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "渡しておいたその武器、まだ持っていてくれて嬉しいわ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#10$1"
+        },
+        {
+            "id": 80,
+            "prop": "name",
+            "attributes": {
+                "content": "一時の衝動でここに立ってるわけじゃなさそうね。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#10$1"
+        },
+        {
+            "id": 81,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "name",
+            "attributes": {
+                "content": "はい。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 83,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "name",
+            "attributes": {
+                "content": "最後のチャンスよ、お嬢さん。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 85,
+            "prop": "name",
+            "attributes": {
+                "content": "逃げるか、それとも続けるか。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 86,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "name",
+            "attributes": {
+                "content": "私は……あなたの仰る「戦士」になってみせます。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 88,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "サイレンス、あなたはわかっているでしょう。クリステンはフォーカスジェネレーターに集めたエネルギーを、大地にあるどの都市にも向けるつもりはないの。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "だから、止める必要なんてないのよ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女はただ、すべての科学者と同じように、誰も足を踏み入れたことのない場所へ前進しようとしているだけなのだから。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 93,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "あるいはそうかもしれませんね。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 95,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#2$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "私はあなたほど統括を理解してはいませんが、あなたの言うことなら喜んで信じます。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#2$2"
+        },
+        {
+            "id": 97,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "name",
+            "attributes": {
+                "content": "ですがそれでも、すべてを止めに行きます。たとえ私の前にあなたが立ちはだかるとしても。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 99,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "name",
+            "attributes": {
+                "content": "……なぜなの？",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#1$1"
+        },
+        {
+            "id": 101,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "これがどのような実験であれ、統括がこのまま実行し、成功してしまえば――",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 103,
+            "prop": "name",
+            "attributes": {
+                "content": "あの人はライン生命の統括ですから、感情的な信頼にせよ理性的な判断にせよ、成功する確率が高いということは私たち皆が知ることですが。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 104,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "とにかくその時、クルビアの研究者たちが彼女をどう見ると思いますか？",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "ライン生命の人事調査課主任をこれほど長く務めていらっしゃるあなたなら、ここの人たちを誰よりも理解していますよね。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 107,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "……彼女は英雄になるでしょうね。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#8$1"
+        },
+        {
+            "id": 109,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女は、クルビア科学界の英雄に、そして理想になる。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#8$1"
+        },
+        {
+            "id": 110,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "name",
+            "attributes": {
+                "content": "そう、あの人は科学者の理想、研究者たちの模範となるんです。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 112,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "name",
+            "attributes": {
+                "content": "……そうなれば、こういうことは後を絶たなくなるでしょう。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 114,
+            "prop": "name",
+            "attributes": {
+                "content": "一つ一つの物事に対して、研究者たちは飽きることなく夢中になるものです。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 115,
+            "prop": "name",
+            "attributes": {
+                "content": "けれど、クリステン・ライトは一人しかいない。彼女だけしかいないんです。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 116,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 117,
+            "prop": "name",
+            "attributes": {
+                "content": "一方で、そのほかのリーダーや天才を自称する人たち――このいわゆる「手段を選ばぬ開拓精神」に触発された人たちは……",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#10$2"
+        },
+        {
+            "id": 118,
+            "prop": "name",
+            "attributes": {
+                "content": "自らの執着や理想をためらいなく実践に移す人たちは……",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#10$2"
+        },
+        {
+            "id": 119,
+            "prop": "name",
+            "attributes": {
+                "content": "私たちと同じように、貪欲で、傲慢で、向こう見ずで、頑固な人たちはどうでしょうか？",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#10$2"
+        },
+        {
+            "id": 120,
+            "prop": "name",
+            "attributes": {
+                "content": "そんな人たちが、統括の行いを美徳と見なしてしまったら――",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#10$2"
+        },
+        {
+            "id": 121,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 122,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 123,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "どんな未来が訪れるのか、あなたなら想像に難くないでしょう。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 125,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#4$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "いえ、想像する必要すらないかもしれません……",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#4$2"
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたも、ライン生命が行ってきた研究を知らなかったわけではないでしょうから。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#4$2"
+        },
+        {
+            "id": 128,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "name",
+            "attributes": {
+                "content": "ええ、よくわかっているわ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 130,
+            "prop": "name",
+            "attributes": {
+                "content": "私はよくわかっている……トリマウンツで、いいえ、クルビア国内でこれまでに、そして今この時に、こんなことがどれほど多く起きているのかを。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "これまで私の前には、無数の狂気じみた魅力的な計画が並べられてきた。それを差し出す人の目は輝いていて、皆心からの笑顔を浮かべていたわ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 132,
+            "prop": "name",
+            "attributes": {
+                "content": "彼らは本気で「純粋な科学のために」尽くしているつもりでいて、自分こそが認知の荒野を開拓する者だと思っているのよ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 133,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "name",
+            "attributes": {
+                "content": "そしてそれを受けたあなたやその同僚たちは、彼らの実験計画と壮大な青写真に基づいて、多少の「代償」や「コスト」を支払うべきかどうかを判断するだけでいいでしょうからね。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 135,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "name",
+            "attributes": {
+                "content": "「代償」。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 137,
+            "prop": "name",
+            "attributes": {
+                "content": "それは時に肥沃な土地であり、数名の不治の病を患う人や死刑囚であり、一つの村や町であり、特定の種族や国家であり……",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 138,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "name",
+            "attributes": {
+                "content": "私に言わせれば、時折、彼ら自身であることすらあったわ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#6$1"
+        },
+        {
+            "id": 140,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたには、それを恐れる気持ちがありますか？　それとも、科学の進歩の可能性に興奮していますか？",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 142,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "name",
+            "attributes": {
+                "content": "ヤラ主任、この大地にはガラスケースに収められた「純粋な科学」など存在しません。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#10$2"
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "科学は私たちの――人間の手中にあるべきものです。その温度を、重さを、そしてそれが人を焼いてしまうものでないか、どんな苦しみや慰めをもたらすものかを知る必要があるんです。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#10$2"
+        },
+        {
+            "id": 145,
+            "prop": "name",
+            "attributes": {
+                "content": "ああいう人たちはいつまでも、前進を叫んでいます。でもその実、ただ自分が踏み出したい方向へとむやみに足を踏み入れているだけなんですよ。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#10$2"
+        },
+        {
+            "id": 146,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "name",
+            "attributes": {
+                "content": "だけど、それこそが前進というものよ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#8$1"
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "どこに道があるかなんてわからない以上、そうして歩くしかないのだから。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#8$1"
+        },
+        {
+            "id": 149,
+            "prop": "name",
+            "attributes": {
+                "content": "運の良い人は正しい方向を見つけ出し、光の中に辿り着く。運の悪い人は行き止まりへと迷い込み、さまよい続けることになる……",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#8$1"
+        },
+        {
+            "id": 150,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "name",
+            "attributes": {
+                "content": "それでも彼らを立ち止まらせることなんてできないの。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 152,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたも研究者であるのなら、一番止められようもないことが何なのかはわかっているでしょう。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 153,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 155,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "name",
+            "attributes": {
+                "content": "――それは渇望よ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#1$1"
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "物質的にも、道徳的にも、たとえ規則を用いても縛りようのないものなの。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#1$1"
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "この大地において、古から今、クリステンの時より前に、あなたの言う貪欲で、傲慢で、向こう見ずで、頑固な人たちが、立ち止まったことなどあると思うの？",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#1$1"
+        },
+        {
+            "id": 159,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "name",
+            "attributes": {
+                "content": "それならば、彼らはこれから立ち止まるべきです。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 161,
+            "prop": "name",
+            "attributes": {
+                "content": "少なくとも、身をかがめて自分の足元を確かめることになる前に、立ち止まらなければなりません。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 162,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#2$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "name",
+            "attributes": {
+                "content": "ヤラ主任。私は――科学の燃料となるものは、欲望や理想、計算や取捨選択によるものであってはならないと思います。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#2$2"
+        },
+        {
+            "id": 164,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "科学とは、あらゆる人に真摯に向き合うことですから。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 166,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#2$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#2$1"
+        },
+        {
+            "id": 168,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "name",
+            "attributes": {
+                "content": "それは大学図書館の廊下に掛けておくには相応しい、素晴らしい言葉だと思うわ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#1$1"
+        },
+        {
+            "id": 170,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "けれど、それをラボの壁に掛けておきたがる研究者はいないでしょうね。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 172,
+            "prop": "name",
+            "attributes": {
+                "content": "そんなのは空論だもの。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 173,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "だったら、私が実現させます。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 175,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "途中で諦めたくないんです。私はまだ、あなたの祝福を携えていますから。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 177,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#8$1"
+        },
+        {
+            "id": 179,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "name",
+            "attributes": {
+                "content": "クリステンは長い時間をかけてこの計画の準備を整えてきたの。あの子がこのために、どれだけのものを差し出してきたかわからないくらいにね。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 181,
+            "prop": "name",
+            "attributes": {
+                "content": "だけど、彼女の覚悟は両親に勝るとも劣らないものよ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 182,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#11$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは――",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#11$1"
+        },
+        {
+            "id": 184,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "いいえ……あなたじゃなくて、これは私の気持ちね。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#6$1"
+        },
+        {
+            "id": 186,
+            "prop": "name",
+            "attributes": {
+                "content": "……私は、希望が再び泡と消えるのを黙って見ていられないの。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#6$1"
+        },
+        {
+            "id": 187,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "では、あなたは何を望んでいらっしゃるんですか？　クリステンの成功を見届けることですか？　それとも、彼女が無事に帰ってくることですか？",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 189,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#6$1"
+        },
+        {
+            "id": 191,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "name",
+            "attributes": {
+                "content": "――私の知り合いには、ルビーという研究員がいます。彼女の一番の望みは毎日定時に退社することと、いずれ無事に定年退職することです。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 193,
+            "prop": "name",
+            "attributes": {
+                "content": "そして、先ほど出会った兵士の、恐らく今唯一の望みはというと、この制御不能なエネルギーウェルから無事に脱出し、親族を連れてトリマウンツの狂った科学者から逃げることだと思います。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 194,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "name",
+            "attributes": {
+                "content": "こういう人たちの望みよりも、統括の「希望」のほうが崇高だなんてことあるんでしょうか？",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 196,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女の望むものが、それに足るほど「進歩的」だから……",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 197,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#2$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "あるいは単に、あなたと彼女がそれに足るほど親密な関係を築いているからと言って、それが正当だと言えるでしょうか？",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#2$2"
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "これは不公平なことだと、あなたはおわかりのはずです。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#2$2"
+        },
+        {
+            "id": 200,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "name",
+            "attributes": {
+                "content": "こんな身勝手、許されることではありません。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 202,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "name",
+            "attributes": {
+                "content": "私は……",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#6$1"
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#6$1"
+        },
+        {
+            "id": 205,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "私は……あなたの言う通り、身勝手なのよ。だから道徳や正義を理由に自分を騙して、あなたを行かせるなんてことはできないわ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 207,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#7$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "――感情の重さを、私たちは認めなければならない。私は、クリステンのあの夢を何もせずにただ見ていることなんてできないのよ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#7$1"
+        },
+        {
+            "id": 209,
+            "prop": "name",
+            "attributes": {
+                "content": "……サイレンス、あなたならわからないはずがないでしょう。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#7$1"
+        },
+        {
+            "id": 210,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、私たちが統括を止めることさえできれば、きっとまた――",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#10$2"
+        },
+        {
+            "id": 212,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "いいえ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#6$1"
+        },
+        {
+            "id": 214,
+            "prop": "name",
+            "attributes": {
+                "content": "そうはならないわ、お嬢さん。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#6$1"
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "私にはよくわかっているの……この計画に着手した時から、あの子は後戻りするつもりなんてないのよ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#6$1"
+        },
+        {
+            "id": 216,
+            "prop": "name",
+            "attributes": {
+                "content": "ずっと昔、私たちが初めて会った時には、すべては……とっくに取り返しがつかなくなっていたの。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#6$1"
+        },
+        {
+            "id": 217,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "name",
+            "attributes": {
+                "content": "サイレンス。あなたが立ちはだかってくれることを嬉しく思うわ。私としては、あなたの主張を支持するとさえ言ってもいいくらい。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#1$1"
+        },
+        {
+            "id": 219,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "name",
+            "attributes": {
+                "content": "だけど、クリステンの……",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#6$1"
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#6$1"
+        },
+        {
+            "id": 222,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "……家族として、あなたを行かせるわけにはいかないの。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 224,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#7$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "だから、見せてちょうだい。あなたが本当に……自分の言葉に責任を負う準備ができているのかどうかを。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#7$1"
+        },
+        {
+            "id": 226,
+            "prop": "name",
+            "attributes": {
+                "content": "この先、あなたが相対することになるのは、もはやパルヴィスやクリステンといった単なる個人ではなく――",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#7$1"
+        },
+        {
+            "id": 227,
+            "prop": "name",
+            "attributes": {
+                "content": "前進を試みるすべての人になるのだから。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#7$1"
+        },
+        {
+            "id": 228,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#2$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#2$2"
+        },
+        {
+            "id": 230,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "わかりました。必ずそれに備えておくと、お約束します。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 232,
+            "prop": "name",
+            "attributes": {
+                "content": "科学は進歩しなければならず、また必然的にそうなるもの。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "あるいは統括のように「前進」を得意とする人も現れるでしょう。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 234,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが誰かが立ち上がり――",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 236,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_drone",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "科学を、人の手中に収めておかねばなりませんから。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 238,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 239,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "250,0",
+                "posto": "50,0",
+                "duration": 0.3
+            }
+        },
+        {
+            "id": 240,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 241,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 242,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$swordtsing4",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 243,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "action": "shake",
+                "power": 5.0,
+                "times": 60.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 244,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 247,
+            "prop": "Background",
+            "attributes": {
+                "image": "38_g8_storage",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 248,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 249,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "name",
+            "attributes": {
+                "content": "……「保存者」。",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#3"
+        },
+        {
+            "id": 253,
+            "prop": "name",
+            "attributes": {
+                "content": "よもや、本当にあなただったとは。",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#3"
+        },
+        {
+            "id": 254,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、あなたであったなら、なぜ……",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#3"
+        },
+        {
+            "id": 255,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 256,
+            "prop": "name",
+            "attributes": {
+                "content": "なぜ一匹の小動物の狂った計画に協力するのか、かな？",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "name",
+            "attributes": {
+                "content": "それとも、なぜ幼い文明が揺りかごから足を踏み出す第一歩をただ眺めているのか、かな？",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "いずれにせよ、君は来るのが遅すぎたな、「ドクター」。",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "name",
+            "attributes": {
+                "content": "僕は……すでに待つ意味を失ってしまった。",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 260,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 261,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "none"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "Decision",
+            "attributes": {
+                "options": "この状況に比べれば、上で起きていることは些事にすら思える。;……;……説明がほしい。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line263",
+                "option2": "line263",
+                "option3": "line263"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 264,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "name",
+            "attributes": {
+                "content": "クリステンを助けているのはあなたです。つまり、彼女は何らかの手段であなたと接触したことになります。",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#3"
+        },
+        {
+            "id": 266,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 267,
+            "prop": "name",
+            "attributes": {
+                "content": "僕はクルビアのネットワークを通じて、テラの歴史と文化、言語に種族、そして科学技術のレベルについてはすべてを知り尽くしている。",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "name",
+            "attributes": {
+                "content": "実に皮肉なことだが、地上における現在の情報伝達技術は全世界をカバーすることさえできないものだというのに、互いを滅ぼす手段だけは、進化の効率に見合ったものになっているようだ。",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_003_kalts_1#1"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "name",
+            "attributes": {
+                "content": "テラで取られている方式はあまりにも原始的かつ、源石に依存したもの。この程度の変換効率でクリステンの試みを実現するには――必要なエネルギーもまた想像を絶するものになるでしょう。",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#1"
+        },
+        {
+            "id": 271,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "name",
+            "attributes": {
+                "content": "この難題を解決する方法など、テラには存在しえないものです。とある手段を除いては。",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#3"
+        },
+        {
+            "id": 273,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 274,
+            "prop": "name",
+            "attributes": {
+                "content": "そうとも。",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "僕は最後の血を彼女に与えたのだ。消えゆく灯火を見守るよりも、新たな心臓を動かすほうがマシかもしれないからね。",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_003_kalts_1#3"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#3"
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは、本気で――",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#3"
+        },
+        {
+            "id": 279,
+            "prop": "name",
+            "attributes": {
+                "content": "……なぜそこまでなさったのですか？　長きにわたるあなたの努力すべてが……無駄になってしまうというのに。",
+                "name": "ケルシー"
+            },
+            "figure_art": "char_003_kalts_1#3"
+        },
+        {
+            "id": 280,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 281,
+            "prop": "name",
+            "attributes": {
+                "content": "確かに、無駄になってしまったな。",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 282,
+            "prop": "name",
+            "attributes": {
+                "content": "計画は僕の手で終止符を打たれ、コマンドも僕自身によって入力された。",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "name",
+            "attributes": {
+                "content": "後悔など許されない判断をしたんだ。",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "もうすぐ、もうすぐさ。",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 286,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 287,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 5.0,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_collapse",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.4,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 293,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.5,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.9,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 296,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 297,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "name",
+            "attributes": {
+                "content": "巨大な震動が遠くから広がってきて、地下空間の明かりが何度か明滅した。"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "name",
+            "attributes": {
+                "content": "「保存者」と名乗る存在は暫し沈黙し、そして深いため息をついたように思えた。"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 301,
+            "prop": "Decision",
+            "attributes": {
+                "options": "な、何が起きた！？;……;まさか、エネルギーウェルが？",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line302",
+                "option2": "line302",
+                "option3": "line302"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 303,
+            "prop": "name",
+            "attributes": {
+                "content": "赤子が好奇心に満ちた眼差しを未知へと向ける、それだけのために――",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "どれほどの障害を乗り越えねばならぬのやら。",
+                "name": "「保存者」"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 306,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 310,
+            "prop": "name",
+            "attributes": {
+                "content": "p.m.8:11 エネルギーウェル異常充填状態"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 312,
+            "prop": "Background",
+            "attributes": {
+                "image": "38_g15_energywell_glowed",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 313,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 314,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_magic_3",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 315,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.8
+            }
+        },
+        {
+            "id": 316,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$swordtsing5",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 317,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_ftrub",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 319,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1031_slent2_1#9$2",
+                "posfrom": "-600,0",
+                "posto": "40,-20",
+                "duration": 1.0,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 321,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "posfrom": "40,-20",
+                "posto": "0,0",
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 323,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#1$1",
+                "posfrom": "-300,0",
+                "posto": "0,0",
+                "duration": 2.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 325,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "あのロドスという企業は、あなたに素晴らしい訓練を施してくれたようね。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#1$1"
+        },
+        {
+            "id": 327,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1031_slent2_1#9$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 328,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ……はぁ……",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#9$2"
+        },
+        {
+            "id": 329,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 330,
+            "prop": "name",
+            "attributes": {
+                "content": "腕はまだ上がる？",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#1$1"
+        },
+        {
+            "id": 331,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "name",
+            "attributes": {
+                "content": "大丈夫です。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 333,
+            "prop": "name",
+            "attributes": {
+                "content": "そちらの腕はどうですか？",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 334,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "name",
+            "attributes": {
+                "content": "大丈夫よ、医療保険には入っているから。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#1$1"
+        },
+        {
+            "id": 336,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "name",
+            "attributes": {
+                "content": "さて、まだ続けるの？",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#1$1"
+        },
+        {
+            "id": 338,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "name",
+            "attributes": {
+                "content": "……あなたがなおも行く手を阻むおつもりなら。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 340,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "name",
+            "attributes": {
+                "content": "いいわ、それなら続けましょう。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#9$1"
+        },
+        {
+            "id": 342,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 343,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_energywell",
+                "volume": 0.0,
+                "loop": "true",
+                "channel": "a"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 0.4,
+                "channel": "a",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 345,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 346,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$act25side_intro",
+                "key": "$act25side_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 347,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#7$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "……待って。何か妙だわ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#7$1"
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "この辺り、温度が上がりすぎている……エネルギーウェルが発射準備をしていたとしても、ここまで高温にはならないはずよ。",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#7$1"
+        },
+        {
+            "id": 350,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "軍の人たちは、エネルギーの充填を止めるために、ここにあるエネルギー源はほぼすべて遮断したと言っていました。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 352,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#3$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "ということは、警報システムや制御システムへの供給も？　あの愚か者たちときたら――！",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#3$1"
+        },
+        {
+            "id": 354,
+            "prop": "name",
+            "attributes": {
+                "content": "早く！　ここを離れましょう！",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#3$1"
+        },
+        {
+            "id": 355,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "上にまだ兵士が残っていますから、ヤラ主任は彼らを連れて逃げてください。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 357,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_893_1#4$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 358,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたはどうするの？",
+                "name": "ヤラ"
+            },
+            "figure_art": "avg_npc_893_1#4$1"
+        },
+        {
+            "id": 359,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1031_slent2_1#1$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "制御システムのエネルギー源が遮断されているのなら、統括がこの場所を遠隔操作できているのはなぜだと思いますか？",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#1$2"
+        },
+        {
+            "id": 361,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1031_slent2_1#5$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "伝達物質の反応は今も強まっています。私にはまだ、チャンスが残されているんです。",
+                "name": "サイレンス"
+            },
+            "figure_art": "avg_1031_slent2_1#5$2"
+        },
+        {
+            "id": 363,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 364,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 365,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0,
+                "focus": "r",
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 367,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "name",
+            "attributes": {
+                "content": "サイレンス！",
+                "name": "ヤラ"
+            }
+        },
+        {
+            "id": 369,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 370,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 371,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 372,
+            "prop": "Image",
+            "attributes": {
+                "image": "38_i15_1",
+                "screenadapt": "coverall",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 373,
+            "prop": "CameraShake",
+            "attributes": {
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "false",
+                "block": "false"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_collapse",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 375,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_energywell",
+                "volume": 0.8,
+                "loop": "true",
+                "channel": "a"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 378,
+            "prop": "name",
+            "attributes": {
+                "content": "熱気がヤラの顔をじりじりと焼く。それまで特別目を向けたことのなかったリーベリの研究員は今、エネルギーウェルのさらなる深層へと駆け出していた。"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "name",
+            "attributes": {
+                "content": "ヤラはふと、彼女を妨げられるものなど何もないように感じた。"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "name",
+            "attributes": {
+                "content": "もしかすると、彼女が約束してくれたことは、本当に成されるのかもしれない。"
+            }
+        },
+        {
+            "id": 381,
+            "prop": "name",
+            "attributes": {
+                "content": "ヤラは思った。その時が来たら、自分も多少は力になれるかもしれない、と。"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 383,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_energywell",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "a"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "CameraShake",
+            "attributes": {
+                "xstrength": 15.0,
+                "ystrength": 15.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "false",
+                "block": "false"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_collapse",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 386,
+            "prop": "Image",
+            "attributes": {
+                "image": "38_i15_2",
+                "screenadapt": "coverall",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 387,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 388,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.5
+            }
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "発射の準備は整ったみたいね。",
+                "name": "ヤラ"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "name",
+            "attributes": {
+                "content": "「科学とは、あらゆる人に真摯に向き合うこと」……ね。",
+                "name": "ヤラ"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "name",
+            "attributes": {
+                "content": "ふっ、私は科学者じゃないのに。",
+                "name": "ヤラ"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 394,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_energygather",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 395,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 396,
+            "prop": "name",
+            "attributes": {
+                "content": "クリステン、あなたは夢見た空の高くまで飛んで行くでしょう……",
+                "name": "ヤラ"
+            }
+        },
+        {
+            "id": 397,
+            "prop": "name",
+            "attributes": {
+                "content": "必ずね。",
+                "name": "ヤラ"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 399,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "a",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 400,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.1,
+                "xstrength": 0.0,
+                "ystrength": 0.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "false",
+                "block": "false"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 404,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 405,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g7_mainstreet_n",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 407,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_891_1#1$1",
+                "duration": 1.0,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ナスティ"
+            },
+            "figure_art": "avg_npc_891_1#1$1"
+        },
+        {
+            "id": 410,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 411,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 412,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_892_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 413,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 414,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_892_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "ナスティさん、もっと見やすい場所を選ぼうとは思わなかったんですか？",
+                "name": "ジャスティンJr."
+            },
+            "figure_art": "avg_npc_892_1#9$1"
+        },
+        {
+            "id": 416,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_891_1#6$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "name",
+            "attributes": {
+                "content": "……君はいつまで付きまとってくるつもりだ？",
+                "name": "ナスティ"
+            },
+            "figure_art": "avg_npc_891_1#6$1"
+        },
+        {
+            "id": 418,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_892_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 419,
+            "prop": "name",
+            "attributes": {
+                "content": "そういえば、以前調査でリターニアへ行った時、彼らの花火の祭典を見たことがありましてね。リターニア人はその祭典のために、最高の作曲家を招いて曲を作らせるんですよ。",
+                "name": "ジャスティンJr."
+            },
+            "figure_art": "avg_npc_892_1#9$1"
+        },
+        {
+            "id": 420,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_892_1#3$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "name",
+            "attributes": {
+                "content": "最初の花火が上がった時、音楽家たちが一斉に演奏を始めるのですが……あの光景はまったく、それはもう美しいものでした。",
+                "name": "ジャスティンJr."
+            },
+            "figure_art": "avg_npc_892_1#3$1"
+        },
+        {
+            "id": 422,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_891_1#6$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "name",
+            "attributes": {
+                "content": "君のように語彙力の乏しい人間は、リターニア人には嫌われるだろうな。",
+                "name": "ナスティ"
+            },
+            "figure_art": "avg_npc_891_1#6$1"
+        },
+        {
+            "id": 424,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_892_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "name",
+            "attributes": {
+                "content": "ははっ、確かに。それにしても、まさか今日トリマウンツであの時さながらの華やかな景色を見られるとは思いませんでした。",
+                "name": "ジャスティンJr."
+            },
+            "figure_art": "avg_npc_892_1#1$1"
+        },
+        {
+            "id": 426,
+            "prop": "name",
+            "attributes": {
+                "content": "空に浮かぶリングに、ドローンが放つ弾丸という光の雨、そして装甲から散る火花……",
+                "name": "ジャスティンJr."
+            },
+            "figure_art": "avg_npc_892_1#1$1"
+        },
+        {
+            "id": 427,
+            "prop": "name",
+            "attributes": {
+                "content": "かの花火の祭典にも劣りませんよ。",
+                "name": "ジャスティンJr."
+            },
+            "figure_art": "avg_npc_892_1#1$1"
+        },
+        {
+            "id": 428,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_892_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 429,
+            "prop": "name",
+            "attributes": {
+                "content": "時間的に、この演奏はそろそろクライマックスですね。",
+                "name": "ジャスティンJr."
+            },
+            "figure_art": "avg_npc_892_1#9$1"
+        },
+        {
+            "id": 430,
+            "prop": "name",
+            "attributes": {
+                "content": "人心震わすフォルティシモが響き渡るはず――",
+                "name": "ジャスティンJr."
+            },
+            "figure_art": "avg_npc_892_1#9$1"
+        },
+        {
+            "id": 431,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 432,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "background",
+            "attributes": {}
+        },
+        {
+            "id": 435,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 436,
+            "prop": "Image",
+            "attributes": {
+                "image": "38_i10",
+                "xScale": 1.8,
+                "yScale": 1.8,
+                "x": 50.0,
+                "y": 200.0,
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 439,
+            "prop": "CameraShake",
+            "attributes": {
+                "xstrength": 2.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_energybeamfire",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 441,
+            "prop": "Image",
+            "attributes": {
+                "image": "38_i16",
+                "screenadapt": "coverall",
+                "xScale": 1.8,
+                "yScale": 1.8,
+                "x": 50.0,
+                "y": 200.0,
+                "fadetime": 0.2
+            }
+        },
+        {
+            "id": 442,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "ImageTween",
+            "attributes": {
+                "xTo": 50.0,
+                "duration": 3.5
+            }
+        },
+        {
+            "id": 448,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 449,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_beamamb",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 450,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 451,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.5,
+                "xstrength": 4.0,
+                "ystrength": 30.0,
+                "vibrato": 50.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "ImageTween",
+            "attributes": {
+                "xScaleFrom": 1.8,
+                "yScaleFrom": 1.8,
+                "xScaleTo": 1.2,
+                "yScaleTo": 1.2,
+                "duration": 0.2,
+                "ease": "InOutCubic",
+                "xTo": 0.0,
+                "yTo": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 453,
+            "prop": "Image",
+            "attributes": {
+                "image": "38_i16",
+                "screenadapt": "coverall",
+                "xScale": 2.5,
+                "yScale": 2.5,
+                "fadetime": 0.1
+            }
+        },
+        {
+            "id": 454,
+            "prop": "ImageTween",
+            "attributes": {
+                "xScaleFrom": 2.5,
+                "yScaleFrom": 2.5,
+                "xScaleTo": 1.2,
+                "yScaleTo": 1.2,
+                "duration": 0.1,
+                "ease": "InOutCubic",
+                "xTo": 0.0,
+                "yTo": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 456,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 6.0,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 50.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$glass",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 458,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_collapse",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 459,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_thunders_amb",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 460,
+            "prop": "ImageTween",
+            "attributes": {
+                "xScaleFrom": 1.2,
+                "yScaleFrom": 1.2,
+                "xScaleTo": 1.0,
+                "yScaleTo": 1.0,
+                "duration": 20.0
+            }
+        },
+        {
+            "id": 461,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.5
+            }
+        },
+        {
+            "id": 462,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ジャスティンJr."
+            }
+        },
+        {
+            "id": 463,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ナスティ"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "name",
+            "attributes": {
+                "content": "これは……想像以上に美しい光景ですね。ライン生命としては、この一幕を目にした市内の全員から見物料をとってもいいくらいですよ。",
+                "name": "ジャスティンJr."
+            }
+        },
+        {
+            "id": 465,
+            "prop": "name",
+            "attributes": {
+                "content": "……ひとまず成功だな。フォーカスジェネレーターの材質及び構造はエネルギービームの衝撃に耐えることができた。",
+                "name": "ナスティ"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "name",
+            "attributes": {
+                "content": "次はチャージとフォーカシングだ。負荷が高い条件下での測定値を収集することさえできれば……",
+                "name": "ナスティ"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "name",
+            "attributes": {
+                "content": "その前に、軍とマイレンダーの人間が最後のチャンスを逃すまいとして、フォーカシングを阻止しようとしてくるでしょうね。",
+                "name": "ジャスティンJr."
+            }
+        },
+        {
+            "id": 468,
+            "prop": "name",
+            "attributes": {
+                "content": "統括のことは心配なさらないんですか？",
+                "name": "ジャスティンJr."
+            }
+        },
+        {
+            "id": 469,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女がいつ、我々の心配などを必要とした？",
+                "name": "ナスティ"
+            }
+        },
+        {
+            "id": 470,
+            "prop": "name",
+            "attributes": {
+                "content": "我々は単なる同行者でしかないんだ。",
+                "name": "ナスティ"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "name",
+            "attributes": {
+                "content": "ただ自分たちの仕事をして、あとは……彼女の幸運を祈ればそれでいい。",
+                "name": "ナスティ"
+            }
+        },
+        {
+            "id": 472,
+            "prop": "name",
+            "attributes": {
+                "content": "（サルカズ語）いつか、カズデルもまた空に浮かぶ時が来たら、その炉には君の名を刻もう。",
+                "name": "ナスティ"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 474,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 476,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 477,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 478,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 479,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 480,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}
