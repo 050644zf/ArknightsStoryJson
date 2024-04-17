@@ -1,0 +1,4795 @@
+{
+    "lang": "ko_KR",
+    "eventid": "main_13",
+    "eventName": "흉조의 소용돌이",
+    "entryType": "MAINLINE",
+    "storyCode": "TR-24",
+    "avgTag": "작전 전",
+    "storyName": "흔적을 찾아",
+    "storyInfo": "외드레르 일행은 살카즈의 '생명선'을 찾아내는 데 성공한다. 또한 이것이 전장의 곳곳에 배치되어 있다는 점과, 전쟁 마법진과 역사의 환각을 불러일으킨 신비로운 운송 도구의 정체가 백골만 남은 베헤모스라는 사실을 알게 된다.\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 2,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 4,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 7,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 10,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 11,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 12,
+            "prop": "interlude",
+            "attributes": {
+                "maskid": "ui_cutin_mask_horizon",
+                "style": 1.0,
+                "size": "1500, 520",
+                "offset": "20,0",
+                "channel": 2.0
+            }
+        },
+        {
+            "id": 13,
+            "prop": "interlude",
+            "attributes": {
+                "channel": 2.0,
+                "type": 2.0,
+                "name": "bg_battlefield",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "aduration": 3.0,
+                "sfrom": "1.2,1.2",
+                "sto": "1.2,1.2",
+                "sduration": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "interlude",
+            "attributes": {
+                "channel": 2.0,
+                "type": 2.0,
+                "name": "bg_battlefield",
+                "pfrom": "0,0",
+                "pto": "-80,0",
+                "duration": 30.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 16,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "어처구니가 없다. 우리가 이런 뼈, 핏자국, 먼지와 진흙이 가득한 전장에서 허구의 환상이나 쫓고 있을 줄이야.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n그 환상들은 우리에게 남겨진 유일한 단서다. 리치의 말에 따르면 부유하는 그 역사의 파편이 바로 그것이 남긴 흔적이라고 한다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n우리는 흔적도 남지 않은 폐허를 지나, 그 누구 하나 기억하지 않는 붕괴 현장에 발을 디뎠다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n이 풍경들은 모두 금방 모습을 감추기에, 우리는 그 풍경들이 남긴 마지막 흔적을 잡아내는 것조차 쉽지 않다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "interlude",
+            "attributes": {
+                "channel": 2.0,
+                "type": 1.0,
+                "slot": "m",
+                "offset": "170,0",
+                "name": "cutin_char_3",
+                "sfrom": "0.7,0.7",
+                "sto": "0.7,0.7",
+                "aduration": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "interlude",
+            "attributes": {
+                "channel": 2.0,
+                "type": 1.0,
+                "slot": "m",
+                "pfrom": "170,0",
+                "pto": "120,0",
+                "duration": 40.0
+            }
+        },
+        {
+            "id": 24,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "우리는 뱀파이어의 전쟁용 마법진 17개를 찾아냈다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n이 전장에 설치된 마법진의 수는 아마 이것들의 몇 배…… 어쩌면 수십 배일 수도 있다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n마법진들은 모두 예외 없이 최근 일주일 내에 설치된 것들이다. 소름 끼칠 정도로 효율성이 뛰어나다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "이중 두 곳에서 어떤 부대가 지나간 흔적을 발견했지만, 진흙 자국의 깊이로 미뤄볼 때 모두 점검 및 유지보수 업무에 불과했을 것으로 추정된다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n나는 이 마법진들을 부수고 다니는 것에 대해 의문을 가졌다. 우리가 마법진 몇 개를 파괴할지라도, 상대가 다시 새로운 마법진을 '설치'하기만 하면 아무 문제 없을 것처럼 보였기 때문이다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n진실이 무엇이든 우리가 가능한 빨리 이 상황을 통제해야 한다는 확신이 내 안에서 점점 더 커졌다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 33,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 35,
+            "prop": "interlude",
+            "attributes": {
+                "channel": 2.0,
+                "clear": "true"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_cherunder_2",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 38,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_sewer",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 39,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 41,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#4$1",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 44,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "name",
+            "attributes": {
+                "content": "……이곳도 완전히 파괴되었다.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#4$1"
+        },
+        {
+            "id": 46,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4087_ines_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "앞서 로도스 아일랜드가 예상했던 것처럼, 도시 바깥에서 도시 안쪽으로 이어지는 비밀 통로가 더 있었어.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#1$1"
+        },
+        {
+            "id": 48,
+            "prop": "name",
+            "attributes": {
+                "content": "테레시스는 더 샤드 빌딩이 수리될 때까지, 비행정이 다 지어질 때까지 이런 지점들을 이용해서 강철과 결정 유닛, 그리고 주술 장치들을 대량으로 런디니움으로 옮긴 거야.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#1$1"
+        },
+        {
+            "id": 49,
+            "prop": "name",
+            "attributes": {
+                "content": "하지만 애초에 이 재료들을 어떻게 런디니움 주변까지 옮길 수 있었던 걸까? 아무리 멍청한 공작이라도 자신들이 제어할 수 없는 대량의 물자가 빅토리아 국경 내에서 유통되도록 놔두진 않았을 거야.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#1$1"
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "그러니까 내 생각엔, 아마 그 물건들은 나흐체러르 킹의 군단이 그랬던 것처럼 '슉'하고 이런 지점들 주변에 나타난 것 같아.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#1$1"
+        },
+        {
+            "id": 51,
+            "prop": "name",
+            "attributes": {
+                "content": "우리가 계속해서 찾고 있었던 그 '살카즈 보급선'이라는 건 아마 이 운송 과정의 가장 마지막 과정이자, 가장 중요하지 않는 과정일 지도 몰라.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#1$1"
+        },
+        {
+            "id": 52,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4087_ines_1#14$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "name",
+            "attributes": {
+                "content": "……이건 대체 무슨 기술을 사용한 거지?",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#14$1"
+        },
+        {
+            "id": 54,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "name",
+            "attributes": {
+                "content": "문제가 한 가지 더 있다. 테레시스가 정말로 이런 능력을 갖췄다면, 그는 왜 이 기술을 전쟁에 직접 활용하지 않는 거지?",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#8$1"
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "군대를 적군 방어선의 후방에 나타나게 하거나, 폭발하는 오리지늄 폭탄을 공작들의 머리 위에 이동시키면 되잖아.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#8$1"
+        },
+        {
+            "id": 57,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4087_ines_1#14$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "어쩌면 이 기술도 제약이 많은 걸지도 몰라. 아니면…… 허점투성이거나.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#14$1"
+        },
+        {
+            "id": 59,
+            "prop": "name",
+            "attributes": {
+                "content": "그 리치는 그 기술이 오리지늄 아츠의 범위를 벗어난 일종의 아츠라고 했어. 하지만 도저히 상상이 안 가……",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#14$1"
+        },
+        {
+            "id": 60,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 61,
+            "prop": "name",
+            "attributes": {
+                "content": "W, 그쪽은……",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 62,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 63,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 64,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "W"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "name",
+            "attributes": {
+                "content": "응?",
+                "name": "W"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "name",
+            "attributes": {
+                "content": "아, 전투의 흔적 같은 건 없어. 여긴 완전 박살이 났거든.",
+                "name": "W"
+            }
+        },
+        {
+            "id": 67,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 68,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 69,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 70,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "며칠 전에 있었던 그 만남 이후, W의 정신은 계속 딴 곳에 있었다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n나는 그녀가 불침번을 설 때 타오르는 불빛을 보며 멍하니 있는 모습을 본 적도 있다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n나로선 그녀를 도울 방법이 없다. 이런 일은 그녀 스스로 해결해야 한다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "……가자, 여긴 이제 볼 것도 없어.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 78,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 79,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 83,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_labentrance",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 85,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$ponder_intro",
+                "key": "$ponder_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 88,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 89,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 90,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "나는 손에 든 지도를 보았다. 뱀파이어 마법진의 위치가 표시된 점들이 흩어져 있다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 92,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n나는 펜으로 방금 있었던 운송 지점과 나흐체러르 킹 군단의 캠프 위치를 표기했다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n이 위치들은 모두 일찍이 동일한 방법으로 물건을 '설치'했던 장소다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n이 사이에 분명 모종의 연관이 있을 것이다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "나는 지도 위에 표기된 이름, 언덕, 골짜기, 숲, 그리고 적당한 크기의 연못을 살펴 보았다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n이들 사이의 공통점은 뭘까? 아니면 어떤 특수한 지리적인 공통점?",
+                "block": "true"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n내 눈빛은 어느 한 카운티의 이름에 멈춰섰다. '브렌트우드'.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "이네스, 로도스 아일랜드가 방위군 지휘탑에 있었던 그 정보들을 분석하고, 목표를 '브렌트우드'라는 한 마을 인근에 정했다고 했었지?",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 103,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 104,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 105,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "나는 브렌트우드의 위치에 원을 그렸다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4087_ines_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "그건 클로저가 분석해 낸 거야. 그 녀석은 1094년 테레시스가 도시에 들어온 이후로 생긴 모든 운송 정보들을 훔쳐서 여러 정보들이 중첩된 로드맵을 하나 만들었거든.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#1$1"
+        },
+        {
+            "id": 111,
+            "prop": "name",
+            "attributes": {
+                "content": "그 지도에서 런디니움 주변의 모든 마을들은 이런 화물 운송 기록들로 가득 차 있어.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#1$1"
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "뭐니뭐니 해도 여긴 빅토리아의 수도잖아. 전쟁 전에는 시민들이 매일매일 스테이크와 술을 잔뜩 먹어대는 바람에 진열대에 상품이 올라갈 틈도 없었다더라고.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#1$1"
+        },
+        {
+            "id": 113,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4087_ines_1#14$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "name",
+            "attributes": {
+                "content": "하지만 이 마을…… '브렌트우드'는 눈에 거슬릴 정도로 텅 비어 있어. 통행 기록도 전혀 없고, 그 많지 않은 기록도 대부분 1094년에서 1095년 사이에 기록된 것들이야.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#14$1"
+        },
+        {
+            "id": 115,
+            "prop": "name",
+            "attributes": {
+                "content": "다른 곳과 비교해 보면 정말 비정상적이지. 이 마을은 빅토리아의 중심에 위치하고 있지만, 마치 다른 사람들한테 잊혀진 것 같아.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#14$1"
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "당시 로도스 아일랜드는 브렌트우드가 살카즈 지하 철로의 기점이거나, 비밀 도로망의 요점일 수도 있다고 생각해서 암암리에 일종의 통행 통제를 했었어.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#14$1"
+        },
+        {
+            "id": 117,
+            "prop": "name",
+            "attributes": {
+                "content": "우리도 방금 이런 운송 지점이 확실히 존재한다는 걸 증명했잖아?",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#14$1"
+        },
+        {
+            "id": 118,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4087_ines_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "name",
+            "attributes": {
+                "content": "하지만 우리도, 흠, 테레시스에겐 '보이지 않는 큰 손'이 있다는 걸 알고 있어. 아무것도 없는 공중에서 물건을 원하는 위치에 둘 수 있는 그 능력 말이야.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#3$1"
+        },
+        {
+            "id": 120,
+            "prop": "name",
+            "attributes": {
+                "content": "어쩌면 브렌트우드가 가지는 의미에 대해 다시 한번 생각해 보는 게 좋겠어.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#3$1"
+        },
+        {
+            "id": 121,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "……아니.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 123,
+            "prop": "name",
+            "attributes": {
+                "content": "이 장소에 가까워질수록 뱀파이어의 마법진은 점점 더 빈번하게 나타나고 있다.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "그리고 가장 멀리 위치한 지점들을 브렌트우드와 이어보면, 그 거리가 서로 거의 비슷하다는 걸 알 수 있지. 그러니 이 거리야말로 물건을 떨어뜨릴 수 있는 최대 한계라는 걸 알 수 있어.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 125,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_412_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "괜한 추측 같은 거 하지 마. 내가 그 브렌트우드라는 동네를 잘 아는데, 거긴 정말 찢어질 정도로 가난해서 뭘 숨길 수도 없어. 내가 몇 달 전에 거기 갔을 땐 빈둥거리는 살카즈들조차 없었다니까.",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#8$1"
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "카라반도 거기는 안 지나쳐. 아마 너무 재미없어서 그런 거겠지.",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#8$1"
+        },
+        {
+            "id": 128,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 129,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 130,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_throwstone",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 131,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_vallyrck",
+                "volume": 0.6,
+                "delay": 0.5
+            }
+        },
+        {
+            "id": 132,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 133,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 134,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 135,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "W는 지루하다는 듯 돌멩이를 던져 왔다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n그녀의 기분은 확실히 좋지 않아 보인다. 평소였다면 돌멩이가 아니라 수류탄 안전 고리를 던졌을 텐데.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n돌멩이는 지도 위에서 몇 번 구르더니, 내가 자세히 관찰하고 있던 위치를 가렸다. 그리고 내가 그것을 치우려던 순간……",
+                "block": "true"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "브렌트우드의 뒤쪽, 멀지 않은 곳엔 작은 언덕이 하나 위치하고 있다. 돌멩이는 언덕을 의미하는 아이콘을 절묘하게 가렸다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "……하아.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#6$1"
+        },
+        {
+            "id": 145,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "name",
+            "attributes": {
+                "content": "출발하자. 단서가 없는 이상, 우연에 맡겨보는 것도 나쁘진 않겠지.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 147,
+            "prop": "name",
+            "attributes": {
+                "content": "첫 번째 지점은 이곳으로 하자.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 148,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 149,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 150,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 152,
+            "prop": "Background",
+            "attributes": {
+                "image": "40_g6_mountaincave",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 154,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 156,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 157,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 158,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "깊고 어두운 산이다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n내가 예전에 읽었던 빅토리아 역사책에는 이런 비유가 있었다. 역사를 탐구한다는 것은 이처럼 깊고 어두운 동굴 속에서 암벽에 새겨진 무늬를 조사하는 것과도 같다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n실제로 아무것도 보이지 않는 상태에서, 오직 이런 희미한 촉감을 통해 '우리는 어디에서 왔는가'에 대한 그럴 듯한 결론을 끼워 맞출 수밖에 없다는 것이다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "이 대지는 역사 친화적인 장소가 아니다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n오리지늄 광맥은 지층 중의 모든 유기물과 동화되어 버린다. 유골조차 놓치지 않을 정도로.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n고고학자들은 오리지늄으로 뒤덮인 유적지를 발굴하면, 금속 쪼가리를 들고서 고민하는 것 외에 할 수 있는 것이 없다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "하지만 우린 다르다, 우린 살카즈다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 168,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n우리가 과거를 돌아볼 수 있는 수단은 꽤나 다양하다. 한때 카즈델의 용광로에 깃든 사혼령들이 이따끔씩 어떤 마왕의 위대한 업적이나, 비극적인 최후에 대해 떠들어댄다는 소문도 있었다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n나 또한 어렸을 땐 불이 꺼지지 않는 용광로 옆에 머물면서, 과거의 메아리가 조금이라도 들리길 기다렸었다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n하지만 내가 들을 수 있었던 건 침묵 뿐이었다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 174,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 177,
+            "prop": "Background",
+            "attributes": {
+                "image": "40_g6_mountaincave",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4087_ines_1#14$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 180,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 181,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 182,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4087_ines_1#14$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "네 예감이 정말 맞는 걸지도 모르겠어. 여긴 그림자가 상당히 이상해.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#14$1"
+        },
+        {
+            "id": 184,
+            "prop": "name",
+            "attributes": {
+                "content": "혼란스럽다고 해야 하나? 하지만 흔적도 남아있는 것 같아.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#14$1"
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "이건 마치…… 배 한 척이 이동하면서 서로 겹치고 간섭하는 파동을 일으키고, 결국엔 그 파동이 모든 걸 뒤죽박죽으로 만들어 버린 그런 느낌이야.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#14$1"
+        },
+        {
+            "id": 186,
+            "prop": "name",
+            "attributes": {
+                "content": "이동이라기 보다는, 오히려…… 표류에 가까운 것 같아.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#14$1"
+        },
+        {
+            "id": 187,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "'표류'라.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#4$1"
+        },
+        {
+            "id": 189,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "어떤 만년의 다이아볼릭 노인이 내게 들려준 이야기를 하나 해준 적 있었지. 그 노인의 지리멸렬한 헛소리 속에서도 그 단어가 나왔었다.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 191,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_412_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "name",
+            "attributes": {
+                "content": "무슨 이야기였는데?",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#3$1"
+        },
+        {
+            "id": 193,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 194,
+            "prop": "name",
+            "attributes": {
+                "content": "재앙에 관한 이야기였다.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 195,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "name",
+            "attributes": {
+                "content": "앞으로 우리 눈앞에 나타나는 게 그 이야기에 들은 것과 같은 게 아니었으면 좋겠군.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#9$1"
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "우리 운이 아직 남아 있길 바라야지.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#9$1"
+        },
+        {
+            "id": 198,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_412_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "자기가 운이 좋다고 했던 용병들은 전부 죽었어.",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#1$1"
+        },
+        {
+            "id": 200,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "name",
+            "attributes": {
+                "content": "그럼 W, 만반의 준비를 한다는 의미에서, 넌 여기에 남아 우릴 백업해라.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 202,
+            "prop": "name",
+            "attributes": {
+                "content": "이번 임무는 전투가 아니니 일단 우리가 무엇을 마주하고 있는지 제대로 파악할 필요가 있다.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 203,
+            "prop": "name",
+            "attributes": {
+                "content": "만약 상황이 나빠지면 철수해야 하니, 네가……",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 204,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_412_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "name",
+            "attributes": {
+                "content": "안심해. 너희의 퇴로는 내가 확실하게 끊어 버릴 테니까.",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#7$1"
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "뱀파이어나 나흐체러르, 아니면 아예 테레시스한테 동굴 입구까지 쫓기게 되더라도, 내가 폭발 각도를 잘 계산해서 설치할 테니까 괜찮아. 너희가 동굴 입구에 거의 다다르는 그 순간 내가 바로……",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#7$1"
+        },
+        {
+            "id": 207,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_412_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "콰앙!",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#10$1"
+        },
+        {
+            "id": 209,
+            "prop": "name",
+            "attributes": {
+                "content": "그러면 너도 네가 가장 좋아하는 이야기 속 등장인물 같은 게 될 수 있을 거야, 외드레르!",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#10$1"
+        },
+        {
+            "id": 210,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4087_ines_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "너 혼자선 테레시아를 상대할 수 없어, W.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#2$1"
+        },
+        {
+            "id": 212,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_412_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#4$1"
+        },
+        {
+            "id": 214,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_412_1#13$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "이네스.",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#13$1"
+        },
+        {
+            "id": 216,
+            "prop": "name",
+            "attributes": {
+                "content": "난 정말로 너흴 여기에 묻어버릴 거야.",
+                "name": "W"
+            },
+            "figure_art": "avg_npc_412_1#13$1"
+        },
+        {
+            "id": 217,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4087_ines_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "name",
+            "attributes": {
+                "content": "……흥. 자기도 알고 있으면서.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#1$1"
+        },
+        {
+            "id": 219,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 220,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 221,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 223,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 225,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "loop": "true",
+                "channel": "hd",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 226,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "loop": "true",
+                "channel": "in",
+                "volume": 0.4,
+                "delay": 0.7
+            }
+        },
+        {
+            "id": 227,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "W라면 정말로 산을 통째로 날려버릴 거다.",
+                "name": "외드레르"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "name",
+            "attributes": {
+                "content": "너도 저 녀석이 얼마나 미쳤는지는 잘 알 텐데. 왜 굳이 테레시아 얘기를 꺼내서 자극하는 거지?",
+                "name": "외드레르"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "W가 불쌍할 정도로 아무렇지도 않은 척을 하잖아. 오히려 난 저 녀석이 자신이 정말로 원하는 게 무엇인지 깨닫기를 바라고 있어.",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "name",
+            "attributes": {
+                "content": "너도 도시에 오래 있었잖아. 저 녀석이 단순히 진상을 알고 싶었던 거라면 직접 너한테 물어봤겠지.",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "너 한 번이라도 W한테 “저 테레시아는 진짜냐”라고 질문받아 본 적 있어?",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "외드레르"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "나한테도 물어 본 적 없었어. 봐, W는 심리적으로 전혀 성장하지 않았다니까.",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "그게 아니라면 그 '테레시아'한테 꼬리를 흔들며 용서를 구하든가, 아니면 죽일 각오를 다지든가.",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "지금 W가 왜 저런 모습을 하고 있겠어? 우리한테 강하다는 걸 어필하기 위해서일까?",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "아니면 아무 일도 없었다고, 늘 하던 대로 사람을 죽이고 지뢰를 매설하기만 하면 모든 것이 해결될 거라고 스스로를 설득하는 걸까?",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "name",
+            "attributes": {
+                "content": "W가 정말 아무 생각 없이 살려면 그렇게 할 수 있겠지. 하지만 지금 W는…… 마치 살얼음판 위에 서 있는 어린아이 같아.",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "꾸물거리며 발을 내딛어야 할지 고민하거나, 앞으로 몇 걸음 나아가기만 하면 다시 몇 걸음 되돌아오고, 가만히 서서 앞뒤를 살펴보며, 헛된 감상에 빠져들기도 해.",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "난 전혀 눈치채지 못했는데.",
+                "name": "외드레르"
+            }
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "……거짓말. 귀찮은 일을 만들고 싶지 않았던 것뿐이잖아.",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "name",
+            "attributes": {
+                "content": "네가 저 녀석을 그렇게나 신경 쓸 줄은 몰랐군.",
+                "name": "외드레르"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "난 내 자신을 신경 쓰는 거야. 그 녀석한테 죽기는 싫다고.",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "name",
+            "attributes": {
+                "content": "진지하게 하는 얘긴데, 이네스. 카즈델로 돌아갈 생각 없어?",
+                "name": "외드레르"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "name",
+            "attributes": {
+                "content": "하! 내가 너희의 원대한 계획에 발목이라도 잡았다는 거야?",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "그게 아니라, W와 나는 이 전장에 계속 남아 있을 이유가 있잖아.",
+                "name": "외드레르"
+            }
+        },
+        {
+            "id": 248,
+            "prop": "name",
+            "attributes": {
+                "content": "하지만 너는?",
+                "name": "외드레르"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "name",
+            "attributes": {
+                "content": "……나도 있어.",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 251,
+            "prop": "stopSound",
+            "attributes": {
+                "channel": "hd",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 252,
+            "prop": "stopSound",
+            "attributes": {
+                "channel": "in",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 253,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 254,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_runstop",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 256,
+            "prop": "name",
+            "attributes": {
+                "content": "도착했어.",
+                "name": "이네스"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 258,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 259,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 260,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 262,
+            "prop": "Background",
+            "attributes": {
+                "image": "43_g5_spinestops",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 264,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 265,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 266,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 267,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4088_hodrer_1#1$1",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 268,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#7$1",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 269,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 270,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#7$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "name",
+            "attributes": {
+                "content": "이곳이 바로…… 산의 내부야.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#7$1"
+        },
+        {
+            "id": 272,
+            "prop": "name",
+            "attributes": {
+                "content": "녀석들이 이 산을 전부 파낸 거야?",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#7$1"
+        },
+        {
+            "id": 273,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4088_hodrer_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "name",
+            "attributes": {
+                "content": "이러면 W의 폭파 계획이 더 순조롭겠네.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 275,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#7$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "name",
+            "attributes": {
+                "content": "여기 있는 이 선로, 그리고 이 정도 규모의 하역 시스템이라니.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#7$1"
+        },
+        {
+            "id": 277,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "거대한 녀석이네.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#9$1"
+        },
+        {
+            "id": 279,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 280,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#9$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_walkfast",
+                "volume": 0.3
+            }
+        },
+        {
+            "id": 282,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 283,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4088_hodrer_1#7$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "숨어.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#7$1"
+        },
+        {
+            "id": 285,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 286,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4088_hodrer_1#7$1",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 288,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 0.3
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 290,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_053",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 291,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_054",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 292,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 293,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_053",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "다음은 언제래?",
+                "name": "피곤한 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_053"
+        },
+        {
+            "id": 295,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_054",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 296,
+            "prop": "name",
+            "attributes": {
+                "content": "곧.",
+                "name": "말수 적은 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_054"
+        },
+        {
+            "id": 297,
+            "prop": "name",
+            "attributes": {
+                "content": "늘 시간을 엄수하잖아.",
+                "name": "말수 적은 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_054"
+        },
+        {
+            "id": 298,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_053",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "name",
+            "attributes": {
+                "content": "하아, 차라리 빅토리아인을 죽이는 일을 하겠다고 상관한테 말이나 해보는 거였는데.",
+                "name": "피곤한 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_053"
+        },
+        {
+            "id": 300,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_054",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "싸움도 못하면서.",
+                "name": "말수 적은 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_054"
+        },
+        {
+            "id": 302,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_053",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "name",
+            "attributes": {
+                "content": "나도 알거든! 하지만 여긴…… 너무 숨막히잖아.",
+                "name": "피곤한 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_053"
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "난 매일 그 진짜인지 가짜인지도 모를 환각까지 본다니까.",
+                "name": "피곤한 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_053"
+        },
+        {
+            "id": 305,
+            "prop": "name",
+            "attributes": {
+                "content": "여긴 정말…… 소용돌이 같아. 쓰레기들이 계속해서 시공을 건너오는 것 같잖아.",
+                "name": "피곤한 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_053"
+        },
+        {
+            "id": 306,
+            "prop": "name",
+            "attributes": {
+                "content": "그래도 울술라가 착해서 다행이야. 틈만 나면 우릴 귀찮게 하는 일도 없고, 행패도 안 부리고.",
+                "name": "피곤한 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_053"
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "군사위원회에서도 그 사람이 가장 젊은 소령이라며?",
+                "name": "피곤한 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_053"
+        },
+        {
+            "id": 308,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_054",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "name",
+            "attributes": {
+                "content": "그 여자는 왕정의 구성원이 아니야, 오래 못 갈걸.",
+                "name": "말수 적은 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_054"
+        },
+        {
+            "id": 310,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_053",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "테레시아 전하랑 섭정왕도 순수 혈통의 마족은 아니잖아?",
+                "name": "피곤한 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_053"
+        },
+        {
+            "id": 312,
+            "prop": "name",
+            "attributes": {
+                "content": "쳇, 왕정, 왕정이면 또 어때서! 누가보면 그 인간들이 카즈델을 되찾은 줄 알겠네!",
+                "name": "피곤한 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_053"
+        },
+        {
+            "id": 313,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_054",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "name",
+            "attributes": {
+                "content": "그래도 그 사람들이 가장 대단한 건 사실이잖아.",
+                "name": "말수 적은 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_054"
+        },
+        {
+            "id": 315,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_053",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "name",
+            "attributes": {
+                "content": "그야 그건……",
+                "name": "피곤한 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_053"
+        },
+        {
+            "id": 317,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_054",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "name",
+            "attributes": {
+                "content": "됐어, 일할 시간이다.",
+                "name": "말수 적은 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_054"
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "기계 옆에서 기다려, 적재 준비해.",
+                "name": "말수 적은 살카즈 노동자"
+            },
+            "figure_art": "avg_npc_054"
+        },
+        {
+            "id": 320,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 321,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 322,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 325,
+            "prop": "Background",
+            "attributes": {
+                "image": "43_g5_spinestops",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 327,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 328,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 330,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4088_hodrer_1#7$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#7$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "name",
+            "attributes": {
+                "content": "……녀석들이 말한 이름, 들은 적 있어?",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#7$1"
+        },
+        {
+            "id": 333,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4088_hodrer_1#7$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "name",
+            "attributes": {
+                "content": "울술라.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#7$1"
+        },
+        {
+            "id": 335,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#7$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "그렇다면……",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#7$1"
+        },
+        {
+            "id": 337,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4088_hodrer_1#7$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "name",
+            "attributes": {
+                "content": "우리가 생각하는 그 사람이 아닐 수도 있다. 보통 살카즈의 이름은 코드네임 같은 것에 불과하니까. 아니면 영웅담 같은 곳에서 따온 거겠지.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#7$1"
+        },
+        {
+            "id": 339,
+            "prop": "name",
+            "attributes": {
+                "content": "시간 도둑 울술라, 자물쇠와 열쇠의 울술라. 이건 베헤모스에 관련된 살카즈의 전설 같은 거잖아. 누가 가져다 써도 이상할 건 없지.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#7$1"
+        },
+        {
+            "id": 340,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4088_hodrer_1#4$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "name",
+            "attributes": {
+                "content": "……잠깐. 시간 도둑…… 울술라?",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#4$1"
+        },
+        {
+            "id": 342,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#14$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "'외드레르'. 그럼 네 이름에는 무슨 의미가 있어?",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#14$1"
+        },
+        {
+            "id": 344,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4088_hodrer_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "아무것도 없어.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#1$1"
+        },
+        {
+            "id": 346,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#3$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "하.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#3$1"
+        },
+        {
+            "id": 348,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 349,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#3$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bigbell",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 351,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 352,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bigbell",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 353,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 354,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4088_hodrer_1#4$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "name",
+            "attributes": {
+                "content": "종소리다.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#4$1"
+        },
+        {
+            "id": 356,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#6$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "name",
+            "attributes": {
+                "content": "잠깐, 저길 봐……",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#6$1"
+        },
+        {
+            "id": 358,
+            "prop": "name",
+            "attributes": {
+                "content": "저게 뭐지?",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#6$1"
+        },
+        {
+            "id": 359,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 360,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 361,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 364,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 366,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_erthshkng",
+                "loop": "true",
+                "channel": "sk",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 367,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 369,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 370,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 371,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "저건 대체 뭘까?",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n산이 울리고 있다……",
+                "block": "true"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 377,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "sk",
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 378,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 379,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 380,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 381,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "아니, 공간이 울리고 있다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "skipnode",
+            "attributes": {
+                "mode": "nofirstskip"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "interlude",
+            "attributes": {
+                "channel": 2.0,
+                "clear": "true"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 387,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 389,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 390,
+            "prop": "theater",
+            "attributes": {
+                "mode": "true"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "Video",
+            "attributes": {
+                "res": "video/main_13/main_13_01.mp4"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 393,
+            "prop": "theater",
+            "attributes": {
+                "mode": "false"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "skipnode",
+            "attributes": {
+                "mode": "skip"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 396,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 397,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "Image",
+            "attributes": {
+                "image": "43_i10",
+                "screenadapt": "coverall",
+                "fadetime": 0.0,
+                "xScale": 1.8,
+                "yScale": 1.8,
+                "y": 130.0
+            }
+        },
+        {
+            "id": 399,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 400,
+            "prop": "ImageTween",
+            "attributes": {
+                "image": "43_i10",
+                "fadetime": 0.5,
+                "xScaleFrom": 1.8,
+                "yScaleFrom": 1.8,
+                "xScaleTo": 1.8,
+                "yScaleTo": 1.8,
+                "yTo": 50.0,
+                "duration": 30.0
+            }
+        },
+        {
+            "id": 401,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$stranger_intro",
+                "key": "$stranger_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 402,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 4.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "bgeffect",
+            "attributes": {}
+        },
+        {
+            "id": 404,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 405,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 406,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 407,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "그 순간 내 눈앞에 무수히 많은 화면들이 떠올랐다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "궁전 안에서 지리멸렬하고 있는 살찐 제왕, 손목을 그어 그 피를 새로 태어난 아기에게 먹이는 고대의 후손.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n호박을 불태우는 다이아볼릭의 화염, 청동 성채 아래 엎드린 채 난도질한 자국이 남아 있는 버드나무를 바치는 사슴뿔이 달린 악마.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n밧줄 하나가 허공으로부터 떨어져, 무수한 갈래로 나뉘어진다. 붉은 피부의 괴물은 날카로운 뿔을 잘라, 이를 자신의 가슴에 찔러넣었다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 413,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 414,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 416,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 417,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "Image",
+            "attributes": {
+                "image": "43_i10",
+                "screenadapt": "coverall",
+                "fadetime": 0.0,
+                "xScale": 1.8,
+                "yScale": 1.8,
+                "y": 50.0
+            }
+        },
+        {
+            "id": 419,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 420,
+            "prop": "ImageTween",
+            "attributes": {
+                "image": "43_i10",
+                "fadetime": 0.5,
+                "xScaleFrom": 1.8,
+                "yScaleFrom": 1.8,
+                "xScaleTo": 1.8,
+                "yScaleTo": 1.8,
+                "xTo": 0.0,
+                "duration": 30.0
+            }
+        },
+        {
+            "id": 421,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 423,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 424,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 425,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "어지럽게 흩어져 있던 조각들이 제자리를 찾아가고, 어느 머나먼 도시가 눈에 들어왔다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 427,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n고요하고, 차분하다. 도시는 아직 바퀴조차 채 달지 않은 상태였고, 질투와 원망에 스며들지도 않았다. 환각이지만 그것의 아름다움은 어색하고 황당할 정도로 뛰어났다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n그것은 바로 카즈델이다. 나는 아무런 근거도 없이 그것이 카즈델이라고 믿게 되었다. 그 어떤 역사 속에서도 등장하지 않으며, 다시는 존재할 수 없는, 나의 고향.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 429,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "나는 그곳으로 가고 싶었다. 나는…… 과거의 우리가 어떤 생활을 했었는지 보고 싶었다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 434,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 435,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "Image",
+            "attributes": {
+                "image": "43_i10",
+                "screenadapt": "coverall",
+                "fadetime": 0.0,
+                "xScale": 1.8,
+                "yScale": 1.8,
+                "x": 400.0
+            }
+        },
+        {
+            "id": 437,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 438,
+            "prop": "ImageTween",
+            "attributes": {
+                "image": "43_i10",
+                "fadetime": 0.5,
+                "xScaleFrom": 1.8,
+                "yScaleFrom": 1.8,
+                "xScaleTo": 1.8,
+                "yScaleTo": 1.8,
+                "xTo": 500.0,
+                "duration": 30.0
+            }
+        },
+        {
+            "id": 439,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 441,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 442,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 443,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "나는 발을 들었으나, 결국 내딛지 못하였다. 나는 묵묵히 지켜볼 뿐이었다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n이 모든 게 침묵으로 돌아갈 때까지.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n그리고……",
+                "block": "true"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 450,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 452,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 453,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 454,
+            "prop": "Image",
+            "attributes": {
+                "image": "43_i10",
+                "screenadapt": "coverall",
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 456,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 458,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 459,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 460,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "백골만 남게 된 가여운 생물은 가볍게 몸을 움직이고 있다.",
+                "x": 300.0,
+                "y": 270.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 462,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n신경다발은 쭉 뻗어나가며, 거대한 화물 상자를 들어 올렸다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n그것은 확실히 아직 산 채로 이곳에서 떠돌고 있었다.",
+                "block": "true"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 467,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 468,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 470,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 471,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 472,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 473,
+            "prop": "Background",
+            "attributes": {
+                "image": "43_g4_spinestops_ex",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 474,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4088_hodrer_1#4$1"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#7$1"
+            }
+        },
+        {
+            "id": 476,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 477,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 478,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 479,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4087_ines_1#7$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "name",
+            "attributes": {
+                "content": "저게 그…… '운송선'인가?",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#7$1"
+        },
+        {
+            "id": 481,
+            "prop": "name",
+            "attributes": {
+                "content": "이 정도 크기라니…… 테레시스는 이런 걸 숨기고 있었구나……",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#7$1"
+        },
+        {
+            "id": 482,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4088_hodrer_1#4$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "설마, 정말인 건가……?",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#4$1"
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "시간 도둑…… 울술라.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#4$1"
+        },
+        {
+            "id": 485,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 486,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 487,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 488,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 489,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_walk_stage",
+                "channel": "n",
+                "loop": "false"
+            }
+        },
+        {
+            "id": 490,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "n",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 491,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1067_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.7,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 492,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 493,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1067_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.7,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 494,
+            "prop": "name",
+            "attributes": {
+                "content": "정말 신기하지 않아?",
+                "name": "???"
+            },
+            "figure_art": "avg_npc_1067_1#1$1"
+        },
+        {
+            "id": 495,
+            "prop": "name",
+            "attributes": {
+                "content": "울술라의 전설에 따르면, 눈앞의 모든 걸 느리게 할 수 있고, 안개 사이로 과거를 엿볼 수 있는 베헤모스 한 마리가 카즈델을 공격했다고 해.",
+                "name": "???"
+            },
+            "figure_art": "avg_npc_1067_1#1$1"
+        },
+        {
+            "id": 496,
+            "prop": "name",
+            "attributes": {
+                "content": "결국 영웅 울술라는 시간과 공간의 환상 속에서 길을 잃은 동포들을 구하기 위해 무수한 과거를 여행했지.",
+                "name": "???"
+            },
+            "figure_art": "avg_npc_1067_1#1$1"
+        },
+        {
+            "id": 497,
+            "prop": "name",
+            "attributes": {
+                "content": "무심코 이 이름을 선택한 내가 이 전설을 실제로 목격하게 될 줄 누가 알았겠어.",
+                "name": "???"
+            },
+            "figure_art": "avg_npc_1067_1#1$1"
+        },
+        {
+            "id": 498,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 499,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$nervous_intro",
+                "key": "$nervous_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 500,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1067_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.7,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 501,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 503,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1067_1#1$1",
+                "posfrom": "0,0",
+                "posto": "200,0",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 504,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1067_1#1$1",
+                "bstart": 0.0,
+                "bend": 0.0,
+                "duration": 2.0,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 506,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1067_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 507,
+            "prop": "name",
+            "attributes": {
+                "content": "네 뿔은 날이 가면 갈수록 볼만해지네, 이네스. 진짜 살카즈로 착각할 뻔했어.",
+                "name": "???"
+            },
+            "figure_art": "avg_npc_1067_1#8$1"
+        },
+        {
+            "id": 508,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 509,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "울술라.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#7$1"
+        },
+        {
+            "id": 511,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1067_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 512,
+            "prop": "name",
+            "attributes": {
+                "content": "외드레르, 너 맨프레드 장군을 실망시켜도 정말 괜찮겠어?",
+                "name": "울술라"
+            },
+            "figure_art": "avg_npc_1067_1#8$1"
+        },
+        {
+            "id": 513,
+            "prop": "name",
+            "attributes": {
+                "content": "소문을 들었을 때, 난 네가 이네스한테 손을 쓰지 않으리라는 걸 알고 있었어. 하지만 비밀을 지켜야 하는 내 일의 특성상, 런디니움에 있는 널 직접 찾아갈 순 없더라고.",
+                "name": "울술라"
+            },
+            "figure_art": "avg_npc_1067_1#8$1"
+        },
+        {
+            "id": 514,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4087_ines_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 515,
+            "prop": "name",
+            "attributes": {
+                "content": "흥, 네가 바로 흉터의 상점의 후계자구나? 듣자하니 여기서 해골 운전사가 된 지 꽤 된 것 같던데?",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#3$1"
+        },
+        {
+            "id": 516,
+            "prop": "name",
+            "attributes": {
+                "content": "전설에나 나오는 영웅 역할극이나 하는 게 너한테 그렇게 간절했어?",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#3$1"
+        },
+        {
+            "id": 517,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1067_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 518,
+            "prop": "name",
+            "attributes": {
+                "content": "오래된 것들은 더 이상 사람들의 관심을 끌지 못해.",
+                "name": "울술라"
+            },
+            "figure_art": "avg_npc_1067_1#8$1"
+        },
+        {
+            "id": 519,
+            "prop": "name",
+            "attributes": {
+                "content": "과거를 그리워하는 바보들이나 계속 이 이름을 사용하고 있지.",
+                "name": "울술라"
+            },
+            "figure_art": "avg_npc_1067_1#8$1"
+        },
+        {
+            "id": 520,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4088_hodrer_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 521,
+            "prop": "name",
+            "attributes": {
+                "content": "그럼 이름을 바꾸면 될 텐데.",
+                "name": "외드레르"
+            },
+            "figure_art": "avg_4088_hodrer_1#7$1"
+        },
+        {
+            "id": 522,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1067_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "name",
+            "attributes": {
+                "content": "그러다 멀리서 달려와 준 옛 친구들이 날 찾지 못하면?",
+                "name": "울술라"
+            },
+            "figure_art": "avg_npc_1067_1#8$1"
+        },
+        {
+            "id": 524,
+            "prop": "name",
+            "attributes": {
+                "content": "술이나 한잔 할래?",
+                "name": "울술라"
+            },
+            "figure_art": "avg_npc_1067_1#8$1"
+        },
+        {
+            "id": 525,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 526,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4087_ines_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_drawsword"
+            }
+        },
+        {
+            "id": 528,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_exsheath",
+                "delay": 0.5
+            }
+        },
+        {
+            "id": 529,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 530,
+            "prop": "name",
+            "attributes": {
+                "content": "너 예전엔 술 입에도 안 댔잖아.",
+                "name": "이네스"
+            },
+            "figure_art": "avg_4087_ines_1#1$1"
+        },
+        {
+            "id": 531,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1067_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 532,
+            "prop": "name",
+            "attributes": {
+                "content": "그건 예전이지…… 예전.",
+                "name": "울술라"
+            },
+            "figure_art": "avg_npc_1067_1#2$1"
+        },
+        {
+            "id": 533,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1067_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 534,
+            "prop": "name",
+            "attributes": {
+                "content": "그리고 예전엔 너도 나한테 검을 겨누지 않았어, 이네스.",
+                "name": "울술라"
+            },
+            "figure_art": "avg_npc_1067_1#1$1"
+        },
+        {
+            "id": 535,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 536,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 537,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 538,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 539,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 540,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}
