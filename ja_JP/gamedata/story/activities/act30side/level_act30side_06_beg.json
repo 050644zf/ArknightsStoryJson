@@ -1,0 +1,4860 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act30side",
+    "eventName": "銀心湖鉄道",
+    "entryType": "ACTIVITY",
+    "storyCode": "RS-6",
+    "avgTag": "戦闘前",
+    "storyName": "不正乗車の代償",
+    "storyInfo": "雪の中、アークトスとリェータは自分たちが父娘であることを知った。そして、「グレーシルクハット」はデーゲンブレヒャーの出現を経て、自分の推測に確信を持ち、目標を像のある小島へと変更した。しかし、デーゲンブレヒャーは思い通りにさせまいと彼を追い、壮絶なチェイスが始まった。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_white",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$loneliness_intro",
+                "key": "$loneliness_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "<color=#000000>ロザリンは悪い子だ！</color>",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "<color=#000000>あいつんち父ちゃんいないんだぜ。あんな変人、仲間になんか入れたくねえよな！</color>",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 11,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "<color=#000000>ぎゃはは！　悪い子ロザリン、父なし子～！</color>",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "私は悪い子なんかじゃねぇ！"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "name",
+            "attributes": {
+                "content": "このっ、デタラメ言いやがって……！"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 16,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fightgeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 20,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "<color=#000000>うわっ！　あいつ殴ったぞ！　やっぱり悪い子だ！</color>",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 22,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "<color=#000000>やれ！　やっちまえ！</color>",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 23,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "<color=#000000>やっちまえ！</color>",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 24,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 25,
+            "prop": "name",
+            "attributes": {
+                "content": "来るなら来い、ちっとも怖かねぇぞ！"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 27,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fightgeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 31,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "私は悪い子なんかじゃねぇ！"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 34,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch02",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 38,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "name",
+            "attributes": {
+                "content": "私には母ちゃんがいれば十分だ！　父ちゃんなんかいらねぇ！"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 41,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 45,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "name",
+            "attributes": {
+                "content": "いらねぇんだよ……"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 48,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 49,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 52,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 53,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_iceforest_1",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "bgeffect",
+            "attributes": {
+                "name": "$eb_dim_openeye",
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 55,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 56,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 58,
+            "prop": "bgeffect",
+            "attributes": {}
+        },
+        {
+            "id": 59,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_crwdkneelsnow",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 60,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#2$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 61,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "はっ……",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#2$1"
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "まさか、上から落ちたおかげで見つけられたなんてな。",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#2$1"
+        },
+        {
+            "id": 64,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#7$1"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "name",
+            "attributes": {
+                "content": "双子の木……こんなとこに隠れてたのか。",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#7$1"
+        },
+        {
+            "id": 66,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#9$1"
+            }
+        },
+        {
+            "id": 67,
+            "prop": "name",
+            "attributes": {
+                "content": "こいつで間違いなさそうだ。マジで絡み合って生えてんだな。",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#9$1"
+        },
+        {
+            "id": 68,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 69,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 70,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_snowfootstep",
+                "volume": 1.0,
+                "channel": "1"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 72,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "1"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#9$1"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#9$1"
+        },
+        {
+            "id": 75,
+            "prop": "name",
+            "attributes": {
+                "content": "ふぅ……これでよし。",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#9$1"
+        },
+        {
+            "id": 76,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#7$1"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "母ちゃんの用事は済ませられたな。さーて……",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#7$1"
+        },
+        {
+            "id": 78,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 79,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 81,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_snowbodyfall",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 82,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 84,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_crwdkneelsnow",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 85,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#12$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 87,
+            "prop": "name",
+            "attributes": {
+                "content": "チッ！",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#12$1"
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "やっぱダメだ、全然登れやしねぇ。",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#12$1"
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "雪は深すぎるし、崖も急すぎる。こんなん素手じゃ無理だな。",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#12$1"
+        },
+        {
+            "id": 90,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#7$1"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "試してないのはこっちの崖くらい……",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#7$1"
+        },
+        {
+            "id": 92,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#7$1",
+                "focus": "none"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "name",
+            "attributes": {
+                "content": "待て、ロザリン！",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_194_leto_1#7$1"
+        },
+        {
+            "id": 94,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 95,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 96,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_clothmovement"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_254_1#6$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "ッ、ぐっ……！",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#6$1"
+        },
+        {
+            "id": 100,
+            "prop": "name",
+            "attributes": {
+                "content": "あまり近付くな！　そっちは危険なんだ！",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#6$1"
+        },
+        {
+            "id": 101,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#14$1"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "わかったわかった、行かねぇよ。おっさんもじっとしててくれ！",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#14$1"
+        },
+        {
+            "id": 103,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#13$1"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "name",
+            "attributes": {
+                "content": "まだ足が動かねぇんだろ？　無理すんなって。今は座って休んでてくれよ。",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#13$1"
+        },
+        {
+            "id": 105,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_254_1#13$1"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "いいや、大したことじゃない。お前にケガをさせるわけにもいかんしな。",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#13$1"
+        },
+        {
+            "id": 107,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_254_1#8$1"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "まさかお前が、あのヴィクトリア野郎に目を付けられるとは。このままでは済ませんぞ！",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#8$1"
+        },
+        {
+            "id": 109,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#13$1"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "ってことは、あいつマジでヴィクトリアのスパイだったのか？",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#13$1"
+        },
+        {
+            "id": 111,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#7$1"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "まあ、でも……正直あいつにはまだ何もされてねぇんだけどさ。",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#7$1"
+        },
+        {
+            "id": 113,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_254_1#7$1"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "name",
+            "attributes": {
+                "content": "何かあってからでは遅いんだ！",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#7$1"
+        },
+        {
+            "id": 115,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_254_1#8$1"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "こうも時期の悪い時でなければ、我がペイルロッシュ家の領地に二度と踏み込めなくなるくらいには殴りつけてやったというのに！",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#8$1"
+        },
+        {
+            "id": 117,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#4$1"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "name",
+            "attributes": {
+                "content": "そもそもおっさんが急に出てこなければ、私があいつを縛り上げて懲らしめるつもりだったんだぞ！",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#4$1"
+        },
+        {
+            "id": 119,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#9$1"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "name",
+            "attributes": {
+                "content": "まあいいや、この話はよそう。",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#9$1"
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "ところで、さっき……",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#9$1"
+        },
+        {
+            "id": 122,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#4$1"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "name",
+            "attributes": {
+                "content": "あーもー、ウダウダやるのは性に合わねぇんだ！　ストレートに聞かせてもらうぜ！",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#4$1"
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "さっきここに落ちてきた時、どうしてわざわざ私の下敷きになってくれたんだ？",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#4$1"
+        },
+        {
+            "id": 125,
+            "prop": "name",
+            "attributes": {
+                "content": "それに、あのヴィクトリア人、私のフルネームを知ってたりとか変な言動してたけど、あれってどういうことなんだ？　おっさん、何か知らねぇか？",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#4$1"
+        },
+        {
+            "id": 126,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_254_1#14$1"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#14$1"
+        },
+        {
+            "id": 128,
+            "prop": "name",
+            "attributes": {
+                "content": "ロザリン。",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#14$1"
+        },
+        {
+            "id": 129,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_254_1#12$1"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "name",
+            "attributes": {
+                "content": "今こんな話をしても、受け入れがたいことはわかっている。だが……",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#12$1"
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "俺とタチアナ――",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#12$1"
+        },
+        {
+            "id": 132,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_254_1#14$1"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "name",
+            "attributes": {
+                "content": "……つまり、俺とお前の母親は、この山頂で出会ったんだ。",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#14$1"
+        },
+        {
+            "id": 134,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_194_leto_1#14$1"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "name",
+            "attributes": {
+                "content": "母ちゃんと……ってことは、おっさんが……",
+                "name": "リェータ"
+            },
+            "figure_art": "avg_194_leto_1#14$1"
+        },
+        {
+            "id": 136,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_254_1#14$1"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "name",
+            "attributes": {
+                "content": "お前の想像している通り――",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#14$1"
+        },
+        {
+            "id": 138,
+            "prop": "name",
+            "attributes": {
+                "content": "ロザリン。お前は俺の娘だ。",
+                "name": "アークトス"
+            },
+            "figure_art": "avg_npc_254_1#14$1"
+        },
+        {
+            "id": 139,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 140,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 143,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 144,
+            "prop": "Background",
+            "attributes": {
+                "image": "45_g11_karlanheadquarters",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 147,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_dooropen",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 148,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 149,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 150,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_253_1#7$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 151,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 152,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 153,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_253_1#7$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_172_svrash_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "name",
+            "attributes": {
+                "content": "これはまた、珍しい客人だな。",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#1$1"
+        },
+        {
+            "id": 156,
+            "prop": "name",
+            "attributes": {
+                "content": "ラタトス、お前がそうも慌てて訪ねてくるとは何事だ？",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#1$1"
+        },
+        {
+            "id": 157,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_253_1#2$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "私が来た理由くらいわかってるだろう、エンシオディス。",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#2$1"
+        },
+        {
+            "id": 159,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_253_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "name",
+            "attributes": {
+                "content": "あんた、今やってるような根拠のない誘導なんかでヴィクトリアの「グレーシルクハット」を騙しきれると本気で思ってるのかい？",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#9$1"
+        },
+        {
+            "id": 161,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_172_svrash_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "name",
+            "attributes": {
+                "content": "賢い人間ほど、自らの判断を深く信じ込むものだろう？",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#2$1"
+        },
+        {
+            "id": 163,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_253_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "name",
+            "attributes": {
+                "content": "そこは否定しないがね。",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#9$1"
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "忠告はしておこう。あまり他人を見くびらないほうがいいよ。",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#9$1"
+        },
+        {
+            "id": 166,
+            "prop": "name",
+            "attributes": {
+                "content": "あの密偵は確かにアークトスの娘を追っている。誘導は成功しているように見えるが、そう簡単に事が運ぶとは思えない。",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#9$1"
+        },
+        {
+            "id": 167,
+            "prop": "name",
+            "attributes": {
+                "content": "万が一、あの男があんたの予想通り動かなかったらどうするつもりなんだい？",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#9$1"
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "ほかに手を考えてないわけじゃないんだろう？",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#9$1"
+        },
+        {
+            "id": 169,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_172_svrash_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "name",
+            "attributes": {
+                "content": "アークトスの娘がこのタイミングでイェラグへ戻ってきたこと自体が予想外の出来事だった。",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#9$1"
+        },
+        {
+            "id": 171,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_172_svrash_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "name",
+            "attributes": {
+                "content": "この場当たり的な計画ですべての問題を解決できるとは当然思っていないさ。",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#1$1"
+        },
+        {
+            "id": 173,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_253_1#4$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "つまり、手はあるわけだな。",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#4$1"
+        },
+        {
+            "id": 175,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_253_1#5$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "それで……今日はどうしてノーシスの姿が見えないんだ？",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#5$1"
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "あいつだけじゃない。普段あんたのそばに控えてる護衛の女もいないだろう。うちの妹夫婦から聞いた話じゃ、あの女ここ数日はほとんどチェゲッタの訓練に出てないそうじゃないか。",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#5$1"
+        },
+        {
+            "id": 178,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_172_svrash_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "お前は耳が早いな。",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#2$1"
+        },
+        {
+            "id": 180,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_172_svrash_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 181,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、ノーシスとデーゲンブレヒャーにも自分たちの仕事がある。あの二人に会いに来たのなら、その期待には応えられまい。",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#1$1"
+        },
+        {
+            "id": 182,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_253_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "あいつらに用なんかないよ。",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#9$1"
+        },
+        {
+            "id": 184,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_253_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、でも……そうだね。ノーシスがいたら、伝えておきたい「良い知らせ」があったんだけど。",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#1$1"
+        },
+        {
+            "id": 186,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_172_svrash_1#4$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "ほう……？",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#4$1"
+        },
+        {
+            "id": 188,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_253_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "ま、大したことじゃないよ。明日になりゃわかることだ。",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#1$1"
+        },
+        {
+            "id": 190,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_253_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "name",
+            "attributes": {
+                "content": "ノーシスにも伝えたことだが、あんたにも改めて忠告しておこう。いいかエンシオディス、イェラガンド像の足元の件についてはしっかり掌握しておきな。",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#9$1"
+        },
+        {
+            "id": 192,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_253_1#7$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "name",
+            "attributes": {
+                "content": "これはもう、あんたらシルバーアッシュ家だけの問題じゃない。ブラウンテイル家もそこにすべてを賭けてるんだ。そのことを忘れるんじゃないよ！",
+                "name": "ラタトス"
+            },
+            "figure_art": "avg_npc_253_1#7$1"
+        },
+        {
+            "id": 194,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_172_svrash_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "name",
+            "attributes": {
+                "content": "肝に銘じておこう。",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#2$1"
+        },
+        {
+            "id": 196,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_172_svrash_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、三家に対してであれ、巫女様率いる蔓珠院に対してであれ……",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#1$1"
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "お前はもっと信じる心を持つべきだ、ラタトス。",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#1$1"
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "お前も私も、ノーシスも、そしてデーゲンブレヒャーも――",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#1$1"
+        },
+        {
+            "id": 200,
+            "prop": "name",
+            "attributes": {
+                "content": "我々の全員が、イェラグの未来のためにここにいる。",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#1$1"
+        },
+        {
+            "id": 201,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_172_svrash_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "name",
+            "attributes": {
+                "content": "私はそう強く信じているんだ。",
+                "name": "エンシオディス"
+            },
+            "figure_art": "avg_172_svrash_1#2$1"
+        },
+        {
+            "id": 203,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 204,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 208,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 209,
+            "prop": "Background",
+            "attributes": {
+                "image": "24_g12_mountpath",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$chasing_intro",
+                "key": "$chasing_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 211,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 213,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_snowrun",
+                "channel": "1"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 215,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 216,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "1"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 218,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 219,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 220,
+            "prop": "name",
+            "attributes": {
+                "content": "追いかけっこはもうおしまい？",
+                "name": "デーゲンブレヒャー"
+            }
+        },
+        {
+            "id": 221,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 222,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_snowbootwalk"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 224,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 225,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 226,
+            "prop": "name",
+            "attributes": {
+                "content": "もう十分です。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 227,
+            "prop": "name",
+            "attributes": {
+                "content": "それと先ほどの言葉は撤回しましょう、デーゲンブレヒャー女史。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 228,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#6$1"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "あら、その賢い頭で今度は何を思いついたの？",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#6$1"
+        },
+        {
+            "id": 230,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "やはり黒騎士は、人を騙すような真似はしないのですね。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 232,
+            "prop": "name",
+            "attributes": {
+                "content": "これは私の勝手な勘違いでした。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "当初私は、ロザリン嬢こそがイェラグの計画における重要人物だと思い込んでいました。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 234,
+            "prop": "name",
+            "attributes": {
+                "content": "でなければ、少し彼女への興味を持っただけでこれほど多くの手がかりが出てくるはずがない、と思っていたのです。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、あなたがここに現れたのは、私がアークトス氏やロザリン嬢に接触するのを阻止するためではないでしょう。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "むしろ私の誤解をさらに深めるためにいらしたのでは？",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 237,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#11$1"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "話はそれで終わり？",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#11$1"
+        },
+        {
+            "id": 239,
+            "prop": "name",
+            "attributes": {
+                "content": "頭のいい人って、そうやってよく喋るのよね。だけど私にはわからないし、別に理解したくもないわ。",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#11$1"
+        },
+        {
+            "id": 240,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#6$1"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "さあ、武器を取りなさい。",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#6$1"
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "ヴィクトリアの牙の鋭さを見せてちょうだい。",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#6$1"
+        },
+        {
+            "id": 243,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "いやいや。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 245,
+            "prop": "name",
+            "attributes": {
+                "content": "その前に私は降参します。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 246,
+            "prop": "name",
+            "attributes": {
+                "content": "手がかりのすべては勘違いだったのですから、私たちが戦う必要などどこにありましょう？",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "先ほどあなたが仰った通り、私は山を下りてランチでもするべきなのでしょう。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 248,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#10$1"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#10$1"
+        },
+        {
+            "id": 250,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 251,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 252,
+            "prop": "name",
+            "attributes": {
+                "content": "「グレーシルクハット」は静かに両手を上げ、デーゲンブレヒャーのそばを通り過ぎる。"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "name",
+            "attributes": {
+                "content": "が、彼女の背後まで来たところで、彼はふと足を止めた。"
+            }
+        },
+        {
+            "id": 254,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "name",
+            "attributes": {
+                "content": "とはいえ……",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 256,
+            "prop": "name",
+            "attributes": {
+                "content": "これは些細な憶測なのですがね。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 257,
+            "prop": "name",
+            "attributes": {
+                "content": "私の知る限り、エンシオディス氏という方は目的もなく無駄な行動など取らぬ人です。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "ゆえに、もしロザリン嬢が少しも重要な人物でないのなら、彼が餌に使うことはないでしょう。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 259,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、彼女自身には何の嫌疑も見当たらない。となれば、もしや何かあるのは彼女の背後……ペイルロッシュ家のほうなのでは？",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 260,
+            "prop": "name",
+            "attributes": {
+                "content": "ペイルロッシュ家が運んだ酒、あるいは手配した輸送ルートに、その何かがあるのでは？",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 261,
+            "prop": "name",
+            "attributes": {
+                "content": "ロザリン嬢の出現は単なる偶然であり――",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 262,
+            "prop": "name",
+            "attributes": {
+                "content": "そしてそれゆえに、あなた方は私がロザリン嬢との出会いの後、図らずもペイルロッシュ家に探りを入れ、気付くべきでない物事に気付くのを恐れた。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "だからこそ、こんな芝居を打って見せたのではないでしょうか。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 264,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 265,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 266,
+            "prop": "name",
+            "attributes": {
+                "content": "デーゲンブレヒャーは黙したまま、ゆっくりと武器を振り上げた。"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "name",
+            "attributes": {
+                "content": "ペイルロッシュ家はイェラグの資源輸送を担当していますね。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "他方で、イェラグの全鉄道には共通の合流地点があります。それは銀心湖であり、さらに言うなら注目すべきなのは……イェラガンド像の足元にある小島でしょう。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 270,
+            "prop": "name",
+            "attributes": {
+                "content": "あのイェラガンド像には、恐らく何かしらの秘密があるのですね。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 271,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#10$1"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "name",
+            "attributes": {
+                "content": "諜報員ってそんなふうに自分の考えを口に出してしまうものなの？",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#10$1"
+        },
+        {
+            "id": 273,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "name",
+            "attributes": {
+                "content": "いいえ。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、人には得手不得手というものがあります。武力に限った話で言えば、ヴィクトリア中の傑物と比べたとしても、あなたは相当ずば抜けた力をお持ちだと言えましょう。しかし――",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 276,
+            "prop": "name",
+            "attributes": {
+                "content": "無意識に起きるわずかな表情の変化を、完璧にはコントロールできていないのは確かです。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 277,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#6$1"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#6$1"
+        },
+        {
+            "id": 279,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 280,
+            "prop": "name",
+            "attributes": {
+                "content": "私の推測は正しいと考えて良さそうですね。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 281,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 282,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_twohandedblunt",
+                "volume": 1.0,
+                "channel": "1"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_snowrun"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "200,0",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 288,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 289,
+            "prop": "name",
+            "attributes": {
+                "content": "デーゲンブレヒャーは容赦なく武器を振り下ろしたが、「グレーシルクハット」はとうに準備を整えていた。"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "彼は衝撃を、雪を、殺意をすり抜け、麓に向かって走り出す。"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "name",
+            "attributes": {
+                "content": "デーゲンブレヒャーもその後に続いた。"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 293,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 296,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 297,
+            "prop": "Background",
+            "attributes": {
+                "image": "45_g8_kjeragstreet",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 300,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_278_1#1$1"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "銀心湖行きの駄獣観光車、もうすぐ出発しますよ～！",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 302,
+            "prop": "name",
+            "attributes": {
+                "content": "専門の訓練を受けた駄獣が、観光名所の一つ一つへお連れしますので最高の景色が楽しめること間違いなし！",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 303,
+            "prop": "name",
+            "attributes": {
+                "content": "道中の風景を楽しみたい旅行客様はぜひお見逃しなく～！",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 304,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 305,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 306,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 308,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "name",
+            "attributes": {
+                "content": "銀心湖に行きたいんだ。一番速い駄獣を頼む。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 310,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_278_1#1$1"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "一番速いのですと、追加料金がかかりますよ。",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 312,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "いくらでも払おう。今、極悪人に追われているところでね。私の命を救うと思って、頼む。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 314,
+            "prop": "name",
+            "attributes": {
+                "content": "この後、私がどこへ向かったかを聞いてくる者がいれば、知らないと言ってほしい。いいな？",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 315,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_278_1#1$1"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "name",
+            "attributes": {
+                "content": "……娘が送ってくれた映画のディスクにこんなシーンがあったな。",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 317,
+            "prop": "name",
+            "attributes": {
+                "content": "（口笛を吹く）",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 318,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 319,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 320,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_pcknmgrwl"
+            }
+        },
+        {
+            "id": 321,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1163_1#1$2",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 322,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 323,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_278_1#1$1"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "name",
+            "attributes": {
+                "content": "こいつにしましょう。うちで一番速いタクメイです。",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "このことは誰にも言いませんから、安心してください。",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 326,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "name",
+            "attributes": {
+                "content": "ありがとう。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 328,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 329,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 330,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_clothmovementsp"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 333,
+            "prop": "name",
+            "attributes": {
+                "content": "「グレーシルクハット」は駄獣の背へと素早く飛び乗った。"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 335,
+            "prop": "name",
+            "attributes": {
+                "content": "すると駄獣は大きく足を踏み出して、銀心湖へと駆け出した。"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 337,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_pcknmrn",
+                "channel": "1"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 339,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "1"
+            }
+        },
+        {
+            "id": 340,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_278_1#1$1"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "name",
+            "attributes": {
+                "content": "いやあ、外国のお人は面白いなあ。娘が帰ったらこの話をしてやらないと。",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 342,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 343,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 344,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#6$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 346,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 347,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#11$1"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "黒いコートを着た外国人を見なかった？",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#11$1"
+        },
+        {
+            "id": 349,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_278_1#1$1"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "name",
+            "attributes": {
+                "content": "おお、本当に来たぞ！　いや申し訳ない、見ていな――",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "ありゃ、デーゲンブレヒャーさんじゃないですか。",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 352,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#10$1"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "前に会ったかしら？",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#10$1"
+        },
+        {
+            "id": 354,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_278_1#1$1"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "name",
+            "attributes": {
+                "content": "忘れちまったんですか？　去年うちのタクメイが荷物を運んでる時に沼にはまっちまいまして、そこへ通りかかったあなたが引っ張り上げてくれたんですよ！",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 356,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#7$1"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、そんなこともあったわね。",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#7$1"
+        },
+        {
+            "id": 358,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#11$1"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "それで、例の外国人は見てないのよね？　だったら――",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#11$1"
+        },
+        {
+            "id": 360,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_278_1#1$1"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "待ってください。",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 362,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#10$1"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "name",
+            "attributes": {
+                "content": "？",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#10$1"
+        },
+        {
+            "id": 364,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_278_1#1$1"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "name",
+            "attributes": {
+                "content": "あの野郎、デーゲンブレヒャーさんを悪人呼ばわりするなんざ、とんでもない嘘つきだな！　こっちはタクメイまで貸しちまったってのに！",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 366,
+            "prop": "name",
+            "attributes": {
+                "content": "ここはきっちり懲らしめてやらんと！",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 367,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 368,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 369,
+            "prop": "name",
+            "attributes": {
+                "content": "牧畜民はそう言うと、トランシーバーを取り出した。"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 371,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_278_1#1$1"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 373,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_transmissionget"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 375,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "止まれ、タクメイ！　そいつは悪い奴だ！",
+                "name": "駄獣貸しの牧畜民"
+            },
+            "figure_art": "avg_npc_278_1#1$1"
+        },
+        {
+            "id": 377,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 378,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 381,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 382,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 384,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "name",
+            "attributes": {
+                "content": "ふぅ……駄獣の機動性というのは侮れないな。そして何より、とてもタフだ。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 386,
+            "prop": "name",
+            "attributes": {
+                "content": "もしかすると、一種の戦略資源になるのでは――",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 387,
+            "prop": "name",
+            "attributes": {
+                "content": "んっ？",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 388,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 389,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_pcknmbrth"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 394,
+            "prop": "name",
+            "attributes": {
+                "content": "またがっていた駄獣が、突然落ち着きのない動きをし始めた。"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 396,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral"
+            }
+        },
+        {
+            "id": 397,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 398,
+            "prop": "name",
+            "attributes": {
+                "content": "デーゲンブレヒャーさん！　タクメイはあそこです！",
+                "name": "駄獣貸しの牧畜民"
+            }
+        },
+        {
+            "id": 399,
+            "prop": "name",
+            "attributes": {
+                "content": "ありがとう。",
+                "name": "デーゲンブレヒャー"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "チッ――追いつかれたか。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 402,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 403,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_pcknmgrwl"
+            }
+        },
+        {
+            "id": 404,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "しまっ――",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 407,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 408,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 409,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$bodyfalldown1"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.8,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_clothmovement"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 413,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": "くっ――！",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 415,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#1$1"
+            }
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": "もう諦めなさい。今日の所は、私の目からは逃れられないわよ。",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#1$1"
+        },
+        {
+            "id": 417,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "name",
+            "attributes": {
+                "content": "単なる観光目的でも、ですか？",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 419,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#1$1"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "name",
+            "attributes": {
+                "content": "イェラグの案内なら私もできるわ。",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#1$1"
+        },
+        {
+            "id": 421,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "name",
+            "attributes": {
+                "content": "それはご遠慮いたします。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 423,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 424,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 426,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 427,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#2$1"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ。",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#2$1"
+        },
+        {
+            "id": 429,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 430,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#1$1"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 432,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 434,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 435,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 436,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 439,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 440,
+            "prop": "Background",
+            "attributes": {
+                "image": "45_g10_iceonlake",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 443,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_280_1#1$1",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 444,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_277_1#1$1",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 445,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.2
+            }
+        },
+        {
+            "id": 446,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_277_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "今日こそスケート滑れるようになるぞ！",
+                "name": "元気なイェラグ人"
+            },
+            "figure_art": "avg_npc_277_1#1$1"
+        },
+        {
+            "id": 448,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_280_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "name",
+            "attributes": {
+                "content": "もう一ヶ月も同じこと言ってるじゃない。これ以上かけてたら、夏になっちゃうわよ。",
+                "name": "冷静なイェラグ人"
+            },
+            "figure_art": "avg_npc_280_1#1$1"
+        },
+        {
+            "id": 450,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_280_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "name",
+            "attributes": {
+                "content": "そうなったら、また湖が凍るのを待たなきゃいけなくなるわ。",
+                "name": "冷静なイェラグ人"
+            },
+            "figure_art": "avg_npc_280_1#1$1"
+        },
+        {
+            "id": 452,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_277_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "だからこそ、今日滑れるようになるんだよ！",
+                "name": "元気なイェラグ人"
+            },
+            "figure_art": "avg_npc_277_1#1$1"
+        },
+        {
+            "id": 454,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_280_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "はいはい。",
+                "name": "冷静なイェラグ人"
+            },
+            "figure_art": "avg_npc_280_1#1$1"
+        },
+        {
+            "id": 456,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 457,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 458,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral"
+            }
+        },
+        {
+            "id": 459,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 460,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 461,
+            "prop": "name",
+            "attributes": {
+                "content": "悪いが、借りていくぞ。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 462,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 463,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 464,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_280_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_277_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "name",
+            "attributes": {
+                "content": "うわっ、俺のスケート靴！",
+                "name": "元気なイェラグ人"
+            },
+            "figure_art": "avg_npc_277_1#1$1"
+        },
+        {
+            "id": 467,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 468,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 469,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1"
+            }
+        },
+        {
+            "id": 470,
+            "prop": "name",
+            "attributes": {
+                "content": "この金で新しいのを買ってくれ。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 471,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 472,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$rungeneral"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-200,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 474,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 475,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 476,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 477,
+            "prop": "name",
+            "attributes": {
+                "content": "「グレーシルクハット」は、各地を調査して回っていた時に、イェラグ人が冬の暖かな日差しの下で氷の上を滑っている光景を目の当たりにしていた。"
+            }
+        },
+        {
+            "id": 478,
+            "prop": "name",
+            "attributes": {
+                "content": "その遊びはなかなか楽しそうで、時間があれば自分も試してみたいものだと彼は思っていた。"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "name",
+            "attributes": {
+                "content": "とはいえ、こうも早く機会が訪れるとは思ってもみなかったのだが――"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "name",
+            "attributes": {
+                "content": "実行してみてすぐに、彼は判断ミスに気付いた。"
+            }
+        },
+        {
+            "id": 481,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$bodyfalldown1"
+            }
+        },
+        {
+            "id": 482,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "うっ、これは――",
+                "name": "「グレーシルクハット」"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 485,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 486,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_280_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 487,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_277_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "あら、てっきり滑れるんだと思ってたのに。",
+                "name": "冷静なイェラグ人"
+            },
+            "figure_art": "avg_npc_280_1#1$1"
+        },
+        {
+            "id": 489,
+            "prop": "name",
+            "attributes": {
+                "content": "あなた初心者ね？　重心が不安定だもの。",
+                "name": "冷静なイェラグ人"
+            },
+            "figure_art": "avg_npc_280_1#1$1"
+        },
+        {
+            "id": 490,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 491,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 492,
+            "prop": "name",
+            "attributes": {
+                "content": "重心……？　ふむ、なるほど。",
+                "name": "転んだ密偵"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "name",
+            "attributes": {
+                "content": "ッ、まずい。",
+                "name": "転んだ密偵"
+            }
+        },
+        {
+            "id": 494,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 495,
+            "prop": "name",
+            "attributes": {
+                "content": "どいてちょうだい。",
+                "name": "デーゲンブレヒャー"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 497,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 498,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_280_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 499,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_277_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ？",
+                "name": "冷静なイェラグ人"
+            },
+            "figure_art": "avg_npc_280_1#1$1"
+        },
+        {
+            "id": 501,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_277_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "name",
+            "attributes": {
+                "content": "うわあっ、空から人が！！",
+                "name": "元気なイェラグ人"
+            },
+            "figure_art": "avg_npc_277_1#1$1"
+        },
+        {
+            "id": 503,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 504,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 505,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_clothmovement"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 507,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "重心……重心か。よし、わかった！",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 509,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 510,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 512,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_twohandedblunt",
+                "volume": 1.0,
+                "channel": "1"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone",
+                "Delay": 0.03,
+                "volume": 1.0,
+                "channel": "3"
+            }
+        },
+        {
+            "id": 515,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_jump_water",
+                "Delay": 0.05,
+                "volume": 1.0,
+                "channel": "2"
+            }
+        },
+        {
+            "id": 516,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-200,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 517,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 518,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 519,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 520,
+            "prop": "name",
+            "attributes": {
+                "content": "「ドーン」という大きな音と共に、デーゲンブレヒャーの攻撃で氷面に大穴が空き――"
+            }
+        },
+        {
+            "id": 521,
+            "prop": "name",
+            "attributes": {
+                "content": "「グレーシルクハット」はそれを間一髪でかわした。"
+            }
+        },
+        {
+            "id": 522,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 523,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 524,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 525,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 526,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 527,
+            "prop": "Background",
+            "attributes": {
+                "image": "45_g10_iceonlake",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 528,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 529,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 530,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "posfrom": "200,0",
+                "posto": "0,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 531,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 532,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 533,
+            "prop": "name",
+            "attributes": {
+                "content": "ワーオ、できたぞ！",
+                "name": "「グレーシルクハット」"
+            }
+        },
+        {
+            "id": 534,
+            "prop": "name",
+            "attributes": {
+                "content": "何と愉快なスポーツだ！　国に帰ったらぜひとも広めよう！",
+                "name": "「グレーシルクハット」"
+            }
+        },
+        {
+            "id": 535,
+            "prop": "name",
+            "attributes": {
+                "content": "まあ、そのためにもまず今日を生き延びなければいけないが。",
+                "name": "「グレーシルクハット」"
+            }
+        },
+        {
+            "id": 536,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 537,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 539,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 540,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 541,
+            "prop": "Background",
+            "attributes": {
+                "image": "45_g10_iceonlake",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 542,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 543,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 544,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_280_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_277_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 546,
+            "prop": "name",
+            "attributes": {
+                "content": "あ、あ、あいつ滑れてるぞ！",
+                "name": "元気なイェラグ人"
+            },
+            "figure_art": "avg_npc_277_1#1$1"
+        },
+        {
+            "id": 547,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_280_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 548,
+            "prop": "name",
+            "attributes": {
+                "content": "あんなに早く滑れるようになった人なんて初めて見たわ……",
+                "name": "冷静なイェラグ人"
+            },
+            "figure_art": "avg_npc_280_1#1$1"
+        },
+        {
+            "id": 549,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 550,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 551,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#6$1"
+            }
+        },
+        {
+            "id": 552,
+            "prop": "name",
+            "attributes": {
+                "content": "やれやれね。ほかにスケート靴はある？",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#6$1"
+        },
+        {
+            "id": 553,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 554,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 555,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_280_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 556,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_277_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 557,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ、でしたら私のを貸しましょうか？",
+                "name": "冷静なイェラグ人"
+            },
+            "figure_art": "avg_npc_280_1#1$1"
+        },
+        {
+            "id": 558,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 559,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 560,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#6$1"
+            }
+        },
+        {
+            "id": 561,
+            "prop": "name",
+            "attributes": {
+                "content": "ありがとう。",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#6$1"
+        },
+        {
+            "id": 562,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 563,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 564,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_clothmovement"
+            }
+        },
+        {
+            "id": 565,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 566,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_280_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 567,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_277_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 568,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは……",
+                "name": "冷静なイェラグ人"
+            },
+            "figure_art": "avg_npc_280_1#1$1"
+        },
+        {
+            "id": 569,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 570,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 571,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4116_blkkgt_1#6$1"
+            }
+        },
+        {
+            "id": 572,
+            "prop": "name",
+            "attributes": {
+                "content": "滑れるわ。",
+                "name": "デーゲンブレヒャー"
+            },
+            "figure_art": "avg_4116_blkkgt_1#6$1"
+        },
+        {
+            "id": 573,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 574,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-200,0",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 575,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 576,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 577,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_280_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 578,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_277_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 579,
+            "prop": "name",
+            "attributes": {
+                "content": "はやっ！",
+                "name": "冷静なイェラグ人"
+            },
+            "figure_art": "avg_npc_280_1#1$1"
+        },
+        {
+            "id": 580,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 581,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 582,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 583,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 584,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 585,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 586,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}
