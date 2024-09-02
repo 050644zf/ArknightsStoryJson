@@ -1,0 +1,5080 @@
+{
+    "lang": "zh_CN",
+    "eventid": "act36side",
+    "eventName": "泰拉饭",
+    "entryType": "ACTIVITY",
+    "storyCode": "DT-2",
+    "avgTag": "行动后",
+    "storyName": "雨林解毒炖汤",
+    "storyInfo": "小队中的其他几人准备用美食引出行踪神秘的大祭司帮玛露西尔解毒，却没想到森西精心挑选的主菜“蓝色肥鸟”竟是苦寻许久的大祭司。",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 3,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 5,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_village",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 7,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$dontmaketrouble_intro",
+                "key": "$dontmaketrouble_loop",
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_goldenlight",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 11,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 20.0,
+                "randomness": 30.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 20.0,
+                "randomness": 30.0,
+                "fadeout": "true"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "Effect",
+            "attributes": {
+                "name": "$e_magic_fire_01",
+                "y": 0.0,
+                "x": 0.0,
+                "layer": 3.0
+            }
+        },
+        {
+            "id": 14,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 17,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "name",
+            "attributes": {
+                "content": "我的晒鳞架！我的床！",
+                "name": "阿达克利斯A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 19,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "莱欧斯！",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#5$1"
+        },
+        {
+            "id": 21,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 22,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 23,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#9$1",
+                "posfrom": "-100,0",
+                "posto": "0,0",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "isblock": "true",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 24,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 25,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 26,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 27,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 28,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 29,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 31,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punchsp2",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 32,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4142_laios_1#7$1",
+                "posfrom": "0,0",
+                "posto": "100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 33,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 34,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "200,0",
+                "duration": 0.85
+            }
+        },
+        {
+            "id": 35,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 36,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 37,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_goldenlight",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 39,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "posfrom": "100,0",
+                "posto": "0,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 40,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 41,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 45,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#16$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "name",
+            "attributes": {
+                "content": "总觉得玛露西尔平时都没有这么敏捷......！",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#16$1"
+        },
+        {
+            "id": 47,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#22$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "name",
+            "attributes": {
+                "content": "她现在恐怕把我们当成炎龙了！",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#22$1"
+        },
+        {
+            "id": 49,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#16$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "那怎么办？",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#16$1"
+        },
+        {
+            "id": 51,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "name",
+            "attributes": {
+                "content": "既然她现在想的都是法琳，让我来试试......",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#9$1"
+        },
+        {
+            "id": 53,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "name",
+            "attributes": {
+                "content": "玛露西尔，是我，法琳的哥哥，莱欧斯！",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#3$1"
+        },
+        {
+            "id": 55,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "你、你根本不是莱欧斯！莱欧斯明明是个能摆出奇怪的姿势威吓住蛇尾鸡的家伙！",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 57,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "这还确实挺有说服力的。",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 59,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "既然这样，只能通过这种方式证明我的身份了！",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#3$1"
+        },
+        {
+            "id": 61,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 62,
+            "prop": "CameraShake",
+            "attributes": {
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 64,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 50.0,
+                "ystrength": 50.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "name",
+            "attributes": {
+                "content": "咯——",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#4$1"
+        },
+        {
+            "id": 67,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 68,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 70,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 72,
+            "prop": "name",
+            "attributes": {
+                "content": "莱欧斯......真的是你......？",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 73,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "居然真有用？！",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#7$1"
+        },
+        {
+            "id": 75,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "name",
+            "attributes": {
+                "content": "莱欧斯！炎龙把法琳吃了，我们要打败它，把法琳抢回来，然后复活她！",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 77,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "等等，你指着我干什么！我哪里像炎龙？",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 79,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 80,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "afrom": 0.0,
+                "rfrom": 0.0,
+                "gfrom": 0.0,
+                "bfrom": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$e_atk_magic_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 84,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 85,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 4.0,
+                "ystrength": 4.0,
+                "vibrato": 20.0,
+                "randomness": 30.0,
+                "fadeout": "true"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 88,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "afrom": 0.0,
+                "rfrom": 0.0,
+                "gfrom": 0.0,
+                "bfrom": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$e_atk_magic_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 90,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 92,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 93,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 4.0,
+                "ystrength": 4.0,
+                "vibrato": 20.0,
+                "randomness": 30.0,
+                "fadeout": "true"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 96,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4144_chilc_1#15$1",
+                "posfrom": "-100,0",
+                "posto": "0,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 97,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 98,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4143_sensi_1#5$1",
+                "posfrom": "100,0",
+                "posto": "0,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 99,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 100,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 101,
+            "prop": "name",
+            "attributes": {
+                "content": "哇啊！",
+                "name": "齐尔查克&森西"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 103,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "afrom": 0.0,
+                "rfrom": 0.0,
+                "gfrom": 0.0,
+                "bfrom": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$e_atk_magic_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 105,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "posfrom": "0,0",
+                "posto": "-100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 106,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 107,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "posfrom": "0,0",
+                "posto": "100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 108,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 109,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 4.0,
+                "ystrength": 4.0,
+                "vibrato": 20.0,
+                "randomness": 30.0,
+                "fadeout": "true"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 112,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "name",
+            "attributes": {
+                "content": "她这是怎么了？",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#7$1"
+        },
+        {
+            "id": 114,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 115,
+            "prop": "name",
+            "attributes": {
+                "content": "呜哇！她是不是眼睛打转，脚步凌乱？",
+                "name": "阿达克利斯A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 116,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 117,
+            "prop": "name",
+            "attributes": {
+                "content": "对！",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#9$1"
+        },
+        {
+            "id": 118,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "name",
+            "attributes": {
+                "content": "张牙舞爪，胡言乱语？",
+                "name": "阿达克利斯B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 120,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#22$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "对对！",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#22$1"
+        },
+        {
+            "id": 122,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "name",
+            "attributes": {
+                "content": "口吐白沫？",
+                "name": "阿达克利斯A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 124,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "name",
+            "attributes": {
+                "content": "对对对！",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#7$1"
+        },
+        {
+            "id": 126,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 127,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 128,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_071",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "name",
+            "attributes": {
+                "content": "那就没错了，她这是中毒了！但同样走运又不走运的是，知道解毒方法的人也只有大祭司！",
+                "name": "阿达克利斯A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 131,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "name",
+            "attributes": {
+                "content": "我们这里只有这些卡比比草，大家一般中毒了、生病了、拉肚子了都会吃这个，你们可以先用它救救急！但别指望它能有什么好效果。",
+                "name": "阿达克利斯B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 133,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 134,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 135,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#14$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "name",
+            "attributes": {
+                "content": "那......我来稳住玛露西尔，你们都先去找能把大祭司吸引来的东西！",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#14$1"
+        },
+        {
+            "id": 137,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "name",
+            "attributes": {
+                "content": "怎么找？去哪找？",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 139,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "做出一顿丰盛的饭，尽快吸引大祭司来就好了！她应该是产生了幻觉，再这么下去我家就要被炸没了！",
+                "name": "阿达克利斯A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 141,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "name",
+            "attributes": {
+                "content": "齐尔查克，你们去吧，这里我能应付！",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#3$1"
+        },
+        {
+            "id": 143,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 144,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 147,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 148,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 149,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 150,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 151,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 152,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "知道了，玛露西尔就交给你了！",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 154,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 155,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 156,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 159,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 160,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_caveentrance",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 162,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$holiday_intro",
+                "key": "$holiday_loop",
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 163,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 165,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 166,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "posfrom": "0,-20",
+                "posto": "0,0",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "isblock": "true",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 167,
+            "prop": "name",
+            "attributes": {
+                "content": "唔，这些鱼和树果老夫觉得肯定够用了......阿达克利斯兄弟，多谢你指路，但可以再麻烦你一件事吗？",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 168,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "name",
+            "attributes": {
+                "content": "鱼？这东西叫鳞啊。",
+                "name": "阿达克利斯A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 170,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "哦......原来鱼在你们这里是叫这个名字。但无论如何，请你先回到村子里，帮我们烧一锅热水。",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 172,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "name",
+            "attributes": {
+                "content": "热水？",
+                "name": "阿达克利斯A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 174,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "嗯，老夫刚刚冒出一个新想法，普通的饭菜估计很难快速地把大祭司吸引来，老夫决定做一大锅汤！",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#2$1"
+        },
+        {
+            "id": 176,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "一方面是感谢你们对我们的照顾，另一方面，老夫记得你说过，那位大祭司喜欢热闹。",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 178,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "噢！你要做一锅超美味的汤？好啊！那我就先回去准备了！",
+                "name": "阿达克利斯A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 180,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 181,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 182,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 183,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 184,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "唔......",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 186,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "虽然这些鱼和树果作为配菜是够用了......",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#2$1"
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "但是，总觉得还差些什么......",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#2$1"
+        },
+        {
+            "id": 189,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 190,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 193,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 194,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 196,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1429_1#1$1",
+                "posfrom": "100,0",
+                "posto": "0,0",
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 199,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "posfrom": "0,0",
+                "posto": "-200,0",
+                "duration": 1.5,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 201,
+            "prop": "name",
+            "attributes": {
+                "content": "怪事，感觉到一点奇怪的动静就过来看看，结果好像也没什么特别的。",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "name",
+            "attributes": {
+                "content": "刚刚“无敌的酷东西”还突然爆炸了，真倒霉！",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "name",
+            "attributes": {
+                "content": "算了，算了！回去睡觉好了！",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "唉，要不是答应了祖玛玛帮她盯着这边的研究，我才不想一个人待在这里呢。",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 206,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "posfrom": "-200,0",
+                "posto": "-300,0",
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 209,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 212,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 213,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "嗯？",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 216,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "体态饱满，色彩鲜艳......是只健康的肥鸟。让老夫查查《鲍勃的美食指南》看这东西能不能吃......",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 218,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_paper2",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 220,
+            "prop": "name",
+            "attributes": {
+                "content": "“羽兽，浑身覆盖着羽毛，能在天上飞，可以吃，很好吃，怎么做都好吃。”",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "唔......这样的食材，作为一锅汤的主料应该够格，而且也足够吸引人，肯定能让大祭司满意！就是它了！",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 222,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 223,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-100,0",
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 226,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 229,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 230,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 232,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 233,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4143_sensi_1#1$1",
+                "posfrom": "550,0",
+                "posto": "470,0",
+                "duration": 1.0,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.0,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 236,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "（为什么有个杜林一副要吃了我的样子在靠近我？）",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 238,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "name",
+            "attributes": {
+                "content": "（嗯？嗯嗯？他真的是杜林吗？）",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#5$1"
+        },
+        {
+            "id": 240,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "（......嚯，原来如此，这可有意思了。）",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#6$1"
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "（等等，太久没玩过了，死要怎么装来着？）",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#6$1"
+        },
+        {
+            "id": 243,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 244,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 247,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 248,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 249,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_wing",
+                "volume": 1.0,
+                "channel": "3"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 254,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch02",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 256,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 257,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 260,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fightgeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 261,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 263,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 264,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 266,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 267,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 269,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fightgeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 273,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "嘎啊啊啊啊啊！！！",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 277,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "......老夫应该没有下手这么狠？",
+                "name": "森西"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 280,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 282,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 283,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_caveentrance",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 285,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 288,
+            "prop": "name",
+            "attributes": {
+                "content": "咕——嘎——",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#7$1"
+        },
+        {
+            "id": 289,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 290,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 291,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 292,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 293,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 294,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 295,
+            "prop": "name",
+            "attributes": {
+                "content": "罢了，只要解决了就好。",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 296,
+            "prop": "name",
+            "attributes": {
+                "content": "齐尔查克！树果采够了吗？我们该回去了！",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 297,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 298,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 301,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 302,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_jungle_1",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 304,
+            "prop": "PlayMusic",
+            "attributes": {
+                "key": "$calm_loop",
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 305,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 307,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4141_marcil_1#23$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 308,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#4$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 309,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 310,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "莱欧斯，为什么你明明是莱欧斯，我却觉得你长得有点像炎龙呢？",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 312,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#4$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#4$1"
+        },
+        {
+            "id": 314,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 315,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 316,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#13$1",
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 317,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 318,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#13$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "玛露西尔，我们来聊聊有关法琳的事吧。",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#13$1"
+        },
+        {
+            "id": 320,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 321,
+            "prop": "name",
+            "attributes": {
+                "content": "法琳是我最好的朋友！我跟你说，莱欧斯，法琳真的很喜欢你。我认识她之后，她经常提到你。",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 322,
+            "prop": "name",
+            "attributes": {
+                "content": "其他人都觉得她是差生，但是我不觉得。我从她身上学到了许多东西！我最喜欢她了！",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 323,
+            "prop": "name",
+            "attributes": {
+                "content": "但是......但是......因为我太弱小了，她就被炎龙......被炎龙给吃掉了！",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 324,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "......这不是你一个人的责任，玛露西尔。",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "法琳是我的妹妹，我不会不管她的。",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 327,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 328,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#16$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "但他还是忍不住有些好奇：在中毒的玛露西尔眼中，其他人到底是什么样的炎龙？"
+            }
+        },
+        {
+            "id": 330,
+            "prop": "name",
+            "attributes": {
+                "content": "森西会是矮矮胖胖的炎龙吗？齐尔查克会很小只吗？"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#21$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "name",
+            "attributes": {
+                "content": "自己要不要也去找一找那个什么果子吃吃看呢？"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 334,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 337,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 338,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_village",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 340,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$path_intro",
+                "key": "$path_loop",
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 341,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 342,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 343,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "玛露西尔还好吗？",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 345,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 346,
+            "prop": "name",
+            "attributes": {
+                "content": "刚刚睡过去了......他们说这也算是一种身体的自我保护，但还是要尽快解毒让她醒过来才好......",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#1$1"
+        },
+        {
+            "id": 347,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "好！那老夫马上开始做汤，主料就是这只肥鸟！",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 349,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "name",
+            "attributes": {
+                "content": "希望这锅汤真的能把大祭司请回来......",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#6$1"
+        },
+        {
+            "id": 351,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "那么为了节省时间，来帮老夫准备其他的食材吧！",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "看看树林里风的方向......在背风处生火，免得引发火灾。",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 354,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 355,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_cutfast"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 358,
+            "prop": "name",
+            "attributes": {
+                "content": "把树果、可食用蘑菇还有土豆都洗干净，切成大小合适的块，放在一旁备用。",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "先往锅里加入一些香辛料和卡比比草，煮出一锅香辛料水，方便让肉入味。",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "再加入提鲜的树果和蘑菇，煮上几分钟后放入肉和土豆。",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 361,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 362,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_seasonsaltpepper"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "把鱼刮去鳞片，切开肚子，掏出不能食用的内脏。在流水中洗干净鱼鳃，或者用小刀直接挖掉。",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 365,
+            "prop": "name",
+            "attributes": {
+                "content": "斜着在鱼身上划开口，把辣椒、胡椒、盐、柠檬汁混合均匀，涂抹在鱼身上......",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 366,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 367,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_cutmeatone"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "0,-5",
+                "isblock": "true",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 369,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,-5",
+                "posto": "0,0",
+                "isblock": "true",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 370,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 371,
+            "prop": "name",
+            "attributes": {
+                "content": "用干净的树枝串起来，插在篝火边，注意时时转动保证受热均匀......",
+                "name": "森西"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "再回来看看炖肥鸟，等汤汁变得浓稠，加一些盐调味，尝一下咸淡！",
+                "name": "森西"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "name",
+            "attributes": {
+                "content": "小火炖煮到香气扑鼻......",
+                "name": "森西"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 375,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "嗯，这样就算是做好了！把这锅汤献给大祭司吧！",
+                "name": "森西"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "name",
+            "attributes": {
+                "content": "你们一般怎么吸引大祭司过来呢？",
+                "name": "森西"
+            }
+        },
+        {
+            "id": 378,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "name",
+            "attributes": {
+                "content": "唱歌！跳舞！欢庆！大吃特吃！大祭司自然就会被吸引来！",
+                "name": "阿达克利斯A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 380,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 381,
+            "prop": "name",
+            "attributes": {
+                "content": "好，那大家快一起吃吧！",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 382,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "name",
+            "attributes": {
+                "content": "嗯，加入了蘑菇和树果，整锅汤的味道变得非常丰富，还带有药草的特殊香气，是一锅好汤。",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 384,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "name",
+            "attributes": {
+                "content": "啊......好香......",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#12$1"
+        },
+        {
+            "id": 386,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 387,
+            "prop": "name",
+            "attributes": {
+                "content": "唱歌！跳舞！你们这样愣着大祭司是不会来的！",
+                "name": "阿达克利斯B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 388,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "name",
+            "attributes": {
+                "content": "好......好！",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#12$1"
+        },
+        {
+            "id": 390,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "name",
+            "attributes": {
+                "content": "齐尔查克，森西，你们也都跳起来吧......！",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 392,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 393,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 395,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "20,30",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 396,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "20,30",
+                "posto": "0,0",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 397,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-20,30",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 398,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "-20,30",
+                "posto": "0,0",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 399,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 400,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 401,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 403,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "30,10",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 404,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "30,10",
+                "posto": "0,0",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 405,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-30,10",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 406,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "-30,10",
+                "posto": "0,0",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 407,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "name",
+            "attributes": {
+                "content": "呃......大祭司还没来吗？",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 409,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 410,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 411,
+            "prop": "name",
+            "attributes": {
+                "content": "呃......",
+                "name": "玛露西尔"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 413,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 414,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_071",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": "那可能需要用最后一招了，认真地呼唤！",
+                "name": "阿达克利斯A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 417,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "name",
+            "attributes": {
+                "content": "大祭司大人，这里有美食，请您过来吧！",
+                "name": "阿达克利斯B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 419,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 420,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 421,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4144_chilc_1#16$1",
+                "posfrom": "-100,0",
+                "posto": "-100,0",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#5$1",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4143_sensi_1#1$1",
+                "posfrom": "130,0",
+                "posto": "130,0",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "name",
+            "attributes": {
+                "content": "......大祭司大人，这里有美食，请您过来吧！",
+                "name": "齐尔查克&莱欧斯&森西"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 426,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 427,
+            "prop": "name",
+            "attributes": {
+                "content": "呜呃呃......",
+                "name": "玛露西尔"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 429,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 430,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 433,
+            "prop": "Image",
+            "attributes": {
+                "image": "54_i3",
+                "screenadapt": "coverall",
+                "layer": 1.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 434,
+            "prop": "focusout",
+            "attributes": {
+                "duration": 5.0,
+                "type": "cg",
+                "id": "54_i3",
+                "from": 1.0,
+                "to": 0.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 435,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_makesoup",
+                "volume": 0.5,
+                "channel": "2",
+                "loop": "true"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$farce_intro",
+                "key": "$farce_loop",
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 437,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 439,
+            "prop": "focusout",
+            "attributes": {
+                "duration": 2.5,
+                "type": "cg",
+                "id": "54_i3",
+                "from": 0.5,
+                "to": 0.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "Delay",
+            "attributes": {
+                "time": 5.0
+            }
+        },
+        {
+            "id": 441,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_horncuisine",
+                "volume": 1.0,
+                "channel": "1"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "cgitem",
+            "attributes": {
+                "image": "cgitem_54_i3",
+                "style": "cg",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "aduration": 1.5,
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 443,
+            "prop": "Delay",
+            "attributes": {
+                "time": 5.0
+            }
+        },
+        {
+            "id": 444,
+            "prop": "hidecgitem",
+            "attributes": {
+                "image": "cgitem_54_i3",
+                "fadetime": 3.5
+            }
+        },
+        {
+            "id": 445,
+            "prop": "Delay",
+            "attributes": {
+                "time": 5.0
+            }
+        },
+        {
+            "id": 446,
+            "prop": "name",
+            "attributes": {
+                "content": "咕嘎嘎嘎嘎！！",
+                "name": "解毒草肥鸟汤"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "吸溜......呣......呣......",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "咕咚。",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "name",
+            "attributes": {
+                "content": "好温暖的感觉......",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "name",
+            "attributes": {
+                "content": "好久没有这么舒舒服服地泡过澡了。",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "name",
+            "attributes": {
+                "content": "但是这泡澡水里奇奇怪怪的配料也太多了！",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "name",
+            "attributes": {
+                "content": "切半的柠檬，切片的蘑菇，还有土豆块？",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "甚至还有辣椒和卡比比草！",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "name",
+            "attributes": {
+                "content": "吸溜......呣......呣......",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "呣......呸呸呸！真难喝！",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 456,
+            "prop": "name",
+            "attributes": {
+                "content": "这是什么药浴吗？",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "啊......但是，这种像是屁股被烤焦的感觉，让人想起机甲每次发射前充满驾驶舱的热量，真是令人感到惬意......",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "name",
+            "attributes": {
+                "content": "在这里面泡上一泡，爆炸带来的劳累都一扫而空了！",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 459,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 460,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 462,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 463,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "2",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 464,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 465,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 467,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 468,
+            "prop": "name",
+            "attributes": {
+                "content": "肥、肥鸟复活了？！",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#5$1"
+        },
+        {
+            "id": 469,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 470,
+            "prop": "name",
+            "attributes": {
+                "content": "这肥鸟它居然能在汤锅中复原，难道说......",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#6$1"
+        },
+        {
+            "id": 471,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 472,
+            "prop": "name",
+            "attributes": {
+                "content": "......啊，这是“不会死去的魔物”吗？",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#8$1"
+        },
+        {
+            "id": 473,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 474,
+            "prop": "name",
+            "attributes": {
+                "content": "大祭司！你怎么在锅里？！",
+                "name": "阿达克利斯A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 475,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 476,
+            "prop": "name",
+            "attributes": {
+                "content": "大祭司？！！这只肥鸟就是大祭司？",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#7$1"
+        },
+        {
+            "id": 477,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 478,
+            "prop": "name",
+            "attributes": {
+                "content": "呃、呕......那这汤其实就是它的洗澡水吧！",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 479,
+            "prop": "name",
+            "attributes": {
+                "content": "呕！我刚喝了一口！",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 480,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 481,
+            "prop": "name",
+            "attributes": {
+                "content": "（啊啊，“不死的魔物”，好好奇它的味道......）",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#12$1"
+        },
+        {
+            "id": 482,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "没错，在下就是大祭司！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "你们的诉求我在泡澡时已经全部搞清楚了！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 485,
+            "prop": "name",
+            "attributes": {
+                "content": "既然你们的同伴中毒了，我绝对不会坐视不管！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 486,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#16$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 487,
+            "prop": "name",
+            "attributes": {
+                "content": "我们好像没说过......",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#16$1"
+        },
+        {
+            "id": 488,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "name",
+            "attributes": {
+                "content": "咳咳！要解你们同伴中的毒......",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 490,
+            "prop": "name",
+            "attributes": {
+                "content": "最好的办法就是喝下这锅药浴里的水！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 491,
+            "prop": "name",
+            "attributes": {
+                "content": "喝下这么难喝的药浴水，想必连疯疯癫癫的野狼都会清醒过来吧！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 492,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "name",
+            "attributes": {
+                "content": "难、难喝？",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#4$1"
+        },
+        {
+            "id": 494,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#16$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "name",
+            "attributes": {
+                "content": "一锅汤要是难喝，肯定是主要食材负最多的责任吧......",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#16$1"
+        },
+        {
+            "id": 496,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 497,
+            "prop": "name",
+            "attributes": {
+                "content": "既然大祭司发话了，那就请你们的同伴喝下有着大祭司祝福的热汤吧！",
+                "name": "阿达克利斯A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 498,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 499,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 500,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_drinkswllw",
+                "volume": 1.0,
+                "channel": "2"
+            }
+        },
+        {
+            "id": 501,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 502,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_drinkswllw",
+                "volume": 1.0,
+                "channel": "2"
+            }
+        },
+        {
+            "id": 503,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 504,
+            "prop": "name",
+            "attributes": {
+                "content": "嘶......呜......",
+                "name": "玛露西尔"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "name",
+            "attributes": {
+                "content": "好奇怪的热汤......",
+                "name": "玛露西尔"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "name",
+            "attributes": {
+                "content": "......呃......好吵......",
+                "name": "玛露西尔"
+            }
+        },
+        {
+            "id": 507,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 508,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "name",
+            "attributes": {
+                "content": "太好了，看来大祭司汤真的有用！",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 510,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 511,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 512,
+            "prop": "name",
+            "attributes": {
+                "content": "大祭司......汤？",
+                "name": "玛露西尔"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "name",
+            "attributes": {
+                "content": "糟了！",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#7$1"
+        },
+        {
+            "id": 515,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 516,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 517,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#11$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 518,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 519,
+            "prop": "name",
+            "attributes": {
+                "content": "玛露西尔努力地睁开眼睛——"
+            }
+        },
+        {
+            "id": 520,
+            "prop": "name",
+            "attributes": {
+                "content": "一只会说话的魔物！还是活的！正在汤锅里不断地品尝着汤料，而面前碗中的汤正散发着和锅里的同样的香味。"
+            }
+        },
+        {
+            "id": 521,
+            "prop": "name",
+            "attributes": {
+                "content": "同时，莱欧斯已经拿着勺子，眼疾手快地伸进锅里，舀出一勺，送进他自己的嘴里。"
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "玛露西尔咂了咂嘴后，终于仿佛回过神来一般尖叫出声——"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 524,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#22$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 525,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 526,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 528,
+            "prop": "name",
+            "attributes": {
+                "content": "魔、魔物？！！",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#2$1"
+        },
+        {
+            "id": 529,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 530,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 531,
+            "prop": "name",
+            "attributes": {
+                "content": "啊——",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#10$1"
+        },
+        {
+            "id": 532,
+            "prop": "name",
+            "attributes": {
+                "content": "我不要——",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#10$1"
+        },
+        {
+            "id": 533,
+            "prop": "name",
+            "attributes": {
+                "content": "我再也不要吃魔物了——！！！",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#10$1"
+        },
+        {
+            "id": 534,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 535,
+            "prop": "name",
+            "attributes": {
+                "content": "嘿嘿，汤挺香的。",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 536,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "哇哈哈哈哈！小子，你的食物品味好差！！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 538,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 539,
+            "prop": "name",
+            "attributes": {
+                "content": "大祭司......？",
+                "name": "森西"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 540,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "name",
+            "attributes": {
+                "content": "嘘！我知道你要问什么！我大概明白是怎么一回事了......嗯，原来如此，现在还不是时候。",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 542,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 543,
+            "prop": "name",
+            "attributes": {
+                "content": "时候？",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#1$1"
+        },
+        {
+            "id": 544,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "name",
+            "attributes": {
+                "content": "哦哦，没什么......你们要找罗德岛是吧？",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 546,
+            "prop": "name",
+            "attributes": {
+                "content": "找罗德岛就对了！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 547,
+            "prop": "name",
+            "attributes": {
+                "content": "你们走的方向没错！继续走下去，肯定没问题！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 548,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 549,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-200,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 550,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 551,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 552,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 553,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 554,
+            "prop": "name",
+            "attributes": {
+                "content": "啊啊？又消失了？",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#8$1"
+        },
+        {
+            "id": 555,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 556,
+            "prop": "name",
+            "attributes": {
+                "content": "它的意思是，我们走的方向是对的？啊......感觉是一句好没有用的废话......",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#10$1"
+        },
+        {
+            "id": 557,
+            "prop": "name",
+            "attributes": {
+                "content": "......我们到现在都没有什么方向啊！",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#10$1"
+        },
+        {
+            "id": 558,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 559,
+            "prop": "name",
+            "attributes": {
+                "content": "所以，玛露西尔，你究竟为什么乱吃果子......",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#1$1"
+        },
+        {
+            "id": 560,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 561,
+            "prop": "name",
+            "attributes": {
+                "content": "......它长得很像木莓。",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#11$1"
+        },
+        {
+            "id": 562,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 563,
+            "prop": "name",
+            "attributes": {
+                "content": "木莓？",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#8$1"
+        },
+        {
+            "id": 564,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 565,
+            "prop": "name",
+            "attributes": {
+                "content": "......我和法琳第一次见面的时候，法琳给我吃过木莓，我在这里看到了长得一模一样的果子......",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#11$1"
+        },
+        {
+            "id": 566,
+            "prop": "name",
+            "attributes": {
+                "content": "我以为那个也是木莓呢，而且有小鸟在那里吃，我就摘了两个......",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#11$1"
+        },
+        {
+            "id": 567,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 568,
+            "prop": "name",
+            "attributes": {
+                "content": "你之后就可以把这件事讲给她听了。",
+                "name": "莱欧斯"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 569,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#17$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 570,
+            "prop": "name",
+            "attributes": {
+                "content": "不过因为食物中毒遇上了很多麻烦呢！",
+                "name": "齐尔查克"
+            },
+            "figure_art": "avg_4144_chilc_1#17$1"
+        },
+        {
+            "id": 571,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 572,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 573,
+            "prop": "name",
+            "attributes": {
+                "content": "唔，啰嗦！",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#12$1"
+        },
+        {
+            "id": 574,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#17$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 575,
+            "prop": "name",
+            "attributes": {
+                "content": "走吧，我们继续去找罗德岛吧！",
+                "name": "玛露西尔"
+            },
+            "figure_art": "avg_4141_marcil_1#17$1"
+        },
+        {
+            "id": 576,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 577,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 578,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 579,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 580,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 581,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 582,
+            "prop": "Image",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": true
+}
