@@ -1,0 +1,4564 @@
+{
+    "lang": "ja_JP",
+    "eventid": "main_14",
+    "eventName": "慈悲光塔",
+    "entryType": "MAINLINE",
+    "storyCode": "14-16",
+    "avgTag": "戦闘前",
+    "storyName": "舷側エリアを占拠",
+    "storyInfo": "ドクターとWは不思議な協力関係を結んで飛空船のコアを探し続けるも、当時テレジアを暗殺した刺客によく似た敵に遭遇した。今彼らはすでに軍事委員会側に立っている。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 2,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 4,
+            "prop": "image",
+            "attributes": {
+                "image": "49_i22",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "cameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "amount": 0.7,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 7,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$loneliness_intro",
+                "key": "$loneliness_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "name",
+            "attributes": {
+                "content": "ずっと思っていたのよ、あなたはいつになったら会いに来てくれるのかって。",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "name",
+            "attributes": {
+                "content": "でも残念なことに少し遅かったわ、最も素晴らしい瞬間を見逃したわね。",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "name",
+            "attributes": {
+                "content": "最初に芽を出した花は昨晩に枯れて死んでしまったけど、でも今のその花を見てみて。",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "いまだ生気に満ちている。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "name",
+            "attributes": {
+                "content": "以前と何の違いも見られないな。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "name",
+            "attributes": {
+                "content": "そうでしょう。",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "name",
+            "attributes": {
+                "content": "それは枯れた中から生まれて、あっという間にこんなにもすくすくと育った――",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ、あなたも源石に起きたこの奇跡をその目で見られたら、どれほどよかったことか……",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 19,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "源石から誕生したこの花畑には、彼女の心血がこれ以上ないというほどに注がれている。"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "name",
+            "attributes": {
+                "content": "戦争を別にして、テレジアがサルカズのために探求するもう一つの道はすぐ目の前にある。"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、この道の未来は一体どこへ通じているのだろう？"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクターをこの花畑に連れてきてから、君はより多くの時間をここで過ごすようになったな。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "バベルにはまだ、議長である君が対処しなければならないことがたくさんある。それなのに、君は今日の全体会議も欠席した。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "name",
+            "attributes": {
+                "content": "今はケルシーがいるだけじゃなくて、ドクターも力になってくれるのよ。私がたまにこっそりサボったところで大したことはないわ。違う？",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "name",
+            "attributes": {
+                "content": "君のことは理解している、テレジア。本当の「大したこと」に関して、君は決して冗談は言わない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシー……",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "name",
+            "attributes": {
+                "content": "何だ？",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクターはあなたに自分の考えを話したことがあるかしら？",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "name",
+            "attributes": {
+                "content": "いいえ。ドクターが君に何を言ったかは知らないが、きっと君の考えを全面的に支持してはいないだろう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "……私は諦めないわ、ケルシー。",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "もしこれが今のサルカズの苦境を解決する方法ならば、私はテレシスを訪ねに行くわ。",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "name",
+            "attributes": {
+                "content": "私はこの道を全てのサルカズに示すわ。私たちの宿命は決して、恨みの中で無限に輪廻するだけではないんだから。",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "name",
+            "attributes": {
+                "content": "テレジア――",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシー、まずは私の話を聞いて。",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "name",
+            "attributes": {
+                "content": "リスクが潜んでいる恐れがあるのはよく理解しているの。でも私はあなたを信じているわ。",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "name",
+            "attributes": {
+                "content": "もし私がこの道において制御できない未来に向かうなら、どうか私を引き止めてちょうだい。",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたなら、それができると分かっているわ。たとえあなたがいつも多くのことについて黙っていたとしても。",
+                "name": "テレジア"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "name",
+            "attributes": {
+                "content": "もし本当に君の期待するその未来を実現したいなら、我々はやはりドクターの支持を勝ち取らねばならない。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 41,
+            "prop": "name",
+            "attributes": {
+                "content": "源石を利用するということにおいて、ドクターは……唯一無二の存在だ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "name",
+            "attributes": {
+                "content": "だが結末がどうであれ……",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "name",
+            "attributes": {
+                "content": "……その時に、私は君のそばにいることを約束しよう。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 45,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 46,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 49,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 50,
+            "prop": "Background",
+            "attributes": {
+                "image": "37_g9_airshipdockcorridor",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "cameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "amount": 0.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 52,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 53,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 4.0,
+                "xstrength": 35.0,
+                "ystrength": 35.0,
+                "vibrato": 90.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_explodebris",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 55,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$glass",
+                "volume": 0.6,
+                "delay": 0.5
+            }
+        },
+        {
+            "id": 56,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_snowstormlp",
+                "loop": "true",
+                "channel": "bgs",
+                "volume": 0.1
+            }
+        },
+        {
+            "id": 57,
+            "prop": "SoundVolume",
+            "attributes": {
+                "channel": "bgs",
+                "volume": 0.5,
+                "fadetime": 4.0
+            }
+        },
+        {
+            "id": 58,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$corrosion_intro",
+                "key": "$corrosion_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 59,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 61,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$p_skill_Mon3trburst",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 62,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 63,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 64,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "name",
+            "attributes": {
+                "content": "（威嚇する唸り声）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 66,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 67,
+            "prop": "name",
+            "attributes": {
+                "content": "こいつのことは捕まえてるから、叫ぶんじゃないわよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 68,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#13$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "name",
+            "attributes": {
+                "content": "フッ、放さないから、安心なさい。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#13$1"
+        },
+        {
+            "id": 70,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 71,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 72,
+            "prop": "name",
+            "attributes": {
+                "content": "強風が耳元で唸り、割れた船窓からは下方のザ・シャードと見るも無残な戦場が見えた。"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "激しい爆発の連続であなたは今にも投げ出されそうになる。そしてこの瞬間あなたを掴んでいる人物は……Wなのだ。"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 75,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……;……",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line76",
+                "option2": "line76"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "これほどまでに真剣な顔をするWを見ることはめったにない。"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 79,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$Mon3tr_n"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "（焦ったように低く唸る）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "今すごく大事なことを考えてるのよ、Mon3tr。いいから邪魔しないで。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 84,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#10$1"
+        },
+        {
+            "id": 86,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#10$1"
+        },
+        {
+            "id": 87,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#15$1"
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "あのクソババアは当てになんないけど、あいつがあんたを危険にさらすようなことはしない。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#15$1"
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "なのに、こんなに危険な乗り込み作戦に、あいつはあんたを連れて行くことにこだわった。それなら――",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#15$1"
+        },
+        {
+            "id": 91,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "……このぼろ船を止めて殿下に会うには、きっとあんたが使えるってことよね。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 93,
+            "prop": "name",
+            "attributes": {
+                "content": "*サルカズスラング*。ひとまず見逃してやるしかないわね。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "上がってきなさい。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 95,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 96,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 97,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovementsp",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 98,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 20.0,
+                "ystrength": 30.0,
+                "vibrato": 90.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "stopSound",
+            "attributes": {
+                "channel": "bgs",
+                "fadetime": 2.5
+            }
+        },
+        {
+            "id": 100,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 101,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 102,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……感謝する。;今のは――",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line103",
+                "option2": "line103"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 104,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "別に何でもなかった。いいわね。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#10$1"
+        },
+        {
+            "id": 106,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "name",
+            "attributes": {
+                "content": "次はどう行けばいいの？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#12$1"
+        },
+        {
+            "id": 108,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 109,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line111"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 112,
+            "prop": "Decision",
+            "attributes": {
+                "options": "まだ背後で爆弾の鳴る音が聞こえる。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line113"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 114,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 115,
+            "prop": "name",
+            "attributes": {
+                "content": "位置を特定するためのものよ。爆発は付随機能だとでも思ってちょうだい。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "あんたまで連れ去られたら、見つけに行かないといけないわけだし――",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 117,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#13$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "name",
+            "attributes": {
+                "content": "そうよ！　抜かったわね。どうしてあの時クソババアに付けるのを忘れたのかしら！",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#13$1"
+        },
+        {
+            "id": 119,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$Mon3tr_n"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "（不満そうに低く唸る）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 122,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "name",
+            "attributes": {
+                "content": "あんたにはあげるだけ無駄よ、ペットちゃん。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "ほら、さっさとどう行くか考えなさい、すかすか缶詰。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 125,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "時間はあんまりないの。このぼろ船はすぐにでも外のあの奇妙な物体にぶつかろうとしてるのよ……",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#12$1"
+        },
+        {
+            "id": 127,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "name",
+            "attributes": {
+                "content": "死ぬにしても殿下に会ってから死になさい。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 129,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 130,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "Decision",
+            "attributes": {
+                "options": "船に乗り込んでから、君はずっと気が急いている。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line132"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 133,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#13$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "name",
+            "attributes": {
+                "content": "へぇ？　あんたの命を助けてやったのよ。普段よりも落ち着いてると思わない？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#13$1"
+        },
+        {
+            "id": 135,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 136,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#13$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……テレジアに会えるからか？;……ヘドリーとイネスが心配だからか？;……自分と二人きりになるのは初めてだからか？",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line138",
+                "option2": "line144",
+                "option3": "line149"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line153"
+        },
+        {
+            "id": 139,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#6$1"
+        },
+        {
+            "id": 141,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "name",
+            "attributes": {
+                "content": "今のあたしはクソババアの代わりに子守をして、どうやって船のコアをぶっ壊すかも考えなきゃいけないのよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 143,
+            "prop": "name",
+            "attributes": {
+                "content": "あんたのクイズに付き合ってる暇はないの。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 144,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line153"
+        },
+        {
+            "id": 145,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "name",
+            "attributes": {
+                "content": "チッ、あの二人のどこに心配の必要があるの？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 147,
+            "prop": "name",
+            "attributes": {
+                "content": "イネスは、死人を生き返らすことにかけては手慣れてるのよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "うまくやるはずよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 149,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line153"
+        },
+        {
+            "id": 150,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "name",
+            "attributes": {
+                "content": "……あたしを挑発するつもり？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 152,
+            "prop": "name",
+            "attributes": {
+                "content": "今でなければ、そもそもあんたがこんな質問する機会なんてないと断言してやるわ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 153,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 154,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "name",
+            "attributes": {
+                "content": "だからもう、うぬぼれたバカな話でこれ以上イラつかせないで――",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 156,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 157,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 158,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 159,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_erthshkng",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "shake"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.0,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 90.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "shake",
+                "fadetime": 4.0
+            }
+        },
+        {
+            "id": 162,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 163,
+            "prop": "name",
+            "attributes": {
+                "content": "影が金属から浮かび上がる。それらが至る所に存在する。"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "name",
+            "attributes": {
+                "content": "レヴァナントが、至る所に存在する。"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "それはすでに、Wの目の前まで来ていた。"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 167,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$katzdale_intro",
+                "key": "$katzdale_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 168,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_humanchange",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 169,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1340_1#1$1",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 170,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 171,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1340_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "name",
+            "attributes": {
+                "content": "貴様もサルカズだろう！　サルカズの魂の怒りを、サルカズの魂の哮りを、貴様は無視できるというのか！",
+                "name": "船室内の影"
+            },
+            "figure_art": "avg_npc_1340_1#1$1"
+        },
+        {
+            "id": 173,
+            "prop": "name",
+            "attributes": {
+                "content": "貴様は――",
+                "name": "船室内の影"
+            },
+            "figure_art": "avg_npc_1340_1#1$1"
+        },
+        {
+            "id": 174,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 175,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 176,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 177,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.5,
+                "xstrength": 35.0,
+                "ystrength": 35.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 181,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 184,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#13$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "あら、手が滑ったわ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#13$1"
+        },
+        {
+            "id": 186,
+            "prop": "name",
+            "attributes": {
+                "content": "ところで、あんた今何て言おうとしてたの？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#13$1"
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "待って、まさか殿下が今どこにいるかをわざわざ教えに来てくれたのかしら？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#13$1"
+        },
+        {
+            "id": 188,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1340_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "multiline",
+            "attributes": {
+                "name": "船室内の影",
+                "content": "……"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "multiline",
+            "attributes": {
+                "name": "船室内の影",
+                "content": "……"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "multiline",
+            "attributes": {
+                "name": "船室内の影",
+                "content": "……"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 193,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 194,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_planeshake",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 195,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_erthshkng",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "shake1"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_scratchmetalwall",
+                "volume": 1.0,
+                "delay": 2.0
+            }
+        },
+        {
+            "id": 197,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.0,
+                "xstrength": 25.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "金属の引き裂かれる音が絶えず響き、飛空船が怒号を上げる。"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 201,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "name",
+            "attributes": {
+                "content": "（緊張するようにあなたの服を引っかける）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 203,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 204,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 205,
+            "prop": "Decision",
+            "attributes": {
+                "options": "飛空船が……怒っている？;レヴァナントが……怒っている？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line206",
+                "option2": "line206"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 207,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "ふーん、あいつも気が短いみたいね……",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#6$1"
+        },
+        {
+            "id": 209,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "あんた、今のうちに、このぼろ船でエネルギーの波動が最も激しい場所を見つけられないの？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "そこにきっとコアがあるわよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 212,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 213,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……;……そういうのはできない。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line215",
+                "option2": "line215"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 216,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 218,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "（あざ笑うようにWを見る）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 220,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 221,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 222,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……待て、別の手がある。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line223"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 224,
+            "prop": "Decision",
+            "attributes": {
+                "options": "源石濃度変化が最も顕著な位置を算出できるかも！",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line225"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 226,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_sandstormimpact",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 227,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.0,
+                "xstrength": 45.0,
+                "ystrength": 45.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 229,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "name",
+            "attributes": {
+                "content": "ならさっさとしなさいよ！　あいつの気の短さは想像以上よ！",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#4$1"
+        },
+        {
+            "id": 231,
+            "prop": "multiline",
+            "attributes": {
+                "name": "W",
+                "content": "マナーがなってなさそうだし、あんたの計算が終わるのを待ってくれないわよ……"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "multiline",
+            "attributes": {
+                "name": "W",
+                "content": "それじゃあ……"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#13$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "ねえ、影の怪物。お客さんがあんたの家にプレゼントを贈るのは別にいいわよね？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#13$1"
+        },
+        {
+            "id": 236,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "受け取りなさい！",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#7$1"
+        },
+        {
+            "id": 238,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 239,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 240,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 241,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.0,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 242,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 243,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "ペットちゃん、そいつを守れなかったら、クソババアにきっとグチグチ言われるわよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 245,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$char_Mon3tr",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "（高ぶった雄たけび）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 248,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 249,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 250,
+            "prop": "Decision",
+            "attributes": {
+                "options": "こっちだ！　だが壁が分厚くて、爆弾では破れない――",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line251"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 252,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "name",
+            "attributes": {
+                "content": "こいつがいるの忘れたの？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 254,
+            "prop": "name",
+            "attributes": {
+                "content": "前にテストしたけど、単に身体が頑丈なだけじゃないわ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 255,
+            "prop": "name",
+            "attributes": {
+                "content": "それに掴まりなさい、ドクター！　あたしが大きな花火を打ち上げてあげる！",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 256,
+            "prop": "name",
+            "attributes": {
+                "content": "爆発の瞬間に、こいつにあんたを守らせながら全力で突っ込んでもらうから！",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 257,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#13$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "分かったかしら、ペットちゃん？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#13$1"
+        },
+        {
+            "id": 259,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 260,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$char_Mon3tr",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 261,
+            "prop": "name",
+            "attributes": {
+                "content": "（興奮した雄たけび）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 262,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#13$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "なら準備しなさい。三！　二！　一！",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#13$1"
+        },
+        {
+            "id": 264,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "name",
+            "attributes": {
+                "content": "「パァン」！",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#7$1"
+        },
+        {
+            "id": 266,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 267,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 268,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 269,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.5,
+                "xstrength": 50.0,
+                "ystrength": 50.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.8,
+                "block": "true"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 279,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 280,
+            "prop": "Decision",
+            "attributes": {
+                "options": "よく見えない――;少し頭がクラクラする――",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line281",
+                "option2": "line281"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 282,
+            "prop": "name",
+            "attributes": {
+                "content": "もう……すぐよ……",
+                "name": "W"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 284,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_tinnitus",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 285,
+            "prop": "Decision",
+            "attributes": {
+                "options": "耳が少し……聞こえにくい……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line286"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 287,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 288,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 289,
+            "prop": "stopSound",
+            "attributes": {
+                "channel": "shake1",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 290,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 293,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 296,
+            "prop": "Background",
+            "attributes": {
+                "image": "37_g9_airshipdockcorridor",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 299,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$ponder_intro",
+                "key": "$ponder_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 300,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 302,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "name",
+            "attributes": {
+                "content": "ふ、{@nickname}、調子はどう？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "今また壁を触ってみたけど、あんたたちがそこまで正確に爆発地点に突っ込む必要はなかったみたいね。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 305,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "name",
+            "attributes": {
+                "content": "無駄につらい思いさせちゃって、ほんとごめんなさいね。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#2$1"
+        },
+        {
+            "id": 307,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 308,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 309,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line310"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 311,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$char_Mon3tr",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 313,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.0,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "name",
+            "attributes": {
+                "content": "（怒ったように爪を振り回す）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 315,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "name",
+            "attributes": {
+                "content": "危ないからじっとしてなさい。そいつの体格はあんたほどじゃないのよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 317,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 318,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 319,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Mon3tr、大丈夫だ、下ろしてくれ……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line320"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 321,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "name",
+            "attributes": {
+                "content": "あんた「顔色」が随分と悪いわね。フッ、あたしの前でふりしなくていいわよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#11$1"
+        },
+        {
+            "id": 323,
+            "prop": "name",
+            "attributes": {
+                "content": "この程度のこと、あんたが耐えられないはずないでしょう。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#11$1"
+        },
+        {
+            "id": 324,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 325,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#11$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ケルシーが心配だ……;もしアーミヤも同じ目に遭っていたら……",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line327",
+                "option2": "line341"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line353"
+        },
+        {
+            "id": 328,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "クソババアがこんなにか弱かったとは記憶してないけど、あいつは――",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#11$1"
+        },
+        {
+            "id": 330,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#12$1"
+        },
+        {
+            "id": 332,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "name",
+            "attributes": {
+                "content": "（ケルシーの呼吸はそこまで荒くなかったけど、傷は確かにまだ治りきってなさそうだわ……それにペットもこっちにいるわけだし……）",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#10$1"
+        },
+        {
+            "id": 334,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$Mon3tr_n"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "（落ち込んだように唸る）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 337,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "name",
+            "attributes": {
+                "content": "わめくんじゃないわよ、ウザい。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 339,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 340,
+            "prop": "name",
+            "attributes": {
+                "content": "あんたがまだピンピンしてるってことは、ババアの方は無事よ……",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#12$1"
+        },
+        {
+            "id": 341,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line353"
+        },
+        {
+            "id": 342,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "イネスから聞いたけど、子ウサギはノーポート区で一度あいつに立ち向かったことがあるそうじゃない。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#11$1"
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "どう対処するかについては、あたしたちよりも経験が豊富だわ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#11$1"
+        },
+        {
+            "id": 345,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 346,
+            "prop": "name",
+            "attributes": {
+                "content": "ハンッ、レヴァナントよりも、あんたがあたしの手に落ちたことの方があの子は心配かもね。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 347,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$p_skill_Mon3trburst",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "（威嚇する雄たけび）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 350,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "黙りなさい。ここにはあんたの後ろ盾のババアはいないのよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "子ウサギなら大丈夫。あたしが言うんだもの。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 353,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 354,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "name",
+            "attributes": {
+                "content": "{@nickname}、ぐずぐずしてないで、行くわよ――",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#12$1"
+        },
+        {
+            "id": 356,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 357,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 358,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 359,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#8$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "Wは廊下を歩きながら、なんとなくガラス越しに窓の外を見ると、一瞬うわの空になった。"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#8$1"
+        },
+        {
+            "id": 363,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "行きましょう、観光してる暇はないわよ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#12$1"
+        },
+        {
+            "id": 365,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 366,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは窓辺に寄り、下に広がる戦場を見下ろした。"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "name",
+            "attributes": {
+                "content": "「諸王の息」が発する金色の光はいまだ空で輝いている。今頃ヴィクトリアの反撃が行われているはずだろう。"
+            }
+        },
+        {
+            "id": 369,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 370,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ヴィクトリアの反撃が始まっている。;ロドスの皆が力になっているといいが……",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line371",
+                "option2": "line371"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 372,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "name",
+            "attributes": {
+                "content": "下は今地獄よ、見なくていいわ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#12$1"
+        },
+        {
+            "id": 374,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 375,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君は今……戦場に心を痛めていたのか？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line377"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 378,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "name",
+            "attributes": {
+                "content": "……サルカズはもう十分すぎるほど死んだわ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#12$1"
+        },
+        {
+            "id": 380,
+            "prop": "name",
+            "attributes": {
+                "content": "ついてきなさい。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#12$1"
+        },
+        {
+            "id": 381,
+            "prop": "name",
+            "attributes": {
+                "content": "あたしには殿下に聞きたいことがたくさんあるの。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#12$1"
+        },
+        {
+            "id": 382,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 383,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "name",
+            "attributes": {
+                "content": "（警戒するように見回す）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 385,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 386,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 387,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……Mon3tr？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line388"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 389,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "npc_10002",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$p_skill_Mon3trburst",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 391,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_land_impact",
+                "volume": 0.8,
+                "delay": 0.2
+            }
+        },
+        {
+            "id": 392,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_scratchmetalwall",
+                "volume": 1.0,
+                "delay": 0.4
+            }
+        },
+        {
+            "id": 393,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.0,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 395,
+            "prop": "name",
+            "attributes": {
+                "content": "（怒って地面を攻撃する）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "npc_10002"
+        },
+        {
+            "id": 396,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$plot_intro",
+                "key": "$plot_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 397,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 398,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_shdwspllshrt",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 399,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "style": "slider",
+                "inverse": "true",
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 402,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 404,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "style": "slider",
+                "inverse": "true",
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "影の黒い波が音もなくあなたの足元から現れて、驚異的な速度であなたを廊下の果ての暗闇に引きずり込んだ。"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "鋭利な刃が首の後ろに当てられているのをあなたは感じる。"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 408,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ここにいるのはレヴァナントだけではない――！",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line409"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 410,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$p_skill_Mon3trburst",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 411,
+            "prop": "name",
+            "attributes": {
+                "content": "（低い雄たけび）",
+                "name": "Mon3tr"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 413,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": "黒い波が狂ったように抗うMon3trをきつく包み込み、体の自由を奪った。"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "*サルカズスラング*、あたしの目と鼻の先で人をさらおうなんていい度胸ね！",
+                "name": "W"
+            }
+        },
+        {
+            "id": 416,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 417,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 418,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista"
+            }
+        },
+        {
+            "id": 419,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone",
+                "volume": 0.8,
+                "delay": 0.4
+            }
+        },
+        {
+            "id": 420,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 0.6,
+                "delay": 0.7
+            }
+        },
+        {
+            "id": 421,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 427,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 429,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 430,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$p_skill_Mon3trburst",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 431,
+            "prop": "name",
+            "attributes": {
+                "content": "（怒ったような雄たけび）",
+                "name": "Mon3tr"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "name",
+            "attributes": {
+                "content": "そいつを返しなさい！",
+                "name": "W"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 434,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 435,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは廊下の果ての暗闇の中に光がちらつくのが見えた。次の瞬間に聞こえてきたのは爆発の轟音だ。"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 437,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_explodebris",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 438,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 4.0,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "Background",
+            "attributes": {
+                "image": "37_g9_airshipdockcorridor",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 446,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "背中から伝わる衝撃は凄まじく、あなたは暗闇から勢いよく吹き飛ばされて地面にぶつかった。"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 449,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……痛い！;……背後の爆弾が！？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line450",
+                "option2": "line450"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 451,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "name",
+            "attributes": {
+                "content": "どうよ。位置を特定できる新型推進装置、なかなかいいでしょ？　言ったじゃないの、爆発はただの付随機能だって。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "でも二、三日は痛みが続くくらいの威力はあるわ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 454,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "アハッ、あたしたちってほんと息ぴったりね！",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#2$1"
+        },
+        {
+            "id": 456,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 457,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#2$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "Decision",
+            "attributes": {
+                "options": "こんな協力に応じていない！;事前に知らせるべきだ！",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line459",
+                "option2": "line459"
+            }
+        },
+        {
+            "id": 459,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 460,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "name",
+            "attributes": {
+                "content": "協力するかどうか、どう協力するかは、そもそもあたしに決定権があんのよ。勘違いしないで。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#1$1"
+        },
+        {
+            "id": 462,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#13$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "name",
+            "attributes": {
+                "content": "ねえ、中で隠れてる人、あんたも驚いたんじゃない？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#13$1"
+        },
+        {
+            "id": 464,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 465,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 466,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 467,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 468,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1307_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.7,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 469,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 470,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1307_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.7,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_1307_1#1$1"
+        },
+        {
+            "id": 472,
+            "prop": "name",
+            "attributes": {
+                "content": "お前はやはり何も変わらないな、W。",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_1307_1#1$1"
+        },
+        {
+            "id": 473,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 474,
+            "prop": "name",
+            "attributes": {
+                "content": "――？",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#5$1"
+        },
+        {
+            "id": 475,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 476,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$sacrifice_intro",
+                "key": "$sacrifice_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 477,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1307_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.7,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 478,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 480,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1307_1#1$1",
+                "posfrom": "0,0",
+                "posto": "200,0",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 481,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1307_1#1$1",
+                "bstart": 0.0,
+                "bend": 0.0,
+                "duration": 2.0,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 482,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 483,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1307_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "それ以上は進むな。",
+                "name": "飛空船の「亡霊」"
+            },
+            "figure_art": "avg_npc_1307_1#1$1"
+        },
+        {
+            "id": 485,
+            "prop": "name",
+            "attributes": {
+                "content": "お前もな、「ドクター」。",
+                "name": "飛空船の「亡霊」"
+            },
+            "figure_art": "avg_npc_1307_1#1$1"
+        },
+        {
+            "id": 486,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 487,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 488,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君は……生きた人間だ。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line489"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 490,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君に会ったことがあるか？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line491"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 492,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 494,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 496,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 497,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#9$1"
+        },
+        {
+            "id": 498,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 499,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 501,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 502,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女はバベルに戻ったあの日を思い出した。"
+            }
+        },
+        {
+            "id": 503,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 504,
+            "prop": "Image",
+            "attributes": {
+                "image": "49_i16_1",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "cameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "amount": 0.7,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 506,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 507,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 509,
+            "prop": "name",
+            "attributes": {
+                "content": "あのぼろぼろの扉を、血に染まったマークを……"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "そしてマスクの下に隠れた……殺人者を思い出した。"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "name",
+            "attributes": {
+                "content": "奴らがテレジアの命を奪った。"
+            }
+        },
+        {
+            "id": 512,
+            "prop": "name",
+            "attributes": {
+                "content": "あのテレジアの。"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 514,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 515,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 516,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 517,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 518,
+            "prop": "Background",
+            "attributes": {
+                "image": "37_g9_airshipdockcorridor",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 519,
+            "prop": "cameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "amount": 0.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 520,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1"
+            }
+        },
+        {
+            "id": 521,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 522,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 523,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 524,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 525,
+            "prop": "name",
+            "attributes": {
+                "content": "Wは自分が今、これ以上ないほどに冷静であることに気づいた。"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1035_wisdel_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "name",
+            "attributes": {
+                "content": "あんたは死ぬわ。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#12$1"
+        },
+        {
+            "id": 528,
+            "prop": "name",
+            "attributes": {
+                "content": "しかも、無様にね。",
+                "name": "W"
+            },
+            "figure_art": "avg_1035_wisdel_1#12$1"
+        },
+        {
+            "id": 529,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 530,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 531,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 532,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 533,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 534,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}

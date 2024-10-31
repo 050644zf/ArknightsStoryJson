@@ -1,0 +1,6682 @@
+{
+    "lang": "ja_JP",
+    "eventid": "main_14",
+    "eventName": "慈悲光塔",
+    "entryType": "MAINLINE",
+    "storyCode": "14-8",
+    "avgTag": "戦闘前",
+    "storyName": "近接支援に移行",
+    "storyInfo": "模範軍が戦場にて敵と接触し、カスター公爵もシージが国剣を携え前線へと出たことを知る。そしてエブラナ率いるダブリン部隊も戦場に加わり、ウェリントン公爵とナハツェーラーの王の対決も幕を開けた。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g2_mainbattlefield",
+                "xScale": 1.2,
+                "yScale": 1.2
+            }
+        },
+        {
+            "id": 4,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$frontline_intro",
+                "key": "$frontline_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 5,
+            "prop": "BackgroundTween",
+            "attributes": {
+                "xScale": 1.2,
+                "yScale": 1.2,
+                "duration": 10.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 7,
+            "prop": "delay",
+            "attributes": {
+                "time": 6.0
+            }
+        },
+        {
+            "id": 8,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_battlefield_environment",
+                "volume": 0.4,
+                "loop": "true",
+                "channel": "bgs"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g2_mainbattlefield",
+                "fadetime": 1.0,
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 10,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 11,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_405_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "name",
+            "attributes": {
+                "content": "何あれ……あの空飛んでる奴ら、一体何なの！？",
+                "name": "モーガン"
+            },
+            "figure_art": "avg_npc_405_1#4$1"
+        },
+        {
+            "id": 13,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4110_delphn_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "name",
+            "attributes": {
+                "content": "伏せて！",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_4110_delphn_1#3$1"
+        },
+        {
+            "id": 15,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 16,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 17,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 18,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 19,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 20,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_energycannon",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 21,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_explodebris",
+                "volume": 1.0,
+                "delay": 0.5
+            }
+        },
+        {
+            "id": 22,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 23,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.5,
+                "xstrength": 35.0,
+                "ystrength": 35.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 32,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 34,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_explodebris",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 35,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.0,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "bgeffect",
+            "attributes": {
+                "name": "$eb_smoke_l",
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 37,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 41,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 43,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_405_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "name",
+            "attributes": {
+                "content": "うっ……ゲホゲホッ！",
+                "name": "モーガン"
+            },
+            "figure_art": "avg_npc_405_1#11$1"
+        },
+        {
+            "id": 45,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_405_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "name",
+            "attributes": {
+                "content": "デルフィーンちゃん、その左手――",
+                "name": "モーガン"
+            },
+            "figure_art": "avg_npc_405_1#5$1"
+        },
+        {
+            "id": 47,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4110_delphn_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "name",
+            "attributes": {
+                "content": "……触っちゃダメです。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_4110_delphn_1#7$1"
+        },
+        {
+            "id": 49,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4110_delphn_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "今のは普通の砲撃じゃありません。腐食性を伴った……サルカズの巫術です。力が入りません……",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_4110_delphn_1#7$1"
+        },
+        {
+            "id": 51,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_405_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "name",
+            "attributes": {
+                "content": "じゃあ汚染区域に踏み込んだ人たちは……",
+                "name": "モーガン"
+            },
+            "figure_art": "avg_npc_405_1#4$1"
+        },
+        {
+            "id": 53,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4110_delphn_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "name",
+            "attributes": {
+                "content": "もう手遅れです。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_4110_delphn_1#2$1"
+        },
+        {
+            "id": 55,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_155_tiger_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "空を飛んでるやつも、地面から生えてきたやつも邪魔だし、それにあちこち結晶と粉塵だらけで、ちっとも前に進めやしねぇ！",
+                "name": "インドラ"
+            },
+            "figure_art": "avg_155_tiger_1#7$1"
+        },
+        {
+            "id": 57,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "サルカズの狙いは、戦場を自分たちの最も馴染み深い姿へと変えて我々を車から引きずり降ろし、行く手を塞いで不意打ちを食らわせることだろう。",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 59,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "歩兵同士が真っ向からぶつかり合えば、弾薬不足の状況下なら、サルカズの身体能力が優位に働くのは間違いないからな。",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 61,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_155_tiger_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "よく分かったぜ。汚ねぇ手しか使えねぇってことか！",
+                "name": "インドラ"
+            },
+            "figure_art": "avg_155_tiger_1#9$1"
+        },
+        {
+            "id": 63,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "name",
+            "attributes": {
+                "content": "だから、ここで混乱に陥るわけにはいかん。ひとたび崩れれば、その瞬間に何もかも終わりだ。",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 65,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "name",
+            "attributes": {
+                "content": "モーガン、動かせる車両は全て動員しろ。サルカズ歩兵との接近戦は避けるようにな。",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 67,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "name",
+            "attributes": {
+                "content": "もし車を壊されても、車上に搭載された大砲はなるべく諦めるな。あれは我々が持つ一番効果の高い兵器だからな。",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 69,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_405_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "name",
+            "attributes": {
+                "content": "オッケー！",
+                "name": "モーガン"
+            },
+            "figure_art": "avg_npc_405_1#4$1"
+        },
+        {
+            "id": 71,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "name",
+            "attributes": {
+                "content": "デルフィーン、通信兵を可能な限り展開しろ。模範軍内部の連絡だけは、何としても確保してくれ。",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 73,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4110_delphn_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "はい。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_4110_delphn_1#3$1"
+        },
+        {
+            "id": 75,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "name",
+            "attributes": {
+                "content": "ここから先に進むためには、前方の可動式祭壇を片づける必要があるな。",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 77,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#7$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "ホルンさん、砲兵の援護が必要だ！",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#7$2"
+        },
+        {
+            "id": 79,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "name",
+            "attributes": {
+                "content": "了解！",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#1"
+        },
+        {
+            "id": 81,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 83,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.7,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.25,
+                "block": "true"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 88,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "インドラの部隊には敵の牽制を頼む。奴らが術師なのか、それともアーツによる造物かは分からんが、とにかく空に飛んでいる奴らの注意を引き付けろ！",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 90,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_155_tiger_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "あいよ。",
+                "name": "インドラ"
+            },
+            "figure_art": "avg_155_tiger_1#7$1"
+        },
+        {
+            "id": 92,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "name",
+            "attributes": {
+                "content": "ダグザの部隊は私についてこい。",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 94,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "いつも通りだな？",
+                "name": "ダグザ"
+            },
+            "figure_art": "avg_npc_396_1#9$1"
+        },
+        {
+            "id": 96,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "name",
+            "attributes": {
+                "content": "いつも通りだ。",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 98,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "コアが見えた――行動開始。",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 100,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 101,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 102,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 103,
+            "prop": "bgeffect",
+            "attributes": {}
+        },
+        {
+            "id": 104,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "またもやサルカズの巫術祭壇だ。"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "name",
+            "attributes": {
+                "content": "上に登り、思い切り跳び上がったら、ハンマーを叩きつける。"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "戦いが長引くにつれ、彼女たちはその悪魔の目のような戦争装置に慣れつつあった。"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "name",
+            "attributes": {
+                "content": "それは、戦争そのものに対しても同じだ。"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "インドラ、モーガン、ダグザたちは少し変わった。ヴィーナはしばしば、そう感じていた。同様の変化は、恐らく自分にも起こっているだろう。"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "name",
+            "attributes": {
+                "content": "それは、良い変化だと言えるだろうか？　またあるいは、自分たちは変わるのが遅すぎたのではないだろうか？"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "悪魔の真っ赤な瞳が彼女を見つめている。"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 114,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_singleblunt",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 115,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 117,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_land_impact",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 118,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 121,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_rockfall",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "ハンマーが勢いよく叩きつけられると、シージが地面に落ちる前に祭壇が崩れ始めた。"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "やったか……ふぅ。",
+                "name": "ダグザ"
+            },
+            "figure_art": "avg_npc_396_1#8$1"
+        },
+        {
+            "id": 125,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "この前よりも早く片付いたな。",
+                "name": "ダグザ"
+            },
+            "figure_art": "avg_npc_396_1#8$1"
+        },
+        {
+            "id": 127,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "name",
+            "attributes": {
+                "content": "……何か聞こえるぞ。",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 129,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#7$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "name",
+            "attributes": {
+                "content": "退がれ！",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#7$2"
+        },
+        {
+            "id": 131,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 132,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 133,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_energycannon",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 134,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_explodebris",
+                "volume": 1.0,
+                "delay": 0.5
+            }
+        },
+        {
+            "id": 135,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 137,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.5,
+                "xstrength": 35.0,
+                "ystrength": 35.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 146,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_155_tiger_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "name",
+            "attributes": {
+                "content": "んだよこれ……さっきぶっ壊したやつのすぐ近くに、祭壇がもう一個、地面から生えてきやがったぞ！",
+                "name": "インドラ"
+            },
+            "figure_art": "avg_155_tiger_1#9$1"
+        },
+        {
+            "id": 148,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_155_tiger_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "name",
+            "attributes": {
+                "content": "こんなもんが後いくつ埋まってんだ？　ふざけやがって……",
+                "name": "インドラ"
+            },
+            "figure_art": "avg_155_tiger_1#9$1"
+        },
+        {
+            "id": 150,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 151,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 152,
+            "prop": "name",
+            "attributes": {
+                "content": "次から次へと、際限なく湧いてくる。"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "シージはハンマーを固く握り締めた。"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女たちは確かにこの状況に順応しつつある。しかしそれでも、まだ速度が速いとは言えなかった。"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "name",
+            "attributes": {
+                "content": "……台座の位置に変化はあったか？",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 157,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "計画変更の知らせはまだ受け取っていない。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 159,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "name",
+            "attributes": {
+                "content": "やたらにでかい源石クラスターが至る所にあるが、船はまだ動かせそうか？",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 161,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "name",
+            "attributes": {
+                "content": "ヴィクトリアの擁する陸上艦隊はテラ一強大だ。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 163,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "name",
+            "attributes": {
+                "content": "行軍速度に影響はあるかもしれないが、お手上げというほどでもない。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 165,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 166,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 167,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone",
+                "volume": 0.3
+            }
+        },
+        {
+            "id": 168,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 175,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "……艦砲の音だ。",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 177,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "音から察するに、鉄公爵の「ガストレル」号だろう。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 179,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "name",
+            "attributes": {
+                "content": "我々の新たな進攻が始まった。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 181,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 182,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 184,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g4_warshipandswrdpedestal",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 187,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 188,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 194,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 196,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1337_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "アバーコーンの突撃艦がサルカズの先遣部隊と接触しました！",
+                "name": "上級士官"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "敵は霧の中に潜みながら、どこからともなく姿を現してくる上――",
+                "name": "上級士官"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "視界がクラスターに塞がれているせいで、敵の動向を捉えられません！",
+                "name": "上級士官"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 200,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "name",
+            "attributes": {
+                "content": "中距離通信は復旧したの？",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 202,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1337_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "name",
+            "attributes": {
+                "content": "艦載通信塔の故障がまだ直っていません。工兵部隊が修復に当たっていますが、この源石環境では……",
+                "name": "上級士官"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "……ところで公爵様、なぜ甲板までいらしたのですか？",
+                "name": "上級士官"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 205,
+            "prop": "name",
+            "attributes": {
+                "content": "どこもかしこも源石粉塵まみれです。司令室を離れない方が……",
+                "name": "上級士官"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 206,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "name",
+            "attributes": {
+                "content": "ウェリントンはどんな時でも「ガストレル」号の甲板に立ち、自ら前線部隊を指揮すると聞いたわ。",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 208,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1337_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "name",
+            "attributes": {
+                "content": "それは、鉄公爵は百戦錬磨のつわものですが、公爵様は……",
+                "name": "上級士官"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 210,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "今しがた、「ガストレル」号が砲撃したわね。",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 212,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "ええ、その通りです。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 214,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "ウェリントンはまだ前進しているの？",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 216,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "恐らくは。鉄公爵の部隊は、予想よりも敵陣の奥深くまで突撃しています。じきにサルカズの中心部隊とぶつかるはずです。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 218,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "彼は……",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#2$1"
+        },
+        {
+            "id": 220,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "まさか鉄公爵は、あのサルカズの君主の首を取ろうと考えているのでは？",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 222,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "……私の知るウェスリー・ウェリントンは鉄公爵となる前、一人の戦士だったわ。",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#2$1"
+        },
+        {
+            "id": 224,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "その勇敢さは狂気的とも言えるほどだったけれど……彼は決して、戦いを賭けだとは見なさなかった。",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 226,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "name",
+            "attributes": {
+                "content": "いずれにしろ、鉄公爵の無謀は我々に大きなリスクをもたらすことになります。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 228,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "当初の指令通り、アバーコーン公爵とアッシュワース公爵の部隊は鉄公爵と共に前進中です……我々の先遣部隊も同行しています。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 230,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "それに加え、源石による地形的な阻害を受けて、我々の戦線は引き延ばされています。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 232,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "「ガストレル」号に置いてきた「目」は？",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 234,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "何も見ておりません。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 236,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "我々「グレーシルクハット」間の通信にも……大幅な遅れが生じています。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 238,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "name",
+            "attributes": {
+                "content": "アイリーン、剣の台座の状態を確認してちょうだい。",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 240,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1337_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "今のところ問題ありません！",
+                "name": "上級士官"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "決してサルカズの巫術に台座を汚染させたりはいたしません。",
+                "name": "上級士官"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 243,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "公爵様、「詩人」が信号弾を発射しました。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 245,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "name",
+            "attributes": {
+                "content": "となれば、アレクサンドリナと「諸王の息」はすぐそこね。",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 247,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 248,
+            "prop": "name",
+            "attributes": {
+                "content": "部下にしっかり見張っておくよう伝えなさい。あの剣を見失ったりしないように。",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 249,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "name",
+            "attributes": {
+                "content": "「諸王の息」には、すぐにでも役目を果たしてもらわなければならないのよ。",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 251,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "name",
+            "attributes": {
+                "content": "通信が完全に復旧しない限り……「公爵連合軍」が真に成立することはありえないもの。",
+                "name": "カスター公爵"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 253,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 254,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 256,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g2_mainbattlefield",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1341_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 259,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1341_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 260,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 261,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 262,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "敵がどんどん強くなってきてるみたいだ。",
+                "name": "ダグザ"
+            },
+            "figure_art": "avg_npc_396_1#7$1"
+        },
+        {
+            "id": 264,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "name",
+            "attributes": {
+                "content": "同じ巫術でも……私らは蝕まれ、敵は逆に強化されてる。",
+                "name": "ダグザ"
+            },
+            "figure_art": "avg_npc_396_1#7$1"
+        },
+        {
+            "id": 266,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "name",
+            "attributes": {
+                "content": "シージ、危ない！",
+                "name": "ダグザ"
+            },
+            "figure_art": "avg_npc_396_1#11$1"
+        },
+        {
+            "id": 268,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "――",
+                "name": "サルカズ戦士"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 270,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 271,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 20.0,
+                "vibrato": 20.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "Effect",
+            "attributes": {
+                "name": "$e_spark_02_large",
+                "x": 0.0,
+                "y": 0.0,
+                "layer": 3.0
+            }
+        },
+        {
+            "id": 273,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_skulsrsword"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.3
+            }
+        },
+        {
+            "id": 278,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 280,
+            "prop": "name",
+            "attributes": {
+                "content": "うぐっ――！",
+                "name": "ダグザ"
+            },
+            "figure_art": "avg_npc_396_1#11$1"
+        },
+        {
+            "id": 281,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#7$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 282,
+            "prop": "name",
+            "attributes": {
+                "content": "ダグザ！",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#7$2"
+        },
+        {
+            "id": 283,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 284,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 285,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_singleblunt",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 286,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_land_impact",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 291,
+            "prop": "name",
+            "attributes": {
+                "content": "ハンマーの強烈な一撃によって、ナハツェーラーの戦士の肉体がひしゃげた。"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "しかしその身体は、なおもこちらに迫ってきている。"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#7$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "――！",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#7$2"
+        },
+        {
+            "id": 295,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 296,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 297,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_singleblunt",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 298,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_land_impact",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 301,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 303,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 304,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 305,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_singleblunt",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 306,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_land_impact",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "二発、三発と、立て続けにハンマーを打ちつける。"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "name",
+            "attributes": {
+                "content": "続いて、再び舞い戻ってきたダグザのメタルクローが、敵の胴体を裂く。"
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "とどめに、「グレーシルクハット」の炎を纏った刃が、敵の胸を刺し貫いた。"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 315,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "name",
+            "attributes": {
+                "content": "ぐっ……かはっ……！",
+                "name": "サルカズ戦士"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 317,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 318,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 319,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 320,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 321,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "name",
+            "attributes": {
+                "content": "ようやく一体か。前方には……まだまだ控えているな。",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 323,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "name",
+            "attributes": {
+                "content": "まったく、このサルカズたちは……",
+                "name": "「グレーシルクハット」"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 325,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_414_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "バケモノだ！",
+                "name": "ヴィクトリア兵士"
+            },
+            "figure_art": "avg_npc_414_1#1$1"
+        },
+        {
+            "id": 327,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_414_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 328,
+            "prop": "name",
+            "attributes": {
+                "content": "魔族どもは皆バケモノだ！　クソッ、奴らはそもそも生きてる人間じゃないんだ！",
+                "name": "ヴィクトリア兵士"
+            },
+            "figure_art": "avg_npc_414_1#1$1"
+        },
+        {
+            "id": 329,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_414_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 330,
+            "prop": "name",
+            "attributes": {
+                "content": "奴らに抗えるのなんて……死人くらいしか……",
+                "name": "ヴィクトリア兵士"
+            },
+            "figure_art": "avg_npc_414_1#1$1"
+        },
+        {
+            "id": 331,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "name",
+            "attributes": {
+                "content": "……死人？",
+                "name": "シージ"
+            },
+            "figure_art": "avgnew_112_siege_1#5$2"
+        },
+        {
+            "id": 333,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 334,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 335,
+            "prop": "name",
+            "attributes": {
+                "content": "辺りから奇妙な音が聞こえてくる。"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "それは源石クラスターが地面を貫く音とも、結晶や粉塵が弾ける前兆とも異なる音だった。"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_222_bpipe_1#6",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "name",
+            "attributes": {
+                "content": "隊長、このままだと埒が明かないよ！",
+                "name": "バグパイプ"
+            },
+            "figure_art": "avg_222_bpipe_1#6"
+        },
+        {
+            "id": 339,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_222_bpipe_1#6",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 340,
+            "prop": "name",
+            "attributes": {
+                "content": "倒せば倒すほど……敵がどんどん湧いてくる！",
+                "name": "バグパイプ"
+            },
+            "figure_art": "avg_222_bpipe_1#6"
+        },
+        {
+            "id": 341,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 342,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 343,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.7,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista"
+            }
+        },
+        {
+            "id": 346,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.25,
+                "block": "true"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 348,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "なら、目の前の一体に集中しなさい。",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 350,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "必ず誰か一体は先頭に出てくるわ。",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 352,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 353,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 354,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.7,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.25,
+                "block": "true"
+            }
+        },
+        {
+            "id": 358,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "盾を構え、砲撃をする。幾度となく繰り返してきた動作である。"
+            }
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "ヴィクトリアにはこの大地で最強の兵器がある。一発の砲弾には、サルカズが身に纏う甲冑を易々と破壊する力があるのだ。"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "しかしほどなくして、二人のサルカズが同時に突撃してきた。その次は三人の敵が押し寄せてくる。"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "砲火を全力で浴びせたところで、押し寄せる波をせき止めることは不可能だった。"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ……はぁ……",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 365,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 366,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "敵は無尽蔵に湧いてくる。"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "name",
+            "attributes": {
+                "content": "目の前には、立ち向かってくる敵もいれば、倒れている敵もいる。もはや彼女には、一体何人のサルカズがいるのかさえよく分からなくなっていた。"
+            }
+        },
+        {
+            "id": 369,
+            "prop": "name",
+            "attributes": {
+                "content": "倒れていったヴィクトリア人は、恐らくもっと多いだろう。"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "MusicVolume",
+            "attributes": {
+                "volume": 0.3,
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 371,
+            "prop": "name",
+            "attributes": {
+                "content": "バグパイプの叫び声と、破城矛の駆動音は変わらず聞こえてくる。それが彼女にとっては最大の慰めであり、戦い続けるための支えとなっていた。"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "突如、そう遠くないところで炎の光が揺らめいた。"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#2"
+        },
+        {
+            "id": 375,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "バグパイプ……",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#2"
+        },
+        {
+            "id": 377,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_222_bpipe_1#5",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 378,
+            "prop": "name",
+            "attributes": {
+                "content": "隊長、どうかした？",
+                "name": "バグパイプ"
+            },
+            "figure_art": "avg_222_bpipe_1#5"
+        },
+        {
+            "id": 379,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "name",
+            "attributes": {
+                "content": "いえ、なんだか……ヒルの顔がまた見えた気がして。",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#2"
+        },
+        {
+            "id": 381,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 382,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 383,
+            "prop": "name",
+            "attributes": {
+                "content": "そう、あれはヒルだ。"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "name",
+            "attributes": {
+                "content": "間違いない。時折悪夢の中に現れては、仲間がいかに無残に死んでいったかを告げてくる……裏切者の顔だ。"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "name",
+            "attributes": {
+                "content": "……死んだようね。",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#1"
+        },
+        {
+            "id": 387,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_222_bpipe_1#2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "name",
+            "attributes": {
+                "content": "それって……あそこに倒れてる人？　ずいぶん前に死んじゃったみたいだけど……あれ……？　隊長、今なんか……ひょっとして……",
+                "name": "バグパイプ"
+            },
+            "figure_art": "avg_222_bpipe_1#2"
+        },
+        {
+            "id": 389,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "動いた。",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 391,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "name",
+            "attributes": {
+                "content": "起き上がってくるの……",
+                "name": "ホルン"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 393,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_248",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "「副官ヒル」"
+            },
+            "figure_art": "avg_npc_248"
+        },
+        {
+            "id": 395,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 396,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 397,
+            "prop": "name",
+            "attributes": {
+                "content": "ウェリントン部隊の制服を着た男が、ふらふらとした足取りでこちらに向かってくる。"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "name",
+            "attributes": {
+                "content": "彼は刀を握り締めたまま、ホルンの目の前にいるサルカズに斬りかかった。"
+            }
+        },
+        {
+            "id": 399,
+            "prop": "name",
+            "attributes": {
+                "content": "分厚い甲冑によって攻撃はあえなく弾かれた。しかし彼は奇怪な方向に曲がった腕で、なおも続けざまに二撃、三撃目を繰り出し続ける。"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "その見慣れた顔が彼女たちの方へどんどん近付いてくる――"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "生気のない蒼白の中で、ただ一点の紫色だけが躍動していた。"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_222_bpipe_1#6",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "あの人だ。",
+                "name": "バグパイプ"
+            },
+            "figure_art": "avg_222_bpipe_1#6"
+        },
+        {
+            "id": 404,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_222_bpipe_1#6",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "これは――ダブリンの仕業だよ！",
+                "name": "バグパイプ"
+            },
+            "figure_art": "avg_222_bpipe_1#6"
+        },
+        {
+            "id": 406,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 407,
+            "prop": "MusicVolume",
+            "attributes": {
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 408,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 410,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g3_mainbattlefield_ex",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_244",
+                "bstart": 0.0,
+                "bend": 0.4,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 413,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_244",
+                "bstart": 0.0,
+                "bend": 0.4,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 414,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_244",
+                "bstart": 0.0,
+                "bend": 0.7,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 415,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": "「私が戦士の栄誉を手放すのは、今後ターラーの土地を二度と血に染めぬようにするため。そしてドラコの同族が二度と剣を向け合わぬようにするためである。」"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "name",
+            "attributes": {
+                "content": "「赤き龍の炎が、死した戦士を溶炉の中から蘇らせるような日が来ない限り、私の選択は変わらない。」"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 419,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "name",
+            "attributes": {
+                "content": "三陣目の祭壇、破壊完了！",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#3$1"
+        },
+        {
+            "id": 421,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "name",
+            "attributes": {
+                "content": "殿下、術師と飛行兵は配置につきました。最も大きな祭壇に接近しております！",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 423,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "name",
+            "attributes": {
+                "content": "倒れた同胞たちが魔族どもの汚染を食い止めてくれているとはいえ……この巫術の殺傷力は前代未聞です！",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 425,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "name",
+            "attributes": {
+                "content": "下がれ。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 427,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "name",
+            "attributes": {
+                "content": "……殿下？",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#4$1"
+        },
+        {
+            "id": 429,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "name",
+            "attributes": {
+                "content": "まさか……ご自分で祭壇を破壊しに行かれるおつもりで？",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#4$1"
+        },
+        {
+            "id": 431,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "name",
+            "attributes": {
+                "content": "お前たちは、臣下として最善を尽くした。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 433,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "name",
+            "attributes": {
+                "content": "ならば私も君主として、皆を率いて前へ進む。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 435,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "name",
+            "attributes": {
+                "content": "自ら足を踏み入れたのことない土地を己の国に変えるなど、できようはずもないからな。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 437,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "name",
+            "attributes": {
+                "content": "赤き龍の炎は……幾千年も前そうであったように、戦争の最前線に落とされるのだ。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 439,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 440,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 441,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 443,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fireburst",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 445,
+            "prop": "bgeffect",
+            "attributes": {
+                "name": "$eb_eblana_attack",
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 446,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 452,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "――祭壇が破壊されつつある！",
+                "name": "サルカズ戦士"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 454,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "陣形を維持せよ！　炎に追い散らされるな――アーツを放ち続けるんだ！",
+                "name": "サルカズ戦士"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 456,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "軟弱な異種族が、少しくらい増えただけで――",
+                "name": "サルカズ戦士"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 458,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 459,
+            "prop": "name",
+            "attributes": {
+                "content": "その言いざまは看過できん。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 460,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "name",
+            "attributes": {
+                "content": "我々はぬるま湯で生きてきたヴィクトリア人とは違うのだ。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 462,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "name",
+            "attributes": {
+                "content": "ターラーの戦士は皆、影の中に身を潜め、苦痛によって鍛えられてきた。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 464,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "name",
+            "attributes": {
+                "content": "我らは亡霊の名の下に、死と共に在ることの何たるかを最も熟知しているのさ。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 466,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "name",
+            "attributes": {
+                "content": "させるか――！",
+                "name": "サルカズ戦士"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 468,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "name",
+            "attributes": {
+                "content": "自らをアーツの材料とし……祭壇を起爆するつもりか？",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#2$1"
+        },
+        {
+            "id": 470,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "name",
+            "attributes": {
+                "content": "やってみるといい。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 472,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "name",
+            "attributes": {
+                "content": "ダメだ……！",
+                "name": "サルカズ戦士"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 474,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "name",
+            "attributes": {
+                "content": "間に……合わな……",
+                "name": "サルカズ戦士"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 476,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 477,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 478,
+            "prop": "blocker",
+            "attributes": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0,
+                "block": "true",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 479,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 480,
+            "prop": "name",
+            "attributes": {
+                "content": "命の灯が徐々に薄れていく。"
+            }
+        },
+        {
+            "id": 481,
+            "prop": "name",
+            "attributes": {
+                "content": "それに取って代わるように、紫に輝く死の炎が、死にゆくサルカズ戦士の身体とエブラナの瞳の中で躍り始めた。"
+            }
+        },
+        {
+            "id": 482,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 483,
+            "prop": "Image",
+            "attributes": {
+                "image": "50_i38",
+                "fadetime": 2.0,
+                "xScale": 1.3,
+                "yScale": 1.3,
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "ImageTween",
+            "attributes": {
+                "image": "50_i38",
+                "duration": 40.0,
+                "xScaleFrom": 1.3,
+                "yScaleFrom": 1.3,
+                "xScaleTo": 1.0,
+                "yScaleTo": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "blocker",
+            "attributes": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0,
+                "block": "true",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 486,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 487,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "死を司る王庭などは存在しない。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 489,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 490,
+            "prop": "name",
+            "attributes": {
+                "content": "サルカズ、確かにお前たちは死に慣れ親しんでいる。だがそれは所詮……争いを数多く経験してきただけのこと。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 491,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 492,
+            "prop": "name",
+            "attributes": {
+                "content": "見たか？　皆の者！",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 493,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 494,
+            "prop": "name",
+            "attributes": {
+                "content": "死は我らと共に在る！　我らが戦っているのは、正体不明の悪魔などではない！",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#3$1"
+        },
+        {
+            "id": 495,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "name",
+            "attributes": {
+                "content": "サルカズどもをハリボテの法陣から引きずり出し、我らの矢と砲撃を、とくと味わわせてやろうではないか！",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#3$1"
+        },
+        {
+            "id": 497,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 498,
+            "prop": "name",
+            "attributes": {
+                "content": "「将校」……お前の瞳に、炎が燃えている。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 499,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "name",
+            "attributes": {
+                "content": "ええ。私も、ターラーに生まれた数多の将士たちも、あまりに長い間待ち続けてきましたから。",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 501,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "name",
+            "attributes": {
+                "content": "我らは皆、帝国の弔鐘の伝説を聞いて育ち、熱き血潮を胸に軍人となったのです。",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 503,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 504,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが過去数十年に渡り、ウェリントン領と公爵様は抑圧を受け続け、我らもまた他の公爵たちの交渉のテーブルの間で板挟みにされ続けてきました。",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 505,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "name",
+            "attributes": {
+                "content": "熱き血を抱く多くの戦士たちは、出身を理由に弾圧されるか、ヴィクトリア人どもの陰謀によって屈辱と共に倒れるかのどちらかでした。",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#2$1"
+        },
+        {
+            "id": 507,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "私が長年耐え忍び、自らが策を弄する卑劣漢になることさえ甘んじて受け入れたのは、あくまで真の戦争のため。貴族どもが私欲で始めた戦争のためではありません。",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 509,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "こうした戦場の上でこそ、戦士たちの死は誉れ高く、意義あるものとなるのです。",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 511,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 512,
+            "prop": "name",
+            "attributes": {
+                "content": "もしも私がこの戦いで命を落とすことがあれば――",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#6$1"
+        },
+        {
+            "id": 513,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "name",
+            "attributes": {
+                "content": "その時はどうか殿下の炎を用いて、私を再び立ち上がらせてください！",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#3$1"
+        },
+        {
+            "id": 515,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 516,
+            "prop": "name",
+            "attributes": {
+                "content": "烈火が我が躯を灰にするまで、我らの理想の国が築かれるまでは――この武器を決して手放しはいたしません！",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#3$1"
+        },
+        {
+            "id": 517,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 518,
+            "prop": "name",
+            "attributes": {
+                "content": "よし、ならば私についてこい。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 519,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 520,
+            "prop": "name",
+            "attributes": {
+                "content": "見えるか……あの枯れ木の王座が。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 521,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "奴がサルカズの頭領ですか。",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 523,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 524,
+            "prop": "name",
+            "attributes": {
+                "content": "ナハツェーラー・ネツァレム。奴は、戦と死の王を自称している。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 525,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "name",
+            "attributes": {
+                "content": "サルカズの王庭は誇張した呼び名を好んでいるようです。",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 527,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 528,
+            "prop": "name",
+            "attributes": {
+                "content": "誇張？　……いいや。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 529,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 530,
+            "prop": "name",
+            "attributes": {
+                "content": "奴はただ年を食っているだけだ。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 531,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 532,
+            "prop": "name",
+            "attributes": {
+                "content": "だが生ける伝説は、奴一人だけではない。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 533,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 534,
+            "prop": "name",
+            "attributes": {
+                "content": "……その通りです！",
+                "name": "「将校」"
+            },
+            "figure_art": "avg_npc_723_1#3$1"
+        },
+        {
+            "id": 535,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 536,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "そう遠くないところで、艦砲が轟いている。"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "name",
+            "attributes": {
+                "content": "山を崩すほどの力は、無論、古の巫術だけには留まらない。"
+            }
+        },
+        {
+            "id": 539,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 540,
+            "prop": "name",
+            "attributes": {
+                "content": "戦争には戦争を……死には死を。",
+                "name": "エブラナ"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 541,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 542,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 543,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 544,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 545,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 546,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fireburst",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 547,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 548,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 549,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 550,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 551,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 552,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g3_mainbattlefield_ex",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 553,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 554,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 555,
+            "prop": "name",
+            "attributes": {
+                "content": "宗長、狩りに邪魔が入りました。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 556,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 557,
+            "prop": "name",
+            "attributes": {
+                "content": "あのドラコの炎に、我らの陣形が断ち切られたのです。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 558,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 559,
+            "prop": "name",
+            "attributes": {
+                "content": "……ドラコか。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 560,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 561,
+            "prop": "name",
+            "attributes": {
+                "content": "さる数千年前、故郷を失ったばかりの頃のサルカズも、かつてこの土地で赤き龍と刃を交えた。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 562,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 563,
+            "prop": "name",
+            "attributes": {
+                "content": "無数のサルカズたちが焔に焼かれ、焼け焦げた石と化した。彼らは今この時我らの足元に、我らの傍にいる。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 564,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 565,
+            "prop": "name",
+            "attributes": {
+                "content": "奴を仕留めます。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 566,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 567,
+            "prop": "name",
+            "attributes": {
+                "content": "赤き龍を食らえば、しばらくは我らの腹も満ちることでしょう。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 568,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 569,
+            "prop": "name",
+            "attributes": {
+                "content": "この戦争を支配しているのは、あいつではない。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 570,
+            "prop": "name",
+            "attributes": {
+                "content": "ナハツェーラーの王は戦場の一角に目を向けた。"
+            }
+        },
+        {
+            "id": 571,
+            "prop": "name",
+            "attributes": {
+                "content": "赤き龍がもたらした炎と煙の奥からは巨大な影が、身の丈とは不釣り合いな速度で彼らの元へ向かいつつある。"
+            }
+        },
+        {
+            "id": 572,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 573,
+            "prop": "name",
+            "attributes": {
+                "content": "大地にその影を投げかけ、一息で山河をも揺るがすことのできる巨物は――",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 574,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 575,
+            "prop": "name",
+            "attributes": {
+                "content": "もはや、赤き龍などではない。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 576,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 577,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 578,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 579,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g13_warshipcommandroom",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 580,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 581,
+            "prop": "name",
+            "attributes": {
+                "content": "「パラメータ設定完了！」"
+            }
+        },
+        {
+            "id": 582,
+            "prop": "name",
+            "attributes": {
+                "content": "「装填完了！」"
+            }
+        },
+        {
+            "id": 583,
+            "prop": "name",
+            "attributes": {
+                "content": "「ジャミング弾発射！」"
+            }
+        },
+        {
+            "id": 584,
+            "prop": "name",
+            "attributes": {
+                "content": "「目標捕捉――」"
+            }
+        },
+        {
+            "id": 585,
+            "prop": "name",
+            "attributes": {
+                "content": "「主砲、一回目、一斉掃射開始！」"
+            }
+        },
+        {
+            "id": 586,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 587,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone"
+            }
+        },
+        {
+            "id": 588,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 589,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 590,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 591,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 592,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 593,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 594,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 595,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_408_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 596,
+            "prop": "name",
+            "attributes": {
+                "content": "撃破確認！",
+                "name": "上級士官"
+            },
+            "figure_art": "avg_npc_408_1#1$1"
+        },
+        {
+            "id": 597,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_408_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 598,
+            "prop": "name",
+            "attributes": {
+                "content": "将軍、障害の除去が完了しました。",
+                "name": "上級士官"
+            },
+            "figure_art": "avg_npc_408_1#1$1"
+        },
+        {
+            "id": 599,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 600,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 601,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 602,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 603,
+            "prop": "name",
+            "attributes": {
+                "content": "よし。",
+                "name": "ウェリントン公爵"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 604,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 605,
+            "prop": "name",
+            "attributes": {
+                "content": "「ガストレル」号、全速前進。",
+                "name": "ウェリントン公爵"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 606,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 607,
+            "prop": "name",
+            "attributes": {
+                "content": "目標――ナハツェーラーの王座。",
+                "name": "ウェリントン公爵"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 608,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 609,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 610,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 611,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g2_mainbattlefield",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 612,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 613,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone"
+            }
+        },
+        {
+            "id": 614,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 615,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 616,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 617,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 618,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 619,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 620,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 621,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone"
+            }
+        },
+        {
+            "id": 622,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 623,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 624,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 625,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 626,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 627,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 628,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 629,
+            "prop": "name",
+            "attributes": {
+                "content": "艦砲が唸り声を上げる。"
+            }
+        },
+        {
+            "id": 630,
+            "prop": "name",
+            "attributes": {
+                "content": "ウェリントンは自らの忠義厚き部下――船で最も古い艦載砲をよく知っている。それはかつて、共にリンゴネスの防壁を打ち破った大砲だった。"
+            }
+        },
+        {
+            "id": 631,
+            "prop": "name",
+            "attributes": {
+                "content": "彼はこの大地で最も隆盛していた移動都市の命を奪った。そして背骨を躯から引きずり出し、旗艦「ガストレル」号の一部と成したのだ。"
+            }
+        },
+        {
+            "id": 632,
+            "prop": "name",
+            "attributes": {
+                "content": "その後、ウェリントンは再び旗艦と共に多くの場所へ赴き、多くの敵を討ち取った。"
+            }
+        },
+        {
+            "id": 633,
+            "prop": "name",
+            "attributes": {
+                "content": "リターニアの術師のアーツオーブ、ウルサスの先鋒の盾、サルゴンの刺客が帯びる黄金の刃――彼はあらゆる敵が身に着ける最も価値ある品を集めては改造して、旗艦に取り付けてきた。"
+            }
+        },
+        {
+            "id": 634,
+            "prop": "name",
+            "attributes": {
+                "content": "決して記念品ではない。在りし日の印に想いを馳せ、過去を偲ぶ必要があるのは、月日と共に弱り果てていく人間だけだからだ。"
+            }
+        },
+        {
+            "id": 635,
+            "prop": "name",
+            "attributes": {
+                "content": "「ガストレル」号は敵の死骸を踏みにじり、その力を吸い取ることで、力を増していく。"
+            }
+        },
+        {
+            "id": 636,
+            "prop": "name",
+            "attributes": {
+                "content": "そうして初めて彼らは共により強大な敵を打ち破れるようになる。"
+            }
+        },
+        {
+            "id": 637,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 638,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 639,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 640,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g3_mainbattlefield_ex",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 641,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 642,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 643,
+            "prop": "name",
+            "attributes": {
+                "content": "止めろ！",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 644,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 645,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 646,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone"
+            }
+        },
+        {
+            "id": 647,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 648,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 649,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 650,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 651,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 652,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 653,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 654,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 655,
+            "prop": "name",
+            "attributes": {
+                "content": "結晶障壁が……砕けたか。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 656,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 657,
+            "prop": "name",
+            "attributes": {
+                "content": "敵はいまだ前進してきている。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 658,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 659,
+            "prop": "name",
+            "attributes": {
+                "content": "砲火で道を切り拓いては、死を授からんと渇望している。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 660,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 661,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 662,
+            "prop": "name",
+            "attributes": {
+                "content": "源石の海に、砲撃が一度また一度と浴びせられる。"
+            }
+        },
+        {
+            "id": 663,
+            "prop": "name",
+            "attributes": {
+                "content": "金色の破片が散らばり、凝固した大波にぽっかりと穴が開いた。"
+            }
+        },
+        {
+            "id": 664,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 665,
+            "prop": "name",
+            "attributes": {
+                "content": "よもや……ここまで近づいてくるとは――",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 666,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 667,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 668,
+            "prop": "name",
+            "attributes": {
+                "content": "濃霧が戦艦を包み込む。"
+            }
+        },
+        {
+            "id": 669,
+            "prop": "name",
+            "attributes": {
+                "content": "無数のナハツェーラーの戦士が甲板に降り立つと巫術の光が船全体を覆い尽くした。"
+            }
+        },
+        {
+            "id": 670,
+            "prop": "name",
+            "attributes": {
+                "content": "噛み千切り、分解し、腐食する。"
+            }
+        },
+        {
+            "id": 671,
+            "prop": "name",
+            "attributes": {
+                "content": "砲火が静まり始めた。"
+            }
+        },
+        {
+            "id": 672,
+            "prop": "name",
+            "attributes": {
+                "content": "過去にナハツェーラーのアーツの陣地に囚われたあらゆる獲物と同じく、鋼鉄の躯もまた、腹の中で溶かされつつある。"
+            }
+        },
+        {
+            "id": 673,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 674,
+            "prop": "name",
+            "attributes": {
+                "content": "捕獲……完了。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 675,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 676,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 677,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 678,
+            "prop": "name",
+            "attributes": {
+                "content": "まだ、だ。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 679,
+            "prop": "name",
+            "attributes": {
+                "content": "彼はアーツユニットを掲げた。"
+            }
+        },
+        {
+            "id": 680,
+            "prop": "name",
+            "attributes": {
+                "content": "王座の下から枝が急速に伸び広がり、ナハツェーラーの戦士たちの前方を遮る。"
+            }
+        },
+        {
+            "id": 681,
+            "prop": "name",
+            "attributes": {
+                "content": "枝と枝の間に、一発の砲弾が嵌まり込んだ。"
+            }
+        },
+        {
+            "id": 682,
+            "prop": "name",
+            "attributes": {
+                "content": "数秒の間を置いて砲弾が炸裂すると、枝は一本残らず砕け散った。"
+            }
+        },
+        {
+            "id": 683,
+            "prop": "name",
+            "attributes": {
+                "content": "それはこの開戦以来、ナハツェーラーの王座が初めて揺れ動いた瞬間だった。"
+            }
+        },
+        {
+            "id": 684,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 685,
+            "prop": "name",
+            "attributes": {
+                "content": "宗長！",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 686,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 687,
+            "prop": "name",
+            "attributes": {
+                "content": "構わん。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 688,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 689,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 690,
+            "prop": "name",
+            "attributes": {
+                "content": "腐敗の霧の中から、艦船がゆっくりとその姿を現した。"
+            }
+        },
+        {
+            "id": 691,
+            "prop": "name",
+            "attributes": {
+                "content": "外板の一部は腐食によって剥がれ落ち、主砲と副砲も巫術の弾幕を受けて半壊状態だったが、鋼鉄の骨組みだけが変わらず輝きを放ち続けている。"
+            }
+        },
+        {
+            "id": 692,
+            "prop": "name",
+            "attributes": {
+                "content": "――それは今もなお、陸地で最も強大な軍艦「ガストレル」号であり続けていた。"
+            }
+        },
+        {
+            "id": 693,
+            "prop": "name",
+            "attributes": {
+                "content": "そして、その主は――"
+            }
+        },
+        {
+            "id": 694,
+            "prop": "name",
+            "attributes": {
+                "content": "王座の上から見下ろしたサルカズの目は、結晶と結晶の間に小さな影を捉えた。"
+            }
+        },
+        {
+            "id": 695,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 696,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 697,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 698,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g2_mainbattlefield",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 699,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 700,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_408_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 701,
+            "prop": "name",
+            "attributes": {
+                "content": "将軍、サルカズの先遣主力部隊はしっかりと「ガストレル」号に引き付けられています！",
+                "name": "赤鉄親衛隊隊員"
+            },
+            "figure_art": "avg_npc_408_1#1$1"
+        },
+        {
+            "id": 702,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_408_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 703,
+            "prop": "name",
+            "attributes": {
+                "content": "奴ら、我々が旗艦から移動したとも知らずに――",
+                "name": "赤鉄親衛隊隊員"
+            },
+            "figure_art": "avg_npc_408_1#1$1"
+        },
+        {
+            "id": 704,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_408_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 705,
+            "prop": "name",
+            "attributes": {
+                "content": "待ってください、何かが急速に接近中です！",
+                "name": "赤鉄親衛隊隊員"
+            },
+            "figure_art": "avg_npc_408_1#1$1"
+        },
+        {
+            "id": 706,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_408_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 707,
+            "prop": "name",
+            "attributes": {
+                "content": "親衛隊、陣形を縮小せよ！",
+                "name": "赤鉄親衛隊隊員"
+            },
+            "figure_art": "avg_npc_408_1#1$1"
+        },
+        {
+            "id": 708,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 709,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 710,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone"
+            }
+        },
+        {
+            "id": 711,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 712,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 713,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 714,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 715,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 716,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 717,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 718,
+            "prop": "name",
+            "attributes": {
+                "content": "砲撃が炸裂した。"
+            }
+        },
+        {
+            "id": 719,
+            "prop": "name",
+            "attributes": {
+                "content": "数本の細枝だけが、煙塵と共にパラパラと落ちてくる。"
+            }
+        },
+        {
+            "id": 720,
+            "prop": "name",
+            "attributes": {
+                "content": "数多の結晶の波を砕くほどのエネルギーを受けても、宙に浮かぶ姿が揺らぐことはなかった。"
+            }
+        },
+        {
+            "id": 721,
+            "prop": "name",
+            "attributes": {
+                "content": "ナハツェーラーの王は陣形中央の指揮官を見下ろした。老いたフェリーンのすぐ後ろでは、血に渇いた軍艦が腐肉を引き裂く瞬間を、今か今かと待ちわびている。"
+            }
+        },
+        {
+            "id": 722,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 723,
+            "prop": "name",
+            "attributes": {
+                "content": "ヴィクトリアの……公爵か。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 724,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 725,
+            "prop": "name",
+            "attributes": {
+                "content": "我らは数多のヴィクトリア人を食らってきた。将軍、伯爵。肩書がどうあれ、ほとんどは同じ味だ。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 726,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 727,
+            "prop": "name",
+            "attributes": {
+                "content": "策謀家や商人であり、戦士ではない。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 728,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 729,
+            "prop": "name",
+            "attributes": {
+                "content": "奴らにとって戦場は卓上の砂盤であり、戦士は駒に過ぎず、戦争など権力闘争の道具程度にしか見ておらぬ。それほどまでに戦争を軽視しているのだ。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 730,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 731,
+            "prop": "name",
+            "attributes": {
+                "content": "だがその方は少し違うようだ。その船も数多の敵を食らってきたのであろう。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 732,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 733,
+            "prop": "name",
+            "attributes": {
+                "content": "ウルサス人、リターニア人、ガリア人……そして、サルカズ。彼らの血肉の匂いが香ってくるのだ。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 734,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 735,
+            "prop": "name",
+            "attributes": {
+                "content": "ナハツェーラーもまた、かつてはその者たちをこの身に受け入れてきた。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 736,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 737,
+            "prop": "name",
+            "attributes": {
+                "content": "サルカズ……貴様に関する記録は数え切れぬほど読んできた。",
+                "name": "ウェリントン公爵"
+            },
+            "figure_art": "avg_npc_652_1#1$1"
+        },
+        {
+            "id": 738,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 739,
+            "prop": "name",
+            "attributes": {
+                "content": "古のナハツェーラーは、カズデルに攻め入らんとするヴィクトリア軍を、わずか十分の一の兵力で押し留めたと聞く。",
+                "name": "ウェリントン公爵"
+            },
+            "figure_art": "avg_npc_652_1#1$1"
+        },
+        {
+            "id": 740,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 741,
+            "prop": "name",
+            "attributes": {
+                "content": "まったくもって不可解だ。そんな戦争は軍事学校で教わることもなければ再現することもできん。",
+                "name": "ウェリントン公爵"
+            },
+            "figure_art": "avg_npc_652_1#1$1"
+        },
+        {
+            "id": 742,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 743,
+            "prop": "name",
+            "attributes": {
+                "content": "その方の目的は、仇討ちか？",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 744,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 745,
+            "prop": "name",
+            "attributes": {
+                "content": "……フッ。私はただ残念なだけだ。二百年前に、生まれていなかったことがな。",
+                "name": "ウェリントン公爵"
+            },
+            "figure_art": "avg_npc_652_1#8$1"
+        },
+        {
+            "id": 746,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 747,
+            "prop": "name",
+            "attributes": {
+                "content": "貴様は、「戦争の神」と呼ばれていたか？",
+                "name": "ウェリントン公爵"
+            },
+            "figure_art": "avg_npc_652_1#8$1"
+        },
+        {
+            "id": 748,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 749,
+            "prop": "name",
+            "attributes": {
+                "content": "違うな。戦争に絶対的支配者など存在しない。",
+                "name": "ウェリントン公爵"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 750,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 751,
+            "prop": "name",
+            "attributes": {
+                "content": "あるのはただ……目の前の勝ち負けのみだ。",
+                "name": "ウェリントン公爵"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 752,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 753,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_exsheath",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 754,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 755,
+            "prop": "name",
+            "attributes": {
+                "content": "ウェリントンは剣を抜くと、その切っ先を空中のサルカズへまっすぐに向けた。"
+            }
+        },
+        {
+            "id": 756,
+            "prop": "name",
+            "attributes": {
+                "content": "彼の背後では、全艦砲が同じ方向を向いている。"
+            }
+        },
+        {
+            "id": 757,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 758,
+            "prop": "name",
+            "attributes": {
+                "content": "――ネツァレム、私は貴様に勝利する。",
+                "name": "ウェリントン公爵"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 759,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 760,
+            "prop": "name",
+            "attributes": {
+                "content": "私が過去に葬ってきた、強敵たちと同じように。",
+                "name": "ウェリントン公爵"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 761,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 762,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 763,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 4.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 764,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 765,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 766,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 767,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}

@@ -1,0 +1,3737 @@
+{
+    "lang": "ja_JP",
+    "eventid": "main_14",
+    "eventName": "慈悲光塔",
+    "entryType": "MAINLINE",
+    "storyCode": "14-11",
+    "avgTag": "戦闘後",
+    "storyName": "「英雄」とは",
+    "storyInfo": "Logosは呪術でテレシスの剣技を再現してナハツェーラーの王の腕を斬り落としたが、自らも崖下へと落ちる。そしてバンシーの意志を託された作戦プラットフォームがLogosを救うのだった。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g18_originiumcave",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 9,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_boneflute_low",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 10,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 11,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_394_1#2$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "……弔鐘。",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#2$1"
+        },
+        {
+            "id": 14,
+            "prop": "name",
+            "attributes": {
+                "content": "これは……Logosさんの吹く、骨笛の音です。",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#2$1"
+        },
+        {
+            "id": 15,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 16,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_394_1#2$1",
+                "focus": "none"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "Decision",
+            "attributes": {
+                "options": "骨笛……;……誰のための音だろう？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line18",
+                "option2": "line18"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 19,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_394_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#11$1"
+        },
+        {
+            "id": 21,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 22,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_394_1#11$1",
+                "focus": "none"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "Decision",
+            "attributes": {
+                "options": "アーミヤ……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line24"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 25,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_394_1#17$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "name",
+            "attributes": {
+                "content": "大丈夫です、ドクター。",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#17$1"
+        },
+        {
+            "id": 27,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_394_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "name",
+            "attributes": {
+                "content": "ただ、少し……色々と思い出してしまって。",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#11$1"
+        },
+        {
+            "id": 29,
+            "prop": "name",
+            "attributes": {
+                "content": "ロドスにいる時、Logosさんが自分のことをバンシーの主と名乗ることは滅多にありませんでした。",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#11$1"
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "ScoutさんやMiseryさんと同じように、自分はただロドスの理想を信じるサルカズのオペレーターに過ぎないと、いつもそう言っていました。",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#11$1"
+        },
+        {
+            "id": 31,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_394_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "ですから……出発の日に王庭の服装に着替えたLogosさんを見た時……",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#2$1"
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "彼の眼差しから、とても大きな決心を感じ取ったんです……",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#2$1"
+        },
+        {
+            "id": 34,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_394_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "name",
+            "attributes": {
+                "content": "それに……悲しみも。",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#11$1"
+        },
+        {
+            "id": 36,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 37,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 38,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 41,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g1_originiumcanyon",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 45,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fireburst",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 46,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_thunders_amb",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 47,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.0,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 49,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4133_logos_1#10$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 59,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "Logos"
+            },
+            "figure_art": "avg_4133_logos_1#10$1"
+        },
+        {
+            "id": 61,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 62,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 63,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 64,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 65,
+            "prop": "name",
+            "attributes": {
+                "content": "骨笛は砕け、骨筆は折れていた。唇の端からは血の筋が伝い落ちている。"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$dignified_intro",
+                "key": "$dignified_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 67,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "name",
+            "attributes": {
+                "content": "もはや、その方はいかなる呪術を放つことも叶わぬ。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 69,
+            "prop": "name",
+            "attributes": {
+                "content": "自らを極限まで追い詰め、全身の血を燃やし、その骨笛を奏でたのだ……我輩をわずかばかりの間止めるためだけに。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 70,
+            "prop": "name",
+            "attributes": {
+                "content": "アエファニル……",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 71,
+            "prop": "name",
+            "attributes": {
+                "content": "その方は、戦士と呼ぶに相応しき男よ。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 72,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 73,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "ナハツェーラーの王は両腕を広げた。"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "name",
+            "attributes": {
+                "content": "その身にまとうボロボロの旗が、まるでサルカズが経験してきた数多の戦争を再現するかの如くはためいている。"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "name",
+            "attributes": {
+                "content": "古傷から真新しい傷まで、そこから落ちる彼の血と腐肉が、この戦場を育んでいる。新たな枝が土から突き出ると、呪文によって重傷を負った戦士たちの肉体を補った。"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "倒れた全ての「霊骸布」が、再び起き上がってくる。"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 79,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$a_bat_buildingshaking_1",
+                "volume": 1.0,
+                "channel": "2"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_darkwhisper",
+                "volume": 1.0,
+                "channel": "1"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1331_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1331_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 83,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.0,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.5
+            }
+        },
+        {
+            "id": 85,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 86,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "name",
+            "attributes": {
+                "content": "だがその方が立ち向かおうとしているのは、一人、あるいは数人の特定の人物ではない。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "サルカズの中にも、果ては王庭の中にさえも、変革者はいつの日も存在するものだ。そして皆が、失敗してきた。あの時のテレジアのようにな。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "戦争とはさながら巨岩であり、サルカズは奈落の底に佇む定めにある。その頭上から、岩は永久に降り注ぎ続けるのだ。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "その方は……",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "ナハツェーラーの敬意を得た。次は、我輩がその方に死を贈ろう。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 92,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 93,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 94,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "ナハツェーラーは腐敗の霧を踏みながら、若きバンシーにゆっくりと歩み寄る。"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 97,
+            "prop": "bgeffect",
+            "attributes": {
+                "name": "$eb_dim_closeeye",
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 99,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_cnstrctnck",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 102,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "posfrom": "0,-120",
+                "posto": "0,-120"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "action": "zoom",
+                "poszoom": "0.5,0.65",
+                "scale": 2.0,
+                "focus": "all"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 105,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.5,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_magicscreen",
+                "volume": 1.0,
+                "channel": "1"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.5,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 110,
+            "prop": "bgeffect",
+            "attributes": {}
+        },
+        {
+            "id": 111,
+            "prop": "name",
+            "attributes": {
+                "content": "「断ち切れ」。",
+                "name": "Logos"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 113,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.5,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_magic_5",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 115,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 117,
+            "prop": "name",
+            "attributes": {
+                "content": "バンシーは、ほとんど聞き取れない声で最後の呪文を唱えた。鋭い言の葉は形ある刃と化し、彼の手に握られ――"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 119,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "Effect",
+            "attributes": {
+                "name": "$e_bladeline_01_large",
+                "y": 42.4,
+                "rox": 8.6,
+                "roz": 29.2,
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 121,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_skulsrsword",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 124,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "ナハツェーラーの王の右腕を斬り落とした。"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 128,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_darkwhisper",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 129,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,-120",
+                "posto": "0,0",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 130,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown1",
+                "volume": 1.0,
+                "channel": "1"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 134,
+            "prop": "name",
+            "attributes": {
+                "content": "なんと……それは、テレシスの剣技か――",
+                "name": "ネツァレム"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 136,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 137,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone",
+                "volume": 1.0,
+                "channel": "1"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch",
+                "volume": 1.0,
+                "channel": "2"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "全力で放たれたナハツェーラーの王のアーツが、Logosの胸に命中する。"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "彼の身体が、崖下へと落下していった。"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 143,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 144,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 145,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_jump_water",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 146,
+            "prop": "Background",
+            "attributes": {
+                "image": "49_g12_diving",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 148,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_underwateramb",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "1"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "BackgroundTween",
+            "attributes": {
+                "xScaleFrom": 1.3,
+                "yScaleFrom": 1.3,
+                "xScaleTo": 1.0,
+                "yScaleTo": 1.0,
+                "duration": 50.0,
+                "block": "false",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 150,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 152,
+            "prop": "name",
+            "attributes": {
+                "content": "源石の地面が轟音と共に崩壊していく。"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "Logosの脳裏に、見慣れた船が山々と川辺を踏み進んでいく光景が浮かんだ。あの船が進む時にも、これと似た轟音を発していたからだ。"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "name",
+            "attributes": {
+                "content": "彼は初めてロドスに乗船し、テレジアと二人肩を並べて甲板に立った日のことを思い出した。カズデルを見つめるテレジアの傍らで、風に乗って聞こえてくる叫び声に耳を澄ましていた時のことを。"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "name",
+            "attributes": {
+                "content": "部品を弄りながら、クロージャに材料の無駄遣いはやめろと諭すMechanistを思い出した。説教がいつまで続くかブレイズと賭け始めたOutcastの帽子をロボットアームが取った。"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "name",
+            "attributes": {
+                "content": "血にまみれたAceの手を思い出した。盾を支え、グラスの横に置かれていた。Scoutは彼の持つクロスボウと同じくらい冷たい手をしていて、握手やハイタッチの時は見なくとも誰か分かった。"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "廊下で互いにおやすみなさいと声を掛け合う、ドクターとアーミヤを思い出した。アーミヤが突然呼び止め、ロンディニウムへ向かう心の準備はできているかと問いた時のことを。"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシー医師はアーミヤの手を引きながら、彼らの間にやってきてこう言った――"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "name",
+            "attributes": {
+                "content": "「テレジアが亡くなった。これからはアーミヤがロドスのリーダーだ。」"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "name",
+            "attributes": {
+                "content": "Logosはひたすら落ち続け――"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "name",
+            "attributes": {
+                "content": "氷のように冷たい水に、頭まで沈み込んだ。"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "name",
+            "attributes": {
+                "content": "そうして彼は、何年も前の自分を思い出した。"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 164,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "1",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 167,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 168,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 169,
+            "prop": "bgEffect",
+            "attributes": {
+                "name": "$eb_sunlight_01",
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 170,
+            "prop": "image",
+            "attributes": {
+                "image": "50_i07",
+                "screenadapt": "coverall",
+                "xScale": 1.1,
+                "yScale": 1.1,
+                "y": 30.0
+            }
+        },
+        {
+            "id": 171,
+            "prop": "ImageTween",
+            "attributes": {
+                "xScaleFrom": 1.1,
+                "yScaleFrom": 1.1,
+                "xScaleTo": 1.0,
+                "yScaleTo": 1.0,
+                "duration": 30.0,
+                "yTo": 0.0
+            }
+        },
+        {
+            "id": 172,
+            "prop": "PlayMusic",
+            "attributes": {
+                "key": "$calm_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 173,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "腹を決めたのだな。",
+                "name": "ラケラマリン"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "うむ。",
+                "name": "アエファニル"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "我はロドスに留まり、あの船と共に大地を巡ることに決めた。",
+                "name": "アエファニル"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "テレジアが……逝ってしもうたのだぞ。",
+                "name": "ラケラマリン"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "バベルの理想は……",
+                "name": "ラケラマリン"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "name",
+            "attributes": {
+                "content": "……なおもあの船にある。",
+                "name": "アエファニル"
+            }
+        },
+        {
+            "id": 181,
+            "prop": "name",
+            "attributes": {
+                "content": "殿下は後継者を遺していった。いまだ幼い身なれど、その目には我らもよく知る理想を抱く者の炎を宿しておる。",
+                "name": "アエファニル"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "name",
+            "attributes": {
+                "content": "然して、我がロドスに留まるのは、彼女一人のためだけではない。",
+                "name": "アエファニル"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "殿下の探求の道は、かように潰えてはおらず、また潰えるべきでもない。サルカズの未来にまつわる答えがいまだどこかにあるのならば、我はそれを求むる旅を続けよう。",
+                "name": "アエファニル"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "name",
+            "attributes": {
+                "content": "されば、我は河谷を長らく留守にするやもしれぬ。",
+                "name": "アエファニル"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "そなたが抱く後ろめたさは、妾たちの傍におれぬことに因るのか？",
+                "name": "ラケラマリン"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "name",
+            "attributes": {
+                "content": "河谷の外にて、我は王庭の主としては振舞わぬ。",
+                "name": "アエファニル"
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "されど我の意志を即ち王庭の意志と見なす者は甚だ多い。ゆえに、そやつらはバンシーに敵意を抱く恐れがあるが……我は母上らを河谷の外より吹き付ける風雨から守れぬやもしれぬのだ。",
+                "name": "アエファニル"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "古馴染みが訪ね来るのならば、妾自らがしかともてなす。",
+                "name": "ラケラマリン"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "無論。我とて、かつてバンシーの河谷を統べた主を疑ってなどはおらぬが……",
+                "name": "アエファニル"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "妾と姉妹らもまた、そなたの身を案じておるのだぞ。",
+                "name": "ラケラマリン"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アエファニル"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "name",
+            "attributes": {
+                "content": "されば、妾たちの思いを連れてゆくがよい。",
+                "name": "ラケラマリン"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 194,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 197,
+            "prop": "bgEffect",
+            "attributes": {}
+        },
+        {
+            "id": 198,
+            "prop": "Background",
+            "attributes": {
+                "image": "49_g12_diving",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 200,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 201,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_underwateramb",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "1"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "バンシーの歌声が、若きバンシーの主の周囲を巡る。"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "name",
+            "attributes": {
+                "content": "水が段々と温かみを増していき、まるで無数の両腕のように、落ちていく彼をそっと抱き寄せた。"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "Logosは目を開いた。"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "name",
+            "attributes": {
+                "content": "母と、それから多くの姉妹の姿が目の前に見えるような気がした。"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "「アエファニル。河谷の最も美しき波の光、心揺さぶる歌声よ。妾たちはただここで、そなたの旅立ちを見送ることしかできぬ……」"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "name",
+            "attributes": {
+                "content": "「なれど、その身が何処にあろうと、妾たちの祝福はそなたと共に在る。」"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "Logos"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 212,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1334_1#1$1",
+                "bstart": 0.3,
+                "bend": 0.8,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 213,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 214,
+            "prop": "name",
+            "attributes": {
+                "content": "もっと気張らぬか、アエファニル。",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_1334_1#1$1"
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "そなたには妾たちがついておるぞ……いつ何時であろうともな。",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_1334_1#1$1"
+        },
+        {
+            "id": 216,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 217,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_magic_2"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.4,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 0.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 221,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 222,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_magic_2"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.4,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 0.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 226,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 227,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 228,
+            "prop": "name",
+            "attributes": {
+                "content": "呪文の力がLogosの全身にゆっくりと注がれる。"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "彼は再び口を開いた。"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "name",
+            "attributes": {
+                "content": "力強い歌声が川面に揺蕩い、眩くも美しい波の光の波を映し出す。"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "あらゆる追っ手はみな、その場に立ち尽くしていた。"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 233,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "1",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 234,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 235,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 238,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g1_originiumcanyon",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 240,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 241,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 242,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 243,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "bstart": 0.3,
+                "bend": 0.5
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 245,
+            "prop": "name",
+            "attributes": {
+                "content": "よもやこの異国の谷で、バンシーの斉唱を聞くことがあろうとは。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 246,
+            "prop": "name",
+            "attributes": {
+                "content": "新生は死を相伴う……",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "若人よ。事ここに至ってもなお、その方は……歌声で我輩に忠告をしようというのか？",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 248,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "name",
+            "attributes": {
+                "content": "宗長、単なるバンシーの呪文に過ぎません。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 250,
+            "prop": "name",
+            "attributes": {
+                "content": "奴らが戦いに参加したわけではないのです。我らの敵があの若きバンシー一人である事実は変わりません。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 251,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "bstart": 0.3,
+                "bend": 0.5
+            }
+        },
+        {
+            "id": 252,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 253,
+            "prop": "name",
+            "attributes": {
+                "content": "うむ……",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 254,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "name",
+            "attributes": {
+                "content": "その傷……まさかそれほどの深手を負われるとは。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 256,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "bstart": 0.3,
+                "bend": 0.5
+            }
+        },
+        {
+            "id": 257,
+            "prop": "name",
+            "attributes": {
+                "content": "アエファニルの呪いは、朽ち果てしものを腐朽に帰す。我輩はしばしの間、傷を治すことができない。だがこの身体でも……戦争に打ち勝つには十分だ。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "だが今は……彼とバンシーたちの歌声に、ただ耳を傾けさせてはくれぬか。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 259,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 260,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 261,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 262,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "いかなる浮遊のアーツにも頼ることなく、ネツァレムは崖際まで歩み寄った。"
+            }
+        },
+        {
+            "id": 264,
+            "prop": "name",
+            "attributes": {
+                "content": "この瞬間の彼は殊の外に、何の変哲もない老人のように見えた。"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "bstart": 0.3,
+                "bend": 0.5
+            }
+        },
+        {
+            "id": 266,
+            "prop": "name",
+            "attributes": {
+                "content": "ボジョカスティを……覚えているか？",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 267,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "name",
+            "attributes": {
+                "content": "ええ、もちろんです。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "宗長は彼を我が子同然に扱っておりました。",
+                "name": "「霊骸布」"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 270,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "bstart": 0.3,
+                "bend": 0.5
+            }
+        },
+        {
+            "id": 271,
+            "prop": "name",
+            "attributes": {
+                "content": "あの類まれな才を持つ男は、疑いなくカズデルの英雄となれるはずであった。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 272,
+            "prop": "name",
+            "attributes": {
+                "content": "我輩が最も贔屓にしていた愛弟子だったのだ。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 273,
+            "prop": "name",
+            "attributes": {
+                "content": "だが惜しくも彼はカズデルを離れて、異国の地での陰謀に倒れてしまった。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 274,
+            "prop": "name",
+            "attributes": {
+                "content": "彼が戦士の姿のまま逝けたことは幸いであった。戦いを通じて生きることの意義を成し、死してサルカズの魂へと還っていったのだから。",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "だが……それから……",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 276,
+            "prop": "name",
+            "attributes": {
+                "content": "カズデルの次なる英雄は……一体何処に？",
+                "name": "ネツァレム"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 277,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 278,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 279,
+            "prop": "name",
+            "attributes": {
+                "content": "ネツァレムは崖下に目を向けた。"
+            }
+        },
+        {
+            "id": 280,
+            "prop": "name",
+            "attributes": {
+                "content": "彼の肉体に空いた、いまだ塞がらぬ穴の中を風が吹き抜けていく。辺りには、ただ無意味な音だけが鳴り響いた。"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 282,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 283,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 286,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g18_originiumcave",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 288,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 291,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_394_1#2$1"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "サルカズの魂の哀歌が収まりました。",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#2$1"
+        },
+        {
+            "id": 293,
+            "prop": "name",
+            "attributes": {
+                "content": "「ティカズの血」と源石の繋がりが……Logosさんの骨笛で、しばらくの間押さえつけられているんです。",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#2$1"
+        },
+        {
+            "id": 294,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_394_1#7$1"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "name",
+            "attributes": {
+                "content": "これは私たちにとって絶好のチャンスになります。",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#7$1"
+        },
+        {
+            "id": 296,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_394_1#7$1"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、ケルシー先生……今回は、決して逃したりしません。",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_npc_394_1#7$1"
+        },
+        {
+            "id": 298,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 299,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 300,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 303,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g8_altarcoreandblood",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 305,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$nervous_intro",
+                "key": "$nervous_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 306,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 308,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_653_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 310,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "……追いついてきたわね。",
+                "name": "サルース"
+            },
+            "figure_art": "avg_npc_653_1#1$1"
+        },
+        {
+            "id": 312,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_653_1#5$1"
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "愛しのクイサルシンナ、あなたもじきにここへ来るんでしょう？",
+                "name": "サルース"
+            },
+            "figure_art": "avg_npc_653_1#5$1"
+        },
+        {
+            "id": 314,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_653_1#9$1"
+            }
+        },
+        {
+            "id": 315,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたと、リーダー……我らが敬愛する父上の内、一体どちらが……王座まで辿り着くのかしらね？",
+                "name": "サルース"
+            },
+            "figure_art": "avg_npc_653_1#9$1"
+        },
+        {
+            "id": 316,
+            "prop": "Delay",
+            "attributes": {}
+        },
+        {
+            "id": 317,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 318,
+            "prop": "name",
+            "attributes": {
+                "content": "サルースは祭壇の上の血に手を伸ばした。"
+            }
+        },
+        {
+            "id": 319,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 320,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fireburst",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 321,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 325,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.5
+            }
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "源石が燃え盛り、サルカズの魂が咆哮を上げている。"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "name",
+            "attributes": {
+                "content": "強力な巫術によって、彼女の指先はたちまち黒く焦げた結晶と化した。"
+            }
+        },
+        {
+            "id": 328,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_653_1#10$1"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、待ちきれないわ……",
+                "name": "サルース"
+            },
+            "figure_art": "avg_npc_653_1#10$1"
+        },
+        {
+            "id": 330,
+            "prop": "name",
+            "attributes": {
+                "content": "原点が、すぐそこにまで迫っているのね。",
+                "name": "サルース"
+            },
+            "figure_art": "avg_npc_653_1#10$1"
+        },
+        {
+            "id": 331,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 332,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 335,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g7_confessariusaltar_on",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 337,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 339,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_425_1#1$1"
+            }
+        },
+        {
+            "id": 340,
+            "prop": "name",
+            "attributes": {
+                "content": "この――",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 341,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 342,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$swordtsing4",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 346,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 348,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 349,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 350,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#5$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 351,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 352,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#5$1"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "うまく隠れたものですね。",
+                "name": "シャイニング"
+            },
+            "figure_art": "avgnew_147_shining_1#5$1"
+        },
+        {
+            "id": 354,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたたちを見つけるのに……ずいぶんと時間を費やしてしまいました。",
+                "name": "シャイニング"
+            },
+            "figure_art": "avgnew_147_shining_1#5$1"
+        },
+        {
+            "id": 355,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_425_1#1$1"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "裏切者め！",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 357,
+            "prop": "name",
+            "attributes": {
+                "content": "クソッ、貴様はここに来るまで、一体何人殺してきた？",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 358,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#5$1"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "……当時逃げ出した時に殺した数には及びません。",
+                "name": "シャイニング"
+            },
+            "figure_art": "avgnew_147_shining_1#5$1"
+        },
+        {
+            "id": 360,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_425_1#1$1"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "あの時……地下実験エリアは仲間たちの死体で溢れ返っていた。",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "貴様のせいで、王立科学アカデミーでのリーダーの計画はほとんどが白紙へと帰した。危うくヴィクトリア人に悟られるかもしれないほどの大騒ぎだったんだぞ！",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 363,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#2$1"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "私はむしろ、全てが失敗に終わればよかったのにと思っています。",
+                "name": "シャイニング"
+            },
+            "figure_art": "avgnew_147_shining_1#2$1"
+        },
+        {
+            "id": 365,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_425_1#1$1"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "name",
+            "attributes": {
+                "content": "ハッ……以前とは違うことを言うようになったな！",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "よくもまあ、そのように正義の味方を装えるものだ。我らは貴様の指示で大忙しだったというのに！",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 368,
+            "prop": "name",
+            "attributes": {
+                "content": "ロンディニウムの外にある、あれだけ大きな地下洞窟や、あれほど多くの実験基地は……全て貴様の管轄下ではなかったのか？",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 369,
+            "prop": "name",
+            "attributes": {
+                "content": "当時のリーダーは、ほとんどの時間をカズデルで過ごしていた。マスクを着けてリーダーと瓜二つの姿で研究を主導していたのは、貴様の方ではないか――",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 370,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#4$1"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "name",
+            "attributes": {
+                "content": "あの時の私に、選択肢はありませんでした。",
+                "name": "シャイニング"
+            },
+            "figure_art": "avgnew_147_shining_1#4$1"
+        },
+        {
+            "id": 372,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_425_1#1$1"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "name",
+            "attributes": {
+                "content": "選択肢がなかったか。ならば我らをロンディニウムに連れてきて、マスクを着けさせた時に言っていた、あの言葉はどうなった？",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 374,
+            "prop": "name",
+            "attributes": {
+                "content": "当初の我らはしがない傭兵に過ぎなかった。だがそれでも、聴罪師の信仰を、貴様とリーダーの言っていた「サルカズの最初で最後の道」を、信じていたんだ！",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 375,
+            "prop": "name",
+            "attributes": {
+                "content": "我らの生来の罪業は――異種族によって背負わされし罪は、いつの日かきっと、全て洗い流されるであろうと。",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "あれは嘘だったのか？",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 377,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#2$1"
+            }
+        },
+        {
+            "id": 378,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シャイニング"
+            },
+            "figure_art": "avgnew_147_shining_1#2$1"
+        },
+        {
+            "id": 379,
+            "prop": "name",
+            "attributes": {
+                "content": "確かに私は嘘であればと、そう願っています。",
+                "name": "シャイニング"
+            },
+            "figure_art": "avgnew_147_shining_1#2$1"
+        },
+        {
+            "id": 380,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_425_1#1$1"
+            }
+        },
+        {
+            "id": 381,
+            "prop": "name",
+            "attributes": {
+                "content": "違う……あれは嘘なんかじゃない。リーダーが我らにしてくださった約束は、全て本当だ。貴様もそうだろう、クイサルシンナ。貴様はそれから道を踏み外したが……",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 382,
+            "prop": "name",
+            "attributes": {
+                "content": "リーダーと摂政王は、間もなく成功を手にするのだ。",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 383,
+            "prop": "name",
+            "attributes": {
+                "content": "長きにわたり失われてきた自由と権力が、じきにあらゆるサルカズの手に戻ってくる。",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 384,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#2$1"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シャイニング"
+            },
+            "figure_art": "avgnew_147_shining_1#2$1"
+        },
+        {
+            "id": 386,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_425_1#1$1"
+            }
+        },
+        {
+            "id": 387,
+            "prop": "name",
+            "attributes": {
+                "content": "殺したいなら、好きにしろ。",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 388,
+            "prop": "name",
+            "attributes": {
+                "content": "リーダーに会いに行くといい。貴様の父親にな。",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 389,
+            "prop": "name",
+            "attributes": {
+                "content": "あの道の果てで彼は待っている。彼らは皆、貴様を待っているぞ。",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "貴様は私に代わって……その剣に倒れた、我ら一人一人に代わって……見届けることだろう。",
+                "name": "聴罪師直属衛兵"
+            },
+            "figure_art": "avg_npc_425_1#1$1"
+        },
+        {
+            "id": 391,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 392,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_skulsrsword",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 396,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 397,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 398,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 399,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 400,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 401,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#2$1"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シャイニング"
+            },
+            "figure_art": "avgnew_147_shining_1#2$1"
+        },
+        {
+            "id": 403,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 404,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "0,-50",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 405,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 406,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 407,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,-50",
+                "posto": "0,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 408,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 409,
+            "prop": "name",
+            "attributes": {
+                "content": "シャイニングは衛兵のマスクを外した。"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "name",
+            "attributes": {
+                "content": "露わになった顔を、彼女は覚えている。彼は最初に聴罪師の手でロンディニウムへ連れてこられた傭兵の一人だった。"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "name",
+            "attributes": {
+                "content": "彼らは当初何も知らされないまま、ただ都市外の遺跡発掘に従事するだけの人々だった。"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#3$1"
+            }
+        },
+        {
+            "id": 413,
+            "prop": "name",
+            "attributes": {
+                "content": "この若者は、彼女に直接お礼の言葉すら告げてきた。手厚い報酬と安全な仕事をもたらしてくれた聴罪師に対し、彼は感謝していたのだ。"
+            }
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": "しかしほどなくして彼らの口からそんな言葉は聞こえなくなった。"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "聴罪師のリーダーが、ロンディニウムへとやってきたからだ。"
+            }
+        },
+        {
+            "id": 416,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#2$1"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "name",
+            "attributes": {
+                "content": "あちこちで雑談を交わし合い、酒を飲みながらゲームに興じる傭兵たちはいなくなった。周りの人々は、皆一様に同じマスクを身に着け、必要な時を除き二度と口を開かなくなった。"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "name",
+            "attributes": {
+                "content": "彼らに特別な血脈は何もない。クイサルトゥシュタとて、そうたやすくは彼らの意志を操れなかったはずだ。"
+            }
+        },
+        {
+            "id": 419,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし彼ら自身を形作る一部は、聴罪師の壮大な理想の前に死んでいった。"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "name",
+            "attributes": {
+                "content": "そして最初に彼らを殺したのは、他ならぬ彼女自身である。"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 422,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#2$1"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 424,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#3$1"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 426,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_147_shining_1#5$1"
+            }
+        },
+        {
+            "id": 427,
+            "prop": "name",
+            "attributes": {
+                "content": "この罪業を……",
+                "name": "シャイニング"
+            },
+            "figure_art": "avgnew_147_shining_1#5$1"
+        },
+        {
+            "id": 428,
+            "prop": "name",
+            "attributes": {
+                "content": "……これ以上、続けるわけにはいきません。",
+                "name": "シャイニング"
+            },
+            "figure_art": "avgnew_147_shining_1#5$1"
+        },
+        {
+            "id": 429,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 430,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 431,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 432,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 433,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_glassbroken",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 434,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 435,
+            "prop": "name",
+            "attributes": {
+                "content": "砕けたマスクの破片が、シャイニングの手のひらを突き刺す。"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女はそのまま、山頂を目指して歩み始めた。"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 438,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 441,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 442,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 443,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}

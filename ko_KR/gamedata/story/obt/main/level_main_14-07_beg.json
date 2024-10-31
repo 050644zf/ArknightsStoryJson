@@ -1,0 +1,6682 @@
+{
+    "lang": "ko_KR",
+    "eventid": "main_14",
+    "eventName": "자비의 등대",
+    "entryType": "MAINLINE",
+    "storyCode": "14-8",
+    "avgTag": "작전 전",
+    "storyName": "근접 지원 작전",
+    "storyInfo": "파라곤 부대는 적과 격돌했고, 캐스터 공작은 시즈에게 국검이 있다는 사실을 알게 된다. 한편, 에블라나가 이끄는 더블린 부대도 전장에 뛰어들었고, 웰링턴 공작과 나흐체러르 킹의 전투가 본격적으로 시작된다.\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g2_mainbattlefield",
+                "xScale": 1.2,
+                "yScale": 1.2
+            }
+        },
+        {
+            "id": 4,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$frontline_intro",
+                "key": "$frontline_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 5,
+            "prop": "BackgroundTween",
+            "attributes": {
+                "xScale": 1.2,
+                "yScale": 1.2,
+                "duration": 10.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 7,
+            "prop": "delay",
+            "attributes": {
+                "time": 6.0
+            }
+        },
+        {
+            "id": 8,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_battlefield_environment",
+                "volume": 0.4,
+                "loop": "true",
+                "channel": "bgs"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g2_mainbattlefield",
+                "fadetime": 1.0,
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 10,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 11,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_405_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "name",
+            "attributes": {
+                "content": "하늘을 날아다니는…… 저건 뭐야?!",
+                "name": "모건"
+            },
+            "figure_art": "avg_npc_405_1#4$1"
+        },
+        {
+            "id": 13,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4110_delphn_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "name",
+            "attributes": {
+                "content": "엎드려!",
+                "name": "델핀"
+            },
+            "figure_art": "avg_4110_delphn_1#3$1"
+        },
+        {
+            "id": 15,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 16,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 17,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 18,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 19,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 20,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_energycannon",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 21,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_explodebris",
+                "volume": 1.0,
+                "delay": 0.5
+            }
+        },
+        {
+            "id": 22,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 23,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.5,
+                "xstrength": 35.0,
+                "ystrength": 35.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 32,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 34,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_explodebris",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 35,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 3.0,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "bgeffect",
+            "attributes": {
+                "name": "$eb_smoke_l",
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 37,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 41,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 43,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_405_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "name",
+            "attributes": {
+                "content": "윽…… 콜록, 콜록!",
+                "name": "모건"
+            },
+            "figure_art": "avg_npc_405_1#11$1"
+        },
+        {
+            "id": 45,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_405_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "name",
+            "attributes": {
+                "content": "델핀, 왼손이……",
+                "name": "모건"
+            },
+            "figure_art": "avg_npc_405_1#5$1"
+        },
+        {
+            "id": 47,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4110_delphn_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "name",
+            "attributes": {
+                "content": "……만지지 마.",
+                "name": "델핀"
+            },
+            "figure_art": "avg_4110_delphn_1#7$1"
+        },
+        {
+            "id": 49,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4110_delphn_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "이건 평범한 포격이 아니야. 부식성이 있는…… 살카즈의 주술이야. 힘이 좀 안 들어가는데……",
+                "name": "델핀"
+            },
+            "figure_art": "avg_4110_delphn_1#7$1"
+        },
+        {
+            "id": 51,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_405_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "name",
+            "attributes": {
+                "content": "그럼 오염 구역에 갇힌 사람들은……",
+                "name": "모건"
+            },
+            "figure_art": "avg_npc_405_1#4$1"
+        },
+        {
+            "id": 53,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4110_delphn_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "name",
+            "attributes": {
+                "content": "이제 구할 수 없을 거야.",
+                "name": "델핀"
+            },
+            "figure_art": "avg_4110_delphn_1#2$1"
+        },
+        {
+            "id": 55,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_155_tiger_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "하늘을 나는 것에, 땅에서 자라는 것에, 거기다 어딜 가도 결정과 분진투성이. 이젠 한 발자국 내딛기도 힘들어!",
+                "name": "인드라"
+            },
+            "figure_art": "avg_155_tiger_1#7$1"
+        },
+        {
+            "id": 57,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "살카즈는 전장을 자신들에게 익숙한 환경으로 바꾸고, 우리를 전차에서 내리게 해 싸우려는 거야.",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 59,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "보병 대 보병으로, 탄약이 바닥났다는 전제로 맞붙는다면, 살카즈의 신체 능력이 우세를 점해.",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 61,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_155_tiger_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "살카즈 녀석들이 지금 잔꾀를 부리고 있다는 소리잖아!",
+                "name": "인드라"
+            },
+            "figure_art": "avg_155_tiger_1#9$1"
+        },
+        {
+            "id": 63,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "name",
+            "attributes": {
+                "content": "그러니 당황해서는 안 돼. 지금 당황하면 전부 다 끝나는 거야.",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 65,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "name",
+            "attributes": {
+                "content": "모건, 움직일 수 있는 전차를 전부 동원하고, 살카즈 보병과의 근접 전은 피하라고 해.",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 67,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "name",
+            "attributes": {
+                "content": "전차가 고장 났다 하더라도, 전차의 대포는 쉽게 포기하지 말도록. 지금 우리에게 가장 효과적인 무기니까.",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 69,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_405_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "name",
+            "attributes": {
+                "content": "알겠어!",
+                "name": "모건"
+            },
+            "figure_art": "avg_npc_405_1#4$1"
+        },
+        {
+            "id": 71,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "name",
+            "attributes": {
+                "content": "델핀, 통신병을 최대한 넓게 배치해. 최소한 파라곤 부대끼리는 서로 연락이 닿을 수 있게 해.",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 73,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4110_delphn_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "알겠어.",
+                "name": "델핀"
+            },
+            "figure_art": "avg_4110_delphn_1#3$1"
+        },
+        {
+            "id": 75,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "name",
+            "attributes": {
+                "content": "전진하려면 앞에 있는 이동 제단부터 격파해야 돼.",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 77,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#7$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "혼 씨, 대포로 우릴 엄호해 줘!",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#7$2"
+        },
+        {
+            "id": 79,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "name",
+            "attributes": {
+                "content": "알겠습니다!",
+                "name": "혼"
+            },
+            "figure_art": "avg_npc_229_1#1"
+        },
+        {
+            "id": 81,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 83,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.7,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.25,
+                "block": "true"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 88,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "인드라 소대는 적을 견제해. 그게 캐스터든 아츠 피조물이든, 하늘을 날아다니는 녀석이든, 전부 처치해 버려!",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 90,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_155_tiger_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "알겠어.",
+                "name": "인드라"
+            },
+            "figure_art": "avg_155_tiger_1#7$1"
+        },
+        {
+            "id": 92,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "name",
+            "attributes": {
+                "content": "다그다 소대는 나와 같이 간다.",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 94,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "평소대로?",
+                "name": "다그다"
+            },
+            "figure_art": "avg_npc_396_1#9$1"
+        },
+        {
+            "id": 96,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "name",
+            "attributes": {
+                "content": "평소대로.",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 98,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "코어가 보인다…… 작전 개시.",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 100,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 101,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 102,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 103,
+            "prop": "bgeffect",
+            "attributes": {}
+        },
+        {
+            "id": 104,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "살카즈의 또 다른 주술 제단."
+            }
+        },
+        {
+            "id": 107,
+            "prop": "name",
+            "attributes": {
+                "content": "위에 올라 힘껏 뛰어오르며 해머를 휘둘렀다."
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "전쟁이 진행됨에 따라, 그녀들은 이 악마의 눈처럼 생긴 전쟁 기계에 점점 익숙해지고 있었다."
+            }
+        },
+        {
+            "id": 109,
+            "prop": "name",
+            "attributes": {
+                "content": "그녀들은 전쟁 그 자체에 익숙해지고 있었다."
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "비나는 인드라, 모건, 다그다가 변하는 것을 느낄 수 있었으며, 자신의 몸에서도 똑같은 변화가 진행되고 있다고 생각했다."
+            }
+        },
+        {
+            "id": 111,
+            "prop": "name",
+            "attributes": {
+                "content": "좋은 변화일까? 아니면 그녀들의 변화가 너무 늦은 것일까?"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "붉은 악마의 눈이 그녀를 바라보았다."
+            }
+        },
+        {
+            "id": 113,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 114,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_singleblunt",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 115,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 117,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_land_impact",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 118,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 121,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_rockfall",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "해머를 내려치자, 시즈의 발이 지면에 채 닿기도 전에 제단이 붕괴하기 시작했다."
+            }
+        },
+        {
+            "id": 123,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "성공이야…… 후우……",
+                "name": "다그다"
+            },
+            "figure_art": "avg_npc_396_1#8$1"
+        },
+        {
+            "id": 125,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "지난번보다 빨리 끝났네.",
+                "name": "다그다"
+            },
+            "figure_art": "avg_npc_396_1#8$1"
+        },
+        {
+            "id": 127,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "name",
+            "attributes": {
+                "content": "……소리가 나.",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 129,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#7$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "name",
+            "attributes": {
+                "content": "후퇴한다!",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#7$2"
+        },
+        {
+            "id": 131,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 132,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 133,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_energycannon",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 134,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_explodebris",
+                "volume": 1.0,
+                "delay": 0.5
+            }
+        },
+        {
+            "id": 135,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 137,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.5,
+                "xstrength": 35.0,
+                "ystrength": 35.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 146,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_155_tiger_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "name",
+            "attributes": {
+                "content": "저게…… 또 나왔어! 우리가 박살 낸 녀석 바로 근처에!",
+                "name": "인드라"
+            },
+            "figure_art": "avg_155_tiger_1#9$1"
+        },
+        {
+            "id": 148,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_155_tiger_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "name",
+            "attributes": {
+                "content": "도대체 얼마나 많이 묻혀 있는 거야? 정말이지……",
+                "name": "인드라"
+            },
+            "figure_art": "avg_155_tiger_1#9$1"
+        },
+        {
+            "id": 150,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 151,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 152,
+            "prop": "name",
+            "attributes": {
+                "content": "끝이 나지 않는다."
+            }
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "시즈는 해머를 꽉 쥐었다."
+            }
+        },
+        {
+            "id": 154,
+            "prop": "name",
+            "attributes": {
+                "content": "속도에 적응하고는 있지만, 아직 충분히 빠르지 않았다."
+            }
+        },
+        {
+            "id": 155,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "name",
+            "attributes": {
+                "content": "……'회색 모자', 검의 자리 위치는 바뀌지 않았지?",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 157,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "계획이 변경되었다는 소식은 듣지 못했어.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 159,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "name",
+            "attributes": {
+                "content": "커다란 오리지늄 결정이 곳곳에 깔려있는데, 배가 움직일 수 있나?",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 161,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "name",
+            "attributes": {
+                "content": "빅토리아는 가장 강력한 육상 함대를 가지고 있어.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 163,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "name",
+            "attributes": {
+                "content": "전진 속도가 영향을 받을 수는 있겠지만, 속수무책으로 당할 정도는 아니야.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 165,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 166,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 167,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone",
+                "volume": 0.3
+            }
+        },
+        {
+            "id": 168,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 175,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "……함포 소리가 들리는군.",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#10$2"
+        },
+        {
+            "id": 177,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "철의 공작의 '가스트렐'호 포격 소리 같네.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 179,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "name",
+            "attributes": {
+                "content": "우리의 새로운 공격이 시작된 거지.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 181,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 182,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 184,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g4_warshipandswrdpedestal",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 187,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 188,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 194,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 196,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1337_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "애버콘의 돌격함 한 척이 살카즈의 선봉대와 마주쳤습니다!",
+                "name": "고위 장교"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "적들이 안갯속에서 갑자기 나타났습니다.",
+                "name": "고위 장교"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "오리지늄 결정으로 인해 시야가 많이 제한되어 적들의 움직임을 전혀 포착할 수가 없습니다!",
+                "name": "고위 장교"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 200,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "name",
+            "attributes": {
+                "content": "중거리 통신은 회복됐나?",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 202,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1337_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "name",
+            "attributes": {
+                "content": "전함에 탑재된 통신탑은 여전히 먹통입니다. 엔지니어링팀이 수리하고 있지만, 이런 오리지늄 환경에선……",
+                "name": "고위 장교"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "……공작님, 갑판에는 어쩐 일이십니까?",
+                "name": "고위 장교"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 205,
+            "prop": "name",
+            "attributes": {
+                "content": "지금 바깥은 오리지늄 분진이 심합니다. 가능한 지휘실을 떠나지 않으시는 게……",
+                "name": "고위 장교"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 206,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "name",
+            "attributes": {
+                "content": "웰링턴이 '가스트렐'호의 갑판 위에서 전선 부대를 지휘하고 있다는 소리를 들어서 말이야.",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 208,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1337_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "name",
+            "attributes": {
+                "content": "철의 공작은 백전노장입니다만, 공작님께서는……",
+                "name": "고위 장교"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 210,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "방금 '가스트렐'호가 포문을 열었더군.",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 212,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "그렇습니다.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 214,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "아직도 전진하고 있나?",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 216,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "아마도 그럴 겁니다. 철의 공작의 부대는 저희가 생각했던 것보다 훨씬 더 깊게 들어간 상태이며, 이제 곧 살카즈의 주력 부대와 충돌할 것 같습니다.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 218,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#2$1"
+        },
+        {
+            "id": 220,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 221,
+            "prop": "name",
+            "attributes": {
+                "content": "설마 철의 공작이 살카즈 군주의 목을 취하고 싶은 것일까요?",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 222,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "……웨슬리 웰링턴은 철의 공작이 되기 전에 한 명의 전사였어.",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#2$1"
+        },
+        {
+            "id": 224,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "웰링턴 공작의 대담함에는 광기가 묻어있을지도 모르지만…… 전황을 가지고 도박을 하는 사람은 아니야.",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 226,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "name",
+            "attributes": {
+                "content": "뭐가 되었던, 철의 공작이 펼치는 무모한 진격은 저희에게 큰 위험을 가지고 왔습니다.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 228,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "최초에 세웠던 계획에 따라, 애버콘 공작과 애시워스 공작의 부대도 철의 공작을 뒤따르고 있습니다…… 저희 선봉 부대도 따라가는 중이고요.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 230,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "오리지늄 지형 장애물을 포함하면, 저희의 전선은 지금 지나치게 늘어져 있습니다.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 232,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "……'가스트렐'호에 심어둔 그 '눈'은?",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 234,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "아무것도 보이지 않습니다.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 236,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "우리 '회색 모자'들 간의 통신도…… 크게 지연되고 있고요.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 238,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "name",
+            "attributes": {
+                "content": "에일린, 검의 자리를 확인해.",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 240,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1337_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "현재로서는 이상 없습니다!",
+                "name": "고위 장교"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "살카즈의 주술이 검의 자리를 오염시키게 두진 않을 것입니다.",
+                "name": "고위 장교"
+            },
+            "figure_art": "avg_npc_1337_1#1$1"
+        },
+        {
+            "id": 243,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "공작님, '시인'이 신호탄을 발사했습니다.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 245,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "name",
+            "attributes": {
+                "content": "그렇다면 이제 곧 알렉산드리나와 왕의 숨결이 도착하겠군.",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 247,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 248,
+            "prop": "name",
+            "attributes": {
+                "content": "부하에게 잘 지켜보라고 해. 검이 전장에서 길을 잃지 않도록 말이야.",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 249,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "name",
+            "attributes": {
+                "content": "왕의 숨결이 제 역할을 해줘야 하니까.",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 251,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_726_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "name",
+            "attributes": {
+                "content": "통신이 완전히 회복되지 않는다면…… 공작 연합군도 성립될 수 없어.",
+                "name": "캐스터 공작"
+            },
+            "figure_art": "avg_npc_726_1#5$1"
+        },
+        {
+            "id": 253,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 254,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 256,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g2_mainbattlefield",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1341_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 259,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1341_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 260,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 261,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 262,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "적이 강해지고 있는 것 같아.",
+                "name": "다그다"
+            },
+            "figure_art": "avg_npc_396_1#7$1"
+        },
+        {
+            "id": 264,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "name",
+            "attributes": {
+                "content": "주술이…… 우리를 침식하고, 놈들을 강하게 만들고 있어.",
+                "name": "다그다"
+            },
+            "figure_art": "avg_npc_396_1#7$1"
+        },
+        {
+            "id": 266,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "name",
+            "attributes": {
+                "content": "시즈, 조심해!",
+                "name": "다그다"
+            },
+            "figure_art": "avg_npc_396_1#11$1"
+        },
+        {
+            "id": 268,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "살카즈 전사"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 270,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 271,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 20.0,
+                "vibrato": 20.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "Effect",
+            "attributes": {
+                "name": "$e_spark_02_large",
+                "x": 0.0,
+                "y": 0.0,
+                "layer": 3.0
+            }
+        },
+        {
+            "id": 273,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_skulsrsword"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.3
+            }
+        },
+        {
+            "id": 278,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 280,
+            "prop": "name",
+            "attributes": {
+                "content": "으윽……!",
+                "name": "다그다"
+            },
+            "figure_art": "avg_npc_396_1#11$1"
+        },
+        {
+            "id": 281,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#7$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 282,
+            "prop": "name",
+            "attributes": {
+                "content": "다그다!",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#7$2"
+        },
+        {
+            "id": 283,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 284,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 285,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_singleblunt",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 286,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_land_impact",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 289,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 291,
+            "prop": "name",
+            "attributes": {
+                "content": "해머를 휘두르자, 나흐체러르 전사의 몸 일부가 무너졌다."
+            }
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "하지만 그럼에도 나흐체러르 전사는 계속해서 앞으로 나아갔다."
+            }
+        },
+        {
+            "id": 293,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#7$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "……!",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#7$2"
+        },
+        {
+            "id": 295,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 296,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 297,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_singleblunt",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 298,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_land_impact",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 301,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 303,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 304,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 305,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_singleblunt",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 306,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_land_impact",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "두 번, 세 번."
+            }
+        },
+        {
+            "id": 312,
+            "prop": "name",
+            "attributes": {
+                "content": "다그다가 빠르게 다가와 너클로 녀석의 허리를 찢어발겼다."
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "끝으로 '회색 모자'의 불의 칼날이 가슴을 꿰뚫었다."
+            }
+        },
+        {
+            "id": 314,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 315,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "name",
+            "attributes": {
+                "content": "(가쁘게 숨을 몰아쉰다)",
+                "name": "살카즈 전사"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 317,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 318,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 319,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 320,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 321,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "name",
+            "attributes": {
+                "content": "이제야 한 명 처리했네. 그리고…… 아직도 저렇게 많이 남았나.",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 323,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_867_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "name",
+            "attributes": {
+                "content": "이 살카즈들은 정말이지……",
+                "name": "'회색 모자'"
+            },
+            "figure_art": "avg_npc_867_1#1$1"
+        },
+        {
+            "id": 325,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_414_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "괴물이야!",
+                "name": "빅토리아 병사"
+            },
+            "figure_art": "avg_npc_414_1#1$1"
+        },
+        {
+            "id": 327,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_414_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 328,
+            "prop": "name",
+            "attributes": {
+                "content": "마족 놈들은 전부 괴물이야. 제길, 애초에 살아있는 녀석이 아니잖아!",
+                "name": "빅토리아 병사"
+            },
+            "figure_art": "avg_npc_414_1#1$1"
+        },
+        {
+            "id": 329,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_414_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 330,
+            "prop": "name",
+            "attributes": {
+                "content": "전부 다 시체인 게 분명해…… 시체투성이야……",
+                "name": "빅토리아 병사"
+            },
+            "figure_art": "avg_npc_414_1#1$1"
+        },
+        {
+            "id": 331,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avgnew_112_siege_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "name",
+            "attributes": {
+                "content": "……시체?",
+                "name": "시즈"
+            },
+            "figure_art": "avgnew_112_siege_1#5$2"
+        },
+        {
+            "id": 333,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 334,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 335,
+            "prop": "name",
+            "attributes": {
+                "content": "기이한 소리가 사방으로 울려 퍼졌다."
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "오리지늄 결정이 땅을 뚫고 솟아오르는 소리와도, 결정 분진이 폭발하기 전에 내는 전조와도 다른 소리였다."
+            }
+        },
+        {
+            "id": 337,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_222_bpipe_1#6",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "name",
+            "attributes": {
+                "content": "대빵, 이대로면 정말로 어쩔 수 없게 될 거야!",
+                "name": "백파이프"
+            },
+            "figure_art": "avg_222_bpipe_1#6"
+        },
+        {
+            "id": 339,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_222_bpipe_1#6",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 340,
+            "prop": "name",
+            "attributes": {
+                "content": "적들이 점점 더 많아지고 있다니!",
+                "name": "백파이프"
+            },
+            "figure_art": "avg_222_bpipe_1#6"
+        },
+        {
+            "id": 341,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 342,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 343,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.7,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista"
+            }
+        },
+        {
+            "id": 346,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.25,
+                "block": "true"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 348,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "그럼 눈앞에 있는 한 놈에 집중해.",
+                "name": "혼"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 350,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "결국 누군가는 가장 앞으로 오게 될 테니까 말이야.",
+                "name": "혼"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 352,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 353,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 354,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 8.0,
+                "ystrength": 6.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.7,
+                "r": 0.95,
+                "g": 0.95,
+                "b": 0.95,
+                "fadetime": 0.02,
+                "block": "true"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.25,
+                "block": "true"
+            }
+        },
+        {
+            "id": 358,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "방패를 거치하고, 포를 쏜다. 수백 번은 반복했을 그 동작."
+            }
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "빅토리아는 대지에서 가장 강력한 무기를 가지고 있다. 한 발의 포탄이 살카즈의 갑옷을 종이짝처럼 찢어발겼다."
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "곧이어 두 명의 살카즈가 동시에 돌진해 왔다. 그 후에는 세 명이."
+            }
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "전력을 다해 포탄을 퍼부었지만, 밀려오는 파도를 막을 수는 없었다."
+            }
+        },
+        {
+            "id": 363,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "하아…… 하아……",
+                "name": "혼"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 365,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 366,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "끝이 보이지 않는 적들의 파도."
+            }
+        },
+        {
+            "id": 368,
+            "prop": "name",
+            "attributes": {
+                "content": "얼마나 많은 살카즈들을 쓰러트렸는지, 또 얼마나 많은 살카즈들이 남아 있는 건지 알 수 없었다."
+            }
+        },
+        {
+            "id": 369,
+            "prop": "name",
+            "attributes": {
+                "content": "죽은 빅토리아인이 더 많을지도 모른다."
+            }
+        },
+        {
+            "id": 370,
+            "prop": "MusicVolume",
+            "attributes": {
+                "volume": 0.3,
+                "fadetime": 3.0
+            }
+        },
+        {
+            "id": 371,
+            "prop": "name",
+            "attributes": {
+                "content": "백파이프가 외치는 소리와 캐슬브레이커의 흔들림은 혼이 계속해서 싸워나갈 수 있는 원동력이 되어주었다."
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "멀지 않은 곳에서 갑자기 깜빡이는 불꽃이 보였다."
+            }
+        },
+        {
+            "id": 373,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "혼"
+            },
+            "figure_art": "avg_npc_229_1#2"
+        },
+        {
+            "id": 375,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "백파이프……",
+                "name": "혼"
+            },
+            "figure_art": "avg_npc_229_1#2"
+        },
+        {
+            "id": 377,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_222_bpipe_1#5",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 378,
+            "prop": "name",
+            "attributes": {
+                "content": "왜서, 대빵?",
+                "name": "백파이프"
+            },
+            "figure_art": "avg_222_bpipe_1#5"
+        },
+        {
+            "id": 379,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "name",
+            "attributes": {
+                "content": "힐을…… 또 본 것 같아.",
+                "name": "혼"
+            },
+            "figure_art": "avg_npc_229_1#2"
+        },
+        {
+            "id": 381,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 382,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 383,
+            "prop": "name",
+            "attributes": {
+                "content": "맞다, 힐."
+            }
+        },
+        {
+            "id": 384,
+            "prop": "name",
+            "attributes": {
+                "content": "그때와 변함없는 그 얼굴. 시도 때도 없이 악몽 속에 나타나 동료들이 어떻게 비참한 죽음을 맞이했는지 알려주던…… 그 배신자의 얼굴."
+            }
+        },
+        {
+            "id": 385,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "혼"
+            },
+            "figure_art": "avg_npc_229_1#1"
+        },
+        {
+            "id": 387,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_222_bpipe_1#2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "name",
+            "attributes": {
+                "content": "저기에…… 누워 있는 사람? 죽은 지 오래된 것 같은데…… 윽, 대빵, 저거 방금…… 방금……",
+                "name": "백파이프"
+            },
+            "figure_art": "avg_222_bpipe_1#2"
+        },
+        {
+            "id": 389,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "움직이고 있네.",
+                "name": "혼"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 391,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_229_1#7",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "name",
+            "attributes": {
+                "content": "지금…… 일어나고 있어.",
+                "name": "혼"
+            },
+            "figure_art": "avg_npc_229_1#7"
+        },
+        {
+            "id": 393,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_248",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "'힐 부관'"
+            },
+            "figure_art": "avg_npc_248"
+        },
+        {
+            "id": 395,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 396,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 397,
+            "prop": "name",
+            "attributes": {
+                "content": "웰링턴 부대의 제복을 입은 그 남자가 비틀거리며 다가오기 시작했다."
+            }
+        },
+        {
+            "id": 398,
+            "prop": "name",
+            "attributes": {
+                "content": "힐은 쥐고 있던 칼로 혼의 앞에 있던 살카즈를 공격했다."
+            }
+        },
+        {
+            "id": 399,
+            "prop": "name",
+            "attributes": {
+                "content": "두꺼운 갑옷은 힐의 손을 튕겨냈다. 그러자 힐의 어깨가 기괴한 각도로 꺾이며 재차 살카즈를 공격하기 시작했다."
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "익숙한 그 얼굴이 힐과 백파이프를 향해 다가오고 있었다."
+            }
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "창백한 회색빛 속에서, 단 한 점의 보라색만이 약동하고 있었다."
+            }
+        },
+        {
+            "id": 402,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_222_bpipe_1#6",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "그 여자다.",
+                "name": "백파이프"
+            },
+            "figure_art": "avg_222_bpipe_1#6"
+        },
+        {
+            "id": 404,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_222_bpipe_1#6",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "더블린!",
+                "name": "백파이프"
+            },
+            "figure_art": "avg_222_bpipe_1#6"
+        },
+        {
+            "id": 406,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 407,
+            "prop": "MusicVolume",
+            "attributes": {
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 408,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 410,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g3_mainbattlefield_ex",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_244",
+                "bstart": 0.0,
+                "bend": 0.4,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 413,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_244",
+                "bstart": 0.0,
+                "bend": 0.4,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 414,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_244",
+                "bstart": 0.0,
+                "bend": 0.7,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 415,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": "“내가 전사의 명예를 내려놓는 것은, 앞으로 타라의 땅이 다시는 피로 잠기지 않도록, 다시는 드라코 동족끼리 서로 칼을 겨눌 필요가 없도록 하기 위함이다.”"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "name",
+            "attributes": {
+                "content": "“붉은 용의 불길이 죽은 전사를 용광로 속에서 되살리는 날이 오지 않는 한.”"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 419,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "name",
+            "attributes": {
+                "content": "세 번째 제단 파괴 완료!",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#3$1"
+        },
+        {
+            "id": 421,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "name",
+            "attributes": {
+                "content": "전하, 캐스터와 비행병의 배치가 완료되었으며, 현재 가장 큰 제단을 향해 접근 중입니다!",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 423,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "name",
+            "attributes": {
+                "content": "죽은 동포들이 저희를 대신해 마족들의 오염을 막아주었지만…… 이곳의 주술은 전에 없는 살상력을 보여주고 있습니다!",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 425,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "name",
+            "attributes": {
+                "content": "물러서.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 427,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "name",
+            "attributes": {
+                "content": "……전하?",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#4$1"
+        },
+        {
+            "id": 429,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "name",
+            "attributes": {
+                "content": "전하께서…… 직접 제단을 파괴하러 가시는 겁니까?",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#4$1"
+        },
+        {
+            "id": 431,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "name",
+            "attributes": {
+                "content": "너희들은 신하로서 최선을 다 해 주었다.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 433,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "name",
+            "attributes": {
+                "content": "이제 남은 건 내가 군주로서 앞장서 너희들을 이끄는 것이다.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 435,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "name",
+            "attributes": {
+                "content": "내가 직접 이 땅을 밟지 않는다면, 어떻게 나의 나라로 만들 수 있을까?",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 437,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "name",
+            "attributes": {
+                "content": "붉은 용의 불길이…… 과거 수백만 년 동안 그래왔던 것처럼, 전쟁의 최전선에 떨어질 것이다.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 439,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 440,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 441,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 443,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fireburst",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 445,
+            "prop": "bgeffect",
+            "attributes": {
+                "name": "$eb_eblana_attack",
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 446,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 452,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "……제단이 파괴되고 있다!",
+                "name": "살카즈 전사"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 454,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "진형을 갖춰라! 불에 흩어지지 말고 아츠로 맞대응하는 거다!",
+                "name": "살카즈 전사"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 456,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "나약한 이종족들이 더 늘어봤자……",
+                "name": "살카즈 전사"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 458,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 459,
+            "prop": "name",
+            "attributes": {
+                "content": "그 말은 동의할 수 없군.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 460,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "name",
+            "attributes": {
+                "content": "우리는 달콤한 꿀 속에 빠져 살던 빅토리아인들과는 달라.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 462,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "name",
+            "attributes": {
+                "content": "타라 전사들은 그림자 속에 숨어서 수많은 고통의 시련들을 견뎌냈지.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 464,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "name",
+            "attributes": {
+                "content": "과거 망령이라 불렸던 우리는 죽음과 하나가 되는 기분을 가장 잘 알고 있어.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 466,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "name",
+            "attributes": {
+                "content": "놔둘까 보냐……!",
+                "name": "살카즈 전사"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 468,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "name",
+            "attributes": {
+                "content": "스스로를 아츠의 재료로 삼아…… 제단을 폭파시키려 했나?",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#2$1"
+        },
+        {
+            "id": 470,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "name",
+            "attributes": {
+                "content": "네 소원대로 해주마.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 472,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "name",
+            "attributes": {
+                "content": "안 돼……!",
+                "name": "살카즈 전사"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 474,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1341_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "name",
+            "attributes": {
+                "content": "이미…… 이미 늦었……",
+                "name": "살카즈 전사"
+            },
+            "figure_art": "avg_npc_1341_1#1$1"
+        },
+        {
+            "id": 476,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 477,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 478,
+            "prop": "blocker",
+            "attributes": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 1.0,
+                "block": "true",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 479,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 480,
+            "prop": "name",
+            "attributes": {
+                "content": "생명의 불꽃이 점점 어두워졌다."
+            }
+        },
+        {
+            "id": 481,
+            "prop": "name",
+            "attributes": {
+                "content": "대신 보랏빛 죽음의 불꽃이 죽어가는 살카즈 전사들과 에블라나의 눈동자에서 피어올랐다."
+            }
+        },
+        {
+            "id": 482,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 483,
+            "prop": "Image",
+            "attributes": {
+                "image": "50_i38",
+                "fadetime": 2.0,
+                "xScale": 1.3,
+                "yScale": 1.3,
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "ImageTween",
+            "attributes": {
+                "image": "50_i38",
+                "duration": 40.0,
+                "xScaleFrom": 1.3,
+                "yScaleFrom": 1.3,
+                "xScaleTo": 1.0,
+                "yScaleTo": 1.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "blocker",
+            "attributes": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "a": 0.0,
+                "block": "true",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 486,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 487,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "죽음을 주관하는 왕정 같은 건 존재하지 않아.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 489,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 490,
+            "prop": "name",
+            "attributes": {
+                "content": "살카즈여, 너희들이 죽음에 익숙한 건 단지…… 그만큼 많은 전쟁을 겪었기 때문이야.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 491,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 492,
+            "prop": "name",
+            "attributes": {
+                "content": "다들 보았나?",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 493,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 494,
+            "prop": "name",
+            "attributes": {
+                "content": "죽음이 우리와 함께한다! 우리는 보이지 않는 악마들과 싸우고 있는 것이 아니다!",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#3$1"
+        },
+        {
+            "id": 495,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "name",
+            "attributes": {
+                "content": "겉만 번지르르한 마법진에서 살카즈를 끄집어내, 우리의 석궁과 대포의 맛을 보여줘라!",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#3$1"
+        },
+        {
+            "id": 497,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 498,
+            "prop": "name",
+            "attributes": {
+                "content": "……'교관', 눈빛이 불타오르고 있군.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 499,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "name",
+            "attributes": {
+                "content": "저와 수많은 타라 출신 장병들은 너무 오랫동안 기다려 왔습니다.",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 501,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "name",
+            "attributes": {
+                "content": "제국 멸망에 대한 전설을 듣지 않은 이가 없으며, 열정을 품고 종군하지 않은 이가 없습니다.",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 503,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 504,
+            "prop": "name",
+            "attributes": {
+                "content": "지난 수십 년 동안, 웰링턴령과 웰링턴 공작은 끊임없이 견제당했으며, 저희 역시 다른 공작들의 협상 테이블의 틈에 끼어있었습니다.",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 505,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "name",
+            "attributes": {
+                "content": "열정으로 가득 찬 수많은 전사들은 출신을 이유 삼아 억압받거나 빅토리아인의 음모와 계략에 휘말려 억울하게 죽어갔습니다.",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#2$1"
+        },
+        {
+            "id": 507,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "오랜 세월을 참으며, 뒤에서 계략을 꾸미는 소인배가 되는 것까지 감수하였습니다. 이 모든 것은 귀족들의 사리사욕에 불을 지르는 전쟁이 아닌, 진정한 전쟁을 위함이었습니다.",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 509,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "진정한 전장에서 죽음을 맞이하는 것이 전사에게 있어서 영광이며, 의미가 있습니다.",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 511,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 512,
+            "prop": "name",
+            "attributes": {
+                "content": "만약 제가 전장에서 죽게 된다면……",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#6$1"
+        },
+        {
+            "id": 513,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "name",
+            "attributes": {
+                "content": "전하의 불로 저를 다시 일으켜 세워 주시옵소서!",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#3$1"
+        },
+        {
+            "id": 515,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 516,
+            "prop": "name",
+            "attributes": {
+                "content": "불길이 제 몸을 전부 태울 때까지, 우리가 원하는 나라가 세워질 때까지, 저는 절대로 무기를 놓지 않을 것입니다!",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#3$1"
+        },
+        {
+            "id": 517,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 518,
+            "prop": "name",
+            "attributes": {
+                "content": "훌륭하군. 그럼 나를 따라와.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 519,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 520,
+            "prop": "name",
+            "attributes": {
+                "content": "저기 고목의 왕좌가 보이나?",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 521,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "저건 살카즈의 군주군요.",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 523,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 524,
+            "prop": "name",
+            "attributes": {
+                "content": "나흐체러르 네츠살렘, 자칭 전쟁과 죽음의 왕.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 525,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "name",
+            "attributes": {
+                "content": "살카즈 왕정은 항상 과장된 칭호를 좋아했지요.",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#5$1"
+        },
+        {
+            "id": 527,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 528,
+            "prop": "name",
+            "attributes": {
+                "content": "과장? ……아니.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 529,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 530,
+            "prop": "name",
+            "attributes": {
+                "content": "놈은 너무 오래됐을 뿐이야.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#1$1"
+        },
+        {
+            "id": 531,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 532,
+            "prop": "name",
+            "attributes": {
+                "content": "하지만 살아있는 전설은 저 녀석뿐만이 아니지.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 533,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_723_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 534,
+            "prop": "name",
+            "attributes": {
+                "content": "……당연합니다!",
+                "name": "'교관'"
+            },
+            "figure_art": "avg_npc_723_1#3$1"
+        },
+        {
+            "id": 535,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 536,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "멀지 않은 곳에서 함포의 굉음이 들려왔다."
+            }
+        },
+        {
+            "id": 538,
+            "prop": "name",
+            "attributes": {
+                "content": "산을 무너트리는 힘은 오래된 주술에 국한되는 것만이 아니다."
+            }
+        },
+        {
+            "id": 539,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_722_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 540,
+            "prop": "name",
+            "attributes": {
+                "content": "전쟁과 전쟁…… 죽음과 죽음이 서로 싸우고 있구나.",
+                "name": "에블라나"
+            },
+            "figure_art": "avg_npc_722_1#5$1"
+        },
+        {
+            "id": 541,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 542,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 543,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 544,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 545,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 546,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fireburst",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 547,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 548,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 549,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 550,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 551,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 552,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g3_mainbattlefield_ex",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 553,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 554,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 555,
+            "prop": "name",
+            "attributes": {
+                "content": "종장님, 몰이사냥이 실패했습니다.",
+                "name": "'영장'"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 556,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 557,
+            "prop": "name",
+            "attributes": {
+                "content": "드라코의 불이 우리 진형을 끊고 있습니다.",
+                "name": "'영장'"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 558,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 559,
+            "prop": "name",
+            "attributes": {
+                "content": "……드라코인가.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 560,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 561,
+            "prop": "name",
+            "attributes": {
+                "content": "수천 년 전, 터전을 막 잃은 살카즈도 이곳에서 붉은 용과 맞서 싸웠지.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 562,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 563,
+            "prop": "name",
+            "attributes": {
+                "content": "수많은 살카즈들이 화염 아래에서 숯덩이가 되었다. 그것들은 지금 우리의 발아래, 그리고 우리 곁에 있지.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 564,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 565,
+            "prop": "name",
+            "attributes": {
+                "content": "놈을 처치하겠습니다.",
+                "name": "'영장'"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 566,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 567,
+            "prop": "name",
+            "attributes": {
+                "content": "붉은 용 한 마리라면 저희가 배불리 먹기에 충분한 양이죠.",
+                "name": "'영장'"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 568,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 569,
+            "prop": "name",
+            "attributes": {
+                "content": "이 전쟁을 이끌고 있는 것은 붉은 용이 아니다.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 570,
+            "prop": "name",
+            "attributes": {
+                "content": "나흐체러르 킹은 전장의 한편을 바라보았다."
+            }
+        },
+        {
+            "id": 571,
+            "prop": "name",
+            "attributes": {
+                "content": "붉은 용의 화염과 연기 뒤로, 거대한 그림자가 덩치에 어울리지 않는 속도로 빠르게 돌진해 오고 있었다."
+            }
+        },
+        {
+            "id": 572,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 573,
+            "prop": "name",
+            "attributes": {
+                "content": "대지에 그림자를 드리우고, 숨을 쉬는 것만으로도 산천을 진동케 하는 거대한 물체는……",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 574,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 575,
+            "prop": "name",
+            "attributes": {
+                "content": "더 이상 붉은 용 따위가 아니다.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 576,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 577,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 578,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 579,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g13_warshipcommandroom",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 580,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 581,
+            "prop": "name",
+            "attributes": {
+                "content": "“파라미터 설정 완료!”"
+            }
+        },
+        {
+            "id": 582,
+            "prop": "name",
+            "attributes": {
+                "content": "“장전 완료!”"
+            }
+        },
+        {
+            "id": 583,
+            "prop": "name",
+            "attributes": {
+                "content": "“교란탄 발사!”"
+            }
+        },
+        {
+            "id": 584,
+            "prop": "name",
+            "attributes": {
+                "content": "“목표 포착!”"
+            }
+        },
+        {
+            "id": 585,
+            "prop": "name",
+            "attributes": {
+                "content": "“주포, 1차 사격 개시!!”"
+            }
+        },
+        {
+            "id": 586,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 587,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone"
+            }
+        },
+        {
+            "id": 588,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 589,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 590,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 591,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 592,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 593,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 594,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 595,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_408_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 596,
+            "prop": "name",
+            "attributes": {
+                "content": "격파 확인!",
+                "name": "고위 장교"
+            },
+            "figure_art": "avg_npc_408_1#1$1"
+        },
+        {
+            "id": 597,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_408_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 598,
+            "prop": "name",
+            "attributes": {
+                "content": "장군님, 장애물을 깔끔하게 치워놓았습니다.",
+                "name": "고위 장교"
+            },
+            "figure_art": "avg_npc_408_1#1$1"
+        },
+        {
+            "id": 599,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 600,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 601,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 602,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 603,
+            "prop": "name",
+            "attributes": {
+                "content": "좋아.",
+                "name": "웰링턴 공작"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 604,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 605,
+            "prop": "name",
+            "attributes": {
+                "content": "……'가스트렐'호, 전속력 전진.",
+                "name": "웰링턴 공작"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 606,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 607,
+            "prop": "name",
+            "attributes": {
+                "content": "목표, 나흐체러르의 왕좌.",
+                "name": "웰링턴 공작"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 608,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 609,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 610,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 611,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g2_mainbattlefield",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 612,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 613,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone"
+            }
+        },
+        {
+            "id": 614,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 615,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 616,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 617,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 618,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 619,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 620,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 621,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone"
+            }
+        },
+        {
+            "id": 622,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 623,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 624,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 625,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 626,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 627,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 628,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 629,
+            "prop": "name",
+            "attributes": {
+                "content": "함포의 굉음이 계속해서 울려 퍼졌다."
+            }
+        },
+        {
+            "id": 630,
+            "prop": "name",
+            "attributes": {
+                "content": "웰링턴은 자신의 가장 충성스러운 부하를 잘 알고 있다. 그 부하는 바로 가장 오래된 함포로, 웰링턴과 함께 링고네스의 대문을 두들겼다."
+            }
+        },
+        {
+            "id": 631,
+            "prop": "name",
+            "attributes": {
+                "content": "웰링턴은 대지에서 가장 강성한 이동도시를 죽였으며, 그 시체에서 척추를 뽑아 전함의 일부로 만들었다."
+            }
+        },
+        {
+            "id": 632,
+            "prop": "name",
+            "attributes": {
+                "content": "그 후에는 '가스트렐'호와 함께 수많은 지역을 돌아다니며 무수한 적들을 물리쳤다."
+            }
+        },
+        {
+            "id": 633,
+            "prop": "name",
+            "attributes": {
+                "content": "라이타니엔 캐스터의 아츠 구체, 우르수스 뱅가드의 방패, 사르곤 자객의 황금 칼날, 공작은 적에게서 가장 가치 있는 부분을 수집하여 기함을 장식했다."
+            }
+        },
+        {
+            "id": 634,
+            "prop": "name",
+            "attributes": {
+                "content": "기념을 위해서가 아니다. 세월이 흐르며 약해진 사람만이 과거의 흔적을 통해 과거를 추억하기 때문이다."
+            }
+        },
+        {
+            "id": 635,
+            "prop": "name",
+            "attributes": {
+                "content": "그리고 적의 유골을 밟고, 그것들의 힘을 흡수하며, '가스트렐'호는 더욱더 강해져야 한다."
+            }
+        },
+        {
+            "id": 636,
+            "prop": "name",
+            "attributes": {
+                "content": "그래야만 더 강한 적에게서 승리를 거둘 수 있다."
+            }
+        },
+        {
+            "id": 637,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 638,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 639,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 640,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g3_mainbattlefield_ex",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 641,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 642,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 643,
+            "prop": "name",
+            "attributes": {
+                "content": "방어하라!",
+                "name": "'영장'"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 644,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 645,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 646,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone"
+            }
+        },
+        {
+            "id": 647,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 648,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 649,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 650,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 651,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 652,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 653,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 654,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 655,
+            "prop": "name",
+            "attributes": {
+                "content": "결정 장벽이…… 부서졌나.",
+                "name": "'영장'"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 656,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 657,
+            "prop": "name",
+            "attributes": {
+                "content": "적은 계속해서 전진해 오는군.",
+                "name": "'영장'"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 658,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 659,
+            "prop": "name",
+            "attributes": {
+                "content": "포화로 길을 트며 죽음을 갈망하고 있다.",
+                "name": "'영장'"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 660,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 661,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 662,
+            "prop": "name",
+            "attributes": {
+                "content": "오리지늄 바다 위로 계속해서 포격이 쏟아졌다."
+            }
+        },
+        {
+            "id": 663,
+            "prop": "name",
+            "attributes": {
+                "content": "금빛 가루가 사방으로 흩어지며, 응결된 거대한 파도에 균열이 생겼다."
+            }
+        },
+        {
+            "id": 664,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 665,
+            "prop": "name",
+            "attributes": {
+                "content": "감히…… 이렇게나 접근하다니……",
+                "name": "'영장'"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 666,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 667,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 668,
+            "prop": "name",
+            "attributes": {
+                "content": "짙은 안개가 전함을 감싸 안았다."
+            }
+        },
+        {
+            "id": 669,
+            "prop": "name",
+            "attributes": {
+                "content": "수많은 나흐체러르 전사가 갑판 위에 떨어졌으며, 주술의 빛이 전함을 뒤덮었다."
+            }
+        },
+        {
+            "id": 670,
+            "prop": "name",
+            "attributes": {
+                "content": "물어뜯고, 해체하고, 부식된다."
+            }
+        },
+        {
+            "id": 671,
+            "prop": "name",
+            "attributes": {
+                "content": "화포가 조용해졌다."
+            }
+        },
+        {
+            "id": 672,
+            "prop": "name",
+            "attributes": {
+                "content": "나흐체러르의 마법진에 걸렸던 사냥감들처럼, 단단한 강철의 신체가 소화되고 있었다."
+            }
+        },
+        {
+            "id": 673,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 674,
+            "prop": "name",
+            "attributes": {
+                "content": "포획을…… 완료했습니다.",
+                "name": "'영장'"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 675,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 676,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 677,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 678,
+            "prop": "name",
+            "attributes": {
+                "content": "아직이다.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 679,
+            "prop": "name",
+            "attributes": {
+                "content": "네츠살렘이 아츠 유닛을 들어 올렸다."
+            }
+        },
+        {
+            "id": 680,
+            "prop": "name",
+            "attributes": {
+                "content": "왕좌 아래에서 빠르게 자라난 나뭇가지가 나흐체러르 전사들의 앞을 가로막았다."
+            }
+        },
+        {
+            "id": 681,
+            "prop": "name",
+            "attributes": {
+                "content": "포탄이 나뭇가지 사이로 박혔다."
+            }
+        },
+        {
+            "id": 682,
+            "prop": "name",
+            "attributes": {
+                "content": "몇 초 후, 포탄이 터지면서 나뭇가지가 산산이 조각났다."
+            }
+        },
+        {
+            "id": 683,
+            "prop": "name",
+            "attributes": {
+                "content": "전쟁이 시작되고 처음으로 나흐체러르의 왕좌가 흔들렸다."
+            }
+        },
+        {
+            "id": 684,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1331_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 685,
+            "prop": "name",
+            "attributes": {
+                "content": "종장님!",
+                "name": "'영장'"
+            },
+            "figure_art": "avg_npc_1331_1#1$1"
+        },
+        {
+            "id": 686,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 687,
+            "prop": "name",
+            "attributes": {
+                "content": "괜찮다.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 688,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 689,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 690,
+            "prop": "name",
+            "attributes": {
+                "content": "부패의 짙은 안갯속에서, 전함이 모습을 드러냈다."
+            }
+        },
+        {
+            "id": 691,
+            "prop": "name",
+            "attributes": {
+                "content": "바깥층 일부가 부패의 침식으로 인해 떨어져 나갔으며, 주포와 부포도 주술탄의 폭격으로 절반 가까이 큰 손상을 입었지만, 강철의 골조만큼은 여전히 반짝이고 있었다."
+            }
+        },
+        {
+            "id": 692,
+            "prop": "name",
+            "attributes": {
+                "content": "그것은 여전히 '가스트렐'호 였으며, 지상에서 가장 강력한 전함이었다."
+            }
+        },
+        {
+            "id": 693,
+            "prop": "name",
+            "attributes": {
+                "content": "그리고 그것의 주인은……"
+            }
+        },
+        {
+            "id": 694,
+            "prop": "name",
+            "attributes": {
+                "content": "왕좌에 앉은 살카즈가 고개를 숙여 결정 사이의 자그마한 그림자를 찾아냈다."
+            }
+        },
+        {
+            "id": 695,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 696,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 697,
+            "prop": "Character",
+            "attributes": {
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 698,
+            "prop": "Background",
+            "attributes": {
+                "image": "50_g2_mainbattlefield",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 699,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 700,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_408_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 701,
+            "prop": "name",
+            "attributes": {
+                "content": "장군님, 살카즈의 주력 선봉 부대가 '가스트렐'호로 몰려가고 있습니다!",
+                "name": "적철 근위대원"
+            },
+            "figure_art": "avg_npc_408_1#1$1"
+        },
+        {
+            "id": 702,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_408_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 703,
+            "prop": "name",
+            "attributes": {
+                "content": "저희들이 함선에서 내린 걸 모르는 것……",
+                "name": "적철 근위대원"
+            },
+            "figure_art": "avg_npc_408_1#1$1"
+        },
+        {
+            "id": 704,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_408_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 705,
+            "prop": "name",
+            "attributes": {
+                "content": "무언가가 빠르게 날아오고 있습니다!",
+                "name": "적철 근위대원"
+            },
+            "figure_art": "avg_npc_408_1#1$1"
+        },
+        {
+            "id": 706,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_408_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 707,
+            "prop": "name",
+            "attributes": {
+                "content": "호위대! 밀집 대형!",
+                "name": "적철 근위대원"
+            },
+            "figure_art": "avg_npc_408_1#1$1"
+        },
+        {
+            "id": 708,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 709,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 710,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_explosion_stone"
+            }
+        },
+        {
+            "id": 711,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_explosion",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 712,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 713,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 714,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 715,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 716,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 717,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 718,
+            "prop": "name",
+            "attributes": {
+                "content": "한 차례의 포격이 쏟아졌다."
+            }
+        },
+        {
+            "id": 719,
+            "prop": "name",
+            "attributes": {
+                "content": "하지만 가느다란 나뭇가지 몇 가닥만이 연기와 먼지를 따라 떨어졌을 뿐이었다."
+            }
+        },
+        {
+            "id": 720,
+            "prop": "name",
+            "attributes": {
+                "content": "결정의 파도를 깨트릴 수 있을만한 힘이었지만, 하늘에 떠 있는 모습은 전혀 흔들리지 않았다."
+            }
+        },
+        {
+            "id": 721,
+            "prop": "name",
+            "attributes": {
+                "content": "나흐체러르 킹은 진영 중앙의 지휘관을 바라보았다. 늙은 필라인의 뒤편, 멀지 않은 곳에서 피에 목마른 전함이 썩은 피와 살을 찢어발기기만을 기다리고 있었다."
+            }
+        },
+        {
+            "id": 722,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 723,
+            "prop": "name",
+            "attributes": {
+                "content": "빅토리아의…… 공작인가.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 724,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 725,
+            "prop": "name",
+            "attributes": {
+                "content": "우리는 수많은 빅토리아인을 집어삼켰다. 장군, 백작, 그 어떤 칭호를 가졌던, 모두 똑같은 맛이더군.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 726,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 727,
+            "prop": "name",
+            "attributes": {
+                "content": "모사꾼이고, 상인이었지. 전사가 아니라.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 728,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 729,
+            "prop": "name",
+            "attributes": {
+                "content": "그것들은 전장을 테이블 위의 모래판으로 여겼다. 전사는 체스의 말이었으며, 전쟁은 권력을 쟁탈하는 도구로 여겼지. 전쟁을 그렇게 경시한 것이다.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 730,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 731,
+            "prop": "name",
+            "attributes": {
+                "content": "그렇지만 그대는 다르구나. 그대의 배는 수많은 적들을 잡아먹었다.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 732,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 733,
+            "prop": "name",
+            "attributes": {
+                "content": "우르수스인, 라이타니엔인, 가울인…… 살카즈. 그것들의 피와 살의 냄새가 나는구나.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 734,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 735,
+            "prop": "name",
+            "attributes": {
+                "content": "그것들 역시 나흐체러르에게 흡수되었지.",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 736,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 737,
+            "prop": "name",
+            "attributes": {
+                "content": "살카즈…… 너에 대한 수많은 기록들을 읽어 보았다.",
+                "name": "웰링턴 공작"
+            },
+            "figure_art": "avg_npc_652_1#1$1"
+        },
+        {
+            "id": 738,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 739,
+            "prop": "name",
+            "attributes": {
+                "content": "오래된 나흐체러르가 카즈델로 침공한 빅토리아 군을, 그 1할에 불과한 병력으로 몰아냈다더군.",
+                "name": "웰링턴 공작"
+            },
+            "figure_art": "avg_npc_652_1#1$1"
+        },
+        {
+            "id": 740,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 741,
+            "prop": "name",
+            "attributes": {
+                "content": "이해할 수 없는 일이지. 군사 학교에서는 배울 수도, 따라 할 수도 없는 전쟁이야.",
+                "name": "웰링턴 공작"
+            },
+            "figure_art": "avg_npc_652_1#1$1"
+        },
+        {
+            "id": 742,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1339_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 743,
+            "prop": "name",
+            "attributes": {
+                "content": "복수를 하러 온 것인가?",
+                "name": "네츠살렘"
+            },
+            "figure_art": "avg_npc_1339_1#1$1"
+        },
+        {
+            "id": 744,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 745,
+            "prop": "name",
+            "attributes": {
+                "content": "……하하. 이백 년 전에 태어나지 않았던 게 유감스러웠을 뿐이다.",
+                "name": "웰링턴 공작"
+            },
+            "figure_art": "avg_npc_652_1#8$1"
+        },
+        {
+            "id": 746,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 747,
+            "prop": "name",
+            "attributes": {
+                "content": "너는 '전쟁의 신'이라 불렸다지?",
+                "name": "웰링턴 공작"
+            },
+            "figure_art": "avg_npc_652_1#8$1"
+        },
+        {
+            "id": 748,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 749,
+            "prop": "name",
+            "attributes": {
+                "content": "아니. 전쟁에 절대적인 지배자 같은 건 없다.",
+                "name": "웰링턴 공작"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 750,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 751,
+            "prop": "name",
+            "attributes": {
+                "content": "그저…… 승패만이 존재할 뿐이지.",
+                "name": "웰링턴 공작"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 752,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 753,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_exsheath",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 754,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 755,
+            "prop": "name",
+            "attributes": {
+                "content": "웰린턴은 자신의 검을 뽑아들고 공중에 떠 있는 살카즈를 가리켰다."
+            }
+        },
+        {
+            "id": 756,
+            "prop": "name",
+            "attributes": {
+                "content": "그 뒤에는 모든 함포가 같은 방향을 가리키고 있었다."
+            }
+        },
+        {
+            "id": 757,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 758,
+            "prop": "name",
+            "attributes": {
+                "content": "네츠살렘, 나는 너에게서 승리를 거둘 것이다.",
+                "name": "웰링턴 공작"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 759,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_652_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 760,
+            "prop": "name",
+            "attributes": {
+                "content": "지금까지 죽여온 강적들에게서 승리를 거머쥔 것처럼.",
+                "name": "웰링턴 공작"
+            },
+            "figure_art": "avg_npc_652_1#6$1"
+        },
+        {
+            "id": 761,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 762,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 763,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 4.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 764,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 765,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 766,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 767,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}
