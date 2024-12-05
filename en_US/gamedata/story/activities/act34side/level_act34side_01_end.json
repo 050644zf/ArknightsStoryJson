@@ -1,0 +1,2793 @@
+{
+    "lang": "en_US",
+    "eventid": "act34side",
+    "eventName": "Path of Life",
+    "entryType": "ACTIVITY",
+    "storyCode": "BP-1",
+    "avgTag": "After Operation",
+    "storyName": "First Contact",
+    "storyInfo": "Skadi and Specter take the Doctor around the city. Consul Clementia meets with Gladiia in private. Irene encounters the Sea Patrol and assists with the investigation of a missing data scientist.\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "51_g1_beaconsquare",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 7,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$warm_intro",
+                "key": "$warm_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 9,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#5",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 11,
+            "prop": "name",
+            "attributes": {
+                "content": "Did you think we were touring a museum? You were looking at the instruments like they were exhibits.",
+                "name": "Skadi"
+            },
+            "figure_art": "char_263_skadi#5"
+        },
+        {
+            "id": 12,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 13,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "Decision",
+            "attributes": {
+                "options": "The third place I mistook for a museum, then.",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line15"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 16,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Why is gravity reversed in there?;What's with the water flowing around the pillars?;What's that space that warped my fingers?",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line17",
+                "option2": "line17",
+                "option3": "line17"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 18,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#5"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "There are some things even I can't explain.",
+                "name": "Skadi"
+            },
+            "figure_art": "char_263_skadi#5"
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "Technology has advanced a lot in five years.",
+                "name": "Skadi"
+            },
+            "figure_art": "char_263_skadi#5"
+        },
+        {
+            "id": 21,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 22,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 23,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Wait, that tower...",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line24"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 25,
+            "prop": "Decision",
+            "attributes": {
+                "options": "There's a launchpad at the heart of the city?",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line26"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 27,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#1$1"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "name",
+            "attributes": {
+                "content": "Good eye, Doctor, that's a beacon launcher. One with plenty of history.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#1$1"
+        },
+        {
+            "id": 29,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#5"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "You know about it, Shark?",
+                "name": "Skadi"
+            },
+            "figure_art": "char_263_skadi#5"
+        },
+        {
+            "id": 31,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#1$1"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "My parents took me around the home territories when I was little. There are similar structures in many cities.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#1$1"
+        },
+        {
+            "id": 33,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 34,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 35,
+            "prop": "Decision",
+            "attributes": {
+                "options": "I thought Ægir children were raised collectively.",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line36"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 37,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#3"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "name",
+            "attributes": {
+                "content": "I was, but Shark has a special relationship with her biological parents.",
+                "name": "Skadi"
+            },
+            "figure_art": "char_263_skadi#3"
+        },
+        {
+            "id": 39,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#12$1"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "name",
+            "attributes": {
+                "content": "They're more like friends than parents.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#12$1"
+        },
+        {
+            "id": 41,
+            "prop": "name",
+            "attributes": {
+                "content": "They reached a consensus with the Institute of Incubation to bring me along whenever they worked on a new dome project.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#12$1"
+        },
+        {
+            "id": 42,
+            "prop": "name",
+            "attributes": {
+                "content": "I spent most my time in the Institute of Incubation, but I was able to see the cities, learn, and even work alongside them.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#12$1"
+        },
+        {
+            "id": 43,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 44,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "Decision",
+            "attributes": {
+                "options": "So, what's this beacon launcher for?",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line46"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 47,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#1$1"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "name",
+            "attributes": {
+                "content": "Exactly what it sounds like: it launches beacons to mark the Waterway.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#1$1"
+        },
+        {
+            "id": 49,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 50,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Those are some huge beacons.;How big is this Waterway anyway?",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line52",
+                "option2": "line52"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 53,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#10$1"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "name",
+            "attributes": {
+                "content": "Ægir had almost mastered the oceans around 300 years ago, efficiently using natural energy in its various forms and recording every seafloor trench in our navigational charts.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#10$1"
+        },
+        {
+            "id": 55,
+            "prop": "name",
+            "attributes": {
+                "content": "Then we cast our sights on another ocean, one brimming with stars.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#10$1"
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "Our fleets and even our cities were meant to cross that boundary that should never have existed, and light the fires of civilization beyond the barrier.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#10$1"
+        },
+        {
+            "id": 57,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 58,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 59,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Beyond the barrier...",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line60"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 61,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_003_kalts_1#1$1"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "The Preserver was right, Doctor. Kristen's achievement is not beyond Ægir's reach.",
+                "name": "Kal'tsit"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "The sea and the sky are closer than we thought.",
+                "name": "Kal'tsit"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 64,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#12$1"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "name",
+            "attributes": {
+                "content": "People back then tried plenty of things: surveying and deciphering the electron clouds, developing new technologies and materials, exploring forms of life that can adapt to space...",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#12$1"
+        },
+        {
+            "id": 66,
+            "prop": "name",
+            "attributes": {
+                "content": "This beacon launcher is a product of that era.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#12$1"
+        },
+        {
+            "id": 67,
+            "prop": "name",
+            "attributes": {
+                "content": "It was intended to capture even the faintest signals from the stars, and plant beacons that would never fade from our star charts.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#12$1"
+        },
+        {
+            "id": 68,
+            "prop": "name",
+            "attributes": {
+                "content": "Nanomachine swarms would form networks between the beacons, allowing us to traverse vast distances in an instant... or so we dreamed.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#12$1"
+        },
+        {
+            "id": 69,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#5"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "name",
+            "attributes": {
+                "content": "You never told me any of this before.",
+                "name": "Skadi"
+            },
+            "figure_art": "char_263_skadi#5"
+        },
+        {
+            "id": 71,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#1$1"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "name",
+            "attributes": {
+                "content": "Lucid moments were hard to come by on land.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#1$1"
+        },
+        {
+            "id": 73,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#10$1"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "But yesterday, I dreamt once again of walking from the Sophontheatrum straight into that epoch.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#10$1"
+        },
+        {
+            "id": 75,
+            "prop": "name",
+            "attributes": {
+                "content": "Then, I saw Laurentina dance.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#10$1"
+        },
+        {
+            "id": 76,
+            "prop": "name",
+            "attributes": {
+                "content": "She leaped from the waves to the stars, stirring up star dust that trailed the hems of her dress. From afar, the voice of the Master of All Creation answered her in song.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#10$1"
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "The universe and imagination know no bounds, and Laurentina's dances will never cease.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#10$1"
+        },
+        {
+            "id": 78,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#3$1"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "Specter closes her eyes, as though sinking back into the dream."
+            }
+        },
+        {
+            "id": 80,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#4"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "Mm...",
+                "name": "Skadi"
+            },
+            "figure_art": "char_263_skadi#4"
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#1$1"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "What is it?",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#1$1"
+        },
+        {
+            "id": 84,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#5"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "name",
+            "attributes": {
+                "content": "Just trying to picture it.",
+                "name": "Skadi"
+            },
+            "figure_art": "char_263_skadi#5"
+        },
+        {
+            "id": 86,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 87,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 88,
+            "prop": "Decision",
+            "attributes": {
+                "options": "It's a beautiful dream, Laurentina.;Perhaps that day will really come, Laurentina.",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line89",
+                "option2": "line89"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 90,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#12$1"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "Before pushing open the door to the stars, they wanted to prepare themselves for any threats beyond the barrier... That is, until the Seaborn appeared and interrupted the dream.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#12$1"
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "We poured all our efforts into studying them, setting aside all else: art, science, and previous visions for the future...",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#12$1"
+        },
+        {
+            "id": 93,
+            "prop": "name",
+            "attributes": {
+                "content": "The Seaborn fundamentally changed Ægir.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#12$1"
+        },
+        {
+            "id": 94,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 95,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 96,
+            "prop": "Decision",
+            "attributes": {
+                "options": "What did you do before becoming a Hunter, Skadi?;What did you do before becoming a Hunter, Specter?",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line97",
+                "option2": "line103"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line108"
+        },
+        {
+            "id": 98,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#5"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "Me?",
+                "name": "Skadi"
+            },
+            "figure_art": "char_263_skadi#5"
+        },
+        {
+            "id": 100,
+            "prop": "name",
+            "attributes": {
+                "content": "I was the best technician at the Institute of Facility Management. I could keep an entire city's underwater lighting array running on my own.",
+                "name": "Skadi"
+            },
+            "figure_art": "char_263_skadi#5"
+        },
+        {
+            "id": 101,
+            "prop": "name",
+            "attributes": {
+                "content": "The Institute of Development Planning's career proposal was pretty much what I was thinking, so I accepted.",
+                "name": "Skadi"
+            },
+            "figure_art": "char_263_skadi#5"
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "Working by yourself can be lonely, but it's not such a bad thing playing with the giant fins in the reefs, or lighting up the ocean while daydreaming.",
+                "name": "Skadi"
+            },
+            "figure_art": "char_263_skadi#5"
+        },
+        {
+            "id": 103,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line108"
+        },
+        {
+            "id": 104,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#1$1"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "I was just an apprentice sculptor.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#1$1"
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "The Institute of Development Planning provides tailored career proposals for each citizen, which are usually in line with our wishes.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#1$1"
+        },
+        {
+            "id": 107,
+            "prop": "name",
+            "attributes": {
+                "content": "I suppose I would have gone into dome design, sculpting, or dance.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#1$1"
+        },
+        {
+            "id": 108,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 109,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#1$1"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "Say, Kal'tsit and Doctor, we've shared a lot of info during our time together, but we've never talked about our old lives.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#1$1"
+        },
+        {
+            "id": 111,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 112,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Because they've changed.",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line114"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 115,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#1$1"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "I guess you're right. Sorry for bringing up something so heavy on a tour.",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#1$1"
+        },
+        {
+            "id": 117,
+            "prop": "name",
+            "attributes": {
+                "content": "We have all the waves in the world hanging above our heads. Would you care to share a dance before dealing with all this bother, Doctor?",
+                "name": "Specter"
+            },
+            "figure_art": "avg_1023_ghost2_1#1$1"
+        },
+        {
+            "id": 118,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 119,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 120,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 122,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 123,
+            "prop": "Background",
+            "attributes": {
+                "image": "51_g7_consuloffice",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$act18d3d0_intro",
+                "key": "$act18d3d0_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 126,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 127,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 128,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 129,
+            "prop": "name",
+            "attributes": {
+                "content": "Gladiia.",
+                "name": "Kind Woman"
+            },
+            "figure_art": "avg_npc_1382_1#1$1"
+        },
+        {
+            "id": 130,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_higheldshosfts",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 131,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 132,
+            "prop": "name",
+            "attributes": {
+                "content": "Gladiia's hand instinctively goes to her weapon as the woman approaches with a ceremonial sword in hand."
+            }
+        },
+        {
+            "id": 133,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 134,
+            "prop": "name",
+            "attributes": {
+                "content": "But all she does is put her arms around Gladiia's shoulders. Gladiia smells stimulants in the air."
+            }
+        },
+        {
+            "id": 135,
+            "prop": "name",
+            "attributes": {
+                "content": "Ægir do not make a habit of greeting each other with physical contact. She could not remember even her mother ever doing so."
+            }
+        },
+        {
+            "id": 136,
+            "prop": "name",
+            "attributes": {
+                "content": "But this woman's action felt completely natural."
+            }
+        },
+        {
+            "id": 137,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_474_gladiia_1#1"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "name",
+            "attributes": {
+                "content": "Consul Clementia?",
+                "name": "Gladiia"
+            },
+            "figure_art": "avg_474_gladiia_1#1"
+        },
+        {
+            "id": 139,
+            "prop": "name",
+            "attributes": {
+                "content": "I was not aware that this was the standard salute between Chief Designers of Warfare.",
+                "name": "Gladiia"
+            },
+            "figure_art": "avg_474_gladiia_1#1"
+        },
+        {
+            "id": 140,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#1$1"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "Nothing makes me happier than seeing the Hunters return as lucid as ever.",
+                "name": "Clementia"
+            },
+            "figure_art": "avg_npc_1382_1#1$1"
+        },
+        {
+            "id": 142,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_474_gladiia_1#1"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "name",
+            "attributes": {
+                "content": "Your soldiers' reactions when they first saw me suggested otherwise.",
+                "name": "Gladiia"
+            },
+            "figure_art": "avg_474_gladiia_1#1"
+        },
+        {
+            "id": 144,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#9$1"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "name",
+            "attributes": {
+                "content": "The operation to eliminate the Firstborn cost Ægir all of its Abyssal Hunters.",
+                "name": "Clementia"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 146,
+            "prop": "name",
+            "attributes": {
+                "content": "Secunda made many rescue attempts, but was unable to penetrate the rampaging mass of Seaborn that guard the region after the death of the Firstborn.",
+                "name": "Clementia"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 147,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#6$1"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "Your mother, Horatia, had no choice but to publicly declare you dead.",
+                "name": "Clementia"
+            },
+            "figure_art": "avg_npc_1382_1#6$1"
+        },
+        {
+            "id": 149,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#2$1"
+            }
+        },
+        {
+            "id": 150,
+            "prop": "name",
+            "attributes": {
+                "content": "But I know her. She doesn't really believe that.",
+                "name": "Clementia"
+            },
+            "figure_art": "avg_npc_1382_1#2$1"
+        },
+        {
+            "id": 151,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_474_gladiia_1#1"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "name",
+            "attributes": {
+                "content": "Or perhaps Consul Horatia, foremost of the Institute of Scientific Development Planning, simply could not accept that I had died for nothing.",
+                "name": "Gladiia"
+            },
+            "figure_art": "avg_474_gladiia_1#1"
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "I know her, too.",
+                "name": "Gladiia"
+            },
+            "figure_art": "avg_474_gladiia_1#1"
+        },
+        {
+            "id": 154,
+            "prop": "name",
+            "attributes": {
+                "content": "But I don't think it is appropriate for a meeting between two Chief Designers of Warfare to revolve around a complicated mother-daughter relationship.",
+                "name": "Gladiia"
+            },
+            "figure_art": "avg_474_gladiia_1#1"
+        },
+        {
+            "id": 155,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#2$1"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "name",
+            "attributes": {
+                "content": "Of course, of course.",
+                "name": "Clementia"
+            },
+            "figure_art": "avg_npc_1382_1#2$1"
+        },
+        {
+            "id": 157,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 158,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_higheldshosfts",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 159,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 160,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 161,
+            "prop": "name",
+            "attributes": {
+                "content": "Look at the city.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 163,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "image",
+            "attributes": {
+                "image": "51_i02",
+                "screenadapt": "coverall",
+                "xScale": 1.2,
+                "yScale": 1.2
+            }
+        },
+        {
+            "id": 165,
+            "prop": "ImageTween",
+            "attributes": {
+                "yTo": 0.0,
+                "xScaleTo": 1.0,
+                "yScaleTo": 1.0,
+                "duration": 60.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "The Consul's Pensivarium sits high in the city. The seawater hangs just above their heads."
+            }
+        },
+        {
+            "id": 169,
+            "prop": "name",
+            "attributes": {
+                "content": "The transparent dome serves as a gentle mirror, warding off the deep and foreboding void while granting the Ægir the solace of introspection."
+            }
+        },
+        {
+            "id": 170,
+            "prop": "name",
+            "attributes": {
+                "content": "Beneath the dome, the entire city is bathed in a blue hue. The beacon launchpad stands tall at its center, while ships glide in and out of the distant docks like schools of fins."
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "The sea itself has no color, only darkness. Milliarium stands in its murky depths like the vigilant eye of civilization, solitary and luminous.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "name",
+            "attributes": {
+                "content": "We once had many such cities. One by one, the stars in the sea went out, becoming sustenance for the Seaborn.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "name",
+            "attributes": {
+                "content": "All that's left on the seafloor are their colorful, eerie nests.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "I won't deny that the Abyssal Hunter project was a failed gambit. The death of the Firstborn did not stop their evolution.",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "So I want to know what solution Ægir has come up with next. What you have come up with.",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "What is this Waterway Program?",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "Gladiia, I didn't mean...",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm simply part of an even bigger gambit, one with even higher stakes.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "The weapon classification scheme remains nothing more than a strict control over weapon usage to delay the evolution of the Seaborn.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "name",
+            "attributes": {
+                "content": "This time, however, we have taken into account every weapon at our disposal or under development.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 181,
+            "prop": "name",
+            "attributes": {
+                "content": "A mix of conventional ballistics and Class I weapons initially proved highly effective. The Seaborn were unable to comprehend why they were being burned by the seawater around them.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "name",
+            "attributes": {
+                "content": "But it took them only a year to adapt. 11 months in, we accelerated the adoption of Class II weapons, which operated on completely different principles.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "Et cetera, et cetera.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "name",
+            "attributes": {
+                "content": "Until their evolution outpaced the ability of the Academy of Technology to innovate.",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "Yes. At day's end, all we're doing is merely buying time. Ægir has committed vast resources to study the Seaborn. To eradicate them at their origin, we must first comprehend them at their source.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "name",
+            "attributes": {
+                "content": "The information you've brought back is highly valuable, and Breogan's discovery on land corroborates the Academy of Science's research.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "The Seaborn and the Feranmuts share the same genesis.",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "Is Ægir coming ashore to seek memories even more ancient?",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "Not just that. The Seaborn share a common genesis with the Feranmuts, but much about them is very different. Unnatural, one might say.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "Their recent activity demonstrates a clear sense of purpose. They have quickly abandoned their reliance on the sea and begun to migrate towards land en masse.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "name",
+            "attributes": {
+                "content": "Left unchecked, it is not out of the question that all of Terra could become infested with Seaborn.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "name",
+            "attributes": {
+                "content": "We already saw hints of that in Iberia.",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "name",
+            "attributes": {
+                "content": "Thus, for Ægir, the land is both a source of answers and a solemn responsibility.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 194,
+            "prop": "name",
+            "attributes": {
+                "content": "Horatia has issued new war orders on behalf of the Institute of Development Planning, and Milliarium has come bearing new Class IV weapons from the Academy of Technology.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "name",
+            "attributes": {
+                "content": "They are a form of biological weapon, very different from all previous ones. Designed to induce death in nearby Seaborn nests and newborns, while driving away adults from the area.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "name",
+            "attributes": {
+                "content": "We have successfully located most of the nests in the target region. The ones near Iberia are the only ones yet unmarked.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "Once the beacons have been placed and the weapons activated, we will finally have cleared an entire region of Seaborn, and established a route back to Ægir's home territories.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 199,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 200,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 202,
+            "prop": "Background",
+            "attributes": {
+                "image": "51_g7_consuloffice",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 204,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "left",
+                "name": "avg_474_gladiia_1#1"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1382_1#2$1"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 208,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "left",
+                "name": "avg_474_gladiia_1#1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "name",
+            "attributes": {
+                "content": "Consul Horatia would not have permitted the possibility of failure. Yet all I see is a city under siege, teetering on the brink.",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1382_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "Yes, she did tell me herself that 'the Waterway Program will not fail.'",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "name",
+            "attributes": {
+                "content": "I do not know how many other possibilities she considered, and I hope I never do. For me, this city has always been the entirety of the Waterway Program.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1382_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "name",
+            "attributes": {
+                "content": "But that is no longer true. The changes in the past month necessitate a review of our plans.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "The Seaborn have rapidly adapted to our new weapons, even evolving measures to protect their kindred from Class III.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "name",
+            "attributes": {
+                "content": "But a successful extermination operation should have left no opportunity for them to communicate with other individuals. They seem to have obtained their inspiration elsewhere.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "left",
+                "name": "avg_474_gladiia_1#1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "name",
+            "attributes": {
+                "content": "Almost every mutation of the Seaborn against humanity has been abetted by the twisted efforts of corrupted Ægir.",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "Yet, the Seaborn lack true intelligence. We could toss all our prototype weapons into their nest, and they wouldn't dismantle or study them.",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "name",
+            "attributes": {
+                "content": "The Church of the Deep may be able to train them to attack an army or a city, but bringing about rapid biological changes is another matter entirely.",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 221,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1382_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "name",
+            "attributes": {
+                "content": "Unless they're not being influenced by the Church of the Deep, but by another Firstborn.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "left",
+                "name": "avg_474_gladiia_1#1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "name",
+            "attributes": {
+                "content": "I see you've read my belated report.",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "Indeed. Ulpianus claims that the one we eliminated was not the only one.",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 226,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1382_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "name",
+            "attributes": {
+                "content": "The Abyssal Hunters were the first and last Ægir to enter the Firstborn's lair.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "name",
+            "attributes": {
+                "content": "Even now, the Seaborn defend the ruins with a frenzied fury. We have not found a way to get through.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "Amongst the Hunters, Ulpianus spent the longest time there, enough for him to witness the 'truth.'",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "left",
+                "name": "avg_474_gladiia_1#5",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "You're still deliberating on whether to believe him.",
+                "name": "Gladiia"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1382_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "Yes. It could be the key to solving the mystery of the Seaborn. Or the path that leads us to destruction.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "name",
+            "attributes": {
+                "content": "Could a Hunter survive for months on Seaborn remains and remain lucid? Would a lucid hunter willingly stay with them, rather than returning to civilization?",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "There are too many unanswered questions about Ulpianus and that fateful operation.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1382_1#8$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "And so, I regret to inform you that Ægir has no choice but to welcome its Hunters home with a tribunal.",
+                "name": "Clementia"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 239,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 240,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 242,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 243,
+            "prop": "Background",
+            "attributes": {
+                "image": "51_g4_aegirstreet_1",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "playMusic",
+            "attributes": {
+                "key": "$formal_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 246,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 247,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 248,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "left",
+                "name": "avg_4137_udflow_1#1$1",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 249,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1391_1#1$1",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 250,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 251,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "left",
+                "name": "avg_4137_udflow_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "name",
+            "attributes": {
+                "content": "I thought we had designated this area for investigation.",
+                "name": "Secunda"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "name",
+            "attributes": {
+                "content": "Madam Irene? From Iberia?",
+                "name": "Secunda"
+            }
+        },
+        {
+            "id": 254,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 255,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 256,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4009_irene_1#1$1",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 257,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "May I ask to whom I am speaking?",
+                "name": "Irene"
+            },
+            "figure_art": "avg_4009_irene_1#1$1"
+        },
+        {
+            "id": 259,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 260,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "left",
+                "name": "avg_4137_udflow_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1391_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "name",
+            "attributes": {
+                "content": "Secunda, Praefecta of the Sea Patrol. I regret not being able to greet you personally upon your arrival yesterday.",
+                "name": "Secunda"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "The Sea Patrol is currently investigating the disappearance of a citizen. We have not requested assistance from Iberia, and respectfully request that you exit this area as soon as possible.",
+                "name": "Secunda"
+            }
+        },
+        {
+            "id": 264,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 265,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4009_irene_1#1$1"
+            }
+        },
+        {
+            "id": 266,
+            "prop": "name",
+            "attributes": {
+                "content": "I would like to assist as myself, not as an envoy.",
+                "name": "Irene"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 268,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "left",
+                "name": "avg_4137_udflow_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1391_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "name",
+            "attributes": {
+                "content": "Your offer is appreciated, but unnecessary.",
+                "name": "Secunda"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 272,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4009_irene_1#1$1"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "name",
+            "attributes": {
+                "content": "I want to—",
+                "name": "Irene"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 275,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "left",
+                "name": "avg_4137_udflow_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1391_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "Any news from the other teams?",
+                "name": "Secunda"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1391_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "name",
+            "attributes": {
+                "content": "One moment, getting the video feed now.",
+                "name": "Sea Patroller"
+            }
+        },
+        {
+            "id": 280,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 281,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4009_irene_1#2$1"
+            }
+        },
+        {
+            "id": 282,
+            "prop": "name",
+            "attributes": {
+                "content": "Ma'am—",
+                "name": "Irene"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 284,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "left",
+                "name": "avg_4137_udflow_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1391_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "name",
+            "attributes": {
+                "content": "No unusual movements at the port.",
+                "name": "Sea Patroller"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "left",
+                "name": "avg_4137_udflow_1#5$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "name",
+            "attributes": {
+                "content": "Tsk.",
+                "name": "Secunda"
+            }
+        },
+        {
+            "id": 289,
+            "prop": "name",
+            "attributes": {
+                "content": "Alert the other teams to monitor the closed civilian gates and keep a close watch on the circulation system around town.",
+                "name": "Secunda"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_npc_1391_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "name",
+            "attributes": {
+                "content": "Roger.",
+                "name": "Sea Patroller"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 293,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 294,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "posfrom": "0,0",
+                "posto": "200,0",
+                "duration": 1.0,
+                "afrom": 1.0,
+                "ato": 0.0
+            }
+        },
+        {
+            "id": 295,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 296,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 297,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4009_irene_1#2$1"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "name",
+            "attributes": {
+                "content": "You're okay with talking about this in front of me?",
+                "name": "Irene"
+            },
+            "figure_art": "avg_4009_irene_1#2$1"
+        },
+        {
+            "id": 299,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4137_udflow_1#1$1"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "name",
+            "attributes": {
+                "content": "This is part of our regular duties. There's no need for confidentiality.",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#1$1"
+        },
+        {
+            "id": 301,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4009_irene_1#1$1"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "name",
+            "attributes": {
+                "content": "But you had your Little Handies clear the place out.",
+                "name": "Irene"
+            },
+            "figure_art": "avg_4009_irene_1#1$1"
+        },
+        {
+            "id": 303,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4137_udflow_1#1$1"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "Only to prevent unnecessary harm to civilians.",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#1$1"
+        },
+        {
+            "id": 305,
+            "prop": "name",
+            "attributes": {
+                "content": "If you insist on staying, you'll be responsible for your own safety.",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#1$1"
+        },
+        {
+            "id": 306,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4009_irene_1#7$1"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "I'll—",
+                "name": "Irene"
+            },
+            "figure_art": "avg_4009_irene_1#7$1"
+        },
+        {
+            "id": 308,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4137_udflow_1#1$1"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "name",
+            "attributes": {
+                "content": "The missing civilian is Tullia, a scientist from the Waterway Program, responsible for recording and calibrating data on Seaborn nests.",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#1$1"
+        },
+        {
+            "id": 310,
+            "prop": "name",
+            "attributes": {
+                "content": "She went AWOL 30 hours ago and hasn't been seen since.",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#1$1"
+        },
+        {
+            "id": 311,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4009_irene_1#7$1"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "name",
+            "attributes": {
+                "content": "Could it be... the Church of the Deep?",
+                "name": "Irene"
+            },
+            "figure_art": "avg_4009_irene_1#7$1"
+        },
+        {
+            "id": 313,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4137_udflow_1#1$1"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "name",
+            "attributes": {
+                "content": "That's what we intend to find out.",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#1$1"
+        },
+        {
+            "id": 315,
+            "prop": "name",
+            "attributes": {
+                "content": "Her disappearance has not affected the overall progress of the project. As important as recording and calibrating the nest data is, her role was by no means irreplaceable.",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#1$1"
+        },
+        {
+            "id": 316,
+            "prop": "name",
+            "attributes": {
+                "content": "If the Church's goal was to assassinate someone to disrupt our plans, they would not have picked an ordinary data scientist.",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#1$1"
+        },
+        {
+            "id": 317,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4137_udflow_1#3$1"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "name",
+            "attributes": {
+                "content": "Unless—",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#3$1"
+        },
+        {
+            "id": 319,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4137_udflow_1#5$1"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "name",
+            "attributes": {
+                "content": "She learned something she wasn't supposed to.",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#5$1"
+        },
+        {
+            "id": 321,
+            "prop": "name",
+            "attributes": {
+                "content": "I need to inspect her home.",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#5$1"
+        },
+        {
+            "id": 322,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 323,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 324,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-200,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 325,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 326,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_4009_irene_1#1$1",
+                "posfrom": "150,0",
+                "posto": "0,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 327,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 328,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4137_udflow_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "You're sharp, Madam Irene, but I would recommend against coming with us.",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#1$1"
+        },
+        {
+            "id": 330,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "right",
+                "name": "avg_4009_irene_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "I'm simply investigating our common enemy in my own way.",
+                "name": "Irene"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4137_udflow_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "name",
+            "attributes": {
+                "content": "...Suit yourself.",
+                "name": "Secunda"
+            },
+            "figure_art": "avg_4137_udflow_1#1$1"
+        },
+        {
+            "id": 334,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 335,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 336,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 338,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 339,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 340,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}

@@ -1,0 +1,3855 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act34side",
+    "eventName": "生存航路",
+    "entryType": "ACTIVITY",
+    "storyCode": "BP-6",
+    "avgTag": "戦闘前",
+    "storyName": "エーギル失格",
+    "storyInfo": "エーギル軍の援護の下、アビサルハンターたちは巣穴へと潜入し、最後のビーコン投下の任務に取り掛かる。そして、ドクターと別れたウルピアヌスが真相究明を続ける一方で、ドクターはクレメンティアを訪ね、アビサルハンターに関するエーギルの計画を問いただす。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 2,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 4,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 6,
+            "prop": "Background",
+            "attributes": {
+                "image": "51_g12_seabed",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 7,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_underwtr",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "u"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#5$1",
+                "duration": 1.0,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "name",
+            "attributes": {
+                "content": "あーあ、ほんと嫌な臭いね。",
+                "name": "スペクター"
+            },
+            "figure_art": "avg_1023_ghost2_1#5$1"
+        },
+        {
+            "id": 12,
+            "prop": "name",
+            "attributes": {
+                "content": "こんなに時間が経ったのに、あの人たちはまだ迷彩クリームを改良する気がないみたい。私たちが嗅いだ時とシーボーンが嗅いだ時で違う匂いにするくらい簡単でしょうに。",
+                "name": "スペクター"
+            },
+            "figure_art": "avg_1023_ghost2_1#5$1"
+        },
+        {
+            "id": 13,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#3"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "name",
+            "attributes": {
+                "content": "やたらと動かないで、サメ。臭いがきつくなるわよ。",
+                "name": "スカジ"
+            },
+            "figure_art": "char_263_skadi#3"
+        },
+        {
+            "id": 15,
+            "prop": "name",
+            "attributes": {
+                "content": "そんなに濃いシーボーンの臭いをふりまかれると、あなたを斬りたくなっちゃうわ。",
+                "name": "スカジ"
+            },
+            "figure_art": "char_263_skadi#3"
+        },
+        {
+            "id": 16,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 17,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 18,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_erthshkng",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "e"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 4.0,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 90.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "e",
+                "fadetime": 6.0
+            }
+        },
+        {
+            "id": 21,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_rockfall",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 22,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 23,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_474_gladiia_1#1"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "台地全体が揺れている……大型のシーボーンがこの下の岩層で蠢いているのね。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_474_gladiia_1#1"
+        },
+        {
+            "id": 25,
+            "prop": "name",
+            "attributes": {
+                "content": "隠れて頂戴。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_474_gladiia_1#1"
+        },
+        {
+            "id": 26,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 27,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 28,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 0.2,
+                "channel": "u",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 29,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_swimdeepsea",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 30,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1388_1#1$1",
+                "posfrom": "0,-50",
+                "posto": "0,50",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 31,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 32,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1388_1#1$1",
+                "posfrom": "0,-50",
+                "posto": "0,50",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 33,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 34,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_seabornactivity_1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 35,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "action": "shake",
+                "power": 1.0,
+                "times": 10.0,
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 36,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "name",
+            "attributes": {
+                "content": "（わずかに液胞を震わせる）",
+                "name": "シーボーン"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 38,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_seabornactivity_2",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 39,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "action": "shake",
+                "power": 5.0,
+                "times": 30.0,
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 40,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 41,
+            "prop": "name",
+            "attributes": {
+                "content": "（コアを激しく揺さぶる）",
+                "name": "シーボーン"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 42,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 43,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_swimdeepsea",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 44,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1388_1#1$1",
+                "posfrom": "0,50",
+                "posto": "0,150",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 45,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 46,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1388_1#1$1",
+                "posfrom": "0,50",
+                "posto": "0,150",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 48,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 1.0,
+                "channel": "u",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 49,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#5$1"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "この数だと、海流にシーボーンが運ばれてるって言うべきか、シーボーンが海流を生み出してるって言うべきかわからないわね。",
+                "name": "スペクター"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 51,
+            "prop": "name",
+            "attributes": {
+                "content": "あいつら、前線に向かって押し寄せてるわ……",
+                "name": "スペクター"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 52,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#8"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "name",
+            "attributes": {
+                "content": "前線にいる戦士たちがどんな戦いを強いられているか、想像できないくらいね。",
+                "name": "スカジ"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 54,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_474_gladiia_1#1"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "name",
+            "attributes": {
+                "content": "落ち着いて、スカジ。剣の柄を握りつぶさないようになさい。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 56,
+            "prop": "name",
+            "attributes": {
+                "content": "任務を完遂することこそ、戦士たちに捧げる最良の手向けよ。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 57,
+            "prop": "name",
+            "attributes": {
+                "content": "軍団の艦隊がシーボーンの群れを牽制していてこそ、私たちは巣穴深くに潜入して、ビーコンを投下することができるの。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "この先は少しのミスも許されないわ。シーボーンと同化してしまった植物一つを見逃せば、奴らの視線に晒されるかもしれないのだから。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 59,
+            "prop": "name",
+            "attributes": {
+                "content": "さあ、あの死んだ大きな珊瑚を遮蔽物として、海溝深くまで潜りましょう。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 60,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 61,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "char_263_skadi#3"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1023_ghost2_1#12$1"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "了解。",
+                "name": "スペクター/スカジ"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 64,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 65,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_swimdeepsea",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 66,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 67,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 68,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "u",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 70,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 73,
+            "prop": "Background",
+            "attributes": {
+                "image": "51_g1_beaconsquare",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 75,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$m_dia_street_intro",
+                "key": "$m_dia_street_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 76,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1380_1#1$1"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1396_1#1$1"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 80,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1396_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "ジョディ君、だったかな？　君、飲み込みが早いね。",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 82,
+            "prop": "name",
+            "attributes": {
+                "content": "そばで少し見ただけでできるようになるとは。以前職業体験に来た学生たちはみんな、丸一日かけて操作手順を整理しないとミスをしていたものだが。",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "もしや、似たような経験が？",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 84,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1380_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "name",
+            "attributes": {
+                "content": "ほんの少しですが。以前、イベリアの大灯台での仕事に携わったことがありまして。灯台とビーコン塔の原理には似たところがありますね。",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#1$1"
+        },
+        {
+            "id": 86,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1396_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "name",
+            "attributes": {
+                "content": "工学に興味があるんだね。それなら不思議ではないな。",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 88,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1380_1#11$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "でも、僕が一番長くやってきた仕事は介護士なんです。",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#11$1"
+        },
+        {
+            "id": 90,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1396_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "「介護士」？　それはどんな仕事なのかな？",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 92,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1380_1#5$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ？",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#5$1"
+        },
+        {
+            "id": 94,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1380_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "ええと、お年寄りや病気の人のお世話をして、日常生活の面倒を見て、時々雑務を引き受けるという感じですね。",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#1$1"
+        },
+        {
+            "id": 96,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1396_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "name",
+            "attributes": {
+                "content": "なるほど。リトル・ハンディに153号パーツと274号パーツを追加したようなものかな。",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 98,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1380_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "あの、確かリトル・ハンディに人格は搭載されていない……はず、ですよね？",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#8$1"
+        },
+        {
+            "id": 100,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1396_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ。",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "何だか緊張しているようだね。私は別に、エーギルの一般常識を試す試験官などではないのだから、リラックスしていいんだよ。",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 103,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1380_1#2$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "name",
+            "attributes": {
+                "content": "何と言いますか、リトル・ハンディが人格を持たないのなら、お年寄りや病気の人の感情面をどう支えているのかを聞きたかったんです。",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#2$1"
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "何しろ、介護士は人々の一番弱く、やりきれない部分に接する仕事ですから。",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#2$1"
+        },
+        {
+            "id": 106,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1396_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "name",
+            "attributes": {
+                "content": "我々には、身体的に弱っているのを理由に、感情面が特別揺れ動くようなことは滅多にないんだ。安らかに死を迎える人にとっては、その原因が病であっても、やりきれないというようなことはない。",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "確かに、お年寄りや病人は安楽死の処置を受ける前に、臨終対話を申請することはできるがね。その場合は通常、高名な哲学者やほかの分野の学者が対応することになっているんだ。",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 109,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1380_1#2$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "ぼ、僕は哲学のことなんてわかりませんが……",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#2$1"
+        },
+        {
+            "id": 111,
+            "prop": "name",
+            "attributes": {
+                "content": "その代わり、ごく普通の話をするんです。食べ物だとか、草花だとか、お日様の話を。でもなぜだか、皆さん嬉しそうにしてくれるんですよ。",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#2$1"
+        },
+        {
+            "id": 112,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1396_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "name",
+            "attributes": {
+                "content": "それはすごいな。",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 114,
+            "prop": "name",
+            "attributes": {
+                "content": "つまり君は、他人の感情の機微を敏感に察知できる人だということだよ。もしかすると、展望研究所や公共養育所で才能を発揮できるかもしれないな。",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 115,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1380_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "ぼ、僕がですか？",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#8$1"
+        },
+        {
+            "id": 117,
+            "prop": "name",
+            "attributes": {
+                "content": "……ええと、とにかく、ありがとうございます！　こ、この記憶装置はリセットできましたので……！",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#8$1"
+        },
+        {
+            "id": 118,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1396_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "name",
+            "attributes": {
+                "content": "完璧な操作だな。では――",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 120,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 121,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 122,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 123,
+            "prop": "name",
+            "attributes": {
+                "content": "待った、今ホログラムに何か映らなかったか？",
+                "name": "ビーコン塔技術者"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1380_1#5$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "name",
+            "attributes": {
+                "content": "何が――",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#5$1"
+        },
+        {
+            "id": 126,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 127,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 128,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_aircraftimpact",
+                "volume": 1.0,
+                "channel": "1"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 2.0,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_doorbreak",
+                "volume": 1.0,
+                "channel": "2"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 137,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 138,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 139,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4145_Ulpia_1#1$1",
+                "posfrom": "200,0",
+                "posto": "0,0",
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 141,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1396_1#1$1"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "name",
+            "attributes": {
+                "content": "侵入者だ――",
+                "name": "ビーコン塔技術者"
+            },
+            "figure_art": "avg_npc_1396_1#1$1"
+        },
+        {
+            "id": 143,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 144,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_punch02",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 147,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 150,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "0,-50",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 151,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$bodyfalldown2",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 152,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 153,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 154,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1380_1#5$1"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#5$1"
+        },
+        {
+            "id": 156,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4145_Ulpia_1#8$1"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "お前……",
+                "name": "ウルピアヌス"
+            },
+            "figure_art": "avg_4145_Ulpia_1#8$1"
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "見なかったことにしろ、若造。無暗に状況をひっかきまわすなよ。",
+                "name": "ウルピアヌス"
+            },
+            "figure_art": "avg_4145_Ulpia_1#8$1"
+        },
+        {
+            "id": 159,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 160,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 161,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4145_Ulpia_1#4$1",
+                "posfrom": "0,0",
+                "posto": "-200,0",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 163,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 164,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1380_1#7$1"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "name",
+            "attributes": {
+                "content": "待ってください！",
+                "name": "ジョディ"
+            },
+            "figure_art": "avg_npc_1380_1#7$1"
+        },
+        {
+            "id": 167,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 168,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 169,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-200,0",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.8,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 171,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 174,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 175,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_atk_saw_n_2",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 176,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.6
+            }
+        },
+        {
+            "id": 177,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_atk_saw_n_1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 178,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "丸鋸では音が響きすぎるわ。スカジ、あなたが道を開きなさい。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "name",
+            "attributes": {
+                "content": "この珊瑚を斬るの。できるだけ静かにね。",
+                "name": "グレイディーア"
+            }
+        },
+        {
+            "id": 181,
+            "prop": "name",
+            "attributes": {
+                "content": "了解。",
+                "name": "スカジ"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 183,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$e_skill_skulsrsword",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 184,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 185,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_seawaterinflux",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 186,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_rockfall",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "r"
+            }
+        },
+        {
+            "id": 187,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "r",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 188,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 189,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_underwtr",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "u"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "Background",
+            "attributes": {
+                "image": "51_g13_seabornnest",
+                "x": 200.0,
+                "xScale": 1.4,
+                "yScale": 1.4,
+                "screenadapt": "coverall",
+                "fadetime": 6.0
+            }
+        },
+        {
+            "id": 191,
+            "prop": "focusout",
+            "attributes": {
+                "type": "bg",
+                "id": "51_g13_seabornnest",
+                "from": 0.0,
+                "to": 1.0,
+                "duration": 20.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "backgroundTween",
+            "attributes": {
+                "xFrom": 200.0,
+                "duration": 20.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "curtain",
+            "attributes": {
+                "direction": 0.0,
+                "fillfrom": 0.01,
+                "fillto": 0.15,
+                "fadetime": 0.1
+            }
+        },
+        {
+            "id": 194,
+            "prop": "curtain",
+            "attributes": {
+                "direction": 4.0,
+                "fillfrom": 0.01,
+                "fillto": 0.15,
+                "fadetime": 0.1
+            }
+        },
+        {
+            "id": 195,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$act18d3d0_intro",
+                "key": "$act18d3d0_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 196,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "一瞬にして、美しい色彩とおぼろげな光と影が、侵入者たる狩人たちを包み込んだ。"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "イベリア人が溟痕と呼ぶ生物が幾重もの珊瑚の間を漂い、そびえ立つ岩壁には密集した卵が揺れている。"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "name",
+            "attributes": {
+                "content": "そこからは、水流に伴って絶えず卵が落ちていき、回転しながら形を変えて名状しがたいひだを伸ばすと、シーボーンとして姿を見せた。"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 202,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 0.5,
+                "channel": "a",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 203,
+            "prop": "Background",
+            "attributes": {
+                "image": "51_g13_seabornnest",
+                "xScale": 1.4,
+                "yScale": 1.4,
+                "screenadapt": "coverall",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 204,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_seabornactivity_1",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 205,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1388_1#1$1",
+                "posfrom": "0,100",
+                "posto": "0,50",
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 207,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1388_1#1$1",
+                "posfrom": "100,50",
+                "posto": "-100,50",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 208,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 209,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "（柔らかい膜を動かす）",
+                "name": "生まれたてのシーボーン"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 211,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 212,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_seabornactivity_intense",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 213,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1388_1#1$1",
+                "posfrom": "-100,50",
+                "posto": "100,50",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 214,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 215,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "name",
+            "attributes": {
+                "content": "（ひだのような皮をはためかせる）",
+                "name": "生まれたてのシーボーン"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 217,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 218,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "all",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 220,
+            "prop": "curtain",
+            "attributes": {
+                "direction": 0.0,
+                "fillfrom": 0.15,
+                "fillto": 0.0,
+                "fadetime": 4.0
+            }
+        },
+        {
+            "id": 221,
+            "prop": "curtain",
+            "attributes": {
+                "direction": 4.0,
+                "fillfrom": 0.15,
+                "fillto": 0.0,
+                "fadetime": 4.0
+            }
+        },
+        {
+            "id": 222,
+            "prop": "backgroundTween",
+            "attributes": {
+                "yFrom": 0.0,
+                "duration": 4.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "Background",
+            "attributes": {
+                "image": "51_g13_seabornnest",
+                "screenadapt": "coverall",
+                "fadetime": 4.0
+            }
+        },
+        {
+            "id": 224,
+            "prop": "focusout",
+            "attributes": {
+                "type": "bg",
+                "id": "51_g13_seabornnest",
+                "from": 1.0,
+                "to": 0.0,
+                "duration": 4.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_seahumansurface",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 226,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "posfrom": "-100,50",
+                "posto": "-50,200",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 227,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "action": "zoom",
+                "poszoom": "0.5,0.5",
+                "scale": 0.8,
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 228,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,50",
+                "posto": "0,200",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 229,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "action": "zoom",
+                "poszoom": "0.5,0.5",
+                "scale": 0.8,
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 230,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "posfrom": "100,50",
+                "posto": "50,200",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 231,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "action": "zoom",
+                "poszoom": "0.5,0.5",
+                "scale": 0.8,
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 232,
+            "prop": "delay",
+            "attributes": {
+                "time": 4.0
+            }
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "新たに生まれた複数体が音もなく集まったと思うと、その身体の震えが巣穴全体に伝わっていく。触手とひげが絡み合い、シーボーン同士が絡まり合って遠くへと流れていく。"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 235,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 236,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#7"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "奴らのほうは今も、絶えず新たな個体が前線へと向かっているのね……",
+                "name": "スカジ"
+            },
+            "figure_art": "char_263_skadi#7"
+        },
+        {
+            "id": 238,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#6"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "name",
+            "attributes": {
+                "content": "待って、何か変じゃない？　今の奴、急に何体かに増えなかった？",
+                "name": "スカジ"
+            },
+            "figure_art": "char_263_skadi#6"
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "奴らは何をしているの？　増殖？　それとも分裂？",
+                "name": "スカジ"
+            },
+            "figure_art": "char_263_skadi#6"
+        },
+        {
+            "id": 241,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#13$1"
+            }
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "カジキ。この前艦隊の救援に向かった時にも漠然と不安を感じたけど、こいつらまた進化してない？",
+                "name": "スペクター"
+            },
+            "figure_art": "avg_1023_ghost2_1#13$1"
+        },
+        {
+            "id": 243,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_474_gladiia_1#1"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "シーボーンは常に進化していてよ。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_474_gladiia_1#1"
+        },
+        {
+            "id": 245,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#13$1"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "name",
+            "attributes": {
+                "content": "ねえスカジ、最初に殺したシーボーンのこと覚えてる？",
+                "name": "スペクター"
+            },
+            "figure_art": "avg_1023_ghost2_1#13$1"
+        },
+        {
+            "id": 247,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#3"
+            }
+        },
+        {
+            "id": 248,
+            "prop": "name",
+            "attributes": {
+                "content": "はっきりとは覚えてないわ。触手がたくさん生えてた気がする。",
+                "name": "スカジ"
+            },
+            "figure_art": "char_263_skadi#3"
+        },
+        {
+            "id": 249,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#10$1"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "name",
+            "attributes": {
+                "content": "そうね。触手や棘や、キチン質の外殻は……まだ見れば何だかわかるし、その機能もすぐに理解できるわ。",
+                "name": "スペクター"
+            },
+            "figure_art": "avg_1023_ghost2_1#10$1"
+        },
+        {
+            "id": 251,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_474_gladiia_1#1"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "name",
+            "attributes": {
+                "content": "これまで、奴らは他種が長年にわたって蓄積してきた進化の成果をかすめとることにだけ特化していた。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_474_gladiia_1#1"
+        },
+        {
+            "id": 253,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#10$1"
+            }
+        },
+        {
+            "id": 254,
+            "prop": "name",
+            "attributes": {
+                "content": "でも、目の前のこいつらは……",
+                "name": "スペクター"
+            },
+            "figure_art": "avg_1023_ghost2_1#10$1"
+        },
+        {
+            "id": 255,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 256,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 257,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_swimdeepsea",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 258,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1388_1#1$1",
+                "posfrom": "0,-50",
+                "posto": "0,80",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 259,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 260,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1388_1#1$1",
+                "posfrom": "0,-100",
+                "posto": "0,-30",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 261,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 262,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_divebubble",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 263,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1388_1#1$1",
+                "posfrom": "0,80",
+                "posto": "0,180",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 264,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 265,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1388_1#1$1",
+                "posfrom": "0,-30",
+                "posto": "0,70",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 266,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 267,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 268,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#13$1"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "どういう器官を備えているかもわからないし、三カ月前に殺したあのゴミどもとこいつらの間に関係があるとは思えないほど、別物になっているわ。",
+                "name": "スペクター"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 270,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_474_gladiia_1#1"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "name",
+            "attributes": {
+                "content": "……これまで通りの進化では、もはや奴らは満足しない。それで、自分たちだけの進化の答えを探し始めたんでしょう。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 272,
+            "prop": "name",
+            "attributes": {
+                "content": "つまり、奴らの進化の形はすでに、私たちの認識を超えようとしているということよ。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 273,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_474_gladiia_1#5"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "name",
+            "attributes": {
+                "content": "奴らの身体構造を観察し、器官の機能を判別し、進化の方向性を予測することができなければ……",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 275,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_263_skadi#8"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "name",
+            "attributes": {
+                "content": "殺し方すらわからない。",
+                "name": "スカジ"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 277,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1023_ghost2_1#1$1"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "撤退するときに、ブランドゥス顧問にサンプルを持ち帰ってあげましょうか。",
+                "name": "スペクター"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 279,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_474_gladiia_1#1"
+            }
+        },
+        {
+            "id": 280,
+            "prop": "name",
+            "attributes": {
+                "content": "けれど、今は任務が優先よ。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 281,
+            "prop": "name",
+            "attributes": {
+                "content": "スカジ、まだ溟痕に覆われていない岩壁を見つけ次第、ビーコンを埋め込んで起動させましょう。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 282,
+            "prop": "name",
+            "attributes": {
+                "content": "ローレンティーナは周囲を警戒していなさい。設置が終わり次第、即刻撤退するわよ。",
+                "name": "グレイディーア"
+            },
+            "figure_art": "avg_npc_1388_1#1$1"
+        },
+        {
+            "id": 283,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 284,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_swimdeepsea",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 285,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "u",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 286,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 289,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 290,
+            "prop": "Background",
+            "attributes": {
+                "image": "51_g7_consuloffice",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 292,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 294,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_higheldshosfts",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 295,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#1$1",
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 296,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 297,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "Decision",
+            "attributes": {
+                "options": "クレメンティアさん。;執政官閣下。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line299",
+                "option2": "line299"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 300,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#1$1"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたがドクター殿ですね。お噂は伺っておりました。お初にお目にかかります。ようやくご挨拶できましたね。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#1$1"
+        },
+        {
+            "id": 302,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 303,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "Decision",
+            "attributes": {
+                "options": "イベリアの正式な代表はケルシーだからな。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line305"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 306,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#1$1"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "ご謙遜を。実際、ケルシー医師のご見識は空間と時間の境界を超越するもので、感銘を受けておりますけれど――",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#1$1"
+        },
+        {
+            "id": 308,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#15$1"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "name",
+            "attributes": {
+                "content": "その後ろに姿を隠しておられたあなたは、きっと輪をかけて深いご見識をお持ちなのでしょう。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#15$1"
+        },
+        {
+            "id": 310,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#1$1"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "ご質問であれ、ご結論であれ、喜んでお伺いいたします。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#1$1"
+        },
+        {
+            "id": 312,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 313,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "Decision",
+            "attributes": {
+                "options": "あなたは狩人たちを危険な巣穴へ送り込んだな。;あなたはロドスのオペレーターを危険にさらしている。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line315",
+                "option2": "line315"
+            }
+        },
+        {
+            "id": 315,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 316,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#2$1"
+            }
+        },
+        {
+            "id": 317,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシー医師と同様に、この決定に疑問を抱かれているのですね。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#2$1"
+        },
+        {
+            "id": 318,
+            "prop": "name",
+            "attributes": {
+                "content": "けれど私は、彼女たちを再び死地に送らざるを得なかったのです。今の膠着状態を打破しうるのは、彼女たちを置いてほかにおりませんから。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#2$1"
+        },
+        {
+            "id": 319,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 320,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 321,
+            "prop": "Decision",
+            "attributes": {
+                "options": "理にかなっているが、かないすぎているとも感じるな。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line322"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 323,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#9$1"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "name",
+            "attributes": {
+                "content": "軍団は出払っており、エーギルに戻ったばかりの狩人たちまで戦闘に駆り出されるこの状況が、何者かの意図によるものだとお考えなのですね？",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "都市内で何かを発見されたということでしょうか。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 326,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 327,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 328,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ビーコンと兵器の連携システムが改ざんされたかもしれない。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line329"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 330,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#9$1"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "リトル・ハンディ。今すぐ、航路用ビーコンと第Ⅳ級兵器の中核研究開発と管理を行っている担当者に連絡を。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 332,
+            "prop": "name",
+            "attributes": {
+                "content": "加えて、全軍団の指揮官に通達しなさい。一部艦隊を残して前線のシーボーンを牽制、狩人たちを援護しつつ残りは順次撤退し、都市の防衛に戻れと。海巡隊はビーコン塔制圧に当たらせるのです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 333,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#1$1"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "name",
+            "attributes": {
+                "content": "情報提供に感謝いたします、ドクター殿。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#1$1"
+        },
+        {
+            "id": 335,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 336,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "Decision",
+            "attributes": {
+                "options": "（黙ってうなずく）",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line338"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 339,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#2$1"
+            }
+        },
+        {
+            "id": 340,
+            "prop": "name",
+            "attributes": {
+                "content": "アビサルハンターの配置については、お二人にまだ説明すべきことがございますね。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#2$1"
+        },
+        {
+            "id": 341,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_003_kalts_1#1$1"
+            }
+        },
+        {
+            "id": 342,
+            "prop": "name",
+            "attributes": {
+                "content": "我々は、戦術上の説明を必要としているわけではありません。アビサルハンターの持つシーボーンへの対応能力については、あなたのほうがお詳しいでしょう。",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 343,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_003_kalts_1#1$1"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、あなたほどの観察力を以てして、グレイディーアの首の鱗を見逃すことはないはずです。",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "狩人たちには無事任務を遂行する能力があると仮定しても構わないでしょう。ですが、彼女たちがシーボーンの巣穴で変異してしまわないという確証はあるのですか？",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 346,
+            "prop": "name",
+            "attributes": {
+                "content": "ブランドゥス顧問が保証しているというだけでは？",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 347,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#9$1"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "評議における彼の発言が、狩人たちに対するミリアリウムの信頼を確固たるものにしたのは確かです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "けれど、私にとってあれは気休めにもなりません。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 350,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_003_kalts_1#1$1"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "それを聞くに、アビサルハンターに関して、何かお考えがあるようですね。",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 352,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#9$1"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "……実際のところ、「ファーストボーン」を仕留めた後も、アビサルハンター計画は停止されてはいないのです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 354,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#4$1"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "name",
+            "attributes": {
+                "content": "私は関与していませんが、その内情について知り得ていることだけでも、本来なら公民全員からの質疑を受けるべきと感じます。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#4$1"
+        },
+        {
+            "id": 356,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 357,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 358,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line359"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 360,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#9$1"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "「ファーストボーン」の死後すぐに、アビサルハンター計画には大きな変化が起きました。関連実験には異常が頻発するようになり、深海教会の動向も狩人により焦点を当てたものになったのです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "これは、アビサルハンターの背後には今も、早急に発見されるべき未知なる何かがあることを意味しています。ですが同時に、公開型のプロジェクトとして運用すべきでないことも示しているのです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 363,
+            "prop": "name",
+            "attributes": {
+                "content": "そうして今日まで、アビサルハンター計画は今も秘密裏に進められています。けれど現状では、エーギルのアビサルハンターはいまだにグレイディーアを始めとする三……四名のみ。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 364,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#6$1"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "name",
+            "attributes": {
+                "content": "技術は絶えず進化を続けていますが、それでもエーギルは、再びアビサルハンターを生み出すことはできませんでした。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#6$1"
+        },
+        {
+            "id": 366,
+            "prop": "name",
+            "attributes": {
+                "content": "被験者のバイタルサインと精神状態の数値がどれほど安定していようとも、彼らは目覚めた途端に正気を失い、シーボーンへと変貌してしまうのです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#6$1"
+        },
+        {
+            "id": 367,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#8$1"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "name",
+            "attributes": {
+                "content": "実験室を出ることさえなく、海に触れずともそう成り果てるのです……",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#8$1"
+        },
+        {
+            "id": 369,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 370,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "Decision",
+            "attributes": {
+                "options": "「アビサルハンターの血は繋がっている」と聞くが……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line372"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 373,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "Decision",
+            "attributes": {
+                "options": "それはいかなる血かという話題を、我々は常に避けてきた。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line375"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 376,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#2$1"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "name",
+            "attributes": {
+                "content": "私にもその答えはわかりません。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#2$1"
+        },
+        {
+            "id": 378,
+            "prop": "name",
+            "attributes": {
+                "content": "狩人たちが意識を保てる理由はまだわかっていないのです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#2$1"
+        },
+        {
+            "id": 379,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 380,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 381,
+            "prop": "Decision",
+            "attributes": {
+                "options": "であれば、彼女たちはその謎を解く鍵となるだろう。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line382"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 383,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "Decision",
+            "attributes": {
+                "options": "それでもあなたは、彼女たちを前線へと送った。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line385"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 386,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#2$1"
+            }
+        },
+        {
+            "id": 387,
+            "prop": "name",
+            "attributes": {
+                "content": "……ええ。あの三人、ひいてはすべてのアビサルハンター計画の参加者に対して、無責任な行為だと思います。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#2$1"
+        },
+        {
+            "id": 388,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#9$1"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、ミリアリウムはすでに前線にあるのです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "陸へと押し寄せるシーボーンの波は即座に阻止できましたが、ミリアリウムは難攻不落とは呼べません。仮に航路を切り拓くことができなければ、この都市が陥落するのも時間の問題です。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 391,
+            "prop": "name",
+            "attributes": {
+                "content": "シーボーンは組織的に航路の要衝を押さえていますから、正面から強引に攻め込めば、大規模な反撃を招くことになります。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 392,
+            "prop": "name",
+            "attributes": {
+                "content": "そうなれば、誰一人生き残れはしないでしょう。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 393,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 394,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "Decision",
+            "attributes": {
+                "options": "狩人が危険を冒して戦うことは必要な代償だと？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line396"
+            }
+        },
+        {
+            "id": 396,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 397,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#9$1"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女たちが犠牲となる可能性も、変異する可能性もあることは事実です。けれど今は、彼女たちが何よりの希望なのです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 399,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_003_kalts_1#1$1"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "グレイディーアは、航路計画の実現性に疑問を抱いていました。ゆえにこそ、計画への参加を躊躇いなく決めたのです。",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "その懸念と葛藤はあなたとは違うものかもしれませんが、導き出す結果は同じでした。エーギル人の心は、暗黙のうちに通じ合っているようですね。",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 402,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#4$1"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "……悲しい通じ合いとも言えますね。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#4$1"
+        },
+        {
+            "id": 404,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#6$1"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "――闘智場の入り口に積まれたレンガには、設計者であるマルトゥスが残した格言が刻まれています。曰く「ここに正義はなく、ただ前路のみがある。」",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#6$1"
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "かの先哲は……物事の価値にとらわれるあまり、際限のない価値の比較に精神力を大きく浪費した、と後世の人々から評されることもあります。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#6$1"
+        },
+        {
+            "id": 407,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、彼が気に掛けていたのは、実のところエーギルの前途だけでした。マルトゥスは、正義のような、大衆が好む感情に根差す価値観にとらわれることを良しとしていなかったのです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#6$1"
+        },
+        {
+            "id": 408,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#4$1"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "name",
+            "attributes": {
+                "content": "こうしてみるに、私もグレイディーアも、無意識のうちに彼の理念を実践していたのでしょう。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#4$1"
+        },
+        {
+            "id": 410,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#2$1"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシー医師が以前仰られたことは正しいと思います。どうあれ、私の身には「エーギルの傲慢」がしみついているのです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#2$1"
+        },
+        {
+            "id": 412,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_003_kalts_1#1$1"
+            }
+        },
+        {
+            "id": 413,
+            "prop": "name",
+            "attributes": {
+                "content": "その発言は訂正させていただけますか。「傲慢」という言葉では、エーギルを要約するには不十分なように思います。",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": "あなた方はすべての同胞の人間性を尊重し、人々がその価値を発揮することを社会全体の発展目標と見なしている――",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし同時に、エーギル全体の存続のためなら、どれほど残酷な決断でも下し、それを冷静に受け入れることができるのです。",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 416,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#8$1"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "name",
+            "attributes": {
+                "content": "冷静に……ですか？",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#8$1"
+        },
+        {
+            "id": 418,
+            "prop": "name",
+            "attributes": {
+                "content": "エーギル人は冷血ではありません。あなた方が怒りを覚える時、私の心も何一つ動いていないということはないのです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#8$1"
+        },
+        {
+            "id": 419,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#4$1"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "name",
+            "attributes": {
+                "content": "そうした感情をグレイディーアに向けて表現したいとすら思いましたが、私にはそんな資格などないと気付かされました。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#4$1"
+        },
+        {
+            "id": 421,
+            "prop": "name",
+            "attributes": {
+                "content": "私は、彼女に対して純粋に理性からなる決断を下したのですから、感情的な許しを求める資格など当然ありません。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#4$1"
+        },
+        {
+            "id": 422,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#2$1"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "name",
+            "attributes": {
+                "content": "今この時も、それは同じこと。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#2$1"
+        },
+        {
+            "id": 424,
+            "prop": "name",
+            "attributes": {
+                "content": "それゆえ私は、「冷静に」自分の決断を受け入れたのです。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#2$1"
+        },
+        {
+            "id": 425,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_003_kalts_1#1$1"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 427,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 428,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 429,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line431"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 432,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_telephonebusy",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 433,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 434,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1401_1#1$1",
+                "duration": 0.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 435,
+            "prop": "name",
+            "attributes": {
+                "content": "ご指定の担当者への通信が完了しました。ですが、ブランドゥス顧問には連絡がついておりません。",
+                "name": "「リトル・ハンディ」"
+            },
+            "figure_art": "avg_npc_1401_1#1$1"
+        },
+        {
+            "id": 436,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 437,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1382_1#9$1"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 439,
+            "prop": "name",
+            "attributes": {
+                "content": "お二人とも。要領を得ないご回答ばかりで申し訳ありません。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 440,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが今は、責務を果たさせてください。",
+                "name": "クレメンティア"
+            },
+            "figure_art": "avg_npc_1382_1#9$1"
+        },
+        {
+            "id": 441,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 442,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 445,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 446,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 447,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}
