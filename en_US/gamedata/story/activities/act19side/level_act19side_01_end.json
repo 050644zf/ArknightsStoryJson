@@ -55,6 +55,16 @@
             }
         },
         {
+            "id": 6,
+            "prop": "PlayMusic",
+            "attributes": {
+                "comment": "战斗音乐",
+                "intro": "$escape_intro",
+                "key": "$escape_loop",
+                "volume": 0.4
+            }
+        },
+        {
             "id": 7,
             "prop": "Blocker",
             "attributes": {
@@ -137,6 +147,14 @@
             "prop": "delay",
             "attributes": {
                 "time": 1.5
+            }
+        },
+        {
+            "id": 16,
+            "prop": "playsound",
+            "attributes": {
+                "comment": "预约替换沉重的机器脚步",
+                "key": "$d_avg_mechawalk"
             }
         },
         {
@@ -244,7 +262,7 @@
                 "values": "1"
             },
             "targetLine": {
-                "option1": ""
+                "option1": "line30"
             }
         },
         {
@@ -252,7 +270,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 31,
@@ -1279,6 +1298,14 @@
             }
         },
         {
+            "id": 149,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "机械倒地的声音",
+                "key": "$d_avg_mechadown"
+            }
+        },
+        {
             "id": 150,
             "prop": "CameraShake",
             "attributes": {
@@ -1385,7 +1412,10 @@
                 "options": "I do NOT want new criminal records for Rhodes Island.;I do NOT miss Columbian jail even a little bit.",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line165",
+                "option2": "line165"
+            }
         },
         {
             "id": 164,
@@ -1397,7 +1427,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 166,
@@ -1406,7 +1437,9 @@
                 "options": "Thanks for that, Saria.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line168"
+            }
         },
         {
             "id": 167,
@@ -1422,7 +1455,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 169,
@@ -5681,5 +5715,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

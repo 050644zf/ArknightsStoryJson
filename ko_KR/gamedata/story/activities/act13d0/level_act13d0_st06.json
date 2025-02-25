@@ -1907,6 +1907,14 @@
             }
         },
         {
+            "id": 242,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "敲门",
+                "key": "$doorknockquite"
+            }
+        },
+        {
             "id": 243,
             "prop": "Delay",
             "attributes": {
@@ -1940,7 +1948,7 @@
                 "values": "1"
             },
             "targetLine": {
-                "option1": ""
+                "option1": "line248"
             }
         },
         {
@@ -1948,6 +1956,16 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 249,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "开门",
+                "key": "$d_gen_dooropen",
+                "volume": 0.6
             }
         },
         {
@@ -1955,6 +1973,15 @@
             "prop": "Delay",
             "attributes": {
                 "time": 0.5
+            }
+        },
+        {
+            "id": 251,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "脚步声",
+                "key": "$d_gen_walk_n",
+                "volume": 0.9
             }
         },
         {
@@ -2017,14 +2044,17 @@
                 "options": "볼게.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line260"
+            }
         },
         {
             "id": 260,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 261,
@@ -2560,14 +2590,20 @@
                 "options": "맨티코어 본인도 많이 답답해할 거야.;……;어쩌면 지금도 이 방 안에 있을지도.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line323",
+                "option2": "line328",
+                "option3": "line332"
+            }
         },
         {
             "id": 323,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line338"
         },
         {
             "id": 324,
@@ -2608,7 +2644,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line338"
         },
         {
             "id": 329,
@@ -2640,7 +2678,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line338"
         },
         {
             "id": 333,
@@ -2692,7 +2732,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 339,
@@ -2765,14 +2806,17 @@
                 "options": "방법이 아예 없는 건 아닌데.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line348"
+            }
         },
         {
             "id": 348,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 349,
@@ -2807,14 +2851,17 @@
                 "options": "보통 이럴 때는, 숙녀의 의견을 구해봐야지.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line354"
+            }
         },
         {
             "id": 354,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 355,
@@ -3123,6 +3170,14 @@
             }
         },
         {
+            "id": 394,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "开门声",
+                "key": "$dooropenquite"
+            }
+        },
+        {
             "id": 395,
             "prop": "playMusic",
             "attributes": {
@@ -3367,14 +3422,20 @@
                 "options": "좋은 아침.;……;역시 발소리만 들어도 누군지 알 수 있는 건가?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line424",
+                "option2": "line429",
+                "option3": "line432"
+            }
         },
         {
             "id": 424,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line437"
         },
         {
             "id": 425,
@@ -3413,7 +3474,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line437"
         },
         {
             "id": 430,
@@ -3436,7 +3499,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line437"
         },
         {
             "id": 433,
@@ -3475,7 +3540,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 438,
@@ -3527,6 +3593,25 @@
                 "name2": "char_388_mint_1",
                 "fadetime": 1.0,
                 "block": "false"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "脚步声",
+                "key": "$d_gen_walk_n",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 446,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "脚步声",
+                "key": "$d_gen_walk_n",
+                "volume": 0.7,
+                "delay": 0.2
             }
         },
         {
@@ -3660,14 +3745,19 @@
                 "options": "그거 영광인데.;방금은 어디에 숨어있던 거지?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line464",
+                "option2": "line469"
+            }
         },
         {
             "id": 464,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line475"
         },
         {
             "id": 465,
@@ -3710,7 +3800,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line475"
         },
         {
             "id": 470,
@@ -3758,7 +3850,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 476,
@@ -4724,14 +4817,19 @@
                 "options": "잘못 기억했을 수도 있지.;……;이 일은 나중에 다시 검증해도 괜찮겠지.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line596",
+                "option2": "line596",
+                "option3": "line596"
+            }
         },
         {
             "id": 596,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 597,
@@ -5394,14 +5492,17 @@
                 "options": "내 생각에는 완전히 광석병의 영향 때문이라고는 할 수 없을 것 같은데.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line680"
+            }
         },
         {
             "id": 680,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 681,
@@ -5436,14 +5537,17 @@
                 "options": "아무것도 아니야.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line686"
+            }
         },
         {
             "id": 686,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 687,
@@ -5462,14 +5566,17 @@
                 "options": "참, 아까부터 묻고 싶은 게 있었는데…",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line690"
+            }
         },
         {
             "id": 690,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 691,
@@ -5513,14 +5620,17 @@
                 "options": "옷장 문 위에 걸어놓은 그 옷이 눈에 띄는데, 과거에 입었던 무대 의상인가?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line697"
+            }
         },
         {
             "id": 697,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 698,
@@ -5885,6 +5995,15 @@
             "prop": "Delay",
             "attributes": {
                 "time": 1.0
+            }
+        },
+        {
+            "id": 745,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "脚步声",
+                "key": "$d_gen_walk_n",
+                "volume": 0.9
             }
         },
         {
@@ -6350,5 +6469,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }

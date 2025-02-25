@@ -1907,6 +1907,14 @@
             }
         },
         {
+            "id": 242,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "敲门",
+                "key": "$doorknockquite"
+            }
+        },
+        {
             "id": 243,
             "prop": "Delay",
             "attributes": {
@@ -1940,7 +1948,7 @@
                 "values": "1"
             },
             "targetLine": {
-                "option1": ""
+                "option1": "line248"
             }
         },
         {
@@ -1948,6 +1956,16 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 249,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "开门",
+                "key": "$d_gen_dooropen",
+                "volume": 0.6
             }
         },
         {
@@ -1955,6 +1973,15 @@
             "prop": "Delay",
             "attributes": {
                 "time": 0.5
+            }
+        },
+        {
+            "id": 251,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "脚步声",
+                "key": "$d_gen_walk_n",
+                "volume": 0.9
             }
         },
         {
@@ -2017,14 +2044,17 @@
                 "options": "Let me have a look.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line260"
+            }
         },
         {
             "id": 260,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 261,
@@ -2560,14 +2590,20 @@
                 "options": "Manticore's got plenty of anxieties of her own.;......;She might be in this room with us RIGHT NOW.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line323",
+                "option2": "line328",
+                "option3": "line332"
+            }
         },
         {
             "id": 323,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line338"
         },
         {
             "id": 324,
@@ -2608,7 +2644,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line338"
         },
         {
             "id": 329,
@@ -2640,7 +2678,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line338"
         },
         {
             "id": 333,
@@ -2692,7 +2732,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 339,
@@ -2765,14 +2806,17 @@
                 "options": "It's not like there isn't a way.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line348"
+            }
         },
         {
             "id": 348,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 349,
@@ -2807,14 +2851,17 @@
                 "options": "At times like this, we seek the Madam's opinion.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line354"
+            }
         },
         {
             "id": 354,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 355,
@@ -3123,6 +3170,14 @@
             }
         },
         {
+            "id": 394,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "开门声",
+                "key": "$dooropenquite"
+            }
+        },
+        {
             "id": 395,
             "prop": "playMusic",
             "attributes": {
@@ -3367,14 +3422,20 @@
                 "options": "Good morning.;......;You know me by footsteps alone?",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line424",
+                "option2": "line429",
+                "option3": "line432"
+            }
         },
         {
             "id": 424,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line437"
         },
         {
             "id": 425,
@@ -3413,7 +3474,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line437"
         },
         {
             "id": 430,
@@ -3436,7 +3499,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "3"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line437"
         },
         {
             "id": 433,
@@ -3475,7 +3540,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 438,
@@ -3527,6 +3593,25 @@
                 "name2": "char_388_mint_1",
                 "fadetime": 1.0,
                 "block": "false"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "脚步声",
+                "key": "$d_gen_walk_n",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 446,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "脚步声",
+                "key": "$d_gen_walk_n",
+                "volume": 0.7,
+                "delay": 0.2
             }
         },
         {
@@ -3660,14 +3745,19 @@
                 "options": "I'm honored.;Where were you hiding?",
                 "values": "1;2"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line464",
+                "option2": "line469"
+            }
         },
         {
             "id": 464,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line475"
         },
         {
             "id": 465,
@@ -3710,7 +3800,9 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "2"
-            }
+            },
+            "endOfOpt": false,
+            "targetLine": "line475"
         },
         {
             "id": 470,
@@ -3758,7 +3850,8 @@
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2"
-            }
+            },
+            "endOfOpt": true
         },
         {
             "id": 476,
@@ -4724,14 +4817,19 @@
                 "options": "Maybe it was just a mistake.;......;We can worry about verifying it later.",
                 "values": "1;2;3"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line596",
+                "option2": "line596",
+                "option3": "line596"
+            }
         },
         {
             "id": 596,
             "prop": "Predicate",
             "attributes": {
                 "references": "1;2;3"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 597,
@@ -5394,14 +5492,17 @@
                 "options": "I don't think his situation is entirely because of Oripathy.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line680"
+            }
         },
         {
             "id": 680,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 681,
@@ -5436,14 +5537,17 @@
                 "options": "Nothing.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line686"
+            }
         },
         {
             "id": 686,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 687,
@@ -5462,14 +5566,17 @@
                 "options": "Right. I've been meaning to ask from the start.",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line690"
+            }
         },
         {
             "id": 690,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 691,
@@ -5513,14 +5620,17 @@
                 "options": "The clothes on your wardrobe door are very eye-catching. An old costume?",
                 "values": "1"
             },
-            "targetLine": {}
+            "targetLine": {
+                "option1": "line697"
+            }
         },
         {
             "id": 697,
             "prop": "Predicate",
             "attributes": {
                 "references": "1"
-            }
+            },
+            "endOfOpt": false
         },
         {
             "id": 698,
@@ -5885,6 +5995,15 @@
             "prop": "Delay",
             "attributes": {
                 "time": 1.0
+            }
+        },
+        {
+            "id": 745,
+            "prop": "PlaySound",
+            "attributes": {
+                "comment": "脚步声",
+                "key": "$d_gen_walk_n",
+                "volume": 0.9
             }
         },
         {
@@ -6350,5 +6469,5 @@
             }
         }
     ],
-    "OPTIONTRACE": false
+    "OPTIONTRACE": true
 }
