@@ -1,0 +1,5078 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act36side",
+    "eventName": "テラ飯",
+    "entryType": "ACTIVITY",
+    "storyCode": "DT-2",
+    "avgTag": "戦闘後",
+    "storyName": "密林解毒スープ",
+    "storyInfo": "マルシルを解毒するために、三人は美味しい料理で大祭司をおびき出そうとする。だが、そのためにセンシが調達したメイン食材の「太った青い鳥」こそが、皆が懸命に探していた大祭司だった。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_village",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$dontmaketrouble_intro",
+                "key": "$dontmaketrouble_loop",
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 9,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_goldenlight",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 20.0,
+                "randomness": 30.0,
+                "fadeout": "true",
+                "block": "true"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 20.0,
+                "randomness": 30.0,
+                "fadeout": "true"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Effect",
+            "attributes": {
+                "name": "$e_magic_fire_01",
+                "y": 0.0,
+                "x": 0.0,
+                "layer": 3.0
+            }
+        },
+        {
+            "id": 13,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 16,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "name",
+            "attributes": {
+                "content": "うわあっ！？　オレの鱗獣干し台が！　それにベッドまで！",
+                "name": "アダクリス人A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 18,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "ライオス！",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#5$1"
+        },
+        {
+            "id": 20,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 21,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 22,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#9$1",
+                "posfrom": "-100,0",
+                "posto": "0,0",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "isblock": "true",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 23,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 24,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 25,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 27,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 28,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 30,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punchsp2",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 31,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4142_laios_1#7$1",
+                "posfrom": "0,0",
+                "posto": "100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 32,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 33,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "200,0",
+                "duration": 0.85
+            }
+        },
+        {
+            "id": 34,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 35,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 36,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_goldenlight",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 38,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "posfrom": "100,0",
+                "posto": "0,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 39,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 41,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 44,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#16$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "name",
+            "attributes": {
+                "content": "なんだ、やけに機敏だな……！",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#16$1"
+        },
+        {
+            "id": 46,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#22$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "俺たちのことを炎竜だと思い込んでいるみたいだ！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#22$1"
+        },
+        {
+            "id": 48,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#16$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 49,
+            "prop": "name",
+            "attributes": {
+                "content": "どうする！？",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#16$1"
+        },
+        {
+            "id": 50,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "name",
+            "attributes": {
+                "content": "とにかく、呼びかけてみよう。",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#9$1"
+        },
+        {
+            "id": 52,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "name",
+            "attributes": {
+                "content": "マルシル、俺だ！　ライオスだ！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#3$1"
+        },
+        {
+            "id": 54,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "name",
+            "attributes": {
+                "content": "あ、あなたがライオスなわけない！　ライオスは叫びながら変なポーズでバジリスクを威嚇するような奴なんだから！",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 56,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "name",
+            "attributes": {
+                "content": "アレは確かに強烈だったな……",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 58,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 59,
+            "prop": "name",
+            "attributes": {
+                "content": "ならば、俺がライオスだと証明するにはこれしかないな！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#3$1"
+        },
+        {
+            "id": 60,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 61,
+            "prop": "CameraShake",
+            "attributes": {
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 63,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 50.0,
+                "ystrength": 50.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "name",
+            "attributes": {
+                "content": "クエーーーッッ！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#4$1"
+        },
+        {
+            "id": 66,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 67,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 69,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 71,
+            "prop": "name",
+            "attributes": {
+                "content": "ライオス……本当にあなたなの……？",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 72,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "上手くいくのかよ！",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#7$1"
+        },
+        {
+            "id": 74,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "name",
+            "attributes": {
+                "content": "ねえライオス、炎竜がファリンを食べちゃったの！　だから炎竜を倒して、ファリンを取り返して、蘇生してあげないと！",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 76,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "待て待て、なんで俺を指さしてんだよ！？　俺のどこが炎竜だってんだ！",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 78,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 79,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "afrom": 0.0,
+                "rfrom": 0.0,
+                "gfrom": 0.0,
+                "bfrom": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$e_atk_magic_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 81,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 83,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 84,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 4.0,
+                "ystrength": 4.0,
+                "vibrato": 20.0,
+                "randomness": 30.0,
+                "fadeout": "true"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 87,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "afrom": 0.0,
+                "rfrom": 0.0,
+                "gfrom": 0.0,
+                "bfrom": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 88,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$e_atk_magic_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 89,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 91,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 92,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 4.0,
+                "ystrength": 4.0,
+                "vibrato": 20.0,
+                "randomness": 30.0,
+                "fadeout": "true"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 95,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4144_chilc_1#15$1",
+                "posfrom": "-100,0",
+                "posto": "0,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 96,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 97,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4143_sensi_1#5$1",
+                "posfrom": "100,0",
+                "posto": "0,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 98,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 99,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 100,
+            "prop": "name",
+            "attributes": {
+                "content": "うわっ！",
+                "name": "チルチャック&センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#5$1"
+        },
+        {
+            "id": 101,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 102,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "afrom": 0.0,
+                "rfrom": 0.0,
+                "gfrom": 0.0,
+                "bfrom": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$e_atk_magic_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 104,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "posfrom": "0,0",
+                "posto": "-100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 105,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 106,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "posfrom": "0,0",
+                "posto": "100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 107,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 108,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 4.0,
+                "ystrength": 4.0,
+                "vibrato": 20.0,
+                "randomness": 30.0,
+                "fadeout": "true"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 111,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "一体何が原因なんだ？",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#7$1"
+        },
+        {
+            "id": 113,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "name",
+            "attributes": {
+                "content": "うおっ！？　もしかしてそいつ、目を回してる上にフラフラ歩いてるとか？",
+                "name": "アダクリス人A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 115,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#9$1"
+        },
+        {
+            "id": 117,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "name",
+            "attributes": {
+                "content": "すごい勢いで威嚇してきて、わけわからないこと言ってたりする？",
+                "name": "アダクリス人B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 119,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#22$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "name",
+            "attributes": {
+                "content": "そう、そうなんだ！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#22$1"
+        },
+        {
+            "id": 121,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "だったら、口から泡吹いてたりも？",
+                "name": "アダクリス人A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 123,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "してる！！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#7$1"
+        },
+        {
+            "id": 125,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 126,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 127,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_071",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "name",
+            "attributes": {
+                "content": "なら、そいつは毒に当たったんだ！　運が良いことに解毒法を知ってる奴ならいるんだが、運の悪いことにそれは行方不明の大祭司なんだよ！",
+                "name": "アダクリス人A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 130,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "私たちが出せるのはカピピ草くらいね。普段は中毒や病気になった時もお腹を壊した時も、とりあえずこれを食べてるの。まずはこれで応急処置をしましょう！　でも効果にはあまり期待しないでね。",
+                "name": "アダクリス人B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 132,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 133,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 134,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#14$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "name",
+            "attributes": {
+                "content": "となれば……俺がマルシルを落ち着かせよう。君たちのほうは、まず大祭司の気を引けるものを探してきてくれ！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#14$1"
+        },
+        {
+            "id": 136,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "name",
+            "attributes": {
+                "content": "どうやって？　どこで探しゃいいんだよ！",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 138,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "name",
+            "attributes": {
+                "content": "とりあえず豪華なメシでも作って、それで大祭司を引き付ければいいだろ！　早く！　オマエらのツレは多分幻覚を見てるから、このままじゃオレんちが吹っ飛ばされちまうよ！",
+                "name": "アダクリス人A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 140,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "name",
+            "attributes": {
+                "content": "チルチャック、君たちは行ってくれ！　ここは俺がなんとかする！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#3$1"
+        },
+        {
+            "id": 142,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 143,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 146,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 147,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-100,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 148,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 149,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 150,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 151,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "name",
+            "attributes": {
+                "content": "わかった、マルシルは任せたからな！",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 153,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 154,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 155,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 158,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 159,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_caveentrance",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 161,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$holiday_intro",
+                "key": "$holiday_loop",
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 162,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 164,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 165,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "posfrom": "0,-20",
+                "posto": "0,0",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "isblock": "true",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 166,
+            "prop": "name",
+            "attributes": {
+                "content": "魚と木の実は十分手に入ったな……案内に感謝する、アダクリスたちよ。世話になった上で悪いのだが、もう一つ頼みたいことがある。",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 167,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "サカナってなんだ？　こいつは鱗獣だぞ。",
+                "name": "アダクリス人A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 169,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "name",
+            "attributes": {
+                "content": "ほう、ここでは魚をそう呼ぶのか。　とにかく、先に村へと戻って湯を沸かしてもらいたいのだ。できるか？",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 171,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "name",
+            "attributes": {
+                "content": "湯を？",
+                "name": "アダクリス人A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 173,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "うむ。たった今思いついたアイデアでな。普通の食事では、大祭司をすぐさま引き寄せるのは難しいだろうし、大鍋でシチューを作ろうと思うのだ！",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#2$1"
+        },
+        {
+            "id": 175,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "お前たちが我々に親切にしてくれたことへの礼でもあるが、その大祭司とやらは賑やかなほうが好きだという話も聞いたのでな。皆で鍋を囲めば、自然と賑やかになるだろう。",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 177,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "おお！　超美味いシチューを作ってくれるってことだよな？　やったぜ！　そんなら急いで準備しにいくよ！",
+                "name": "アダクリス人A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 179,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 180,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 181,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 182,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 183,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "name",
+            "attributes": {
+                "content": "うーむ……",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 185,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "name",
+            "attributes": {
+                "content": "この魚と木の実があれば、副菜としては十分だが……",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#2$1"
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "まだ何かが足りないような……",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#2$1"
+        },
+        {
+            "id": 188,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 189,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 192,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 193,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 194,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 195,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1429_1#1$1",
+                "posfrom": "100,0",
+                "posto": "0,0",
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 198,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "posfrom": "0,0",
+                "posto": "-200,0",
+                "duration": 1.5,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 200,
+            "prop": "name",
+            "attributes": {
+                "content": "おかしいのう。妙な音が聞こえて様子を見に来たが、変わった様子はなさそうじゃ。",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 201,
+            "prop": "name",
+            "attributes": {
+                "content": "それにしても、「インビンシブル・クール」も急に爆発してしまったし、どうもツイてないのう！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 202,
+            "prop": "name",
+            "attributes": {
+                "content": "ま、もう良いじゃろ！　帰って寝るとしよう！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 203,
+            "prop": "name",
+            "attributes": {
+                "content": "やれやれ、ここの研究を代わりに見ておいてやるとズゥママに約束していなければ、一人でここに留まろうとは思わんかったんじゃがな。",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 204,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 205,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "posfrom": "-200,0",
+                "posto": "-300,0",
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 208,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 211,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 212,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "name",
+            "attributes": {
+                "content": "ん？",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 215,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "name",
+            "attributes": {
+                "content": "ふくよかな体型に鮮やかな色……丸々と太った健康的な鳥だ。念のため、食べられるかどうか『ボブのグルメガイド』を確かめてみるとしよう……",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 217,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_paper2",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "「羽獣。全身が羽毛に覆われており、空を飛ぶことができる。食べられる。美味。どう調理しても良い。」か……",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 220,
+            "prop": "name",
+            "attributes": {
+                "content": "なるほど……この食材であれば、シチューの主役に相応しい。見た目にも心惹かれるものがあるな。これならきっと大祭司も満足するだろう！　よし、これに決めた！",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 221,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 222,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-100,0",
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 225,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 226,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 228,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 229,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 231,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 232,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4143_sensi_1#1$1",
+                "posfrom": "550,0",
+                "posto": "470,0",
+                "duration": 1.0,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.0,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 235,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "（何やらドゥリンがわしを狙っているようじゃが、まさか食おうとしているわけではあるまいな？）",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 237,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "（ん……むむ？　こやつ、本当にドゥリンか？）",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#5$1"
+        },
+        {
+            "id": 239,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "（……ほほう、なるほどのう。これは面白い。）",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#6$1"
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "（じゃが、待てよ……しばらくこれをやっておらんからのう。死んだふりというのは、どうやるんじゃったか？）",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#6$1"
+        },
+        {
+            "id": 242,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 243,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 246,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 248,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_wing",
+                "volume": 1.0,
+                "channel": "3"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch02",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 254,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 256,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fightgeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 260,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 262,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 264,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_punch",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 266,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 268,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$fightgeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 272,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 274,
+            "prop": "name",
+            "attributes": {
+                "content": "ギャアアアアアッ！！",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 276,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "……そこまで苦しめるつもりはなかったのだが……",
+                "name": "センシ"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 279,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 280,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 282,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_caveentrance",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 284,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 287,
+            "prop": "name",
+            "attributes": {
+                "content": "グッ――ガアッ――",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#7$1"
+        },
+        {
+            "id": 288,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 289,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 290,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 291,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 292,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 293,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "まあ、仕留められたのなら良しとしよう。",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 295,
+            "prop": "name",
+            "attributes": {
+                "content": "チルチャック！　木の実は十分集めたか？　そろそろ戻るぞ！",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 296,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 297,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 300,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 301,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_jungle_1",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 303,
+            "prop": "PlayMusic",
+            "attributes": {
+                "key": "$calm_loop",
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 304,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 306,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4141_marcil_1#23$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 307,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#4$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 308,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 309,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "name",
+            "attributes": {
+                "content": "ねえ、あなた本当にライオスなの？　どうして炎竜っぽい姿をしてるの？",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 311,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#4$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#4$1"
+        },
+        {
+            "id": 313,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 314,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 315,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#13$1",
+                "duration": 1.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 317,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#13$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "name",
+            "attributes": {
+                "content": "マルシル、ファリンの話をしようか。",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#13$1"
+        },
+        {
+            "id": 319,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4141_marcil_1#23$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "name",
+            "attributes": {
+                "content": "ファリンはねえ、私の親友なんだよ！　あの子は本当にあなたのことが大好きでね。知り合ってからもずっとライオスの話ばっかりしてたの。",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 321,
+            "prop": "name",
+            "attributes": {
+                "content": "ほかの人たちはファリンのことを落ちこぼれだと思ってたみたいだけど、私はそうは思わない。だって、あの子から色んなことを学んだもの！　私、あの子のことが大好きなの！",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 322,
+            "prop": "name",
+            "attributes": {
+                "content": "だけど……それなのに……私が弱すぎるせいで、ファリンは炎竜に……炎竜に食べられちゃった……！",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 323,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "name",
+            "attributes": {
+                "content": "……それは君一人の責任じゃないだろ。",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "ファリンは俺の妹なんだ。絶対見捨てたりしないよ。",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 326,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 327,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#16$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 328,
+            "prop": "name",
+            "attributes": {
+                "content": "その一方で、彼は好奇心を抱かずにはいられなかった。今のマルシルの目からは皆が炎竜に見えているようだが、それぞれ一体どんな竜として映っているのだろうか？"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "センシであれば、背が低く丸々とした炎竜だろうか？　チルチャックなら、小柄な炎竜なのだろうか？"
+            }
+        },
+        {
+            "id": 330,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4142_laios_1#21$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "自分もその実を探して食べてみるのはどうだろう？"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 333,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 336,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 337,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_village",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 339,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$path_intro",
+                "key": "$path_loop",
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 340,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 342,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "マルシルの様子はどうだ？",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 344,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "たった今眠ったところだ……体の防衛反応の一種ということだが、できるだけ早く解毒して目覚めさせた方がいいと彼らが言っていた。",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#1$1"
+        },
+        {
+            "id": 346,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "わかった！　ならば、すぐにシチューを作ろう。この丸々と肥えた鳥を使ってな！",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 348,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "上手くいくといいんだが……",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#6$1"
+        },
+        {
+            "id": 350,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "とにかく、今は急がねばなるまい。鳥はわしが下ごしらえをしておこう。ほかの食材のほうを手伝ってくれ！",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "森の中の風向きを確かめ……火災が起こらぬよう、風の当たらない場所で火を起こす。",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 353,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 354,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_cutfast"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 357,
+            "prop": "name",
+            "attributes": {
+                "content": "木の実と食用のキノコ、そしてジャガイモをきれいに洗ったらちょうどいい大きさに切り、一度脇に置いておく。",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 358,
+            "prop": "name",
+            "attributes": {
+                "content": "次は、鍋に香辛料とカピピ草を入れ、肉に味がしみやすくなるようにひと煮立ちさせる。",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "そこに木の実とキノコを加えたあと、数分煮て出汁を取り、その後肉とジャガイモを入れる。",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 360,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 361,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_seasonsaltpepper"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 363,
+            "prop": "name",
+            "attributes": {
+                "content": "魚はウロコを取り、腹を切って、食べられない内臓を取り出す。エラは流水できれいに洗うか、ナイフで直接取り除いておく。",
+                "name": "センシ"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "水平に切り込みを入れた魚に、トウガラシ、胡椒、塩、レモン汁を均等に混ぜ合わせたものを塗り……",
+                "name": "センシ"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 366,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_cutmeatone"
+            }
+        },
+        {
+            "id": 367,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "0,-5",
+                "isblock": "true",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 368,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,-5",
+                "posto": "0,0",
+                "isblock": "true",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 369,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 370,
+            "prop": "name",
+            "attributes": {
+                "content": "清潔な枝で刺し、たき火のそばに立てておく。この時、均一に焼けるよう頻繁に回転させるのを忘れてはならん……",
+                "name": "センシ"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "name",
+            "attributes": {
+                "content": "その後は再び鳥のシチューの調理に戻る。スープにとろみが出てきたら、塩で味をととのえ、味見をする！",
+                "name": "センシ"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "香りが立つまで弱火で煮込んだら……",
+                "name": "センシ"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 374,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 375,
+            "prop": "name",
+            "attributes": {
+                "content": "完成じゃ！　このシチューを大祭司に捧げよう！",
+                "name": "センシ"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "お前たちは普段、どのように大祭司を呼び寄せておるのだ？",
+                "name": "センシ"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 378,
+            "prop": "name",
+            "attributes": {
+                "content": "歌って！　踊って！　楽しいお祝い気分で、思う存分食うんだ！　そうすりゃ大祭司は自然と寄ってくるぜ！",
+                "name": "アダクリス人A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 379,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "name",
+            "attributes": {
+                "content": "よし、早速みんなで食べてみよう！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 381,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "name",
+            "attributes": {
+                "content": "ふむ……キノコと木の実を加えたことで、シチュー全体の味がとても豊かになったな。薬草の独特な香りも相まって最高の一杯だ。",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 383,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "name",
+            "attributes": {
+                "content": "うわぁ……いい匂いだな……",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#12$1"
+        },
+        {
+            "id": 385,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "name",
+            "attributes": {
+                "content": "ほらほら、歌って！　踊って！　ぼーっとしてたら大祭司は来ないわよ！",
+                "name": "アダクリス人B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 387,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "name",
+            "attributes": {
+                "content": "よ……よし！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#12$1"
+        },
+        {
+            "id": 389,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "チルチャック、センシ！　君たちも踊ってくれ……！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 391,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 392,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 394,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "20,30",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 395,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "20,30",
+                "posto": "0,0",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 396,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-20,30",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 397,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "-20,30",
+                "posto": "0,0",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 398,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 399,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 400,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 402,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "30,10",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 403,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "30,10",
+                "posto": "0,0",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 404,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-30,10",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 405,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "-30,10",
+                "posto": "0,0",
+                "isblock": "true",
+                "duration": 0.8
+            }
+        },
+        {
+            "id": 406,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ……まだ来ないのかよ……",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 408,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 409,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 410,
+            "prop": "name",
+            "attributes": {
+                "content": "ううっ……",
+                "name": "マルシル"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 412,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 413,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_071",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 414,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "だったら最終手段だ！　真剣に呼んでみよう！",
+                "name": "アダクリス人A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 416,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "name",
+            "attributes": {
+                "content": "大祭司様！　ご馳走を用意しました、お出ましください！",
+                "name": "アダクリス人B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 418,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 419,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 420,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4144_chilc_1#16$1",
+                "posfrom": "-100,0",
+                "posto": "-100,0",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#5$1",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4143_sensi_1#1$1",
+                "posfrom": "130,0",
+                "posto": "130,0",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "name",
+            "attributes": {
+                "content": "……大祭司様！　ご馳走を用意しました、お出ましください！",
+                "name": "三人"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 425,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 426,
+            "prop": "name",
+            "attributes": {
+                "content": "うぐぐ……",
+                "name": "マルシル"
+            }
+        },
+        {
+            "id": 427,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 428,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 429,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 432,
+            "prop": "Image",
+            "attributes": {
+                "image": "54_i3",
+                "screenadapt": "coverall",
+                "layer": 1.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 433,
+            "prop": "focusout",
+            "attributes": {
+                "duration": 5.0,
+                "type": "cg",
+                "id": "54_i3",
+                "from": 1.0,
+                "to": 0.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_makesoup",
+                "volume": 0.5,
+                "channel": "2",
+                "loop": "true"
+            }
+        },
+        {
+            "id": 435,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$farce_intro",
+                "key": "$farce_loop",
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 436,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 438,
+            "prop": "focusout",
+            "attributes": {
+                "duration": 2.5,
+                "type": "cg",
+                "id": "54_i3",
+                "from": 0.5,
+                "to": 0.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "Delay",
+            "attributes": {
+                "time": 5.0
+            }
+        },
+        {
+            "id": 440,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_horncuisine",
+                "volume": 1.0,
+                "channel": "1"
+            }
+        },
+        {
+            "id": 441,
+            "prop": "cgitem",
+            "attributes": {
+                "image": "cgitem_54_i3",
+                "style": "cg",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "aduration": 1.5,
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 442,
+            "prop": "Delay",
+            "attributes": {
+                "time": 5.0
+            }
+        },
+        {
+            "id": 443,
+            "prop": "hidecgitem",
+            "attributes": {
+                "image": "cgitem_54_i3",
+                "fadetime": 3.5
+            }
+        },
+        {
+            "id": 444,
+            "prop": "Delay",
+            "attributes": {
+                "time": 5.0
+            }
+        },
+        {
+            "id": 445,
+            "prop": "name",
+            "attributes": {
+                "content": "グガガガガァ！！",
+                "name": "解毒草と鳥のシチュー"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "name",
+            "attributes": {
+                "content": "じゅるり……もぐ……もぐ……",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "ごくん。",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "なんと温かい……",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "name",
+            "attributes": {
+                "content": "こんなにも気持ちの良い風呂に入ったのは久しぶりじゃ。",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、この風呂は妙な物ばかり浮かんどるのう！",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "name",
+            "attributes": {
+                "content": "キノコのスライス、そのうえこれは、角切りのジャガイモか？",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "name",
+            "attributes": {
+                "content": "トウガラシとカピピ草まで入っとる！",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "じゅるじゅる……もぐ……もぐ……",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "name",
+            "attributes": {
+                "content": "むぐ……ぺっぺっ！　ひどい味じゃな！",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "もしやこれは薬湯なのか！？",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 456,
+            "prop": "name",
+            "attributes": {
+                "content": "あぁ……しかし、この尻の焦げるような感覚は、メカから打ち上げられる直前にコックピットを満たす熱を思い出させるのう。なんとも心地が良い……",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "これに浸かれば、爆発疲れも一気に吹っ飛ぶわい！！",
+                "name": "大祭司"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 459,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 460,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 462,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "2",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 463,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 464,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 466,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "name",
+            "attributes": {
+                "content": "なんと……！　この鳥、復活したのか！？",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#5$1"
+        },
+        {
+            "id": 468,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "name",
+            "attributes": {
+                "content": "捌いた鳥が元通りになるなんて、まさか……",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#6$1"
+        },
+        {
+            "id": 470,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "name",
+            "attributes": {
+                "content": "……こいつは「不死の魔物」なのか！？",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#8$1"
+        },
+        {
+            "id": 472,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "name",
+            "attributes": {
+                "content": "大祭司！　どうして鍋の中にいるんだ！？",
+                "name": "アダクリス人A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 474,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "name",
+            "attributes": {
+                "content": "はあ！？　このデブ鳥が大祭司だって！？",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#7$1"
+        },
+        {
+            "id": 476,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 477,
+            "prop": "name",
+            "attributes": {
+                "content": "うっ……あいつ、風呂みたいに浸かってやがる……",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 478,
+            "prop": "name",
+            "attributes": {
+                "content": "おえ……一口飲んじまった……",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 479,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "name",
+            "attributes": {
+                "content": "（ああ、「不死の魔物」だと思うと味が気になる……！）",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#12$1"
+        },
+        {
+            "id": 481,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 482,
+            "prop": "name",
+            "attributes": {
+                "content": "うむ！　わしこそが大祭司じゃ！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "風呂に浸かっている間に、お主らが何を求めているかはすべて理解した！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "仲間が毒に当たったのだろう！　無論わしは、決して見殺しにはせんぞ！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 485,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#16$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 486,
+            "prop": "name",
+            "attributes": {
+                "content": "なんでそれを知ってるんだよ……",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#16$1"
+        },
+        {
+            "id": 487,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "うぉっほん！　仲間の解毒をしてやりたいのなら……",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 489,
+            "prop": "name",
+            "attributes": {
+                "content": "この薬湯を飲ませるのが一番じゃ！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 490,
+            "prop": "name",
+            "attributes": {
+                "content": "こんなに不味いものを飲めば、どこぞの狂った狼だろうがきっと正気に返るじゃろ！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 491,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 492,
+            "prop": "name",
+            "attributes": {
+                "content": "ま、不味いだと？",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#4$1"
+        },
+        {
+            "id": 493,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#16$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 494,
+            "prop": "name",
+            "attributes": {
+                "content": "だとしたら、一番の原因はメインの食材だろ……",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#16$1"
+        },
+        {
+            "id": 495,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 496,
+            "prop": "name",
+            "attributes": {
+                "content": "何にせよ、大祭司がそう言うなら、大祭司の祝福を受けたシチューをそいつに食わせてやろうぜ！",
+                "name": "アダクリス人A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 497,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 498,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 499,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_drinkswllw",
+                "volume": 1.0,
+                "channel": "2"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 501,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_drinkswllw",
+                "volume": 1.0,
+                "channel": "2"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 503,
+            "prop": "name",
+            "attributes": {
+                "content": "ずずっ……うっ……",
+                "name": "マルシル"
+            }
+        },
+        {
+            "id": 504,
+            "prop": "name",
+            "attributes": {
+                "content": "変なシチュー……でもあったかい……",
+                "name": "マルシル"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "name",
+            "attributes": {
+                "content": "……うぅ……うるさい……",
+                "name": "マルシル"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 507,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "すごいぞ！　大祭司シチューが本当に効いた！",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 509,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 510,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 511,
+            "prop": "name",
+            "attributes": {
+                "content": "大祭司……シチュー？",
+                "name": "マルシル"
+            }
+        },
+        {
+            "id": 512,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "name",
+            "attributes": {
+                "content": "しまった！",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#7$1"
+        },
+        {
+            "id": 514,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 515,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 516,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#11$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 517,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 518,
+            "prop": "name",
+            "attributes": {
+                "content": "マルシルがなんとか目を開けると、そこには――"
+            }
+        },
+        {
+            "id": 519,
+            "prop": "name",
+            "attributes": {
+                "content": "そこには、喋る魔物の姿があった。そのうえそれは、生きたまま自分を茹でる鍋の中でシチューを味わっており、目の前のお椀からはその鍋と同じ香りが漂っている。"
+            }
+        },
+        {
+            "id": 520,
+            "prop": "name",
+            "attributes": {
+                "content": "と同時に、スプーンを握ったライオスが、目にも止まらぬ速さで鍋へと手を伸ばし、ひとすくいして自らの口へと運ぶのも見えた。"
+            }
+        },
+        {
+            "id": 521,
+            "prop": "name",
+            "attributes": {
+                "content": "マルシルは口を開くと、ようやく我に返ったかのように悲鳴を上げた――"
+            }
+        },
+        {
+            "id": 522,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 523,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#22$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 524,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 525,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "name",
+            "attributes": {
+                "content": "ま、魔物！？",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#2$1"
+        },
+        {
+            "id": 528,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 529,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 530,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ――",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#10$1"
+        },
+        {
+            "id": 531,
+            "prop": "name",
+            "attributes": {
+                "content": "もういや！！",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#10$1"
+        },
+        {
+            "id": 532,
+            "prop": "name",
+            "attributes": {
+                "content": "もう魔物なんて食べたくないよ～～！！",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#10$1"
+        },
+        {
+            "id": 533,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 534,
+            "prop": "name",
+            "attributes": {
+                "content": "へえ、このシチューなかなかいけるな。",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 535,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 536,
+            "prop": "name",
+            "attributes": {
+                "content": "わーっはっは！　お主、ひどいセンスをしておるのう！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 537,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "name",
+            "attributes": {
+                "content": "大祭司……？",
+                "name": "センシ"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 539,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 540,
+            "prop": "name",
+            "attributes": {
+                "content": "シッ！　お主が尋ねたいことはわかっておる！　事の次第はなんとなく理解した……なるほど、今はその時ではないようじゃな。",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 541,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 542,
+            "prop": "name",
+            "attributes": {
+                "content": "その時？",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#1$1"
+        },
+        {
+            "id": 543,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 544,
+            "prop": "name",
+            "attributes": {
+                "content": "おおっと、何でもないわい……それよりお主ら、ロドスを探しておるんじゃろう？",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 545,
+            "prop": "name",
+            "attributes": {
+                "content": "ならばそのまま探し続けるが良い！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 546,
+            "prop": "name",
+            "attributes": {
+                "content": "お主らは正しいほうへと進んでおる！　このまま進めば、きっと大丈夫じゃ！",
+                "name": "大祭司"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 547,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 548,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-200,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 549,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 550,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 551,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 552,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 553,
+            "prop": "name",
+            "attributes": {
+                "content": "き、消えた……",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#8$1"
+        },
+        {
+            "id": 554,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 555,
+            "prop": "name",
+            "attributes": {
+                "content": "なんの役にも立たないアドバイスだったな……",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#10$1"
+        },
+        {
+            "id": 556,
+            "prop": "name",
+            "attributes": {
+                "content": "正しい方向に進んでるも何も、俺たちはまだ、どこへ向かえばいいかもわからないってのに！",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#10$1"
+        },
+        {
+            "id": 557,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 558,
+            "prop": "name",
+            "attributes": {
+                "content": "ところでマルシル、どうしてあの実を迂闊に食べたりしたんだ？",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#1$1"
+        },
+        {
+            "id": 559,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 560,
+            "prop": "name",
+            "attributes": {
+                "content": "……木苺にそっくりだったから。",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#11$1"
+        },
+        {
+            "id": 561,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 562,
+            "prop": "name",
+            "attributes": {
+                "content": "木苺？",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#8$1"
+        },
+        {
+            "id": 563,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 564,
+            "prop": "name",
+            "attributes": {
+                "content": "……昔、ファリンがくれた木苺によく似てると思って……",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#11$1"
+        },
+        {
+            "id": 565,
+            "prop": "name",
+            "attributes": {
+                "content": "小鳥もあれをついばんでいたし、きっと同じものだと思って少しつまんじゃったの……",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#11$1"
+        },
+        {
+            "id": 566,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 567,
+            "prop": "name",
+            "attributes": {
+                "content": "でも、それならファリンに土産話ができたんじゃないか。",
+                "name": "ライオス"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 568,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#17$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 569,
+            "prop": "name",
+            "attributes": {
+                "content": "食中毒で大変なことになったってな！",
+                "name": "チルチャック"
+            },
+            "figure_art": "avg_4144_chilc_1#17$1"
+        },
+        {
+            "id": 570,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 571,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 20.0,
+                "randomness": 70.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 572,
+            "prop": "name",
+            "attributes": {
+                "content": "も〜、うるさいな！",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#12$1"
+        },
+        {
+            "id": 573,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#17$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 574,
+            "prop": "name",
+            "attributes": {
+                "content": "ほら、行こ！　ロドスを探しにいかないと！",
+                "name": "マルシル"
+            },
+            "figure_art": "avg_4141_marcil_1#17$1"
+        },
+        {
+            "id": 575,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 576,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 577,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 578,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 579,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 580,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 581,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 582,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}

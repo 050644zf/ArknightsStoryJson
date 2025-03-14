@@ -1,0 +1,3542 @@
+{
+    "lang": "ko_KR",
+    "eventid": "act36side",
+    "eventName": "테라밥",
+    "entryType": "ACTIVITY",
+    "storyCode": "DT-2",
+    "avgTag": "작전 전",
+    "storyName": "정글 해독 스튜",
+    "storyInfo": "일행은 어느 마을의 현자라는 대제사장에게 도움을 요청하고자 그를 찾는다. 하지만 새로운 세계에 관한 다양한 정보 앞에서 머리에 과부하가 온 마르실은, 경솔하게 독이 든 열매를 먹고 마을을 혼란에 빠트린다.\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_jungle_1",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$path_intro",
+                "key": "$path_loop",
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 9,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 11,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 12,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "빨리, 라이오스.",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#1$1"
+        },
+        {
+            "id": 14,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "name",
+            "attributes": {
+                "content": "이 버섯 좀 봐봐! 미궁의 걸어 다니는 버섯 중에서도 이렇게 큰 건 본 적 없다고!",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#8$1"
+        },
+        {
+            "id": 16,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "name",
+            "attributes": {
+                "content": "걸어 다니는 버섯이 이만큼 자라면 진짜 볼만하겠는데…… 이거 나중에 점심으로 먹어볼까?",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 18,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "조심하라구. 정글 버섯은 모두 어느 정도 독이 있다고 미식 가이드에 쓰여 있었어.",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#7$1"
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "예를 들어, 먹으면 온몸에 발진이 생긴다든가, 혈액이 응고된다든가, 내장이 튀어나올 정도로 계속 토하게 된다든가……",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#7$1"
+        },
+        {
+            "id": 21,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "그런 부작용을 겪으면서 가이드를 써 내려갔다고……? 상상만 해도 끔찍하군.",
+                "name": "칠책"
+            },
+            "figure_art": "avg_4144_chilc_1#10$1"
+        },
+        {
+            "id": 23,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "나도 오크에게서 미궁의 버섯 구별법을 배웠네만, 본 적 없는 버섯을 함부로 먹어보는 건 역시 위험 부담이 크네.",
+                "name": "센시"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 25,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 26,
+            "prop": "name",
+            "attributes": {
+                "content": "그래도 이 근처엔 이 두툼한 버섯을 먹는 동물이 있는 것 같아!",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#8$1"
+        },
+        {
+            "id": 27,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "name",
+            "attributes": {
+                "content": "아니, 일부 동물만 먹는 거라면 그 외의 다른 생명체에겐 독이 될 가능성이 크다네.",
+                "name": "센시"
+            },
+            "figure_art": "avg_4143_sensi_1#3$1"
+        },
+        {
+            "id": 29,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "바꿔 말하면, 많은 동물이 먹는 거라면 아마도 독성이 없다는 거겠지.",
+                "name": "센시"
+            },
+            "figure_art": "avg_4143_sensi_1#9$1"
+        },
+        {
+            "id": 31,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#13$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "으음……",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#13$1"
+        },
+        {
+            "id": 33,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 34,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 35,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "name",
+            "attributes": {
+                "content": "(낮은 포효)",
+                "name": "???"
+            }
+        },
+        {
+            "id": 37,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 38,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 39,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "name",
+            "attributes": {
+                "content": "무슨 소리지?",
+                "name": "칠책"
+            },
+            "figure_art": "avg_4144_chilc_1#8$1"
+        },
+        {
+            "id": 41,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 42,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 43,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "name",
+            "attributes": {
+                "content": "(날카로운 비명)",
+                "name": "???"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "name",
+            "attributes": {
+                "content": "뭔가 여기로 돌진하는 게 있다! 조심해!",
+                "name": "칠책"
+            },
+            "figure_art": "avg_4144_chilc_1#11$1"
+        },
+        {
+            "id": 47,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 48,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 49,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "name",
+            "attributes": {
+                "content": "으아아아아아악!",
+                "name": "라이오스 파티"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 52,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$grenade_explosion",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 53,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 54,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.7,
+                "xstrength": 20.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 58,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 59,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 61,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 62,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_jungle_1",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 64,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$farce_intro",
+                "key": "$farce_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 65,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 67,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 75,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 76,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "읏차, 여엉차……",
+                "name": "대제사장"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 78,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "어이쿠! 방금 그 폭발은 굉장하구먼!",
+                "name": "대제사장"
+            },
+            "figure_art": "avg_npc_1429_1#5$1"
+        },
+        {
+            "id": 80,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "아무도 없는 실험 장소를 발견해서 다행이야.",
+                "name": "대제사장"
+            },
+            "figure_art": "avg_npc_1429_1#6$1"
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "자, 어디……",
+                "name": "대제사장"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 84,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "name",
+            "attributes": {
+                "content": "쳄버의 압력, 계측 불가. 온도, 계측 불가. 적재량, 이것도 계측 불가로군!",
+                "name": "대제사장"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 86,
+            "prop": "name",
+            "attributes": {
+                "content": "이 정도로 세게 들이박지 않으면 좋은 수치가 안 나오는가 보군.",
+                "name": "대제사장"
+            },
+            "figure_art": "avg_npc_1429_1#1$1"
+        },
+        {
+            "id": 87,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1429_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "그러면 좀 전의 설정을 최종 디버깅해 보실까. 벨트를 풀고…… 나사를 조이면 완료!",
+                "name": "대제사장"
+            },
+            "figure_art": "avg_npc_1429_1#6$1"
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "이제 어지간한 일이 없는 한, 내 최신 걸작 '인빈시블 쿨'이 제대로 작동할 게야!",
+                "name": "대제사장"
+            },
+            "figure_art": "avg_npc_1429_1#6$1"
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "아차, 그전에 폭발물을 전부 치워야겠구먼.",
+                "name": "대제사장"
+            },
+            "figure_art": "avg_npc_1429_1#6$1"
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "안전제일, 화기 엄금이니~",
+                "name": "대제사장"
+            },
+            "figure_art": "avg_npc_1429_1#6$1"
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "영차, 영차……",
+                "name": "대제사장"
+            },
+            "figure_art": "avg_npc_1429_1#6$1"
+        },
+        {
+            "id": 93,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 94,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 97,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_jungle_1",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 99,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 101,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 109,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 110,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#7$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 111,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "콜록콜록……뭐야?! 저쪽에서 폭발이……!",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#7$1"
+        },
+        {
+            "id": 113,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "name",
+            "attributes": {
+                "content": "콜록콜록……",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#6$1"
+        },
+        {
+            "id": 115,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "마르실, 괜찮아?",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#3$1"
+        },
+        {
+            "id": 117,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "name",
+            "attributes": {
+                "content": "괘, 괜찮아! 좀 어지럽긴 하지만……",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#6$1"
+        },
+        {
+            "id": 119,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 120,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 121,
+            "prop": "name",
+            "attributes": {
+                "content": "(낮은 포효)",
+                "name": "???"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#14$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "name",
+            "attributes": {
+                "content": "또 오나……! 조심해!",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#14$1"
+        },
+        {
+            "id": 124,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "name",
+            "attributes": {
+                "content": "저거 뭐야? 골렘? 아니면 가고일?!",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#4$1"
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "내 마법으로……",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#4$1"
+        },
+        {
+            "id": 127,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 128,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 129,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_magicreverse",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 131,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 132,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_magicreverse",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 139,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_sp_ballista",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 140,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 146,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 150,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 154,
+            "prop": "name",
+            "attributes": {
+                "content": "쾅!!!"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 156,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 157,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 158,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 159,
+            "prop": "name",
+            "attributes": {
+                "content": "어이~ 대제사장, 거기 있어?",
+                "name": "???"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 160,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "multiline",
+            "attributes": {
+                "name": "마르실",
+                "content": "무슨 소리야……?"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "multiline",
+            "attributes": {
+                "name": "마르실",
+                "end": "true",
+                "content": "……우왁!",
+                "joined": "무슨 소리야……?……우왁!"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "악어?! 아니, 악어 머리 달린 아인인가?!",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#2$1"
+        },
+        {
+            "id": 166,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "name",
+            "attributes": {
+                "content": "뭐? 아인이 뭔데?",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 168,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "name",
+            "attributes": {
+                "content": "마, 말했어!",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#2$1"
+        },
+        {
+            "id": 170,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "내가 말하는 게 뭐 어쨌는데? 어이, 거기 두린 두 명은 지하에서 방금 올라온 녀석들인가?",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 172,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 173,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 174,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4144_chilc_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4143_sensi_1#15$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "두린?",
+                "name": "센시"
+            },
+            "figure_art": "avg_4143_sensi_1#15$1"
+        },
+        {
+            "id": 177,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4144_chilc_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "우리 얘긴가?",
+                "name": "칠책"
+            },
+            "figure_art": "avg_4144_chilc_1#1$1"
+        },
+        {
+            "id": 179,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 180,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 181,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "name",
+            "attributes": {
+                "content": "너희 말고 누가 있냐. 둘 다 작잖아.",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 183,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 184,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 185,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4144_chilc_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4143_sensi_1#15$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "그러니까, 이 남자 눈에는 나랑 칠책이 같은 종족으로 보인다는 건가?",
+                "name": "센시"
+            },
+            "figure_art": "avg_4143_sensi_1#15$1"
+        },
+        {
+            "id": 188,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_4144_chilc_1#15$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "이 부근엔 하프풋이 없나?",
+                "name": "칠책"
+            },
+            "figure_art": "avg_4144_chilc_1#15$1"
+        },
+        {
+            "id": 190,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 191,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 192,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "name",
+            "attributes": {
+                "content": "……뭔 소리야? 너네, 머리는 괜찮냐?",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 194,
+            "prop": "name",
+            "attributes": {
+                "content": "아, 참. 그보다 이 근처에서 대제사장 못 봤어?",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 195,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "name",
+            "attributes": {
+                "content": "대제사장?",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#1$1"
+        },
+        {
+            "id": 197,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "안경을 쓴 작은 할아버지야.",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 199,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "name",
+            "attributes": {
+                "content": "그 사람은 왜 이렇게 위험한 곳에 있는데?",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#1$1"
+        },
+        {
+            "id": 201,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "name",
+            "attributes": {
+                "content": "대제사장의 생각은 나도 몰라. 수수께끼 투성이라서 말이지.",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 203,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#16$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "그렇군. 하지만 지금까진 그런 사람은 못 봤는데.",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#16$1"
+        },
+        {
+            "id": 205,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "그럼 대제사장의 행방도 수수께끼 투성이라는 거군.",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 207,
+            "prop": "name",
+            "attributes": {
+                "content": "그럼 어쩔 수 없지. 일단 마을로 돌아갈까? 그 녀석을 찾다 보면 항상 이렇게 된다니까……",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "그럼 난 이만 간다! 이상한 관광객들!",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 209,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "잠깐만! 물어볼 게 있어. 로도스 아일랜드라고 들어 봤어?",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#1$1"
+        },
+        {
+            "id": 211,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "name",
+            "attributes": {
+                "content": "오호라~ 너흰 운이 좋기도 하고 나쁘기도 하군. 그 이름은 나도 들어 본 적이 있는 듯 없는 듯해.",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "아무튼, 뭐가 됐든 간에 그 뭐시기 아일랜드를 아는 녀석에 대해선 짚이는 데가 있지.",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 214,
+            "prop": "name",
+            "attributes": {
+                "content": "하지만 그 녀석은……",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 215,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "name",
+            "attributes": {
+                "content": "설마, 아까 말했던 대제사장?",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#8$1"
+        },
+        {
+            "id": 217,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "name",
+            "attributes": {
+                "content": "맞아.",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "그럼 이렇게 하자. 나랑 같이 마을로 가는 거야. 대제사장은 매번 찾으려고 하면 안 보이지만 내버려 두면 알아서 돌아오거든!",
+                "name": "악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 220,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 221,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 224,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_village",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 226,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 228,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 229,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_070",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 230,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4141_marcil_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 231,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 232,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "그러니까 너흰 원래 섬에 있는 커다란 미궁에 있었는데, 모르는 사이에 여기에 와 버렸다?",
+                "name": "똑똑한 악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 234,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4141_marcil_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "대충 그런 셈이야. 뭐 아는 거 있어?",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#1$1"
+        },
+        {
+            "id": 236,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "음…… 그 섬이란 건 뭐야?",
+                "name": "똑똑한 악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 238,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4141_marcil_1#14$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "name",
+            "attributes": {
+                "content": "잉? 어, 음……바다에 떠 있는 육지인데.",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#14$1"
+        },
+        {
+            "id": 240,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "바다? 그건 뭐지?",
+                "name": "똑똑한 악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 242,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4141_marcil_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "name",
+            "attributes": {
+                "content": "어…… 물이 많이 있는 곳?",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#1$1"
+        },
+        {
+            "id": 244,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "name",
+            "attributes": {
+                "content": "그건 호수 아닌가? 꽤 이상한 말을 하는군.",
+                "name": "똑똑한 악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 246,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4141_marcil_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "음, 여기는 상당히 내륙인건가……?",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#9$1"
+        },
+        {
+            "id": 248,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "name",
+            "attributes": {
+                "content": "애초에 네 질문은 너무 이상하다고! 난 지금까지 바다도 섬도 멜리니라는 마을도 들어 본 적이 없단 말이지. 혹시 테라 반대쪽에서 누군가의 꼬리에 맞고 날아온 거 아닌가?",
+                "name": "똑똑한 악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 250,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4141_marcil_1#9$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "name",
+            "attributes": {
+                "content": "테라…… 라니?",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#9$1"
+        },
+        {
+            "id": 252,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "name",
+            "attributes": {
+                "content": "이 대지 얘기인데……",
+                "name": "똑똑한 악어 머리 아인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 254,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 255,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4141_marcil_1#22$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 256,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 257,
+            "prop": "name",
+            "attributes": {
+                "content": "마르실은 이 악어 남자가 자신을 놀리는 건가 싶어 그의 눈을 바라봤다."
+            }
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "하지만 안타깝게도 그 올곧은 눈에는 '이 사람은 바보 아닌가?'라는 감정만 드러나 있을 뿐이었다."
+            }
+        },
+        {
+            "id": 259,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 260,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 263,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_village",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 264,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 265,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 266,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 267,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "name",
+            "attributes": {
+                "content": "그래서 이 악어…… 아다크리스들 중에서도 지위가 높은 게 대제사장이고, 마르실이 아까 폭파한 골렘이 그 대제사장의……",
+                "name": "칠책"
+            },
+            "figure_art": "avg_4144_chilc_1#11$1"
+        },
+        {
+            "id": 269,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 270,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 271,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_071",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "name",
+            "attributes": {
+                "content": "메카야.",
+                "name": "아다크리스인 A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 274,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "인빈시블 쿨이라고 하지.",
+                "name": "아다크리스인 B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 276,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 277,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 278,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "name",
+            "attributes": {
+                "content": "아무튼, 우리가 그 '메카'를 부숴 버렸는데 그래도 로도스 아일랜드를 찾는 걸 도와줄까?",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#1$1"
+        },
+        {
+            "id": 280,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 281,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 282,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_071",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "괜찮아. 너희가 없었어도 어차피 폭발했을 거니까.",
+                "name": "아다크리스인 A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 285,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "name",
+            "attributes": {
+                "content": "그래, 언제나 무조건적으로 폭발하거든.",
+                "name": "아다크리스인 B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 287,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 288,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 289,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "대제사장은 아주 성격 좋은 사람이니까, 돌아오는 걸 기다렸다가 제대로 설명하면 너희를 탓하지는 않을 거야.",
+                "name": "똑똑한 아다크리스인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 291,
+            "prop": "name",
+            "attributes": {
+                "content": "게다가 아주 친절하기도 하니까, 길을 잃은 너희를 내버려 둘 리도 없고.",
+                "name": "똑똑한 아다크리스인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "우리 대제사장은 그런 사람이야!",
+                "name": "똑똑한 아다크리스인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 293,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 294,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 295,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 296,
+            "prop": "name",
+            "attributes": {
+                "content": "그렇다고는 해도 우리도 뭔가 사과를 하기는 해야겠지……",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#1$1"
+        },
+        {
+            "id": 297,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 298,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 299,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_070",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "name",
+            "attributes": {
+                "content": "신경 쓰지 마…… 응? 좋은 냄새가 나는데. 오늘 식사 당번이 누구지?",
+                "name": "똑똑한 아다크리스인"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 301,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 302,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 303,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_071",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "저 텁수룩 수염 두린이 뭔가 만들고 있어.",
+                "name": "아다크리스인 전사"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 305,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 306,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 307,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 310,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 311,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_jungle_1",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 313,
+            "prop": "PlayMusic",
+            "attributes": {
+                "key": "$normal_loop",
+                "volume": 0.6,
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 314,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 315,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 316,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 317,
+            "prop": "name",
+            "attributes": {
+                "content": "테라, 아카후알라, 살아 있는 그림, 미궁……",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#3$1"
+        },
+        {
+            "id": 318,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "음…… 틀렸어. 하나도 모르겠어……",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#11$1"
+        },
+        {
+            "id": 320,
+            "prop": "name",
+            "attributes": {
+                "content": "일단 여기서도 마법을 쓸 수 있다는 건, 법칙 면에서는 유사한 부분이 있다는 생각이 들기는 하는데……",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#11$1"
+        },
+        {
+            "id": 321,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#11$1"
+        },
+        {
+            "id": 322,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "name",
+            "attributes": {
+                "content": "파린…… 네가 여기 있었으면, 나도 분명 라이오스처럼 여기서 일어나는 모든 일을 흥미진진하게 느꼈을 텐데.",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#11$1"
+        },
+        {
+            "id": 324,
+            "prop": "name",
+            "attributes": {
+                "content": "하아. 학교에서 같이 공부하던 때가 그리워.",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#11$1"
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "그때는……",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#11$1"
+        },
+        {
+            "id": 326,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "name",
+            "attributes": {
+                "content": "어? 이 작은 새들이 먹고 있는 나무 열매……",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#1$1"
+        },
+        {
+            "id": 328,
+            "prop": "name",
+            "attributes": {
+                "content": "그때 파린이 준 열매랑 똑같이 생겼어……",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#1$1"
+        },
+        {
+            "id": 329,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 330,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_humaneat",
+                "volume": 1.0,
+                "channel": "2"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 332,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 333,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 0.5,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 0.0,
+                "g": 0.5,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.5,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#8$1"
+        },
+        {
+            "id": 340,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 341,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 342,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 344,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 345,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_village",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 346,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 347,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$path_intro",
+                "key": "$path_loop",
+                "volume": 0.6,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 348,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 350,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_071",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "냄새가 좋군. 두린은 요리도 다들 이렇게 잘하나?",
+                "name": "아다크리스인 A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 353,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 354,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 355,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "난 두린이 아니네만…… 이거 원. 그런 걸로 해 두지.",
+                "name": "센시"
+            },
+            "figure_art": "avg_4143_sensi_1#15$1"
+        },
+        {
+            "id": 357,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 358,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 359,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_071",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 360,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "빨리 형제들 불러서 텁수룩 수염 두린이 만든 요리를 다 같이 먹어 보자고!",
+                "name": "아다크리스인 A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 362,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "name",
+            "attributes": {
+                "content": "그러고 보니 당신들, 대제사장을 찾고 있지?",
+                "name": "아다크리스인 B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 364,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 365,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 366,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "그래, 그 사람에게 좀 물어보고 싶은 게 있어서.",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 368,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 369,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 370,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_071",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "하긴 대제사장은 여기서 제일 똑똑하니까. 하지만 그 녀석을 만나는 건 쉽지 않아. 대제사장이 너희랑 만나고 싶어 하면 만날 수 있지만, 그렇지 않으면 절대로 못 만나거든.",
+                "name": "아다크리스인 A"
+            },
+            "figure_art": "avg_npc_071"
+        },
+        {
+            "id": 373,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 374,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 375,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "그야말로 현자 같은 방식이군…… 그럼 어떻게 해야 만나고 싶어 하게 만들 수 있지?",
+                "name": "칠책"
+            },
+            "figure_art": "avg_4144_chilc_1#1$1"
+        },
+        {
+            "id": 377,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 378,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 379,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_071",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 381,
+            "prop": "name",
+            "attributes": {
+                "content": "음…… 주마마 누님 말로는 대제사장의 지혜를 빌리고 싶을 땐 좀 시끌벅적하게 떠들면 된다던데.",
+                "name": "아다크리스인 B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 382,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 383,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 384,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4143_sensi_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "name",
+            "attributes": {
+                "content": "시끌벅적하게라…… 거한 식사 자리를 만드는 건 어떤가?",
+                "name": "센시"
+            },
+            "figure_art": "avg_4143_sensi_1#1$1"
+        },
+        {
+            "id": 386,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 387,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 388,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_071",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_070",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "괜찮지 않을까?",
+                "name": "아다크리스인 B"
+            },
+            "figure_art": "avg_npc_070"
+        },
+        {
+            "id": 391,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 392,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 393,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#18$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "name",
+            "attributes": {
+                "content": "나도 이의 없어. 마르실한테도 물어볼까?",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#18$1"
+        },
+        {
+            "id": 395,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4142_laios_1#16$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 396,
+            "prop": "name",
+            "attributes": {
+                "content": "응? 그러고 보니 마르실은?",
+                "name": "라이오스"
+            },
+            "figure_art": "avg_4142_laios_1#16$1"
+        },
+        {
+            "id": 397,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4144_chilc_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "name",
+            "attributes": {
+                "content": "아직 안 돌아왔나?",
+                "name": "칠책"
+            },
+            "figure_art": "avg_4144_chilc_1#6$1"
+        },
+        {
+            "id": 399,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 400,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 401,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 402,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 403,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4141_marcil_1#23$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 404,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 405,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "나왔구나, 레드 드래곤! 파린을 돌려줘!!!",
+                "name": "마르실"
+            },
+            "figure_art": "avg_4141_marcil_1#23$1"
+        },
+        {
+            "id": 407,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 408,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 411,
+            "prop": "Character",
+            "attributes": {}
+        },
+        {
+            "id": 412,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 413,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}
