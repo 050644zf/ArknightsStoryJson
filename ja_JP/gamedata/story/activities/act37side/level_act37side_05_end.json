@@ -1,0 +1,4075 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act37side",
+    "eventName": "落日の向こうへ",
+    "entryType": "ACTIVITY",
+    "storyCode": "GO-5",
+    "avgTag": "戦闘後",
+    "storyName": "鉄クズとリベット",
+    "storyInfo": "ヴィーナは都市の様々な矛盾を解決するために苦心するが、幸いにもグラスゴーがいまだ彼女のそばでできる限りの協力をしてくれるのだった。シアラー少尉は怪我と病に苦しむも、デルフィーンが現れ、彼をリンカルダンへと連れて帰ることを約束した。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "34_g5_noblehall",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$m_dia_street_intro",
+                "key": "$m_dia_street_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 9,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_176",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 11,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 12,
+            "prop": "name",
+            "attributes": {
+                "content": "やはり想像できませんよ、ハイディさん。我々はやっとの思いでこの偉大な都市に戻ってきたのに、あなたが去ろうとするなんて。",
+                "name": "大口を叩く男"
+            },
+            "figure_art": "avg_npc_176"
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "にしても、確かにお父上のもとに帰るべきなのかもしれませんな。",
+                "name": "大口を叩く男"
+            },
+            "figure_art": "avg_npc_176"
+        },
+        {
+            "id": 14,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "name",
+            "attributes": {
+                "content": "ドルン郡へですか？　……うーん、もう少し遠くへ行くかもしれません。私の人生において道を示してくれる方は、父一人だけではありませんもの。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#1$1"
+        },
+        {
+            "id": 16,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "name",
+            "attributes": {
+                "content": "もちろん、あなたの助言は常に気付きを与えてくれます。例えばあなたが仰ったように、マーチ伯爵の使者との晩餐会の経験は、私に多くの知識を学ばせてくれました。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#10$1"
+        },
+        {
+            "id": 18,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_176",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "ハハッ、あなたのような政治とは遠く離れた小説家が歴史の話を書きたいのなら、当然喜んで一次資料を提供させてもらいますよ。",
+                "name": "大口を叩く男"
+            },
+            "figure_art": "avg_npc_176"
+        },
+        {
+            "id": 20,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "name",
+            "attributes": {
+                "content": "それと先ほどおっしゃった、私の最もよく知る故郷であるドルン郡も、ロンディニウムのこの恐ろしい戦争と共に物語に書くべきというアドバイスも。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#1$1"
+        },
+        {
+            "id": 22,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_176",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "その通りです。あの体裁の悪い歳月をありのままに思い出すのはもちろん大変なことです。ですが我々がこの都市のためになした英雄的行いは記憶されるべきです。",
+                "name": "大口を叩く男"
+            },
+            "figure_art": "avg_npc_176"
+        },
+        {
+            "id": 24,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "name",
+            "attributes": {
+                "content": "英雄……おっしゃる通り、私たちの誰もが英雄なのかもしれませんね。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#9$1"
+        },
+        {
+            "id": 26,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "name",
+            "attributes": {
+                "content": "そうだ、このような恋愛物語は魅力的に違いありません。遠いヴィクトリアの辺境に住む少女が、その地に休暇にやってきた青年と一瞬で恋に落ちるも、青年はロンディニウムの戦場で命を落とす。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#7$1"
+        },
+        {
+            "id": 28,
+            "prop": "name",
+            "attributes": {
+                "content": "もちろん、少女は最終的に自分が聞いた情報は偽りであることに気づき、愛する人は英雄となって、彼女のもとに帰ってくるのです。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#7$1"
+        },
+        {
+            "id": 29,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_176",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "素晴らしいアイディアですね、ハイディさん。一度失った愛する者が帰ってくる。まさによそ者に踏みにじられ、再び我々によって救い出されたこの都市のようです。",
+                "name": "大口を叩く男"
+            },
+            "figure_art": "avg_npc_176"
+        },
+        {
+            "id": 31,
+            "prop": "name",
+            "attributes": {
+                "content": "……演奏が始まりました。お聞きください、宴会には赤ワインもデザートもなく、照明もかつてほど明るくはありません。ですが金管から流れ出る音楽は美しいままですよ。",
+                "name": "大口を叩く男"
+            },
+            "figure_art": "avg_npc_176"
+        },
+        {
+            "id": 32,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "どうぞダンスフロアへ向かってください。今しがたくださったインスピレーションと私は、こちらに残しておいていただいて構いませんから。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#11$1"
+        },
+        {
+            "id": 34,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_176",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "name",
+            "attributes": {
+                "content": "ではこちらのお二人のご友人は――",
+                "name": "大口を叩く男"
+            },
+            "figure_art": "avg_npc_176"
+        },
+        {
+            "id": 36,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 37,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 38,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 39,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1519_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 40,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#11$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 41,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 42,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#11$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "name",
+            "attributes": {
+                "content": "えーっと……",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#11$1"
+        },
+        {
+            "id": 44,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 45,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 46,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "こちらの異国の地からやってきた使者さんは、恐らくまだヴィクトリアの礼儀作法に慣れておられないかと。見逃してあげてはいかがでしょう？",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#1$1"
+        },
+        {
+            "id": 48,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_176",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 49,
+            "prop": "name",
+            "attributes": {
+                "content": "ハハハッ、もちろんですとも。",
+                "name": "大口を叩く男"
+            },
+            "figure_art": "avg_npc_176"
+        },
+        {
+            "id": 50,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 51,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 52,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 53,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 54,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#7$1"
+        },
+        {
+            "id": 56,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 57,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 58,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1519_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 59,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#5$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "……ハイディさん、でしたよね？",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#5$1"
+        },
+        {
+            "id": 61,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 62,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 63,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "name",
+            "attributes": {
+                "content": "――あぁ。私が案内しましょうか。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#1$1"
+        },
+        {
+            "id": 65,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 66,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 67,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1519_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#5$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "name",
+            "attributes": {
+                "content": "いいえ、これ以上お手を煩わせる必要はありません。先ほどは助け船を出していただき、感謝します。",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#5$1"
+        },
+        {
+            "id": 70,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 71,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 72,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "実のところ、この場所がいかなる客人も拒むことはありませんよ。もしお二人に興味があれば、次回は窓からではなく、客間の扉から入ってもいいでしょう。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#10$1"
+        },
+        {
+            "id": 74,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 75,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 76,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1519_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#11$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "ご好意に感謝いたします。ですが……実のところ、私は貴族のパーティーにそれほど興味がないんです。",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#11$1"
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "ヴィクトリアの貴族政治は私がいの一番に調査した内容です。あなた方の礼儀作法、感染者に対する態度はよく理解していますし、ひいてはダンスのステップまで学びました……",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#11$1"
+        },
+        {
+            "id": 80,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 81,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "まあ、私のような三流小説家が貴族を名乗れるかはともかく……こちらの兵士さんがなぜあなたをこの場所へ連れてきたのかは尋ねましたか？",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#7$1"
+        },
+        {
+            "id": 84,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 85,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 86,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1519_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#4$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "――いえ、彼女に連れてこられたのではなく、私が勝手に決めたんです！",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#4$1"
+        },
+        {
+            "id": 89,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1519_1#2$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ。ハイディ殿、申し訳ありません。彼がロンディニウムに残って感染者問題を深く理解したいと言うものですから、色々と案内しようと思って……まれに不当な方法を用いることもありますが。",
+                "name": "ダイアン"
+            },
+            "figure_art": "avg_npc_1519_1#2$1"
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "彼を笑いたければどうぞお構いなく。ご覧の通り、彼は嘘もつかなければ考え事を隠せる人でもありません。",
+                "name": "ダイアン"
+            },
+            "figure_art": "avg_npc_1519_1#2$1"
+        },
+        {
+            "id": 92,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 93,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 94,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "フフッ、まさに……「赤心」らしいですね。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#10$1"
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "エリシオさん、あなたは赤心社の代表者、そうですね？",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#10$1"
+        },
+        {
+            "id": 97,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 98,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 99,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1519_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#11$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "name",
+            "attributes": {
+                "content": "我々の機関がそれほど有名であった記憶はありませんが……",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#11$1"
+        },
+        {
+            "id": 102,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 103,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 104,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "感染者問題に関心のある人なら、すぐに分かりますよ。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#1$1"
+        },
+        {
+            "id": 106,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、貴族たちがひそかに取り交わす嘘を見分けるのは、恐らくそう簡単ではないでしょう。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#10$1"
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "例えば、今腕を組んでダンスフロアに入っていく人々は、大半が感染者です。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#10$1"
+        },
+        {
+            "id": 109,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 110,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 111,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1519_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#4$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#4$1"
+        },
+        {
+            "id": 114,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#5$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 115,
+            "prop": "name",
+            "attributes": {
+                "content": "それは理論上予期され得ることです。サルカズがばらまいた源石粉塵は身分に関係なく全てのロンディニウム市民に害を及ぼしましたから。ですが……",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#5$1"
+        },
+        {
+            "id": 116,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 117,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 118,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "name",
+            "attributes": {
+                "content": "誰も口に出すことはありません。自分のそばに立っている人が感染者かどうかを追及する人もいません。これは彼らが自らのために残した体面であり……ある種の夢でもあります。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#7$1"
+        },
+        {
+            "id": 120,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 121,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 122,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1519_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#4$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#4$1"
+        },
+        {
+            "id": 125,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 126,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "エリシオがホールを見やる。壁の柱には金の装飾が剥がされた跡があり、戦時に暴徒が足を踏み入れたことを示している。だが音楽家たちの情感豊かな演奏が目の前の寂しさを覆い隠していた。"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "name",
+            "attributes": {
+                "content": "小説家を自称する女性はペンのキャップを取り、ノートに何かを走り書きした。"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "name",
+            "attributes": {
+                "content": "もちろん、衣食さえも問題になっている時、こうしたパーティーはただの無意味な自己暗示にすぎないと捉えても構いません。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#10$1"
+        },
+        {
+            "id": 131,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 132,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 133,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1519_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#5$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "name",
+            "attributes": {
+                "content": "……いいえ、そんなことはしません。",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#5$1"
+        },
+        {
+            "id": 136,
+            "prop": "name",
+            "attributes": {
+                "content": "それはまた異なった生活ですので。",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#5$1"
+        },
+        {
+            "id": 137,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 138,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 139,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_paper2",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 141,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 142,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 143,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1519_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#4$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "name",
+            "attributes": {
+                "content": "――これは？",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#4$1"
+        },
+        {
+            "id": 146,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 147,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 148,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "name",
+            "attributes": {
+                "content": "たった今おもむくままに書き記したものです。読むに値しない物語のあらすじ……それと少しばかりの追加情報です。どうぞ受け取ってください。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#10$1"
+        },
+        {
+            "id": 150,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "name",
+            "attributes": {
+                "content": "予感があります、エリシオさん。私たちはまた会うことでしょう。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#11$1"
+        },
+        {
+            "id": 152,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 153,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 154,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1519_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "name",
+            "attributes": {
+                "content": "……ありがとうございます。",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#1$1"
+        },
+        {
+            "id": 157,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_487_bobb_1#5$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、もう一つだけお聞かせ願えますか？　ハイディさんには、何か目の前の幻想では癒すことのできない苦しみがあるように見受けられます。",
+                "name": "エリシオ"
+            },
+            "figure_art": "avg_487_bobb_1#5$1"
+        },
+        {
+            "id": 159,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 160,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 161,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 162,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 164,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "……ただ時折ある友人が恋しくなるだけです。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#2$1"
+        },
+        {
+            "id": 166,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_400_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女がいなくなってから、私と本心で語り合える人がまた一人減ってしまいましたので。",
+                "name": "ハイディ"
+            },
+            "figure_art": "avg_npc_400_1#7$1"
+        },
+        {
+            "id": 168,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 169,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 172,
+            "prop": "Background",
+            "attributes": {
+                "image": "55_g8_siegeoffice",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 174,
+            "prop": "playMusic",
+            "attributes": {
+                "key": "$darkness_03_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 175,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 177,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1019_siege2_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_355_1#2$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "「万国サミット」……？",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#1$1"
+        },
+        {
+            "id": 180,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_355_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 181,
+            "prop": "name",
+            "attributes": {
+                "content": "ラテラーノはヴィクトリアで起きたことについて非常に関心を払っております。何しろこれはサルカズにより引き起こされた災いですので。",
+                "name": "オレン"
+            },
+            "figure_art": "avg_npc_355_1#2$1"
+        },
+        {
+            "id": 182,
+            "prop": "name",
+            "attributes": {
+                "content": "ですがあなたと議会がサルカズの問題を処理において見せた決断力は、確かにこの都市の復興の希望を示してくれました。",
+                "name": "オレン"
+            },
+            "figure_art": "avg_npc_355_1#2$1"
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "もちろん、人々が塗炭の苦しみをなめる惨事が二度と起きることのないよう、テラ諸国のために和平交渉の橋を架けることを教皇聖下も心から望んでおられます。",
+                "name": "オレン"
+            },
+            "figure_art": "avg_npc_355_1#2$1"
+        },
+        {
+            "id": 184,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1019_siege2_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "……だが、貴様もただラテラーノ教皇聖下に代わり私の回答を求めに来ただけではないのだろう。",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#1$1"
+        },
+        {
+            "id": 186,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_355_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "俺は一介のトランスポーターにすぎません。メッセージをそのままあなたと議会にお伝えする責任を負うのみです。",
+                "name": "オレン"
+            },
+            "figure_art": "avg_npc_355_1#2$1"
+        },
+        {
+            "id": 188,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1019_siege2_1#2$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "分かった。ではすまないが、教皇聖下に謝意を伝えておいてくれ。ラテラーノの善意は理解しているが、今議会はロンディニウム以外のことに構っている余裕がない。",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#2$1"
+        },
+        {
+            "id": 190,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1019_siege2_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "name",
+            "attributes": {
+                "content": "それと、貴様を招待したその大公爵にも伝えておいてくれ――私は何らかの身分を持つ者としてラテラーノを訪れるつもりはない。一体いつ、貴様が議会や私に口出しできる立場になったんだ、とな。",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#1$1"
+        },
+        {
+            "id": 192,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_355_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "name",
+            "attributes": {
+                "content": "もちろんです。それがトランスポーターの本分ですので。",
+                "name": "オレン"
+            },
+            "figure_art": "avg_npc_355_1#2$1"
+        },
+        {
+            "id": 194,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 195,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 196,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "posfrom": "0,0",
+                "posto": "200,0",
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 197,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 198,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 199,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$dooropenquite",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 200,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 201,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 202,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4110_delphn_1#1$1",
+                "posfrom": "200,0",
+                "posto": "0,0",
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 203,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 204,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 205,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4110_delphn_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "オレン・アルジオラス。情報によると、戦時中彼はゴドズィン公爵の高速軍艦に身を置いていましたが、ラテラーノを代表して直接戦争に加わることはありませんでした。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_4110_delphn_1#1$1"
+        },
+        {
+            "id": 207,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1019_siege2_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "おおよそ予想通りだな。ゴドズィン本人も甘いものが好きなのか？",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#1$1"
+        },
+        {
+            "id": 209,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1019_siege2_1#7$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "もし本当にそうであれば、今のロンディニウムに彼をもてなしてやれるものはあまりないな。",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#7$1"
+        },
+        {
+            "id": 211,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1019_siege2_1#2$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ……今日はせっかく議会が休みだというのに。",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#2$1"
+        },
+        {
+            "id": 213,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4110_delphn_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "name",
+            "attributes": {
+                "content": "……それと面白い情報もあります。あのラテラーノのトランスポーターは当時難民たちを率いて一緒に乗船し、難民を受け入れるよう公爵を説得するために、手を銃に置いて誓ったそうです。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_4110_delphn_1#1$1"
+        },
+        {
+            "id": 215,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1019_siege2_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "name",
+            "attributes": {
+                "content": "それで？",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#1$1"
+        },
+        {
+            "id": 217,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4110_delphn_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 218,
+            "prop": "name",
+            "attributes": {
+                "content": "それで、熱くなった銃身で火傷を負ったとか。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_4110_delphn_1#1$1"
+        },
+        {
+            "id": 219,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1019_siege2_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "name",
+            "attributes": {
+                "content": "ハッ。なぜ急にそんな話を？　重要なことか？",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#8$1"
+        },
+        {
+            "id": 221,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4110_delphn_1#8$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "name",
+            "attributes": {
+                "content": "休みですから。",
+                "name": "デルフィーン"
+            },
+            "figure_art": "avg_4110_delphn_1#8$1"
+        },
+        {
+            "id": 223,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1019_siege2_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "name",
+            "attributes": {
+                "content": "いいだろう、では今ので休んだことにするか。次はどの情報から目を通すべきか、法陣の痕跡の調査か？",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#8$1"
+        },
+        {
+            "id": 225,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 226,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_paper2",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 227,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 228,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1019_siege2_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "ん？",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#1$1"
+        },
+        {
+            "id": 230,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 231,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 232,
+            "prop": "name",
+            "attributes": {
+                "content": "ヴィーナはシアラー少尉の名前を見た。またしても手紙だ。"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女はため息をつき、手紙を処理待ちのボックスに入れた。"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1019_siege2_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 235,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_4110_delphn_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "デルフィーン、ここに――",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#1$1"
+        },
+        {
+            "id": 237,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 238,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 239,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 240,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$dooropenquite",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 241,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_155_tiger_1#1$1",
+                "posfrom": "-100,0",
+                "posto": "-100,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 242,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 243,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_405_1#3$1",
+                "posfrom": "100,0",
+                "posto": "100,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 244,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 245,
+            "prop": "playMusic",
+            "attributes": {
+                "key": "$comedy_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 246,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_155_tiger_1#1$1",
+                "posfrom": "-100,0",
+                "posto": "-100,0",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "おい、ヴィーナ！　お前が言ってた盗みを働くバカどもだが、俺たちがとっ捕まえてボッコボコにしてやったぜ！",
+                "name": "インドラ"
+            },
+            "figure_art": "avg_155_tiger_1#1$1"
+        },
+        {
+            "id": 248,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "name",
+            "attributes": {
+                "content": "わざわざ体の弱い鉱石病中末期患者から奪いやがって、マジでクズだな。",
+                "name": "ダグザ"
+            },
+            "figure_art": "avg_npc_396_1#1$1"
+        },
+        {
+            "id": 250,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_405_1#3$1",
+                "posfrom": "100,0",
+                "posto": "100,0",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "name",
+            "attributes": {
+                "content": "もっとムカつくのは、弱い者はいじめて強い者にはぺこぺこするような奴らがそいつらの名前に惹かれて、たくさん加入しようとしてたってことだよ～。",
+                "name": "モーガン"
+            },
+            "figure_art": "avg_npc_405_1#3$1"
+        },
+        {
+            "id": 252,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_405_1#12$1",
+                "posfrom": "100,0",
+                "posto": "100,0",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "name",
+            "attributes": {
+                "content": "幸いあんたの耳が早かったおかげで、奴らの拡大のチャンスを潰してやったけどね。",
+                "name": "モーガン"
+            },
+            "figure_art": "avg_npc_405_1#12$1"
+        },
+        {
+            "id": 254,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 255,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 256,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1019_siege2_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ、私も外に行って体を動かしたかったな。",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#5$1"
+        },
+        {
+            "id": 258,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 259,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 260,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_155_tiger_1#1$1",
+                "posfrom": "-100,0",
+                "posto": "-100,0",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_396_1#13$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_405_1#12$1",
+                "posfrom": "100,0",
+                "posto": "100,0",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "安心しろ、お前の分もぶん殴ってやったからよ。",
+                "name": "インドラ"
+            },
+            "figure_art": "avg_155_tiger_1#1$1"
+        },
+        {
+            "id": 264,
+            "prop": "name",
+            "attributes": {
+                "content": "それと受け取った謝礼も、お前の分を残しておいてあるぜ。",
+                "name": "インドラ"
+            },
+            "figure_art": "avg_155_tiger_1#1$1"
+        },
+        {
+            "id": 265,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 266,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 267,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1019_siege2_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "name",
+            "attributes": {
+                "content": "待て、これはみかじめ料を徴収するための仕事ではないぞ――",
+                "name": "ヴィーナ"
+            },
+            "figure_art": "avg_1019_siege2_1#4$1"
+        },
+        {
+            "id": 269,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 270,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 273,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 274,
+            "prop": "Image",
+            "attributes": {
+                "image": "55_i06_2",
+                "screenadapt": "coverall",
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 275,
+            "prop": "ImageTween",
+            "attributes": {
+                "xScaleFrom": 1.0,
+                "yScaleFrom": 1.0,
+                "xScaleTo": 1.2,
+                "yScaleTo": 1.2,
+                "duration": 85.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 277,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 279,
+            "prop": "name",
+            "attributes": {
+                "content": "ヴィクトリアに帰ってきてから、どんだけロリポップを食ってねぇんだ？",
+                "name": "インドラ"
+            }
+        },
+        {
+            "id": 280,
+            "prop": "name",
+            "attributes": {
+                "content": "ハンナ……",
+                "name": "ヴィーナ"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "name",
+            "attributes": {
+                "content": "その強盗に遭ったガキが自分で作ったって言ってたぜ。全部の味が違ってて、しかもどれも妙な味がするけど、ちょうどお前も普通の甘いロリポップは好きじゃなかったろ。",
+                "name": "インドラ"
+            }
+        },
+        {
+            "id": 282,
+            "prop": "name",
+            "attributes": {
+                "content": "でもそいつは、自分じゃ入手できない普通のサッカリン代わりに、ジャガイモ、ニンジン、地下通路のオリジムシの体液までも試したらしいよ……",
+                "name": "ダグザ"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "name",
+            "attributes": {
+                "content": "俺が全部食ってみたから、大丈夫だ！",
+                "name": "インドラ"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "なんだか眠気覚ましになりそうですね。私にももらえますか？",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "name",
+            "attributes": {
+                "content": "おお、たんまりあるぜ！",
+                "name": "インドラ"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "name",
+            "attributes": {
+                "content": "……ヴィーナ、大丈夫か？",
+                "name": "ダグザ"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "name",
+            "attributes": {
+                "content": "大丈夫だ。今じゃ何を口にするのも慣れてしまったからな。",
+                "name": "ヴィーナ"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "name",
+            "attributes": {
+                "content": "なら……議長の仕事は？",
+                "name": "ダグザ"
+            }
+        },
+        {
+            "id": 289,
+            "prop": "name",
+            "attributes": {
+                "content": "そうだよ、何を気苦労してるのかな～。法律の原案とか？　それとも公文書？　報告書？",
+                "name": "モーガン"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "吾輩たちの助けが必要なお仕事はあるかな？　特にぶん殴りたくても都合が悪いようなの！",
+                "name": "モーガン"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "name",
+            "attributes": {
+                "content": "今回は子分も作ったんだぜ！　葉っぱの茎みてぇにひょろいが、身を守るためのボクシング技なら教えられないわけじゃねぇからな。",
+                "name": "インドラ"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "グラスゴーもまたでっかくなる時だぜ。ヴィーナ、俺たちはいつジムに――",
+                "name": "インドラ"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ダグザ"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "モーガン"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "name",
+            "attributes": {
+                "content": "インドラが頭をかいた。仲間に不満のこもった目で見られずとも、彼女は自分で気づいた。聞くべきではなかったと。"
+            }
+        },
+        {
+            "id": 296,
+            "prop": "name",
+            "attributes": {
+                "content": "ヴィーナの視線がデスクの山のように積まれた書類を巡る。"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "name",
+            "attributes": {
+                "content": "デルフィーンがそばに歩み寄り、顔色一つ変えずに彼女の手に持った何枚かの便箋を抜き取った。"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "name",
+            "attributes": {
+                "content": "多くの市民が関心を寄せている問題に対して、公に答える時かもしれないな。ほとんどの者は議会の討論の傍聴に来ることは不可能だが、一日の仕事終わりにラジオを聞くことはあるだろう。",
+                "name": "ヴィーナ"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "name",
+            "attributes": {
+                "content": "都市の状況は徐々に安定してきている。すでに議会には、三陣目の施工隊をノーポート区に派遣するよう申請してある。すぐに、我々の家は前の姿に回復するだろう。",
+                "name": "ヴィーナ"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "name",
+            "attributes": {
+                "content": "前よりもっと良い姿になる、でしょ！",
+                "name": "モーガン"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "残りの仕事を片づけたら、貴様もすぐにリンカルダンに帰ることができる、デルフィーン。",
+                "name": "ヴィーナ"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 303,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 304,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 307,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 308,
+            "prop": "Background",
+            "attributes": {
+                "image": "43_g7_towngreenhouse",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 310,
+            "prop": "playMusic",
+            "attributes": {
+                "key": "$saferoom_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 311,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 313,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$doorknockquite",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 314,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 315,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 316,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_418_1#1$1",
+                "posfrom": "0,0",
+                "posto": "200,0",
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 317,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 318,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 319,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$dooropenquite",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 320,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 321,
+            "prop": "name",
+            "attributes": {
+                "content": "あら？　ダイアンさん――",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 322,
+            "prop": "name",
+            "attributes": {
+                "content": "……上官！？",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 323,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 324,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_418_1#1$1",
+                "posfrom": "200,0",
+                "posto": "0,0",
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 325,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1520_1#1$1",
+                "posfrom": "200,0",
+                "posto": "0,0",
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 326,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 327,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 328,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1520_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "私はすでに退役した……サラ。",
+                "name": "シアラー少尉"
+            },
+            "figure_art": "avg_npc_1520_1#1$1"
+        },
+        {
+            "id": 330,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_418_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "ハッ、そうですか、上官。",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 332,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1520_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シアラー少尉"
+            },
+            "figure_art": "avg_npc_1520_1#1$1"
+        },
+        {
+            "id": 334,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_418_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "name",
+            "attributes": {
+                "content": "たしか前回は療養所の招待を断っていましたよね？　なら今日は……",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 336,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1520_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "name",
+            "attributes": {
+                "content": "……いや、ただ君たちの見舞いに来ただけだ。それともう一度君に礼をとね……気を悪くしないでもらいたい。",
+                "name": "シアラー少尉"
+            },
+            "figure_art": "avg_npc_1520_1#1$1"
+        },
+        {
+            "id": 338,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_418_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "name",
+            "attributes": {
+                "content": "実はもう覚えていないんです。ご存知でしょうけど、石がすでに私の頭に入っているとお医者様はおっしゃっていて――手が震えていますよ。",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 340,
+            "prop": "name",
+            "attributes": {
+                "content": "私の前で隠す必要はありません、上官。あなたからはたくさんの知識を教わりました。幸い、そうしたものは全て覚えています。",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 341,
+            "prop": "name",
+            "attributes": {
+                "content": "見た限りだと、薬物中毒の症状のようですね。戦時中の後遺症ですか？",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 342,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1520_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "……鎮痛剤の過剰摂取だ。城壁の下のあの時からのものだ。",
+                "name": "シアラー少尉"
+            },
+            "figure_art": "avg_npc_1520_1#1$1"
+        },
+        {
+            "id": 344,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_418_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "――！",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 346,
+            "prop": "name",
+            "attributes": {
+                "content": "ここに残りましょう。今からお医者様を探してきます。彼らなら方法があるかもしれません……",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "あるいは少なくとも、少なくともあなたのために――",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 348,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1520_1#5$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "もっと鎮痛剤を見つけてきてくれるか？　フッ、確かに多少痛みを和らげることができるだろう。",
+                "name": "シアラー少尉"
+            },
+            "figure_art": "avg_npc_1520_1#5$1"
+        },
+        {
+            "id": 350,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_418_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "そのために来たのでしょう？　都市内の物資は確かに不足していますが、院長なら可能な限りあなたに割り当ててくれるかもしれません。",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "何せデルフィーン様はかねてより療養所に、そして我々に目を掛けてくださっているのですから。",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 353,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1520_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シアラー少尉"
+            },
+            "figure_art": "avg_npc_1520_1#1$1"
+        },
+        {
+            "id": 355,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_418_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "少し待っていてください。すぐに戻ります。",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 357,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 358,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 359,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "posfrom": "0,0",
+                "posto": "-200,0",
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 360,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 361,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 362,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1520_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シアラー少尉"
+            },
+            "figure_art": "avg_npc_1520_1#2$1"
+        },
+        {
+            "id": 364,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 365,
+            "prop": "name",
+            "attributes": {
+                "content": "彼は留まりたかった。そうすれば配給の足りていない鎮痛剤が本当に手に入るかもしれない。"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1520_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "ふぅ――",
+                "name": "シアラー少尉"
+            },
+            "figure_art": "avg_npc_1520_1#2$1"
+        },
+        {
+            "id": 368,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 369,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$dooropenquite",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 370,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "posfrom": "0,0",
+                "posto": "200,0",
+                "duration": 2.5
+            }
+        },
+        {
+            "id": 371,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 372,
+            "prop": "delay",
+            "attributes": {
+                "time": 4.5
+            }
+        },
+        {
+            "id": 373,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 374,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_418_1#1$1",
+                "posfrom": "0,0",
+                "posto": "200,0",
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 375,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 376,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 377,
+            "prop": "name",
+            "attributes": {
+                "content": "あら……いない？",
+                "name": "療養所患者"
+            },
+            "figure_art": "avg_npc_418_1#1$1"
+        },
+        {
+            "id": 378,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 379,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 380,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 381,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 383,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 384,
+            "prop": "Background",
+            "attributes": {
+                "image": "55_g6_dusklentiavenue",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 386,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$loneliness_intro",
+                "key": "$loneliness_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 387,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 389,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 390,
+            "prop": "focusout",
+            "attributes": {
+                "duration": 3.5,
+                "type": "bg",
+                "from": 0.0,
+                "to": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 392,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 396,
+            "prop": "name",
+            "attributes": {
+                "content": "おい、前見て歩けよ！",
+                "name": "通行人の声"
+            }
+        },
+        {
+            "id": 397,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "name",
+            "attributes": {
+                "content": "そいつから離れた方がいいぞ。何だかおかしくないか？",
+                "name": "通行人の声"
+            }
+        },
+        {
+            "id": 399,
+            "prop": "name",
+            "attributes": {
+                "content": "議長室は、こっちの……はず……くっ……",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 401,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 402,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bodyfalldown1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 403,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 404,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "倒れたぞ！　また鉱石病末期の不幸者か？",
+                "name": "通行人の声"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "name",
+            "attributes": {
+                "content": "近づくな！　そいつが崩壊したら、俺たちは終わりだぞ……",
+                "name": "通行人の声"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "name",
+            "attributes": {
+                "content": "……俺は……違う……チッ、体が制御できない。",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "name",
+            "attributes": {
+                "content": "人を呼んでくる！　みんな離れろ、離れるんだ！",
+                "name": "通行人の声"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 411,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 412,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.5
+            }
+        },
+        {
+            "id": 413,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 414,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 416,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 417,
+            "prop": "Background",
+            "attributes": {
+                "image": "47_g15_eveningglow_L1",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 419,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 421,
+            "prop": "name",
+            "attributes": {
+                "content": "シアラー少尉が通りに横たわる。夕日の日差しはまぶしくなかったが、それでも彼の目に染みた……"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "name",
+            "attributes": {
+                "content": "あるいは、彼の体が再び警告しているのかもしれない――痛みはまた別の生理的欲求で埋める必要があると。"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "name",
+            "attributes": {
+                "content": "戦争中痛みに敗れた兵士に教えていたのと同じように、彼は呼吸を整えようとした……"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "name",
+            "attributes": {
+                "content": "だが彼は失敗した。彼はとうに痛みに打ちのめされていた。"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "name",
+            "attributes": {
+                "content": "シアラーは火を見た。目を開け続けることができないほど焼けつくような火を。空の火、城壁の火、彼の体で燃え上がる火――"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 427,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 429,
+            "prop": "focusout",
+            "attributes": {
+                "duration": 1.0,
+                "type": "bg",
+                "from": 1.0,
+                "to": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "Image",
+            "attributes": {
+                "image": "55_i07_2",
+                "screenadapt": "coverall",
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 431,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 432,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.5
+            }
+        },
+        {
+            "id": 433,
+            "prop": "name",
+            "attributes": {
+                "content": "彼は自分が城壁の下で倒れるあの日を見た気がした。"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "name",
+            "attributes": {
+                "content": "ロンディニウムの雄大な城壁がドラコの炎の中で燃え盛る。その炎は次第に勢いを、まばゆさを増し、ついには空を呑み込んだ。"
+            }
+        },
+        {
+            "id": 435,
+            "prop": "name",
+            "attributes": {
+                "content": "彼は恐怖のあまり叫んで、両目を覆おうとする――"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 437,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$warm_intro",
+                "key": "$warm_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 438,
+            "prop": "focusout",
+            "attributes": {
+                "duration": 1.0,
+                "type": "cg",
+                "id": "55_i07_2",
+                "from": 0.0,
+                "to": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 441,
+            "prop": "name",
+            "attributes": {
+                "content": "……少尉……",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "name",
+            "attributes": {
+                "content": "シアラー……少尉……早く……起き……",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 444,
+            "prop": "name",
+            "attributes": {
+                "content": "――？",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 446,
+            "prop": "focusout",
+            "attributes": {
+                "duration": 3.5,
+                "type": "cg",
+                "id": "55_i07_2",
+                "from": 1.0,
+                "to": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "彼は自分の方へと伸ばされた手を見た。"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 449,
+            "prop": "Image",
+            "attributes": {
+                "image": "55_i07_1",
+                "screenadapt": "coverall",
+                "fadetime": 2.5
+            }
+        },
+        {
+            "id": 450,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 451,
+            "prop": "name",
+            "attributes": {
+                "content": "デ……デルフィーンお嬢様？",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "name",
+            "attributes": {
+                "content": "訪ねてくるのをずっと待っていたんですよ、少尉。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたがヴィーナさんに送った手紙は見ました……ですがあなたは私を故意に避けています。私が提供する医療支援を拒むように。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "name",
+            "attributes": {
+                "content": "……結局、彼女は私の手紙を読んでいないのでしょう？",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたが手紙に何を書いたかは想像できます。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 456,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "申し訳ありませんが、ここで力になることはできません。ロンディニウムの薬品供給状況は私たち全員がよく分かっています。ですので、あなたはここに留まってはいけません。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "name",
+            "attributes": {
+                "content": "……私が、ほかにどこへ行けるというのです？",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 459,
+            "prop": "name",
+            "attributes": {
+                "content": "リンカルダンです。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 460,
+            "prop": "name",
+            "attributes": {
+                "content": "――いえ！　私は……",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "name",
+            "attributes": {
+                "content": "これは要求ではなく、命令です、少尉。すでに退役したという言い逃れで誤魔化す必要もありません。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 462,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたが何をためらい、何を恐れているかは分かります。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたを裏切って、見捨てた「ガラヴァエ鉄盾」の上官たちに向き合うのを恐れているんですよね……",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "name",
+            "attributes": {
+                "content": "私への、そして母への忠誠を果たせなかったことを恐れ、さらには今の姿で故郷へ帰ることを恐れている。違いますか？",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "name",
+            "attributes": {
+                "content": "わ……分かりません……",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "name",
+            "attributes": {
+                "content": "少尉、あなたは自分で思っているほど強大でも強靭でもありませんよ。私も、あなたが思っているほどか弱くも気高くもありません。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "name",
+            "attributes": {
+                "content": "私たちはリンカルダン人です……ここは元々私たちの家ではありません。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 468,
+            "prop": "name",
+            "attributes": {
+                "content": "戦争はすでに終わりました、少尉。兵士はみんな故郷に帰るべきです。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 470,
+            "prop": "name",
+            "attributes": {
+                "content": "恐れる必要はありません、少尉。私も一緒に帰りますから。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "name",
+            "attributes": {
+                "content": "行きましょう。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 472,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 473,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 474,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 476,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 477,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 478,
+            "prop": "Background",
+            "attributes": {
+                "image": "47_g15_eveningglow_L2",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 480,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 481,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 482,
+            "prop": "name",
+            "attributes": {
+                "content": "（咽び泣く）ですがこんな体で……どう家まで持ちこたえろというのですか……",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "私が手配します。それに、訪ねてこないからといって、私があなたを見放すとでも思っているのですか？",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "……ありがとうございます、デルフィーンお嬢様……",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "name",
+            "attributes": {
+                "content": "ではあなたは、またロンディニウムに戻られるのですか？",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 486,
+            "prop": "name",
+            "attributes": {
+                "content": "はい、それがヴィーナさんとの約束でもありますから。ですが、彼女にはしばらく辛抱してもらうことになるでしょう。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 487,
+            "prop": "name",
+            "attributes": {
+                "content": "まずは都市で療養できるように手配します。手元の最後の仕事が終わったら、出発しましょう。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "……承知いたしました、デルフィーンお嬢様。",
+                "name": "シアラー少尉"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "name",
+            "attributes": {
+                "content": "リンカルダン……私そろそろ帰りますよ、お母様。",
+                "name": "デルフィーン"
+            }
+        },
+        {
+            "id": 490,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 491,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 492,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 494,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 495,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 496,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}
