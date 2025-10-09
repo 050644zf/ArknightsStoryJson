@@ -1,0 +1,3707 @@
+{
+    "lang": "zh_CN",
+    "eventid": "main_16",
+    "eventName": "反常光谱",
+    "entryType": "MAINLINE",
+    "storyCode": "16-13",
+    "avgTag": "行动前",
+    "storyName": "不曾遗忘",
+    "storyInfo": "Mon3tr结束了变异裂兽的痛苦，三人决定回研究所。Mantra在村庄中确认了圣愚的存在，以及它与内卫之间的联系。她似乎找到了打破困境的关键。",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 5,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_rockfall",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_rainlight_loop",
+                "loop": "true",
+                "channel": "bgs",
+                "volume": 0.0
+            }
+        },
+        {
+            "id": 7,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 1.0,
+                "channel": "bgs",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 8,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 4.0,
+                "xstrength": 10.0,
+                "ystrength": 10.0,
+                "vibrato": 40.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Background",
+            "attributes": {
+                "image": "66_g6_magnetofluidwaterfall",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 10,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Decision",
+            "attributes": {
+                "options": "......;......",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line13",
+                "option2": "line13"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 14,
+            "prop": "Decision",
+            "attributes": {
+                "options": "它是不是......;不动了？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line15",
+                "option2": "line15"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 16,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 17,
+            "prop": "playMusic",
+            "attributes": {
+                "key": "$darkness_03_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 18,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4208_wintim_1#8$1",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 19,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "好像......是的。",
+                "name": "科谢尼娅"
+            },
+            "figure_art": "avg_4208_wintim_1#8$1"
+        },
+        {
+            "id": 21,
+            "prop": "name",
+            "attributes": {
+                "content": "吼声，还有那种粗重的呼吸声都消失了，是我们的攻击对它起作用了吗？",
+                "name": "科谢尼娅"
+            },
+            "figure_art": "avg_4208_wintim_1#8$1"
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "可它还站着，没有倒下——",
+                "name": "科谢尼娅"
+            },
+            "figure_art": "avg_4208_wintim_1#8$1"
+        },
+        {
+            "id": 23,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$1"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "你们先不要动！我过去看看。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$1"
+        },
+        {
+            "id": 25,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 26,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_shallowswalk",
+                "loop": "true",
+                "channel": "w1"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 28,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 29,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "w1",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "Mon3tr确认两人所在的位置安全后，独自向前走去。"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "name",
+            "attributes": {
+                "content": "数秒前还形容癫狂的裂兽，此时已经被削去了部分体表的源石。它异常安静地站立着，就连奇怪的前肢也垂下，凝滞在身前。"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "Mon3tr小心翼翼地朝它靠近。"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "name",
+            "attributes": {
+                "content": "她观察着这只裂兽，原本危险的野兽，躯体上发生的畸变使它看上去诡异万分。"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#5$1"
+            }
+        },
+        {
+            "id": 35,
+            "prop": "name",
+            "attributes": {
+                "content": "是因为源石的影响，身体在急速向“人类”的方向转变......",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$1"
+        },
+        {
+            "id": 36,
+            "prop": "name",
+            "attributes": {
+                "content": "一定很痛苦吧......",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$1"
+        },
+        {
+            "id": 37,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 38,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$smallearthquake",
+                "loop": "true",
+                "channel": "a"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.5,
+                "xstrength": 5.0,
+                "ystrength": 5.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 41,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.6
+            }
+        },
+        {
+            "id": 42,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "a",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 44,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Mon3tr，小心！;它又动了！",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line45",
+                "option2": "line45"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 46,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#8$1"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "呃——",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#8$1"
+        },
+        {
+            "id": 48,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 49,
+            "prop": "name",
+            "attributes": {
+                "content": "但预想中的攻击并未发生。裂兽没有移动，而是沉重地、毫无征兆地向前倒下——"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 51,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_giantmonster_fall"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 53,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.5,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 55,
+            "prop": "name",
+            "attributes": {
+                "content": "直到它的四肢重新接触大地。"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#9$1"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#9$1"
+        },
+        {
+            "id": 58,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 59,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "Decision",
+            "attributes": {
+                "options": "......Mon3tr，我认为我们应该趁这个机会离开。;离开这里，回研究所。就现在。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line61",
+                "option2": "line61"
+            }
+        },
+        {
+            "id": 61,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 62,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#2$1"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "不，博士。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#2$1"
+        },
+        {
+            "id": 64,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 65,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Mon3tr？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line67"
+            }
+        },
+        {
+            "id": 67,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 68,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_giantmonster_breathe"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#8$1"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "name",
+            "attributes": {
+                "content": "它背上甚至还有起伏，它还在呼吸！",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#8$1"
+        },
+        {
+            "id": 71,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#5$1"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "name",
+            "attributes": {
+                "content": "而且它听上去......很痛苦？我不知道。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$1"
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "我没有阿米娅那种感受他人情绪的能力，更何况它还只是一只变异的动物，但......",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$1"
+        },
+        {
+            "id": 74,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#9$1"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "name",
+            "attributes": {
+                "content": "我知道就算不管它，把它留在这里，它也会死。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#9$1"
+        },
+        {
+            "id": 76,
+            "prop": "name",
+            "attributes": {
+                "content": "源石已经刺穿它的喉咙，它全身没有一处不痛，想把自己已经变异的器官都抓出来却没有能力。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#9$1"
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "或许这也是之前它为什么会攻击我们。它没办法控制自己。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#9$1"
+        },
+        {
+            "id": 78,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 79,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "Decision",
+            "attributes": {
+                "options": "那就结束它的痛苦吧。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line81"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#2$1"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "对。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#2$1"
+        },
+        {
+            "id": 84,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#3$1"
+            }
+        },
+        {
+            "id": 85,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#3$1"
+        },
+        {
+            "id": 86,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#2$1"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "name",
+            "attributes": {
+                "content": "不，没错。我能做到。我能......",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#2$1"
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "结束它的痛苦。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#2$1"
+        },
+        {
+            "id": 89,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 90,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 91,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 92,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_shallowswalk",
+                "loop": "true",
+                "channel": "w1"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 94,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "w1",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "她继续走向倒下的野兽，停在它的近侧，用爪子紧紧贴住一块少有结晶的皮毛。"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "Mon3tr望着裂兽，打量它的身体，眼底只有异样的平静。"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "name",
+            "attributes": {
+                "content": "然后，她以做微创手术般精准利落的动作，掐灭了变异裂兽最后的、断续的喘息。"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 99,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$knifegore"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "......我们走吧，博士。",
+                "name": "Mon3tr"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "name",
+            "attributes": {
+                "content": "回研究所。",
+                "name": "Mon3tr"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 105,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "bgs",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 106,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 107,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 108,
+            "prop": "imgeffect",
+            "attributes": {
+                "name": "$ib_screendistortion",
+                "image": "66_i09"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 111,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$suspenseful_intro",
+                "key": "$suspenseful_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "Mantra保持着聆听。"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "name",
+            "attributes": {
+                "content": "她深知自己视野中的景象已不再可信，无论它是遭到了有意的扭曲，还是意外地反映了真实。"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "name",
+            "attributes": {
+                "content": "于是她听着，直到人群之中，最后一句祷词如同第一片雪花落下。"
+            }
+        },
+        {
+            "id": 115,
+            "prop": "name",
+            "attributes": {
+                "content": "圣愚......",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "“迦弗里伊尔”。",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 117,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 118,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "我在听。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 120,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 121,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "那就停下。",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "name",
+            "attributes": {
+                "content": "停止——",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "这一切！",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 126,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "我无权停止，因它从未开始。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 128,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "你所见，只是你所想。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 129,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 130,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "于是Mantra不再尝试沟通。她向前一步，试图将那颤动着的红、白、黑色线条稳定下来。"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "name",
+            "attributes": {
+                "content": "然而就在她伸手的瞬间——"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 134,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 135,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 136,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_tinnitus"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "imgeffect",
+            "attributes": {}
+        },
+        {
+            "id": 139,
+            "prop": "name",
+            "attributes": {
+                "content": "......！",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "——Mantra——",
+                "name": "忽近忽远的声音"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 142,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 143,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 144,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 145,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#2$1"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_ibindoor",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "Mantra！",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#2$1"
+        },
+        {
+            "id": 149,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#6$1"
+            }
+        },
+        {
+            "id": 150,
+            "prop": "name",
+            "attributes": {
+                "content": "......什么？",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#6$1"
+        },
+        {
+            "id": 151,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$ponder_intro",
+                "key": "$ponder_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 152,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#5$1"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "你刚才一动不动。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#5$1"
+        },
+        {
+            "id": 154,
+            "prop": "name",
+            "attributes": {
+                "content": "我从没见过你这样......你怎么了？",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#5$1"
+        },
+        {
+            "id": 155,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#3$1"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "name",
+            "attributes": {
+                "content": "你们没有听见？",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#3$1"
+        },
+        {
+            "id": 157,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#4$1"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "听见什么？",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#4$1"
+        },
+        {
+            "id": 159,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 160,
+            "prop": "name",
+            "attributes": {
+                "content": "年长的女人没有立刻回答。"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "name",
+            "attributes": {
+                "content": "她环视四周，发现留下的矿工姿态并不像先前那样如出一辙。这发现令她皱起眉头，又看向自己身旁。"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#10$1"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "name",
+            "attributes": {
+                "content": "阿洛伊泽在哪儿？",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#10$1"
+        },
+        {
+            "id": 164,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#3$1"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "她听了我的话，跑出去了。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#3$1"
+        },
+        {
+            "id": 166,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "name",
+            "attributes": {
+                "content": "所以，至少你刚才确实有叫我们离开。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 168,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#5$1"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "name",
+            "attributes": {
+                "content": "是，但我一点也不记得我为什么要喊你们离开......这太奇怪了。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#5$1"
+        },
+        {
+            "id": 170,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "精神类源石技艺。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 172,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#4$1"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "name",
+            "attributes": {
+                "content": "你确定吗？我们专门为此训练过，如果受到这类攻击，我不会毫无防备。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#4$1"
+        },
+        {
+            "id": 174,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#4$1"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "Raidian，检查自己的短期记忆是否遭到了干扰。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#4$1"
+        },
+        {
+            "id": 176,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#3$1"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "哪种干扰？",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#3$1"
+        },
+        {
+            "id": 178,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#4$1"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "我能造成的干扰。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#4$1"
+        },
+        {
+            "id": 180,
+            "prop": "name",
+            "attributes": {
+                "content": "有次我让Mechanist忘了去找你是要借用“小树”和“小轴”的事，本质上不是抹除了那段记忆，而是阻断了记忆的形成。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#4$1"
+        },
+        {
+            "id": 181,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#4$1"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "name",
+            "attributes": {
+                "content": "我记得......那是你第一次尝试像这样使用自己的源石技艺？大脑内的信息没有被成功储存就会造成记忆缺失，也就是遗忘。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#4$1"
+        },
+        {
+            "id": 183,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "name",
+            "attributes": {
+                "content": "没错，来自你的提议。在对人体电信号的了解和利用上，你远比我更有经验。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 185,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#2$1"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "name",
+            "attributes": {
+                "content": "你觉得这里有人能跟你使用一样的源石技艺？",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#2$1"
+        },
+        {
+            "id": 187,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "无法确定，也可能我只是比你们看到、听到了更多。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 189,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#5$1"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "怎么说？",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#5$1"
+        },
+        {
+            "id": 191,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#4$1"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "name",
+            "attributes": {
+                "content": "Raidian，乌萨斯的圣愚可能在这里。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#4$1"
+        },
+        {
+            "id": 193,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#4$1"
+            }
+        },
+        {
+            "id": 194,
+            "prop": "name",
+            "attributes": {
+                "content": "圣愚？为什么突然提起——",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#4$1"
+        },
+        {
+            "id": 195,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#2$1"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "name",
+            "attributes": {
+                "content": "圣愚在这里？可乌萨斯仅存的圣愚，两年前就已经在圣骏堡被烧死了，这么短的时间之内，有可能诞生另一个圣愚吗？",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#2$1"
+        },
+        {
+            "id": 197,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "我不知道。这是我接下来要去确认的。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 199,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#2$1"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "name",
+            "attributes": {
+                "content": "如果真是圣愚，如果它隐藏在队伍里，一路上我却什么都没发现......那就太危险了。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#2$1"
+        },
+        {
+            "id": 201,
+            "prop": "name",
+            "attributes": {
+                "content": "我会让其他人保持警戒，你也注意安全。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#2$1"
+        },
+        {
+            "id": 202,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "name",
+            "attributes": {
+                "content": "这危险不是物理上的，至少暂时不是。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "如果需要，我会及时求助。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 205,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#2$1"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "别忘了。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#2$1"
+        },
+        {
+            "id": 207,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 208,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 210,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "name",
+            "attributes": {
+                "content": "Mantra转身，迈向数秒前那红色曾经存在的位置。"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "路上，不断有拥挤着靠在一起的矿工为她让出路来，或向她伸出手去。"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 215,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4207_branch_1#1$1"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "name",
+            "attributes": {
+                "content": "女士，您想找......谁？",
+                "name": "别乔克"
+            },
+            "figure_art": "avg_4207_branch_1#1$1"
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "我们还会，离开，去圣骏堡，是不是？",
+                "name": "别乔克"
+            },
+            "figure_art": "avg_4207_branch_1#1$1"
+        },
+        {
+            "id": 218,
+            "prop": "name",
+            "attributes": {
+                "content": "我们会，活、活下去......",
+                "name": "别乔克"
+            },
+            "figure_art": "avg_4207_branch_1#1$1"
+        },
+        {
+            "id": 219,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "name",
+            "attributes": {
+                "content": "（点头）",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 221,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4207_branch_1#1$1"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "name",
+            "attributes": {
+                "content": "可他们，好像，不想离开？我也问了，毕扬叔叔。他不想离开。",
+                "name": "别乔克"
+            },
+            "figure_art": "avg_4207_branch_1#1$1"
+        },
+        {
+            "id": 223,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4207_branch_1#10$1"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "name",
+            "attributes": {
+                "content": "他宁愿，让创口，烂掉，也......不愿再、再逃了。",
+                "name": "别乔克"
+            },
+            "figure_art": "avg_4207_branch_1#10$1"
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "可是，活着......难道不比，其他所有事，都重要吗？",
+                "name": "别乔克"
+            },
+            "figure_art": "avg_4207_branch_1#10$1"
+        },
+        {
+            "id": 226,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#2$1"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#2$1"
+        },
+        {
+            "id": 228,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4207_branch_1#1$1"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "您，不说话......",
+                "name": "别乔克"
+            },
+            "figure_art": "avg_4207_branch_1#1$1"
+        },
+        {
+            "id": 230,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1969_1#1$1"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "陌生人。",
+                "name": "疲倦的矿工"
+            },
+            "figure_art": "avg_npc_1969_1#1$1"
+        },
+        {
+            "id": 232,
+            "prop": "name",
+            "attributes": {
+                "content": "你要去见娜迦，是不是？那你该膝行过去，仰着头瞧她。",
+                "name": "疲倦的矿工"
+            },
+            "figure_art": "avg_npc_1969_1#1$1"
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "看着她，忏悔，然后得到宽恕。很快你就会发现从前不断挣扎、始终无法得到平静的自己，简直算得上是愚蠢。",
+                "name": "疲倦的矿工"
+            },
+            "figure_art": "avg_npc_1969_1#1$1"
+        },
+        {
+            "id": 234,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "Mantra不置可否。她没有使用源石技艺与这些人对话，只是颔首，而后目不转睛地盯着房间深处，与他们错身。"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "你会明白的......等到她跟前，你就会明白的。",
+                "name": "疲倦的矿工"
+            },
+            "figure_art": "avg_npc_1969_1#1$1"
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "屋内尽头，在其他人眼中佝偻而渺小的灰白身影正静静坐着，仿佛一尊塑像。"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 239,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 240,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 241,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 242,
+            "prop": "Background",
+            "attributes": {
+                "image": "66_g15_ursusvillage_ruins",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 245,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#11$1",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 246,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "——圣愚？！",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#11$1"
+        },
+        {
+            "id": 248,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#5$1"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "name",
+            "attributes": {
+                "content": "这不可能。绝不可能！圣愚已经死了！",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#5$1"
+        },
+        {
+            "id": 250,
+            "prop": "name",
+            "attributes": {
+                "content": "当初陛下出于仁慈，在定罪前允许那个疯子为自己的罪行进行辩护。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#5$1"
+        },
+        {
+            "id": 251,
+            "prop": "name",
+            "attributes": {
+                "content": "结果整整七天！整整七天他滴水未进，只为一刻不停地发表诡辩，拖延时间。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#5$1"
+        },
+        {
+            "id": 252,
+            "prop": "name",
+            "attributes": {
+                "content": "当时他甚至还胆敢站在帝国议会的中央，对每一个走进来旁听的人说——",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#5$1"
+        },
+        {
+            "id": 253,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#8$1"
+            }
+        },
+        {
+            "id": 254,
+            "prop": "name",
+            "attributes": {
+                "content": "“我原谅你”！",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#8$1"
+        },
+        {
+            "id": 255,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#4$1"
+            }
+        },
+        {
+            "id": 256,
+            "prop": "name",
+            "attributes": {
+                "content": "最后陛下忍无可忍，亲自宣判了他的死刑，但仍有被他蛊惑的信众去劫法场，进而爆发了近十年来发生在圣骏堡城区内最大的一场骚乱。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 257,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#3$1"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "你说的这些事我们都知道。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#3$1"
+        },
+        {
+            "id": 259,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#10$1"
+            }
+        },
+        {
+            "id": 260,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#10$1"
+        },
+        {
+            "id": 261,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#5$1"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "name",
+            "attributes": {
+                "content": "问题在于，如果Mantra说那是圣愚，一定是因为对方露出了可供揣摩的痕迹。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#5$1"
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "我们要做的只是保护好自己，然后等待她的消息。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#5$1"
+        },
+        {
+            "id": 264,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 265,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 266,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 268,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 269,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_ibindoor",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 271,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 272,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 274,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "Mantra并未像先前矿工说的那样俯下身去。"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "name",
+            "attributes": {
+                "content": "她踏进背光的阴影里，直视前方，仿佛眼前是一双回望的眼瞳。"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "我知道，你能“听见”。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 279,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 280,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 281,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 282,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$kjerag_n_intro",
+                "key": "$kjerag_n_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 283,
+            "prop": "focusout",
+            "attributes": {
+                "duration": 1.5,
+                "type": "bg",
+                "from": 0.0,
+                "to": 1.0
+            }
+        },
+        {
+            "id": 284,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "我听见，你饱含疑问。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 286,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 287,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 289,
+            "prop": "name",
+            "attributes": {
+                "content": "希望你不是只会模仿我的源石技艺和说话方式，圣愚。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 290,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 291,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 292,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.2,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 293,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "“圣愚”......如果你需要我是这个名字。",
+                "name": "娜迦"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 296,
+            "prop": "name",
+            "attributes": {
+                "content": "请解释这句话的含义。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 297,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 298,
+            "prop": "name",
+            "attributes": {
+                "content": "迦弗里伊尔、索洛米达、贝斯梅特、阿芙罗拉、娜迦......又或者，“圣愚”。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 299,
+            "prop": "name",
+            "attributes": {
+                "content": "所有这些，我是。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 300,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "......告诉我，你为什么要混入这些受苦的人当中？",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 302,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 303,
+            "prop": "name",
+            "attributes": {
+                "content": "因为，这是一场布道。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "我将行遍这片广袤的土地，为了赎去人们遭受的苦。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 305,
+            "prop": "name",
+            "attributes": {
+                "content": "也因为，我看见了她，听见了她。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 306,
+            "prop": "name",
+            "attributes": {
+                "content": "我为她的痛苦所挽留，也因此驻足。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 307,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "name",
+            "attributes": {
+                "content": "“她”是谁？",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 309,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 310,
+            "prop": "name",
+            "attributes": {
+                "content": "一个受苦的灵魂。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 311,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "name",
+            "attributes": {
+                "content": "你诱骗她，让她称你为“娜迦”？",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 313,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 314,
+            "prop": "name",
+            "attributes": {
+                "content": "我从未诱骗。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 315,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "name",
+            "attributes": {
+                "content": "谎言。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 317,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 318,
+            "prop": "name",
+            "attributes": {
+                "content": "她像你一样提问，我像我一般回答。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "仅此而已。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 320,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 321,
+            "prop": "name",
+            "attributes": {
+                "content": "没有意义的回答。你究竟是什么？",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 322,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 323,
+            "prop": "name",
+            "attributes": {
+                "content": "你也看到我。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 324,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "我看到无序的虚影。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 326,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 327,
+            "prop": "name",
+            "attributes": {
+                "content": "是的，我是。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 328,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "但在其他人眼中，你不是。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 330,
+            "prop": "name",
+            "attributes": {
+                "content": "解释。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 331,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 332,
+            "prop": "name",
+            "attributes": {
+                "content": "世人看到的我的模样，只反映了他们对我的认知和期待。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 333,
+            "prop": "name",
+            "attributes": {
+                "content": "我以为，在所有灵魂当中，只有你会理解我为何如此存在。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 334,
+            "prop": "name",
+            "attributes": {
+                "content": "毕竟......",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 335,
+            "prop": "name",
+            "attributes": {
+                "content": "你是那个未完成的塑像，你曾会成为——",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "“我”。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 337,
+            "prop": "name",
+            "attributes": {
+                "content": "Mantra紧紧盯住眼前诡异的虚影，却不确定自己能否从那上面看出任何有助于自己判断的信息。"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 340,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 341,
+            "prop": "name",
+            "attributes": {
+                "content": "很久以前，你曾剥除过一块黑色的腐肉。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 342,
+            "prop": "name",
+            "attributes": {
+                "content": "我也一样。它追赶我，我驱逐它，像在呼吸之间从身上割下一块腐肉。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 343,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "荒谬的比喻。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 345,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 346,
+            "prop": "name",
+            "attributes": {
+                "content": "不。这只是简单的道理。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "如果它已经腐烂，不再与你身体的其他部分同气连枝......",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "那又为何还要保留？",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 349,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 350,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 352,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "fadetime": 0.0,
+                "keep": "true",
+                "initamount": 0.0,
+                "amount": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "Image",
+            "attributes": {
+                "image": "avg_8_29",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "......这是......",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 358,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 360,
+            "prop": "Image",
+            "attributes": {
+                "image": "66_i01",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 362,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 363,
+            "prop": "name",
+            "attributes": {
+                "content": "你的记忆？",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 365,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 367,
+            "prop": "Image",
+            "attributes": {
+                "image": "66_i02",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 369,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 370,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 371,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 373,
+            "prop": "Image",
+            "attributes": {
+                "image": "66_i03",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 376,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 377,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 378,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 379,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 380,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 381,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "fadetime": 0.0,
+                "amount": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_ibindoor",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.2,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 386,
+            "prop": "name",
+            "attributes": {
+                "content": "但也是我——",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 387,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#10$1"
+            }
+        },
+        {
+            "id": 388,
+            "prop": "name",
+            "attributes": {
+                "content": "不。内卫......你能影响内卫，你当然也能影响那些矿工。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#10$1"
+        },
+        {
+            "id": 389,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "你杀死它。你成为我。",
+                "name": "娜迦"
+            },
+            "figure_art": "avg_4204_mantra_1#10$1"
+        },
+        {
+            "id": 391,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "name",
+            "attributes": {
+                "content": "如果这是我们之间唯一共通的地方，那么......",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 393,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#6$1"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "name",
+            "attributes": {
+                "content": "“身体”“腐肉”。你与内卫的关系——圣愚是内卫实验的源头。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#6$1"
+        },
+        {
+            "id": 395,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 396,
+            "prop": "name",
+            "attributes": {
+                "content": "从颤动着的虚影之中，不再有声音传来。既不辩驳，也不肯定。"
+            }
+        },
+        {
+            "id": 397,
+            "prop": "name",
+            "attributes": {
+                "content": "Mantra开始后退，离开了阴影的边缘。"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 399,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 400,
+            "prop": "focusout",
+            "attributes": {
+                "duration": 1.5,
+                "type": "bg",
+                "from": 1.0,
+                "to": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 402,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "......Raidian，我需要支援。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 404,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "我在。",
+                "name": "Raidian"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 407,
+            "prop": "name",
+            "attributes": {
+                "content": "已确认先前的推测。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 408,
+            "prop": "name",
+            "attributes": {
+                "content": "另外，补充信息......",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 409,
+            "prop": "name",
+            "attributes": {
+                "content": "圣愚隐藏在矿工之中，帮助他们杀死了内卫。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 410,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "name",
+            "attributes": {
+                "content": "......我明白了。",
+                "name": "Raidian"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "name",
+            "attributes": {
+                "content": "你需要我们怎么做？",
+                "name": "Raidian"
+            }
+        },
+        {
+            "id": 413,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": "我需要你继续想办法联络罗德岛在乌萨斯其他地区的支援队伍，同时请阿米娅拖住阿洛伊泽。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "我们现在不能马上离开这里，至少在我找到能唤醒矿工们的办法之前不行。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": "让极境留在我的源石技艺使用范围之内，我可能会需要他的帮助。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 417,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "name",
+            "attributes": {
+                "content": "你想做什么？",
+                "name": "Raidian"
+            }
+        },
+        {
+            "id": 419,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "name",
+            "attributes": {
+                "content": "解除圣愚施加在矿工们身上的影响。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 421,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "name",
+            "attributes": {
+                "content": "你认为是圣愚控制了这些矿工，让他们拒绝离开？",
+                "name": "Raidian"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "name",
+            "attributes": {
+                "content": "没错。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 425,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#4$1"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "name",
+            "attributes": {
+                "content": "我们无法直接杀死圣愚，但它却随时可以杀死这里的每一个人。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#4$1"
+        },
+        {
+            "id": 427,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "name",
+            "attributes": {
+                "content": "......也许阿米娅能帮忙。",
+                "name": "Raidian"
+            }
+        },
+        {
+            "id": 429,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#1$1"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "name",
+            "attributes": {
+                "content": "也许可以，但阿米娅并不了解圣愚。我不希望她一无所知地卷入其中。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 431,
+            "prop": "name",
+            "attributes": {
+                "content": "圣愚与我的能力多有相似，这也是为什么只有我能做出这样的判断。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 432,
+            "prop": "name",
+            "attributes": {
+                "content": "它依靠他人的认知建立自身，我需要找到使它建立起“娜迦”这个身份的关键，然后才能解除圣愚施加的影响。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#1$1"
+        },
+        {
+            "id": 433,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "name",
+            "attributes": {
+                "content": "你有怀疑的对象了。",
+                "name": "Raidian"
+            }
+        },
+        {
+            "id": 435,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#2$1"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "name",
+            "attributes": {
+                "content": "......没错。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#2$1"
+        },
+        {
+            "id": 437,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 438,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 439,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 440,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4207_branch_1#9$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 441,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 442,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "name",
+            "attributes": {
+                "content": "Mantra将视线投向四周的矿工，最后落到正从自己身旁经过，走向圣愚的女孩身上。"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "name",
+            "attributes": {
+                "content": "她茫然地呢喃着，惶惑而悲伤。"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4204_mantra_1#3$1"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "name",
+            "attributes": {
+                "content": "我只是需要时间确认。",
+                "name": "Mantra"
+            },
+            "figure_art": "avg_4204_mantra_1#3$1"
+        },
+        {
+            "id": 447,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 448,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 449,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 451,
+            "prop": "hidecgitem",
+            "attributes": {}
+        },
+        {
+            "id": 452,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 453,
+            "prop": "charslot",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": true
+}

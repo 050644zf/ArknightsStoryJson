@@ -1,0 +1,5038 @@
+{
+    "lang": "zh_CN",
+    "eventid": "main_16",
+    "eventName": "反常光谱",
+    "entryType": "MAINLINE",
+    "storyCode": "16-2",
+    "avgTag": "行动前",
+    "storyName": "晨曦遥远",
+    "storyInfo": "罗德岛众人进入布列斯克，在寻人的过程中引来了卫兵追捕。近卫军阿洛伊泽在为罗德岛解围后，告知了众人矿区感染者异变的消息，并为调查此事寻求罗德岛的合作。",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 2,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 4,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 6,
+            "prop": "Decision",
+            "attributes": {
+                "options": "我们需要找到一条能安全抵达研究所的路。;极境？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line7",
+                "option2": "line7"
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 8,
+            "prop": "avgdisplay",
+            "attributes": {
+                "id": "1",
+                "name": "act3mainss_01",
+                "style": "animekv",
+                "slot": "bgover",
+                "y": 80.0,
+                "scalex": 1.2,
+                "scaley": 1.2,
+                "entryfrom": 0.0,
+                "entryto": 0.2,
+                "duration": 5.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "avgdisplay",
+            "attributes": {
+                "id": "1",
+                "name": "act3mainss_01",
+                "style": "animekv",
+                "slot": "bgover",
+                "xto": 0.0,
+                "yto": 0.0,
+                "scalexto": 0.9,
+                "scaleyto": 0.9,
+                "duration": 30.0
+            }
+        },
+        {
+            "id": 10,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_snowstormflp",
+                "volume": 0.0,
+                "loop": "true",
+                "channel": "sn"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 1.0,
+                "channel": "sn",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 14,
+            "prop": "animtext",
+            "attributes": {
+                "content": "<p=1>乌萨斯远北中心矿区</>",
+                "id": "at1",
+                "name": "group_location_stamp",
+                "style": "avg_only_heavy",
+                "pos": "-400,-200",
+                "block": "false",
+                "p": 1.0
+            }
+        },
+        {
+            "id": 15,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 16,
+            "prop": "animtextclean",
+            "attributes": {}
+        },
+        {
+            "id": 17,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 18,
+            "prop": "name",
+            "attributes": {
+                "content": "我带的这些设备好像都失灵了，检测不出这片污染区的具体范围。",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "这里看上去像是矿场的住宿区，要说危险，也就是可能还留在里面的人了，毕竟这里有邪魔污染......",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "name",
+            "attributes": {
+                "content": "队长说可以确定附近一整片矿场内都没有人类的精神活动痕迹，动物的也没有。",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "污染范围的话，至少没有覆盖前方的研究所入口，而是主要往南方延伸了。",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "我们可以从北边绕路过去，这样大概会比原计划多出三个小时的路程，但基本还在可控范围内。",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "name",
+            "attributes": {
+                "content": "（点头）",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 26,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "sn",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 27,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 30,
+            "prop": "avgdisplay",
+            "attributes": {
+                "id": "1"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "PlayMusic",
+            "attributes": {
+                "key": "$saferoom_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 32,
+            "prop": "Background",
+            "attributes": {
+                "image": "66_g3_miningarea",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 35,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#10$1",
+                "duration": 1.0,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 36,
+            "prop": "name",
+            "attributes": {
+                "content": "哇......",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$1"
+        },
+        {
+            "id": 37,
+            "prop": "name",
+            "attributes": {
+                "content": "早就想感叹了，你们也太有默契了！",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$1"
+        },
+        {
+            "id": 38,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#8$1"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "name",
+            "attributes": {
+                "content": "毕竟极境先生和Mantra女士已经是很多年的搭档了。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#8$1"
+        },
+        {
+            "id": 40,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_401_elysm_na_1#2"
+            }
+        },
+        {
+            "id": 41,
+            "prop": "name",
+            "attributes": {
+                "content": "哈哈哈......至少在和队长配合这方面，我也算是罗德岛资历最深的干员了。",
+                "name": "极境"
+            },
+            "figure_art": "char_401_elysm_na_1#2"
+        },
+        {
+            "id": 42,
+            "prop": "name",
+            "attributes": {
+                "content": "毕竟队长“说话”的负担还是不小的，不是紧急的时候，还是由我帮忙传达吧。",
+                "name": "极境"
+            },
+            "figure_art": "char_401_elysm_na_1#2"
+        },
+        {
+            "id": 43,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_401_elysm_na_1#5"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "multiline",
+            "attributes": {
+                "name": "极境",
+                "content": "怎么说，博士？现在出发的话应该可以在太阳落山前——"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_401_elysm_na_1#8"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "multiline",
+            "attributes": {
+                "name": "极境",
+                "end": "true",
+                "content": "不对，这个季节，乌萨斯远北真的还有日落这种说法吗......",
+                "joined": "怎么说，博士？现在出发的话应该可以在太阳落山前——不对，这个季节，乌萨斯远北真的还有日落这种说法吗......"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 48,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 49,
+            "prop": "Decision",
+            "attributes": {
+                "options": "我们现在就出发。;路线的变动，也应该同步给我们的那位朋友。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line50",
+                "option2": "line50"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 51,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1037_amiya3_1#1$1"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 53,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_armyboots_walk",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "ar"
+            }
+        },
+        {
+            "id": 54,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "ar",
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 55,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1966_1#4$1",
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 57,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1037_amiya3_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "阿洛伊泽小姐，您掉队了。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#1$1"
+        },
+        {
+            "id": 59,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1966_1#3$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "抱歉，只是对矿场设备做了一些检查，和我们同行的理由无关。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 61,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1966_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "怎么了？你们为什么停留这么久？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "从地图上看，我们已经离研究所很近了。难道你们发现了什么——",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 64,
+            "prop": "name",
+            "attributes": {
+                "content": "......吗？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 65,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 66,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 67,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1966_1#4$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "name",
+            "attributes": {
+                "content": "这是......“国度”的残留。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 69,
+            "prop": "name",
+            "attributes": {
+                "content": "......内卫来过这里。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 70,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1037_amiya3_1#6$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "name",
+            "attributes": {
+                "content": "您看上去并不惊讶？",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 72,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1966_1#12$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "希望你不是在责怪我刻意隐瞒，阿米娅小姐，否则我会很伤心的。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#12$1"
+        },
+        {
+            "id": 74,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1037_amiya3_1#6$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "name",
+            "attributes": {
+                "content": "我希望至少在我们合作的时候，您会与我们共享必要的情报。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 76,
+            "prop": "name",
+            "attributes": {
+                "content": "对于内卫在这里的行踪，您知道什么吗？",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 77,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1966_1#3$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "首先，除了陛下，不会有任何人有权限获悉内卫的去向，遑论我这样人微言轻的小小中士了。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "但老实说，当远北那位最有名望的女大公以戒严为名关闭矿场的时候，内卫出现在这里，就已经算不上令人意外的事了......",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 80,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1037_amiya3_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "可是，如果内卫已经在这里展开调查，那您的工作又是什么呢？",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#1$1"
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1966_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "你很敏锐，阿米娅小姐。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 84,
+            "prop": "name",
+            "attributes": {
+                "content": "远北中心矿区感染者异变的消息引起了不小的波澜，有许多人都对此感到好奇。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 85,
+            "prop": "name",
+            "attributes": {
+                "content": "当然，乌萨斯许多人都有对此感到好奇的权利，但并不都享有得到同样一份情报的权利。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 86,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1966_1#12$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "name",
+            "attributes": {
+                "content": "请谅解，我还是应该谨记自己的身份，不可说出过于失礼的话——希望这样的解释不会让你们感到困惑，阿米娅小姐。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#12$1"
+        },
+        {
+            "id": 88,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1037_amiya3_1#7$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "name",
+            "attributes": {
+                "content": "不......我可以理解您的立场。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#7$1"
+        },
+        {
+            "id": 90,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1966_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "name",
+            "attributes": {
+                "content": "我从来没有掩饰过，对于我这样的近卫军来说，这同样是一份值得争取的履历。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 92,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1966_1#2$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "name",
+            "attributes": {
+                "content": "只不过我原以为这一趟出行的工作会轻松很多......",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#2$1"
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "但是很显然这样的期望已经破灭，内卫下场，无论如何都算不上好兆头。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#2$1"
+        },
+        {
+            "id": 95,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1037_amiya3_1#8$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "即便如此，您还是决定继续与我们同行？",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#8$1"
+        },
+        {
+            "id": 97,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1966_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "name",
+            "attributes": {
+                "content": "当然。不管怎么说也是自己挑选的差事，半途而废可就不体面了。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "在继续出发之前，我们可以恢复对彼此的信任了吗？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 100,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_1037_amiya3_1#8$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "name",
+            "attributes": {
+                "content": "我们会继续合作。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#8$1"
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "就像我们认识的时候那样......",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#8$1"
+        },
+        {
+            "id": 103,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 104,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 105,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 107,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 108,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 109,
+            "prop": "gridbg",
+            "attributes": {
+                "imagegroup": "38_g21_skystarry_L1/38_g21_skystarry_R1/38_g21_skystarry_L2/38_g21_skystarry_R2",
+                "solidwidth": "1280/1280/1280/1280",
+                "solidheight": "720/720/720/720",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 110,
+            "prop": "largebgtween",
+            "attributes": {
+                "duration": 40.0,
+                "yFrom": 720.0,
+                "yTo": 360.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 111,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_snowstormflp",
+                "volume": 0.0,
+                "loop": "true",
+                "channel": "sn"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 1.0,
+                "channel": "sn",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 113,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 114,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_crowdrun",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 115,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "animtext",
+            "attributes": {
+                "content": "<p=1>乌萨斯远北地区，布列斯克</><p=2>三天前</>",
+                "id": "at1",
+                "name": "group_location_stamp",
+                "style": "avg_both",
+                "pos": "-400,-200",
+                "block": "false",
+                "p": 2.0
+            }
+        },
+        {
+            "id": 117,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 118,
+            "prop": "animtextclean",
+            "attributes": {}
+        },
+        {
+            "id": 119,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 120,
+            "prop": "Decision",
+            "attributes": {
+                "options": "极境！告知我们方向！",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line121"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 122,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$transmission",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 123,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "该死......通讯信号有延迟，我们的加密频段好像被干扰了！",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "name",
+            "attributes": {
+                "content": "先不管了......你们的西侧有一支十人的卫兵小队，在下一个路口向右转！",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "你在说什么！我们的右边就是西面！",
+                "name": "Mon3tr"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "我刚才说的是右转？哎呀——",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "name",
+            "attributes": {
+                "content": "总之，看到市政厅了吗？往它的反方向走！",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "name",
+            "attributes": {
+                "content": "我看到了，可是前面那个路口是地块断开连接的区域——",
+                "name": "阿米娅"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "name",
+            "attributes": {
+                "content": "什么？！",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "该死，地图上根本没有标示！",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "name",
+            "attributes": {
+                "content": "可是现在四面八方都是卫兵，那边确实是唯一的突破口了！",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "name",
+            "attributes": {
+                "content": "收到。",
+                "name": "Mon3tr"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "name",
+            "attributes": {
+                "content": "阿米娅，你能跟上吗？",
+                "name": "Mon3tr"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "name",
+            "attributes": {
+                "content": "没问题！",
+                "name": "阿米娅"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "name",
+            "attributes": {
+                "content": "博士，抓紧了！",
+                "name": "Mon3tr"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 138,
+            "prop": "Decision",
+            "attributes": {
+                "options": "我在努力——",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line139"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 140,
+            "prop": "name",
+            "attributes": {
+                "content": "那可能还是不太够。没关系，我抓紧你了！",
+                "name": "Mon3tr"
+            }
+        },
+        {
+            "id": 141,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 142,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 143,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 0.2,
+                "channel": "sn",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 144,
+            "prop": "largebgtween",
+            "attributes": {
+                "duration": 1.0,
+                "yTo": 900.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 148,
+            "prop": "Background",
+            "attributes": {
+                "image": "66_g1_bleskstreet",
+                "screenadapt": "coverall",
+                "xScale": 1.2,
+                "yScale": 1.2
+            }
+        },
+        {
+            "id": 149,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 150,
+            "prop": "largebg",
+            "attributes": {}
+        },
+        {
+            "id": 151,
+            "prop": "backgroundTween",
+            "attributes": {
+                "yTo": 60.0,
+                "duration": 0.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_Qinggong",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 154,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 155,
+            "prop": "backgroundTween",
+            "attributes": {
+                "yFrom": 60.0,
+                "yTo": 0.0,
+                "duration": 1.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 157,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#3$1",
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 160,
+            "prop": "name",
+            "attributes": {
+                "content": "呼......",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#3$1"
+        },
+        {
+            "id": 161,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#8$1"
+            }
+        },
+        {
+            "id": 162,
+            "prop": "name",
+            "attributes": {
+                "content": "博士，你还好吗？",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#8$1"
+        },
+        {
+            "id": 163,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 164,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "Decision",
+            "attributes": {
+                "options": "还好。;我已经差不多习惯了。;下次我就可以试试自己跳了。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line166",
+                "option2": "line166",
+                "option3": "line166"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 167,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#12$1"
+            }
+        },
+        {
+            "id": 168,
+            "prop": "name",
+            "attributes": {
+                "content": "哈哈，你看上去还是很精神的嘛！那我就放心啦！",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#12$1"
+        },
+        {
+            "id": 169,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#1$1"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "name",
+            "attributes": {
+                "content": "极境先生，我们已经抵达预定位置。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#1$1"
+        },
+        {
+            "id": 171,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#5$1"
+            }
+        },
+        {
+            "id": 172,
+            "prop": "name",
+            "attributes": {
+                "content": "极境先生？",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#5$1"
+        },
+        {
+            "id": 173,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "sn",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 174,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$nervous_intro",
+                "key": "$nervous_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 175,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_recorderglitch",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 176,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "......不要......滋......停......转移......滋——",
+                "name": "断断续续的杂音"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "......有......滋滋......队......",
+                "name": "断断续续的杂音"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 180,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$transmission",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 181,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 182,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#3$1"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "通讯断了。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#3$1"
+        },
+        {
+            "id": 184,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "终端上显示极境先生的位置还在移动，但是没有办法与他建立联络。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 186,
+            "prop": "name",
+            "attributes": {
+                "content": "好像自从我们进入布列斯克城区以来，城内的短距离通讯一直不稳定。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "我们也没办法确定是因为乌萨斯远北的极端天气，还是人为的干扰。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 188,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 189,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "Decision",
+            "attributes": {
+                "options": "不过我更好奇......;布列斯克为何派这么多人围追堵截“城际贸易商”？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line191",
+                "option2": "line191"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 192,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#7$1"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "name",
+            "attributes": {
+                "content": "这一点也很奇怪......",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#7$1"
+        },
+        {
+            "id": 194,
+            "prop": "name",
+            "attributes": {
+                "content": "可露希尔小姐帮我们伪造的身份证明从来没有出过错。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#7$1"
+        },
+        {
+            "id": 195,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 196,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "Decision",
+            "attributes": {
+                "options": "有可能他们本来在戒备的人并不是我们。;有可能他们出于别的原因盯上了我们。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line198",
+                "option2": "line198"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 199,
+            "prop": "Decision",
+            "attributes": {
+                "options": "但是话说回来......",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line200"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 201,
+            "prop": "Decision",
+            "attributes": {
+                "options": "布列斯克本来应该是一座安宁的城市。;城中常驻这样的防卫力量本身就很可疑。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line202",
+                "option2": "line202"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 203,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#1$1"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "这的确和我们之前得到的情报不相符......这样下去，我们根本没有办法进入矿区。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#1$1"
+        },
+        {
+            "id": 205,
+            "prop": "name",
+            "attributes": {
+                "content": "博士，我们是不是应该先和Mantra小队会合，再一起商议——",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#1$1"
+        },
+        {
+            "id": 206,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 207,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 208,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$transmission",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 209,
+            "prop": "interlude",
+            "attributes": {
+                "maskid": "group_interclude_vertical_common",
+                "size": "290,760",
+                "tsfrom": "0,1",
+                "tsto": "1,1",
+                "tsduration": 0.5,
+                "switch": "true",
+                "style": 0.0,
+                "offset": "0,0",
+                "channel": 3.0
+            }
+        },
+        {
+            "id": 210,
+            "prop": "interlude",
+            "attributes": {
+                "channel": 3.0,
+                "switch": "true",
+                "type": 3.0,
+                "slot": "m",
+                "pfrom": "0,0",
+                "pto": "0,0",
+                "name": "char_401_elysm_na_1#7",
+                "duration": 0.0
+            }
+        },
+        {
+            "id": 211,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 212,
+            "prop": "name",
+            "attributes": {
+                "content": "博士！终于联系上了！",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "不要停留！又有卫兵朝你们那边过去了！",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 215,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_transmissionget",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 216,
+            "prop": "interlude",
+            "attributes": {
+                "channel": 3.0,
+                "clear": "true",
+                "tsto": "0,1",
+                "tsduration": 0.5
+            }
+        },
+        {
+            "id": 217,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 218,
+            "prop": "Decision",
+            "attributes": {
+                "options": "我想，我已经知道了......",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line219"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 220,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 221,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1973_1#1$1",
+                "posfrom": "80,0",
+                "posto": "80,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 222,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1973_1#1$1",
+                "posfrom": "-80,0",
+                "posto": "-80,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 223,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 224,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1",
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 226,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 227,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$1"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "name",
+            "attributes": {
+                "content": "来得这么快——",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_npc_1973_1#1$1"
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "阿米娅，你也站到我身后！",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_npc_1973_1#1$1"
+        },
+        {
+            "id": 230,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#5$1"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "不，我们不能直接动手！",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_npc_1973_1#1$1"
+        },
+        {
+            "id": 232,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "name",
+            "attributes": {
+                "content": "可耻的闯入者，都把手举起来！",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1973_1#1$1"
+        },
+        {
+            "id": 234,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 235,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "Decision",
+            "attributes": {
+                "options": "各位，请先冷静一点。;我们究竟违反了什么禁令，需要这么大动干戈？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line237",
+                "option2": "line237"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 238,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 239,
+            "prop": "name",
+            "attributes": {
+                "content": "你们未经许可擅自进入工业区，又企图闯入私人所属的工厂，违反了布列斯克入城条例和乌萨斯城市治安管理办法。",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 240,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "这位先生，请您确认一下，入城条例上没有写外来人员不能进入工业区——",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 242,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "name",
+            "attributes": {
+                "content": "这是今天颁布的新条例，从你们进入布列斯克开始就生效了。",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "现在，我们将依法对你们进行收押处理，然后治安官会根据具体情况判断该将你们遣返还是流放。",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 245,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 246,
+            "prop": "name",
+            "attributes": {
+                "content": "如果我们无意间违反了布列斯克的新规定，我们很抱歉。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "我们只是为了寻找一位城际贸易商，这些都清楚地写在我们入城时提交的行程表上。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 248,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "name",
+            "attributes": {
+                "content": "建议你把这些话留着去对治安官说。",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 250,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 251,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "Decision",
+            "attributes": {
+                "options": "我们并无恶意。;对我们双方来说，或许会有更节省时间的办法。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line253",
+                "option2": "line253"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 254,
+            "prop": "Decision",
+            "attributes": {
+                "options": "我相信“远北明珠”布列斯克的待客之道。;我相信那位女大公和传闻中一样仁慈。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line255",
+                "option2": "line255"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 256,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "name",
+            "attributes": {
+                "content": "收起你那一套吧，与我无关。我只做我的工作。",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 258,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#10$1"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "name",
+            "attributes": {
+                "content": "先生......",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#10$1"
+        },
+        {
+            "id": 260,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "name",
+            "attributes": {
+                "content": "请吧。",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 262,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "不，先生。我们不能再耽误了。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 264,
+            "prop": "name",
+            "attributes": {
+                "content": "抱歉。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 265,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 266,
+            "prop": "name",
+            "attributes": {
+                "content": "你看到阿米娅微微侧身，不露痕迹地将你挡在身后，Mon3tr正在观察周围的环境，试图寻找一条可以逃离的路线。"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "name",
+            "attributes": {
+                "content": "......不识好歹。",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "动手。",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 270,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 271,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 272,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 273,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1973_1#1$1",
+                "posfrom": "-300,0",
+                "posto": "0,0",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 274,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 275,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1973_1#1$1",
+                "posfrom": "300,0",
+                "posto": "0,0",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 276,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 277,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 278,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$char_Mon3tr"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.8,
+                "xstrength": 50.0,
+                "ystrength": 50.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 280,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#13$3"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "name",
+            "attributes": {
+                "content": "（咆哮示警）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_npc_1973_1#1$1"
+        },
+        {
+            "id": 282,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 283,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1973_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 284,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1972_1#1$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "name",
+            "attributes": {
+                "content": "呃......呃！",
+                "name": "犹豫的卫兵"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1972_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "name",
+            "attributes": {
+                "content": "都愣着做什么，上啊！",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 288,
+            "prop": "name",
+            "attributes": {
+                "content": "一个菲林小姑娘，难道会把你们都吃了不成？",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 289,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1973_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "头......头儿，不是，你看那后面。",
+                "name": "犹豫的卫兵"
+            },
+            "figure_art": "avg_npc_1973_1#1$1"
+        },
+        {
+            "id": 291,
+            "prop": "name",
+            "attributes": {
+                "content": "那看起来像是个——是个——",
+                "name": "犹豫的卫兵"
+            },
+            "figure_art": "avg_npc_1973_1#1$1"
+        },
+        {
+            "id": 292,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1972_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "name",
+            "attributes": {
+                "content": "说话不要支支吾吾的！",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 294,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1973_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "name",
+            "attributes": {
+                "content": "——近卫军！",
+                "name": "犹豫的卫兵"
+            },
+            "figure_art": "avg_npc_1973_1#1$1"
+        },
+        {
+            "id": 296,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 20.0,
+                "ystrength": 20.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1972_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "name",
+            "attributes": {
+                "content": "瞎扯！近卫军那些官老爷都在圣骏堡待得好好的，哪会到布列斯克来？",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 299,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1973_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "name",
+            "attributes": {
+                "content": "可是——可是那衣裳——",
+                "name": "犹豫的卫兵"
+            },
+            "figure_art": "avg_npc_1973_1#1$1"
+        },
+        {
+            "id": 301,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 302,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 303,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_highheelfts",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 304,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1",
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 306,
+            "prop": "name",
+            "attributes": {
+                "content": "不好意思了，先生。我想这回她还真没说错。",
+                "name": "近卫军？"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 307,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "name",
+            "attributes": {
+                "content": "你......",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 309,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "name",
+            "attributes": {
+                "content": "阿洛伊泽·戈尔奇科娃，近卫军前锋营中士，从圣骏堡来。",
+                "name": "近卫军？"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 311,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 312,
+            "prop": "name",
+            "attributes": {
+                "content": "你......打算做什么？",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 313,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "name",
+            "attributes": {
+                "content": "向您提出一个很简单的请求，通融一下，放了这几位可怜的客人吧。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 315,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "name",
+            "attributes": {
+                "content": "......你跟他们是一伙的？",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 317,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#12$1"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "name",
+            "attributes": {
+                "content": "很不幸，他们的确是我的朋友。既然您知道了我的来历，那想必会给我一个面子的，对吗？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#12$1"
+        },
+        {
+            "id": 319,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "name",
+            "attributes": {
+                "content": "这里又不是圣骏堡，我凭什么要给你面子？",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 321,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "name",
+            "attributes": {
+                "content": "凭我已经见过了治安官，补齐了手续？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 323,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 324,
+            "prop": "name",
+            "attributes": {
+                "content": "乌萨斯青年挥动着手中的纸张，在昏暗的极夜天幕下，没人看得清那上面究竟写着什么。"
+            }
+        },
+        {
+            "id": 325,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "你——",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 327,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 328,
+            "prop": "name",
+            "attributes": {
+                "content": "如果我是您，我不会拿自己的前途赌气。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "认不清路的游客时时都有，卖近卫军人情的机会可不多——对了，可以请教一下您的名字吗，或者是您的军籍编号？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 330,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1972_1#1$1"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "......好的，戈尔奇科娃中士，我会把今天发生的一切如实告知治安官的，你可以走了。",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 332,
+            "prop": "name",
+            "attributes": {
+                "content": "我祝您的特权和皇帝陛下一样永垂不朽。",
+                "name": "远北卫兵"
+            },
+            "figure_art": "avg_npc_1972_1#1$1"
+        },
+        {
+            "id": 333,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#12$1"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "name",
+            "attributes": {
+                "content": "谢谢您的祝福，先生。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#12$1"
+        },
+        {
+            "id": 335,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "name",
+            "attributes": {
+                "content": "但没有人配享有和陛下一样不朽的荣光，我们每个人都会在某个特定的时刻谢幕退场的。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 337,
+            "prop": "name",
+            "attributes": {
+                "content": "至于这几位客人，我就先带走了。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 338,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 339,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_highheelfts",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 340,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 341,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 342,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "style": "slider",
+                "inverse": "true",
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_snowstormflp",
+                "volume": 0.0,
+                "loop": "true",
+                "channel": "sn"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 0.6,
+                "channel": "sn",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 346,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "style": "slider",
+                "inverse": "true",
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#1$1"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "女士，感谢您帮我们解围......可是，您到底是——",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#1$1"
+        },
+        {
+            "id": 349,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#12$1"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "name",
+            "attributes": {
+                "content": "嘘，他们可还没走远呢。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#12$1"
+        },
+        {
+            "id": 351,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "另外，可爱的卡特斯小姐，你可以叫我阿洛伊泽。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "女士太疏远，“那个近卫军”“那个家伙”又太粗鲁，我想，按我们现在的交情，直呼名字是最好的。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 354,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 355,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 356,
+            "prop": "Decision",
+            "attributes": {
+                "options": "感谢你的帮助，阿洛伊泽小姐。;你对付那些卫兵很有一手。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line357",
+                "option2": "line357"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 358,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#3$1"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "那些卫兵八成以为你们是一般的商旅，可以抓了狠狠敲诈一笔，就像敲诈那些来这里观光猎奇的哥伦比亚人。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 360,
+            "prop": "name",
+            "attributes": {
+                "content": "可惜你们不是，对不对？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 361,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 362,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "Decision",
+            "attributes": {
+                "options": "还是让我们有话直说吧。;你为什么要帮助我们？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line364",
+                "option2": "line364"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 365,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "name",
+            "attributes": {
+                "content": "不错，我喜欢直接，你们的问题我都会回答的，但不是在这里。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 367,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#3$1"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "name",
+            "attributes": {
+                "content": "等你们的同伴到齐，我们可以换个不容易被打扰的地方继续聊。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 369,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 370,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "Decision",
+            "attributes": {
+                "options": "我们没有太多时间。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line372"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 373,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 374,
+            "prop": "name",
+            "attributes": {
+                "content": "放心，就你们的目的而言，这绝不算浪费时间。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 375,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 376,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "sn",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 377,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 378,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 380,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_ibindoor",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 381,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 382,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_cavewaterdrop",
+                "volume": 0.0,
+                "loop": "true",
+                "channel": "ca"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 1.0,
+                "channel": "ca",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 384,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 386,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 387,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_highheelfts",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 388,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#3$1",
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "差不多就到这里吧。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 391,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#1$1"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "name",
+            "attributes": {
+                "content": "......这里是？",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#1$1"
+        },
+        {
+            "id": 393,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#3$1"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "name",
+            "attributes": {
+                "content": "只是一座废弃的居民楼。据我所知，卫兵并不会顾及这片几乎无人居住的老城区。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 395,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 396,
+            "prop": "name",
+            "attributes": {
+                "content": "空置的城市地块听上去有些奢侈，可情况就是这样。不论《圣骏堡时报》如何遮掩，远北城市的人口近些年一直在减少是不争的事实。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 397,
+            "prop": "name",
+            "attributes": {
+                "content": "等再过段时间，这里彻底变成无人区，这座建筑所在的地块就会被卸除，报废在荒地上，和所有的废弃地块一样。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 398,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 399,
+            "prop": "name",
+            "attributes": {
+                "content": "阿洛伊泽小姐，我们需要尽快明确您找上我们的目的。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 400,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$3"
+            }
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "（警惕地注视）",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$3"
+        },
+        {
+            "id": 402,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#4$1"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "呃......可以请各位放轻松一点吗？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 404,
+            "prop": "name",
+            "attributes": {
+                "content": "现在是你们人多势众，我哪里有威胁到各位的本事呢？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 405,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#10$1"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "还有，藏在门外的那位斐迪亚女士，可以请您告诉您的同伴，我没有撒谎吗？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#10$1"
+        },
+        {
+            "id": 407,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "name",
+            "attributes": {
+                "content": "队长说，这里没有其他人，区域内安全。",
+                "name": "极境"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 410,
+            "prop": "Decision",
+            "attributes": {
+                "options": "选在这里谈话，看上去你也有掩人耳目的理由。;我本来期待“近卫军”至少会请我们去吃顿晚饭。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line411",
+                "option2": "line417"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line423"
+        },
+        {
+            "id": 412,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 413,
+            "prop": "name",
+            "attributes": {
+                "content": "这原来是我一位朋友的房子，她想要在远北完成一部乌萨斯民族史诗的理想被这边寒冷的天气打败了——她现在在圣骏堡过得很好。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": "不过感谢她，这里至少能挡住外面的风雪，或者耳目。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "且不论我自己，相信各位还是想要避免一些麻烦的。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 416,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 417,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line423"
+        },
+        {
+            "id": 418,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#12$1"
+            }
+        },
+        {
+            "id": 419,
+            "prop": "name",
+            "attributes": {
+                "content": "您很幽默，这位藏在兜帽下面的客人。懂得幽默的人一般都很聪明。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#12$1"
+        },
+        {
+            "id": 420,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "name",
+            "attributes": {
+                "content": "等我们一会谈完重要的事，如果各位还有兴致的话，招待你们一顿晚餐还是没什么问题的。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 422,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 423,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 424,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "name",
+            "attributes": {
+                "content": "总之，我刚才已经做过自我介绍了，现在我是否有幸得知各位的名字呢？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 426,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#1$1"
+            }
+        },
+        {
+            "id": 427,
+            "prop": "name",
+            "attributes": {
+                "content": "我们是来自维多利亚的......",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#1$1"
+        },
+        {
+            "id": 428,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 429,
+            "prop": "name",
+            "attributes": {
+                "content": "你们还是想说，你们要去工业区找的、与你们对接的城际贸易商，是一位孀居的夫人，化名是奥莉加？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 430,
+            "prop": "name",
+            "attributes": {
+                "content": "很稳妥的说辞，完全可以骗过绝大部分城市的入城管理部门。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 431,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#12$1"
+            }
+        },
+        {
+            "id": 432,
+            "prop": "name",
+            "attributes": {
+                "content": "可是不管怎么说，在移动城市内使用军用级加密通讯的“商队”可不多见。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#12$1"
+        },
+        {
+            "id": 433,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 434,
+            "prop": "name",
+            "attributes": {
+                "content": "是您拦截了我们的通讯？",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 435,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#13$1"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "name",
+            "attributes": {
+                "content": "不，不......那有点太粗鲁了。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#13$1"
+        },
+        {
+            "id": 437,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "name",
+            "attributes": {
+                "content": "或许是这边的极光吧，也可能是最近才升级的防御设备——你们的确是运气不佳，赶上了布列斯克情况最为特殊的时候。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 439,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 441,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "name",
+            "attributes": {
+                "content": "我已经坦诚相告了，如果各位还有所隐瞒的话，可就不便于我们进一步交流了。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 443,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 444,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "Decision",
+            "attributes": {
+                "options": "我们来自一家医药公司。;罗德岛。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line446",
+                "option2": "line446"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 447,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "看，坦诚相待也没那么困难，对吧？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 449,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#3$1"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "name",
+            "attributes": {
+                "content": "罗德岛......我曾经在来自各个地方的感染者相关的传闻中多次听到过这个名字。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 451,
+            "prop": "name",
+            "attributes": {
+                "content": "只看根据这些故事东拼西凑出的形象，你们堪称传奇。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 452,
+            "prop": "name",
+            "attributes": {
+                "content": "先不论真假，我最近一次见到这个名字，是在你们发表的那篇研究感染者异变的论文里。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 453,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 454,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "Decision",
+            "attributes": {
+                "options": "这个领域看上去离你很远。;没想到你会关心矿石病的学术研究。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line456",
+                "option2": "line456"
+            }
+        },
+        {
+            "id": 456,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 457,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#2$1"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "name",
+            "attributes": {
+                "content": "很惭愧，但并不是每一个圣骏堡的新贵族都不学无术。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#2$1"
+        },
+        {
+            "id": 459,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 460,
+            "prop": "name",
+            "attributes": {
+                "content": "无论具体政策如何，在任何一个国家感染者都不是一个可以忽视的问题——稍有常识的人都该认识到你们取得了多么重要的学术成果。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 461,
+            "prop": "name",
+            "attributes": {
+                "content": "我唯一好奇的是，有了这样突破性的发现，却没有相应的商业行为，罗德岛看上去有些低调过头了。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 462,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 463,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "Decision",
+            "attributes": {
+                "options": "这就是你找上我们的原因？;这并不能解释你为何能得知我们的行踪。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line465",
+                "option2": "line465"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 466,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "name",
+            "attributes": {
+                "content": "哦，这并不难理解。我想这个时候想要进入远北中心矿区的人都有一样的理由。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 468,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#1$1"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "name",
+            "attributes": {
+                "content": "您的意思是说，您也要进入远北中心矿区？",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#1$1"
+        },
+        {
+            "id": 470,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#11$1"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "name",
+            "attributes": {
+                "content": "怎么，你们不是吗？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#11$1"
+        },
+        {
+            "id": 472,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#7$1"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "name",
+            "attributes": {
+                "content": "我们......的确需要。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#7$1"
+        },
+        {
+            "id": 474,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "name",
+            "attributes": {
+                "content": "那就对了。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 476,
+            "prop": "name",
+            "attributes": {
+                "content": "你们没有进入矿区的途径，而我恰好需要一些有专业知识的矿石病专家——恰到好处的合作关系。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 477,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 478,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "Decision",
+            "attributes": {
+                "options": "所以，你想要我们和你一起进入矿区？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line480"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 481,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#12$1"
+            }
+        },
+        {
+            "id": 482,
+            "prop": "name",
+            "attributes": {
+                "content": "很显然啊。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#12$1"
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "毕竟从圣骏堡来的家伙想介入远北事务，这里的管理者不会乐见其成。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#12$1"
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "现在，商队这个身份没办法帮你们，也没办法帮我，让我们去掉中间环节，原地握手合作，这也不失为一种解法。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#12$1"
+        },
+        {
+            "id": 485,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 486,
+            "prop": "name",
+            "attributes": {
+                "content": "可是，您想进入矿区做什么？又需要我们做什么？",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 487,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#10$1"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "呃......我说得还不够清楚吗？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#10$1"
+        },
+        {
+            "id": 489,
+            "prop": "name",
+            "attributes": {
+                "content": "我希望罗德岛可以陪同我前往矿区，协同调查感染者事务。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#10$1"
+        },
+        {
+            "id": 490,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "name",
+            "attributes": {
+                "content": "感染者事务？具体是指......",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 492,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#4$1"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "name",
+            "attributes": {
+                "content": "哦......这位天真的卡特斯小姐，我的耐心算得上充足但到底有限——这时候我们就没必要装傻了吧。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 494,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "name",
+            "attributes": {
+                "content": "不，我是认真向您求问。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 496,
+            "prop": "name",
+            "attributes": {
+                "content": "我们有一支流动医疗队在远北中心矿区失联了，我们需要找到他们。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 497,
+            "prop": "name",
+            "attributes": {
+                "content": "我们的确不知道您说的“感染者事务”到底是什么，希望您能说得更明白些。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 498,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#4$1"
+            }
+        },
+        {
+            "id": 499,
+            "prop": "multiline",
+            "attributes": {
+                "name": "阿洛伊泽",
+                "content": "你们想要进入矿区只是为了——"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#11$1"
+            }
+        },
+        {
+            "id": 501,
+            "prop": "multiline",
+            "attributes": {
+                "name": "阿洛伊泽",
+                "end": "true",
+                "content": "等等，所以你们真的不知道？",
+                "joined": "你们想要进入矿区只是为了——等等，所以你们真的不知道？"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "name",
+            "attributes": {
+                "content": "不应该啊。据我所知，你们这几年建在乌萨斯各地的医疗点数量激增——",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#11$1"
+        },
+        {
+            "id": 503,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 504,
+            "prop": "name",
+            "attributes": {
+                "content": "青年脸上，单纯的疑惑取代了怀疑，最后变成了恍然大悟。"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "name",
+            "attributes": {
+                "content": "她很快理解了自己预设中的错误。"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#11$1"
+            }
+        },
+        {
+            "id": 507,
+            "prop": "name",
+            "attributes": {
+                "content": "——不。你刚才说，“流动医疗队”......",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#11$1"
+        },
+        {
+            "id": 508,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#3$1"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "name",
+            "attributes": {
+                "content": "没有固定的办事处，也就没有固定的人脉和情报往来。我不知道罗德岛出了什么问题，但看上去你们现在的情报能力相当受限。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 510,
+            "prop": "name",
+            "attributes": {
+                "content": "正因为是在乌萨斯，你们才没那么大能耐；也正因为不知道，所以才会一无所知地四处碰壁......是不是？",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 511,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 512,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#2$1"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "name",
+            "attributes": {
+                "content": "该死，我太心急了。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#2$1"
+        },
+        {
+            "id": 514,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 515,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 516,
+            "prop": "Decision",
+            "attributes": {
+                "options": "我们不清楚你说的乌萨斯感染者事务。;这与布列斯克当下的异常状态有关吗？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line517",
+                "option2": "line517"
+            }
+        },
+        {
+            "id": 517,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 518,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#10$1"
+            }
+        },
+        {
+            "id": 519,
+            "prop": "name",
+            "attributes": {
+                "content": "......算了，你们就当我没说过。刚才的人情算送你们了，不用谢啊。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#10$1"
+        },
+        {
+            "id": 520,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 521,
+            "prop": "name",
+            "attributes": {
+                "content": "等等！",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "您既然已经找上了我们，那说明在这件事上我们至少有合作的可能。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 523,
+            "prop": "name",
+            "attributes": {
+                "content": "能不能至少请您告诉我们，矿区究竟发生了什么事......",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 524,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#10$1"
+            }
+        },
+        {
+            "id": 525,
+            "prop": "name",
+            "attributes": {
+                "content": "我真是......唉！我真该过过脑子再做选择。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#10$1"
+        },
+        {
+            "id": 526,
+            "prop": "name",
+            "attributes": {
+                "content": "我还以为你们是听到了些风声才会挤破脑袋拼了命也要进矿区。你们应该懂的，那种一手信息，在黑市很值钱。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#10$1"
+        },
+        {
+            "id": 527,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 528,
+            "prop": "name",
+            "attributes": {
+                "content": "我们不是那种组织......但现在这不重要。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 529,
+            "prop": "name",
+            "attributes": {
+                "content": "与感染者有关的事，和我们有着天然的联系，这也是您最后选择找上我们的原因之一，不是吗？",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 530,
+            "prop": "name",
+            "attributes": {
+                "content": "请您告诉我们吧。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 531,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#2$1"
+            }
+        },
+        {
+            "id": 532,
+            "prop": "name",
+            "attributes": {
+                "content": "......算了！反正现在我已经来了，总得有人做点什么，哪怕是为了一群感染者。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#2$1"
+        },
+        {
+            "id": 533,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 534,
+            "prop": "name",
+            "attributes": {
+                "content": "感染者也是乌萨斯人。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 535,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#1$1"
+            }
+        },
+        {
+            "id": 536,
+            "prop": "name",
+            "attributes": {
+                "content": "你说得对，卡特斯小姐，感染者也是乌萨斯人，更不用说那些皇帝陛下亲口允诺了“要生活而不是活着”的矿工。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "这些矿工才是乌萨斯这台战争机器能持续运作的基础，而那些腐化的旧贵族和受其影响而朽坏了的人们，却还没能意识到。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#1$1"
+        },
+        {
+            "id": 538,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#4$1"
+            }
+        },
+        {
+            "id": 539,
+            "prop": "name",
+            "attributes": {
+                "content": "可他们必须知道了，乌萨斯需要改变。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 540,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 541,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#2$1"
+            }
+        },
+        {
+            "id": 542,
+            "prop": "name",
+            "attributes": {
+                "content": "天哪，我都说了什么......还好那些嘴利得能喷毒的同僚都不在这儿，否则我该被笑话死了。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#2$1"
+        },
+        {
+            "id": 543,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 544,
+            "prop": "name",
+            "attributes": {
+                "content": "您不该为此感到羞耻。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 545,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#3$1"
+            }
+        },
+        {
+            "id": 546,
+            "prop": "name",
+            "attributes": {
+                "content": "说出去的话就像泼出去的水，在这样的天气里会立刻被冻上的。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 547,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#1$1"
+            }
+        },
+        {
+            "id": 548,
+            "prop": "name",
+            "attributes": {
+                "content": "所以，这件感染者事务究竟是什么呢？听上去它似乎和感染者矿工有关？",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#1$1"
+        },
+        {
+            "id": 549,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#6$1"
+            }
+        },
+        {
+            "id": 550,
+            "prop": "name",
+            "attributes": {
+                "content": "听着，如果你们敢把这件事宣扬出去......",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#6$1"
+        },
+        {
+            "id": 551,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 552,
+            "prop": "name",
+            "attributes": {
+                "content": "我向您保证，无论您接下来要告诉我们的是什么，我们都不会泄密。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 553,
+            "prop": "name",
+            "attributes": {
+                "content": "与乌萨斯为敌没有任何益处，这点我们非常清楚。",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 554,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#3$1"
+            }
+        },
+        {
+            "id": 555,
+            "prop": "name",
+            "attributes": {
+                "content": "让我稍微思考一下，到底该从何说起......",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#3$1"
+        },
+        {
+            "id": 556,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#4$1"
+            }
+        },
+        {
+            "id": 557,
+            "prop": "name",
+            "attributes": {
+                "content": "你们应该知道，布列斯克与远北中心矿区毗邻，也是乌萨斯北方最大的移动城市。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 558,
+            "prop": "name",
+            "attributes": {
+                "content": "因此，布列斯克负责分布在远北各地总共三万平方公里的矿区还有二十万感染者的管理工作。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 559,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$1"
+            }
+        },
+        {
+            "id": 560,
+            "prop": "name",
+            "attributes": {
+                "content": "......",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$1"
+        },
+        {
+            "id": 561,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 562,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 563,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 564,
+            "prop": "Decision",
+            "attributes": {
+                "options": "对这里的基本情况我们还是清楚的。;这样的管理体系出了什么样的问题？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line565",
+                "option2": "line565"
+            }
+        },
+        {
+            "id": 565,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 566,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#4$1"
+            }
+        },
+        {
+            "id": 567,
+            "prop": "name",
+            "attributes": {
+                "content": "请不要这样盯着我......抱歉，我知道这样的说法会引起你们的反感。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 568,
+            "prop": "name",
+            "attributes": {
+                "content": "可是现在的皇帝陛下并不希望将这些感染者矿工当作廉价的劳力，相反，他下达的政策给予了布列斯克相当多的关照。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 569,
+            "prop": "name",
+            "attributes": {
+                "content": "近几年来，布列斯克一直处于相对平稳的状态，直到三个月前......",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 570,
+            "prop": "name",
+            "attributes": {
+                "content": "是了，这就要说到贵公司的专业领域，以及那篇论文了。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#4$1"
+        },
+        {
+            "id": 571,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#5$1"
+            }
+        },
+        {
+            "id": 572,
+            "prop": "name",
+            "attributes": {
+                "content": "三个月前，在远北中心矿区发现了大量“变异感染者”，他们的症状与论文中描述的非常相似。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#5$1"
+        },
+        {
+            "id": 573,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#5$1"
+            }
+        },
+        {
+            "id": 574,
+            "prop": "name",
+            "attributes": {
+                "content": "（三个月前？那不是......）",
+                "name": "阿米娅"
+            },
+            "figure_art": "avg_1037_amiya3_1#5$1"
+        },
+        {
+            "id": 575,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 576,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 577,
+            "prop": "Decision",
+            "attributes": {
+                "options": "你是说......;这就是布列斯克处于戒严状态的原因？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line578",
+                "option2": "line578"
+            }
+        },
+        {
+            "id": 578,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 579,
+            "prop": "Decision",
+            "attributes": {
+                "options": "中心矿区出现了多少“发生变异”的感染者？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line580"
+            }
+        },
+        {
+            "id": 580,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 581,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1966_1#5$1"
+            }
+        },
+        {
+            "id": 582,
+            "prop": "name",
+            "attributes": {
+                "content": "这就是问题所在......",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#5$1"
+        },
+        {
+            "id": 583,
+            "prop": "name",
+            "attributes": {
+                "content": "现在没有人知道，在中心矿区，还剩下多少“正常的”感染者。",
+                "name": "阿洛伊泽"
+            },
+            "figure_art": "avg_npc_1966_1#5$1"
+        },
+        {
+            "id": 584,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 585,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "ca",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 586,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 587,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 588,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 589,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 590,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 591,
+            "prop": "Image",
+            "attributes": {}
+        }
+    ],
+    "OPTIONTRACE": true
+}

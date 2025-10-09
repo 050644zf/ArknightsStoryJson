@@ -1,0 +1,4297 @@
+{
+    "lang": "ja_JP",
+    "eventid": "main_15",
+    "eventName": "解離結合",
+    "entryType": "MAINLINE",
+    "storyCode": "15-18",
+    "avgTag": "戦闘前",
+    "storyName": "疑うことなく、離れることなく",
+    "storyInfo": "アーミヤは黒い王冠の中から得た知識でなんとかプリースティスの行動を遅らせる。皆とドクターとの連絡が回復し、目下の急務はプリースティスとPRTSがもたらした危機を解決することだ。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 2,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 4,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 6,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_drkcludsthdr",
+                "volume": 0.0,
+                "loop": "true",
+                "channel": "d"
+            }
+        },
+        {
+            "id": 7,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 1.0,
+                "channel": "d",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Background",
+            "attributes": {
+                "image": "60_g13_rhodesdeck_origin",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "PlayMusic",
+            "attributes": {
+                "key": "$m_bat_act37d0d0_01_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 10,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 12,
+            "prop": "name",
+            "attributes": {
+                "content": "たった今起きた出来事を理解する間もなく、ケルシーはあなたの視界から完全に消え去った……"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "甲板には、ただ彼女の外套だけがぽつんと残されていた。"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$Mon3tr_n"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "name",
+            "attributes": {
+                "content": "（苦しげな雄たけび）",
+                "name": "Mon3tr"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシーの消失に続き、Mon3trの巨大な体も収縮を始め、黒い結晶状の「繭」となった。"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 19,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "AMa-10も、私にとって自慢の作品だったわ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 21,
+            "prop": "name",
+            "attributes": {
+                "content": "これは決して私の期待していた結果ではないの。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 22,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 23,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "Decision",
+            "attributes": {
+                "options": "彼女には名前がある。;彼女は、「ケルシー」だ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line25",
+                "option2": "line25"
+            }
+        },
+        {
+            "id": 25,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 26,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#3$1"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "name",
+            "attributes": {
+                "content": "すでにコードネームがあるでしょう。さらに名前を付けることに意味があるとは思えないわ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#3$1"
+        },
+        {
+            "id": 28,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 29,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 30,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5,
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "プリースティスが甲板に残された繭状の物体に近付く。"
+            }
+        },
+        {
+            "id": 33,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$3"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "name",
+            "attributes": {
+                "content": "――ドクター下がってください！　Mon3trは私が守ります！",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$3"
+        },
+        {
+            "id": 35,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 36,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 37,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_spelldfns_1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 38,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.4,
+                "r": 255.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 40,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_spellattack_2",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 41,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 44,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 45,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_spiritwhoosh"
+            }
+        },
+        {
+            "id": 46,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$p_aoe_nmag_h"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.3
+            }
+        },
+        {
+            "id": 48,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$p_imp_amiyamag_h",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 49,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_thunders_amb",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 50,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$b_char_defboost",
+                "volume": 0.5,
+                "Delay": 0.4
+            }
+        },
+        {
+            "id": 51,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_thunders_amb",
+                "volume": 0.2,
+                "Delay": 0.7
+            }
+        },
+        {
+            "id": 52,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$flashback",
+                "volume": 0.2,
+                "Delay": 0.7
+            }
+        },
+        {
+            "id": 53,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_attack_heavy",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 54,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.5,
+                "xstrength": 10.0,
+                "ystrength": 12.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.4,
+                "b": 0.4,
+                "afrom": 0.0,
+                "rfrom": 0.0,
+                "gfrom": 0.0,
+                "bfrom": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 56,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.4,
+                "b": 0.4,
+                "afrom": 0.0,
+                "rfrom": 0.0,
+                "gfrom": 0.0,
+                "bfrom": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.1,
+                "r": 1.0,
+                "g": 0.4,
+                "b": 0.1,
+                "afrom": 1.0,
+                "rfrom": 1.0,
+                "gfrom": 0.4,
+                "bfrom": 0.4,
+                "fadetime": 0.2,
+                "block": "true"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.1,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "afrom": 0.8,
+                "rfrom": 1.0,
+                "gfrom": 1.0,
+                "bfrom": 1.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 59,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.1,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "afrom": 0.0,
+                "rfrom": 0.0,
+                "gfrom": 0.0,
+                "bfrom": 0.0,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.1,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 61,
+            "prop": "name",
+            "attributes": {
+                "content": "糸がアーミヤのアーツユニットから散り、プリースティスの歩みを阻もうとする……"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし地面の源石がおかしな角度から生えてきて、アーミヤのあらゆるアーツを吸収する。"
+            }
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたにはアーミヤが非常に苦しんでいるのが見て取れた。"
+            }
+        },
+        {
+            "id": 64,
+            "prop": "name",
+            "attributes": {
+                "content": "目の前に二つの存在があった。あまりにも強大で抗う術も見当たらないプリースティスと、そしてケルシーが唯一残したもの――"
+            }
+        },
+        {
+            "id": 65,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 66,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#1$1"
+            }
+        },
+        {
+            "id": 67,
+            "prop": "name",
+            "attributes": {
+                "content": "AMa-10を助けたいの？",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#1$1"
+        },
+        {
+            "id": 68,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 69,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line71"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 72,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#8$1"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "私もあれを直したいわ。あなたと同じようにね。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#8$1"
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "AMa-10は、私たち二人の期待を背負っていたのに加えて、私にとって極めて重要な記録も保存していたから。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#8$1"
+        },
+        {
+            "id": 75,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 76,
+            "prop": "name",
+            "attributes": {
+                "content": "先ほどの衝撃は強く、あなたはまだ回復していない。"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "目の前の脅威に対して、悲しむ余力すら残っていない。"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "プリースティスはこれからどのような行動を取るのだろうか？　そして、あなたはアーミヤを守るためにどうするべきか……"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "プリースティスがあなたの心中を察しているのは明らかだ――"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#6$1"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "ねえDr.{@nickname}、どうして……私を恐れているの？",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#6$1"
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女があなたに近付いてくる。"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 85,
+            "prop": "Decision",
+            "attributes": {
+                "options": "（……何か方法を思いつかないと。）;（思いつけ！）",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line86",
+                "option2": "line86"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 87,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたとアーミヤは足元に広がる源石のせいで身動きが取れない。"
+            }
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "プリ―スティスが近付いてくる。これほどの至近距離から彼女を見るのは初めてだった。"
+            }
+        },
+        {
+            "id": 89,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 90,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 91,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "d",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 92,
+            "prop": "musicvolume",
+            "attributes": {
+                "volume": 0.2,
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 93,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$flashback",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 94,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 97,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_graduate",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_003_kalts_1#1$1"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "amount": 0.8,
+                "keep": "true"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 102,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君は一体何がしたいんだ！？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line103"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 104,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_003_kalts_1#1$1"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "……君を守る。",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "私が約束したように。",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 107,
+            "prop": "name",
+            "attributes": {
+                "content": "私はアーミヤを守る、そして君を守ると約束した。",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "君の命が尽きるまで守り抜くことが私の責務だ、ドクター。",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 109,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、私は君を恨み続ける。私にはロスモンティスを教育する資格はない……ましてや批判するなどもっての外だ。私自身、いずれ耐えきれなくなり君に復讐してしまう可能性を恐れているからだ。",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 110,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 111,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 112,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……君は……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line113"
+            }
+        },
+        {
+            "id": 113,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 114,
+            "prop": "name",
+            "attributes": {
+                "content": "同じような光景、同じような言葉……しかし今とは異なる感情、時代が、あなたの記憶の空白に橋を架けた。"
+            }
+        },
+        {
+            "id": 115,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_003_kalts_1#1$1"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#1$1"
+        },
+        {
+            "id": 117,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_003_kalts_1#6$1"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "name",
+            "attributes": {
+                "content": "何を……思い出した？",
+                "name": "ケルシー"
+            },
+            "figure_art": "avg_003_kalts_1#6$1"
+        },
+        {
+            "id": 119,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 120,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_humanchange",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 121,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.4
+            }
+        },
+        {
+            "id": 122,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 125,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 126,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "amount": 0.8,
+                "keep": "true"
+            }
+        },
+        {
+            "id": 127,
+            "prop": "Image",
+            "attributes": {
+                "image": "avg_8_9",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "name",
+            "attributes": {
+                "content": "「プリースティス」。"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 131,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line132"
+            }
+        },
+        {
+            "id": 132,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 133,
+            "prop": "name",
+            "attributes": {
+                "content": "いいや。今回、あなたがまず思い出したのはケルシーだ。"
+            }
+        },
+        {
+            "id": 134,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 135,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_humanchange",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 136,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.4
+            }
+        },
+        {
+            "id": 137,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 140,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 141,
+            "prop": "Image",
+            "attributes": {
+                "image": "avg_ac8mi_melancholic_kalts",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたが信頼する医者は、まだここにいるような気がする。"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは、ケルシーが残した手がかりを「文明の存続」の中で探索していた時のことを思い出した――"
+            }
+        },
+        {
+            "id": 145,
+            "prop": "name",
+            "attributes": {
+                "content": "全ての鍵を繋げた後に明かされた、ケルシーがあなた宛てに残した言葉を――"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "name",
+            "attributes": {
+                "content": "「私は忘れたことがない。」"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 148,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 150,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 151,
+            "prop": "Background",
+            "attributes": {
+                "image": "60_g1_rhodescorridor_bc",
+                "screenadapt": "coverall",
+                "xScale": 1.2,
+                "yScale": 1.2
+            }
+        },
+        {
+            "id": 152,
+            "prop": "backgroundTween",
+            "attributes": {
+                "xFrom": 100.0,
+                "duration": 20.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "focusout",
+            "attributes": {
+                "type": "bg",
+                "id": "60_g1_rhodescorridor_bc",
+                "from": 0.0,
+                "to": 1.0,
+                "duration": 0.1,
+                "block": "false"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_drkcludsthdr",
+                "volume": 0.0,
+                "loop": "true",
+                "channel": "d"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 0.3,
+                "channel": "d",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 156,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "（小声の未知の言語）君が宙の果てのどの地域からの来訪者かはわからないが、その時にこの文明が眠りについていたなら、自分の代わりに我々の残したビーコンを見に行ってくれ。",
+                "name": "オラクル"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "（小声の未知の言語）それは我々の祝福……そして最後に贈る希望となるかもしれない。",
+                "name": "オラクル"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは今や確信を抱いている――あの人物は、確かに時を超えてあなたのことを見つめていたのだ。"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 161,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 162,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$flashback",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 163,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "focusout",
+            "attributes": {
+                "type": "bg",
+                "id": "60_g13_rhodesdeck_origin",
+                "from": 1.0,
+                "to": 0.0,
+                "duration": 0.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "Background",
+            "attributes": {
+                "image": "60_g13_rhodesdeck_origin",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_drkcludsthdr",
+                "volume": 0.0,
+                "loop": "true",
+                "channel": "d"
+            }
+        },
+        {
+            "id": 168,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 1.0,
+                "channel": "d",
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 169,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "amount": 0.0,
+                "keep": "true"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 172,
+            "prop": "Decision",
+            "attributes": {
+                "options": "（あの公式……）;（あの贈り物……）",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line173",
+                "option2": "line173"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 174,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "d",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 175,
+            "prop": "PlayMusic",
+            "attributes": {
+                "key": "$m_bat_theresa_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 176,
+            "prop": "Decision",
+            "attributes": {
+                "options": "アーミヤ、公式だ！",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line177"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 178,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#5$3"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "公式――！？",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_1037_amiya3_1#5$3"
+        },
+        {
+            "id": 180,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシー先生が、あれは特殊媒体の伝送時におけるメタ情報のロスを減らすものだと言っていました……",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_1037_amiya3_1#5$3"
+        },
+        {
+            "id": 181,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 182,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "Decision",
+            "attributes": {
+                "options": "それを逆転させるんだ。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line184"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 185,
+            "prop": "Decision",
+            "attributes": {
+                "options": "源石の中で起きている情報伝達を阻害するんだ！",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line186"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 187,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$3"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "私は何をすればいいんでか？",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$3"
+        },
+        {
+            "id": 189,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 190,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "Decision",
+            "attributes": {
+                "options": "自分の思考を繋げてくれ！",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line192"
+            }
+        },
+        {
+            "id": 192,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 193,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#3$3"
+            }
+        },
+        {
+            "id": 194,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_magic_1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 195,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 196,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.2,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 198,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "name",
+            "attributes": {
+                "content": "躊躇っている暇などはない。アーミヤはその言葉を聞いた瞬間に行動に出ていた。"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは再びアーミヤと思考を共有した。あなたがかつて行った全ての研究が、再び脳内に浮かび上がる。"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "name",
+            "attributes": {
+                "content": "直感と、すでに得た研究成果を頼りに、あなたは例の公式たちを分解し、変換し、そして逆転させた……"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "name",
+            "attributes": {
+                "content": "その行為が問題を完全に解決するものではないと知っていてなお、今この瞬間、あなたはそれが役に立つと祈るしかなかった――"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシーのために。"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 206,
+            "prop": "Decision",
+            "attributes": {
+                "options": "こちらの頭の中にあるものを覚えるんだ、アーミヤ！",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line207"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 208,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$3"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "わかりました、ドクター！",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$3"
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "Logosさんから教わったように、ドクターの頭の中にあるものを私のアーツの中に編み込んで――",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$3"
+        },
+        {
+            "id": 212,
+            "prop": "name",
+            "attributes": {
+                "content": "それから――",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$3"
+        },
+        {
+            "id": 213,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1037_amiya3_1#6$3"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "name",
+            "attributes": {
+                "content": "止まって！",
+                "name": "アーミヤ"
+            },
+            "figure_art": "avg_1037_amiya3_1#6$3"
+        },
+        {
+            "id": 215,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 216,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 217,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_icecrystlncrse",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 218,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$p_skill_chimera",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 219,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.8,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 221,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.8,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.8,
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.4,
+                "block": "true"
+            }
+        },
+        {
+            "id": 224,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 226,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_phntsmbrek",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 227,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_phntsmglsbrek",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 228,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_erthshkng",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "e"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 4.0,
+                "xstrength": 5.0,
+                "ystrength": 5.0,
+                "vibrato": 90.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "e",
+                "fadetime": 6.0
+            }
+        },
+        {
+            "id": 231,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 233,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 234,
+            "prop": "background",
+            "attributes": {}
+        },
+        {
+            "id": 235,
+            "prop": "Image",
+            "attributes": {
+                "image": "60_i13_1",
+                "screenadapt": "coverall",
+                "xScale": 1.1,
+                "yScale": 1.1,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 236,
+            "prop": "ImageTween",
+            "attributes": {
+                "xScaleFrom": 1.1,
+                "yScaleFrom": 1.1,
+                "xScaleTo": 1.0,
+                "yScaleTo": 1.0,
+                "duration": 20.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_rockfall",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 238,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 239,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "アーミヤのアーツの余波があなたたちを封じ込めようとする源石を弾いた。"
+            }
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "これは……？",
+                "name": "プリースティス"
+            }
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたたちの動きを再び制限すべく迫ってきていた源石がアーツに阻まれる。結晶の無数の面が、アーミヤの姿を映し出した。"
+            }
+        },
+        {
+            "id": 243,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 244,
+            "prop": "Decision",
+            "attributes": {
+                "options": "効いている！？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line245"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 246,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_scrystalroad",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "sc"
+            }
+        },
+        {
+            "id": 247,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 248,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "sc",
+                "fadetime": 6.0
+            }
+        },
+        {
+            "id": 249,
+            "prop": "name",
+            "attributes": {
+                "content": "……できるだけ持ちこたえます――",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが源石が押し寄せてくるスピードが上がっています……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "name",
+            "attributes": {
+                "content": "もっと、頑張ればきっと！　私ならできます！",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたはアーミヤの揺るぎない眼差しを見たが、それでも心には大きな懸念があった。"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは、自分がどのような力を扱っているのかをわかっていないわ。",
+                "name": "プリースティス"
+            }
+        },
+        {
+            "id": 254,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 255,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line256"
+            }
+        },
+        {
+            "id": 256,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 257,
+            "prop": "name",
+            "attributes": {
+                "content": "私のアーツは源石の進攻を抑えるだけではなく、彼女の状態も感知できるようです……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女は想像していたほど無敵の存在ではありません――",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 260,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 263,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_surfacefrozen",
+                "volume": 0.0,
+                "loop": "true",
+                "channel": "sur"
+            }
+        },
+        {
+            "id": 264,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 0.6,
+                "channel": "sur",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 265,
+            "prop": "Image",
+            "attributes": {
+                "image": "60_i13_1",
+                "screenadapt": "coverall",
+                "xScale": 1.6,
+                "yScale": 1.6
+            }
+        },
+        {
+            "id": 266,
+            "prop": "ImageTween",
+            "attributes": {
+                "duration": 8.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.1
+            }
+        },
+        {
+            "id": 268,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_stonegrowing",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 270,
+            "prop": "Image",
+            "attributes": {
+                "image": "60_i13_2",
+                "screenadapt": "coverall",
+                "xScale": 1.6,
+                "yScale": 1.6,
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 271,
+            "prop": "ImageTween",
+            "attributes": {
+                "duration": 6.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 273,
+            "prop": "name",
+            "attributes": {
+                "content": "確かに私は早く目覚めすぎたわ。源石がこの星を同化する速度が私の当初の想定よりも遅かったの。",
+                "name": "プリースティス"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "name",
+            "attributes": {
+                "content": "加えてあの二人のテラ人の無謀な行動のせいで、予想通りに源石を扱うこともできないし……",
+                "name": "プリースティス"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "とはいえ、私たちが開発した技術が軽率に使われたところで、すでに定まった事実を変えられるわけではないけれど。",
+                "name": "プリースティス"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 277,
+            "prop": "Decision",
+            "attributes": {
+                "options": "アーミヤ！",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line278"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 279,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_spellattack_1",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 280,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_crystalmagic_intro",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 281,
+            "prop": "Image",
+            "attributes": {
+                "image": "60_i13_2",
+                "screenadapt": "coverall",
+                "xScale": 1.6,
+                "yScale": 1.6,
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 282,
+            "prop": "ImageTween",
+            "attributes": {
+                "xTo": 100.0,
+                "duration": 0.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 284,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 285,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_crystalmagic_loop",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "a"
+            }
+        },
+        {
+            "id": 289,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 1.0,
+                "channel": "sur",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 290,
+            "prop": "Image",
+            "attributes": {
+                "image": "60_i13_2",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 291,
+            "prop": "ImageTween",
+            "attributes": {
+                "xScaleFrom": 1.2,
+                "yScaleFrom": 1.2,
+                "xScaleTo": 1.0,
+                "yScaleTo": 1.0,
+                "duration": 30.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 292,
+            "prop": "cgitem",
+            "attributes": {
+                "image": "cgitem_60_i13_2",
+                "style": "cg",
+                "sfrom": 1.2,
+                "sto": 1.0,
+                "sduration": 30.0,
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 293,
+            "prop": "cgitem",
+            "attributes": {
+                "image": "cgitem_60_i13_1",
+                "style": "cg",
+                "sfrom": 1.0,
+                "sto": 1.5,
+                "sduration": 30.0,
+                "layer": 2.0
+            }
+        },
+        {
+            "id": 294,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.5,
+                "xstrength": 5.0,
+                "ystrength": 5.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_phntsmbrek",
+                "volume": 1.0,
+                "channel": "1"
+            }
+        },
+        {
+            "id": 296,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_phntsmglsbrek",
+                "volume": 1.0,
+                "channel": "2"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_land_impact",
+                "volume": 1.0,
+                "channel": "3"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "name",
+            "attributes": {
+                "content": "ピンク色の糸がアーミヤのアーツユニットから噴き出し、源石に封じられた空間の中で舞う。"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたには、アーミヤが今まさに大きな圧力に耐えていることが手に取るように理解できる。"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "プリースティスの姿も源石に完全に遮られた……"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "name",
+            "attributes": {
+                "content": "源石の欠片一つ一つに、そして源石結晶の面一つ一つに、はっきりとプリースティスの目が映っている。"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "name",
+            "attributes": {
+                "content": "まるで……"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 305,
+            "prop": "Decision",
+            "attributes": {
+                "options": "彼女が……そこかしこに存在しているかのようだ。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line306"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、新しいアーツをより効率的に使う方法をテレジアさんが教えてくれています！",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "name",
+            "attributes": {
+                "content": "一時的に彼女の源石に対する支配を弱めることができていると思います。もうしばらくは足止めできるはずです――",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 310,
+            "prop": "name",
+            "attributes": {
+                "content": "アーミヤのアーツが出力全開で解き放たれた瞬間、あなたを奮い立たせる声が脳内で響いた。"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 0.2,
+                "channel": "a",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 312,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 0.2,
+                "channel": "sur",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、アーミヤ、我々はすでにAbyssに入っている。今、我々に対する源石の干渉が瞬きにも満たぬ間だけ弱まった。",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 314,
+            "prop": "name",
+            "attributes": {
+                "content": "……今ので……",
+                "name": "アーミヤ"
+            }
+        },
+        {
+            "id": 315,
+            "prop": "name",
+            "attributes": {
+                "content": "Raidianが我々の間の接続を迅速に再確立したが、油断ならない状況であり、今は辛うじてアーツでRaidianをサポートしている。",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 316,
+            "prop": "name",
+            "attributes": {
+                "content": "それと、彼女がケルシー医師の生体反応を検知できないらしい。",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 317,
+            "prop": "name",
+            "attributes": {
+                "content": "今どこにいる？　そちらはどういった状況だ？",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 319,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ロドスの甲板だ！",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line320"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 321,
+            "prop": "Decision",
+            "attributes": {
+                "options": "プリースティスに遭遇した！",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line322"
+            }
+        },
+        {
+            "id": 322,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 323,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ワルファリンに繋いでくれ。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line324"
+            }
+        },
+        {
+            "id": 324,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 325,
+            "prop": "Decision",
+            "attributes": {
+                "options": "艦内の全員を直ちに避難させるんだ。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line326"
+            }
+        },
+        {
+            "id": 326,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 327,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "sur",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 328,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "a",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 329,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 330,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 332,
+            "prop": "hidecgitem",
+            "attributes": {
+                "image": "cgitem_60_i13_2"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "hidecgitem",
+            "attributes": {
+                "image": "cgitem_60_i13_1"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 335,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_infirmary",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.1
+            }
+        },
+        {
+            "id": 337,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_171_bldsk_1#1$1"
+            }
+        },
+        {
+            "id": 338,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクターの話は聞こえたな。",
+                "name": "ワルファリン"
+            },
+            "figure_art": "avg_171_bldsk_1#1$1"
+        },
+        {
+            "id": 340,
+            "prop": "name",
+            "attributes": {
+                "content": "恐れるでない、Lancet-2がそなたらのデータ測定を支援する。",
+                "name": "ワルファリン"
+            },
+            "figure_art": "avg_171_bldsk_1#1$1"
+        },
+        {
+            "id": 341,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_285_medic2_1"
+            }
+        },
+        {
+            "id": 342,
+            "prop": "name",
+            "attributes": {
+                "content": "かしこまりました、ワルファリン先生！　ご期待に沿えるよう努めます！",
+                "name": "Lancet-2"
+            },
+            "figure_art": "char_285_medic2_1"
+        },
+        {
+            "id": 343,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_171_bldsk_1#5$1"
+            }
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "忘れるでないぞ。艦外に退避した後は、ケルシーの当初の計画に従い周囲に新たな隔離帯を設けるのだ！　決してよく分からぬものが外に漏れ出すことのないようにな！",
+                "name": "ワルファリン"
+            },
+            "figure_art": "avg_171_bldsk_1#5$1"
+        },
+        {
+            "id": 345,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "char_285_medic2_1"
+            }
+        },
+        {
+            "id": 346,
+            "prop": "name",
+            "attributes": {
+                "content": "ワルファリン先生は一緒に行かれないのですか？",
+                "name": "Lancet-2"
+            },
+            "figure_art": "char_285_medic2_1"
+        },
+        {
+            "id": 347,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_171_bldsk_1#1$1"
+            }
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "妾の患者はまだここにおる。妾自ら彼らを率いて撤退する。",
+                "name": "ワルファリン"
+            },
+            "figure_art": "avg_171_bldsk_1#1$1"
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "こちらの心配はいらぬ。",
+                "name": "ワルファリン"
+            },
+            "figure_art": "avg_171_bldsk_1#1$1"
+        },
+        {
+            "id": 350,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_171_bldsk_1#10$1"
+            }
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "（ケルシー、なぜそなたの消息がないのだ……）",
+                "name": "ワルファリン"
+            },
+            "figure_art": "avg_171_bldsk_1#10$1"
+        },
+        {
+            "id": 352,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 353,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "style": "slider",
+                "inverse": "true",
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 356,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_rhodesengineeringroom",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 358,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "style": "slider",
+                "inverse": "true",
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_transmissionget",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 360,
+            "prop": "Decision",
+            "attributes": {
+                "options": "――ジジ――本艦放棄の用意を。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line361"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 362,
+            "prop": "Decision",
+            "attributes": {
+                "options": "全てのデータをバックアップし――ジジ――",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line363"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 364,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1723_1#6$1"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "name",
+            "attributes": {
+                "content": "もうやってるって。あとほんのちょっと時間が必要なだけ！",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_1723_1#6$1"
+        },
+        {
+            "id": 366,
+            "prop": "name",
+            "attributes": {
+                "content": "それと、もういっこ大事なことだけど、PRTSを停止させたら必ずコアデータをダウンロードして――",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_1723_1#6$1"
+        },
+        {
+            "id": 367,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシーが事前にPRTSにバックドアを設置してるから。",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_1723_1#6$1"
+        },
+        {
+            "id": 368,
+            "prop": "name",
+            "attributes": {
+                "content": "それが本艦を脅かすものを完全に断ち切る鍵になるはず。",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_1723_1#6$1"
+        },
+        {
+            "id": 369,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "name",
+            "attributes": {
+                "content": "その件はMechanistが承知した。",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "name",
+            "attributes": {
+                "content": "我々は目下Abyssにて行動している。",
+                "name": "Mantra"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1723_1#6$1"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "name",
+            "attributes": {
+                "content": "頼んだよ！",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_1723_1#6$1"
+        },
+        {
+            "id": 374,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1723_1#11$1"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、ケルシーは？",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_1723_1#11$1"
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "声が聞こえないけど、怪我でもしたの？",
+                "name": "クロージャ"
+            },
+            "figure_art": "avg_npc_1723_1#11$1"
+        },
+        {
+            "id": 377,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 378,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……;彼女は皆のために全力で時間を稼いでくれている。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line380",
+                "option2": "line380"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 381,
+            "prop": "Decision",
+            "attributes": {
+                "options": "自分とアーミヤも最後まで持ちこたえるつもりだ。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line382"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 383,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ロドスは……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line384"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 385,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君たちに任せた。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line386"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 387,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$transmission",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 388,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 389,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 392,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 393,
+            "prop": "Background",
+            "attributes": {
+                "image": "60_g15_rhodesabyss_off",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_energywell",
+                "volume": 0.0,
+                "loop": "true",
+                "channel": "en"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "SoundVolume",
+            "attributes": {
+                "volume": 0.8,
+                "channel": "en",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 396,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 397,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.5,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_footsteps_flock",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "f"
+            }
+        },
+        {
+            "id": 399,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "f",
+                "fadetime": 4.0
+            }
+        },
+        {
+            "id": 400,
+            "prop": "animtext",
+            "attributes": {
+                "content": "<p=1>Abyss内</><p=2>同時刻</>",
+                "id": "at1",
+                "name": "group_location_stamp",
+                "style": "avg_both",
+                "pos": "-400,-200",
+                "block": "false",
+                "p": 2.0
+            }
+        },
+        {
+            "id": 401,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 402,
+            "prop": "animtextclean",
+            "attributes": {}
+        },
+        {
+            "id": 403,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 404,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#3$1"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクターとの通信はすでに回復したよ。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#3$1"
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "当初の計画通り行動を続けよう。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#3$1"
+        },
+        {
+            "id": 407,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_391_rosmon_1#1$2"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "name",
+            "attributes": {
+                "content": "ほかに敵は感知できないよ。",
+                "name": "ロスモンティス"
+            },
+            "figure_art": "avg_391_rosmon_1#1$2"
+        },
+        {
+            "id": 409,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#2$1"
+            }
+        },
+        {
+            "id": 410,
+            "prop": "name",
+            "attributes": {
+                "content": "こちらもPRTSのコアが新たにデータ伝送を行った形跡は捉えていない。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#2$1"
+        },
+        {
+            "id": 411,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4133_logos_1#7$1"
+            }
+        },
+        {
+            "id": 412,
+            "prop": "name",
+            "attributes": {
+                "content": "静かすぎる。",
+                "name": "Logos"
+            },
+            "figure_art": "avg_4133_logos_1#7$1"
+        },
+        {
+            "id": 413,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4132_ascln_1#1$1"
+            }
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": "Raidian、コアの位置を共有してくれ。",
+                "name": "アスカロン"
+            },
+            "figure_art": "avg_4132_ascln_1#1$1"
+        },
+        {
+            "id": 415,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 416,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 417,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$transmission",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 418,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 419,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1730_1#3$1"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "name",
+            "attributes": {
+                "content": "共有してあるよ。",
+                "name": "Raidian"
+            },
+            "figure_art": "avg_npc_1730_1#3$1"
+        },
+        {
+            "id": 421,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4132_ascln_1#1$1"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "name",
+            "attributes": {
+                "content": "このままコアの位置へと進もう。稼働の解除を試みる。",
+                "name": "アスカロン"
+            },
+            "figure_art": "avg_4132_ascln_1#1$1"
+        },
+        {
+            "id": 423,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_017_huang_1#11$2"
+            }
+        },
+        {
+            "id": 424,
+            "prop": "name",
+            "attributes": {
+                "content": "私が前を歩くよ！　PRTSはきっと新たな敵を使って私たちを阻むはず。",
+                "name": "ブレイズ"
+            },
+            "figure_art": "avg_017_huang_1#11$2"
+        },
+        {
+            "id": 425,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_521_1#1$1"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "name",
+            "attributes": {
+                "content": "コアの解析作業は私に任せてくれ。",
+                "name": "Mechanist"
+            },
+            "figure_art": "avg_npc_521_1#1$1"
+        },
+        {
+            "id": 427,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4133_logos_1#3$1"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "name",
+            "attributes": {
+                "content": "「極光」。",
+                "name": "Logos"
+            },
+            "figure_art": "avg_4133_logos_1#3$1"
+        },
+        {
+            "id": 429,
+            "prop": "name",
+            "attributes": {
+                "content": "微かな光が進む先を照らさん――",
+                "name": "Logos"
+            },
+            "figure_art": "avg_4133_logos_1#3$1"
+        },
+        {
+            "id": 430,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 431,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_magic_2",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 432,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "background",
+            "attributes": {}
+        },
+        {
+            "id": 434,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 435,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 436,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.1,
+                "block": "true"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "name",
+            "attributes": {
+                "content": "――？",
+                "name": "Logos"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "name",
+            "attributes": {
+                "content": "どうした、Logos？",
+                "name": "Mechanist"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "name",
+            "attributes": {
+                "content": "あれは我の光ではない……",
+                "name": "Logos"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 441,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$lab_intro",
+                "key": "$lab_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 442,
+            "prop": "cgitem",
+            "attributes": {
+                "image": "cgitem_60_i16",
+                "style": "cg",
+                "sfrom": 1.0,
+                "sto": 1.5,
+                "sduration": 0.01,
+                "pfrom": "0,0",
+                "pto": "-55,-300",
+                "pduration": 0.01,
+                "rduration": 0.1,
+                "afrom": 0.0,
+                "ato": 1.0,
+                "aduration": 0.5,
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 443,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 444,
+            "prop": "name",
+            "attributes": {
+                "content": "暗闇の中、高い位置に懸かる菱形の光の輪がわずかに揺れ動いている。"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "name",
+            "attributes": {
+                "content": "まるで冷ややかな目が、この場にいる全員を見下ろしているかのようだ。"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "name",
+            "attributes": {
+                "content": "警戒しろ……",
+                "name": "アスカロン"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "……ケルシー先生が言ってた「プリースティス」なの？",
+                "name": "ブレイズ"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "name",
+            "attributes": {
+                "content": "恐らく違うね。",
+                "name": "Raidian"
+            }
+        },
+        {
+            "id": 449,
+            "prop": "name",
+            "attributes": {
+                "content": "つい今しがた急に、乱雑だけどよく知る信号を大量に探知した。",
+                "name": "Raidian"
+            }
+        },
+        {
+            "id": 450,
+            "prop": "name",
+            "attributes": {
+                "content": "この信号はロドスそのものから発せられている。",
+                "name": "Raidian"
+            }
+        },
+        {
+            "id": 451,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 452,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "en",
+                "fadetime": 4.0
+            }
+        },
+        {
+            "id": 453,
+            "prop": "cgitem",
+            "attributes": {
+                "image": "cgitem_60_i16",
+                "style": "cg",
+                "sfrom": 1.5,
+                "sto": 1.2,
+                "sduration": 4.0,
+                "pfrom": "-55,-300",
+                "pto": "-70,-45",
+                "pduration": 4.0,
+                "rto": 0.0,
+                "rduration": 4.0,
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 454,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 455,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_systemstart_weird",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 456,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 457,
+            "prop": "cgitem",
+            "attributes": {
+                "image": "cgitem_60_i16",
+                "style": "cg",
+                "sfrom": 1.2,
+                "sto": 1.0,
+                "sduration": 22.0,
+                "pfrom": "-70,-45",
+                "pto": "-55,0",
+                "pduration": 22.0,
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 458,
+            "prop": "Image",
+            "attributes": {
+                "image": "60_i16",
+                "screenadapt": "coverall",
+                "xScale": 1.2,
+                "yScale": 1.2,
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 459,
+            "prop": "ImageTween",
+            "attributes": {
+                "xScaleFrom": 1.2,
+                "yScaleFrom": 1.2,
+                "xScaleTo": 1.0,
+                "yScaleTo": 1.0,
+                "yTo": 0.0,
+                "duration": 20.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 460,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 461,
+            "prop": "name",
+            "attributes": {
+                "content": "これは……何だ？",
+                "name": "Misery"
+            }
+        },
+        {
+            "id": 462,
+            "prop": "name",
+            "attributes": {
+                "content": "終わりのないホワイトノイズが辺りを包む中で、巨大な機械構造物が皆の前にゆっくりと姿を現した――"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "name",
+            "attributes": {
+                "content": "その主要部分を構成する部品は、その場の全員がよく知っていた。"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "name",
+            "attributes": {
+                "content": "クロージャはかつて何度も、ロドスの様々なモジュールを改造する際に使用した部品を皆に見せたことがある。その中には、エリートオペレーターによって作られた特殊な部品まであった。"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "name",
+            "attributes": {
+                "content": "PRTSがロドスの設備を武器として再構築したのです。",
+                "name": "Touch"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが……これらの部品はどこから？　Abyssの中にあるはずが……",
+                "name": "Touch"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "name",
+            "attributes": {
+                "content": "源石だ。",
+                "name": "アスカロン"
+            }
+        },
+        {
+            "id": 468,
+            "prop": "name",
+            "attributes": {
+                "content": "源石のクラスターがこの独特な形状の機械に不規則に散らばっている。"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "name",
+            "attributes": {
+                "content": "源石はもはや呑み込むだけではなく、創造を始めたのだ。"
+            }
+        },
+        {
+            "id": 470,
+            "prop": "name",
+            "attributes": {
+                "content": "待ってくれ、源石はロドスのものを複製できるのか？",
+                "name": "Misery"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "name",
+            "attributes": {
+                "content": "Logosは内なる宇宙でのあの塔を、そして殿下を思い出した。"
+            }
+        },
+        {
+            "id": 472,
+            "prop": "name",
+            "attributes": {
+                "content": "そう単純な話ではない。",
+                "name": "Logos"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "name",
+            "attributes": {
+                "content": "PRTSに源石データを解析する能力はなく、何者かによる介入があるのは間違いない。",
+                "name": "Logos"
+            }
+        },
+        {
+            "id": 474,
+            "prop": "name",
+            "attributes": {
+                "content": "プリースティスだ。",
+                "name": "アスカロン"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "name",
+            "attributes": {
+                "content": "この機械のデータは私には理解できない方法でPRTSのコアと接続している。これまでの源石結晶体とは違うよ！",
+                "name": "Raidian"
+            }
+        },
+        {
+            "id": 476,
+            "prop": "name",
+            "attributes": {
+                "content": "何にせよ、やり合うしかないみたいだね。",
+                "name": "ブレイズ"
+            }
+        },
+        {
+            "id": 477,
+            "prop": "name",
+            "attributes": {
+                "content": "確かにほかに方法はないようです。",
+                "name": "Stormeye"
+            }
+        },
+        {
+            "id": 478,
+            "prop": "name",
+            "attributes": {
+                "content": "では皆さん？",
+                "name": "Stormeye"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 480,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_attack_ready",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 481,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 482,
+            "prop": "name",
+            "attributes": {
+                "content": "いけるよ。",
+                "name": "ロスモンティス"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "name",
+            "attributes": {
+                "content": "その瞬間、菱形の目がさらに輝きを増した。"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "name",
+            "attributes": {
+                "content": "PRTSにより作成された擬態機械がエネルギーをチャージし始める……"
+            }
+        },
+        {
+            "id": 485,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 486,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_energygather",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 487,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "ターゲット、制限なし。戦闘スタイル解析済み。",
+                "x": 180.0,
+                "y": 170.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 490,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n\\nエネルギー使用、無制限。",
+                "block": "true"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n\\nPRTS最終処理プロトコルがロードされました――",
+                "block": "true"
+            }
+        },
+        {
+            "id": 492,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "duration": 0.5,
+                "block": "false"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 494,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 495,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 496,
+            "prop": "Background",
+            "attributes": {}
+        },
+        {
+            "id": 497,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 498,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}
