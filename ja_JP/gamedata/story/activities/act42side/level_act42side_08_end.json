@@ -1,0 +1,6690 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act42side",
+    "eventName": "命ある者の旅",
+    "entryType": "ACTIVITY",
+    "storyCode": "MT-8",
+    "avgTag": "戦闘後",
+    "storyName": "巡礼",
+    "storyInfo": "「夢」が崩壊し、人々は現実世界へと帰還した。そこでエクシアは、ティカズの姿と化した総主教に掴まれていること、そして彼女が隊列を率いて大聖堂を目指していることに気付く。エクシアにラテラーノの起源を語る総主教の正体は、最初の「聖徒」だった。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 2,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 4,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 7,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$loading_intro",
+                "key": "$loading_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 9,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 10,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_churchbell",
+                "loop": "true",
+                "channel": "bell",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 11,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "bell",
+                "fadetime": 6.0
+            }
+        },
+        {
+            "id": 12,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 13,
+            "prop": "name",
+            "attributes": {
+                "content": "鐘の音が聞こえる。"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "name",
+            "attributes": {
+                "content": "途切れることなく都市全体に響き渡る清らかで穏やかな鐘の音は、迷い人たちに進むべき先を指し示している。"
+            }
+        },
+        {
+            "id": 15,
+            "prop": "name",
+            "attributes": {
+                "content": "かつて聖徒たちは苦行の果てに石の塔を建て、鐘の音で悪魔を追い払い、その後ラテラーノの都を打ち建てたという。純白の壁は風雨に晒されど倒れず、鐘はその後数千年の間沈黙を保ち続けていた。"
+            }
+        },
+        {
+            "id": 16,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし近年、その鐘は混血のサンクタの少女が歌う声に答えた。そして、それからわずか二年余りがたった今、再び鳴り響いたのである。"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 18,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 19,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 21,
+            "prop": "Background",
+            "attributes": {
+                "image": "26_g10_laterano_roof",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1801_1#2$1"
+            }
+        },
+        {
+            "id": 23,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1802_1#2$1"
+            }
+        },
+        {
+            "id": 24,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 25,
+            "prop": "bgeffect",
+            "attributes": {
+                "name": "$eb_dim_openeye",
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 28,
+            "prop": "bgeffect",
+            "attributes": {}
+        },
+        {
+            "id": 29,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1801_1#2$1",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "くっ……",
+                "name": "アンドアイン"
+            }
+        },
+        {
+            "id": 31,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1801_1#2$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "name",
+            "attributes": {
+                "content": "せ、先生……",
+                "name": "怯える子供"
+            },
+            "figure_art": "avg_npc_1801_1#2$1"
+        },
+        {
+            "id": 33,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1802_1#2$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "name",
+            "attributes": {
+                "content": "痛い……？",
+                "name": "怖がる子供"
+            },
+            "figure_art": "avg_npc_1802_1#2$1"
+        },
+        {
+            "id": 35,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 36,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 37,
+            "prop": "name",
+            "attributes": {
+                "content": "動かないで。やっと包帯を巻き終えたところなの。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 39,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#2$2 ",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 40,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 41,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#2$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 42,
+            "prop": "name",
+            "attributes": {
+                "content": "パティア？",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#2$2 "
+        },
+        {
+            "id": 43,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 44,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 45,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 46,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#5$1 ",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 47,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 48,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#5$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 49,
+            "prop": "name",
+            "attributes": {
+                "content": "あたしたちが育児聖堂に着いた時には、あんたはもう大ケガを負っててね。あんたと、あんたを探してたこの子たちを連れ出すことしかできなかったのよ。",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#5$1 "
+        },
+        {
+            "id": 50,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#6$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "name",
+            "attributes": {
+                "content": "泣かないでくれ、ジゼル、ロミア……全部悪い夢だったんだ。私たちはもうその夢から目覚めたんだよ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$2 "
+        },
+        {
+            "id": 52,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#10$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 53,
+            "prop": "name",
+            "attributes": {
+                "content": "夢ですって？　だったら、夢の中で受けた傷が現実に残るなんてありえないでしょ。",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#10$1 "
+        },
+        {
+            "id": 54,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#10$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "name",
+            "attributes": {
+                "content": "……他のみんなはどこにいる？",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#10$2 "
+        },
+        {
+            "id": 56,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "name",
+            "attributes": {
+                "content": "近くで警戒に当たってるわ……あんた、ようやく記憶が戻ったみたいね。「先導者様」って呼びかけてくるみんなの声が聞きたい？",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#1$1 "
+        },
+        {
+            "id": 58,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#2$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 59,
+            "prop": "name",
+            "attributes": {
+                "content": "すまなかった、パティア。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#2$2 "
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "君たちはずっと、再び道に迷った私を呼び戻そうとしてくれていたのに。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#2$2 "
+        },
+        {
+            "id": 61,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#6$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "で、どうして求道者を捨てたの？",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#6$1 "
+        },
+        {
+            "id": 63,
+            "prop": "name",
+            "attributes": {
+                "content": "アンブロシウス修道院を離れた後、荒野で少し羽を休めたら、予定通りならすぐにイベリアの国境を越えて、あなたのよく知る土地に戻るはずだったわよね。",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#6$1 "
+        },
+        {
+            "id": 64,
+            "prop": "name",
+            "attributes": {
+                "content": "あたしたちは裁判所の人間にまで話をつけていたのよ。なのにあんたは突然行方をくらまして……",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#6$1 "
+        },
+        {
+            "id": 65,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#3$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "name",
+            "attributes": {
+                "content": "私にとってすれば、夢はあの時から始まっていたんだ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#3$2 "
+        },
+        {
+            "id": 67,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#10$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "name",
+            "attributes": {
+                "content": "どういうこと？",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#10$1 "
+        },
+        {
+            "id": 69,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#6$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 70,
+            "prop": "name",
+            "attributes": {
+                "content": "それはただの、ふいに浮かんできた思い付きでしかなかった。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$2 "
+        },
+        {
+            "id": 71,
+            "prop": "name",
+            "attributes": {
+                "content": "けれどそれが私を振り返らせ、わき目もふらずにラテラーノへと戻らせたんだ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$2 "
+        },
+        {
+            "id": 72,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#10$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "つまり――あんたはあの目の不自由な奴に会ったから、ラテラーノへ子供を連れ帰るために戻ったんじゃなくて……何かに惑わされてたってこと？",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#10$1 "
+        },
+        {
+            "id": 74,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#6$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "name",
+            "attributes": {
+                "content": "*ラテラーノスラング*、そんなのイカれたペテン師のセリフみたいに聞こえるけど。",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#6$1 "
+        },
+        {
+            "id": 76,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#3$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#3$2 "
+        },
+        {
+            "id": 78,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#6$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 79,
+            "prop": "name",
+            "attributes": {
+                "content": "理解しがたいのはわかっているよ。私自身、理解が及んではいないから……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$2 "
+        },
+        {
+            "id": 80,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#2$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 81,
+            "prop": "name",
+            "attributes": {
+                "content": "まあいいわ。どうせ理解できないことばっかりだし。",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#2$1 "
+        },
+        {
+            "id": 82,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#6$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 83,
+            "prop": "name",
+            "attributes": {
+                "content": "あんたもそうだけど、あの聖堂もそう！　みんなの頭に光輪をつけさせて、自分の感情も制御できないような化け物に変えようとしてたんだから！",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#6$1 "
+        },
+        {
+            "id": 84,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 85,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 86,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#6$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 87,
+            "prop": "name",
+            "attributes": {
+                "content": "まあいいわ。いずれにせよ、自力で現実に戻ってきたわけだし。あんたがあれだけの騒ぎを起こして、降誕の儀式をぶち壊してなかったら、今頃はまだラテラーノ中が夢を見てたことでしょうね。",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#6$1 "
+        },
+        {
+            "id": 88,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 89,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "夢と現実の境界は最初から曖昧なものでした。ゆえに、彼が夢の中で行ったことについても、現実と同等の評価を下すべきです。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 91,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 92,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#1$1 ",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 93,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 94,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 95,
+            "prop": "name",
+            "attributes": {
+                "content": "私は公証人役場の執行人、フェデリコです。アンドアイン・アガタンゲロス、あなたの記録は確認させていただきました。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#1$1 "
+        },
+        {
+            "id": 96,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#10$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "name",
+            "attributes": {
+                "content": "アガ……なんて？　アンドアイン、あんたの苗字ってそんなだったの？",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#10$1 "
+        },
+        {
+            "id": 98,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#1$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$2 "
+        },
+        {
+            "id": 100,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#10$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは第一回万国サミットに際して混乱を引き起こし、その後教皇庁によって追放されています。しかし今、無断でラテラーノへ帰還し、さらには降誕の儀式なるものに関与していました。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 102,
+            "prop": "name",
+            "attributes": {
+                "content": "現在のラテラーノ内の混乱に関して、あなたには一定の責任があります。よって、第一、第五、第六、第七庁による合同調査を受けていただきます。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 103,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#3$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 104,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#3$2 "
+        },
+        {
+            "id": 105,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 106,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_runstop",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 107,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_357_1#6$1",
+                "posfrom": "-100,-50",
+                "posto": "-100,-50",
+                "afrom": 0.0,
+                "ato": 0.0,
+                "duration": 0.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_357_1#6$1",
+                "action": "zoom",
+                "poszoom": "0.5,0.5",
+                "duration": 0.0,
+                "focus": "r",
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 109,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 0.7,
+                "focus": "r",
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 111,
+            "prop": "name",
+            "attributes": {
+                "content": "見てわからないわけ？　こいつは大ケガを負ってるのよ。",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#6$1"
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "それに、今は彼を捕まえるより大事なことがあるでしょ！",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#6$1"
+        },
+        {
+            "id": 113,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 114,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 115,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 116,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1782_1#12$1",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 117,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 118,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1782_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 119,
+            "prop": "name",
+            "attributes": {
+                "content": "執行人、助けは必要か？　私たちを入国させてくれるなら、荒事を手伝ってやるぞ。",
+                "name": "アウレラ"
+            },
+            "figure_art": "avg_npc_1782_1#12$1"
+        },
+        {
+            "id": 120,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 121,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 122,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#3$2 ",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 123,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_357_1#10$1",
+                "posfrom": "-100,-50",
+                "posto": "-100,-50",
+                "afrom": 0.0,
+                "ato": 0.0,
+                "duration": 0.0,
+                "focus": "r"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_357_1#10$1",
+                "action": "zoom",
+                "poszoom": "0.5,0.5",
+                "duration": 0.0,
+                "focus": "r",
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 125,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 0.0,
+                "focus": "r",
+                "isblock": "true"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "あんたたちは……",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#10$1"
+        },
+        {
+            "id": 127,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 128,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 0.3
+            }
+        },
+        {
+            "id": 129,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.4
+            }
+        },
+        {
+            "id": 130,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4187_graceb_1#17$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "あ、あれは——",
+                "name": "ヌエダ"
+            },
+            "figure_art": "avg_4187_graceb_1#17$1"
+        },
+        {
+            "id": 132,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1782_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 133,
+            "prop": "name",
+            "attributes": {
+                "content": "ヌエダ、どうした？",
+                "name": "アウレラ"
+            },
+            "figure_art": "avg_npc_1782_1#12$1"
+        },
+        {
+            "id": 134,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4187_graceb_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "name",
+            "attributes": {
+                "content": "あれを見て！",
+                "name": "ヌエダ"
+            },
+            "figure_art": "avg_4187_graceb_1#3$1"
+        },
+        {
+            "id": 136,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 137,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 138,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 141,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 143,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 145,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "「守護銃を手に入れたからには、あなたも人生の新たな一歩を踏み出したことになるわね、エル！」",
+                "x": 300.0,
+                "y": 330.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 146,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n\\n「うん！　姉ちゃん、早く！　聖徒像の前で写真撮ろうよ。」",
+                "block": "true"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 148,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "「あたし、龍門に行かないと……モスティマにきちんと説明してもらわなきゃならないから。」",
+                "x": 300.0,
+                "y": 330.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 149,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n\\n「レミュエルの冒険の始まりを祝して！」",
+                "block": "true"
+            }
+        },
+        {
+            "id": 150,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "「過ごしてきた月日が大抵の溝を埋め、人々がそれをどう思うにせよ結びつきを与えるんだ。」",
+                "x": 300.0,
+                "y": 330.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n\\n「そこで君たちが、同じ道を共に歩むのならば、そんな心配は必要のないことだ。」",
+                "block": "true"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 154,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "「無事に帰ってこい、エクシア。」",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 156,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女には、自分の身体が移動していることはわかっても、目を開けることはできなかった。"
+            }
+        },
+        {
+            "id": 158,
+            "prop": "name",
+            "attributes": {
+                "content": "何かが背中を支えている。それはざらざらとした感触だが、反面、意識は身体の痛みすらも感じられないほどの限りない柔らかさの中へと沈んでいく……"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女の思考は、信仰という広大な海の中へと溶け込んでいた。"
+            }
+        },
+        {
+            "id": 160,
+            "prop": "name",
+            "attributes": {
+                "content": "エクシアは思わず目を開いた。"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 162,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 165,
+            "prop": "Image",
+            "attributes": {
+                "image": "61_i24_2",
+                "screenadapt": "coverall",
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 166,
+            "prop": "bgeffect",
+            "attributes": {
+                "name": "$eb_dim_openeye",
+                "layer": 1.0
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 168,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$m_avg_grandpilgrimage_intro",
+                "key": "$m_avg_grandpilgrimage_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 169,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 171,
+            "prop": "bgeffect",
+            "attributes": {}
+        },
+        {
+            "id": 172,
+            "prop": "Image",
+            "attributes": {
+                "image": "61_i24_3",
+                "screenadapt": "coverall",
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "目を覚ましたのですね、我が子よ。",
+                "name": "「総主教」"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは深手を負っていますから、私がそばにいなければ……転化プログラムの実行中に意識を保てはしません。プログラムの中断を引き起こしたのはあなたですが——あなたを見捨てはしませんよ。",
+                "name": "「総主教」"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "我らもかつては、互いに支え合い、荒れ狂う天災を乗り越えてきたのですから。",
+                "name": "「総主教」"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "「転化プログラム」……？",
+                "name": "エクシア"
+            }
+        },
+        {
+            "id": 178,
+            "prop": "name",
+            "attributes": {
+                "content": "それって、あの夢のこと？",
+                "name": "エクシア"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "もう抜け出したはずなのに……どうして、キミの頭にはまだ――げほっ、光輪が……ついてるの？　キミって何者……？　とんでもない化け物だね……",
+                "name": "エクシア"
+            }
+        },
+        {
+            "id": 180,
+            "prop": "name",
+            "attributes": {
+                "content": "サンクタには光輪があって当然でしょう。",
+                "name": "「総主教」"
+            }
+        },
+        {
+            "id": 181,
+            "prop": "name",
+            "attributes": {
+                "content": "一族は、その出自を忘れ、新たな人生を送るために、自らをサンクタと名乗りました。幸いにして、数千年もの長い時を経て、あなたたちの姿や習慣は大きく変わっていますが。",
+                "name": "「総主教」"
+            }
+        },
+        {
+            "id": 182,
+            "prop": "name",
+            "attributes": {
+                "content": "あるいは、私のことは、書物の記述に従い――「聖徒」と呼んでもらっても構いませんよ。",
+                "name": "「総主教」"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "エクシア"
+            }
+        },
+        {
+            "id": 184,
+            "prop": "name",
+            "attributes": {
+                "content": "無論、私の魂と肉体は、とうにラテラーノの白き壁の下に広がる土と一つになっていますけれど……",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "今あなたが目にしているのは、主の広大なプログラムにおけるほんの一部のコード。数多の記憶を乗せた亡霊に過ぎません。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 186,
+            "prop": "name",
+            "attributes": {
+                "content": "主からすれば、サンクタの長き道は「聖徒」から始まったもの。なれば「聖徒」こそがそれを継続し、あなたたちを導いて災厄を乗り越えさせ、未来へと辿り着かせるべきなのです。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "ッ……よくわかんないんだけど。",
+                "name": "エクシア"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "あたしをどこへ連れていく気？",
+                "name": "エクシア"
+            }
+        },
+        {
+            "id": 189,
+            "prop": "name",
+            "attributes": {
+                "content": "我が子よ、あなただけではなく……すべてのラテラーノ人を連れていくつもりですよ。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "エクシアはどうにか振り向いた。すると――"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 192,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 193,
+            "prop": "Image",
+            "attributes": {
+                "image": "61_i24_1",
+                "screenadapt": "coverall",
+                "fadetime": 2.5,
+                "xScale": 1.2,
+                "yScale": 1.2,
+                "x": 100.0
+            }
+        },
+        {
+            "id": 194,
+            "prop": "ImageTween",
+            "attributes": {
+                "xFrom": 100.0,
+                "xTo": 0.0,
+                "yTo": 0.0,
+                "xScaleFrom": 1.2,
+                "yScaleFrom": 1.2,
+                "xScaleTo": 1.0,
+                "yScaleTo": 1.0,
+                "duration": 25.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "delay",
+            "attributes": {
+                "time": 5.0
+            }
+        },
+        {
+            "id": 196,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女を手にした「聖徒」を名乗る怪物の周りには——サンクタや、光輪を浮かべたリーベリ、フェリーン……果てには見たことのない様々な生き物までが並んでおり……"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "その壮大な隊列は、遥か彼方まで果てしなく続いていた。"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "name",
+            "attributes": {
+                "content": "エクシアはその時、彼らが生ける屍などではなく、共感能力を失ってもおらず……それどころか、その共感能力がかつてないほどに強くなっているのを感じ取った。"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "数えきれないほどの個が持つ信仰が凝縮された広大な海が「聖徒」に付き従い、明確な目的地を持って進んでいく。"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "name",
+            "attributes": {
+                "content": "『聖徒行記』の中にさえ、これほど奇妙で壮大な光景は記録されていない。"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 202,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 203,
+            "prop": "name",
+            "attributes": {
+                "content": "これまで数千年の間、主は自身が選んだ個体に啓示を伝え、疑問を持たせ、聖典を解釈させ、推論させ、ラテラーノ人に悟りの中で進むべき方向を見つけさせてきた。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし今回は、それではあまりに遅すぎたのです。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 205,
+            "prop": "name",
+            "attributes": {
+                "content": "主はかつてない焦燥を見せています。万物を統べるものが目覚め、脅威が目前に迫る今――主は本来の使命を果たさねばならないのです。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "……ですが、定められた未来には、サンクタの居場所は存在しません。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "name",
+            "attributes": {
+                "content": "主に成し得るのは、自らの知覚をすべての個体に直接提示し、自らの知る唯一の解を強行的に現実へと変えて――",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "より強固な「サンクタ」という集団を、本来あるべきラテラーノの街を作ることだけなのです。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 209,
+            "prop": "name",
+            "attributes": {
+                "content": "ぐっ——聞いてるだけで頭が割れそう……",
+                "name": "エクシア"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "勘弁してよ。さっきから主がどうとか言ってるけど、一体何のことを主って言ってるの？",
+                "name": "エクシア"
+            }
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "今から我らが会いに行くもののことですよ。主は信仰の礎でありすべての始まりです。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 212,
+            "prop": "name",
+            "attributes": {
+                "content": "我が子よ。悪夢がどれだけ深くとも、それは残酷な現実には遠く及ばぬものです。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "転化プログラムが崩壊した今、主の行動は、恐らく見透かされてしまったでしょう。時間はもはや限られていますが、私と主は……我らはまだ、サンクタの未来を繋ぐことができるかもしれません。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 215,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 216,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 218,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 219,
+            "prop": "Background",
+            "attributes": {
+                "image": "26_g10_laterano_roof",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 221,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 222,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 223,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 224,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "……行進？　集団移住？　あるいは巡礼かしら？",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#9$1"
+        },
+        {
+            "id": 226,
+            "prop": "name",
+            "attributes": {
+                "content": "新たな「サンクタ」の壮大な隊列が、千年に渡るサンクタの歴史上類を見ない勢いで、聖都の大通りを進んでいく……この光景は、どんな言葉で表せばいいのでしょうね。",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#9$1"
+        },
+        {
+            "id": 227,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1782_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 228,
+            "prop": "name",
+            "attributes": {
+                "content": "——！",
+                "name": "アウレラ"
+            },
+            "figure_art": "avg_npc_1782_1#12$1"
+        },
+        {
+            "id": 229,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#10$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 230,
+            "prop": "name",
+            "attributes": {
+                "content": "アウレラ、何か気付いたことでも？",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 231,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1782_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "name",
+            "attributes": {
+                "content": "街の中、街灯にまで光輪がついてないか？　街路樹にも、キッチンカーにも、告解ロボにも……私が幻覚を見てるのか？　それともスコープが曇ってるのか？",
+                "name": "アウレラ"
+            },
+            "figure_art": "avg_npc_1782_1#12$1"
+        },
+        {
+            "id": 233,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#4$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "name",
+            "attributes": {
+                "content": "恐らく幻覚ではないでしょう。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#4$1 "
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "育児聖堂は現実に依然存在しています。この奇妙な色彩の投影は、あの場所から生じているのです。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#4$1 "
+        },
+        {
+            "id": 236,
+            "prop": "name",
+            "attributes": {
+                "content": "巡礼隊の行進に合わせて、色彩も広がりつつあります。その投影が及んだ場所にのみ、非生命体にも光輪が現れるようです。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#4$1 "
+        },
+        {
+            "id": 237,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#10$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "……まるで命を持たない「執行人」が、法に代わって至る所で「サンクタ」の定義を書き換えているかのように。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 239,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1782_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "サンクタの純潔性を汚した人間は、誰であれ法によって容赦なく排除されるというのに、アレは街灯やら街路樹やらを最高に純潔なサンクタとして選んだと！？",
+                "name": "アウレラ"
+            },
+            "figure_art": "avg_npc_1782_1#12$1"
+        },
+        {
+            "id": 241,
+            "prop": "name",
+            "attributes": {
+                "content": "ハッ……ハハッ！　まさか堕天したことを幸運に思う日が来るとはな。",
+                "name": "アウレラ"
+            },
+            "figure_art": "avg_npc_1782_1#12$1"
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "あの隊列の目的が、「サンクタ」ってものの定義を書き換えて、誰にも理解できないような姿に変えることなら、止める気が失せてくるくらいだ。",
+                "name": "アウレラ"
+            },
+            "figure_art": "avg_npc_1782_1#12$1"
+        },
+        {
+            "id": 243,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 244,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#4$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 245,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$bullet_loading",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 246,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 247,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#4$1 "
+        },
+        {
+            "id": 248,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1782_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "name",
+            "attributes": {
+                "content": "まあ心配するな、執行人。あの中にはまだ、殺したい奴がいるんでね。手伝うと約束したからには、何があろうと戦うさ。",
+                "name": "アウレラ"
+            },
+            "figure_art": "avg_npc_1782_1#12$1"
+        },
+        {
+            "id": 250,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 251,
+            "prop": "name",
+            "attributes": {
+                "content": "どうやら彼らは、本当に都市そのものを作り変えようとしているみたいね。",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#9$1"
+        },
+        {
+            "id": 252,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#10$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "name",
+            "attributes": {
+                "content": "あの奇妙な色彩の投影を広げることで再構築を図ろうとしているのなら、あの密集した隊列を組んでいてはあまりに非効率的です。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 254,
+            "prop": "name",
+            "attributes": {
+                "content": "それでも彼らは、夢の崩壊後、真っ先に集うことを選んだ……となれば、あるいは都市を再構築する手段は、色彩を広げることだけではないのでしょう。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 255,
+            "prop": "name",
+            "attributes": {
+                "content": "あの隊列は、我々の知らない別の手段を秘めているはずです。そしてそのためにこそ、彼らは共通の目的地へと辿り着かねばならないのでしょう。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 256,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#2$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 0.3,
+                "xstrength": 30.0,
+                "ystrength": 30.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "multiline",
+            "attributes": {
+                "name": "アンドアイン",
+                "content": "ごほ、ごほっ……"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#10$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 260,
+            "prop": "multiline",
+            "attributes": {
+                "name": "アンドアイン",
+                "content": "彼らが、ラテラーノそのものを覆そうとしているのなら、あの隊列の向かう先を、私は知っているかもしれない。恐らく、それは――"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#6$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "name",
+            "attributes": {
+                "content": "大聖堂だ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$2 "
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "私はそこで、教皇イヴァンジェリスタⅪ世と対話したことがある。そしてその時、ある存在を垣間見、ある真実を知ったんだ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$2 "
+        },
+        {
+            "id": 264,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#1$1 "
+        },
+        {
+            "id": 266,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#6$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "name",
+            "attributes": {
+                "content": "執行人よ、私を疑う必要は……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$2 "
+        },
+        {
+            "id": 268,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "疑ってはおりません。実際に、あなたの書類は教皇聖下によって署名、封印されていましたから。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#1$1 "
+        },
+        {
+            "id": 270,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 271,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 272,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#10$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "name",
+            "attributes": {
+                "content": "アンドアイン、私が貴方と共にそこへ向かいましょう。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 274,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1782_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "待て、フェデリコ——",
+                "name": "アウレラ"
+            },
+            "figure_art": "avg_npc_1782_1#12$1"
+        },
+        {
+            "id": 276,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#6$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "今は街中が混乱状態なのよ。何が起きてるのかなんて誰にもわからないのに、あんたをどう信じろっていうの？",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#6$1 "
+        },
+        {
+            "id": 278,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1782_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 279,
+            "prop": "name",
+            "attributes": {
+                "content": "おい、今私がそれを言おうとしていたんだぞ！",
+                "name": "アウレラ"
+            },
+            "figure_art": "avg_npc_1782_1#12$1"
+        },
+        {
+            "id": 280,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#10$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "name",
+            "attributes": {
+                "content": "あなた方が懸念している内容が権限の所在であれば——ここにいるほぼ全員が何らかの法を犯していますので、私には執行人として、臨時の管理措置を執る権限があります。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 282,
+            "prop": "name",
+            "attributes": {
+                "content": "あるいは、あなた方がこの災厄への恐怖に囚われ、有効的な判断を下し、行動を起こすことができないだけなら……",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 283,
+            "prop": "name",
+            "attributes": {
+                "content": "フェデリコ・ジアロは、歴代教皇以外で初めて聖徒に任じられた人間です。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "この肩書に特別な意味があるとは思いませんが、理由が必要だと言うのなら、これ以上相応しいものはないでしょう。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 285,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#6$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 286,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#6$1 "
+        },
+        {
+            "id": 287,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1782_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アウレラ"
+            },
+            "figure_art": "avg_npc_1782_1#12$1"
+        },
+        {
+            "id": 289,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#6$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "育児聖堂から大聖堂まで行く間に、あの隊列はまずここを通る。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$2 "
+        },
+        {
+            "id": 291,
+            "prop": "name",
+            "attributes": {
+                "content": "ケファ——あの怪物は、異常に強い共感能力を持っている。啓示の石塔の鐘が鳴ったとて、その影響を断つことはできないだろう。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$2 "
+        },
+        {
+            "id": 292,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#1$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 293,
+            "prop": "name",
+            "attributes": {
+                "content": "パティア、君は他の求道者たちと、このはぐれ者たちを連れてここを離れ、反対側に向かってくれ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$2 "
+        },
+        {
+            "id": 294,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#10$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 295,
+            "prop": "name",
+            "attributes": {
+                "content": "一人で大丈夫なの？",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#10$1 "
+        },
+        {
+            "id": 296,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#1$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 297,
+            "prop": "name",
+            "attributes": {
+                "content": "どうか私を信じてくれ。これが私の歩むべき道なんだ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$2 "
+        },
+        {
+            "id": 298,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "name",
+            "attributes": {
+                "content": "……じゃあ、せめてその服着替えてからにしなさいよ。あんたまさか、そのままずっと血まみれでいるつもりじゃないわよね？",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#1$1 "
+        },
+        {
+            "id": 300,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#1$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "……どうにも衣服の持ち合わせが少なくてね。元の修道服も、どこにやったかわからないし……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$2 "
+        },
+        {
+            "id": 302,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 303,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_cloakmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 305,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 306,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "……はい、これ。",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#1$1 "
+        },
+        {
+            "id": 308,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#7$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 309,
+            "prop": "name",
+            "attributes": {
+                "content": "これは……ずっと君が持っていてくれたのかい？",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#7$2 "
+        },
+        {
+            "id": 310,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 311,
+            "prop": "name",
+            "attributes": {
+                "content": "大して荷物にならないから持ってただけよ。その……なんとなくだけど、そう簡単に捨てちゃいけない物だと思ったの。とにかく、返したから。",
+                "name": "パティア"
+            },
+            "figure_art": "avg_npc_357_1#1$1 "
+        },
+        {
+            "id": 312,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#1$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 313,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$2 "
+        },
+        {
+            "id": 314,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#11$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 315,
+            "prop": "name",
+            "attributes": {
+                "content": "これまでのこと、ありがとう、パティア。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#11$2 "
+        },
+        {
+            "id": 316,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#1$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 317,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、行動する前に、まずは夢から抜け出したばかりのこの子供たちをどこかに落ち着けてやらなくては……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$2 "
+        },
+        {
+            "id": 318,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#1$1"
+        },
+        {
+            "id": 320,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 321,
+            "prop": "name",
+            "attributes": {
+                "content": "アルトリア、あなたもアンドアインも、特別監視の対象ですので、私は両名を己の視界の範囲内に留めておかねばなりません。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#1$1 "
+        },
+        {
+            "id": 322,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "name",
+            "attributes": {
+                "content": "まだ何も言っていないでしょう、「聖徒」様。",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#4$1"
+        },
+        {
+            "id": 324,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4187_graceb_1#16$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "あ、あの、私に任せていただくことはできませんか？",
+                "name": "ヌエダ"
+            },
+            "figure_art": "avg_4187_graceb_1#16$1"
+        },
+        {
+            "id": 326,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4187_graceb_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "name",
+            "attributes": {
+                "content": "私はサンクタでも、ラテラーノ人でもありませんが、子供たちのお世話であれば……それなりに得意なほうですから。",
+                "name": "ヌエダ"
+            },
+            "figure_art": "avg_4187_graceb_1#12$1"
+        },
+        {
+            "id": 328,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#10$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "ではそのように。行動を開始しましょう。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#10$1 "
+        },
+        {
+            "id": 330,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 331,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 332,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 334,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 335,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g8_catastrophicsquare",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 336,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 337,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$ponder_intro",
+                "key": "$ponder_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 338,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 340,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#7$2 ",
+                "duration": 0.7
+            }
+        },
+        {
+            "id": 341,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 342,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#7$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "げほっ……信仰の礎とか、サンクタの未来とか……何それ？",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#7$2 "
+        },
+        {
+            "id": 344,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "私の言葉を信じていないのですか？",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 346,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#10$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "なんで信じなきゃいけないの？",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#10$2 "
+        },
+        {
+            "id": 348,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "そうですね、信じる理由はないでしょう。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 350,
+            "prop": "name",
+            "attributes": {
+                "content": "我らも、「サンクタ」という名を得た時には、一族が長い歳月の果てに、爆発やスイーツと共に生きるようになるなどと言われたとて信じなかったでしょう。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "光輪や共感、銃、そして純白の壁……あなたは、法というものがもとよりそこに存在し、サンクタの特異性もまた、初めから変わらぬものだと捉えているのですか？",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 352,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#10$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "そんなの当然でしょ？",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#10$2 "
+        },
+        {
+            "id": 354,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたはそうしたものを愛しているのですね……私もそうです。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "信仰は何千、何百もの世代と、何千年もの時、そして無数の人々の足跡を経て形作られてきたものです。本来なら、それが最初の信徒によって再び揺るがされることなど決してあってはなりません。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 357,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし今、一族はまたも運命の岐路に立たされており——私はこうするよりほかにないのです。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 358,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#10$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#10$2 "
+        },
+        {
+            "id": 360,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "我が子よ、我らは嘘をついたことなどありません。ただいくつかの真相を伏せ、残りの部分を意味深長な物語に、聖徒の伝承に変えただけです。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "ゆえに、サンクタはこう語るのです。悪魔の到来が万物を朽ち果てさせ、命ある者から日光を奪ったのに対し、サンクタの輝きとは、法がもたらした恩寵であると。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 363,
+            "prop": "name",
+            "attributes": {
+                "content": "しかしながら、天使とは悪魔から生まれ出でたものです。そして、いわゆる「恩寵」というのは……",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "単なる偶然の出会いに過ぎません。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 365,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 366,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 367,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 369,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g8_catastrophicsquare",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 372,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 374,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 376,
+            "prop": "name",
+            "attributes": {
+                "content": "その頃、魔王は一族の活路を見出すべく、配下の勇士たちを遣わしました。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 377,
+            "prop": "name",
+            "attributes": {
+                "content": "その頃、大地を這っていた怪物が「帰るべき故郷が欲しい」と願い「ティカズ」という名を得たことは、まだ新しい出来事でした。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 378,
+            "prop": "name",
+            "attributes": {
+                "content": "その頃は、炎と雷、嵐と吹雪を操る覇者が、無数の下僕を率いて大地に降臨し、ティカズの貴重な帰るべき場所を奪おうとしていました。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 379,
+            "prop": "name",
+            "attributes": {
+                "content": "彼らの炎はウェンディゴの頭蓋を溶かし、巻き起こす嵐はアンズーリシックの翼を引き裂くほどのものでした。さらにそれは、ブラッドブルードに吸い尽くされたとて、燃え盛る卵から蘇るのです。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 380,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 381,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#11$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "name",
+            "attributes": {
+                "content": "うう、何それ、どんな光景……？",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#11$2 "
+        },
+        {
+            "id": 383,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#7$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "name",
+            "attributes": {
+                "content": "くたくたすぎて、想像もつかないよ……",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#7$2 "
+        },
+        {
+            "id": 385,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 386,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 0.3
+            }
+        },
+        {
+            "id": 387,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 388,
+            "prop": "name",
+            "attributes": {
+                "content": "巨大な怪物は傷ついたサンクタを抱えたまま、拙くも確かな足取りで前へと進み続ける。その声色はなおも穏やかで、彼女が総主教であった頃と何も変わらなかった。"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女はそうして、時も真偽も定かではない物語を語り出した。まるで、旅の途中で足を止めた聖徒が、偶然出会った異郷の人に道を説くように。"
+            }
+        },
+        {
+            "id": 390,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、彼女が語り掛けているのは自分だけではないということが、エクシアにはわかっていた。"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "name",
+            "attributes": {
+                "content": "怪物の後ろには、長い隊列が果てしなく続いている。そして今もなお、無数の人々が都市の各地から集まってきて、色が反転した区域を抜け出ては、信仰の海の中に身を投じていた。"
+            }
+        },
+        {
+            "id": 392,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "name",
+            "attributes": {
+                "content": "これより、隠されていた真実をあなたに打ち明けるとしましょう。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 394,
+            "prop": "name",
+            "attributes": {
+                "content": "大聖堂に着く頃には、それは明らかなる過去となり、あらゆる個体の共通認識となっていることでしょう。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 395,
+            "prop": "name",
+            "attributes": {
+                "content": "その時、「サンクタ」は再定義されるのです。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 396,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#10$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 397,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#10$2 "
+        },
+        {
+            "id": 398,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 399,
+            "prop": "name",
+            "attributes": {
+                "content": "魔王の力ではティカズの劣勢を挽回することはできませんでした。彼の疲れ果てた眼差しは、いくつもの夜を越え、ついに古の銀色の山脈へと注がれるに至りました。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "そこで、勇士たちは旅立ちました。地底に眠るまだ見ぬ銀色の山脈を探し出し、魔王から授かった言葉を以てそれを征服して、ティカズの敵を退ける助けとしようとしたのです。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "ティカズを真の意味で「故郷を持つ者」とするために。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 402,
+            "prop": "name",
+            "attributes": {
+                "content": "勇士たちの出立前、魔王は駄獣の血を用いて、彼らの頭上に円を描き、それを彼らが共に背負う使命の象徴としました。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "その後、勇士たちは大地を渡り、どこよりも痩せた荒野を越えていきました。そこは、どんなに強い草木も根を張れず、どんなにたくましい獣でも生きられないような場所でした……",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 404,
+            "prop": "name",
+            "attributes": {
+                "content": "それでも勇士たちは、歪んだ四肢と爪で支え合い、どれほど弱った仲間のことも、息を引き取る最期の瞬間まで見捨てはしませんでした……",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 405,
+            "prop": "name",
+            "attributes": {
+                "content": "それこそが、魔王の戒めだったのです——「同胞は互いを相食むるべからず、互いに支え合うべし。」",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 406,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 407,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 409,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 410,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 412,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 413,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ……？",
+                "name": "エクシア"
+            }
+        },
+        {
+            "id": 414,
+            "prop": "name",
+            "attributes": {
+                "content": "その時、目の前に見たことのない景色が広がり、エクシアは幻覚を見ているのではないかと思った。しかし、周囲の人々もまた、同じような驚愕の表情を浮かべていた。"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "疑いようもない事実として、「聖徒」を名乗る怪物は、もはや「共感」と呼ぶのも憚られるほどの能力によって、隊列の人々に自らの視界を共有していたのだ。"
+            }
+        },
+        {
+            "id": 416,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 417,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 418,
+            "prop": "name",
+            "attributes": {
+                "content": "そうしてついに、数多の夜を越えて、彼らは裂け目の縁へと辿り着きました……",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 419,
+            "prop": "name",
+            "attributes": {
+                "content": "そこで、彼らは見たのです……",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 421,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 424,
+            "prop": "Image",
+            "attributes": {
+                "image": "61_i17_1",
+                "screenadapt": "coverall",
+                "fadetime": 0.0,
+                "xScale": 1.5,
+                "yScale": 1.5,
+                "y": 150.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 426,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 427,
+            "prop": "name",
+            "attributes": {
+                "content": "裂け目の中には、この荒れ果てた土地に存在するはずもない生命力が浮かんでいた——"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "name",
+            "attributes": {
+                "content": "石化した草木や獣の白い身体が土と共に舞い、連なる巨岩に引き付けられるようにして、未知の法則に従って回転し、巨大な円環を形作っていたのだ。"
+            }
+        },
+        {
+            "id": 429,
+            "prop": "name",
+            "attributes": {
+                "content": "円環の破片の中には、かすかに光が揺らめいていました。彼らは最初、それを炎だと思いましたが、熱を持たず、触れることすらできない炎などあるはずもないものです……",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 430,
+            "prop": "name",
+            "attributes": {
+                "content": "その時、ティカズの勇士たちは悟りました。自分たちはついに、眠れる銀色の山脈を見つけ出したのだと。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 432,
+            "prop": "ImageTween",
+            "attributes": {
+                "yFrom": 150.0,
+                "yTo": 0.0,
+                "xScaleFrom": 1.5,
+                "yScaleFrom": 1.5,
+                "xScaleTo": 1.0,
+                "yScaleTo": 1.0,
+                "duration": 15.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "delay",
+            "attributes": {
+                "time": 4.0
+            }
+        },
+        {
+            "id": 434,
+            "prop": "name",
+            "attributes": {
+                "content": "勇士たちはその円環を取り囲み、呼びかけ、なだめ、かと思えば命令し、説得しようと試みました……",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 435,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、喉が血まみれになり、もはや声すら出せなくなろうとも、その円環は何の反応も示しませんでした。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "name",
+            "attributes": {
+                "content": "そうして、荒野の中心で立ち往生を迫られた彼らは、進むことも、戻ることもできなくなりました。それから時は流れ、一人の平凡なティカズが、これ以上苦痛には耐えられないと立ち上がりました。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女は、半ば狂気に囚われ痩せ衰えた仲間たちを見て、はたと悟ったのです。銀色の山脈が目覚めるよりも先に、全員が飢えと渇きで死ぬだろうということに。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 438,
+            "prop": "name",
+            "attributes": {
+                "content": "気付けば彼女は、手にした石槍で瀕死の仲間を刺し貫き、本能のままにその血肉を貪っていました。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "エクシア"
+            }
+        },
+        {
+            "id": 440,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 441,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 442,
+            "prop": "name",
+            "attributes": {
+                "content": "ティカズはもとより、共食いを厭わぬ種族でした。けれども、まさしく同族食らいを拒んだことで追放されたものこそが、黒い王冠を持ち帰り、最初の魔王となったのです。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 443,
+            "prop": "name",
+            "attributes": {
+                "content": "ゆえにそれ以来、同胞食らいは一族の中で最も罪深き禁忌となっていましたが……",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "name",
+            "attributes": {
+                "content": "その時、魔王が自ら選んだ勇士は、躊躇いなく魔王の禁令に背きました。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 445,
+            "prop": "name",
+            "attributes": {
+                "content": "そうするよりほかに、彼女が生き残るすべはありませんでした。そうして生き延びることが、与えられた使命を果たすためだったのかについては――今は置いておくとしましょう。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 447,
+            "prop": "name",
+            "attributes": {
+                "content": "どうあれ、その時……",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 449,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_labamb",
+                "volume": 0.7
+            }
+        },
+        {
+            "id": 450,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 451,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$alarmenter",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 452,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$alarmenter",
+                "volume": 0.8,
+                "channel": "a",
+                "delay": 1.2
+            }
+        },
+        {
+            "id": 453,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_labamb",
+                "volume": 0.7,
+                "delay": 0.5
+            }
+        },
+        {
+            "id": 454,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_scan",
+                "volume": 1.0,
+                "delay": 1.5
+            }
+        },
+        {
+            "id": 455,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$b_enemy_dead_h",
+                "channel": "b",
+                "delay": 2.6
+            }
+        },
+        {
+            "id": 456,
+            "prop": "delay",
+            "attributes": {
+                "time": 4.0
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "頭上から異音が響いた。"
+            }
+        },
+        {
+            "id": 458,
+            "prop": "name",
+            "attributes": {
+                "content": "エクシア、のみならず怪物の背後に続く人々全員が思わず顔を上げて、歴史の中のティカズたちと同じように天を仰ぎ、運命の瞬間を迎える——"
+            }
+        },
+        {
+            "id": 459,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 460,
+            "prop": "PlayMusic",
+            "attributes": {
+                "key": "$m_avg_mechdeath_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Image",
+            "attributes": {
+                "image": "61_i17_2",
+                "screenadapt": "coverall",
+                "fadetime": 2.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 462,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 463,
+            "prop": "name",
+            "attributes": {
+                "content": "一瞬のうちに、円環の中央にある巨岩の表面が崩れ、剥がれ落ち、その中から赤く輝く金属が姿を現し始めたのだ。"
+            }
+        },
+        {
+            "id": 464,
+            "prop": "name",
+            "attributes": {
+                "content": "そして一瞬のうちに、ティカズたち一人一人の漆黒の身体に、まばゆい光輪と翼が咲いた。それはまるで、初めからそこにあったものが、創造主の手で表面の埃を拭われ、姿を現したかのようだった。"
+            }
+        },
+        {
+            "id": 465,
+            "prop": "name",
+            "attributes": {
+                "content": "勇士たちには、その奇妙な変化について深く考える余裕などありませんでした。というのは、彼らの疲れ切った身体には、溢れんばかりの生命力が荒波の如く押し寄せてきていたからです……",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "name",
+            "attributes": {
+                "content": "彼らは歓喜と共に互いに触れ、生まれて間もない子供の如く無邪気に抱擁を交わし合いました。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "name",
+            "attributes": {
+                "content": "一方で、まだ血にまみれた石槍を握っていたそのティカズは、空の上からやってきたようなその金属を仰いだまま、長いこと黙り込んでいました……",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 468,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女には、魔王から授かった、銀色の山脈を手懐けるための言葉がいずれも通じなかったにもかかわらず、よりによって自分が同胞を食らった瞬間、それが応えた理由がわかりませんでした。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし彼女は、ふと気付きました。あるいは……その金属が応えたのは、魔王の尊厳に満ちた呼びかけの言葉でも、敵を退けてほしいという願いでもなく……",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 470,
+            "prop": "name",
+            "attributes": {
+                "content": "何よりも単純で、純粋な想い……",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 472,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 473,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 474,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "「生きたい」。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 475,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 476,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 477,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 478,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 479,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 481,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 482,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 483,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_black",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 484,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 485,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 486,
+            "prop": "name",
+            "attributes": {
+                "content": "あのティカズって、キミ？",
+                "name": "エクシア"
+            }
+        },
+        {
+            "id": 487,
+            "prop": "name",
+            "attributes": {
+                "content": "銀色の山脈って、今のラテラーノにあるの？　だからみんなを、あそこに連れて行こうとしてるってこと？",
+                "name": "エクシア"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "わかってくれましたか、我が子よ。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "name",
+            "attributes": {
+                "content": "信仰に信仰という名がつくよりも前、寛容と平等、慈悲と歓喜に満ちた楽園の、最初のレンガさえ積み上げられていなかった頃……",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 490,
+            "prop": "name",
+            "attributes": {
+                "content": "それがすべての始まりだったのです。",
+                "name": "「聖徒」"
+            }
+        },
+        {
+            "id": 491,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 492,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 493,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 494,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 495,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 496,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g7_pcsserverroom",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 497,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 498,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_labamb",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 499,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$suspenseful_intro",
+                "key": "$suspenseful_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 500,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 501,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 502,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 503,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 504,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "基点へと回帰します。",
+                "x": 180.0,
+                "y": 170.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 506,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "第二十六回目のインタラクティブシミュレーションが終了しました。",
+                "x": 180.0,
+                "y": 170.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 507,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n\\n緊急対応システムを起動しましたが、すでに失効しています。",
+                "block": "true"
+            }
+        },
+        {
+            "id": 508,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n\\n新たな緊急対応システムは、未生成です。",
+                "block": "true"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n\\n演算結果……失敗。",
+                "block": "true"
+            }
+        },
+        {
+            "id": 510,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n\\n……ラテラーノ強制転化プログラム……",
+                "block": "true"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 512,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n\\n実行を継続します。",
+                "block": "true"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 514,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 515,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 516,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_356_1#7$1 ",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 517,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 518,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_356_1#7$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 519,
+            "prop": "name",
+            "attributes": {
+                "content": "——！",
+                "name": "イヴァンジェリスタⅪ世"
+            },
+            "figure_art": "avg_npc_356_1#7$1 "
+        },
+        {
+            "id": 520,
+            "prop": "name",
+            "attributes": {
+                "content": "またこれか。我々の議論は、再び振り出しに戻ってしまったようだな。",
+                "name": "イヴァンジェリスタⅪ世"
+            },
+            "figure_art": "avg_npc_356_1#7$1 "
+        },
+        {
+            "id": 521,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_356_1#12$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "ごほっ、正直に言えば、今すぐ地上に戻ってグアバジュースとアイスクリームでも楽しみたいところだ。あるいはせめて、ソファーでゆっくり眠れたら……",
+                "name": "イヴァンジェリスタⅪ世"
+            },
+            "figure_art": "avg_npc_356_1#12$1 "
+        },
+        {
+            "id": 523,
+            "prop": "name",
+            "attributes": {
+                "content": "も、もはや唇の感覚もなくなってきた……それに、この膝も限界だ……",
+                "name": "イヴァンジェリスタⅪ世"
+            },
+            "figure_art": "avg_npc_356_1#12$1 "
+        },
+        {
+            "id": 524,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "イヴァンジェリスタⅪ世"
+            },
+            "figure_art": "avg_npc_356_1#12$1 "
+        },
+        {
+            "id": 525,
+            "prop": "name",
+            "attributes": {
+                "content": "君が突然エラーを起こし、私が答えを求めてここへやってきてからどれだけの時間が経ったのだろう？",
+                "name": "イヴァンジェリスタⅪ世"
+            },
+            "figure_art": "avg_npc_356_1#12$1 "
+        },
+        {
+            "id": 526,
+            "prop": "name",
+            "attributes": {
+                "content": "なぜ、君が従来の緊急対応システムをすべて覆し、あまねく人々に強引に情報を直接同期して、ラテラーノ全土を……",
+                "name": "イヴァンジェリスタⅪ世"
+            },
+            "figure_art": "avg_npc_356_1#12$1 "
+        },
+        {
+            "id": 527,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_356_1#8$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 528,
+            "prop": "name",
+            "attributes": {
+                "content": "劇的な変化に陥れてまで対処しなければならないほどに、あの災厄は加速したのだろうか。",
+                "name": "イヴァンジェリスタⅪ世"
+            },
+            "figure_art": "avg_npc_356_1#8$1 "
+        },
+        {
+            "id": 529,
+            "prop": "name",
+            "attributes": {
+                "content": "サンクタの身体から聖霊の光が奪われたとして、ラテラーノはまだラテラーノと呼べるのか……？",
+                "name": "イヴァンジェリスタⅪ世"
+            },
+            "figure_art": "avg_npc_356_1#8$1 "
+        },
+        {
+            "id": 530,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_356_1#7$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 531,
+            "prop": "name",
+            "attributes": {
+                "content": "教皇イヴァンジェリスタⅪ世の名において、第二十七回目のインタラクティブシミュレーションを要求する。",
+                "name": "イヴァンジェリスタⅪ世"
+            },
+            "figure_art": "avg_npc_356_1#7$1 "
+        },
+        {
+            "id": 532,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 533,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 534,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 535,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 536,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_scan",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 537,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "イヴァンジェリスタⅪ世は、転化プログラム遂行への協力を拒絶しました。",
+                "x": 180.0,
+                "y": 170.0,
+                "alignment": "left",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1",
+                "multi": "true",
+                "text": "\\n\\nインタラクティブシミュレーションの実行リクエストを確認中……",
+                "block": "true"
+            }
+        },
+        {
+            "id": 539,
+            "prop": "Sticker",
+            "attributes": {
+                "id": "st1"
+            }
+        },
+        {
+            "id": 540,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 542,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 543,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "a",
+                "fadetime": 2.5
+            }
+        },
+        {
+            "id": 544,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 546,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 547,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g8_catastrophicsquare",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 548,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 549,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 550,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 551,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 552,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 553,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 554,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 555,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 556,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 557,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_sealangel",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 558,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1791_1#1$1",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 559,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 560,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1791_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 561,
+            "prop": "name",
+            "attributes": {
+                "content": "（這いずり叫ぶ）",
+                "name": "祝福を受けた生き物A"
+            },
+            "figure_art": "avg_npc_1791_1#1$1"
+        },
+        {
+            "id": 562,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 563,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 564,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 565,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_dogangel_2",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 566,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1792_1#1$1",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 567,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 568,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1792_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 569,
+            "prop": "name",
+            "attributes": {
+                "content": "（低い声で祈る）",
+                "name": "祝福を受けた生き物B"
+            },
+            "figure_art": "avg_npc_1792_1#1$1 "
+        },
+        {
+            "id": 570,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 571,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_sandnmlfts",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 572,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 573,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 574,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#10$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 575,
+            "prop": "name",
+            "attributes": {
+                "content": "この怪物たち……",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#10$2 "
+        },
+        {
+            "id": 576,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 577,
+            "prop": "name",
+            "attributes": {
+                "content": "転化プログラムは強制的に中断されてしまいましたから、サンクタも、その時降誕の儀式を受けていた他種族の人々も、その影響を受けています。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 578,
+            "prop": "name",
+            "attributes": {
+                "content": "私にできるのは、すべての個体をそばに呼び寄せ、主と会う前にあなた方の精神状態をなるべく安定させて、その心が崩壊しないよう努めることだけです。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 579,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたが「怪物」と呼ぶ者たちもまた「サンクタ」であり、法の庇護を受ける同胞なのですよ。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 580,
+            "prop": "name",
+            "attributes": {
+                "content": "降誕を終えたばかりの彼らは、敬虔にして素朴な存在です。彼らなら、この隊列の進路を阻む障害を取り除いてくれることでしょう。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 581,
+            "prop": "name",
+            "attributes": {
+                "content": "我々はこれより、エクレシエン区の啓示の石塔、ミカエレオン区の公証人役場と大小様々な銃工房、聖マルソー区のサンセット礼拜堂を経て……",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 582,
+            "prop": "name",
+            "attributes": {
+                "content": "最終的には、大聖堂へ到着する予定です。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 583,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#10$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 584,
+            "prop": "name",
+            "attributes": {
+                "content": "その順番って……",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#10$2 "
+        },
+        {
+            "id": 585,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 586,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたにも覚えがあるでしょう？　これは毎夜、ラテラーノの街中で明かりが灯るのと同じ順番であり、主が我らのために導き出した最も効率的な道順なのですよ。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 587,
+            "prop": "name",
+            "attributes": {
+                "content": "ですから、今は眠りなさい。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 588,
+            "prop": "name",
+            "attributes": {
+                "content": "次に目覚めた時には、我らは目的地に辿り着き、種の存続の希望を再び繋いでいることでしょう。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 589,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#2$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 590,
+            "prop": "name",
+            "attributes": {
+                "content": "っ――",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#2$2 "
+        },
+        {
+            "id": 591,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 592,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 593,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 594,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 595,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 596,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "xstrength": 40.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 597,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_gunsingle",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 598,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 599,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 600,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 601,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_clothmovementsp",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 602,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 603,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 604,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_runstop",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 605,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#8$4 ",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 606,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 607,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 608,
+            "prop": "name",
+            "attributes": {
+                "content": "——",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 609,
+            "prop": "name",
+            "attributes": {
+                "content": "なるほど……あなたは目を覚ました時から、ずっと機を伺っていたのですか？",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 610,
+            "prop": "name",
+            "attributes": {
+                "content": "まだ受け入れようとしないのですね、我が子よ。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 611,
+            "prop": "name",
+            "attributes": {
+                "content": "よもや我らが残した物語が、後世の者を縛る枷となってしまうとは……",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 612,
+            "prop": "name",
+            "attributes": {
+                "content": "書物に記された聖徒の崇高さと、悪魔の醜悪さにまつわる描写は、人々の心に深く染み付いているのでしょう。あなたが私の姿を目にしただけで、躊躇いなく銃を向けようと決意するほどに。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 613,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、構いません。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 614,
+            "prop": "name",
+            "attributes": {
+                "content": "いずれは、あなたにもわかるでしょう。英雄とは、怪物とは、同胞とは、異種族とは何なのかを……あなたたち全員が知ることになるのです。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 615,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#7$4 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 616,
+            "prop": "name",
+            "attributes": {
+                "content": "これが、堕天……？　確かに……あんまりいい気分じゃないね。",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#7$4 "
+        },
+        {
+            "id": 617,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#7$4 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 618,
+            "prop": "multiline",
+            "attributes": {
+                "name": "エクシア",
+                "content": "げほ、ごほっ……"
+            }
+        },
+        {
+            "id": 619,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#9$4 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 620,
+            "prop": "multiline",
+            "attributes": {
+                "name": "エクシア",
+                "content": "やるじゃん、まさかあたしの蛍光灯を消しちゃうなんて。"
+            }
+        },
+        {
+            "id": 621,
+            "prop": "name",
+            "attributes": {
+                "content": "そのうち恋しくなるかもしれないけど、今のところはこれがないのも悪くないね！　キミたちの感情が伝わってこなくなった分、目が覚めたような感じだよ！",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#9$4 "
+        },
+        {
+            "id": 622,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1778_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 623,
+            "prop": "name",
+            "attributes": {
+                "content": "いいえ、我が子よ。私の、そして一族の出自を知ってなお、私を敵と見なすのならば、目が覚めたとは言えません。",
+                "name": "「聖徒」"
+            },
+            "figure_art": "avg_npc_1778_1#1$1 "
+        },
+        {
+            "id": 624,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#12$4 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 625,
+            "prop": "name",
+            "attributes": {
+                "content": "いーや、すっきりさっぱり目が覚めたって！",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#12$4 "
+        },
+        {
+            "id": 626,
+            "prop": "name",
+            "attributes": {
+                "content": "キミはあたしが書物に縛られてるなんて言ってたけど、本の中には昔の聖徒様の言うことなら何でも聞きなさいなんて書いてなかったし！",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#12$4 "
+        },
+        {
+            "id": 627,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1041_angel2_1#9$4 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 628,
+            "prop": "name",
+            "attributes": {
+                "content": "ねえ、散々そっちの話を聞いてあげたんだから、そろそろあたしたちの考えも聞いてくれない？",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#9$4 "
+        },
+        {
+            "id": 629,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 630,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 631,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 632,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 633,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 634,
+            "prop": "Background",
+            "attributes": {
+                "image": "26_g10_laterano_roof",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 635,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 636,
+            "prop": "playMusic",
+            "attributes": {
+                "key": "$formal_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 637,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 638,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 639,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#1$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 640,
+            "prop": "multiline",
+            "attributes": {
+                "name": "Mon3tr",
+                "content": "いい知らせだ。私たちを追っていた怪物が退いた。"
+            }
+        },
+        {
+            "id": 641,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 642,
+            "prop": "multiline",
+            "attributes": {
+                "name": "Mon3tr",
+                "content": "だが同時に、悪い知らせもある。奴らはあの奇妙な隊列に加わったようだ。"
+            }
+        },
+        {
+            "id": 643,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#5$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 644,
+            "prop": "name",
+            "attributes": {
+                "content": "……幸い、イディダのことは説得できた。彼女には、安全な場所に留まるようにと伝えてある。ドクター、エクシアのほうは一人で大丈夫なのか？",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$2 "
+        },
+        {
+            "id": 645,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 646,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 647,
+            "prop": "Decision",
+            "attributes": {
+                "options": "彼女を信じよう。;彼女は今も時間を稼いでくれている。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line648",
+                "option2": "line648"
+            }
+        },
+        {
+            "id": 648,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 649,
+            "prop": "Decision",
+            "attributes": {
+                "options": "あの隊列は例の機械を目指しているんだ。;例の機械があの怪物を待っているんだ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line650",
+                "option2": "line650"
+            }
+        },
+        {
+            "id": 650,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 651,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#5$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 652,
+            "prop": "name",
+            "attributes": {
+                "content": "あの怪物……どれほど生き物らしく見えようと、あれがプログラムであることは私には一目瞭然だ。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$2 "
+        },
+        {
+            "id": 653,
+            "prop": "name",
+            "attributes": {
+                "content": "「夢」の崩壊に伴い、彼女と機械の接続が切れたようだ。プログラムである彼女にできることなど、機械との接続を復旧し……「夢」を再起動させることくらいだろう。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$2 "
+        },
+        {
+            "id": 654,
+            "prop": "name",
+            "attributes": {
+                "content": "先ほど、アイリスの花畑を通った時、その一輪一輪に光輪が現れているのが見えた。こんな話は聞いたことがない。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$2 "
+        },
+        {
+            "id": 655,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#4$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 656,
+            "prop": "name",
+            "attributes": {
+                "content": "あの機械とプログラムの目的は、我々が思うより遥かに過激なものだ。有機物も、無機物も、すべてを「サンクタ」という定義の中に取り込もうとしている……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#4$2 "
+        },
+        {
+            "id": 657,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 658,
+            "prop": "name",
+            "attributes": {
+                "content": "暴走したPRTS以上に狂った行動だ。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$2 "
+        },
+        {
+            "id": 659,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 660,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$2 ",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 661,
+            "prop": "Decision",
+            "attributes": {
+                "options": "しかし、おかげで我々はチャンスを得た。;Mon3tr、今のうちに奴の隙を突けないか？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line662",
+                "option2": "line662"
+            }
+        },
+        {
+            "id": 662,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 663,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 664,
+            "prop": "name",
+            "attributes": {
+                "content": "私だけでは不可能だな。だが……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$2 "
+        },
+        {
+            "id": 665,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 666,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$2 ",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 667,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ケルシーならあの機械について何か知っているはずだ。;ケルシーの知見から解決策を得られないだろうか？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line668",
+                "option2": "line668"
+            }
+        },
+        {
+            "id": 668,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 669,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#9$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 670,
+            "prop": "name",
+            "attributes": {
+                "content": "……ケルシーか。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#9$2 "
+        },
+        {
+            "id": 671,
+            "prop": "name",
+            "attributes": {
+                "content": "あの一件以来、ラテラーノへ来てからもずっと、君は私の前で彼女の名前を出さないようにしてくれていたな。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#9$2 "
+        },
+        {
+            "id": 672,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 673,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#9$2 ",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 674,
+            "prop": "Decision",
+            "attributes": {
+                "options": "すまない……;それは……",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line675",
+                "option2": "line675"
+            }
+        },
+        {
+            "id": 675,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 676,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#1$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 677,
+            "prop": "name",
+            "attributes": {
+                "content": "いずれにせよ、信じてくれてありがとう。出発前、アーミヤはずっと心配していたようで――",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#1$2 "
+        },
+        {
+            "id": 678,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#10$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 679,
+            "prop": "name",
+            "attributes": {
+                "content": "まあ、どうあれ今回のことで、私は多くの収穫を得た。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2 "
+        },
+        {
+            "id": 680,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 681,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 682,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#2$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 683,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、あの機械は特殊な性質を持っているんだ。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#2$2 "
+        },
+        {
+            "id": 684,
+            "prop": "name",
+            "attributes": {
+                "content": "以前にも接近を試みたのだが、ラテラーノの法が洗練されていくにつれて、その状況を把握すること自体がどんどん難しくなっていった。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#2$2 "
+        },
+        {
+            "id": 685,
+            "prop": "name",
+            "attributes": {
+                "content": "それでも、ケルシーはある方法を思いついていた。彼女自身、大胆すぎると思っていたようだが。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#2$2 "
+        },
+        {
+            "id": 686,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 687,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#2$2 ",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 688,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……！？;それはどんな方法なんだ？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line689",
+                "option2": "line689"
+            }
+        },
+        {
+            "id": 689,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 690,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#10$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 691,
+            "prop": "name",
+            "attributes": {
+                "content": "最も粗暴な方法だ。彼女は私にそんな真似をさせたがらなかったというほどにな。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2 "
+        },
+        {
+            "id": 692,
+            "prop": "name",
+            "attributes": {
+                "content": "だがある意味、私の持つ本質が、常人とは異なる才を私に授けてくれたことは確かだ。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2 "
+        },
+        {
+            "id": 693,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、もちろん我々の創造主が技術交流に積極的だったことにも感謝しなくてはな――とはいえ、これを試すのは初めてなんだが……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2 "
+        },
+        {
+            "id": 694,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 695,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#10$2 ",
+                "focus": "n"
+            }
+        },
+        {
+            "id": 696,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……技術交流？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line697"
+            }
+        },
+        {
+            "id": 697,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 698,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#1$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 699,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター、少し離れていてくれ。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#1$2 "
+        },
+        {
+            "id": 700,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 701,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 702,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.7
+            }
+        },
+        {
+            "id": 703,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_mechalock",
+                "volume": 0.8
+            }
+        },
+        {
+            "id": 704,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 705,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 706,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.6,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 707,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "……………………",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 708,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "都市通信柱からポートにリバースアクセスを行います……",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 709,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "特別権限、AMa-10。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 710,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "臨時アクセス認証――ELCARO-001……ORACLE。\\nデコード成功。認証完了。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 711,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "PCSシステムに接続。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 712,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "間もなくラジエーションリンクの同期演算を開始します……",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 713,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "権限ログを更新中……",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 714,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 715,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 716,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 717,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#1$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 718,
+            "prop": "name",
+            "attributes": {
+                "content": "ラテラーノ全体の転化を加速させるには、基底部分の制限を完全に解除して、演算力の限界を幾度も突破しなければならない。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#1$2 "
+        },
+        {
+            "id": 719,
+            "prop": "name",
+            "attributes": {
+                "content": "つまりあの機械は、私の前で内部構造を開け放ったも同然だ。ゆえに、私に対する制限にまで気を配る余裕はないだろう――",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#1$2 "
+        },
+        {
+            "id": 720,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 721,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 722,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_aircraftalarm",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "a"
+            }
+        },
+        {
+            "id": 723,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "a",
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 724,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 725,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 726,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 727,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 728,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.3,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 729,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 1.0,
+                "g": 0.2,
+                "b": 0.2,
+                "fadetime": 0.3,
+                "block": "true"
+            }
+        },
+        {
+            "id": 730,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 731,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 732,
+            "prop": "Decision",
+            "attributes": {
+                "options": "待て！;Mon3tr！",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line733",
+                "option2": "line733"
+            }
+        },
+        {
+            "id": 733,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 734,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 735,
+            "prop": "name",
+            "attributes": {
+                "content": "今、止めようとしているんだが——ダメだ、制御できない！",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$2 "
+        },
+        {
+            "id": 736,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 737,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 738,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 739,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_lnswhitnois",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 740,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "fadetime": 0.7,
+                "keep": "true",
+                "initamount": 0.0,
+                "amount": 0.6,
+                "block": "true"
+            }
+        },
+        {
+            "id": 741,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 742,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "fadetime": 0.7,
+                "keep": "true",
+                "initamount": 0.6,
+                "amount": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 743,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 744,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_lnswhitnois",
+                "volume": 1.0,
+                "channel": "slide1"
+            }
+        },
+        {
+            "id": 745,
+            "prop": "stopsound",
+            "attributes": {
+                "channel": "slide1",
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 746,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "fadetime": 0.3,
+                "keep": "true",
+                "initamount": 0.0,
+                "amount": 0.8,
+                "block": "true"
+            }
+        },
+        {
+            "id": 747,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.7
+            }
+        },
+        {
+            "id": 748,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "fadetime": 0.3,
+                "keep": "true",
+                "initamount": 0.8,
+                "amount": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 749,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 750,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_beamamb",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 751,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_tinnitus",
+                "volume": 1.0,
+                "delay": 1.2
+            }
+        },
+        {
+            "id": 752,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.7
+            }
+        },
+        {
+            "id": 753,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g10_fadedbalcony",
+                "fadetime": 0.7,
+                "block": "true"
+            }
+        },
+        {
+            "id": 754,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 755,
+            "prop": "name",
+            "attributes": {
+                "content": "想像していたような情報の奔流は起こらず、騒がしい演算の音もいつの間にか止んでいた。そうして、あなたとMon3trは同時に異様な感覚に包まれる。"
+            }
+        },
+        {
+            "id": 756,
+            "prop": "name",
+            "attributes": {
+                "content": "それはどこかの分かれ道で立ち止まっているかのような感覚だ。かつての旧友が――ずっと一緒にいたのか、あるいは偶然出くわしたのか。どうあれ、あなたは彼女の姿を視界に捉えた。"
+            }
+        },
+        {
+            "id": 757,
+            "prop": "name",
+            "attributes": {
+                "content": "周囲から色彩が徐々に抜け落ちていき、すべてが静止したかのように見えた。ここはこの再会のために設けられた舞台なのだ。"
+            }
+        },
+        {
+            "id": 758,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 759,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line760"
+            }
+        },
+        {
+            "id": 760,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 761,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$2 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 762,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$2 "
+        },
+        {
+            "id": 763,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$plot_intro",
+                "key": "$plot_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 764,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 765,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 766,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.2
+            }
+        },
+        {
+            "id": 767,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#1$1",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 768,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 769,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#1$1 ",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 770,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）あなたの努力に感謝するわ、「AMa-10」。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#1$1 "
+        },
+        {
+            "id": 771,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）また会ったわね、{@nickname}。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#1$1 "
+        },
+        {
+            "id": 772,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）思ったより早く再会できたわね……私の願った通りだわ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#1$1 "
+        },
+        {
+            "id": 773,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 774,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 775,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 776,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 777,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 778,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 779,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}

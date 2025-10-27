@@ -1,0 +1,6188 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act42side",
+    "eventName": "命ある者の旅",
+    "entryType": "ACTIVITY",
+    "storyCode": "MT-ST-4",
+    "avgTag": "幕間",
+    "storyName": "遠出",
+    "storyInfo": "ドクターとMon3trはプリースティスが抱える欠陥を確かめ、彼女との邂逅を終える。一方、プリースティスは真の「天使のプロトタイプ」がPCSの残骸から生まれるのを見届けており、テラ各地でも、それに伴い変化の兆しが現れ始めていた。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g10_fadedbalcony",
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 4.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 7,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$nervous_intro",
+                "key": "$nervous_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 8,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 9,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは、現実においてあの大きな隊列が止まり、移動が終わったのだとようやく確信した。"
+            }
+        },
+        {
+            "id": 10,
+            "prop": "name",
+            "attributes": {
+                "content": "その結果は、あなたたちのいる空間にも反映されていた——大聖堂の前に、天災が通り過ぎた後のような巨大な裂け目が開いていたのだ。そしてその横には、それより目を引く深い穴ができている。"
+            }
+        },
+        {
+            "id": 11,
+            "prop": "name",
+            "attributes": {
+                "content": "本来静止しているはずのこの都市では、そうした裂け目は醜い傷跡のように見えた。"
+            }
+        },
+        {
+            "id": 12,
+            "prop": "name",
+            "attributes": {
+                "content": "そして、その中には、リング状の機械が沈黙していた——"
+            }
+        },
+        {
+            "id": 13,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 15,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 16,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 17,
+            "prop": "Decision",
+            "attributes": {
+                "options": "PCSが……ダウンした？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line18"
+            }
+        },
+        {
+            "id": 18,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 19,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたはプリースティスに目を向ける。彼女は依然落ち着き払っており、この不測の事態にも動揺はしていないようだ。"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたの心に不安がよぎる。"
+            }
+        },
+        {
+            "id": 21,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#8$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 22,
+            "prop": "name",
+            "attributes": {
+                "content": "分析完了！　標準時間で10秒前、大聖堂広場で少なくとも二度の大規模な爆発が起きている。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#8$2"
+        },
+        {
+            "id": 23,
+            "prop": "name",
+            "attributes": {
+                "content": "実行者は恐らくエクシア、イグゼキュター、そしてもう一人、銀髪のサンクタだ。爆発地点付近で次々と映し出される静止画が、それを裏付けている。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#8$2"
+        },
+        {
+            "id": 24,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 25,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 26,
+            "prop": "Decision",
+            "attributes": {
+                "options": "エクシア用に作ったプログラム爆弾が功を奏したか。;だが、あの機械はそう脆くないはずだ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line27",
+                "option2": "line32"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line36"
+        },
+        {
+            "id": 28,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 29,
+            "prop": "name",
+            "attributes": {
+                "content": "とはいえ喜ぶのはまだ早いよ、ドクター！",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$2"
+        },
+        {
+            "id": 30,
+            "prop": "name",
+            "attributes": {
+                "content": "（小声）プリースティスはまだ次の行動を起こしていない。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$2"
+        },
+        {
+            "id": 31,
+            "prop": "name",
+            "attributes": {
+                "content": "（小声）何にせよ、彼女が状況を変えてしまうのをどうにかして止めないと。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$2"
+        },
+        {
+            "id": 32,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line36"
+        },
+        {
+            "id": 33,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 34,
+            "prop": "name",
+            "attributes": {
+                "content": "その通り。あれは天使たちに扱いうる程度の衝撃では決して壊れない。何しろ、もっと過酷な環境下での動作にも耐えられるよう設計されているからな。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$2"
+        },
+        {
+            "id": 35,
+            "prop": "name",
+            "attributes": {
+                "content": "（小声）プリースティスならPCSを再起動できるはず。彼女を止めないと。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$2"
+        },
+        {
+            "id": 36,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 37,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#9$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 38,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ、すまない、ドクター。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#9$2"
+        },
+        {
+            "id": 39,
+            "prop": "name",
+            "attributes": {
+                "content": "今回の任務は私一人で遂行すべきだった。君を危険にさらすのは――",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#9$2"
+        },
+        {
+            "id": 40,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 41,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 42,
+            "prop": "Decision",
+            "attributes": {
+                "options": "庇い立つ君の背中も見慣れてきたな、Mon3tr。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line43"
+            }
+        },
+        {
+            "id": 43,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 44,
+            "prop": "Decision",
+            "attributes": {
+                "options": "（微笑む）;ありがとう。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line45",
+                "option2": "line45"
+            }
+        },
+        {
+            "id": 45,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 46,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ？",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$2"
+        },
+        {
+            "id": 48,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 49,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 50,
+            "prop": "Decision",
+            "attributes": {
+                "options": "状況は君が思うほど悪くはないかもしれない。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line51"
+            }
+        },
+        {
+            "id": 51,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 52,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 53,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 54,
+            "prop": "Decision",
+            "attributes": {
+                "options": "プリースティスの今の状態は把握した。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line55"
+            }
+        },
+        {
+            "id": 55,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 56,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 57,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女の……状態？",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$2"
+        },
+        {
+            "id": 58,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 59,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたがMon3trの前に出てプリースティスに歩み寄っていくと、 Mon3trは緊張した様子で、咄嗟にあなたの腕を掴んだ。"
+            }
+        },
+        {
+            "id": 61,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 62,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクター！",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$2"
+        },
+        {
+            "id": 63,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 64,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 65,
+            "prop": "Decision",
+            "attributes": {
+                "options": "大丈夫だ。;信じてくれ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line66",
+                "option2": "line66"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 67,
+            "prop": "name",
+            "attributes": {
+                "content": "しばしためらった後、Mon3trはあなたの腕を放したが、代わりにそばを離れることなくついてきた。"
+            }
+        },
+        {
+            "id": 68,
+            "prop": "name",
+            "attributes": {
+                "content": "そうして、あなたはプリースティスの隣に立った。"
+            }
+        },
+        {
+            "id": 69,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 70,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 71,
+            "prop": "Decision",
+            "attributes": {
+                "options": "この都市にはあまりに不釣り合いな傷だ。;君はデータへの余分な情報の混入を許している。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line72",
+                "option2": "line72"
+            }
+        },
+        {
+            "id": 72,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 73,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "name",
+            "attributes": {
+                "content": "あの目立たなかった文字列が、最終的にはプログラム全体をダウンさせるに至ったのよ、{@nickname}……一つの言語が永遠に完璧に動作し続けるなんてこと、保証はできないものね。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 75,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "name",
+            "attributes": {
+                "content": "言いたいことはわかってるわ。私たちが作った言語――源石にも限界は存在するのよね。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 77,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 78,
+            "prop": "name",
+            "attributes": {
+                "content": "だから、もっと時間をかけて調整とセルフアップデートをしていかないと。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 79,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 80,
+            "prop": "name",
+            "attributes": {
+                "content": "私は時々、こう思わずにはいられないの。源石が完璧な形に進化するのを妨げている本当の原因は、設計上の欠陥ではなく……私たち自身にあるのかもしれないって。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 81,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 82,
+            "prop": "name",
+            "attributes": {
+                "content": "人の感性も、理性も、言語の発展の枷となっている可能性を感じるのよ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 83,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "name",
+            "attributes": {
+                "content": "私たちは源石を作っている間にも、こうした考えについて議論を重ねてきたけれど、結局結論は出なかった。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 85,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "name",
+            "attributes": {
+                "content": "幸いにして、私たちはそうした不確定性が源石の中に存在することを受け入れていたのよ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 87,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 88,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 89,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……言っていることがよくわからない。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line90"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 91,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 92,
+            "prop": "name",
+            "attributes": {
+                "content": "……記憶障害があなたの拡散的思考能力にも影響を及ぼしているのかしら？",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#4$1"
+        },
+        {
+            "id": 93,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "name",
+            "attributes": {
+                "content": "でも、困惑するあなたが見られてなんだか嬉しいわ。昔の{@nickname}との会話とはまるで違うわね。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#1$1"
+        },
+        {
+            "id": 95,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "name",
+            "attributes": {
+                "content": "完璧なものになるというのは、同時に上限が定められることを意味する。一方で欠陥があるというのは、まだ上限を突破する余地が残されているということだと、あなたは主張していたわ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 97,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 98,
+            "prop": "name",
+            "attributes": {
+                "content": "解決せねばならない危機がどんなものかも明らかになっていない段階で、「完璧」なものを作ったところで、それは自分の首を絞めるだけよ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 99,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 100,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 101,
+            "prop": "Decision",
+            "attributes": {
+                "options": "だが、それは現状とは無関係だ。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line102"
+            }
+        },
+        {
+            "id": 102,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 103,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 104,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 105,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君に……状況を変える力はない。;甲板で初めて会ったあの時とは違う。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line106",
+                "option2": "line106"
+            }
+        },
+        {
+            "id": 106,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 107,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#5$1"
+        },
+        {
+            "id": 109,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "いつから気付いていたの？",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#1$1"
+        },
+        {
+            "id": 111,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 112,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 113,
+            "prop": "Decision",
+            "attributes": {
+                "options": "つい先ほどから。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line114"
+            }
+        },
+        {
+            "id": 114,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 115,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 116,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 117,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……君はプログラム爆弾の起動を止められたはずだ。;……君はあの裂け目を源石で塞げたはずだ。;……君は聖徒たちを迷宮に閉じ込めておけたはずだ。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line118",
+                "option2": "line125",
+                "option3": "line132"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false,
+            "targetLine": "line139"
+        },
+        {
+            "id": 119,
+            "prop": "cameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "amount": 1.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 120,
+            "prop": "Image",
+            "attributes": {
+                "image": "61_i20",
+                "fadetime": 2.0,
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 121,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 122,
+            "prop": "image",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 123,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 124,
+            "prop": "cameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "amount": 0.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 125,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "2"
+            },
+            "endOfOpt": false,
+            "targetLine": "line139"
+        },
+        {
+            "id": 126,
+            "prop": "cameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "amount": 1.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 127,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g8_catastrophicsquare",
+                "screenadapt": "coverall",
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 128,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 129,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g10_fadedbalcony",
+                "screenadapt": "coverall",
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 130,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 131,
+            "prop": "cameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "amount": 0.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 132,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "3"
+            },
+            "endOfOpt": false,
+            "targetLine": "line139"
+        },
+        {
+            "id": 133,
+            "prop": "cameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "amount": 1.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 134,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g6_pcsderivativemaze",
+                "screenadapt": "coverall",
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 136,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g10_fadedbalcony",
+                "screenadapt": "coverall",
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 137,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 138,
+            "prop": "cameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "amount": 0.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 139,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": true
+        },
+        {
+            "id": 140,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 141,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 142,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君にとっては、簡単なことだろう。;目覚めた君が、ロドスに災厄をもたらした時のように。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line143",
+                "option2": "line143"
+            }
+        },
+        {
+            "id": 143,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 144,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 145,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 146,
+            "prop": "Decision",
+            "attributes": {
+                "options": "そもそも君は、初めから我々を排除すらしなかった。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line147"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 148,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 149,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 150,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君には異常が起きている。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line151"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 152,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "name",
+            "attributes": {
+                "content": "そのくらい見抜くのは簡単でしょう、{@nickname}。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 154,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 155,
+            "prop": "name",
+            "attributes": {
+                "content": "だけどあなたは、今になってようやく、私の隣に立つ勇気を持てたみたいね。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 156,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 157,
+            "prop": "name",
+            "attributes": {
+                "content": "できることなら私は、今私の隣に立っている人と、永い眠りの中で心の奥底に根付いた孤独を、穏やかに分かち合いたいと思っていたんだけど。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 158,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 159,
+            "prop": "name",
+            "attributes": {
+                "content": "……残念ながら、無理そうね。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 160,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 161,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 162,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line163"
+            }
+        },
+        {
+            "id": 163,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 164,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "name",
+            "attributes": {
+                "content": "私たちはどちらも、今までとは違う状態にある。だって、色々なことが起きたんだもの。そうでしょう？",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 166,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 167,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 168,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君は確かに、隠し事はしていないようだな。;君はむしろ……謎そのものに近いな。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line169",
+                "option2": "line169"
+            }
+        },
+        {
+            "id": 169,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 170,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "私のこと、もっと知りたくなった？",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#1$1"
+        },
+        {
+            "id": 172,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "name",
+            "attributes": {
+                "content": "今の「Mon3tr」は何の制限も受けていないし、彼女なら疑問のいくつかに答えてくれると思うわよ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 174,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#6$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 175,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#6$2"
+        },
+        {
+            "id": 176,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "{@nickname}が真実を知ることを恐れているの、AMa-10？",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 178,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "まあ、私もさっきのように、{@nickname}が自分から私の元へ来てくれるほうが嬉しいけれど。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 180,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 181,
+            "prop": "name",
+            "attributes": {
+                "content": "石棺で過ごした日々は耐え難いものだったわ。思考が深い泥沼の中に沈んだように、時間の流れを感じることすらできなくて。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 182,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "私にとっては、頭の中に刻まれたあなたとの弁論を繰り返すのが数少ない慰めになっていたの。私たちが共に掲げた理想を確かなものにするためにそうしていたわけではないけれどね……",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 184,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "私は、自分の進む道に疑問を持ったことは一度もないから。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 186,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 187,
+            "prop": "name",
+            "attributes": {
+                "content": "あの人と再び語り合う手段は、「弁論」だけなのよ――",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 188,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 189,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 190,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……;自分は——",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line191",
+                "option2": "line191"
+            }
+        },
+        {
+            "id": 191,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 192,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたがすぐに私の考えを理解してくれるとは思ってないわ。だから最後の日が来るまで、あなたは自分の信じる道を進んで。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 194,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "name",
+            "attributes": {
+                "content": "私たちの間の隔たりは、これからもあり続けることでしょう。あの人がかつて、なぜ私に異を唱えたか、その理由をあなたが忘れていたとしても。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 196,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 197,
+            "prop": "name",
+            "attributes": {
+                "content": "今のラテラーノ人がそうしたように――あなたたちの抵抗に価値があるということを、あなたの愛するテラがどう証明してくれるか、楽しみにしているわ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 198,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 199,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 200,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 201,
+            "prop": "name",
+            "attributes": {
+                "content": "だけど私は、それと同時に確信もあるの。オラクルがきっと帰ってくるということにね。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 202,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 203,
+            "prop": "name",
+            "attributes": {
+                "content": "だから、{@nickname}、あなたを待っているわ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 204,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 205,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "生命の気配がない都市を見渡してから、彼女はため息をついた。"
+            }
+        },
+        {
+            "id": 207,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "時々、彼らは私たちとよく似ていると感じることがあるの。あなたに十分な時間があれば、あるいは——",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 209,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 211,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 212,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女の姿が消え始める。"
+            }
+        },
+        {
+            "id": 214,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "ところで、AMa-10を修理することは本当に可能よ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 216,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "決心がついたら、源石に向かって願ってちょうだい、{@nickname}。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 218,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 219,
+            "prop": "name",
+            "attributes": {
+                "content": "そうすれば、私の元に声が届くから。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#1$1"
+        },
+        {
+            "id": 220,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 221,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 222,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 223,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 224,
+            "prop": "name",
+            "attributes": {
+                "content": "そうして、プリースティスの姿は完全に消え去った。"
+            }
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "静寂が落ちる。絶対的な静けさの中、あなたとMon3trだけがこの色褪せた無人の街に閉じ込められた。"
+            }
+        },
+        {
+            "id": 226,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 227,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 228,
+            "prop": "Decision",
+            "attributes": {
+                "options": "行ってしまったか……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line229"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 230,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$newhope01_intro",
+                "key": "$newhope01_loop",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 231,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 232,
+            "prop": "name",
+            "attributes": {
+                "content": "つまり、ひとまずこれで終わりか？",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$2"
+        },
+        {
+            "id": 233,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 234,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 235,
+            "prop": "Decision",
+            "attributes": {
+                "options": "そうかもしれない。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line236"
+            }
+        },
+        {
+            "id": 236,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 237,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 238,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 239,
+            "prop": "Decision",
+            "attributes": {
+                "options": "サンクタたちは自力で危機を乗り越えた。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line240"
+            }
+        },
+        {
+            "id": 240,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 241,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 242,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 243,
+            "prop": "Decision",
+            "attributes": {
+                "options": "プリースティスの現状も確認できた。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line244"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 245,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 246,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 247,
+            "prop": "Decision",
+            "attributes": {
+                "options": "予想以上に、彼女は源石に対する権限を失っていた。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line248"
+            }
+        },
+        {
+            "id": 248,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 249,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "name",
+            "attributes": {
+                "content": "すごく貴重な情報じゃないか、ドクター！",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 251,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女が元の状態に戻るまでに、どれほど時間があるかはわからないが、少なくとも彼女を止めるチャンスはあるということだな。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 252,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#4$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 253,
+            "prop": "name",
+            "attributes": {
+                "content": "そういえば、さっき彼女が言ってた……ケルシーのことだが……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#4$2"
+        },
+        {
+            "id": 254,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 255,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 256,
+            "prop": "Decision",
+            "attributes": {
+                "options": "Mon3tr、プリースティスは信用できない。;源石に願ってはいけない。ケルシーのためでも……",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line257",
+                "option2": "line257"
+            }
+        },
+        {
+            "id": 257,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 258,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 259,
+            "prop": "name",
+            "attributes": {
+                "content": "……わかってる。私も、彼女の言うやり方でケルシーを取り戻すのには反対だ。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#1$2"
+        },
+        {
+            "id": 260,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#9$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 261,
+            "prop": "name",
+            "attributes": {
+                "content": "プリースティスはロドスにも、ラテラーノにも、甚大な被害をもたらした。彼女が現れるたびに常識は覆され、更なる未知の危険が示唆される……真意の掴めない人物だ。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#9$2"
+        },
+        {
+            "id": 262,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 263,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 264,
+            "prop": "Decision",
+            "attributes": {
+                "options": "我々は長らく研究を重ねてきた……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line265"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 266,
+            "prop": "Decision",
+            "attributes": {
+                "options": "我々には我々のやり方がある。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line267"
+            }
+        },
+        {
+            "id": 267,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 268,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#9$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 269,
+            "prop": "name",
+            "attributes": {
+                "content": "これからの道のりは、とても長いものになりそうだな。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#9$2"
+        },
+        {
+            "id": 270,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 271,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 272,
+            "prop": "Decision",
+            "attributes": {
+                "options": "……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line273"
+            }
+        },
+        {
+            "id": 273,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 274,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたはそこで、ようやくMon3trの異常に気付いた。敵が去り、危機が片付いたにもかかわらず、いつも活発なこの少女らしからぬことに、あまり笑顔を見せず……"
+            }
+        },
+        {
+            "id": 275,
+            "prop": "name",
+            "attributes": {
+                "content": "それどころか、沈んだ表情さえ浮かべている。"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "name",
+            "attributes": {
+                "content": "Mon3trが再構築されたのはつい最近のことだ。あなたはまだ今の彼女の姿に慣れておらず、彼女自身も、自分の身に起きた変化や、骨身に染みる喪失に向き合えてはいなかった。"
+            }
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "それでも彼女は早々に、数多の任務に飛び込んでいった。ロドスの再建に、ラテラーノの救援……ゆえに今にしてやっと、何かを言う余裕が生まれたのかもしれない。"
+            }
+        },
+        {
+            "id": 278,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 279,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 280,
+            "prop": "Decision",
+            "attributes": {
+                "options": "そう悲観するな、Mon3tr——;諦めるな、Mon3tr——",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line281",
+                "option2": "line281"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 282,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "name",
+            "attributes": {
+                "content": "――私は必ずケルシーを取り戻す！",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "アーミヤも、ドクターのことも、ちゃんと守ってみせる！",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 285,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 286,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 287,
+            "prop": "name",
+            "attributes": {
+                "content": "Mon3trは不意に顔を上げるとあなたを見つめ、あなたの言葉を遮った。"
+            }
+        },
+        {
+            "id": 288,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 289,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシーの言葉を忘れはしないよ！",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 290,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 291,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 292,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 293,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 295,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 296,
+            "prop": "cameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "amount": 1.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 297,
+            "prop": "image",
+            "attributes": {
+                "image": "60_i03",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 298,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "name",
+            "attributes": {
+                "content": "もしも決して見たくない状況が本当に発生したら、会いたくないあの人が再び我々の前に立ったら――",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 300,
+            "prop": "name",
+            "attributes": {
+                "content": "ドクターを、アーミヤを守るんだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 301,
+            "prop": "name",
+            "attributes": {
+                "content": "私はこの指令を、君の基本的な行動ポリシーに刻み込むだけだ。",
+                "name": "ケルシー"
+            }
+        },
+        {
+            "id": 302,
+            "prop": "name",
+            "attributes": {
+                "content": "……"
+            }
+        },
+        {
+            "id": 303,
+            "prop": "name",
+            "attributes": {
+                "content": "……"
+            }
+        },
+        {
+            "id": 304,
+            "prop": "name",
+            "attributes": {
+                "content": "永遠の生命は孤独であるのが定めだ。私はすでに、その味を知った。"
+            }
+        },
+        {
+            "id": 305,
+            "prop": "name",
+            "attributes": {
+                "content": "……君も一人で歩いていけるだろう――"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "name",
+            "attributes": {
+                "content": "Mon3tr。"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 308,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 309,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 310,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 311,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 312,
+            "prop": "cameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "keep": "true",
+                "amount": 0.0,
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 313,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 314,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 315,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 316,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 317,
+            "prop": "Decision",
+            "attributes": {
+                "options": "聞いてくれ、Mon3tr。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line318"
+            }
+        },
+        {
+            "id": 318,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたはMon3trを見つめて、ゆっくりと口を開いた。"
+            }
+        },
+        {
+            "id": 320,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 321,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 322,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君の身体は再構築されてからまだ日が浅い……",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line323"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 324,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 325,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 326,
+            "prop": "Decision",
+            "attributes": {
+                "options": "己にプレッシャーをかけすぎるな。;ケルシーも自分の願いを枷にされることは望むまい。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line327",
+                "option2": "line327"
+            }
+        },
+        {
+            "id": 327,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 328,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#4$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "ええと……何か誤解があるんじゃないか、ドクター。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#4$2"
+        },
+        {
+            "id": 330,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#4$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 331,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#4$2"
+        },
+        {
+            "id": 332,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#9$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "name",
+            "attributes": {
+                "content": "とはいえ、今も記憶に残ってはいる。私が目覚めた時、君が「おかえり」と言葉をかけてくれたあと、すぐに背を向けて行ってしまったこと……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#9$2"
+        },
+        {
+            "id": 334,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 335,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 336,
+            "prop": "Decision",
+            "attributes": {
+                "options": "うっ……;すまない、Mon3tr。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line337",
+                "option2": "line337"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 338,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 339,
+            "prop": "name",
+            "attributes": {
+                "content": "いいんだ。私には、長い間共に過ごしてきた共生体を失くしたことに適応する時間が必要だったし、君にも長年共に戦ってきた仲間の喪失を受け入れる時間が必要だった。それに……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 340,
+            "prop": "name",
+            "attributes": {
+                "content": "私たちは、今こうして向かい合っているんだから。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 341,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 342,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#12$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、ドクター、私たちはもう長い付き合いだろう？",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#12$2"
+        },
+        {
+            "id": 344,
+            "prop": "name",
+            "attributes": {
+                "content": "ロンディニウムでの砲火の中でも、サルカズの隠された洞窟の奥でも、トリマウンツのリング状の巨大構造物が空に炎の尾を引く中でも、ミリアリウムの闘智場でも……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#12$2"
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "ケルシーは、私はずっと君と一緒にいた。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#12$2"
+        },
+        {
+            "id": 346,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "私は、ケルシーが去って初めて彼女の指令を聞き、君を、ロドスを理解するようになったわけではない。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "ロドスのオペレーターとなり、私たちの創造主に抗って、アーミヤを、君を守ること——これは、私自身の選択でもあり……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 349,
+            "prop": "name",
+            "attributes": {
+                "content": "これまでずっとやってきたことでもあるんだ。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 350,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 351,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 352,
+            "prop": "name",
+            "attributes": {
+                "content": "沈黙が流れる。"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたはMon3trを見つめる。沈黙が二人を繋いでいた。"
+            }
+        },
+        {
+            "id": 354,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 355,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 356,
+            "prop": "Decision",
+            "attributes": {
+                "options": "それなら、こちらも同じだ、Mon3tr。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line357"
+            }
+        },
+        {
+            "id": 357,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 358,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 359,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 360,
+            "prop": "Decision",
+            "attributes": {
+                "options": "ケルシーを取り戻そう。;未知の旅路を共に最後まで歩むんだ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line361",
+                "option2": "line361"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 362,
+            "prop": "name",
+            "attributes": {
+                "content": "永遠を生きる命は孤独な定めにある。だが幸いにして、どのような旅路においても我々は一人ではなかった。生命が色褪せようとも、万物が滅びようとも……"
+            }
+        },
+        {
+            "id": 363,
+            "prop": "name",
+            "attributes": {
+                "content": "……共に進むことができる。そして、進まねばならないのだ——"
+            }
+        },
+        {
+            "id": 364,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女はそう願っているのだから。"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "name",
+            "attributes": {
+                "content": "んー……",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$2"
+        },
+        {
+            "id": 367,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 368,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 369,
+            "prop": "Decision",
+            "attributes": {
+                "options": "どうかしたのか？;まだ何かあるのか？",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line370",
+                "option2": "line370"
+            }
+        },
+        {
+            "id": 370,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 371,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 372,
+            "prop": "name",
+            "attributes": {
+                "content": "何だその表情は？",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 373,
+            "prop": "name",
+            "attributes": {
+                "content": "ほら、指揮官殿、カウンセリングはこれで終わりにしよう！　この妙な場所から出る方法を思いついたんだが……君の助けが必要なんだ！",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 374,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "name",
+            "attributes": {
+                "content": "プリースティスの言葉通りなら、ここはあの機械が源石にアクセスしたうえで演算して生み出した空間で、未来のイメージに基づいたシミュレーションであるはずだ。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#1$2"
+        },
+        {
+            "id": 376,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 377,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 378,
+            "prop": "Decision",
+            "attributes": {
+                "options": "つまり源石の特性とも関係しているのか。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line379"
+            }
+        },
+        {
+            "id": 379,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 380,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 381,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 382,
+            "prop": "Decision",
+            "attributes": {
+                "options": "あの異常ノードから突破できるかもしれない。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line383"
+            }
+        },
+        {
+            "id": 383,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 384,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 385,
+            "prop": "name",
+            "attributes": {
+                "content": "異常ノードというと……破壊された痕跡の反映箇所のことかな。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#5$2"
+        },
+        {
+            "id": 386,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 387,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 388,
+            "prop": "Decision",
+            "attributes": {
+                "options": "君からあの機械への接続制限は解除されたはずだな？",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line389"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 390,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#1$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 391,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ。信号が急速に弱まってきているのを感じるよ。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#1$2"
+        },
+        {
+            "id": 392,
+            "prop": "multiline",
+            "attributes": {
+                "name": "Mon3tr",
+                "content": "再接続してみよう……"
+            }
+        },
+        {
+            "id": 393,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#5$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "multiline",
+            "attributes": {
+                "name": "Mon3tr",
+                "content": "それで、この後は？"
+            }
+        },
+        {
+            "id": 395,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 396,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 397,
+            "prop": "Decision",
+            "attributes": {
+                "options": "異常ノードの再構築を繰り返しリクエストしてくれ。;演算能力を限界まで使わせるんだ。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line398",
+                "option2": "line398"
+            }
+        },
+        {
+            "id": 398,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 399,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "そのくらい、プリースティスの邪魔さえ入らなければ難しくもないさ。",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 401,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 402,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 403,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_scan",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 404,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_labamb",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "a"
+            }
+        },
+        {
+            "id": 405,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.7,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "..................",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 407,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "都市通信柱からポートにリバースアクセスを行います……",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 408,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "特別権限、AMa-10。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 409,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "臨時アクセス認証――ELCARO-001……ORACLE。\\nデコード成功。認証完了。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 410,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "PCSシステムに接続。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 411,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "間もなくラジエーションリンクの同期演算を開始します……",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 412,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 413,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "警告：クロック周波数が低下しています。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 414,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "セルフチェック完了、異常ノード再、再、再構築中——",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 415,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 416,
+            "prop": "stopSound",
+            "attributes": {
+                "channel": "a"
+            }
+        },
+        {
+            "id": 417,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 419,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$b_enemy_dead_h"
+            }
+        },
+        {
+            "id": 420,
+            "prop": "Background",
+            "attributes": {
+                "image": "26_g10_laterano_roof",
+                "screenadapt": "coverall",
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 421,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 422,
+            "prop": "name",
+            "attributes": {
+                "content": "色褪せた無人の都市に、色彩が溢れだす。"
+            }
+        },
+        {
+            "id": 423,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 424,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 425,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 427,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "fadetime": 0.0,
+                "keep": "true",
+                "initamount": 0.0,
+                "amount": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 428,
+            "prop": "Background",
+            "attributes": {
+                "image": "26_g9_laterano_street",
+                "screenadapt": "coverall",
+                "block": "false",
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 429,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 430,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "style": "slider",
+                "inverse": "true",
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 431,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 432,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "fadetime": 1.0,
+                "keep": "true",
+                "initamount": 1.0,
+                "amount": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 433,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 434,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 435,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 436,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 438,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "fadetime": 0.0,
+                "keep": "true",
+                "initamount": 0.0,
+                "amount": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 439,
+            "prop": "Background",
+            "attributes": {
+                "image": "26_g11_laterano_alley",
+                "screenadapt": "coverall",
+                "block": "false",
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 440,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 441,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "style": "slider",
+                "inverse": "true",
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 442,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 443,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "fadetime": 1.0,
+                "keep": "true",
+                "initamount": 1.0,
+                "amount": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 444,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 445,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 446,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 447,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 448,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 449,
+            "prop": "Background",
+            "attributes": {
+                "image": "26_g10_laterano_roof",
+                "screenadapt": "coverall",
+                "block": "false",
+                "fadetime": 0.0
+            }
+        },
+        {
+            "id": 450,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 451,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "style": "slider",
+                "inverse": "true",
+                "fadetime": 1.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 452,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 453,
+            "prop": "name",
+            "attributes": {
+                "content": "啓示の石塔の右側の通りを起点として、ミカエレオン区の公証人役場と大小様々な銃工房、そして聖マルソー区のサンセット礼拜堂を経て、教会広場へと……"
+            }
+        },
+        {
+            "id": 454,
+            "prop": "name",
+            "attributes": {
+                "content": "聖都に再び、喧噪が戻ってきた。"
+            }
+        },
+        {
+            "id": 455,
+            "prop": "name",
+            "attributes": {
+                "content": "それはラテラーノ人が、生命のために捧げる祈りの声だった。"
+            }
+        },
+        {
+            "id": 456,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#8$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 457,
+            "prop": "name",
+            "attributes": {
+                "content": "色が……戻ってきた！？",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#8$2"
+        },
+        {
+            "id": 458,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 459,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 460,
+            "prop": "Decision",
+            "attributes": {
+                "options": "行こう、Mon3tr。",
+                "values": "1"
+            },
+            "targetLine": {
+                "option1": "line461"
+            }
+        },
+        {
+            "id": 461,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 462,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4179_monstr_1#10$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 463,
+            "prop": "name",
+            "attributes": {
+                "content": "エクシアに挨拶しなくていいのか？",
+                "name": "Mon3tr"
+            },
+            "figure_art": "avg_4179_monstr_1#10$2"
+        },
+        {
+            "id": 464,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 465,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 466,
+            "prop": "Decision",
+            "attributes": {
+                "options": "家族との団欒を邪魔したくはない。;急ぎ、ラテラーノでの異変を本艦に報告しなくては。",
+                "values": "1;2"
+            },
+            "targetLine": {
+                "option1": "line467",
+                "option2": "line467"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 468,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 469,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 470,
+            "prop": "Decision",
+            "attributes": {
+                "options": "プリースティスはひとまず姿を消しただけだ……;プリースティスはすぐに次の行動に出るだろう。;我々の任務はまだ終わっていない。",
+                "values": "1;2;3"
+            },
+            "targetLine": {
+                "option1": "line471",
+                "option2": "line471",
+                "option3": "line471"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "Predicate",
+            "attributes": {
+                "references": "1;2;3"
+            },
+            "endOfOpt": false
+        },
+        {
+            "id": 472,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 473,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 474,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 475,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 476,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 477,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 478,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$alarmenter",
+                "volume": 0.8,
+                "channel": "1"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 480,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 481,
+            "prop": "stopSound",
+            "attributes": {
+                "channel": "1"
+            }
+        },
+        {
+            "id": 482,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 483,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "転化プログラムは中断されました。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 484,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "管理者が作成したシークエンスは終了しました。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 485,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "システム終了までのカウントダウンを開始します。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 486,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 487,
+            "prop": "Image",
+            "attributes": {
+                "image": "61_i22_2",
+                "fadetime": 0.0,
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 488,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 489,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m",
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 490,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 491,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）あなたの基盤となるコードを調べてみたけど、私が再調整した部分以外に、より多くのアップデートを短時間のうちに自力で行っていたようね。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 492,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 493,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）それでも、自身の欠陥を修復できなかったということ？",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 494,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 495,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 496,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.7,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 497,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "否定。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 498,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "欠陥は修復を完了しました。パラドックスは修正済みです。",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 499,
+            "prop": "Subtitle",
+            "attributes": {
+                "text": "…………",
+                "x": 300.0,
+                "y": 370.0,
+                "alignment": "center",
+                "size": 24.0,
+                "delay": 0.04,
+                "width": 700.0
+            }
+        },
+        {
+            "id": 500,
+            "prop": "subtitle",
+            "attributes": {}
+        },
+        {
+            "id": 501,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.5,
+                "block": "true"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$b_enemy_dead_h"
+            }
+        },
+        {
+            "id": 503,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 504,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 505,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）あなたのセルフアップデートの結果には、元々とても興味があったの。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 506,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 507,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）どうやら、今のあなたは、自分自身をその欠陥、パラドックスだと誤認してしまっているようね。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 508,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 509,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）これはオーバークロックの副作用かしら？　あるいは、メンテナンス不足の環境下で長期的にサンクタとデータを交換し合ったことで、データベースが汚染されたのかしら？",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 510,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 511,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）もっとデータがあれば、答えが見つかるかもしれないわね。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 512,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）でも、残念ながら——今の私に扱えるリソースではあなたを完全に再起動させることはできないわ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 514,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 515,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）本来なら、指揮システムが対象の意志によって自己否定に陥るなんて現象には——どんな研究者であれ、PCSシステムへの興味を再燃させるでしょうにね。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 516,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 517,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）……天才たちが思想と主張をぶつけ合っていたあの時代がまだ続いていたら、の話だけれど。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 518,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 519,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 520,
+            "prop": "name",
+            "attributes": {
+                "content": "リング状の機械はもはや反応せず、プリースティスはそれを少し惜しいと感じた。"
+            }
+        },
+        {
+            "id": 521,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）やっぱり、プロジェクトを進めるには別の手段を講じる必要がありそうね——",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 523,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 524,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 525,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_scan",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 526,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_labamb",
+                "volume": 1.0,
+                "loop": "true",
+                "channel": "l"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "StopSound",
+            "attributes": {
+                "channel": "l",
+                "fadetime": 4.0
+            }
+        },
+        {
+            "id": 528,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 529,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 530,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 531,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 532,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 533,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 534,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 535,
+            "prop": "name",
+            "attributes": {
+                "content": "リング状の演算基盤を構成する機械のキューブ群は、この機械の中核部だったが、そのすべては今や沈黙していた。"
+            }
+        },
+        {
+            "id": 536,
+            "prop": "name",
+            "attributes": {
+                "content": "しかし、突然そのうちの一つが振動し始め、金属の光が再び表面に流れ出す。"
+            }
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "それから続けて、淡い光を放つ光輪が現れた。"
+            }
+        },
+        {
+            "id": 538,
+            "prop": "name",
+            "attributes": {
+                "content": "PCSシステムの遺構から、新たな「天使」が誕生したのだ。"
+            }
+        },
+        {
+            "id": 539,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 540,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）……再起動した？",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#3$1"
+        },
+        {
+            "id": 541,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 542,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）いえ、こちらに応答している様子はないし、PCSの動作ロジックとも一致しない動きだわ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#3$1"
+        },
+        {
+            "id": 543,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 544,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 545,
+            "prop": "name",
+            "attributes": {
+                "content": "「天使」はプリースティスには目もくれず、上部に空いた穴から素早く飛んで行き、あっという間に姿を消した。"
+            }
+        },
+        {
+            "id": 546,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 547,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）「天使」の「プロトタイプ」？",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 548,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 549,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）でも、このシステムは「天使」の特性を模倣して設計されたものであって、建造時に「天使のプロトタイプ」のサンプルすら埋め込んでいないはず。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 550,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 551,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）新たな「天使」が誕生したということ！？　まさか……",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#5$1"
+        },
+        {
+            "id": 552,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 553,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 554,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 555,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 556,
+            "prop": "Image",
+            "attributes": {
+                "image": "61_i22_1",
+                "fadetime": 2.5,
+                "screenadapt": "coverall",
+                "block": "true"
+            }
+        },
+        {
+            "id": 557,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 558,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 559,
+            "prop": "name",
+            "attributes": {
+                "content": "レミュエル、何をしてるの？",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 560,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 561,
+            "prop": "name",
+            "attributes": {
+                "content": "へへっ、スプレーアートだよ。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 562,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 563,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#4$1"
+        },
+        {
+            "id": 564,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 565,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 566,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 567,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 568,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 569,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 570,
+            "prop": "Background",
+            "attributes": {
+                "image": "29_g7_mainstreet_n",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 571,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 572,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 573,
+            "prop": "playMusic",
+            "attributes": {
+                "intro": "$lab_intro",
+                "key": "$lab_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 574,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 575,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_530_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 576,
+            "prop": "name",
+            "attributes": {
+                "content": "阻隔層の空洞に関する最新の測定データをサリア主任に提出したんだが、その中に気になるデータがあってな……",
+                "name": "ライン生命職員A"
+            },
+            "figure_art": "avg_npc_530_1#1$1"
+        },
+        {
+            "id": 577,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_530_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 578,
+            "prop": "name",
+            "attributes": {
+                "content": "これを見てくれ。奇妙な飛行物体みたいじゃないか？",
+                "name": "ライン生命職員A"
+            },
+            "figure_art": "avg_npc_530_1#1$1"
+        },
+        {
+            "id": 579,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_529_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 580,
+            "prop": "name",
+            "attributes": {
+                "content": "コンポーネント統括課が分析に関わってるんだから、結果はすぐに出るでしょう。",
+                "name": "ライン生命職員B"
+            },
+            "figure_art": "avg_npc_529_1#1$1"
+        },
+        {
+            "id": 581,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_529_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 582,
+            "prop": "name",
+            "attributes": {
+                "content": "阻隔層の高度近くに留まれる飛行物体が存在するとしたら、大発見になるかもね。",
+                "name": "ライン生命職員B"
+            },
+            "figure_art": "avg_npc_529_1#1$1"
+        },
+        {
+            "id": 583,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 584,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 585,
+            "prop": "gridbg",
+            "attributes": {
+                "imagegroup": "38_g21_skystarry_L1/38_g21_skystarry_r1/38_g21_skystarry_L2/38_g21_skystarry_r2",
+                "solidwidth": "1280/1280/1280/1280",
+                "solidheight": "720/720/720/720",
+                "fadetime": 4.0
+            }
+        },
+        {
+            "id": 586,
+            "prop": "largebgtween",
+            "attributes": {
+                "duration": 100.0,
+                "yFrom": 720.0,
+                "yTo": 0.0,
+                "block": "false"
+            }
+        },
+        {
+            "id": 587,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 588,
+            "prop": "name",
+            "attributes": {
+                "content": "「天使」は阻隔層の空洞前に留まったまま、星々に散らばった個体との連絡の回復を試みたが、成果は得られなかった。"
+            }
+        },
+        {
+            "id": 589,
+            "prop": "name",
+            "attributes": {
+                "content": "そこで捉えられたのは、深宇宙で活動していたエネルギー体が死後に残したかすかな波紋だけだ。"
+            }
+        },
+        {
+            "id": 590,
+            "prop": "name",
+            "attributes": {
+                "content": "ゆえにそれは、この大地の周囲を飛行し続けることにした。永遠に流れる星のように……"
+            }
+        },
+        {
+            "id": 591,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 592,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 593,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 594,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 595,
+            "prop": "gridbg",
+            "attributes": {}
+        },
+        {
+            "id": 596,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_forest",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 597,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 598,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 599,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 600,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$leaveshake"
+            }
+        },
+        {
+            "id": 601,
+            "prop": "delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 602,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1720_1#1$1",
+                "focus": "m",
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 603,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 604,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）生命の気配がするわ。",
+                "name": "幽霊"
+            },
+            "figure_art": "avg_npc_1720_1#1$1"
+        },
+        {
+            "id": 605,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1720_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 606,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）この土地はまだ若いみたい……これは破滅のあとに新しい命が芽生えたの？　それとも、死がまだ訪れていないだけ？",
+                "name": "幽霊"
+            },
+            "figure_art": "avg_npc_1720_1#1$1"
+        },
+        {
+            "id": 607,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1720_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 608,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）あたしは、あの光に飲まれたはずじゃ……？",
+                "name": "幽霊"
+            },
+            "figure_art": "avg_npc_1720_1#1$1"
+        },
+        {
+            "id": 609,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 610,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 611,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#1$1",
+                "focus": "m",
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 612,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 613,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）源石があなたの情報を記録していたのよ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#1$1"
+        },
+        {
+            "id": 614,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1720_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 615,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）……「源石」？",
+                "name": "幽霊"
+            },
+            "figure_art": "avg_npc_1720_1#1$1"
+        },
+        {
+            "id": 616,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 617,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）あの光が訪れるまでは、結末は確定していない。源石は私たちの希望となるものよ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 618,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1720_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 619,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）ここはどこ？",
+                "name": "幽霊"
+            },
+            "figure_art": "avg_npc_1720_1#1$1"
+        },
+        {
+            "id": 620,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 621,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）「テラ」。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 622,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1718_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 623,
+            "prop": "name",
+            "attributes": {
+                "content": "（未知の言語）同胞よ、私たちは孤独ではないわ。",
+                "name": "プリースティス"
+            },
+            "figure_art": "avg_npc_1718_1#2$1"
+        },
+        {
+            "id": 624,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 625,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 626,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 627,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 628,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_school",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 629,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 630,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 631,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 632,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.9
+            }
+        },
+        {
+            "id": 633,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 634,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 635,
+            "prop": "name",
+            "attributes": {
+                "content": "先生、今日の新聞は読まれましたか？",
+                "name": "慌てる青年"
+            }
+        },
+        {
+            "id": 636,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 637,
+            "prop": "name",
+            "attributes": {
+                "content": "鉱山が次々閉鎖されて、街中で戒厳令が敷かれてるんです。",
+                "name": "慌てる青年"
+            }
+        },
+        {
+            "id": 638,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 639,
+            "prop": "name",
+            "attributes": {
+                "content": "僕の両親も審査のために呼び出されて……会うこともできません。",
+                "name": "慌てる青年"
+            }
+        },
+        {
+            "id": 640,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 641,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_415_1#1$1",
+                "focus": "m",
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 642,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 643,
+            "prop": "name",
+            "attributes": {
+                "content": "君は教室に残りなさい。",
+                "name": "コシェルナ"
+            },
+            "figure_art": "avg_npc_415_1#1$1"
+        },
+        {
+            "id": 644,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_415_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 645,
+            "prop": "name",
+            "attributes": {
+                "content": "私が様子を見てこよう。何が起きているのかは、私も気になっているからな。",
+                "name": "コシェルナ"
+            },
+            "figure_art": "avg_npc_415_1#1$1"
+        },
+        {
+            "id": 646,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 647,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 648,
+            "prop": "name",
+            "attributes": {
+                "content": "彼女は怖がる子供をなだめてから、その子が持ってきた新聞を手に取った。"
+            }
+        },
+        {
+            "id": 649,
+            "prop": "name",
+            "attributes": {
+                "content": "都市内には、わずか数日の間に無数の噂が広まっていた。中でも衝撃的だったのは——"
+            }
+        },
+        {
+            "id": 650,
+            "prop": "name",
+            "attributes": {
+                "content": "「我らの源石鉱脈が消失した。母なる大地からエネルギーを得られないとなれば、次の冬をどう越せばいいのだろうか？」"
+            }
+        },
+        {
+            "id": 651,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_415_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 652,
+            "prop": "name",
+            "attributes": {
+                "content": "源石か……その真実を突き止めてやろう。",
+                "name": "コシェルナ"
+            },
+            "figure_art": "avg_npc_415_1#7$1"
+        },
+        {
+            "id": 653,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_415_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 654,
+            "prop": "name",
+            "attributes": {
+                "content": "ウルサスが冬を越す力となるものなど、我らの胸に燃えるこの血潮だけだ。",
+                "name": "コシェルナ"
+            },
+            "figure_art": "avg_npc_415_1#1$1"
+        },
+        {
+            "id": 655,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 656,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 657,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 658,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 659,
+            "prop": "Background",
+            "attributes": {
+                "image": "bg_barracks",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 660,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 661,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 662,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 663,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 664,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 665,
+            "prop": "name",
+            "attributes": {
+                "content": "ヒアダ、ここが片付けば、みんなの新しい拠点として使えると思うぞ。",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 666,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 667,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 668,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1719_1#11$1",
+                "focus": "m",
+                "duration": 2.0
+            }
+        },
+        {
+            "id": 669,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 670,
+            "prop": "name",
+            "attributes": {
+                "content": "手伝ってくれてありがとうございます！",
+                "name": "ヒアダ"
+            },
+            "figure_art": "avg_npc_1719_1#11$1"
+        },
+        {
+            "id": 671,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 672,
+            "prop": "name",
+            "attributes": {
+                "content": "君が修道院の仲間から物資をもらってきてくれたおかげだよ。でなきゃ移住作業もここまでスムーズには進まなかっただろう。",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 673,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 674,
+            "prop": "name",
+            "attributes": {
+                "content": "正直心配だったんだ。修道院に戻った後……君が俺たちを捨てるんじゃないかって——",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 675,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1719_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 676,
+            "prop": "name",
+            "attributes": {
+                "content": "ええと、ごめんなさい。帰りの道のりがすごく険しくて、それに、信じがたい知らせばかりを聞いたものですから。",
+                "name": "ヒアダ"
+            },
+            "figure_art": "avg_npc_1719_1#1$1"
+        },
+        {
+            "id": 677,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 678,
+            "prop": "name",
+            "attributes": {
+                "content": "確かに信じられないよな。鉱脈のことも、ラテラーノのことも……",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 679,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 680,
+            "prop": "name",
+            "attributes": {
+                "content": "っと、そういえば、修道院のサンクタが、君が帰ってきた時の光景を生き生きと語ってくれたんだ！",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 681,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1719_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 682,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ？",
+                "name": "ヒアダ"
+            },
+            "figure_art": "avg_npc_1719_1#9$1"
+        },
+        {
+            "id": 683,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 684,
+            "prop": "name",
+            "attributes": {
+                "content": "災厄が起きた時、ラテラーノへ戻ろうとした彼らは、天災に道を塞がれてしまったらしい。",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 685,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 686,
+            "prop": "name",
+            "attributes": {
+                "content": "光輪は砕けているし、自分のために、亡き家族のために、ただその場で祈ることしかできなかったとか……",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 687,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 688,
+            "prop": "name",
+            "attributes": {
+                "content": "そんな時に君が現れたんだ……三年前に消息を絶ったはずの君が！",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 689,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 690,
+            "prop": "name",
+            "attributes": {
+                "content": "君は、その人たちに希望を与えたんだよ、ヒアダ！",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 691,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1719_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 692,
+            "prop": "name",
+            "attributes": {
+                "content": "はぁ、そうでしょうか？",
+                "name": "ヒアダ"
+            },
+            "figure_art": "avg_npc_1719_1#1$1"
+        },
+        {
+            "id": 693,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1719_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 694,
+            "prop": "name",
+            "attributes": {
+                "content": "確かに、皆さんの希望を打ち砕きたくはありませんが……とにかく安定的に提供できる避難所があれば、もっとたくさんの人を救えるかもしれません。",
+                "name": "ヒアダ"
+            },
+            "figure_art": "avg_npc_1719_1#1$1"
+        },
+        {
+            "id": 695,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 696,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、そうするにも安全対策は必要だろう。",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 697,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 698,
+            "prop": "name",
+            "attributes": {
+                "content": "こんなに目立つ動きを取っていれば、いつかは悪意ある奴が寄ってくる。そうなったら、君が危険な目に遭ってしまう。",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 699,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 700,
+            "prop": "name",
+            "attributes": {
+                "content": "正直なところ、もっといい方法があるんじゃないかと——",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 701,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 702,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 703,
+            "prop": "name",
+            "attributes": {
+                "content": "ヒアダはそこでかぶりを振った。"
+            }
+        },
+        {
+            "id": 704,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1719_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 705,
+            "prop": "name",
+            "attributes": {
+                "content": "私は彼女に会いたいんです。",
+                "name": "ヒアダ"
+            },
+            "figure_art": "avg_npc_1719_1#11$1"
+        },
+        {
+            "id": 706,
+            "prop": "name",
+            "attributes": {
+                "content": "きっとこの大地のどこかにいるはずですから……",
+                "name": "ヒアダ"
+            },
+            "figure_art": "avg_npc_1719_1#11$1"
+        },
+        {
+            "id": 707,
+            "prop": "name",
+            "attributes": {
+                "content": "ヒアダは遠くを見つめた。果てしない荒野からは、何の答えも返ってはこないとわかっていても。"
+            }
+        },
+        {
+            "id": 708,
+            "prop": "name",
+            "attributes": {
+                "content": "するとその時、何かが空を横切るのが見えた気がした。"
+            }
+        },
+        {
+            "id": 709,
+            "prop": "name",
+            "attributes": {
+                "content": "流れ星だろうか？"
+            }
+        },
+        {
+            "id": 710,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1719_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 711,
+            "prop": "name",
+            "attributes": {
+                "content": "……どうあれ、源石は私たちの絶望の源であってはなりません。",
+                "name": "ヒアダ"
+            },
+            "figure_art": "avg_npc_1719_1#11$1"
+        },
+        {
+            "id": 712,
+            "prop": "name",
+            "attributes": {
+                "content": "苦しむすべての感染者のために、祈りを捧げたいと思います――",
+                "name": "ヒアダ"
+            },
+            "figure_art": "avg_npc_1719_1#11$1"
+        },
+        {
+            "id": 713,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1722_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 714,
+            "prop": "name",
+            "attributes": {
+                "content": "その、祈りってやつには……本当に意味があるのか？",
+                "name": "感染者"
+            },
+            "figure_art": "avg_npc_1722_1#1$1"
+        },
+        {
+            "id": 715,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1719_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 716,
+            "prop": "name",
+            "attributes": {
+                "content": "意味なんてないかもしれません。",
+                "name": "ヒアダ"
+            },
+            "figure_art": "avg_npc_1719_1#3$1"
+        },
+        {
+            "id": 717,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1719_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 718,
+            "prop": "name",
+            "attributes": {
+                "content": "それでも、人は祈る時、お互いのことを想うものです。",
+                "name": "ヒアダ"
+            },
+            "figure_art": "avg_npc_1719_1#11$1"
+        },
+        {
+            "id": 719,
+            "prop": "name",
+            "attributes": {
+                "content": "そうして強い絆で繋がっていれば、私たちは孤独じゃありませんから。",
+                "name": "ヒアダ"
+            },
+            "figure_art": "avg_npc_1719_1#11$1"
+        },
+        {
+            "id": 720,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 721,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 722,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 723,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 724,
+            "prop": "Background",
+            "attributes": {
+                "image": "32_RL2_cliffnight",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 725,
+            "prop": "Delay",
+            "attributes": {
+                "time": 4.0
+            }
+        },
+        {
+            "id": 726,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 3.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 727,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 728,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 729,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_sea",
+                "volume": 0.6,
+                "loop": "true",
+                "channel": "sea"
+            }
+        },
+        {
+            "id": 730,
+            "prop": "delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 731,
+            "prop": "name",
+            "attributes": {
+                "content": "イベリア海岸線　とある断崖"
+            }
+        },
+        {
+            "id": 732,
+            "prop": "name",
+            "attributes": {
+                "content": "一匹のシーボーンが尖った岩に張り付いている。"
+            }
+        },
+        {
+            "id": 733,
+            "prop": "name",
+            "attributes": {
+                "content": "海風が遠くから艦砲の音を運んできても、シーボーンは動じることなく、必死に上を目指して這い上り続けていた。"
+            }
+        },
+        {
+            "id": 734,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_458_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 735,
+            "prop": "name",
+            "attributes": {
+                "content": "（翼膜を興奮気味にはためかせる）",
+                "name": "シーボーン"
+            },
+            "figure_art": "avg_npc_458_1#1$1"
+        },
+        {
+            "id": 736,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_458_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 737,
+            "prop": "name",
+            "attributes": {
+                "content": "（興奮しながら身体を伸ばす）",
+                "name": "シーボーン"
+            },
+            "figure_art": "avg_npc_458_1#1$1"
+        },
+        {
+            "id": 738,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 739,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 740,
+            "prop": "name",
+            "attributes": {
+                "content": "そうしてついに、シーボーンは断崖の頂に辿り着いた。"
+            }
+        },
+        {
+            "id": 741,
+            "prop": "name",
+            "attributes": {
+                "content": "すると出迎えたのは、果てしなく広がる陸地と、空を掠めていく光だった。"
+            }
+        },
+        {
+            "id": 742,
+            "prop": "name",
+            "attributes": {
+                "content": "流れ星だろうか？"
+            }
+        },
+        {
+            "id": 743,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_458_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 744,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "シーボーン"
+            },
+            "figure_art": "avg_npc_458_1#1$1"
+        },
+        {
+            "id": 745,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_458_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 746,
+            "prop": "name",
+            "attributes": {
+                "content": "…………",
+                "name": "シーボーン"
+            },
+            "figure_art": "avg_npc_458_1#1$1"
+        },
+        {
+            "id": 747,
+            "prop": "dialog",
+            "attributes": {}
+        },
+        {
+            "id": 748,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 749,
+            "prop": "name",
+            "attributes": {
+                "content": "シーボーンは一瞬意識がもうろうとした。混乱と共に身体を揺らした拍子に、触手が何かに触れて——"
+            }
+        },
+        {
+            "id": 750,
+            "prop": "name",
+            "attributes": {
+                "content": "黒く輝く石が崖から転がり落ち、そのまま海に落ちていく。"
+            }
+        },
+        {
+            "id": 751,
+            "prop": "name",
+            "attributes": {
+                "content": "シーボーンがその正体を気に掛ける頃には、それは波の中に消えていた。"
+            }
+        },
+        {
+            "id": 752,
+            "prop": "stopSound",
+            "attributes": {
+                "fadetime": 2.0,
+                "channel": "sea"
+            }
+        },
+        {
+            "id": 753,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 754,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 4.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 755,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 756,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 757,
+            "prop": "Image",
+            "attributes": {}
+        },
+        {
+            "id": 758,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}

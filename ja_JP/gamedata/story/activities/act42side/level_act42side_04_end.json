@@ -1,0 +1,5407 @@
+{
+    "lang": "ja_JP",
+    "eventid": "act42side",
+    "eventName": "命ある者の旅",
+    "entryType": "ACTIVITY",
+    "storyCode": "MT-4",
+    "avgTag": "戦闘後",
+    "storyName": "求道",
+    "storyInfo": "聖堂の外でエクシアを待つヴァンニーニは、銃騎士パトリツィオに目をつけられてしまうが、師匠であるパガニーニに助けられる。一方、このいびつなラテラーノでは育児聖堂の保育士を務めているアンドアインは、彼を知る人々と出会うもそれを察せずにいた。\n",
+    "storyList": [
+        {
+            "id": 0,
+            "prop": "HEADER",
+            "attributes": {
+                "key": "title_test",
+                "is_skippable": "true",
+                "fit_mode": "BLACK_MASK"
+            }
+        },
+        {
+            "id": 1,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 2,
+            "prop": "stopmusic",
+            "attributes": {}
+        },
+        {
+            "id": 3,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 4,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g1_nurserytemplesquare",
+                "screenadapt": "coverall"
+            }
+        },
+        {
+            "id": 5,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 6,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$darkness01_intro",
+                "key": "$darkness01_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 7,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 8,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 9,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1788_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 10,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 11,
+            "prop": "name",
+            "attributes": {
+                "content": "そちらの方、降誕の儀式をご見学になるようでしたら、広場のあちらにある待機用通路で検査を受けていただけますか。",
+                "name": "聖堂巡衛"
+            },
+            "figure_art": "avg_npc_1788_1#1$1"
+        },
+        {
+            "id": 12,
+            "prop": "name",
+            "attributes": {
+                "content": "……先ほどからずっと、近くで見ておられますよね。",
+                "name": "聖堂巡衛"
+            },
+            "figure_art": "avg_npc_1788_1#1$1"
+        },
+        {
+            "id": 13,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#4$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 14,
+            "prop": "name",
+            "attributes": {
+                "content": "あっ、ごめんなさい！",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 15,
+            "prop": "name",
+            "attributes": {
+                "content": "人を待っているだけなんです……",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 16,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1788_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 17,
+            "prop": "name",
+            "attributes": {
+                "content": "そうなのですか？",
+                "name": "聖堂巡衛"
+            },
+            "figure_art": "avg_npc_1788_1#1$1"
+        },
+        {
+            "id": 18,
+            "prop": "name",
+            "attributes": {
+                "content": "でしたら、本日聖堂付近は人の出入りが多くありますため、こちらに長時間留まることはご遠慮いただけますと幸いです。ご協力をお願いいたします。",
+                "name": "聖堂巡衛"
+            },
+            "figure_art": "avg_npc_1788_1#1$1"
+        },
+        {
+            "id": 19,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#4$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 20,
+            "prop": "name",
+            "attributes": {
+                "content": "は、はい、ごめんなさい！",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 21,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 22,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 23,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 24,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "-200,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 25,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 26,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 27,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 28,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 29,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g1_nurserytemplesquare",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 30,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 31,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 32,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 33,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#4$2",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 34,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "200,0",
+                "posto": "100,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 35,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 36,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "100,0",
+                "posto": "0,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 37,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 38,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#4$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 39,
+            "prop": "name",
+            "attributes": {
+                "content": "エル姉が中に入ってから丸一日経ってるけど……",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 40,
+            "prop": "name",
+            "attributes": {
+                "content": "元々の計画では、聖堂の建築構造の重要な部分を爆破して、あの何とか言う儀式を遅らせられたらいいって話だったよね。",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 41,
+            "prop": "name",
+            "attributes": {
+                "content": "この時間には、とっくに出てきてるはずなのに……まさか見つかっちゃったとか？",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 42,
+            "prop": "name",
+            "attributes": {
+                "content": "ううん、そんなわけないよね。ずっとこの辺りで待ってたけど、何か起きてそうな感じはしなかったし……",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 43,
+            "prop": "name",
+            "attributes": {
+                "content": "でも、見つかってなくても、何かあって脱出できなくなったんじゃ……",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 44,
+            "prop": "name",
+            "attributes": {
+                "content": "早く考えて、ヴァニー！　何かできることがあるはずでしょ！",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 45,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 46,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 47,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 48,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 49,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g1_nurserytemplesquare",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 50,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 51,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 52,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 53,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_tidyequipment",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 54,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.0
+            }
+        },
+        {
+            "id": 55,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#13$2",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 56,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 57,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#2$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 58,
+            "prop": "name",
+            "attributes": {
+                "content": "源石火薬の小瓶が二本残ってるから、簡単な爆弾代わりになりそうかな。",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#2$2"
+        },
+        {
+            "id": 59,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#4$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 60,
+            "prop": "name",
+            "attributes": {
+                "content": "大した威力はないけど、物音で警備兵の注意を引くくらいはできるよね。そうすれば、エル姉の助けになれるかも……",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 61,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 62,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 63,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "0,-30",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 64,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 65,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#4$2",
+                "posfrom": "0,-30",
+                "posto": "0,-30",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 66,
+            "prop": "name",
+            "attributes": {
+                "content": "ここに仕掛けよう。",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 67,
+            "prop": "name",
+            "attributes": {
+                "content": "ふぅ――誰にも気付かれてないみたい。あとは起爆するだけ――",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 68,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 69,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 0.5
+            }
+        },
+        {
+            "id": 70,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#3$2",
+                "posfrom": "0,-30",
+                "posto": "0,-30",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 71,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 72,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "none"
+            }
+        },
+        {
+            "id": 73,
+            "prop": "name",
+            "attributes": {
+                "content": "その時、銃身がヴァンニーニの腕を押さえつけ、彼女は腕を動かせなくなった。"
+            }
+        },
+        {
+            "id": 74,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "focus": "none"
+            }
+        },
+        {
+            "id": 75,
+            "prop": "name",
+            "attributes": {
+                "content": "そのちっこいのをパンと鳴らすのはよすんじゃな、お嬢ちゃん。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 76,
+            "prop": "name",
+            "attributes": {
+                "content": "ゆっくり立ち上がりなさい。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 77,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 78,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,-30",
+                "posto": "0,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 79,
+            "prop": "Delay",
+            "attributes": {
+                "time": 3.5
+            }
+        },
+        {
+            "id": 80,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 81,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 82,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 83,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#4$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 84,
+            "prop": "name",
+            "attributes": {
+                "content": "じゅ、銃騎士さん……",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 85,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 86,
+            "prop": "name",
+            "attributes": {
+                "content": "その格好からして、銃工房の職人じゃな？",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 87,
+            "prop": "name",
+            "attributes": {
+                "content": "ワシにはあと10分ほど空き時間がある。その間に、事の次第を説明してくれんかのう？",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 88,
+            "prop": "name",
+            "attributes": {
+                "content": "何をしでかそうとしたんじゃ？　あるいは、誰かを庇おうとしておるのか？",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 89,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#4$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 90,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 91,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 92,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 93,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 94,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 95,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "amount": 0.8,
+                "keep": "true"
+            }
+        },
+        {
+            "id": 96,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g12_firearmsworkshop",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 97,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 98,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 99,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1041_angel2_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 100,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1779_1#1$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 101,
+            "prop": "name",
+            "attributes": {
+                "content": "行きましょう、エル姉。",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#1$2"
+        },
+        {
+            "id": 102,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1041_angel2_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 103,
+            "prop": "name",
+            "attributes": {
+                "content": "パガ先生は？",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#6$1"
+        },
+        {
+            "id": 104,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1779_1#1$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 105,
+            "prop": "name",
+            "attributes": {
+                "content": "もうお休みになりました。最近はまた視力が落ちてきて、お医者さんから早めに休むように言われてるんです。",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#1$2"
+        },
+        {
+            "id": 106,
+            "prop": "name",
+            "attributes": {
+                "content": "静かに動けば、起こさずに済むと思います。",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#1$2"
+        },
+        {
+            "id": 107,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1041_angel2_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 108,
+            "prop": "name",
+            "attributes": {
+                "content": "まあまあ、ひとまず落ち着きなさい、ヴァニー。",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#8$1"
+        },
+        {
+            "id": 109,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1779_1#4$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 110,
+            "prop": "name",
+            "attributes": {
+                "content": "ど、どうしたんですか？　変なふうに改まって……",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 111,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1041_angel2_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 112,
+            "prop": "name",
+            "attributes": {
+                "content": "こほん、とりあえず聞いてよ――",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#8$1"
+        },
+        {
+            "id": 113,
+            "prop": "name",
+            "attributes": {
+                "content": "もし途中で捕まっちゃったら、相手が護衛隊だろうと、執行人だろうと、銃騎士だろうと、義理立てなんてせずにあたしのことを喋っちゃっていいからね！",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#8$1"
+        },
+        {
+            "id": 114,
+            "prop": "name",
+            "attributes": {
+                "content": "キミは暗く風の強い夜に、突然ドアを蹴り開けて入ってきたあたしに脅されて、爆弾を作らされ、聖堂の外で見張りをさせられてただけってことにして。",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#8$1"
+        },
+        {
+            "id": 115,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1041_angel2_1#4$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 116,
+            "prop": "name",
+            "attributes": {
+                "content": "キミは何も知らない、罪なき小さな天使ってことで！",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#4$1"
+        },
+        {
+            "id": 117,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1779_1#4$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 118,
+            "prop": "name",
+            "attributes": {
+                "content": "えっ？",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#4$2"
+        },
+        {
+            "id": 119,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1041_angel2_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 120,
+            "prop": "name",
+            "attributes": {
+                "content": "これがあたしと一緒に行動する上での条件ね。",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#8$1"
+        },
+        {
+            "id": 121,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1779_1#9$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 122,
+            "prop": "name",
+            "attributes": {
+                "content": "エル姉、私は少し人見知りするだけで、臆病者じゃありませんよ！",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#9$2"
+        },
+        {
+            "id": 123,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1041_angel2_1#9$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 124,
+            "prop": "name",
+            "attributes": {
+                "content": "あはは、わかってるって。キミが手伝ってくれるだけでも、すっごく嬉しいしね。",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#9$1"
+        },
+        {
+            "id": 125,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1041_angel2_1#7$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 126,
+            "prop": "name",
+            "attributes": {
+                "content": "でも、教皇庁はあの儀式をす～っごく重要視してるみたいだから、法に触れることをすれば、どんな罰を受けるかわからないでしょ。",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#7$1"
+        },
+        {
+            "id": 127,
+            "prop": "name",
+            "attributes": {
+                "content": "今のラテラーノは、あたしの記憶の中のラテラーノとはかなり違ってるしね。",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#7$1"
+        },
+        {
+            "id": 128,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_1779_1#9$2",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 129,
+            "prop": "name",
+            "attributes": {
+                "content": "私は……",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#9$2"
+        },
+        {
+            "id": 130,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_1041_angel2_1#3$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 131,
+            "prop": "name",
+            "attributes": {
+                "content": "いいから！　あたしに任せといてって！",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#3$1"
+        },
+        {
+            "id": 132,
+            "prop": "name",
+            "attributes": {
+                "content": "それに、ペンギン急便の企業文化としては――絶対に、独り舞台は譲らないってことになってるんだから！",
+                "name": "エクシア"
+            },
+            "figure_art": "avg_1041_angel2_1#3$1"
+        },
+        {
+            "id": 133,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 134,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 135,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 136,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 137,
+            "prop": "CameraEffect",
+            "attributes": {
+                "effect": "Grayscale",
+                "amount": 0.0,
+                "keep": "true"
+            }
+        },
+        {
+            "id": 138,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g1_nurserytemplesquare",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 139,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#4$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 140,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 141,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 142,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 143,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1779_1#9$2",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 144,
+            "prop": "name",
+            "attributes": {
+                "content": "（首を横に振る）",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#9$2"
+        },
+        {
+            "id": 145,
+            "prop": "name",
+            "attributes": {
+                "content": "だ、誰も庇おうとなんてしてません。私一人で来ましたから。",
+                "name": "ヴァンニーニ"
+            },
+            "figure_art": "avg_npc_1779_1#9$2"
+        },
+        {
+            "id": 146,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 147,
+            "prop": "name",
+            "attributes": {
+                "content": "面白い子じゃ。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 148,
+            "prop": "name",
+            "attributes": {
+                "content": "ワシのような年寄りは、若者と話す機会など滅多になくてのう。しかし惜しいことに、今は儀式の時間が近づいておるんじゃ……",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 149,
+            "prop": "name",
+            "attributes": {
+                "content": "おぬしに話す気がないのなら、公証人役場の執行人に引き渡す他あるまいな。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 150,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "none"
+            }
+        },
+        {
+            "id": 151,
+            "prop": "name",
+            "attributes": {
+                "content": "パトリツィオ、やめろ！",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 152,
+            "prop": "name",
+            "attributes": {
+                "content": "その鉄の殻に隠れてりゃ、偽善者ぶったその顔が見えないだなんて思うなよ。",
+                "name": "？？？"
+            }
+        },
+        {
+            "id": 153,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 154,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 155,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 156,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 157,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1781_1#3$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 158,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 159,
+            "prop": "name",
+            "attributes": {
+                "content": "げほげほっ……げほっ、思いっきり走りすぎたな、ぶっ倒れそうだ……",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 160,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 161,
+            "prop": "name",
+            "attributes": {
+                "content": "なんじゃパガ、おぬしか？",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 162,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 163,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 164,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 165,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 166,
+            "prop": "Background",
+            "attributes": {
+                "image": "26_g10_laterano_roof",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 167,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 168,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$mist_intro",
+                "key": "$mist_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 169,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 170,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 171,
+            "prop": "name",
+            "attributes": {
+                "content": "あの、先ほどから聖都の異変がどうとかって、二人とも急に心が通じ合ったようなご様子ですが……私には説明してくださらないのですか？",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#8$1"
+        },
+        {
+            "id": 172,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 173,
+            "prop": "name",
+            "attributes": {
+                "content": "その件は、我々の調査とは無関係ですので。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#1$1"
+        },
+        {
+            "id": 174,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたに多くを知らせるべきか、現時点では判断しかねるのです。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#1$1"
+        },
+        {
+            "id": 175,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 176,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#15$1"
+        },
+        {
+            "id": 177,
+            "prop": "name",
+            "attributes": {
+                "content": "とにかく、一緒に戻りましょう、アルトリアさん。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#15$1"
+        },
+        {
+            "id": 178,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 179,
+            "prop": "name",
+            "attributes": {
+                "content": "わ、私は正直あなたのことは嫌いではないですし、むしろちょっと好きなくらいですが、ランデン修道院に害を及ぼすようなら、絶対に許せません。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#8$1"
+        },
+        {
+            "id": 180,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 181,
+            "prop": "name",
+            "attributes": {
+                "content": "シスター・ヒルデガルト、一つ聞いてもいいかしら？",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#1$1"
+        },
+        {
+            "id": 182,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#11$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 183,
+            "prop": "name",
+            "attributes": {
+                "content": "はい？",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#11$1"
+        },
+        {
+            "id": 184,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 185,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは修道院を、ラテラーノを深く愛しているのよね？",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#1$1"
+        },
+        {
+            "id": 186,
+            "prop": "name",
+            "attributes": {
+                "content": "あるいはこう聞くべきかしら。リーベリであるあなたが、どうやってラテラーノとの感情的な繋がりを築いたのかと。",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#1$1"
+        },
+        {
+            "id": 187,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 188,
+            "prop": "name",
+            "attributes": {
+                "content": "ええと……私は幼い頃からランデン修道院で暮らしてきたんです。修道院のみんなにお世話してもらって、一緒にパンを焼き、ビールを作って、修道院が潰れないように頑張ってきました。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#3$1"
+        },
+        {
+            "id": 189,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#12$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 190,
+            "prop": "name",
+            "attributes": {
+                "content": "つまるところ私はここの人間なので、ここを愛するのも当然です。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#12$1"
+        },
+        {
+            "id": 191,
+            "prop": "name",
+            "attributes": {
+                "content": "もし、聖都にリーベリが多い理由をお尋ねになりたいのなら……アルトリアさん、『聖徒行記』は読まれましたよね？",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#12$1"
+        },
+        {
+            "id": 192,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#8$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 193,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#8$1"
+        },
+        {
+            "id": 194,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 195,
+            "prop": "name",
+            "attributes": {
+                "content": "まさかトンボを折るためだけに使ったわけじゃないですよね……？",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#10$1"
+        },
+        {
+            "id": 196,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 197,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#5$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 198,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 199,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 200,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 201,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 202,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 203,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#9$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 204,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 205,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 206,
+            "prop": "name",
+            "attributes": {
+                "content": "ともあれ、『聖徒行記』の記述によると、リーベリとラテラーノとの出会いは、実はとある駄獣の群れに端を発しているそうです。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#15$1"
+        },
+        {
+            "id": 207,
+            "prop": "name",
+            "attributes": {
+                "content": "遥か昔のこと、荒野で水源を探していた数十名のリーベリが、駄獣の群れに出くわしました。その駄獣たちはなぜか食糧を背負っており、整然と隊列を組んで遠くへと駆けていくところでした。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#15$1"
+        },
+        {
+            "id": 208,
+            "prop": "name",
+            "attributes": {
+                "content": "リーベリにとって、駄獣を狩るのは大変な労力を要することでしたが、その駄獣たちが見たこともないほどはっきりとした足跡を残していくのを見て、彼らはそれを追いかけることにしました。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#15$1"
+        },
+        {
+            "id": 209,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 210,
+            "prop": "name",
+            "attributes": {
+                "content": "そうしてその後、リーベリたちは目にしたのです。頭上に光輪を浮かべた人々が、畑で歌を口ずさみながら駄獣の列を誘導し、背後にいくつもそびえる純白の建物の中へ入っていくのを。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#2$1"
+        },
+        {
+            "id": 211,
+            "prop": "name",
+            "attributes": {
+                "content": "リーベリがまだまともな服すら身に纏うことなく、水と草を求めて生きていたその頃に、その人々はすでに野生動物を飼いならし、天災をしのぐ都市を築くすべを学んでいたのです。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#2$1"
+        },
+        {
+            "id": 212,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#15$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 213,
+            "prop": "name",
+            "attributes": {
+                "content": "そして何より、その人たちはリーベリには理解しがたい自信と楽観性を持っていました。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#15$1"
+        },
+        {
+            "id": 214,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 215,
+            "prop": "name",
+            "attributes": {
+                "content": "光輪と、「共感」によって……ね。",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#1$1"
+        },
+        {
+            "id": 216,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 217,
+            "prop": "name",
+            "attributes": {
+                "content": "その通りです。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#1$1"
+        },
+        {
+            "id": 218,
+            "prop": "name",
+            "attributes": {
+                "content": "彼らは生まれつき互いの心を感じ合い、理解し合うことができるため、争いがほとんどありませんでした。さらには、他種族を滅ぼし得る荒野の危機にも対処することができました。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#1$1"
+        },
+        {
+            "id": 219,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 220,
+            "prop": "name",
+            "attributes": {
+                "content": "そうして彼らは「法」という名の完璧な秩序を築き上げたのです。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#2$1"
+        },
+        {
+            "id": 221,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1784_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 222,
+            "prop": "name",
+            "attributes": {
+                "content": "この感覚は、私にも理解できます。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#1$1"
+        },
+        {
+            "id": 223,
+            "prop": "name",
+            "attributes": {
+                "content": "私の記憶では、教皇庁から修道院への補助が打ち切られようと、建物がすっかり荒れ果てて、私が分厚い帳簿を前に何度も頭を抱えていようと……",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#1$1"
+        },
+        {
+            "id": 224,
+            "prop": "name",
+            "attributes": {
+                "content": "サンクタのおじさんおばさんたちは、ランデン修道院が本当に潰れるなんて想像すらしていない様子でしたから。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#1$1"
+        },
+        {
+            "id": 225,
+            "prop": "name",
+            "attributes": {
+                "content": "あの人たちの自信と楽観性は、異種族のリーベリを近くに住まわせたうえに、すべてを学ばせて、自分たちの仲間として受け入れるほどのものでした。",
+                "name": "ヒルデガルト"
+            },
+            "figure_art": "avg_npc_1784_1#1$1"
+        },
+        {
+            "id": 226,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 227,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#10$1"
+        },
+        {
+            "id": 228,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 229,
+            "prop": "name",
+            "attributes": {
+                "content": "そうね。長い年月を経ても、光輪を分かち合うことはできなかったけれど、聖都内のリーベリはほぼサンクタの中に溶け込んでいると言えるでしょう。",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#1$1"
+        },
+        {
+            "id": 230,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 231,
+            "prop": "name",
+            "attributes": {
+                "content": "私たちは特別すぎて、すべてを受け入れてしまうから……まるで、明確な主旋律を持つ協奏曲のようにね。",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#3$1"
+        },
+        {
+            "id": 232,
+            "prop": "name",
+            "attributes": {
+                "content": "思えば初めから、ラテラーノはサンクタだけの温かな家などではなかったんでしょうね、フェディ。",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#3$1"
+        },
+        {
+            "id": 233,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 234,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたは脱走後、わざわざ移動修道院へ向かい、「失踪した妊婦」について尋ねていたようですが――公証人役場の資料を確かめたところ、現状失踪者にまつわる通報記録はありませんでした。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#1$1"
+        },
+        {
+            "id": 235,
+            "prop": "name",
+            "attributes": {
+                "content": "なぜそのような行動を取ったか、説明してください。",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#1$1"
+        },
+        {
+            "id": 236,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 237,
+            "prop": "name",
+            "attributes": {
+                "content": "とある哀れな母親がラテラーノから姿を消したの。それは、誰も気に留めないような失踪事件だった……",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#3$1"
+        },
+        {
+            "id": 238,
+            "prop": "name",
+            "attributes": {
+                "content": "まったくの偶然だったけれど、私は麦畑で演奏している時に、彼女の心の声に触れて――",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#3$1"
+        },
+        {
+            "id": 239,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 240,
+            "prop": "name",
+            "attributes": {
+                "content": "その行き先を、ついに突き止めたのよ。",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#1$1"
+        },
+        {
+            "id": 241,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_1032_excu2_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 242,
+            "prop": "name",
+            "attributes": {
+                "content": "それはつまり……",
+                "name": "フェデリコ"
+            },
+            "figure_art": "avg_1032_excu2_1#1$1"
+        },
+        {
+            "id": 243,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_245_cello_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 244,
+            "prop": "name",
+            "attributes": {
+                "content": "焦らないで。もう少し待ちましょう、フェディ。",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#1$1"
+        },
+        {
+            "id": 245,
+            "prop": "name",
+            "attributes": {
+                "content": "ここまで来れば、説明なんていらないでしょうから。",
+                "name": "アルトリア"
+            },
+            "figure_art": "avg_245_cello_1#1$1"
+        },
+        {
+            "id": 246,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 247,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 248,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 249,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 250,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 251,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g1_nurserytemplesquare",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 252,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 253,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$m_dia_street_intro",
+                "key": "$m_dia_street_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 254,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 255,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 256,
+            "prop": "name",
+            "attributes": {
+                "content": "この子はおぬしが引き取った子か？",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 257,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1781_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 258,
+            "prop": "name",
+            "attributes": {
+                "content": "悪いな、銃騎士様。俺は養子縁組の書類なんざ持ってないぞ。",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 259,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 260,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 261,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1781_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 262,
+            "prop": "name",
+            "attributes": {
+                "content": "なんだ、お前がリーベリを引き取るのはよくても、俺がサンクタを引き取るのはダメだってのか？",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 263,
+            "prop": "name",
+            "attributes": {
+                "content": "この子はいい子だぞ。まあ、お前以外のサンクタ相手なら、打ち解けるのが難しいなんて思ったことはそうないがね。",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 264,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 265,
+            "prop": "name",
+            "attributes": {
+                "content": "口の減らん奴め……",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 266,
+            "prop": "name",
+            "attributes": {
+                "content": "こうして会うのはいつぶりじゃろうな？",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 267,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1781_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 268,
+            "prop": "name",
+            "attributes": {
+                "content": "さてな。考えたこともないよ。今後も会う必要はないと思ってたんだが。",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 269,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 270,
+            "prop": "name",
+            "attributes": {
+                "content": "……では、本題に戻ろう。おぬしの弟子は今しがた――",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 271,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1781_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 272,
+            "prop": "name",
+            "attributes": {
+                "content": "あれは俺が指示したことだ。",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 273,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 274,
+            "prop": "name",
+            "attributes": {
+                "content": "目的は？",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 275,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1781_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 276,
+            "prop": "name",
+            "attributes": {
+                "content": "抗議デモさ。そのくらいわかるだろう？",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 277,
+            "prop": "name",
+            "attributes": {
+                "content": "教皇庁は都市内にある百軒以上の銃工房を一気に閉鎖した。これまで何十年もやってきて、老後も頼みの綱にしてた店が、訳もわからんうちに消えちまったんだ。",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 278,
+            "prop": "name",
+            "attributes": {
+                "content": "そこへきて今日、お前らがここでパーティーをやると聞いたもんでね。ちょいと音でも鳴らして、お偉方の耳を騒がせりゃ、教皇庁も俺みたいな公民の言い分を少しは聞いてくれるかと思ったのさ！",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 279,
+            "prop": "name",
+            "attributes": {
+                "content": "実を言うと、元々は俺一人で来るつもりだったんだが、年のせいか目も足も悪くなっちまって、この子に頼むしかなくなってな。",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 280,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 281,
+            "prop": "name",
+            "attributes": {
+                "content": "パガよ、おぬしはとっくに転職したと思っておったぞ。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 282,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1781_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 283,
+            "prop": "name",
+            "attributes": {
+                "content": "ケッ、冗談はよせ。",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 284,
+            "prop": "name",
+            "attributes": {
+                "content": "ジーアをラテラーノから追い出したあとも、お前は俺が作ったその銃をのうのうと使ってるくせに、どうして俺が職を変えなきゃならない？",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 285,
+            "prop": "name",
+            "attributes": {
+                "content": "俺はただ、お前ら銃騎士の専属じゃなくなっただけさ。",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 286,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 287,
+            "prop": "name",
+            "attributes": {
+                "content": "……それもそうか。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 288,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1781_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 289,
+            "prop": "name",
+            "attributes": {
+                "content": "で、この件はどう処理するつもりだ？",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 290,
+            "prop": "name",
+            "attributes": {
+                "content": "俺は育児聖堂の前で爆発を起こして降誕の儀式の妨害を企て、現行犯で捕まったわけだが……",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 291,
+            "prop": "name",
+            "attributes": {
+                "content": "穢れなき楽園を守るために、お前は銃騎士として、また友人をラテラーノの外へ「送り出す」つもりか？",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 292,
+            "prop": "name",
+            "attributes": {
+                "content": "しかもよりによって、またリーベリの友人を。",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 293,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 294,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 295,
+            "prop": "name",
+            "attributes": {
+                "content": "おぬしがリーベリであるか否かには関わらず、本当に法を犯しておれば、また別れを味わうことになったやもしれんな。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 296,
+            "prop": "name",
+            "attributes": {
+                "content": "じゃが今回は早めに気づいたおかげで、実害は出んかったからな、はっはっ。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 297,
+            "prop": "name",
+            "attributes": {
+                "content": "ほれ、おぬしの弟子を連れて帰ってくれ。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 298,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1781_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 299,
+            "prop": "name",
+            "attributes": {
+                "content": "ふん。",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 300,
+            "prop": "name",
+            "attributes": {
+                "content": "行くぞ、ヴァニー。",
+                "name": "パガニーニ"
+            },
+            "figure_art": "avg_npc_1781_1#3$1"
+        },
+        {
+            "id": 301,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 302,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_1779_1#1$2",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 303,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "posfrom": "0,0",
+                "posto": "100,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 304,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 305,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "focus": "all"
+            }
+        },
+        {
+            "id": 306,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "ヴァンニーニ"
+            }
+        },
+        {
+            "id": 307,
+            "prop": "name",
+            "attributes": {
+                "content": "（小声）悪いが、支えてくれるか。急いで出てきたもんで、お前が新しく用意してくれた眼鏡を忘れちまったんだ。",
+                "name": "パガニーニ"
+            }
+        },
+        {
+            "id": 308,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 309,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 310,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 311,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "posfrom": "100,0",
+                "posto": "200,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 312,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 313,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "posfrom": "0,0",
+                "posto": "100,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 314,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 315,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 316,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 317,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_358_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 318,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 319,
+            "prop": "name",
+            "attributes": {
+                "content": "パトリツィオ殿、彼の言い分は明らかに筋の通らないものでした。",
+                "name": "銃騎士"
+            },
+            "figure_art": "avg_npc_358_1#1$1"
+        },
+        {
+            "id": 320,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 321,
+            "prop": "name",
+            "attributes": {
+                "content": "わかっておる。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 322,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_358_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 323,
+            "prop": "name",
+            "attributes": {
+                "content": "安全を期すためにも、師弟両者を連行して尋問し、リスクを排除すべきかと……",
+                "name": "銃騎士"
+            },
+            "figure_art": "avg_npc_358_1#1$1"
+        },
+        {
+            "id": 324,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 325,
+            "prop": "name",
+            "attributes": {
+                "content": "そう事を荒立てることもあるまい……それに、あの老いぼれとまた揉めるのは御免被るのでのう。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 326,
+            "prop": "name",
+            "attributes": {
+                "content": "この粗末な爆弾を見るに、あの子はその場の思いつきで行動したのじゃろう……つまりは、中にまだ仲間がおるということじゃ。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 327,
+            "prop": "name",
+            "attributes": {
+                "content": "銃騎士隊をもう一部隊手配し、聖堂の巡衛との協力のもと警備を固めよ。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 328,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_358_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 329,
+            "prop": "name",
+            "attributes": {
+                "content": "了解。",
+                "name": "銃騎士"
+            },
+            "figure_art": "avg_npc_358_1#1$1"
+        },
+        {
+            "id": 330,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 331,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 332,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 333,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 334,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g1_nurserytemplesquare",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 335,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 336,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 337,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 338,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 339,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1783_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 340,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 341,
+            "prop": "name",
+            "attributes": {
+                "content": "……妙だな、まだ育児聖堂の中にいるのか？",
+                "name": "アモス"
+            },
+            "figure_art": "avg_npc_1783_1#1$1"
+        },
+        {
+            "id": 342,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 343,
+            "prop": "name",
+            "attributes": {
+                "content": "アモス補佐官。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 344,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1783_1#4$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 345,
+            "prop": "name",
+            "attributes": {
+                "content": "パトリツィオ殿……お、お久しぶりです。",
+                "name": "アモス"
+            },
+            "figure_art": "avg_npc_1783_1#4$1"
+        },
+        {
+            "id": 346,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 347,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、久しぶりじゃな。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 348,
+            "prop": "name",
+            "attributes": {
+                "content": "随分慌てた様子じゃが、どうかしたのか？",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 349,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1783_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 350,
+            "prop": "name",
+            "attributes": {
+                "content": "レミュアン枢機卿を見ませんでしたか？　少し確認したいことがありまして。",
+                "name": "アモス"
+            },
+            "figure_art": "avg_npc_1783_1#10$1"
+        },
+        {
+            "id": 351,
+            "prop": "name",
+            "attributes": {
+                "content": "公務のため育児聖堂へ向かわれたのですが、一向に第七庁へ戻られないもので……",
+                "name": "アモス"
+            },
+            "figure_art": "avg_npc_1783_1#10$1"
+        },
+        {
+            "id": 352,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 353,
+            "prop": "name",
+            "attributes": {
+                "content": "あの爆破事件に関わることであれば、ワシにも共有してくれんか。",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 354,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1783_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 355,
+            "prop": "name",
+            "attributes": {
+                "content": "……わかりました。",
+                "name": "アモス"
+            },
+            "figure_art": "avg_npc_1783_1#1$1"
+        },
+        {
+            "id": 356,
+            "prop": "name",
+            "attributes": {
+                "content": "ファボール区ボルゴス通りの銃工房の接収に向かった際、私はあるサンクタに会いました。その後、枢機卿に報告したところ、明らかに何らかの異変に気付かれたご様子だったんです。",
+                "name": "アモス"
+            },
+            "figure_art": "avg_npc_1783_1#1$1"
+        },
+        {
+            "id": 357,
+            "prop": "name",
+            "attributes": {
+                "content": "そこで、その人物の外見的特徴を基に、在籍公民全員の情報と照合したところ、国外へ出ている公民のデータベースに一致する人物が見つかりました。",
+                "name": "アモス"
+            },
+            "figure_art": "avg_npc_1783_1#1$1"
+        },
+        {
+            "id": 358,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1783_1#7$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 359,
+            "prop": "name",
+            "attributes": {
+                "content": "その人物はステファン区の爆破現場にも現れていたのですが、その……枢機卿と特別な関係があるようなのです。",
+                "name": "アモス"
+            },
+            "figure_art": "avg_npc_1783_1#7$1"
+        },
+        {
+            "id": 360,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_4194_rmixer_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 361,
+            "prop": "name",
+            "attributes": {
+                "content": "ほう？",
+                "name": "パトリツィオ"
+            },
+            "figure_art": "avg_4194_rmixer_1#1$1"
+        },
+        {
+            "id": 362,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 363,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 364,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 365,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 366,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 367,
+            "prop": "Background",
+            "attributes": {
+                "image": "26_g5_laterano_chapelout",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 368,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 369,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$suspenseful_intro",
+                "key": "$suspenseful_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 370,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 371,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 372,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 373,
+            "prop": "name",
+            "attributes": {
+                "content": "……時間がないんだ、シスター。急いで育児聖堂へ戻らなければ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$1"
+        },
+        {
+            "id": 374,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_369_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 375,
+            "prop": "name",
+            "attributes": {
+                "content": "最後にもう一度確認させてください。看護対象が亡くなると決まったわけではないというのに、葬儀の準備をしておきたいと仰るのですか？",
+                "name": "シスター"
+            },
+            "figure_art": "avg_npc_369_1#1$1"
+        },
+        {
+            "id": 376,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 377,
+            "prop": "name",
+            "attributes": {
+                "content": "そうだ……彼女の状況は楽観視できない。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#2$1"
+        },
+        {
+            "id": 378,
+            "prop": "name",
+            "attributes": {
+                "content": "保育士として、私には最善を尽くす義務がある。しかし、だからといって最悪の事態を想定しないわけではないんだ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#2$1"
+        },
+        {
+            "id": 379,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_369_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 380,
+            "prop": "name",
+            "attributes": {
+                "content": "ラテラーノ人らしからぬやり方ですね……",
+                "name": "シスター"
+            },
+            "figure_art": "avg_npc_369_1#1$1"
+        },
+        {
+            "id": 381,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 382,
+            "prop": "name",
+            "attributes": {
+                "content": "では聞くが、ラテラーノ人とはどうあるべきだろうか？",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$1"
+        },
+        {
+            "id": 383,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_369_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 384,
+            "prop": "name",
+            "attributes": {
+                "content": "うっ……それは、なんとも難しい問題ですね。",
+                "name": "シスター"
+            },
+            "figure_art": "avg_npc_369_1#1$1"
+        },
+        {
+            "id": 385,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 386,
+            "prop": "name",
+            "attributes": {
+                "content": "では、また――いや、できれば「また」がないほうが良いんだろうが。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#3$1"
+        },
+        {
+            "id": 387,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 388,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_369_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 389,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 390,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 391,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 392,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 393,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 394,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$1"
+        },
+        {
+            "id": 395,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 396,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 397,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 398,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.5,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 399,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 400,
+            "prop": "name",
+            "attributes": {
+                "content": "正直、みんなから知らせを受けた時は信じられなかったけど――まさか本当にここへ戻ってくるとはね、アンドアイン。",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_357_1#1$1"
+        },
+        {
+            "id": 401,
+            "prop": "name",
+            "attributes": {
+                "content": "この安魂教会を、このアイリスの花畑を馴染み深く思うかしら？　それとも、懐かしく思うかしら？",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_357_1#1$1"
+        },
+        {
+            "id": 402,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 403,
+            "prop": "name",
+            "attributes": {
+                "content": "ラテラーノには、安魂教会が少なからずあるからね。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$1"
+        },
+        {
+            "id": 404,
+            "prop": "name",
+            "attributes": {
+                "content": "懐かしいかというと……今の職務上は、安魂教会に対してそうした感情を抱くのは相応しくないかもしれないな。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$1"
+        },
+        {
+            "id": 405,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.5,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 406,
+            "prop": "name",
+            "attributes": {
+                "content": "ああ、すっかり忘れてたわ！　あんたは今じゃ、誰よりも重用されてる保育士様だものね！",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_357_1#1$1"
+        },
+        {
+            "id": 407,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 408,
+            "prop": "name",
+            "attributes": {
+                "content": "それで、君は誰なんだ？",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$1"
+        },
+        {
+            "id": 409,
+            "prop": "name",
+            "attributes": {
+                "content": "以前私を尾行して、聖堂に侵入し、襲撃してきたのは君たちか？",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$1"
+        },
+        {
+            "id": 410,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.5,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 411,
+            "prop": "name",
+            "attributes": {
+                "content": "「尾行」とか「襲撃」とか、何言ってるの？　まったく、イカれてるのはあんたかあたしか、一体どっちのほうでしょうね。",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_357_1#1$1"
+        },
+        {
+            "id": 412,
+            "prop": "name",
+            "attributes": {
+                "content": "共に歩む気がないのなら、どうしてあの時「求道者」なんて名前をあたしたちに与えたわけ？",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_357_1#1$1"
+        },
+        {
+            "id": 413,
+            "prop": "name",
+            "attributes": {
+                "content": "あのまばたきもせずに人を食らう聖堂が、あんたの見つけた正しい道？　あるいは間違った道に迷い込んだだけ？",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_357_1#1$1"
+        },
+        {
+            "id": 414,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 415,
+            "prop": "name",
+            "attributes": {
+                "content": "総主教と出会う前に、誰かと共に歩むという約束をした覚えはないが……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#2$1"
+        },
+        {
+            "id": 416,
+            "prop": "name",
+            "attributes": {
+                "content": "育児聖堂が私に道を指し示してくれたのは事実なんだ。それにしても、「人を食らう」だなんて、きっと何か誤解が……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#2$1"
+        },
+        {
+            "id": 417,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.5,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 418,
+            "prop": "name",
+            "attributes": {
+                "content": "*ラテラーノスラング*！　いい加減とぼけるのはやめて、アンドアイン！",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_357_1#1$1"
+        },
+        {
+            "id": 419,
+            "prop": "name",
+            "attributes": {
+                "content": "十人以上もの仲間があの聖堂に入って、それっきり二度と出てこなかったのよ！　あんたの見つけた道に、あたしたちの犠牲が必要なら、せめて事前にそれを伝えてくれてもいいじゃない……",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_357_1#1$1"
+        },
+        {
+            "id": 420,
+            "prop": "name",
+            "attributes": {
+                "content": "あるいは、恥知らずにもあたしたちとの関係を否定したいってことなら、それを直接言いなさいよ！",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_357_1#1$1"
+        },
+        {
+            "id": 421,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 422,
+            "prop": "name",
+            "attributes": {
+                "content": "いや、言っている意味がよく……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#2$1"
+        },
+        {
+            "id": 423,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 424,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 425,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_357_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.5,
+                "focus": "m"
+            }
+        },
+        {
+            "id": 426,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 427,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 428,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_362_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.5,
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 429,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_362_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.5,
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 430,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "posfrom": "-200,0",
+                "posto": "-100,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 431,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "posfrom": "200,0",
+                "posto": "100,0",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 432,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 433,
+            "prop": "name",
+            "attributes": {
+                "content": "じゃあ、これからじっくりわからせてあげるわ。",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_357_1#1$1"
+        },
+        {
+            "id": 434,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 435,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 436,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 437,
+            "prop": "name",
+            "attributes": {
+                "content": "やめてくれ。私の世話を必要とする子供たちがたくさん待っているんだ。それに、あの母親も……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#2$1"
+        },
+        {
+            "id": 438,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 439,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 440,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 441,
+            "prop": "curtain",
+            "attributes": {
+                "direction": 0.0,
+                "fillfrom": 0.01,
+                "fillto": 0.2,
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 442,
+            "prop": "curtain",
+            "attributes": {
+                "direction": 4.0,
+                "fillfrom": 0.01,
+                "fillto": 0.2,
+                "fadetime": 1.5
+            }
+        },
+        {
+            "id": 443,
+            "prop": "Background",
+            "attributes": {
+                "image": "26_g5_laterano_chapelout",
+                "screenadapt": "coverall",
+                "xScale": 1.1,
+                "yScale": 1.1,
+                "y": 0.0,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 444,
+            "prop": "backgroundTween",
+            "attributes": {
+                "yFrom": 0.0,
+                "xScaleFrom": 1.1,
+                "xScaleTo": 1.25,
+                "yScaleFrom": 1.1,
+                "yScaleTo": 1.25,
+                "duration": 20.0
+            }
+        },
+        {
+            "id": 445,
+            "prop": "focusout",
+            "attributes": {
+                "type": "bg",
+                "id": "26_g5_laterano_chapelout",
+                "from": 0.0,
+                "to": 1.0,
+                "duration": 0.1,
+                "block": "false"
+            }
+        },
+        {
+            "id": 446,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#2$1",
+                "posfrom": "0,-30",
+                "posto": "0,-30",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 447,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 448,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_soldiersrun",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 449,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_362_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.5,
+                "afrom": 0.0,
+                "ato": 1.0,
+                "posfrom": "-320,30",
+                "posto": "-300,30",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 450,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "action": "zoom",
+                "poszoom": "0.5,0.5",
+                "scale": 0.9,
+                "duration": 0.0
+            }
+        },
+        {
+            "id": 451,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 452,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_362_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.5,
+                "afrom": 0.0,
+                "ato": 1.0,
+                "posfrom": "320,30",
+                "posto": "300,30",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 453,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "action": "zoom",
+                "poszoom": "0.5,0.5",
+                "scale": 0.9,
+                "duration": 0.0
+            }
+        },
+        {
+            "id": 454,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 455,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 456,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 457,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "afrom": 1.0,
+                "ato": 0.0,
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 458,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 459,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_362_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.5,
+                "afrom": 0.0,
+                "ato": 1.0,
+                "posfrom": "-100,0",
+                "posto": "-80,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 460,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "action": "zoom",
+                "poszoom": "0.5,0.5",
+                "scale": 1.6,
+                "duration": 0.0
+            }
+        },
+        {
+            "id": 461,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 462,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_npc_362_1#1$1",
+                "bstart": 0.2,
+                "bend": 0.5,
+                "afrom": 0.0,
+                "ato": 1.0,
+                "posfrom": "100,0",
+                "posto": "80,0",
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 463,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "action": "zoom",
+                "poszoom": "0.5,0.5",
+                "scale": 1.6,
+                "duration": 0.0
+            }
+        },
+        {
+            "id": 464,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 465,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$explolarge1"
+            }
+        },
+        {
+            "id": 466,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 467,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.03,
+                "block": "true"
+            }
+        },
+        {
+            "id": 468,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 1.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 469,
+            "prop": "delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 470,
+            "prop": "CameraShake",
+            "attributes": {
+                "duration": 1.0,
+                "ystrength": 40.0,
+                "vibrato": 30.0,
+                "randomness": 90.0,
+                "fadeout": "true",
+                "block": "false"
+            }
+        },
+        {
+            "id": 471,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_gen_explo_n"
+            }
+        },
+        {
+            "id": 472,
+            "prop": "curtain",
+            "attributes": {
+                "direction": 0.0,
+                "fillfrom": 0.2,
+                "fillto": 0.0,
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 473,
+            "prop": "curtain",
+            "attributes": {
+                "direction": 4.0,
+                "fillfrom": 0.2,
+                "fillto": 0.0,
+                "fadetime": 0.5
+            }
+        },
+        {
+            "id": 474,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 475,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 476,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 477,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 478,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 479,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 0.05,
+                "block": "true"
+            }
+        },
+        {
+            "id": 480,
+            "prop": "Background",
+            "attributes": {
+                "image": "26_g5_laterano_chapelout",
+                "screenadapt": "showall",
+                "duration": 0.5
+            }
+        },
+        {
+            "id": 481,
+            "prop": "focusout",
+            "attributes": {
+                "type": "bg",
+                "id": "26_g5_laterano_chapelout",
+                "from": 1.0,
+                "to": 0.0,
+                "duration": 0.1,
+                "block": "false"
+            }
+        },
+        {
+            "id": 482,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 255.0,
+                "g": 255.0,
+                "b": 255.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 483,
+            "prop": "Delay",
+            "attributes": {
+                "time": 0.5
+            }
+        },
+        {
+            "id": 484,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 485,
+            "prop": "delay",
+            "attributes": {
+                "time": 1.5
+            }
+        },
+        {
+            "id": 486,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_npc_357_1#1$1",
+                "posfrom": "200,0",
+                "posto": "200,0",
+                "bstart": 0.2,
+                "bend": 0.5,
+                "focus": "l"
+            }
+        },
+        {
+            "id": 487,
+            "prop": "name",
+            "attributes": {
+                "content": "げほ、ごほっ、くっ――このっ！",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_357_1#1$1"
+        },
+        {
+            "id": 488,
+            "prop": "name",
+            "attributes": {
+                "content": "あいつらか。ひとまず撤退ね。",
+                "name": "？？？"
+            },
+            "figure_art": "avg_npc_357_1#1$1"
+        },
+        {
+            "id": 489,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 490,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$rungeneral",
+                "volume": 0.4
+            }
+        },
+        {
+            "id": 491,
+            "prop": "charslot",
+            "attributes": {
+                "duration": 1.0
+            }
+        },
+        {
+            "id": 492,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.5
+            }
+        },
+        {
+            "id": 493,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 494,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_gen_walk_n",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 495,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_300_phenxi_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 496,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_213_mostma_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 497,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 498,
+            "prop": "PlayMusic",
+            "attributes": {
+                "intro": "$tech_intro",
+                "key": "$tech_loop",
+                "volume": 0.6
+            }
+        },
+        {
+            "id": 499,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_213_mostma_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 500,
+            "prop": "name",
+            "attributes": {
+                "content": "フィアメッタ、今アンドアインのこと全然考えずに撃ったでしょ。",
+                "name": "モスティマ"
+            },
+            "figure_art": "avg_213_mostma_1#1$1"
+        },
+        {
+            "id": 501,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_300_phenxi_1#8$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 502,
+            "prop": "name",
+            "attributes": {
+                "content": "あいつは悪運が強いから、死にやしないわよ。",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#8$1"
+        },
+        {
+            "id": 503,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 504,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 505,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_clothmovement",
+                "volume": 1.0
+            }
+        },
+        {
+            "id": 506,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#1$1",
+                "posfrom": "0,-15",
+                "posto": "0,0",
+                "afrom": 0.0,
+                "ato": 1.0,
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 507,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 508,
+            "prop": "name",
+            "attributes": {
+                "content": "フィアメッタ、モスティマ……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$1"
+        },
+        {
+            "id": 509,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 510,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 511,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_300_phenxi_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 512,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_213_mostma_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 513,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたって随分敵が多いみたいね、アンドアイン。",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#1$1"
+        },
+        {
+            "id": 514,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_213_mostma_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 515,
+            "prop": "name",
+            "attributes": {
+                "content": "私が追跡するから、君は彼と話してたら？",
+                "name": "モスティマ"
+            },
+            "figure_art": "avg_213_mostma_1#1$1"
+        },
+        {
+            "id": 516,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 517,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 518,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#1$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 519,
+            "prop": "name",
+            "attributes": {
+                "content": "いや、その必要はないよ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$1"
+        },
+        {
+            "id": 520,
+            "prop": "name",
+            "attributes": {
+                "content": "彼らが私を執拗に狙う理由はわからないが、何となく感じるんだ……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#1$1"
+        },
+        {
+            "id": 521,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 522,
+            "prop": "name",
+            "attributes": {
+                "content": "彼らが強い信念を抱いているということを。そういう人間は大抵、複雑な過去と単純な願望を持っているものだ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#3$1"
+        },
+        {
+            "id": 523,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 524,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 525,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_300_phenxi_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 526,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_213_mostma_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 527,
+            "prop": "name",
+            "attributes": {
+                "content": "随分と慈悲深くていらっしゃるのね。",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#6$1"
+        },
+        {
+            "id": 528,
+            "prop": "name",
+            "attributes": {
+                "content": "それならどうして自分の仲間にはあんなに残酷な仕打ちをしたの？",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#6$1"
+        },
+        {
+            "id": 529,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 530,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 531,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 532,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#2$1"
+        },
+        {
+            "id": 533,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 534,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 535,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_300_phenxi_1#7$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 536,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_213_mostma_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 537,
+            "prop": "name",
+            "attributes": {
+                "content": "どうしてモスティマとレミュアンに懺悔しようとしないの？",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#7$1"
+        },
+        {
+            "id": 538,
+            "prop": "name",
+            "attributes": {
+                "content": "あの時、遺跡の奥で、錠と鍵の中にいる奴があなたに何を見せたのか、どうして私たちに教えてくれないの？",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#7$1"
+        },
+        {
+            "id": 539,
+            "prop": "name",
+            "attributes": {
+                "content": "どうして、ずっと答えを教えてくれないの？",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#7$1"
+        },
+        {
+            "id": 540,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_213_mostma_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 541,
+            "prop": "name",
+            "attributes": {
+                "content": "より正確に言うと、どうして抱えた問題を私たちと分かち合おうとしなかったの、かな。",
+                "name": "モスティマ"
+            },
+            "figure_art": "avg_213_mostma_1#1$1"
+        },
+        {
+            "id": 542,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 543,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 544,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 545,
+            "prop": "name",
+            "attributes": {
+                "content": "……フィアメッタ、我々にはそれぞれ進むべき道があるんだ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$1"
+        },
+        {
+            "id": 546,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 547,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 548,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_300_phenxi_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 549,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_213_mostma_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 550,
+            "prop": "name",
+            "attributes": {
+                "content": "じゃあ、あなたの道は、正気を失ってレミュアンを傷つけた挙句、無責任に逃げ出したと思えば、いきなりあの総主教について戻ってきて、平然と育児聖堂の庇護下に入ることにあるわけ？",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#6$1"
+        },
+        {
+            "id": 551,
+            "prop": "name",
+            "attributes": {
+                "content": "言ってみなさいよ。姿を消してた数年の間に、あなたは一体どんな救いを得たって言うの？",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#6$1"
+        },
+        {
+            "id": 552,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 553,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 554,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 555,
+            "prop": "name",
+            "attributes": {
+                "content": "私は救いなど得ていないし、心の安らぎを得たこともない。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#3$1"
+        },
+        {
+            "id": 556,
+            "prop": "name",
+            "attributes": {
+                "content": "だが、命というものはあまりに短い。求める答えにいち早く辿り付けなければ、私の罪も君たちの痛みも無意味なものになってしまうだろう。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#3$1"
+        },
+        {
+            "id": 557,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#6$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 558,
+            "prop": "name",
+            "attributes": {
+                "content": "ランデン修道院で刑期を終えた翌日、私は、きっと何かを得られるだろうと思い込み、すぐさまラテラーノを後にした。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$1"
+        },
+        {
+            "id": 559,
+            "prop": "name",
+            "attributes": {
+                "content": "その後の五年間に起きたことは、あまり覚えていないんだ。どこかへ辿り着いては、また次の場所へと向かい、ただ一人、あてどない旅を繰り返していたように思う……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$1"
+        },
+        {
+            "id": 560,
+            "prop": "name",
+            "attributes": {
+                "content": "確かに、自分の記憶には問題があるんじゃないかと疑うこともしばしばある。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#6$1"
+        },
+        {
+            "id": 561,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 562,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 563,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_300_phenxi_1#6$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 564,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_213_mostma_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 565,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#6$1"
+        },
+        {
+            "id": 566,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 567,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 568,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#3$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 569,
+            "prop": "name",
+            "attributes": {
+                "content": "だが幸いにも、私は総主教に出会うことができた。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#3$1"
+        },
+        {
+            "id": 570,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#10$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 571,
+            "prop": "name",
+            "attributes": {
+                "content": "当時、あの方は聖都へ向かう旅をなさっていたが、行く先々で人々を救ってきたために、到着が随分遅れているようだった。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#10$1"
+        },
+        {
+            "id": 572,
+            "prop": "name",
+            "attributes": {
+                "content": "求める答えはいまだラテラーノにあると、そう信じさせてくれたのはあの方だ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#10$1"
+        },
+        {
+            "id": 573,
+            "prop": "name",
+            "attributes": {
+                "content": "あの方は、我々の手で一つの奇跡を、そしてその先に連なる数え切れぬ奇跡を起こせると約束してくださった。私がラテラーノへ戻ってきたのは、その約束を共に果たすためだ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#10$1"
+        },
+        {
+            "id": 574,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 575,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 576,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_300_phenxi_1#2$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 577,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_213_mostma_1#1$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 578,
+            "prop": "name",
+            "attributes": {
+                "content": "やっぱり黙ってて。勝手に訳わからないことばっかり抜かして、ほんと嫌になるわ。",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#2$1"
+        },
+        {
+            "id": 579,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_300_phenxi_1#7$1",
+                "focus": "l"
+            }
+        },
+        {
+            "id": 580,
+            "prop": "name",
+            "attributes": {
+                "content": "聞きなさい、アンドアイン。パーティーの日、私はあなたを追い出したでしょう。",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#7$1"
+        },
+        {
+            "id": 581,
+            "prop": "name",
+            "attributes": {
+                "content": "あの後、パトリツィオが時間をかけて教えようとしてくれたの――あなたのことや、あの聖堂でこれから開かれる儀式の重要性とやらをね。",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#7$1"
+        },
+        {
+            "id": 582,
+            "prop": "name",
+            "attributes": {
+                "content": "あの爺さんがあんなに改まった物言いをするのは初めて見た。だから、あなたとの口論は一旦保留にしておくって約束したわ。",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#7$1"
+        },
+        {
+            "id": 583,
+            "prop": "name",
+            "attributes": {
+                "content": "あなたを助けたのは、あなたを許したからじゃない。",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#7$1"
+        },
+        {
+            "id": 584,
+            "prop": "name",
+            "attributes": {
+                "content": "あの時のことを悔い改めて、その代償を支払うまでは、あなたに死ぬ資格なんてないからよ。",
+                "name": "フィアメッタ"
+            },
+            "figure_art": "avg_300_phenxi_1#7$1"
+        },
+        {
+            "id": 585,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 586,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 587,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 588,
+            "prop": "name",
+            "attributes": {
+                "content": "……",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#2$1"
+        },
+        {
+            "id": 589,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 590,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 591,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "l",
+                "name": "avg_300_phenxi_1#7$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 592,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "r",
+                "name": "avg_213_mostma_1#1$1",
+                "focus": "r"
+            }
+        },
+        {
+            "id": 593,
+            "prop": "name",
+            "attributes": {
+                "content": "アンドアイン、もうすぐ降誕の儀式が始まるんでしょ？",
+                "name": "モスティマ"
+            },
+            "figure_art": "avg_213_mostma_1#1$1"
+        },
+        {
+            "id": 594,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 595,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 596,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1800_1#2$1",
+                "focus": "m"
+            }
+        },
+        {
+            "id": 597,
+            "prop": "name",
+            "attributes": {
+                "content": "すまない、もう行かなければ。",
+                "name": "アンドアイン"
+            },
+            "figure_art": "avg_npc_1800_1#2$1"
+        },
+        {
+            "id": 598,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 599,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 600,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 601,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 602,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 603,
+            "prop": "Background",
+            "attributes": {
+                "image": "61_g2_baptismlobby",
+                "screenadapt": "showall"
+            }
+        },
+        {
+            "id": 604,
+            "prop": "Delay",
+            "attributes": {
+                "time": 1.0
+            }
+        },
+        {
+            "id": 605,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 606,
+            "prop": "PlaySound",
+            "attributes": {
+                "key": "$d_avg_crwddiscuss_outside",
+                "volume": 0.4,
+                "loop": "true",
+                "channel": "bse"
+            }
+        },
+        {
+            "id": 607,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 608,
+            "prop": "playsound",
+            "attributes": {
+                "key": "$d_avg_comfortbell",
+                "volume": 1.0,
+                "channel": "2"
+            }
+        },
+        {
+            "id": 609,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 610,
+            "prop": "soundvolume",
+            "attributes": {
+                "channel": "bse",
+                "volume": 0.0,
+                "fadetime": 1.0
+            }
+        },
+        {
+            "id": 611,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 612,
+            "prop": "charslot",
+            "attributes": {
+                "slot": "m",
+                "name": "avg_npc_1777_1#1$1",
+                "duration": 1.5
+            }
+        },
+        {
+            "id": 613,
+            "prop": "Delay",
+            "attributes": {
+                "time": 2.0
+            }
+        },
+        {
+            "id": 614,
+            "prop": "name",
+            "attributes": {
+                "content": "……おはようございます。",
+                "name": "総主教"
+            },
+            "figure_art": "avg_npc_1777_1#1$1"
+        },
+        {
+            "id": 615,
+            "prop": "name",
+            "attributes": {
+                "content": "我が同胞たちに、帰郷したトランスポーターに、テラ諸国からいらした使者の皆様に、そして修道院を通じて初めて聖都へ足を踏み入れた客人の皆様に、ご挨拶申し上げます。",
+                "name": "総主教"
+            },
+            "figure_art": "avg_npc_1777_1#1$1"
+        },
+        {
+            "id": 616,
+            "prop": "name",
+            "attributes": {
+                "content": "我らが身を置くこの聖堂は、ラテラーノが「万国サミット」に合わせて財力やその景観を誇示するために築いた見せかけの建物などでは決してありません。",
+                "name": "総主教"
+            },
+            "figure_art": "avg_npc_1777_1#1$1"
+        },
+        {
+            "id": 617,
+            "prop": "name",
+            "attributes": {
+                "content": "ですが、この祝祭の時期が来る前に聖堂を完成させることができ、皆様と本日こうして一堂に会せたことを、何より嬉しく思います。",
+                "name": "総主教"
+            },
+            "figure_art": "avg_npc_1777_1#1$1"
+        },
+        {
+            "id": 618,
+            "prop": "name",
+            "attributes": {
+                "content": "新たな命が生まれるたびに、新たな可能性がもたらされるもの……それは信仰をいかに受け継ぎ、いかに災厄に抗うかという可能性。新たな命あればこそ、私たちは未来を形作ることができるのです。",
+                "name": "総主教"
+            },
+            "figure_art": "avg_npc_1777_1#1$1"
+        },
+        {
+            "id": 619,
+            "prop": "name",
+            "attributes": {
+                "content": "これからのラテラーノにおいては、尚のことそうなっていくでしょう。",
+                "name": "総主教"
+            },
+            "figure_art": "avg_npc_1777_1#1$1"
+        },
+        {
+            "id": 620,
+            "prop": "name",
+            "attributes": {
+                "content": "皆様、どうかご準備ください。新たな鼓動に、共に耳を傾けましょう。",
+                "name": "総主教"
+            },
+            "figure_art": "avg_npc_1777_1#1$1"
+        },
+        {
+            "id": 621,
+            "prop": "Dialog",
+            "attributes": {}
+        },
+        {
+            "id": 622,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 0.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 0.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 623,
+            "prop": "Blocker",
+            "attributes": {
+                "a": 1.0,
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0,
+                "fadetime": 2.0,
+                "block": "true"
+            }
+        },
+        {
+            "id": 624,
+            "prop": "stopmusic",
+            "attributes": {
+                "fadetime": 2.0
+            }
+        },
+        {
+            "id": 625,
+            "prop": "image",
+            "attributes": {}
+        },
+        {
+            "id": 626,
+            "prop": "charslot",
+            "attributes": {}
+        },
+        {
+            "id": 627,
+            "prop": "name",
+            "attributes": {
+                "content": ""
+            }
+        }
+    ],
+    "OPTIONTRACE": true
+}
